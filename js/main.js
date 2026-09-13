@@ -150,6 +150,28 @@
     $("#links-section").hidden = false;
   }
 
+  // --- Projects -----------------------------------------------------------
+  function renderProjects() {
+    const projects = cfg.projects || [];
+    if (!projects.length) { $("#projects").hidden = true; return; }
+    const list = $("#project-list");
+    for (const p of projects) {
+      const inner = [
+        el("div", { class: "project-top" },
+          el("span", { class: "tag", text: p.kind }),
+          el("span", { class: "project-status small", text: p.status })),
+        el("h3", { text: p.name }),
+        el("p", { class: "muted small", text: p.blurb }),
+        el("ul", { class: "chips" }, ...(p.tags || []).map((t) => el("li", { text: t }))),
+      ];
+      const external = p.url && !p.url.startsWith("#");
+      const card = p.url
+        ? el("a", { class: "card project project-link", href: p.url, target: external ? "_blank" : null, rel: external ? "noopener" : null }, ...inner)
+        : el("div", { class: "card project" }, ...inner);
+      list.append(el("li", {}, card));
+    }
+  }
+
   // --- Mods ---------------------------------------------------------------
   function renderMods() {
     const mods = (cfg.mods || []).filter((m) => /^\d+$/.test(m.id));
@@ -206,6 +228,7 @@
   }
 
   wireDiscord();
+  renderProjects();
   renderServers();
   renderMods();
   renderLinks();

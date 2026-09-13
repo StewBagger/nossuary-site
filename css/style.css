@@ -191,6 +191,29 @@ p { margin: 0 0 1em; }
 .chamberlain img { margin: 0 auto; width: min(280px, 70%); height: auto; filter: drop-shadow(0 0 40px rgba(91, 242, 154, .18)); }
 .chamberlain figcaption { margin-top: 10px; font: italic 1rem var(--serif); color: var(--bone-dim); }
 
+/* --- Pillars ----------------------------------------------------------- */
+.pillars { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+.pillar h3 { margin-top: 14px; }
+.pillar p { margin: 0; }
+.pillar-glyph { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 10px;
+  font: 600 1.15rem/1 var(--mono); color: var(--phosphor); background: rgba(91, 242, 154, .07);
+  border: 1px solid rgba(91, 242, 154, .25); box-shadow: 0 0 22px var(--phosphor-glow); }
+.pillar:last-child .pillar-glyph { color: var(--amber); background: rgba(240, 180, 76, .07); border-color: rgba(240, 180, 76, .25); box-shadow: none; }
+
+/* --- Projects ---------------------------------------------------------- */
+.project-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px; }
+.project-grid li { display: flex; }
+.project { display: flex; flex-direction: column; width: 100%; background: linear-gradient(180deg, rgba(26,31,29,.92) 0%, rgba(17,21,19,.92) 100%); }
+.project h3 { margin: 14px 0 .35em; }
+.project .muted { flex: 1; }
+.project-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.project-status { font-family: var(--mono); color: var(--phosphor); font-size: .78rem; }
+.project-link { text-decoration: none; color: var(--bone); transition: border-color .15s, transform .15s; }
+.project-link:hover { border-color: var(--phosphor-dim); color: var(--bone); transform: translateY(-2px); }
+@media (prefers-reduced-motion: reduce) { .project-link:hover { transform: none; } }
+.chips { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.chips li { font: .74rem/1 var(--mono); color: var(--bone-dim); padding: 6px 8px; border-radius: 5px; background: #070908; border: 1px solid var(--line); }
+
 /* --- Mods -------------------------------------------------------------- */
 .mod-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
 .mod-grid li { display: flex; }

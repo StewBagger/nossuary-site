@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Null Ossuary</title>
-  <meta name="description" content="Null Ossuary — a gaming community and its servers. Join the Discord, check who's online, and find the way in.">
+  <title>Null Ossuary — AI, code and automation</title>
+  <meta name="description" content="Null Ossuary is a workshop for AI development, code and automation — self-hosted tools, Discord bots, game mods and the servers they run on.">
   <meta name="theme-color" content="#0b0d0c">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Null Ossuary">
-  <meta property="og:description" content="A gaming community and its servers. Join the Discord, check who's online, and find the way in.">
+  <meta property="og:title" content="Null Ossuary — AI, code and automation">
+  <meta property="og:description" content="A workshop for AI development, code and automation — self-hosted tools, Discord bots, game mods and the servers they run on.">
   <meta property="og:url" content="https://nossuary.com/">
   <meta property="og:image" content="https://nossuary.com/assets/og-1200x630.jpg">
   <meta name="twitter:card" content="summary_large_image">
@@ -32,9 +32,9 @@
     </a>
     <nav aria-label="Primary">
       <ul>
-        <li><a href="#servers">Servers</a></li>
-        <li><a href="#mods">Mods</a></li>
-        <li><a href="#community">Community</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#play">Play</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a class="btn btn-sm" data-discord href="#community">Join Discord</a></li>
       </ul>
@@ -44,23 +44,72 @@
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-inner">
-        <p class="eyebrow">nossuary.com</p>
+        <p class="eyebrow">AI · Code · Automation</p>
         <h1 id="hero-title">Null Ossuary</h1>
-        <p class="lede">A community kept in the dark and lit by its servers.
-          Come in, find your people, and pick a world to die in.</p>
+        <p class="lede">A workshop built underground. AI-assisted engineering, self-hosted tools and
+          automation that runs itself — and the game servers where all of it gets tested on real people.</p>
         <div class="cta">
-          <a class="btn btn-primary" data-discord href="#community">Join the Discord</a>
-          <a class="btn btn-ghost" href="#servers">See the servers</a>
+          <a class="btn btn-primary" href="#projects">See the work</a>
+          <a class="btn btn-ghost" data-discord href="#community">Join the Discord</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="servers" aria-labelledby="servers-title">
+    <section class="section" id="work" aria-labelledby="work-title">
       <div class="wrap">
         <header class="section-head">
-          <p class="eyebrow">Live</p>
-          <h2 id="servers-title">Servers</h2>
-          <p class="muted">Add a server in-game with the address below. Status refreshes every minute.</p>
+          <p class="eyebrow">What happens here</p>
+          <h2 id="work-title">Machines that build, watch and keep things running</h2>
+          <p class="muted">Self-hosted hardware and AI agents doing real engineering work under guard rails —
+            with every result checked, not assumed.</p>
+        </header>
+        <ul class="pillars">
+          <li class="card pillar">
+            <span class="pillar-glyph" aria-hidden="true">◈</span>
+            <h3>AI development</h3>
+            <p class="muted">Agent workflows that write, review and ship code: tool servers, subagents,
+              a knowledge vault they read and write, and automated checks that stop them doing
+              something dumb.</p>
+          </li>
+          <li class="card pillar">
+            <span class="pillar-glyph" aria-hidden="true">{ }</span>
+            <h3>Code</h3>
+            <p class="muted">Python services, Lua game mods, desktop tools and web front ends —
+              written to be maintained, not just to run once.</p>
+          </li>
+          <li class="card pillar">
+            <span class="pillar-glyph" aria-hidden="true">&gt;_</span>
+            <h3>Automation</h3>
+            <p class="muted">Bots, scheduled routines and self-hosted infrastructure that run
+              unattended overnight and report what they actually did.</p>
+          </li>
+          <li class="card pillar">
+            <span class="pillar-glyph" aria-hidden="true">▶</span>
+            <h3>Games</h3>
+            <p class="muted">Community servers and Workshop mods — the proving ground where the
+              tooling meets real players.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-art" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">In the niches</h2>
+          <p class="muted">What's being built right now.</p>
+        </header>
+        <ul class="project-grid" id="project-list"></ul>
+      </div>
+    </section>
+
+    <section class="section" id="play" aria-labelledby="servers-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Play</p>
+          <h2 id="servers-title">Game servers</h2>
+          <p class="muted">Add a server in-game with the address below.</p>
         </header>
         <div class="servers" id="server-list" aria-live="polite">
           <!-- filled from js/config.js -->
@@ -73,8 +122,8 @@
       <div class="wrap">
         <header class="section-head">
           <p class="eyebrow">Steam Workshop</p>
-          <h2 id="mods-title">The mods behind the servers</h2>
-          <p class="muted">Built here, run here first, and free for anyone's server or singleplayer world.</p>
+          <h2 id="mods-title">Project Zomboid mods</h2>
+          <p class="muted">Built here, run on our servers first, and free for anyone's server or singleplayer world.</p>
         </header>
         <ul class="mod-grid" id="mod-list"></ul>
       </div>
@@ -85,11 +134,12 @@
         <div>
           <p class="eyebrow">Community</p>
           <h2 id="community-title">The Discord is the front hall</h2>
-          <p>Announcements, patch notes, events and the people you'll be surviving with.
-            The Chamberlain keeps the doors: verify once and you're in.</p>
+          <p>Talk AI tooling, code and automation, follow what's being built, and find people to play
+            with. The Chamberlain keeps the doors: verify once and you're in.</p>
           <ul class="ticks">
-            <li>Server announcements and restart notices</li>
-            <li>Bug reports and suggestions, read by the people who fix them</li>
+            <li>Build logs and write-ups as projects land</li>
+            <li>AI, coding and automation discussion</li>
+            <li>Server announcements, patch notes and bug reports</li>
             <li>Roles and ranks earned by being around</li>
           </ul>
           <div class="cta">
@@ -119,10 +169,11 @@
         <div>
           <p class="eyebrow">Contact</p>
           <h2 id="contact-title">Get in touch</h2>
-          <p>The fastest way to reach the admins is Discord: open a ticket in the server, or message
-            an admin directly. For anything that doesn't fit there, use the form.</p>
+          <p>Questions about a project, a collaboration idea, or a problem on a server — the fastest
+            route is Discord: open a ticket or send a message. For anything that doesn't fit there,
+            use the form.</p>
           <div class="cta">
-            <a class="btn btn-ghost" data-discord href="#community">Open a ticket on Discord</a>
+            <a class="btn btn-ghost" data-discord href="#community">Message on Discord</a>
           </div>
         </div>
         <form class="card form" id="contact-form" novalidate>
@@ -134,9 +185,11 @@
             <label for="cf-topic">Topic</label>
             <select id="cf-topic" name="topic">
               <option>General question</option>
+              <option>AI / automation project</option>
+              <option>Collaboration</option>
               <option>Server problem</option>
-              <option>Ban appeal</option>
               <option>Mod bug report</option>
+              <option>Ban appeal</option>
               <option>Something else</option>
             </select>
           </div>
@@ -162,7 +215,7 @@
         <img src="assets/emblem-256.webp" alt="" width="28" height="28" loading="lazy">
         <span>Null Ossuary</span>
       </span>
-      <span class="muted small">Not affiliated with The Indie Stone or Valve.</span>
+      <span class="muted small">AI · Code · Automation · Games. Project Zomboid is a trademark of The Indie Stone; not affiliated.</span>
     </div>
   </footer>
 </body>

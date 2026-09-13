@@ -6,6 +6,51 @@ window.OSSUARY = {
   // replace it with a never-expiring invite before then or every Discord button dies.
   discordInvite: "https://discord.gg/V5wTM8ChA",
 
+  // Projects shown under "In the niches". `status` is free text; `url` null = no link.
+  // PUBLIC SITE: nothing employer/customer-related, no internal hostnames, IPs or security posture.
+  projects: [
+    {
+      name: "AI engineering workbench",
+      kind: "AI development",
+      status: "In daily use",
+      blurb: "The setup this site was built with: AI agents working through custom MCP tool servers, a git-backed knowledge vault they read and write, subagents for search and review, and hooks and health checks that enforce the rules instead of hoping they're remembered.",
+      tags: ["MCP", "Agents", "Python", "Node"],
+      url: null,
+    },
+    {
+      name: "Chamberlain",
+      kind: "Automation",
+      status: "In development",
+      blurb: "A self-hosted Discord community bot: anti-raid onboarding, moderation, activity-based ranks, and plugins that bridge Discord to game servers in both directions.",
+      tags: ["Discord", "Python", "Self-hosted"],
+      url: null,
+    },
+    {
+      name: "Jeeves Ecosystem",
+      kind: "Code",
+      status: "Live on Steam Workshop",
+      blurb: "A family of Project Zomboid mods — claims, zones, hordes, airdrops, in-game computers and more — shipped through an experimental-to-stable pipeline with automated pre-release audits.",
+      tags: ["Lua", "Modding", "CI gates"],
+      url: "#mods",
+    },
+    {
+      name: "Unattended routines",
+      kind: "Automation",
+      status: "Running nightly",
+      blurb: "Scheduled agents that work overnight — sweeping player feedback against the actual code and triaging what's real — then report their own verdict in the morning.",
+      tags: ["Scheduling", "Agents", "Triage"],
+      url: null,
+    },
+    {
+      name: "nossuary.com",
+      kind: "Web",
+      status: "You're looking at it",
+      blurb: "A static site with no build step and no open ports at home, deployed from git. Live server status and a contact relay are next.",
+      tags: ["HTML", "CSS", "GitHub Pages"],
+      url: null,
+    },
+  ],
+
   // Game servers. `address` is what players type in-game; `id` keys into status.json.
   servers: [
     {
