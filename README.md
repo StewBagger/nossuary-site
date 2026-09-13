@@ -14,9 +14,11 @@ Intent, decisions and open threads live in the vault
 | `css/style.css` | all styling; palette from `Projects/Null_Ossuary/branding` |
 | `js/config.js` | **the only file most changes need**: Discord invite, servers, status URL, contact endpoint, links |
 | `js/main.js` | rendering, live status polling, contact form |
-| `link/index.html` | Sign in with Steam, step 1 (`/link/?t=`, the link Chamberlain hands out): checks the token with the Worker, sends the browser to Steam with nossuary.com as realm. `noindex` |
-| `link/done/index.html` | Sign in with Steam, step 2 (`/link/done/`, where Steam returns): posts Steam's answer to the Worker's `/link/steam/verify` and shows the result. `noindex` |
-| `js/link.js` | both sign-in pages' logic; strips the token from the address bar on load, never renders a URL value. Needs `linkWorkerUrl` and `siteOrigin` in `config.js` — `siteOrigin` must match the Worker's `SITE_ORIGIN` |
+| `link/index.html` | Sign in with Steam, where the #welcome LINK button lands (`/link/`): asks the Worker's `/link/discord/start` and sends the member to Discord to confirm who they are. Ignores any query (a `?t=` is refused by design — see TAB BINDING in `js/link.js`). `noindex` |
+| `link/discord/index.html` | Where Discord returns (`/link/discord/`, registered as the redirect URI of Chamberlain's Discord application): posts `code` + `state` to the Worker's `/link/discord/exchange`, then sends the browser to Steam with nossuary.com as realm. `noindex` |
+| `link/done/index.html` | Where Steam returns (`/link/done/`): requires the `t` this tab was handed on `/link/discord/`, then posts Steam's answer to the Worker's `/link/steam/verify` and shows the result. `noindex` |
+| `tests/` | `node --test tests/` — see Test |
+| `js/link.js` | all three sign-in pages' logic; ties the Discord state and the link token to the browser tab in sessionStorage; strips the query from the address bar on load, never renders a URL value. Reads `linkWorkerUrl` and `siteOrigin` from `config.js`, falling back to built-in copies when a cached `config.js` lacks them — `siteOrigin` must match the Worker's `SITE_ORIGIN`. The three pages load `style.css`, `config.js` and `link.js` with a `?v=` build stamp: bump it in all three pages when any of those files changes |
 | `assets/` | web-sized derivatives of the Null Ossuary branding set |
 | `CNAME` | custom domain for GitHub Pages (`nossuary.com`) — removing it breaks the domain; the apex A records in No-IP point at GitHub |
 
@@ -27,6 +29,17 @@ python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
 then open http://127.0.0.1:8765/.
+
+## Test
+
+```
+node --test tests/
+```
+
+`tests/link.test.mjs` runs `js/link.js` in a VM with a stand-in page and sessionStorage: the tab
+binding (link/done/ never posts a token this tab was not handed; link/ ignores `?t=`), plus one
+end-to-end run against the real Worker handler from `../Null_Ossuary/deploy/status-worker` when that
+checkout is present. No dependencies.
 
 ## Rules
 

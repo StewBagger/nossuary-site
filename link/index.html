@@ -3,29 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Sign in with Steam, step 1 of 2. The address carries a sign-in token: never indexed, never
-       sent on as a Referer, and js/link.js strips it from the address bar on load. -->
+  <!-- Sign in with Steam, where the #welcome button lands: sends the member to Discord
+       (link/discord/ comes next). Any query is ignored — a ?t= token in particular, which would
+       let a link made for one person sign in someone else (js/link.js, TAB BINDING) — and
+       stripped from the address bar on load. Never indexed, never sent on as a Referer. -->
   <meta name="robots" content="noindex, nofollow">
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https:; object-src 'none'; base-uri 'none'; form-action 'none'">
   <meta name="theme-color" content="#0b0d0c">
-  <title>Connecting to Steam · Null Ossuary</title>
+  <title>Signing you in · Null Ossuary</title>
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
-  <link rel="stylesheet" href="../css/style.css">
-  <script src="../js/config.js" defer></script>
-  <script src="../js/link.js" defer></script>
+  <link rel="stylesheet" href="../css/style.css?v=20260913-2">
+  <!-- ?v= is this page's build stamp: bump it here (stylesheet and both scripts) whenever style.css, config.js
+       or link.js changes, so a browser holding a cached copy (GitHub Pages: ~10 minutes) fetches the new one.
+       link.js also carries built-in defaults in case config.js is stale anyway. -->
+  <script src="../js/config.js?v=20260913-2" defer></script>
+  <script src="../js/link.js?v=20260913-2" defer></script>
 </head>
 <body class="signin signin-pending" data-signin-step="start">
   <main class="card signin-panel" aria-live="polite">
     <img class="signin-emblem" src="../assets/emblem-256.webp" alt="" width="96" height="96">
     <p class="eyebrow" id="signin-eyebrow">Sign in with Steam</p>
-    <h1 id="signin-title">Connecting to Steam…</h1>
-    <p class="status status-online signin-spinner"><span class="dot" aria-hidden="true"></span><span>Checking your link</span></p>
-    <p class="muted" id="signin-line">This takes a moment; you'll be sent on to Steam's own sign-in page.</p>
+    <h1 id="signin-title">Signing you in…</h1>
+    <p class="status status-online signin-spinner"><span class="dot" aria-hidden="true"></span><span>One moment</span></p>
+    <p class="muted" id="signin-line">Discord confirms who you are, then Steam's own sign-in page opens.</p>
     <noscript>
-      <p class="signin-noscript">This page needs JavaScript to hand you over to Steam. Turn it on, then press
-        Sign in with Steam in Discord again — or use Link in game instead.</p>
+      <p class="signin-noscript">This page needs JavaScript to sign you in. Turn it on, then press
+        Sign in with Steam in Discord again.</p>
     </noscript>
+    <p class="signin-actions"><a class="btn btn-ghost btn-sm" id="signin-retry" href="../link/" hidden>Try again</a></p>
     <p class="signin-foot"><a href="../">Null Ossuary · nossuary.com</a></p>
   </main>
 </body>

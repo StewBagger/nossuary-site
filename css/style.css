@@ -269,7 +269,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--p
 .form-status { margin: 0; min-height: 1.4em; color: var(--amber); }
 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 
-/* --- Sign in with Steam (link/, link/done/; js/link.js) ------------------ */
+/* --- Sign in with Steam (link/, link/discord/, link/done/; js/link.js) ---- */
 .signin {
   min-height: 100vh; display: grid; place-items: center; padding: 24px;
   background:
@@ -288,6 +288,9 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--p
 .signin-error .signin-spinner, .signin-ok .signin-spinner, .no-js .signin-spinner { display: none; }
 .no-js #signin-line { display: none; }
 .signin-noscript { margin: 0; color: var(--amber); }
+.signin-actions { margin: 0; }
+.signin-actions .btn { margin-top: 22px; }
+.signin-actions [hidden] { display: none; }
 .signin-foot { margin: 28px 0 0; padding-top: 16px; border-top: 1px solid var(--line); font: 500 .72rem/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; }
 .signin-foot a { color: var(--grey); text-decoration: none; }
 .signin-foot a:hover { color: var(--phosphor); }

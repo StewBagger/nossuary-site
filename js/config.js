@@ -90,10 +90,12 @@ window.OSSUARY = {
   // null = show addresses without live status.
   statusUrl: "https://nossuary-status.stewbagger.workers.dev/v1/status",
 
-  // Sign in with Steam (link/ and link/done/, js/link.js). The pages call this Worker's
-  // /link/steam/check and /link/steam/verify. No secret is involved on this side: the token in
-  // the member's link is signed by Chamberlain and checked by the Worker. null = sign-in pages
-  // say linking is unavailable.
+  // Sign in with Steam (link/, link/discord/ and link/done/, js/link.js). The pages call this
+  // Worker's /link/discord/start and /exchange (Discord says who is signing in) and
+  // /link/steam/verify. No secret is involved on this side: link tokens are signed and checked by
+  // the Worker. null = sign-in pages say linking is
+  // unavailable. js/link.js holds a copy of this value and siteOrigin as defaults, for a browser
+  // with a stale cached config.js — change them there too.
   linkWorkerUrl: "https://nossuary-status.stewbagger.workers.dev",
   // Steam is told to return to <siteOrigin>/link/done/ with realm <siteOrigin>/. MUST equal the
   // Worker's SITE_ORIGIN (deploy/status-worker/wrangler.toml), or every sign-in is refused.

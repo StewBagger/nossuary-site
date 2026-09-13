@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Sign in with Steam, last step: Steam returns here. The address carries the token and
-       Steam's signed answer: never indexed, never sent on as a Referer, stripped on load. The token
-       must be the one this browser tab was handed on link/discord/, or nothing is sent. -->
+  <!-- Sign in with Steam: Discord returns here (the redirect URI registered for Chamberlain's
+       application — https://nossuary.com/link/discord/, exactly). The address carries Discord's
+       one-time code and the Worker's state: never indexed, never sent on as a Referer, stripped on
+       load. js/link.js trades them at the Worker for a link token and goes straight on to Steam. -->
   <meta name="robots" content="noindex, nofollow">
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https:; object-src 'none'; base-uri 'none'; form-action 'none'">
   <meta name="theme-color" content="#0b0d0c">
-  <title>Confirming your Steam account · Null Ossuary</title>
+  <title>Signing you in · Null Ossuary</title>
   <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
   <link rel="stylesheet" href="../../css/style.css?v=20260913-2">
   <!-- ?v= is this page's build stamp: bump it here (stylesheet and both scripts) whenever style.css, config.js
@@ -19,18 +20,18 @@
   <script src="../../js/config.js?v=20260913-2" defer></script>
   <script src="../../js/link.js?v=20260913-2" defer></script>
 </head>
-<body class="signin signin-pending" data-signin-step="done">
+<body class="signin signin-pending" data-signin-step="discord">
   <main class="card signin-panel" aria-live="polite">
     <img class="signin-emblem" src="../../assets/emblem-256.webp" alt="" width="96" height="96">
     <p class="eyebrow" id="signin-eyebrow">Sign in with Steam</p>
-    <h1 id="signin-title">Confirming your Steam account…</h1>
-    <p class="status status-online signin-spinner"><span class="dot" aria-hidden="true"></span><span>Checking with Steam</span></p>
-    <p class="muted" id="signin-line">Hold on a moment; don't close this tab yet.</p>
+    <h1 id="signin-title">Signing you in…</h1>
+    <p class="status status-online signin-spinner"><span class="dot" aria-hidden="true"></span><span>Checking with Discord</span></p>
+    <p class="muted" id="signin-line">Discord has confirmed who you are; Steam's own sign-in page opens next.</p>
     <noscript>
-      <p class="signin-noscript">This page needs JavaScript to finish linking. Turn it on, then press
+      <p class="signin-noscript">This page needs JavaScript to hand you over to Steam. Turn it on, then press
         Sign in with Steam in Discord again.</p>
     </noscript>
-    <p class="signin-actions"><a class="btn btn-ghost btn-sm" id="signin-retry" href="../../link/" hidden>Try again</a></p>
+    <p class="signin-actions"><a class="btn btn-ghost btn-sm" id="signin-retry" href="../" hidden>Try again</a></p>
     <p class="signin-foot"><a href="../../">Null Ossuary · nossuary.com</a></p>
   </main>
 </body>
