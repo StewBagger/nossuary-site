@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/config.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script src="js/discord-widget.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -147,10 +148,13 @@
           </div>
           <p class="muted small" id="forums-note">Forums are on the way. Until then, the Discord's forum channels are where long discussions live.</p>
         </div>
-        <figure class="chamberlain">
-          <img src="assets/chamberlain-256.webp" alt="The Chamberlain: a hooded figure with no face, only a green glow, and a bone ∅ clasp at the throat" width="256" height="256" loading="lazy">
-          <figcaption>The Chamberlain keeps the doors.</figcaption>
-        </figure>
+        <div class="community-side">
+          <figure class="chamberlain">
+            <img src="assets/chamberlain-256.webp" alt="The Chamberlain: a hooded figure with no face, only a green glow, and a bone ∅ clasp at the throat" width="256" height="256" loading="lazy">
+            <figcaption>The Chamberlain keeps the doors.</figcaption>
+          </figure>
+          <aside class="card discord-widget" id="discord-widget" aria-label="Who is in the Discord now" aria-live="polite" hidden></aside>
+        </div>
       </div>
     </section>
 

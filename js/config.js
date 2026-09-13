@@ -6,6 +6,10 @@ window.OSSUARY = {
   // replace it with a never-expiring invite before then or every Discord button dies.
   discordInvite: "https://discord.gg/V5wTM8ChA",
 
+  // Server ID for the live Discord panel (public, not a secret). The panel reads Discord's widget
+  // feed, which only answers while "Enable Server Widget" is on. null = no panel.
+  discordGuildId: "1548053028240752670",
+
   // Projects shown under "In the niches". `status` is free text; `url` null = no link.
   // PUBLIC SITE: nothing employer/customer-related, no internal hostnames, IPs or security posture.
   projects: [

@@ -190,6 +190,26 @@ p { margin: 0 0 1em; }
 .chamberlain { margin: 0; text-align: center; }
 .chamberlain img { margin: 0 auto; width: min(280px, 70%); height: auto; filter: drop-shadow(0 0 40px rgba(91, 242, 154, .18)); }
 .chamberlain figcaption { margin-top: 10px; font: italic 1rem var(--serif); color: var(--bone-dim); }
+.community-side { display: grid; gap: 28px; }
+
+/* Live Discord panel (js/discord-widget.js) */
+.discord-widget { padding: 20px 22px; position: relative; overflow: hidden; }
+.dw-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 16px; }
+.dw-name { font: 600 .72rem/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--grey); }
+.dw-members { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.dw-member { position: relative; width: 36px; height: 36px; }
+.dw-member img, .dw-initial { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line); background: var(--stone-2); }
+.dw-initial { display: grid; place-items: center; font: 600 .9rem/1 var(--mono); color: var(--bone-dim); }
+.dw-pip { position: absolute; right: -1px; bottom: -1px; width: 11px; height: 11px; border-radius: 50%; border: 2px solid var(--bg-2); background: var(--phosphor); }
+.dw-idle .dw-pip { background: var(--amber); }
+.dw-dnd .dw-pip { background: var(--red); }
+.dw-more { display: grid; place-items: center; min-width: 36px; height: 36px; padding: 0 8px; border-radius: 18px; border: 1px solid var(--line); font: .8rem/1 var(--mono); color: var(--bone-dim); }
+.dw-voice { margin-top: 18px; border-top: 1px solid var(--line); padding-top: 12px; }
+.dw-label { font: .7rem/1 var(--mono); text-transform: uppercase; letter-spacing: .14em; color: var(--grey); margin-bottom: 8px; }
+.dw-voice ul { list-style: none; margin: 0; padding: 0; }
+.dw-voice li { display: flex; justify-content: space-between; gap: 10px; padding: 4px 0; font-size: .92rem; }
+.dw-chan::before { content: "🔊"; margin-right: 8px; font-size: .8em; opacity: .7; }
+.dw-in { font: .78rem/1.6 var(--mono); color: var(--phosphor); }
 
 /* --- Pillars ----------------------------------------------------------- */
 .pillars { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
