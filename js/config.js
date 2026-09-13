@@ -57,7 +57,7 @@ window.OSSUARY = {
       name: "nossuary.com",
       kind: "Web",
       status: "You're looking at it",
-      blurb: "A static site with no build step and no open ports at home, deployed from git. Live server status and a contact relay are next.",
+      blurb: "A static site with no build step and no open ports at home, deployed from git. Live server status is pushed out through a Cloudflare Worker; a contact relay is next.",
       tags: ["HTML", "CSS", "GitHub Pages"],
       url: null,
     },
@@ -83,9 +83,9 @@ window.OSSUARY = {
     },
   ],
 
-  // URL of a JSON status document published from home (outbound only; see README).
+  // Live status JSON: Chamberlain pushes it to a Cloudflare Worker (outbound only; see README).
   // null = show addresses without live status.
-  statusUrl: null,
+  statusUrl: "https://nossuary-status.stewbagger.workers.dev/v1/status",
 
   // Endpoint of the contact-form relay (a serverless function that forwards to a
   // private Discord channel). null = the form points people to Discord instead.
