@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sign in with Steam, step 1 of 2. The address carries a sign-in token: never indexed, never
+       sent on as a Referer, and js/link.js strips it from the address bar on load. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" content="#0b0d0c">
+  <title>Connecting to Steam · Null Ossuary</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/config.js" defer></script>
+  <script src="../js/link.js" defer></script>
+</head>
+<body class="signin signin-pending" data-signin-step="start">
+  <main class="card signin-panel" aria-live="polite">
+    <img class="signin-emblem" src="../assets/emblem-256.webp" alt="" width="96" height="96">
+    <p class="eyebrow" id="signin-eyebrow">Sign in with Steam</p>
+    <h1 id="signin-title">Connecting to Steam…</h1>
+    <p class="status status-online signin-spinner"><span class="dot" aria-hidden="true"></span><span>Checking your link</span></p>
+    <p class="muted" id="signin-line">This takes a moment; you'll be sent on to Steam's own sign-in page.</p>
+    <noscript>
+      <p class="signin-noscript">This page needs JavaScript to hand you over to Steam. Turn it on, then press
+        Sign in with Steam in Discord again — or use Link in game instead.</p>
+    </noscript>
+    <p class="signin-foot"><a href="../">Null Ossuary · nossuary.com</a></p>
+  </main>
+</body>
+</html>

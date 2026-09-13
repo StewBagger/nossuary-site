@@ -14,6 +14,9 @@ Intent, decisions and open threads live in the vault
 | `css/style.css` | all styling; palette from `Projects/Null_Ossuary/branding` |
 | `js/config.js` | **the only file most changes need**: Discord invite, servers, status URL, contact endpoint, links |
 | `js/main.js` | rendering, live status polling, contact form |
+| `link/index.html` | Sign in with Steam, step 1 (`/link/?t=`, the link Chamberlain hands out): checks the token with the Worker, sends the browser to Steam with nossuary.com as realm. `noindex` |
+| `link/done/index.html` | Sign in with Steam, step 2 (`/link/done/`, where Steam returns): posts Steam's answer to the Worker's `/link/steam/verify` and shows the result. `noindex` |
+| `js/link.js` | both sign-in pages' logic; strips the token from the address bar on load, never renders a URL value. Needs `linkWorkerUrl` and `siteOrigin` in `config.js` — `siteOrigin` must match the Worker's `SITE_ORIGIN` |
 | `assets/` | web-sized derivatives of the Null Ossuary branding set |
 | `CNAME` | custom domain for GitHub Pages (`nossuary.com`) — removing it breaks the domain; the apex A records in No-IP point at GitHub |
 
