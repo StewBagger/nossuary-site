@@ -35,9 +35,24 @@ window.OSSUARY = {
   // NEVER put a Discord webhook URL here: this file is public.
   contactEndpoint: null,
 
+  // Public Workshop mods. `id` is the Workshop item id from each stable mod's workshop.txt in
+  // Projects/Jeeves_Ecosystem (experimental builds are unlisted and deliberately left out).
+  mods: [
+    { name: "Jeeve's Claims", id: "3674013419", blurb: "Property, vehicle and animal ownership with faction sharing and expiry — replaces vanilla safehouses." },
+    { name: "Jeeve's Zones", id: "3739941052", blurb: "Paint regions onto the map and give each its own rules: loot, zombie population, PvP." },
+    { name: "Jeeve's Hordes", id: "3672042113", blurb: "Unpredictable horde night events that keep every player on edge." },
+    { name: "Jeeve's Drops", id: "3672451284", blurb: "Randomised airdrops and large supply events with loot worth fighting over." },
+    { name: "Jeeve's Journals", id: "3674452315", blurb: "Write your progress into a journal and recover XP, recipes and map knowledge after death." },
+    { name: "Jeeve's Personal Computer", id: "3693550188", blurb: "Working computers and a PDA: arcade games, training disks, printing, hacking." },
+    { name: "Jeeve's Solar Arrays", id: "3737412008", blurb: "Solar panels, inverters and batteries to run your base off-grid." },
+    { name: "Jeeve's Build", id: "3705530591", blurb: "Craft recipes for walls, frames, fences, stairs, floors and props from loaded tile packs." },
+    { name: "Jeeve's QoL", id: "3687487317", blurb: "Quality-of-life improvements for Build 42, all-in-one or as individual sub-mods." },
+    { name: "Jeeve's Patches", id: "3684025083", blurb: "Compatibility patches and vanilla Build 42 bug fixes. No configuration needed." },
+    { name: "Jeeve's Integration", id: "3660924327", blurb: "The shared framework the ecosystem builds on, plus the optional Discord bridge." },
+  ],
+
   // Outbound links. Entries with a null url are not shown.
   links: [
-    { label: "Steam Workshop", detail: "The mods these servers run", url: null },
     { label: "Steam group", detail: "Server invites and events", url: null },
   ],
 };

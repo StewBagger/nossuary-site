@@ -150,6 +150,24 @@
     $("#links-section").hidden = false;
   }
 
+  // --- Mods ---------------------------------------------------------------
+  function renderMods() {
+    const mods = (cfg.mods || []).filter((m) => /^\d+$/.test(m.id));
+    if (!mods.length) { $("#mods").hidden = true; return; }
+    const list = $("#mod-list");
+    for (const m of mods) {
+      list.append(el("li", {},
+        el("a", {
+          class: "card mod-card",
+          href: `https://steamcommunity.com/sharedfiles/filedetails/?id=${m.id}`,
+          target: "_blank", rel: "noopener",
+        },
+          el("strong", { text: m.name }),
+          el("span", { class: "muted small", text: m.blurb || "" }),
+          el("span", { class: "mod-go small", text: "View on Workshop →" }))));
+    }
+  }
+
   // --- Contact form -------------------------------------------------------
   function wireForm() {
     const form = $("#contact-form");
@@ -189,6 +207,7 @@
 
   wireDiscord();
   renderServers();
+  renderMods();
   renderLinks();
   wireForm();
   refreshStatus();

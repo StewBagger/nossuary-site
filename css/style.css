@@ -76,7 +76,7 @@ p { margin: 0 0 1em; }
 .nav ul { display: flex; align-items: center; gap: 22px; list-style: none; margin: 0; padding: 0; }
 .nav li a:not(.btn) { color: var(--bone-dim); text-decoration: none; font-size: .95rem; }
 .nav li a:not(.btn):hover { color: var(--bone); }
-@media (max-width: 640px) {
+@media (max-width: 760px) {
   .nav li:not(:last-child) { display: none; }
   .brand span { display: none; }
 }
@@ -190,6 +190,17 @@ p { margin: 0 0 1em; }
 .chamberlain { margin: 0; text-align: center; }
 .chamberlain img { margin: 0 auto; width: min(280px, 70%); height: auto; filter: drop-shadow(0 0 40px rgba(91, 242, 154, .18)); }
 .chamberlain figcaption { margin-top: 10px; font: italic 1rem var(--serif); color: var(--bone-dim); }
+
+/* --- Mods -------------------------------------------------------------- */
+.mod-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.mod-grid li { display: flex; }
+.mod-card { display: flex; flex-direction: column; gap: 8px; width: 100%; padding: 22px; text-decoration: none; color: var(--bone); transition: border-color .15s, transform .15s; }
+.mod-card strong { font: 600 1.12rem/1.2 var(--serif); }
+.mod-card .muted { flex: 1; }
+.mod-go { color: var(--phosphor-dim); font-family: var(--mono); font-size: .78rem; letter-spacing: .06em; }
+.mod-card:hover { border-color: var(--phosphor-dim); color: var(--bone); transform: translateY(-2px); }
+.mod-card:hover .mod-go { color: var(--phosphor); }
+@media (prefers-reduced-motion: reduce) { .mod-card:hover { transform: none; } }
 
 /* --- Links ------------------------------------------------------------- */
 .link-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
