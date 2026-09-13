@@ -1,10 +1,9 @@
 // Site configuration. Everything a non-developer should need to change lives here.
 // A value left null hides or disables the thing it drives rather than showing a broken link.
 window.OSSUARY = {
-  // Permanent invite to the Null Ossuary Discord, e.g. "https://discord.gg/abc123".
-  // The current link EXPIRES 2026-10-13 (checked against the Discord API 2026-09-13) —
-  // replace it with a never-expiring invite before then or every Discord button dies.
-  discordInvite: "https://discord.gg/V5wTM8ChA",
+  // Permanent invite to the Null Ossuary Discord, landing in #welcome. Created by Chamberlain
+  // 2026-09-13 with max_age 0 (never expires, unlimited uses) — checked against the Discord API.
+  discordInvite: "https://discord.gg/PtMaTp385b",
 
   // Server ID for the live Discord panel (public, not a secret). The panel reads Discord's widget
   // feed, which only answers while "Enable Server Widget" is on. null = no panel.
