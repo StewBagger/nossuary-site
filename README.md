@@ -15,7 +15,7 @@ Intent, decisions and open threads live in the vault
 | `js/config.js` | **the only file most changes need**: Discord invite, servers, status URL, contact endpoint, links |
 | `js/main.js` | rendering, live status polling, contact form |
 | `assets/` | web-sized derivatives of the Null Ossuary branding set |
-| `CNAME` | custom domain for GitHub Pages — added only once `nossuary.com` DNS points at GitHub, or github.io redirects to a dead name |
+| `CNAME` | custom domain for GitHub Pages (`nossuary.com`) — removing it breaks the domain; the apex A records in No-IP point at GitHub |
 
 ## Preview locally
 
