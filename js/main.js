@@ -37,8 +37,15 @@
   function renderServers() {
     const list = $("#server-list");
     for (const s of cfg.servers || []) {
-      const copyBtn = el("button", { class: "copy", type: "button", "aria-label": `Copy address ${s.address}` }, "Copy");
-      copyBtn.addEventListener("click", () => copy(s.address, copyBtn));
+      // IP and port are separate fields in the game's Add Server form, so each copies on its own.
+      const field = (label, value) => {
+        const btn = el("button", { class: "copy", type: "button", "aria-label": `Copy ${label} ${value}` }, "Copy");
+        btn.addEventListener("click", () => copy(value, btn));
+        return el("div", { class: "address" },
+          el("span", { class: "address-label", text: label }),
+          el("code", { text: value }),
+          btn);
+      };
 
       list.append(
         el("article", { class: "card server", "data-server": s.id },
@@ -49,9 +56,9 @@
               el("span", { class: "status-text", text: "Status unavailable" }))),
           el("h3", { text: s.name }),
           el("p", { class: "muted small", text: `${s.game} · ${s.subtitle}` }),
-          el("div", { class: "address" },
-            el("code", { text: s.address }),
-            copyBtn),
+          el("div", { class: "addresses" },
+            field("IP", s.ip),
+            field("Port", s.port)),
           el("dl", { class: "stats" },
             stat("Players", "players"),
             stat("Uptime", "uptime"),

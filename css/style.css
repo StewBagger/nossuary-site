@@ -171,12 +171,14 @@ p { margin: 0 0 1em; }
 @keyframes pulse { 50% { opacity: .45; } }
 @media (prefers-reduced-motion: reduce) { .status-online .dot { animation: none; } }
 
+.addresses { display: grid; gap: 8px; margin: 18px 0; }
 .address {
-  display: flex; align-items: center; justify-content: space-between; gap: 10px;
-  margin: 18px 0; padding: 10px 10px 10px 14px;
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 10px 10px 14px;
   background: #070908; border: 1px solid var(--line); border-radius: 8px;
 }
-.address code { font: 500 1rem/1.2 var(--mono); color: var(--phosphor); overflow-wrap: anywhere; }
+.address code { flex: 1; font: 500 1rem/1.2 var(--mono); color: var(--phosphor); overflow-wrap: anywhere; }
+.address-label { min-width: 3.2em; font: 600 .7rem/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--grey); }
 .copy { font: 600 .8rem/1 var(--sans); color: var(--bone); background: var(--stone-2); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; cursor: pointer; white-space: nowrap; }
 .copy:hover { border-color: var(--phosphor-dim); color: var(--phosphor); }
 

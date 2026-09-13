@@ -63,14 +63,16 @@ window.OSSUARY = {
     },
   ],
 
-  // Game servers. `address` is what players type in-game; `id` keys into status.json.
+  // Game servers. `ip` and `port` are typed into SEPARATE fields in the in-game Add Server form;
+  // `id` keys into the status document.
   servers: [
     {
       id: "pz-stable",
       game: "Project Zomboid",
       name: "Null County",
       subtitle: "Build 42 · declared null and void",
-      address: "play.nossuary.com:16261",
+      ip: "play.nossuary.com",
+      port: "16261",
       tag: "Stable",
     },
     {
@@ -78,7 +80,8 @@ window.OSSUARY = {
       game: "Project Zomboid",
       name: "Null County Proving Grounds",
       subtitle: "Experimental · new mod builds land here first",
-      address: "play.nossuary.com:16263",
+      ip: "play.nossuary.com",
+      port: "16263",
       tag: "Experimental",
     },
   ],
