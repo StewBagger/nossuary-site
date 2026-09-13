@@ -184,6 +184,7 @@ p { margin: 0 0 1em; }
 .stats div { border-top: 1px solid var(--line); padding-top: 10px; }
 .stats dt { font: .7rem/1 var(--mono); text-transform: uppercase; letter-spacing: .14em; color: var(--grey); }
 .stats dd { margin: 6px 0 0; font: 600 1.1rem/1.2 var(--mono); color: var(--bone); }
+.stats dd .stat-window { font-size: .68em; font-weight: 400; color: var(--grey); white-space: nowrap; }
 .status-note { margin-top: 18px; font-family: var(--mono); font-size: .85rem; }
 
 /* --- Community --------------------------------------------------------- */

@@ -85,7 +85,10 @@
   // Expected shape (published from home, never queried from the browser directly):
   // { "generated": "2026-09-13T15:00:00Z",
   //   "servers": { "pz-stable": { "online": true, "players": 12, "maxPlayers": 32,
-  //                               "uptimeSeconds": 5400, "day": 41 } } }
+  //                               "uptimePercent": 99.2, "uptimeWindowHours": 50,
+  //                               "day": 41 } } }
+  // uptimePercent is the last seven days (null with no history yet);
+  // uptimeWindowHours is how much of those seven days it covers, capped at 168.
   async function refreshStatus() {
     const note = $("#status-note");
     if (!cfg.statusUrl) {
@@ -127,13 +130,21 @@
     text.textContent = st.online ? "Online" : "Offline";
     set("players", st.online && Number.isFinite(st.players)
       ? `${st.players}${Number.isFinite(st.maxPlayers) ? ` / ${st.maxPlayers}` : ""}` : "—");
-    set("uptime", st.online && Number.isFinite(st.uptimeSeconds) ? duration(st.uptimeSeconds) : "—");
+    // Shown on an offline card too: it is a week's record, not a live reading,
+    // and "how often is it up" is exactly what someone looking at red wants.
+    $('[data-stat="uptime"]', card).replaceChildren(...uptime(st.uptimePercent, st.uptimeWindowHours));
     set("day", Number.isFinite(st.day) ? String(st.day) : "—");
   }
 
-  function duration(sec) {
-    const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60);
-    return h ? `${h}h ${m}m` : `${m}m`;
+  // "99.2%", plus how much history backs it while that is under a week:
+  // "97.0% (2d)" from 48 hours, "100.0% (5h)" before. The span is a smaller
+  // <small> so the figure stays on one line in a phone-width stat column.
+  function uptime(pct, hours) {
+    if (!Number.isFinite(pct)) return ["—"];
+    const text = `${pct.toFixed(1)}%`;
+    if (!Number.isFinite(hours) || hours >= 168) return [text];
+    const span = hours >= 48 ? `${Math.floor(hours / 24)}d` : `${Math.max(0, Math.floor(hours))}h`;
+    return [text, " ", el("small", { class: "stat-window", text: `(${span})` })];
   }
 
   // --- Links --------------------------------------------------------------
