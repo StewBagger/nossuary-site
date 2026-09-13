@@ -2,7 +2,9 @@
 // A value left null hides or disables the thing it drives rather than showing a broken link.
 window.OSSUARY = {
   // Permanent invite to the Null Ossuary Discord, e.g. "https://discord.gg/abc123".
-  discordInvite: null,
+  // The current link EXPIRES 2026-10-13 (checked against the Discord API 2026-09-13) —
+  // replace it with a never-expiring invite before then or every Discord button dies.
+  discordInvite: "https://discord.gg/V5wTM8ChA",
 
   // Game servers. `address` is what players type in-game; `id` keys into status.json.
   servers: [
