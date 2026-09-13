@@ -68,15 +68,15 @@ window.OSSUARY = {
     {
       id: "pz-stable",
       game: "Project Zomboid",
-      name: "PZ Reforged",
-      subtitle: "Build 42 · Season 3 · “Patches on Patches”",
+      name: "Null County",
+      subtitle: "Build 42 · declared null and void",
       address: "play.nossuary.com:16261",
       tag: "Stable",
     },
     {
       id: "pz-experimental",
       game: "Project Zomboid",
-      name: "Skunk Works",
+      name: "Null County Proving Grounds",
       subtitle: "Experimental · new mod builds land here first",
       address: "play.nossuary.com:16263",
       tag: "Experimental",
