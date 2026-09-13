@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Null Ossuary</title>
+  <meta name="description" content="Null Ossuary — a gaming community and its servers. Join the Discord, check who's online, and find the way in.">
+  <meta name="theme-color" content="#0b0d0c">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Null Ossuary">
+  <meta property="og:description" content="A gaming community and its servers. Join the Discord, check who's online, and find the way in.">
+  <meta property="og:url" content="https://nossuary.com/">
+  <meta property="og:image" content="https://nossuary.com/assets/og-1200x630.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" as="image" href="assets/hero-1920.webp" media="(min-width: 1101px)">
+  <link rel="preload" as="image" href="assets/hero-1100.webp" media="(max-width: 1100px)">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <a class="brand" href="#top" aria-label="Null Ossuary home">
+      <img src="assets/emblem-256.webp" alt="" width="36" height="36">
+      <span>Null Ossuary</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#servers">Servers</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn btn-sm" data-discord href="#community">Join Discord</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <p class="eyebrow">nossuary.com</p>
+        <h1 id="hero-title">Null Ossuary</h1>
+        <p class="lede">A community kept in the dark and lit by its servers.
+          Come in, find your people, and pick a world to die in.</p>
+        <div class="cta">
+          <a class="btn btn-primary" data-discord href="#community">Join the Discord</a>
+          <a class="btn btn-ghost" href="#servers">See the servers</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servers" aria-labelledby="servers-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Live</p>
+          <h2 id="servers-title">Servers</h2>
+          <p class="muted">Add a server in-game with the address below. Status refreshes every minute.</p>
+        </header>
+        <div class="servers" id="server-list" aria-live="polite">
+          <!-- filled from js/config.js -->
+        </div>
+        <p class="status-note muted" id="status-note" hidden></p>
+      </div>
+    </section>
+
+    <section class="section section-art" id="community" aria-labelledby="community-title">
+      <div class="wrap grid-2">
+        <div>
+          <p class="eyebrow">Community</p>
+          <h2 id="community-title">The Discord is the front hall</h2>
+          <p>Announcements, patch notes, events and the people you'll be surviving with.
+            The Chamberlain keeps the doors: verify once and you're in.</p>
+          <ul class="ticks">
+            <li>Server announcements and restart notices</li>
+            <li>Bug reports and suggestions, read by the people who fix them</li>
+            <li>Roles and ranks earned by being around</li>
+          </ul>
+          <div class="cta">
+            <a class="btn btn-primary" data-discord href="#community">Join the Discord</a>
+          </div>
+          <p class="muted small" id="forums-note">Forums are on the way. Until then, the Discord's forum channels are where long discussions live.</p>
+        </div>
+        <figure class="chamberlain">
+          <img src="assets/chamberlain-256.webp" alt="The Chamberlain: a hooded figure with no face, only a green glow, and a bone ∅ clasp at the throat" width="256" height="256" loading="lazy">
+          <figcaption>The Chamberlain keeps the doors.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="links-section" aria-labelledby="links-title" hidden>
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Elsewhere</p>
+          <h2 id="links-title">Find us</h2>
+        </header>
+        <ul class="link-cards" id="link-list"></ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap grid-2">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Get in touch</h2>
+          <p>The fastest way to reach the admins is Discord: open a ticket in the server, or message
+            an admin directly. For anything that doesn't fit there, use the form.</p>
+          <div class="cta">
+            <a class="btn btn-ghost" data-discord href="#community">Open a ticket on Discord</a>
+          </div>
+        </div>
+        <form class="card form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="cf-name">Name or Discord username</label>
+            <input id="cf-name" name="name" autocomplete="nickname" maxlength="80" required>
+          </div>
+          <div class="field">
+            <label for="cf-topic">Topic</label>
+            <select id="cf-topic" name="topic">
+              <option>General question</option>
+              <option>Server problem</option>
+              <option>Ban appeal</option>
+              <option>Mod bug report</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" maxlength="2000" required></textarea>
+          </div>
+          <!-- honeypot: humans never see or fill this -->
+          <div class="hp" aria-hidden="true">
+            <label for="cf-website">Website</label>
+            <input id="cf-website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+          <button class="btn btn-primary" type="submit">Send</button>
+          <p class="form-status small" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span class="brand">
+        <img src="assets/emblem-256.webp" alt="" width="28" height="28" loading="lazy">
+        <span>Null Ossuary</span>
+      </span>
+      <span class="muted small">Not affiliated with The Indie Stone or Valve.</span>
+    </div>
+  </footer>
+</body>
+</html>
