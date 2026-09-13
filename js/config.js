@@ -20,7 +20,7 @@ window.OSSUARY = {
     {
       name: "JeevesBot",
       kind: "Automation",
-      status: "Open source · in production",
+      status: "Open source",
       blurb: "A Discord bot that runs a Project Zomboid dedicated server: lifecycle control, scheduled restarts, mod update detection, chat relay, player tracking and event control. Windows and Linux; the public repo is the exact build running the live servers.",
       tags: ["Python", "Discord", "RCON"],
       url: "https://github.com/StewBagger/Jeeves",
