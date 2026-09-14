@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Privacy policy. Static text, no scripts. Every claim here is checked against the code in
+       Projects/Null_Ossuary (chamberlain/storage/schema.sql, docs/PRIVACY.md, deploy/forum-worker,
+       deploy/status-worker) and this repo (js/). Change the code and this page together. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; script-src 'none'; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" content="#0b0d0c">
+  <title>Privacy · Null Ossuary</title>
+  <meta name="description" content="What Null Ossuary keeps about you, why, for how long, and how to see or erase it.">
+  <link rel="canonical" href="https://nossuary.com/privacy/">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/style.css?v=20260913-3">
+</head>
+<body class="forum">
+  <a class="skip" href="#privacy-main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <a class="brand" href="/" aria-label="Null Ossuary home">
+      <img src="/assets/emblem-256.webp" alt="" width="36" height="36">
+      <span>Null Ossuary</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="/#work">Work</a></li>
+        <li><a href="/#projects">Projects</a></li>
+        <li><a href="/#play">Play</a></li>
+        <li><a href="/forums/">Forums</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="forum-page">
+    <section class="forum-hero" aria-labelledby="privacy-title">
+      <div class="wrap">
+        <p class="eyebrow">Privacy</p>
+        <h1 id="privacy-title">What we keep</h1>
+        <p class="lede">What Null Ossuary stores about you, why, for how long, and how to see it or have it
+          erased. Last updated 14 September 2026.</p>
+      </div>
+    </section>
+
+    <div class="wrap forum-wrap" id="privacy-main">
+      <div class="section-head">
+
+        <h2>Who we are</h2>
+        <p>Null Ossuary is a small community: a Discord server, game servers, and the website and forums at
+          nossuary.com. It is run by one person, with volunteer staff who moderate. It is a hobby, not a
+          company, and nobody here is a lawyer. What follows is a plain account of what the code actually
+          does.</p>
+        <p>Most of what we store is held by <strong>Chamberlain</strong>, the server's own bot. The forums keep
+          their own small database. Where this page says "we", it means the person who runs Null Ossuary.</p>
+
+        <h2>What we collect, and why</h2>
+        <p>We identify you by your Discord account ID &mdash; a number. Chamberlain does not store your
+          username, display name or avatar, and it cannot read what you write: Discord's message-content
+          access is switched off, so it sees that a message was sent, not what it says.</p>
+
+        <h3>Levelling and achievements</h3>
+        <p><em>Why we're allowed to:</em> it's the point of being in the server, and it only counts things
+          you can see reflected back at you. (Legitimate interests.)</p>
+        <ul>
+          <li>XP: points, when you last earned some, how many messages earned XP.</li>
+          <li>Achievement progress: counts of messages, active days and streaks, voice minutes, reactions
+            your messages received, forum threads started. Counts only &mdash; not which channels, not who
+            reacted, not what was said.</li>
+          <li>Achievements earned, and when. Earning one posts your name and avatar in #accolades; we don't
+            keep a copy of that post.</li>
+        </ul>
+
+        <h3>Linked game accounts and playtime &mdash; only if you link</h3>
+        <p><em>Why we're allowed to:</em> you asked us to. You're told what's stored before anything is saved,
+          and you can take it back at any time with <code>/unlink</code>. (Consent.)</p>
+        <ul>
+          <li>Your Steam account ID (or your Project Zomboid account name, if the server reports no Steam ID),
+            which of our game servers confirmed it, when you linked, and when you were last seen in game.</li>
+          <li>Your in-game account name, taken from our own game servers' player list.</li>
+          <li>Playtime on our servers for the linked account.</li>
+        </ul>
+        <p>Linking exists so your ranks and achievements can follow you into our games and back. That's all
+          it's used for. The linked set (Discord ID, in-game name, Steam ID) is sent to the bot that runs each
+          of our Project Zomboid servers, and it is sent again whenever it changes, so an unlink reaches the
+          game servers within minutes.</p>
+
+        <h3>Moderation records</h3>
+        <p><em>Why we're allowed to:</em> keeping the community safe. These are kept even if you'd rather they
+          weren't &mdash; a ban record that vanished on request wouldn't be much of a record. (Legitimate
+          interests.)</p>
+        <ul>
+          <li>Notes, warnings, timeouts, kicks, bans and unbans: the action, the reason, which staff member
+            took it (or that it was automatic), when, and when it ends if it's timed.</li>
+        </ul>
+
+        <h3>Join safety signals</h3>
+        <p><em>Why we're allowed to:</em> spotting raids and throwaway accounts before they do damage.
+          (Legitimate interests.)</p>
+        <ul>
+          <li>When you joined, when your Discord account was created (worked out from the ID), a few bits of
+            the ID that bot batches tend to share, whether you'd been in the server before, which invite you
+            used, how long you took to accept the rules, and a resulting score.</li>
+        </ul>
+        <p>The score only raises an alert for staff to look at. Nothing acts on it automatically.</p>
+
+        <h3>Supporter status</h3>
+        <p><em>Why we're allowed to:</em> it's a record of a real payment, and it's how your supporter perks
+          are kept. (Legitimate interests.)</p>
+        <ul>
+          <li>Donations go through <a href="https://ko-fi.com/kronosmedia" rel="noopener">Ko-fi</a>, which
+            handles the payment. We never see your card or bank details.</li>
+          <li>We store a supporter tier set by hand, which staff member set it and when, and a short staff
+            note (for example, which Ko-fi payment it was for).</li>
+          <li>Whether you're boosting the server, and since when, as Discord reports it.</li>
+        </ul>
+
+        <h3>The forums</h3>
+        <p><em>Why we're allowed to:</em> running the forums you chose to sign in to, and moderating them.
+          (Legitimate interests.)</p>
+        <ul>
+          <li>Your Discord ID, the name you show in our server, your avatar reference (so posts show who wrote
+            them), whether you're staff, and whether you're currently a member or timed out (so we know
+            whether you can post).</li>
+          <li>Sign-in sessions, which last 14 days. Your Discord sign-in tokens are stored encrypted and are
+            only used to re-check that you're still a member.</li>
+          <li>The threads and posts you write. A deleted post is hidden from everyone but kept for
+            moderation.</li>
+          <li>Which posts you've reported, and when (the reason you give goes to staff in Discord and isn't
+            kept by the forum), and a log of staff actions on posts and threads.</li>
+        </ul>
+
+        <h3>Sign in with Steam</h3>
+        <p>The link flow on nossuary.com asks Discord who you are (only your ID is used; the rest of Discord's
+          answer is thrown away, and the sign-in token is used once and revoked), then sends you to Steam's own
+          sign-in page. Steam tells us your Steam ID and nothing else. The finished sign-in waits on Cloudflare
+          until Chamberlain collects it &mdash; usually within a minute, never more than 24 hours.</p>
+
+        <h2>What we don't collect</h2>
+        <ul>
+          <li>The content of your Discord messages.</li>
+          <li>Email addresses, real names, or payment details.</li>
+          <li>IP addresses, in any database we run.</li>
+          <li>Tracking or advertising cookies. The site has no analytics. The forums keep your sign-in in
+            your own browser's storage; that's the only thing they put there.</li>
+        </ul>
+        <p>We don't sell data, don't advertise, and don't use any of this to build a profile of you.</p>
+
+        <h2>Where it's kept, and how it's protected</h2>
+        <p>Chamberlain's database lives on hardware we run ourselves and is encrypted at rest. Only the
+          operator can reach it directly. Staff see the parts they need to moderate &mdash; moderation
+          records and join alerts &mdash; through Discord.</p>
+        <p>The forum database runs on Cloudflare. Sign-in tokens there are encrypted, and session tokens are
+          stored only as a one-way hash.</p>
+
+        <h2>How long we keep it</h2>
+        <ul>
+          <li><strong>Linked accounts:</strong> until you <code>/unlink</code>, or 12 months after you were last
+            seen on our game servers, whichever comes first.</li>
+          <li><strong>Levelling, achievements, playtime, links and join signals:</strong> until you run
+            <code>/forgetme</code>, or automatically 12 months after you leave the Discord server.</li>
+          <li><strong>Moderation records:</strong> for as long as they serve their purpose. A timed
+            sanction's record is kept until it expires.</li>
+          <li><strong>Supporter records:</strong> kept as a record of payment, including after
+            <code>/forgetme</code>.</li>
+          <li><strong>Forum account:</strong> until you delete it from the forums. Sessions end after 14 days,
+            or when you sign out.</li>
+          <li><strong>Steam sign-in hand-off:</strong> minutes, and never more than 24 hours.</li>
+        </ul>
+
+        <h2>Who else is involved</h2>
+        <ul>
+          <li><strong>Discord</strong> &mdash; the community lives there, so Discord sees everything you do in
+            it under <a href="https://discord.com/privacy" rel="noopener">its own policy</a>. The home page's
+            "who's online" panel and forum avatars load directly from Discord.</li>
+          <li><strong>Cloudflare</strong> &mdash; runs the forums, the live server status, and the Steam
+            sign-in hand-off.</li>
+          <li><strong>GitHub</strong> &mdash; hosts the website's pages.</li>
+          <li><strong>Steam</strong> &mdash; only if you use Sign in with Steam. You sign in on Steam's own
+            page; we receive your Steam ID.</li>
+          <li><strong>Ko-fi</strong> &mdash; only if you donate. Ko-fi handles the payment under its own
+            policy.</li>
+        </ul>
+        <p>That's the whole list. We share nothing with anyone else unless the law makes us.</p>
+
+        <h2>Your choices</h2>
+        <ul>
+          <li><code>/mydata</code> in Discord &mdash; everything Chamberlain holds about you, as a file only you
+            can see. Moderation records are included.</li>
+          <li><code>/unlink</code> &mdash; removes your linked game accounts, here and on our game servers.
+            Your levelling history stays.</li>
+          <li><code>/forgetme</code> &mdash; erases your XP, achievements, activity progress, playtime, links
+            and join signals. Moderation records (until they expire) and supporter records stay, for the
+            reasons above.</li>
+          <li><strong>Delete my account</strong> on the forums &mdash; removes your forum account and sessions,
+            and your posts stay up without your name on them.</li>
+          <li>Anything else &mdash; a correction, a question, an objection &mdash; open a ticket in our Discord.
+            <!-- OWNER: a non-Discord contact is needed for people who have left or been banned. Fill in
+                 before publishing, or delete this sentence. -->
+            If you can't reach us on Discord, write to [CONTACT ADDRESS &mdash; OWNER TO FILL IN].</li>
+        </ul>
+        <p>If you think we've got something wrong and we can't sort it out, you can complain to your data
+          protection authority.</p>
+
+        <h2>Children</h2>
+        <p>You need to meet Discord's minimum age to use Discord, and therefore to use anything here. We don't
+          knowingly keep data about anyone younger. If you think we are, tell staff and we'll erase it.</p>
+
+        <h2>Changes</h2>
+        <p>If what we store or why changes, this page changes with it, and we'll say so in the Discord. The
+          date at the top is the last time it changed.</p>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span class="brand">
+        <img src="/assets/emblem-256.webp" alt="" width="28" height="28" loading="lazy">
+        <span>Null Ossuary</span>
+      </span>
+      <span class="muted small">Privacy · <a href="/">nossuary.com</a> · Project Zomboid is a trademark of The Indie Stone; not affiliated.</span>
+    </div>
+  </footer>
+</body>
+</html>
