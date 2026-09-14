@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Start a thread: /forums/new/?b=slug (js/forum/page-new.js). A form, not content: never indexed.
+       Everything the API returns is rendered with textContent, or as DOM nodes by js/forum/markdown.js
+       for post bodies; nothing is ever inserted as HTML. connect-src must name the origin of
+       forumApiUrl in js/config.js (tests/forum.test.mjs checks it). -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://nossuary-forum.stewbagger.workers.dev; img-src 'self' https://cdn.discordapp.com data:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <meta name="theme-color" content="#0b0d0c">
+  <title>New thread · Forums · Null Ossuary</title>
+  <meta name="description" content="Start a thread on the Null Ossuary forums.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="stylesheet" href="/css/style.css?v=20260913-3">
+  <!-- ?v= is the forum's build stamp: bump it in every forums/**/index.html AND in every import in
+       js/forum/*.js whenever any of those files, style.css or config.js changes (tests/forum.test.mjs
+       fails if the stamps disagree). -->
+  <script src="/js/config.js?v=20260913-3" defer></script>
+  <script type="module" src="/js/forum/page-new.js?v=20260913-3"></script>
+</head>
+<body class="forum">
+  <a class="skip" href="#forum-main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <a class="brand" href="/" aria-label="Null Ossuary home">
+      <img src="/assets/emblem-256.webp" alt="" width="36" height="36">
+      <span>Null Ossuary</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="/#work">Work</a></li>
+        <li><a href="/#projects">Projects</a></li>
+        <li><a href="/#play">Play</a></li>
+        <li><a href="/forums/" aria-current="page">Forums</a></li>
+        <li class="nav-session" id="forum-session" aria-live="polite"></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="forum-note" id="forum-note" role="status" hidden></div>
+
+  <main class="forum-page">
+    <div class="forum-hero forum-hero-slim" aria-hidden="true"></div>
+    <div class="wrap forum-wrap">
+      <p class="forum-status" id="forum-status" role="alert" hidden></p>
+      <div id="forum-main" aria-busy="true">
+        <p class="forum-loading"><span class="dot" aria-hidden="true"></span>Loading…</p>
+        <noscript><p class="forum-noscript">The forums need JavaScript to load posts. Turn it on and reload.</p></noscript>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span class="brand">
+        <img src="/assets/emblem-256.webp" alt="" width="28" height="28" loading="lazy">
+        <span>Null Ossuary</span>
+      </span>
+      <span class="muted small">Forums · <a href="/">nossuary.com</a> · Be civil; staff moderate. Project Zomboid is a trademark of The Indie Stone; not affiliated.</span>
+    </div>
+  </footer>
+</body>
+</html>

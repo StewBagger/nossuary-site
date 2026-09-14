@@ -100,6 +100,13 @@ window.OSSUARY = {
   // Worker's SITE_ORIGIN (deploy/status-worker/wrangler.toml), or every sign-in is refused.
   siteOrigin: "https://nossuary.com",
 
+  // Forum API (forums/, js/forum/*): the forum Worker in Projects/Null_Ossuary/deploy/forum-worker.
+  // Reading needs nothing; posting sends the member's sign-in token to this origin and no other.
+  // null = the forum pages say the forum is unavailable. Changing it means changing connect-src in
+  // the CSP of every forums/**/index.html too (tests/forum.test.mjs checks), and the DEFAULT_API copy
+  // in js/forum/boot.js (used when a cached config.js predates this key).
+  forumApiUrl: "https://nossuary-forum.stewbagger.workers.dev",
+
   // Endpoint of the contact-form relay (a serverless function that forwards to a
   // private Discord channel). null = the form points people to Discord instead.
   // NEVER put a Discord webhook URL here: this file is public.

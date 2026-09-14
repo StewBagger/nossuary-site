@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sign in with Discord for the forums: Discord returns here (https://nossuary.com/forums/auth/,
+       exactly, the redirect URI the forum Worker registers). The address carries Discord's one-time
+       code and the state: never indexed, never sent on as a Referer, stripped on load before anything
+       else runs. js/forum/page-auth.js trades them at the API only when the state is the one this tab
+       stored on the sign-in click (js/forum/auth.js, TAB BINDING), then returns to the forum page the
+       sign-in started from. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://nossuary-forum.stewbagger.workers.dev; img-src 'self' https://cdn.discordapp.com data:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <meta name="theme-color" content="#0b0d0c">
+  <title>Signing you in · Null Ossuary</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="stylesheet" href="/css/style.css?v=20260913-3">
+  <!-- ?v= build stamp: see forums/index.html. -->
+  <script src="/js/config.js?v=20260913-3" defer></script>
+  <script type="module" src="/js/forum/page-auth.js?v=20260913-3"></script>
+</head>
+<body class="signin signin-pending">
+  <main class="card signin-panel" aria-live="polite">
+    <img class="signin-emblem" src="/assets/emblem-256.webp" alt="" width="96" height="96">
+    <p class="eyebrow" id="signin-eyebrow">Sign in with Discord</p>
+    <h1 id="signin-title">Signing you in…</h1>
+    <p class="status status-online signin-spinner"><span class="dot" aria-hidden="true"></span><span>Checking with Discord</span></p>
+    <p class="muted" id="signin-line">Discord has confirmed who you are; the forum is opening your session.</p>
+    <noscript>
+      <p class="signin-noscript">This page needs JavaScript to finish signing in. Turn it on, then press
+        Sign in with Discord on the forum again.</p>
+    </noscript>
+    <p class="signin-actions"><a class="btn btn-ghost btn-sm" id="signin-retry" href="/forums/" hidden>Back to the forums</a></p>
+    <p class="signin-foot"><a href="/forums/">Null Ossuary · Forums</a></p>
+  </main>
+</body>
+</html>
