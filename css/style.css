@@ -309,6 +309,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--p
   text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 4px;
 }
 .session-out:hover, .link-button:hover { color: var(--phosphor); text-decoration-color: currentColor; }
+.session-out.danger:hover { color: var(--red); }
 .link-button { color: var(--phosphor); font-size: inherit; padding: 0; }
 @media (max-width: 760px) { .session-name { display: none; } .session-user .badge { display: none; } }
 

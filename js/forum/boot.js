@@ -1,8 +1,8 @@
 // What every forum page shares: config, the API client, who is signed in, and the header's session
 // area ("Sign in with Discord", or avatar + name + Sign out, plus the can't-post line).
-import { createApi, describeError } from "./api.js?v=20260913-3";
-import { beginSignIn, postingNote } from "./auth.js?v=20260913-3";
-import { $, el, avatar, showStatus } from "./render.js?v=20260913-3";
+import { createApi, describeError } from "./api.js?v=20260914-1";
+import { beginSignIn, postingNote } from "./auth.js?v=20260914-1";
+import { $, el, avatar, showStatus } from "./render.js?v=20260914-1";
 
 // Used when config.js is missing the key (a browser still holding a cached config.js from before the
 // forum). An explicit null in config.js switches the forum's API off. Keep in step with config.js,
@@ -26,6 +26,7 @@ export async function boot() {
     api: null,
     signIn,
     signOut,
+    deleteAccount,
     onSessionChange: () => {},
   };
 
@@ -63,6 +64,24 @@ export async function boot() {
     location.reload();
   }
 
+  async function deleteAccount(button) {
+    if (!confirm("Delete your forum account? This can't be undone.\n\n"
+      + "Your forum account, your sign-ins and the reports you filed are deleted, and the forum's access to your "
+      + "Discord account is revoked. Your posts are emptied and shown as deleted, and your threads and posts "
+      + "are shown as from [deleted member]. Staff moderation records are kept.\n\n"
+      + "Your Discord account and anything Chamberlain holds are not affected.")) return;
+    if (button) button.disabled = true;
+    try {
+      await ctx.api.deleteAccount();
+    } catch (err) {
+      if (button) button.disabled = false;
+      showStatus(`Couldn't delete your account: ${describeError(err)}`);
+      return;
+    }
+    ctx.api.token.clear();
+    location.reload();
+  }
+
   if (ctx.api.token.get()) {
     try {
       ctx.user = (await ctx.api.me())?.user || null;
@@ -90,11 +109,13 @@ function renderSession(ctx) {
     } else {
       const out = el("button", { class: "session-out", type: "button", text: "Sign out" });
       out.addEventListener("click", () => ctx.signOut(out));
+      const del = el("button", { class: "session-out danger", type: "button", text: "Delete my account" });
+      del.addEventListener("click", () => ctx.deleteAccount(del));
       slot.replaceChildren(el("span", { class: "session-user" },
         avatar(ctx.user, 28),
         el("span", { class: "session-name", text: ctx.user.name || "Member" }),
         ctx.user.is_staff ? el("span", { class: "badge badge-staff", text: "Staff" }) : null),
-      out);
+      out, del);
     }
   }
   if (note) {

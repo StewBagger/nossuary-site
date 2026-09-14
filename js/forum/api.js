@@ -141,6 +141,7 @@ export function createApi({ base, fetch: doFetch, storage, onSignedOut = () => {
     authExchange: (code, state) => request("POST", "/v1/auth/exchange", { body: { code, state }, read: false }),
     me: () => request("GET", "/v1/me", { read: false }),
     logout: () => request("POST", "/v1/auth/logout", { read: false }),
+    deleteAccount: () => request("DELETE", "/v1/me", { read: false }),
 
     categories: () => request("GET", "/v1/categories"),
     board: (slug, page = 1) => request("GET", `/v1/boards/${enc(slug)}?page=${positive(page)}`),

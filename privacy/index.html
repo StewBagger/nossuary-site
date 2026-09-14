@@ -13,7 +13,7 @@
   <link rel="canonical" href="https://nossuary.com/privacy/">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/css/style.css?v=20260913-3">
+  <link rel="stylesheet" href="/css/style.css?v=20260914-1">
 </head>
 <body class="forum">
   <a class="skip" href="#privacy-main">Skip to content</a>
@@ -72,14 +72,15 @@
             keep a copy of that post.</li>
         </ul>
 
-        <h3>Linked game accounts and playtime &mdash; only if you link</h3>
+        <h3>Linked game accounts &mdash; only if you link</h3>
         <p><em>Why we're allowed to:</em> you asked us to. You're told what's stored before anything is saved,
           and you can take it back at any time with <code>/unlink</code>. (Consent.)</p>
         <ul>
           <li>Your Steam account ID (or your Project Zomboid account name, if the server reports no Steam ID),
             which of our game servers confirmed it, when you linked, and when you were last seen in game.</li>
           <li>Your in-game account name, taken from our own game servers' player list.</li>
-          <li>Playtime on our servers for the linked account.</li>
+          <li>Play time on our servers may be recorded for a linked account. It is erased by
+            <code>/forgetme</code>.</li>
         </ul>
         <p>Linking exists so your ranks and achievements can follow you into our games and back. That's all
           it's used for. The linked set (Discord ID, in-game name, Steam ID) is sent to the bot that runs each
@@ -125,8 +126,8 @@
             whether you can post).</li>
           <li>Sign-in sessions, which last 14 days. Your Discord sign-in tokens are stored encrypted and are
             only used to re-check that you're still a member.</li>
-          <li>The threads and posts you write. A deleted post is hidden from everyone but kept for
-            moderation.</li>
+          <li>The threads and posts you write. A post removed by you or by staff is hidden from everyone but
+            kept for moderation, until your forum account is deleted (see below).</li>
           <li>Which posts you've reported, and when (the reason you give goes to staff in Discord and isn't
             kept by the forum), and a log of staff actions on posts and threads.</li>
         </ul>
@@ -156,16 +157,18 @@
 
         <h2>How long we keep it</h2>
         <ul>
-          <li><strong>Linked accounts:</strong> until you <code>/unlink</code>, or 12 months after you were last
-            seen on our game servers, whichever comes first.</li>
-          <li><strong>Levelling, achievements, playtime, links and join signals:</strong> until you run
-            <code>/forgetme</code>, or automatically 12 months after you leave the Discord server.</li>
-          <li><strong>Moderation records:</strong> for as long as they serve their purpose. A timed
-            sanction's record is kept until it expires.</li>
+          <li><strong>Linked accounts:</strong> until you <code>/unlink</code> or <code>/forgetme</code>, or
+            automatically 12 months after you leave the Discord server.</li>
+          <li><strong>Levelling, achievements, play time, links and join signals:</strong> until you run
+            <code>/forgetme</code>, or automatically 12 months after you leave the Discord server (for
+            departures the bot recorded).</li>
+          <li><strong>Moderation records:</strong> for as long as they serve their purpose. Nothing deletes
+            them automatically, and a warning or ban has no end date.</li>
           <li><strong>Supporter records:</strong> kept as a record of payment, including after
             <code>/forgetme</code>.</li>
-          <li><strong>Forum account:</strong> until you delete it from the forums. Sessions end after 14 days,
-            or when you sign out.</li>
+          <li><strong>Forum account:</strong> until you delete it from the forums, or automatically once it
+            has gone unused for 12 months (checked daily). Sessions end after 14 days, or when you sign
+            out.</li>
           <li><strong>Steam sign-in hand-off:</strong> minutes, and never more than 24 hours.</li>
         </ul>
 
@@ -191,13 +194,19 @@
           <li><code>/unlink</code> &mdash; removes your linked game accounts, here and on our game servers.
             Your levelling history stays.</li>
           <li><code>/forgetme</code> &mdash; erases your XP, achievements, activity progress, playtime, links
-            and join signals. Moderation records (until they expire) and supporter records stay, for the
-            reasons above.</li>
-          <li><strong>Delete my account</strong> on the forums &mdash; removes your forum account and sessions,
-            and your posts stay up without your name on them.</li>
+            and join signals. Moderation records (for as long as they serve their purpose) and supporter
+            records stay, for the reasons above.</li>
+          <li><strong>Delete my account</strong> on the forums (at the top of every forum page, next to Sign
+            out, while you're signed in) &mdash; deletes your forum account, your sessions and the reports
+            you filed, and revokes the forum's access to your Discord account. Your posts are emptied and
+            marked deleted, and your threads and posts are shown as from "[deleted member]". The log of
+            staff moderation actions is kept. This can't be undone.</li>
           <li>Anything else &mdash; a correction, a question, an objection &mdash; open a ticket in our Discord.
-            <!-- OWNER: a non-Discord contact is needed for people who have left or been banned. Fill in
-                 before publishing, or delete this sentence. -->
+            <!-- ============================================================================
+                 TODO OWNER — PLACEHOLDER BELOW IS NOT FILLED IN: [CONTACT ADDRESS — OWNER TO FILL IN]
+                 A non-Discord contact is needed for people who have left or been banned.
+                 Fill it in before publishing, or delete this sentence.
+                 ============================================================================ -->
             If you can't reach us on Discord, write to [CONTACT ADDRESS &mdash; OWNER TO FILL IN].</li>
         </ul>
         <p>If you think we've got something wrong and we can't sort it out, you can complain to your data

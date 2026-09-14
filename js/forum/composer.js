@@ -1,8 +1,8 @@
 // A post-body textarea with a character count, a formatting hint and a live preview rendered by the
 // same renderer the thread page uses — so what you see is what gets shown.
-import { renderMarkdown } from "./markdown.js?v=20260913-3";
-import { LIMITS } from "./api.js?v=20260913-3";
-import { el } from "./render.js?v=20260913-3";
+import { renderMarkdown } from "./markdown.js?v=20260914-1";
+import { LIMITS } from "./api.js?v=20260914-1";
+import { el } from "./render.js?v=20260914-1";
 
 let seq = 0;
 
