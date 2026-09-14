@@ -168,6 +168,14 @@
     $("#links-section").hidden = false;
   }
 
+  // --- Support ------------------------------------------------------------
+  function renderSupport() {
+    if (!cfg.kofiUrl) return;
+    document.querySelectorAll("[data-kofi]").forEach((a) => { a.href = cfg.kofiUrl; });
+    document.querySelectorAll("[data-support-nav]").forEach((li) => { li.hidden = false; });
+    $("#support").hidden = false;
+  }
+
   // --- Projects -----------------------------------------------------------
   function renderProjects() {
     const projects = cfg.projects || [];
@@ -249,6 +257,7 @@
   renderProjects();
   renderServers();
   renderMods();
+  renderSupport();
   renderLinks();
   wireForm();
   refreshStatus();

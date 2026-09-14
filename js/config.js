@@ -128,6 +128,9 @@ window.OSSUARY = {
     { name: "Jeeve's Integration", id: "3660924327", blurb: "The shared framework the ecosystem builds on, plus the optional Discord bridge." },
   ],
 
+  // Ko-fi page for the Support section and its nav link. null = no Support section.
+  kofiUrl: "https://ko-fi.com/kronosmedia",
+
   // Outbound links. Entries with a null url are not shown.
   links: [
     { label: "GitHub", detail: "Open-source code, starting with JeevesBot", url: "https://github.com/StewBagger" },

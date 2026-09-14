@@ -529,3 +529,8 @@ textarea { font-family: var(--sans); line-height: 1.55; }
 .footer { border-top: 1px solid var(--line); padding: 28px 0; background: #080a09; }
 .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; }
 .footer .brand { font-size: .9rem; }
+
+/* --- Support ----------------------------------------------------------- */
+.support-card h3 { margin-top: 14px; }
+.support-card p { margin: 0; }
+.support-card .pillar-glyph { color: var(--amber); background: rgba(240, 180, 76, .07); border-color: rgba(240, 180, 76, .25); box-shadow: none; }
