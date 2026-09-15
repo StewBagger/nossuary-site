@@ -1,0 +1,7 @@
+# Everything is crawlable. Pages that should stay out of search carry <meta name="robots" content="noindex">
+# instead of a Disallow here: a crawler blocked by robots.txt never reads that tag, and can still index
+# the bare URL from links elsewhere.
+User-agent: *
+Allow: /
+
+Sitemap: https://nossuary.com/sitemap.xml

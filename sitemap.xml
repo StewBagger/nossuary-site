@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Indexable pages only. Leave out the noindex pages (link/, forums/new/, forums/auth/) and the
+     forum's board/thread shells, whose content comes from query strings the forum API fills in.
+     Update <lastmod> when a listed page's content changes. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://nossuary.com/</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://nossuary.com/forums/</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://nossuary.com/privacy/</loc>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+</urlset>
