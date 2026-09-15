@@ -50,12 +50,14 @@
       list.append(
         el("article", { class: "card server", "data-server": s.id },
           el("div", { class: "server-top" },
-            el("span", { class: `tag tag-${(s.tag || "").toLowerCase()}`, text: s.tag }),
+            el("span", { class: "server-tags" },
+              s.tag ? el("span", { class: `tag tag-${s.tag.toLowerCase()}`, text: s.tag }) : null,
+              s.game ? el("span", { class: "tag tag-game", text: s.game }) : null),
             el("span", { class: "status status-unknown", "data-status": "" },
               el("span", { class: "dot", "aria-hidden": "true" }),
               el("span", { class: "status-text", text: "Status unavailable" }))),
           el("h3", { text: s.name }),
-          el("p", { class: "muted small", text: `${s.game} · ${s.subtitle}` }),
+          s.subtitle ? el("p", { class: "muted small", text: s.subtitle }) : null,
           el("div", { class: "addresses" },
             field("IP", s.ip),
             field("Port", s.port)),
@@ -65,6 +67,35 @@
             stat("In-game day", "day")))
       );
     }
+  }
+
+  // One line per server under the hero buttons, updated by applyStatus alongside the cards.
+  function renderLiveStrip() {
+    const servers = cfg.servers || [];
+    const strip = $("#live-strip");
+    if (!strip || !servers.length) return;
+    for (const s of servers) {
+      strip.append(el("li", { class: "live status-unknown", "data-live": s.id },
+        el("span", { class: "dot", "aria-hidden": "true" }),
+        el("a", { href: "#play", text: s.name }),
+        el("span", { class: "live-meta" },
+          s.game ? el("span", { class: "live-game", text: s.game }) : null,
+          el("span", { class: "live-count", text: "—" }))));
+    }
+    strip.hidden = false;
+  }
+
+  function renderComingSoon() {
+    const games = (cfg.comingSoon || []).filter((g) => g && g.game);
+    if (!games.length) return;
+    const list = $("#coming-list");
+    for (const g of games) {
+      list.append(el("li", { class: "card coming" },
+        el("span", { class: "tag tag-soon", text: "Planned" }),
+        el("strong", { text: g.game }),
+        el("span", { class: "muted small", text: g.note || "A Null server is planned. Nothing to join yet — follow the Discord for word." })));
+    }
+    $("#coming-soon").hidden = false;
   }
 
   function stat(label, key) {
@@ -120,6 +151,7 @@
   }
 
   function applyStatus(id, st) {
+    applyLive(id, st);
     const card = document.querySelector(`[data-server="${CSS.escape(id)}"]`);
     if (!card) return;
     const badge = $("[data-status]", card);
@@ -141,6 +173,22 @@
     // and "how often is it up" is exactly what someone looking at red wants.
     $('[data-stat="uptime"]', card).replaceChildren(...uptime(st.uptimePercent, st.uptimeWindowHours));
     set("day", Number.isFinite(st.day) ? String(st.day) : "—");
+  }
+
+  function applyLive(id, st) {
+    const row = document.querySelector(`[data-live="${CSS.escape(id)}"]`);
+    if (!row) return;
+    const count = $(".live-count", row);
+    if (!st) {
+      row.className = "live status-unknown";
+      count.textContent = "—";
+    } else if (!st.online) {
+      row.className = "live status-offline";
+      count.textContent = "offline";
+    } else {
+      row.className = "live status-online";
+      count.textContent = Number.isFinite(st.players) ? `${st.players} online` : "online";
+    }
   }
 
   // "99.2%", plus how much history backs it while that is under a week:
@@ -199,20 +247,36 @@
   }
 
   // --- Mods ---------------------------------------------------------------
+  // Grouped by `game`, one heading per game in first-seen order, so a second game's mods become a
+  // second group with no markup change.
   function renderMods() {
     const mods = (cfg.mods || []).filter((m) => /^\d+$/.test(m.id));
     if (!mods.length) { $("#mods").hidden = true; return; }
-    const list = $("#mod-list");
+    const groups = new Map();
     for (const m of mods) {
-      list.append(el("li", {},
-        el("a", {
-          class: "card mod-card",
-          href: `https://steamcommunity.com/sharedfiles/filedetails/?id=${m.id}`,
-          target: "_blank", rel: "noopener",
-        },
-          el("strong", { text: m.name }),
-          el("span", { class: "muted small", text: m.blurb || "" }),
-          el("span", { class: "mod-go small", text: "View on Workshop →" }))));
+      const game = m.game || "Other";
+      if (!groups.has(game)) groups.set(game, []);
+      groups.get(game).push(m);
+    }
+    const root = $("#mod-groups");
+    for (const [game, list] of groups) {
+      const ul = el("ul", { class: "mod-grid" });
+      for (const m of list) {
+        ul.append(el("li", {},
+          el("a", {
+            class: "card mod-card",
+            href: `https://steamcommunity.com/sharedfiles/filedetails/?id=${m.id}`,
+            target: "_blank", rel: "noopener",
+          },
+            el("strong", { text: m.name }),
+            el("span", { class: "muted small", text: m.blurb || "" }),
+            el("span", { class: "mod-go small", text: "View on Workshop →" }))));
+      }
+      root.append(el("div", { class: "mod-group" },
+        el("div", { class: "mod-group-head" },
+          el("h3", { text: game }),
+          el("span", { class: "mod-group-count", text: `${list.length} mod${list.length === 1 ? "" : "s"}` })),
+        ul));
     }
   }
 
@@ -255,7 +319,9 @@
 
   wireDiscord();
   renderProjects();
+  renderLiveStrip();
   renderServers();
+  renderComingSoon();
   renderMods();
   renderSupport();
   renderLinks();

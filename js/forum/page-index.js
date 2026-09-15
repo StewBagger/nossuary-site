@@ -1,8 +1,8 @@
 // forums/ — every category with its boards. The board list is whatever the API says; nothing here
 // knows which boards exist.
-import { boot } from "./boot.js?v=20260914-1";
-import { describeError } from "./api.js?v=20260914-1";
-import { el, mount, showStatus, emptyState, boardHref, threadHref, workshopHref, timeEl, count, validSlug, validId } from "./render.js?v=20260914-1";
+import { boot } from "./boot.js?v=20260915-1";
+import { describeError } from "./api.js?v=20260915-1";
+import { el, mount, showStatus, emptyState, boardHref, threadHref, workshopHref, timeEl, count, validSlug, validId } from "./render.js?v=20260915-1";
 
 function lastPost(last) {
   if (!last || !validId(last.thread_id)) return el("span", { class: "muted", text: "No posts yet" });
