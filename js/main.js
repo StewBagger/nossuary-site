@@ -69,22 +69,6 @@
     }
   }
 
-  // One line per server under the hero buttons, updated by applyStatus alongside the cards.
-  function renderLiveStrip() {
-    const servers = cfg.servers || [];
-    const strip = $("#live-strip");
-    if (!strip || !servers.length) return;
-    for (const s of servers) {
-      strip.append(el("li", { class: "live status-unknown", "data-live": s.id },
-        el("span", { class: "dot", "aria-hidden": "true" }),
-        el("a", { href: "#play", text: s.name }),
-        el("span", { class: "live-meta" },
-          s.game ? el("span", { class: "live-game", text: s.game }) : null,
-          el("span", { class: "live-count", text: "—" }))));
-    }
-    strip.hidden = false;
-  }
-
   function renderComingSoon() {
     const games = (cfg.comingSoon || []).filter((g) => g && g.game);
     if (!games.length) return;
@@ -151,7 +135,6 @@
   }
 
   function applyStatus(id, st) {
-    applyLive(id, st);
     const card = document.querySelector(`[data-server="${CSS.escape(id)}"]`);
     if (!card) return;
     const badge = $("[data-status]", card);
@@ -173,22 +156,6 @@
     // and "how often is it up" is exactly what someone looking at red wants.
     $('[data-stat="uptime"]', card).replaceChildren(...uptime(st.uptimePercent, st.uptimeWindowHours));
     set("day", Number.isFinite(st.day) ? String(st.day) : "—");
-  }
-
-  function applyLive(id, st) {
-    const row = document.querySelector(`[data-live="${CSS.escape(id)}"]`);
-    if (!row) return;
-    const count = $(".live-count", row);
-    if (!st) {
-      row.className = "live status-unknown";
-      count.textContent = "—";
-    } else if (!st.online) {
-      row.className = "live status-offline";
-      count.textContent = "offline";
-    } else {
-      row.className = "live status-online";
-      count.textContent = Number.isFinite(st.players) ? `${st.players} online` : "online";
-    }
   }
 
   // "99.2%", plus how much history backs it while that is under a week:
@@ -319,7 +286,6 @@
 
   wireDiscord();
   renderProjects();
-  renderLiveStrip();
   renderServers();
   renderComingSoon();
   renderMods();

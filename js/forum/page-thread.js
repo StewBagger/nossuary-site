@@ -1,13 +1,13 @@
 // forums/thread/?t=id[&page=N][#p-ID] — a thread's posts, the reply box, per-post actions and the
 // staff tools. Post bodies go through markdown.js (DOM nodes only); everything else is textContent.
-import { boot, signInButton } from "./boot.js?v=20260915-1";
-import { describeError } from "./api.js?v=20260915-1";
-import { renderMarkdown } from "./markdown.js?v=20260915-1";
-import { composer } from "./composer.js?v=20260915-1";
+import { boot, signInButton } from "./boot.js?v=20260915-2";
+import { describeError } from "./api.js?v=20260915-2";
+import { renderMarkdown } from "./markdown.js?v=20260915-2";
+import { composer } from "./composer.js?v=20260915-2";
 import {
   FORUMS, el, mount, showStatus, emptyState, breadcrumb, pagination, avatar, timeEl, absoluteTime,
   boardHref, threadHref, validSlug, validId, pageParam, postPermissions, staffBadge,
-} from "./render.js?v=20260915-1";
+} from "./render.js?v=20260915-2";
 
 let ctx;
 let threadId;
