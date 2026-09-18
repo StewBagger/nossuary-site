@@ -216,8 +216,16 @@
   // --- Mods ---------------------------------------------------------------
   // Grouped by `game`, one heading per game in first-seen order, so a second game's mods become a
   // second group with no markup change.
+  // Where a mod card points, by `store`. A mod with no store entry, an unknown one, or a
+  // non-numeric id is not shown at all -- Null Cartography and Null Smithy are finished but
+  // unpublished, and a card with nowhere to go is worse than no card.
+  const STORES = {
+    steam: { href: (id) => `https://steamcommunity.com/sharedfiles/filedetails/?id=${id}`, go: "View on Workshop →" },
+    moddb: { href: (id) => `https://mods.vintagestory.at/show/mod/${id}`, go: "View on the ModDB →" },
+  };
+
   function renderMods() {
-    const mods = (cfg.mods || []).filter((m) => /^\d+$/.test(m.id));
+    const mods = (cfg.mods || []).filter((m) => STORES[m.store] && /^\d+$/.test(m.id));
     if (!mods.length) { $("#mods").hidden = true; return; }
     const groups = new Map();
     for (const m of mods) {
@@ -229,15 +237,16 @@
     for (const [game, list] of groups) {
       const ul = el("ul", { class: "mod-grid" });
       for (const m of list) {
+        const store = STORES[m.store];
         ul.append(el("li", {},
           el("a", {
             class: "card mod-card",
-            href: `https://steamcommunity.com/sharedfiles/filedetails/?id=${m.id}`,
+            href: store.href(m.id),
             target: "_blank", rel: "noopener",
           },
             el("strong", { text: m.name }),
             el("span", { class: "muted small", text: m.blurb || "" }),
-            el("span", { class: "mod-go small", text: "View on Workshop →" }))));
+            el("span", { class: "mod-go small", text: store.go }))));
       }
       root.append(el("div", { class: "mod-group" },
         el("div", { class: "mod-group-head" },

@@ -1,9 +1,9 @@
 // forums/auth/ — Discord returns here with ?code&state. The query is read and stripped from the
 // address bar before anything else runs; the code is traded only when the state is the one this tab
 // stored on the sign-in click (auth.js, TAB BINDING), and then the browser goes back to where it was.
-import { createApi, describeError } from "./api.js?v=20260918-1";
-import { completeSignIn } from "./auth.js?v=20260918-1";
-import { config } from "./boot.js?v=20260918-1";
+import { createApi, describeError } from "./api.js?v=20260918-2";
+import { completeSignIn } from "./auth.js?v=20260918-2";
+import { config } from "./boot.js?v=20260918-2";
 
 const query = new URLSearchParams(location.search);
 if (location.search || location.hash) history.replaceState(null, "", location.pathname);

@@ -113,21 +113,34 @@ window.OSSUARY = {
   // NEVER put a Discord webhook URL here: this file is public.
   contactEndpoint: null,
 
-  // Public Workshop mods. `id` is the Workshop item id from each stable mod's workshop.txt in
-  // Projects/Jeeves_Ecosystem (experimental builds are unlisted and deliberately left out).
-  // `game` groups the list: each distinct game gets its own heading, in first-seen order.
+  // Published mods, one entry per mod that a visitor can actually go and get.
+  //
+  // `store` picks where `id` points: "steam" is a Workshop item id (from each stable mod's
+  // workshop.txt in Projects/Jeeves_Ecosystem) and "moddb" is a Vintage Story ModDB ASSET id.
+  // The asset id, not the mod's url alias -- an alias can be changed by whoever owns the mod
+  // page, and none of the Null mods has one set, so show/mod/<assetid> is their only address.
+  //
+  // Experimental builds are unlisted, and so is any mod without a store entry: Null Cartography
+  // and Null Smithy are finished but unpublished, and a card with nowhere to go is worse than no
+  // card. `game` groups the list, one heading per game in first-seen order.
+  //
+  // Names and blurbs here MUST match the forum board for the same mod -- forum-worker's
+  // test/seed.test.js asserts it across the two repos.
   mods: [
-    { game: "Project Zomboid", name: "Jeeve's Claims", id: "3674013419", blurb: "Property, vehicle and animal ownership with faction sharing and expiry — replaces vanilla safehouses." },
-    { game: "Project Zomboid", name: "Jeeve's Zones", id: "3739941052", blurb: "Paint regions onto the map and give each its own rules: loot, zombie population, PvP." },
-    { game: "Project Zomboid", name: "Jeeve's Hordes", id: "3672042113", blurb: "Unpredictable horde night events that keep every player on edge." },
-    { game: "Project Zomboid", name: "Jeeve's Drops", id: "3672451284", blurb: "Randomised airdrops and large supply events with loot worth fighting over." },
-    { game: "Project Zomboid", name: "Jeeve's Journals", id: "3674452315", blurb: "Write your progress into a journal and recover XP, recipes and map knowledge after death." },
-    { game: "Project Zomboid", name: "Jeeve's Personal Computer", id: "3693550188", blurb: "Working computers and a PDA: arcade games, training disks, printing, hacking." },
-    { game: "Project Zomboid", name: "Jeeve's Solar Arrays", id: "3737412008", blurb: "Solar panels, inverters and batteries to run your base off-grid." },
-    { game: "Project Zomboid", name: "Jeeve's Build", id: "3705530591", blurb: "Craft recipes for walls, frames, fences, stairs, floors and props from loaded tile packs." },
-    { game: "Project Zomboid", name: "Jeeve's QoL", id: "3687487317", blurb: "Quality-of-life improvements for Build 42, all-in-one or as individual sub-mods." },
-    { game: "Project Zomboid", name: "Jeeve's Patches", id: "3684025083", blurb: "Compatibility patches and vanilla Build 42 bug fixes. No configuration needed." },
-    { game: "Project Zomboid", name: "Jeeve's Integration", id: "3660924327", blurb: "The shared framework the ecosystem builds on, plus the optional Discord bridge." },
+    { game: "Project Zomboid", store: "steam", name: "Jeeve's Claims", id: "3674013419", blurb: "Property, vehicle and animal ownership with faction sharing and expiry — replaces vanilla safehouses." },
+    { game: "Project Zomboid", store: "steam", name: "Jeeve's Zones", id: "3739941052", blurb: "Paint regions onto the map and give each its own rules: loot, zombie population, PvP." },
+    { game: "Project Zomboid", store: "steam", name: "Jeeve's Hordes", id: "3672042113", blurb: "Unpredictable horde night events that keep every player on edge." },
+    { game: "Project Zomboid", store: "steam", name: "Jeeve's Drops", id: "3672451284", blurb: "Randomised airdrops and large supply events with loot worth fighting over." },
+    { game: "Project Zomboid", store: "steam", name: "Jeeve's Journals", id: "3674452315", blurb: "Write your progress into a journal and recover XP, recipes and map knowledge after death." },
+    { game: "Project Zomboid", store: "steam", name: "Jeeve's Personal Computer", id: "3693550188", blurb: "Working computers and a PDA: arcade games, training disks, printing, hacking." },
+    { game: "Project Zomboid", store: "steam", name: "Jeeve's Solar Arrays", id: "3737412008", blurb: "Solar panels, inverters and batteries to run your base off-grid." },
+    { game: "Project Zomboid", store: "steam", name: "Jeeve's Build", id: "3705530591", blurb: "Craft recipes for walls, frames, fences, stairs, floors and props from loaded tile packs." },
+    { game: "Project Zomboid", store: "steam", name: "Jeeve's QoL", id: "3687487317", blurb: "Quality-of-life improvements for Build 42, all-in-one or as individual sub-mods." },
+    { game: "Project Zomboid", store: "steam", name: "Jeeve's Patches", id: "3684025083", blurb: "Compatibility patches and vanilla Build 42 bug fixes. No configuration needed." },
+    { game: "Project Zomboid", store: "steam", name: "Jeeve's Integration", id: "3660924327", blurb: "The shared framework the ecosystem builds on, plus the optional Discord bridge." },
+    { game: "Vintage Story", store: "moddb", name: "Null Compass", id: "69456", blurb: "Three compasses and the temporal beacon they point at. Bearings, never positions." },
+    { game: "Vintage Story", store: "moddb", name: "Null Lockdown", id: "69462", blurb: "Hardcore navigation: no world map, no coordinate readouts, and the server-side leaks closed too." },
+    { game: "Vintage Story", store: "moddb", name: "Null Claims", id: "69465", blurb: "Land claiming without commands: one hotkey opens a window that drives vanilla's own claim system." },
   ],
 
   // Games with a Null server planned but nothing to join yet, shown under the servers as "Coming soon".

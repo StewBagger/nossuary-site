@@ -1,8 +1,8 @@
 // forums/new/?b=slug — start a thread: title + body with a live preview.
-import { boot, signInButton } from "./boot.js?v=20260918-1";
-import { describeError, LIMITS } from "./api.js?v=20260918-1";
-import { composer } from "./composer.js?v=20260918-1";
-import { FORUMS, el, mount, showStatus, emptyState, breadcrumb, boardHref, threadHref, validSlug, validId } from "./render.js?v=20260918-1";
+import { boot, signInButton } from "./boot.js?v=20260918-2";
+import { describeError, LIMITS } from "./api.js?v=20260918-2";
+import { composer } from "./composer.js?v=20260918-2";
+import { FORUMS, el, mount, showStatus, emptyState, breadcrumb, boardHref, threadHref, validSlug, validId } from "./render.js?v=20260918-2";
 
 async function main() {
   const ctx = await boot();

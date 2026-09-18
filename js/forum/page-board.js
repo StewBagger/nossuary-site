@@ -1,10 +1,10 @@
 // forums/board/?b=slug[&page=N] — one board's threads.
-import { boot, signInButton } from "./boot.js?v=20260918-1";
-import { describeError } from "./api.js?v=20260918-1";
+import { boot, signInButton } from "./boot.js?v=20260918-2";
+import { describeError } from "./api.js?v=20260918-2";
 import {
   FORUMS, el, mount, showStatus, emptyState, breadcrumb, pagination, avatar, timeEl, count,
   boardHref, threadHref, newThreadHref, storeLink, validSlug, validId, pageParam,
-} from "./render.js?v=20260918-1";
+} from "./render.js?v=20260918-2";
 
 function threadRow(t) {
   return el("li", { class: `thread-row${t.pinned ? " is-pinned" : ""}` },
