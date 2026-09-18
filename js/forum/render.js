@@ -32,10 +32,32 @@ export function threadHref(id, page = 1, postId = null) {
 
 export const newThreadHref = (slug) => `${FORUMS}new/?${new URLSearchParams({ b: slug })}`;
 
+const storeId = (id) =>
+  (typeof id === "string" || typeof id === "number") && /^\d{1,20}$/.test(String(id)) ? String(id) : null;
+
 export function workshopHref(id) {
-  return typeof id === "string" || typeof id === "number"
-    ? (/^\d{1,20}$/.test(String(id)) ? `https://steamcommunity.com/sharedfiles/filedetails/?id=${id}` : null)
-    : null;
+  const n = storeId(id);
+  return n ? `https://steamcommunity.com/sharedfiles/filedetails/?id=${n}` : null;
+}
+
+/** The Vintage Story ModDB, by numeric asset id. The alias URL is prettier but an
+ * alias can be changed by whoever owns the mod page; the asset id cannot. */
+export function moddbHref(id) {
+  const n = storeId(id);
+  return n ? `https://mods.vintagestory.at/show/mod/${n}` : null;
+}
+
+/**
+ * Where a mod board's "↗" chip points, or null for a board that is not about a
+ * published mod. A board carries at most one store id (the seed generator refuses
+ * both), so this returns one link and never has to choose between two.
+ */
+export function storeLink(board) {
+  const ws = workshopHref(board?.workshop_id);
+  if (ws) return { href: ws, short: "Workshop ↗", long: "View on Steam Workshop ↗", where: "Steam Workshop" };
+  const md = moddbHref(board?.moddb_id);
+  if (md) return { href: md, short: "ModDB ↗", long: "View on the Vintage Story ModDB ↗", where: "the Vintage Story ModDB" };
+  return null;
 }
 
 /** Only Discord's CDN over https — anything else is not shown (the page CSP would refuse it anyway). */

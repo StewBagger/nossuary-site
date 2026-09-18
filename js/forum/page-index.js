@@ -1,8 +1,8 @@
 // forums/ — every category with its boards. The board list is whatever the API says; nothing here
 // knows which boards exist.
-import { boot } from "./boot.js?v=20260915-2";
-import { describeError } from "./api.js?v=20260915-2";
-import { el, mount, showStatus, emptyState, boardHref, threadHref, workshopHref, timeEl, count, validSlug, validId } from "./render.js?v=20260915-2";
+import { boot } from "./boot.js?v=20260918-1";
+import { describeError } from "./api.js?v=20260918-1";
+import { el, mount, showStatus, emptyState, boardHref, threadHref, storeLink, timeEl, count, validSlug, validId } from "./render.js?v=20260918-1";
 
 function lastPost(last) {
   if (!last || !validId(last.thread_id)) return el("span", { class: "muted", text: "No posts yet" });
@@ -15,13 +15,13 @@ function lastPost(last) {
 }
 
 function boardRow(b) {
-  const ws = workshopHref(b.workshop_id);
+  const store = storeLink(b);
   return el("li", { class: "board-row" },
     el("div", { class: "board-main" },
       el("h3", { class: "board-name" }, el("a", { href: boardHref(b.slug), text: b.name || b.slug })),
       b.description ? el("p", { class: "muted small", text: b.description }) : null,
-      ws || b.staff_only_threads ? el("p", { class: "board-flags" },
-        ws ? el("a", { class: "chip-link", href: ws, target: "_blank", rel: "noopener", text: "Workshop ↗", "aria-label": `${b.name} on Steam Workshop` }) : null,
+      store || b.staff_only_threads ? el("p", { class: "board-flags" },
+        store ? el("a", { class: "chip-link", href: store.href, target: "_blank", rel: "noopener", text: store.short, "aria-label": `${b.name} on ${store.where}` }) : null,
         b.staff_only_threads ? el("span", { class: "badge", text: "Staff threads" }) : null) : null),
     el("dl", { class: "board-counts" },
       el("div", {}, el("dt", { text: "Threads" }), el("dd", { text: (b.threads ?? 0).toLocaleString("en-GB") })),

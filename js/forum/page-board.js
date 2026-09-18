@@ -1,10 +1,10 @@
 // forums/board/?b=slug[&page=N] — one board's threads.
-import { boot, signInButton } from "./boot.js?v=20260915-2";
-import { describeError } from "./api.js?v=20260915-2";
+import { boot, signInButton } from "./boot.js?v=20260918-1";
+import { describeError } from "./api.js?v=20260918-1";
 import {
   FORUMS, el, mount, showStatus, emptyState, breadcrumb, pagination, avatar, timeEl, count,
-  boardHref, threadHref, newThreadHref, workshopHref, validSlug, validId, pageParam,
-} from "./render.js?v=20260915-2";
+  boardHref, threadHref, newThreadHref, storeLink, validSlug, validId, pageParam,
+} from "./render.js?v=20260918-1";
 
 function threadRow(t) {
   return el("li", { class: `thread-row${t.pinned ? " is-pinned" : ""}` },
@@ -70,7 +70,7 @@ async function main() {
   const threads = (data.threads || []).filter((t) => validId(t.id));
   const pages = Number(data.pages) || 1;
   document.title = `${board.name || "Board"} · Forums · Null Ossuary`;
-  const ws = workshopHref(board.workshop_id);
+  const store = storeLink(board);
 
   const pager = () => pagination(Number(data.page) || page, pages, (n) => boardHref(board.slug, n));
   mount(
@@ -84,7 +84,7 @@ async function main() {
         el("p", { class: "eyebrow", text: board.category?.name || "Forum" }),
         el("h1", { text: board.name || board.slug }),
         board.description ? el("p", { class: "muted", text: board.description }) : null,
-        ws ? el("p", { class: "board-flags" }, el("a", { class: "chip-link", href: ws, target: "_blank", rel: "noopener", text: "View on Steam Workshop ↗" })) : null),
+        store ? el("p", { class: "board-flags" }, el("a", { class: "chip-link", href: store.href, target: "_blank", rel: "noopener", text: store.long })) : null),
       newThreadControl(ctx, board)),
     threads.length
       ? el("section", { "aria-label": "Threads" },

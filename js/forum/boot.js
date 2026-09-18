@@ -1,8 +1,8 @@
 // What every forum page shares: config, the API client, who is signed in, and the header's session
 // area ("Sign in with Discord", or avatar + name + Sign out, plus the can't-post line).
-import { createApi, describeError } from "./api.js?v=20260915-2";
-import { beginSignIn, postingNote } from "./auth.js?v=20260915-2";
-import { $, el, avatar, showStatus } from "./render.js?v=20260915-2";
+import { createApi, describeError } from "./api.js?v=20260918-1";
+import { beginSignIn, postingNote } from "./auth.js?v=20260918-1";
+import { $, el, avatar, showStatus } from "./render.js?v=20260918-1";
 
 // Used when config.js is missing the key (a browser still holding a cached config.js from before the
 // forum). An explicit null in config.js switches the forum's API off. Keep in step with config.js,
