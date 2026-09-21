@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Admin portal: the game servers' control layer (js/admin/page.js). Everything the API returns
+       is written with textContent; nothing is ever inserted as HTML. connect-src must name the
+       origin of portalApiUrl in js/config.js (tests/admin.test.mjs checks it).
+       Nothing on this page reaches a game server: every action is QUEUED, and Chamberlain
+       re-checks the grant before acting (Discord-Automation DR-0010). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://nossuary-portal.stewbagger.workers.dev; img-src 'self' data:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <!-- Not a public page. It needs a sign-in and a per-server grant to do anything, but there is no
+       reason for it to be indexed or followed. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0b0d0c">
+  <title>Server controls · Null Ossuary</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="stylesheet" href="/css/style.css?v=20260921-1">
+  <!-- ?v= is the admin build stamp: bump it here AND in every import in js/admin/*.js whenever any
+       of those files, style.css or config.js changes (tests/admin.test.mjs fails if they disagree). -->
+  <script src="/js/config.js?v=20260921-1" defer></script>
+  <script type="module" src="/js/admin/page.js?v=20260921-1"></script>
+</head>
+<body class="forum">
+  <a class="skip" href="#admin-main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <a class="brand" href="/" aria-label="Null Ossuary home">
+      <img src="/assets/emblem-256.webp" alt="" width="36" height="36">
+      <span>Null Ossuary</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="/#play">Play</a></li>
+        <li><a href="/forums/">Forums</a></li>
+        <li><a href="https://discord.gg/PtMaTp385b" target="_blank" rel="noopener">Discord</a></li>
+        <li class="nav-session" id="admin-who" aria-live="polite"></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="forum-page">
+    <section class="forum-hero" aria-labelledby="admin-title">
+      <div class="wrap">
+        <p class="eyebrow">Staff</p>
+        <h1 id="admin-title">Server controls</h1>
+        <p class="lede">What you may do here is granted per server. Every action is queued and
+          carried out by Chamberlain on the server's own box — nothing on this page touches a game
+          server directly.</p>
+      </div>
+    </section>
+
+    <div class="wrap forum-wrap">
+      <p class="forum-status admin-status" id="admin-status" role="alert" hidden></p>
+
+      <section class="admin-gate" id="admin-gate" hidden>
+        <h2>Sign in</h2>
+        <p id="admin-gate-reason"></p>
+        <p><a class="btn" href="/forums/">Go to the forums</a></p>
+      </section>
+
+      <div id="admin-main" aria-busy="true">
+        <p class="forum-loading"><span class="dot" aria-hidden="true"></span>Loading your servers…</p>
+        <noscript><p class="forum-noscript">The controls need JavaScript. Turn it on and reload.</p></noscript>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span class="brand">
+        <img src="/assets/emblem-256.webp" alt="" width="28" height="28" loading="lazy">
+        <span>Null Ossuary</span>
+      </span>
+      <span class="muted small">Server controls · <a href="/">nossuary.com</a> · Actions are logged with your Discord id.</span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+// The admin portal API client (Worker contract v1). No DOM here, so it runs unchanged under
+// node --test.
+//
+// The sign-in token is the FORUM'S: one Discord session, two Workers. It lives in localStorage
+// under the same key and is only ever sent as a Bearer header to the one API base this client was
+// built with — never in a URL, never to another origin.
+//
+// NOTHING THIS CLIENT CALLS TOUCHES A GAME SERVER. Every write is queued; Chamberlain polls the
+// queue, re-checks the grant against its own store and acts. So a refusal can arrive twice: once
+// from the Worker (you do not hold that level, per its derived copy) and once from the authority,
+// in the command's `error` after the fact. The second is the one that decided anything.
+
+export const TOKEN_KEY = "nossuary.forum.token";
+
+// Used when config.js is missing the key. Keep in step with config.js and with connect-src in
+// admin/index.html's CSP.
+export const DEFAULT_API = "https://nossuary-portal.stewbagger.workers.dev";
+
+/** Actions, and the one-word verb a button shows. */
+export const ACTION_LABELS = Object.freeze({
+  restart: "Restart",
+  restart_cancel: "Cancel restart",
+  start: "Start",
+  stop: "Stop",
+  skip_next_restart: "Skip next restart",
+});
+
+/** Which actions want a confirmation before they are sent. */
+export const DESTRUCTIVE = Object.freeze(new Set(["stop", "start", "restart"]));
+
+export class PortalError extends Error {
+  constructor(status, code, detail = null) {
+    super(describeError({ status, code, detail }));
+    this.name = "PortalError";
+    this.status = status;     // 0 = never reached the API
+    this.code = code;
+    this.detail = detail;
+  }
+}
+
+const CODE_MESSAGES = {
+  mfa_required: "Turn on two-factor authentication for your Discord account, then sign in again.",
+  not_member: "The portal needs membership of the Null Ossuary Discord.",
+  not_owner: "Only the owner can change who has access.",
+  forbidden: "You don't have that level of access on this server.",
+  unknown_server: "That server isn't configured.",
+  unsupported: "This server can't do that.",
+  restart_already_pending: "A restart is already scheduled for this server.",
+  restart_in_progress: "That server is restarting already.",
+  no_restart_pending: "There's no restart scheduled to cancel.",
+  bridge_absent: "The server's in-game bridge isn't answering. Try again shortly.",
+  unreachable: "Chamberlain couldn't reach that server.",
+  queued_grants_disabled: "Grant changes through the website are switched off.",
+};
+
+/** One friendly sentence for any failure. Plain text: callers set it with textContent. */
+export function describeError({ status, code, detail } = {}) {
+  if (status === 0 || code === "network") return "Couldn't reach the portal. Check your connection and try again.";
+  if (status === 401) return "Your portal session has expired. Sign in again.";
+  if (status === 503) return "The portal isn't configured yet.";
+  if (code && CODE_MESSAGES[code]) return CODE_MESSAGES[code];
+  if (typeof detail === "string" && detail) return detail;
+  return "Something went wrong. Try again.";
+}
+
+/** The API base with no trailing slash, or null. https only, except loopback for local testing. */
+export function normalizeBase(value) {
+  if (typeof value !== "string" || !value) return null;
+  let url;
+  try { url = new URL(value); } catch { return null; }
+  const loopback = url.hostname === "127.0.0.1" || url.hostname === "localhost";
+  if (url.protocol !== "https:" && !(url.protocol === "http:" && loopback)) return null;
+  if (url.username || url.password || url.search || url.hash) return null;
+  return `${url.origin}${url.pathname.replace(/\/+$/, "")}`;
+}
+
+export function createApi({ base, token = null, fetchImpl = fetch, onSignedOut = () => {} } = {}) {
+  const root = normalizeBase(base);
+  let bearer = token;
+
+  async function call(method, path, body) {
+    if (!root) throw new PortalError(0, "unconfigured");
+    const headers = {};
+    if (bearer) headers.authorization = `Bearer ${bearer}`;
+    if (body !== undefined) headers["content-type"] = "application/json";
+    let res;
+    try {
+      res = await fetchImpl(root + path, {
+        method, headers,
+        body: body === undefined ? undefined : JSON.stringify(body),
+      });
+    } catch {
+      throw new PortalError(0, "network");
+    }
+    let data = null;
+    try {
+      const text = await res.text();
+      data = text ? JSON.parse(text) : null;
+    } catch {
+      data = null;
+    }
+    if (res.status === 401) {
+      // The token is dead, or the portal's shorter window has passed. Either way the
+      // page must stop pretending it is signed in.
+      bearer = null;
+      onSignedOut();
+      throw new PortalError(401, data?.error || "unauthorized", data?.detail || null);
+    }
+    if (!res.ok) throw new PortalError(res.status, data?.reason || data?.error || "error", data?.detail || null);
+    return data;
+  }
+
+  return {
+    get configured() { return Boolean(root); },
+    setToken(v) { bearer = v; },
+    me: () => call("GET", "/v1/portal/me"),
+    servers: () => call("GET", "/v1/portal/servers"),
+    /** Queue one action. Returns {id, state}; the outcome arrives later via command(). */
+    run: (serverKey, action, { delaySeconds = null, reason = null } = {}) => {
+      const body = { server_key: serverKey, action };
+      if (delaySeconds !== null && delaySeconds !== undefined) body.delay_s = delaySeconds;
+      if (reason) body.reason = reason;
+      return call("POST", "/v1/portal/commands", body);
+    },
+    command: (id) => call("GET", `/v1/portal/commands/${encodeURIComponent(id)}`),
+    grants: () => call("GET", "/v1/portal/grants"),
+    setGrant: (discordId, serverKey, level) =>
+      call("POST", "/v1/portal/grants", { discord_id: discordId, server_key: serverKey, level }),
+  };
+}
+
+/**
+ * Poll one queued command until the authority writes an outcome.
+ *
+ * The queue is polled by Chamberlain every few seconds, so an answer normally lands almost at
+ * once. `timeoutMs` is not a failure of the command — it is this page giving up on watching.
+ * The command may still run, which is why the message says so rather than "it failed".
+ */
+export async function awaitOutcome(api, id, { timeoutMs = 45000, intervalMs = 1000, sleep = null } = {}) {
+  const wait = sleep || ((ms) => new Promise((r) => setTimeout(r, ms)));
+  const deadline = Date.now() + timeoutMs;
+  for (;;) {
+    const row = await api.command(id);
+    if (row && row.state === "done") return row;
+    if (Date.now() >= deadline) return { ...(row || { id }), state: "pending", timedOut: true };
+    await wait(intervalMs);
+  }
+}

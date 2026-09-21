@@ -108,6 +108,15 @@ window.OSSUARY = {
   // in js/forum/boot.js (used when a cached config.js predates this key).
   forumApiUrl: "https://nossuary-forum.stewbagger.workers.dev",
 
+  // Admin portal API (admin/, js/admin/*): the portal Worker in
+  // Projects/Null_Ossuary/deploy/portal-worker. It reads the SAME sign-in token as the forum
+  // — one Discord session, two Workers — and every write it accepts is QUEUED for Chamberlain,
+  // which re-checks the grant before touching a game server. Nothing here can reach one.
+  // null = the admin page says the portal is unavailable. Changing it means changing connect-src
+  // in admin/index.html's CSP too (tests/admin.test.mjs checks), and the DEFAULT_API copy in
+  // js/admin/api.js (used when a cached config.js predates this key).
+  portalApiUrl: "https://nossuary-portal.stewbagger.workers.dev",
+
   // Endpoint of the contact-form relay (a serverless function that forwards to a
   // private Discord channel). null = the form points people to Discord instead.
   // NEVER put a Discord webhook URL here: this file is public.

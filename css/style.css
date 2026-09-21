@@ -550,3 +550,23 @@ textarea { font-family: var(--sans); line-height: 1.55; }
 .support-card h3 { margin-top: 14px; }
 .support-card p { margin: 0; }
 .support-card .pillar-glyph { color: var(--amber); background: rgba(240, 180, 76, .07); border-color: rgba(240, 180, 76, .25); box-shadow: none; }
+
+/* --- Admin portal (admin/, js/admin/*) ------------------------------------------ */
+/* Deliberately plain: this is a control surface, not a landing page. The one thing it
+   must do visually is make which SERVER a button belongs to unmistakable, because the
+   whole reason it exists is people firing commands at the wrong one. */
+.admin-card { border: 1px solid var(--line, #26302b); border-radius: 10px; padding: 1rem 1.15rem; margin: 0 0 1rem; background: rgba(255,255,255,.02); }
+.admin-card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: .75rem; }
+.admin-card-head h2 { margin: 0; font-size: 1.15rem; }
+.admin-level { font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; opacity: .7; }
+.admin-actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+.admin-action { font: inherit; padding: .45rem .9rem; border-radius: 6px; border: 1px solid var(--line, #26302b); background: transparent; color: inherit; cursor: pointer; }
+.admin-action:hover:not(:disabled) { border-color: currentColor; }
+.admin-action:disabled { opacity: .5; cursor: progress; }
+.admin-outcome { margin: .75rem 0 0; font-size: .9rem; min-height: 1.2em; }
+.admin-outcome--pending { opacity: .75; }
+.admin-outcome--ok { color: #99f2a8; }
+.admin-outcome--error { color: #ff5263; }
+.admin-empty { opacity: .75; font-size: .92rem; margin: 0; }
+.admin-gate { border: 1px solid var(--line, #26302b); border-radius: 10px; padding: 1.25rem; }
+.admin-status--error { color: #ff5263; }
