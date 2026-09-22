@@ -9,7 +9,7 @@
 import {
   ACTION_LABELS, ADMIN_SPECS, COMMAND_SPECS, DEFAULT_API, DESTRUCTIVE, TOKEN_KEY,
   awaitOutcome, createApi, describeError, describeStatus,
-} from "./api.js?v=20260922-1";
+} from "./api.js?v=20260922-2";
 
 const $ = (sel, root = document) => root.querySelector(sel);
 
@@ -86,12 +86,126 @@ async function main() {
 
   const main_ = $("#admin-main");
   main_.replaceChildren();
+  if (me.owner) main_.append(await accessSection(api, servers));
   if (!servers.length) {
     main_.append(el("p", "admin-empty",
       "You don't have access to any servers yet. The owner grants it per server."));
     return;
   }
   for (const server of servers) main_.append(card(api, server));
+}
+
+/** Who may use the portal, and the owner's way to change it.
+ *
+ * Owner-only, and it is the ONE place a grant can be made from a browser. Every
+ * change carries the owner's phrase, typed each time: a compromised Worker can forge
+ * an actor id, so the id alone was never enough to authorise handing out access.
+ * Chamberlain holds the phrase and is the only thing that checks it.
+ */
+async function accessSection(api, servers) {
+  const wrap = el("section", "admin-access");
+  wrap.append(el("h2", "admin-access-title", "Who has access"));
+
+  const list = el("div", "admin-grant-list");
+  wrap.append(list);
+  const refresh = async () => {
+    list.replaceChildren();
+    try {
+      const { grants } = await api.grants();
+      if (!grants.length) {
+        list.append(el("p", "admin-empty",
+          "Nobody else has access. You have it implicitly and need no row."));
+        return;
+      }
+      for (const g of grants) {
+        const row = el("p", "admin-grant");
+        row.append(el("span", "admin-grant-who", g.name || g.discord_id));
+        row.append(el("span", null, ` — ${g.level} on ${g.server_key}`));
+        list.append(row);
+      }
+    } catch (err) {
+      list.append(el("p", "admin-outcome admin-outcome--error", describeError(err)));
+    }
+  };
+  await refresh();
+
+  const form = el("form", "admin-command");
+  const field = (labelText, node) => {
+    const label = el("label", "admin-field");
+    label.append(el("span", "admin-field-label", labelText));
+    node.className = "admin-input";
+    label.append(node);
+    form.append(label);
+    return node;
+  };
+  const who = field("Discord user id", Object.assign(document.createElement("input"),
+    { type: "text", placeholder: "151000000000000000", required: true }));
+  const where = document.createElement("select");
+  for (const s of servers) {
+    const o = document.createElement("option");
+    o.value = s.server_key;
+    o.textContent = s.display_name;
+    where.append(o);
+  }
+  field("Server", where);
+  const what = document.createElement("select");
+  for (const [v, t] of [["view", "View"], ["operate", "Operate"],
+    ["administer", "Administer"], ["", "Revoke"]]) {
+    const o = document.createElement("option");
+    o.value = v;
+    o.textContent = t;
+    what.append(o);
+  }
+  field("Level", what);
+  const phrase = field("Your phrase", Object.assign(document.createElement("input"),
+    { type: "password", required: true, autocomplete: "off" }));
+
+  const go = el("button", "admin-action", "Apply");
+  go.type = "submit";
+  form.append(go);
+  const outcome = el("p", "admin-outcome");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const id = who.value.trim();
+    if (!/^[0-9]{17,20}$/.test(id)) {
+      outcome.textContent = "That is not a Discord user id.";
+      outcome.className = "admin-outcome admin-outcome--error";
+      return;
+    }
+    if (!phrase.value) {
+      outcome.textContent = "Your phrase is needed.";
+      outcome.className = "admin-outcome admin-outcome--error";
+      return;
+    }
+    go.disabled = true;
+    outcome.textContent = "Queued — waiting for Chamberlain…";
+    outcome.className = "admin-outcome admin-outcome--pending";
+    try {
+      const level = what.value === "" ? null : what.value;
+      const { id: cmdId } = await api.setGrant(id, where.value, level, phrase.value);
+      const done = await awaitOutcome(api, cmdId);
+      if (done.timedOut) {
+        outcome.textContent = "Still waiting — reload to check.";
+      } else if (done.ok) {
+        outcome.textContent = level ? `Granted ${level}.` : "Revoked.";
+        outcome.className = "admin-outcome admin-outcome--ok";
+        phrase.value = "";
+        await refresh();
+      } else {
+        outcome.textContent = describeError({ status: 200, code: done.error });
+        outcome.className = "admin-outcome admin-outcome--error";
+      }
+    } catch (err) {
+      outcome.textContent = describeError(err);
+      outcome.className = "admin-outcome admin-outcome--error";
+    } finally {
+      go.disabled = false;
+    }
+  });
+  wrap.append(form);
+  wrap.append(outcome);
+  return wrap;
 }
 
 function card(api, server) {

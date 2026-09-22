@@ -489,8 +489,15 @@ test("pages: one ?v= build stamp across forum pages, forum modules and link page
   ];
   const stamps = new Map();
   for (const f of files) {
-    for (const m of fs.readFileSync(f, "utf8").matchAll(/\?v=([\w.-]+)/g)) {
-      stamps.set(m[1], [...(stamps.get(m[1]) || []), path.relative(ROOT, f)]);
+    for (const line of fs.readFileSync(f, "utf8").split("\n")) {
+      // The admin bundle is a SEPARATE bundle with its own stamp and its own test
+      // (tests/admin.test.mjs). The forums header loads one admin module to decide
+      // whether to show the Controls link; that reference must not drag the forum's
+      // stamp and the portal's into lockstep, because they ship independently.
+      if (line.includes("/js/admin/")) continue;
+      for (const m of line.matchAll(/\?v=([\w.-]+)/g)) {
+        stamps.set(m[1], [...(stamps.get(m[1]) || []), path.relative(ROOT, f)]);
+      }
     }
   }
   assert.equal(stamps.size, 1, `stamps disagree: ${JSON.stringify(Object.fromEntries(stamps))}`);
@@ -517,7 +524,13 @@ test("pages: every forum page has the CSP, naming config.js's forumApiUrl origin
     assert.ok(csp, `${rel} has a CSP`);
     const directives = Object.fromEntries(csp.split(";").map((d) => d.trim().split(/\s+/)).map(([k, ...v]) => [k, v]));
     assert.deepEqual(directives["default-src"], ["'self'"], rel);
-    assert.deepEqual(directives["connect-src"], [apiOrigin], rel);
+    // The forums index also asks the PORTAL whether to reveal the Controls link, so
+    // it names a second origin. Every other forum page names only the forum's: a
+    // page that talks to the portal without needing to is a page whose CSP has
+    // stopped describing what it does.
+    const portalOrigin = new URL(sandbox.window.OSSUARY.portalApiUrl).origin;
+    const allowed = rel === "forums/index.html" ? [apiOrigin, portalOrigin] : [apiOrigin];
+    assert.deepEqual(directives["connect-src"], allowed, rel);
     assert.deepEqual(directives["img-src"], ["'self'", "https://cdn.discordapp.com", "data:"], rel);
     assert.deepEqual(directives["script-src"], ["'self'"], rel);
     assert.deepEqual(directives["object-src"], ["'none'"], rel);

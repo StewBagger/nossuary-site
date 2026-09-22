@@ -324,3 +324,50 @@ test("access levels offered match what the game box accepts", () => {
   assert.deepEqual(level.choices.map(([v]) => v).sort(),
     ["admin", "gm", "moderator", "none", "observer", "overseer"]);
 });
+
+// -- the Controls link ------------------------------------------------------------
+
+const navJs = fs.readFileSync(path.join(ROOT, "js", "admin", "nav.js"), "utf8");
+const forumsIndex = fs.readFileSync(path.join(ROOT, "forums", "index.html"), "utf8");
+
+test("the Controls link is hidden in the markup, not revealed by CSS", () => {
+  // Hidden in the HTML means a visitor with JS off, or a signed-out one, never sees
+  // it — rather than seeing it flash and disappear.
+  assert.match(forumsIndex, /<li id="nav-controls" hidden>/);
+});
+
+test("nav.js fails closed: every path that is not a confirmed yes leaves it hidden", () => {
+  // No storage, no token, unconfigured API, an error, an empty list — all return
+  // false, and only one line sets hidden = false.
+  const reveals = navJs.match(/hidden\s*=\s*false/g) || [];
+  assert.equal(reveals.length, 1, "more than one place reveals the link");
+  assert.match(navJs, /servers\.length === 0\) return false/);
+  assert.match(navJs, /catch\s*{[\s\S]*?return false/);
+});
+
+test("the link is gated on having a SERVER, not merely on being signed in", () => {
+  // A member with a session but no grant sees nothing on /admin/, so offering them
+  // the link would be a promise the page does not keep.
+  assert.match(navJs, /api\.servers\(\)/);
+  assert.ok(!/portal\/me/.test(navJs), "gated on identity rather than on access");
+});
+
+test("the grants call carries the owner's phrase and sends it untouched", async () => {
+  const impl = fakeFetch([{ status: 202, body: { id: "x" } }]);
+  await api.createApi({ base: BASE, token: "t", fetchImpl: impl })
+    .setGrant("151000000000000042", "pz-stable", "operate", "  my phrase  ");
+  const sent = JSON.parse(impl.calls[0].body);
+  assert.equal(sent.confirm, "  my phrase  ");
+  assert.equal(sent.level, "operate");
+});
+
+test("a revoke is a null level, not an empty string", () => {
+  // The Worker distinguishes them: null revokes, "" is an unknown level.
+  assert.match(pageJs, /what\.value === ""\s*\?\s*null\s*:\s*what\.value/);
+});
+
+test("the owner's phrase input is a password field and is never prefilled", () => {
+  const block = pageJs.slice(pageJs.indexOf("Your phrase") - 200, pageJs.indexOf("Your phrase") + 300);
+  assert.match(block, /type:\s*"password"/);
+  assert.ok(!/value:\s*["'`][^"'`]/.test(block), "the phrase field is prefilled");
+});

@@ -116,6 +116,7 @@ const CODE_MESSAGES = {
   mfa_required: "Turn on two-factor authentication for your Discord account, then sign in again.",
   not_member: "The portal needs membership of the Null Ossuary Discord.",
   not_owner: "Only the owner can change who has access.",
+  wrong_grant_phrase: "That is not the owner's phrase. Nothing was changed.",
   forbidden: "You don't have that level of access on this server.",
   unknown_server: "That server isn't configured.",
   unsupported: "This server can't do that.",
@@ -124,7 +125,7 @@ const CODE_MESSAGES = {
   no_restart_pending: "There's no restart scheduled to cancel.",
   bridge_absent: "The server's in-game bridge isn't answering. Try again shortly.",
   unreachable: "Chamberlain couldn't reach that server.",
-  queued_grants_disabled: "Grant changes through the website are switched off.",
+  queued_grants_disabled: "Granting through the website is switched off, or no owner phrase is configured on Chamberlain.",
 };
 
 /** One friendly sentence for any failure. Plain text: callers set it with textContent. */
@@ -204,8 +205,12 @@ export function createApi({ base, token = null, fetchImpl = fetch, onSignedOut =
     runAdmin: (serverKey, command, params = {}) =>
       call("POST", "/v1/portal/commands", { server_key: serverKey, action: command, ...params }),
     grants: () => call("GET", "/v1/portal/grants"),
-    setGrant: (discordId, serverKey, level) =>
-      call("POST", "/v1/portal/grants", { discord_id: discordId, server_key: serverKey, level }),
+    /** Grant or revoke (level null). `confirm` is the owner's phrase, typed each
+     * time and sent exactly as typed -- it is the one thing a compromised Worker
+     * could not forge, and nothing between here and Chamberlain may inspect it. */
+    setGrant: (discordId, serverKey, level, confirm) =>
+      call("POST", "/v1/portal/grants",
+        { discord_id: discordId, server_key: serverKey, level, confirm }),
   };
 }
 

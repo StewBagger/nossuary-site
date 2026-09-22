@@ -7,7 +7,7 @@
        Everything the API returns is rendered with textContent, or as DOM nodes by js/forum/markdown.js
        for post bodies; nothing is ever inserted as HTML. connect-src must name the origin of
        forumApiUrl in js/config.js (tests/forum.test.mjs checks it). -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://nossuary-forum.stewbagger.workers.dev; img-src 'self' https://cdn.discordapp.com data:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://nossuary-forum.stewbagger.workers.dev https://nossuary-portal.stewbagger.workers.dev; img-src 'self' https://cdn.discordapp.com data:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
   <meta name="theme-color" content="#0b0d0c">
   <title>Forums · Null Ossuary</title>
   <meta name="description" content="The Null Ossuary forums: Project Zomboid servers and Jeeves mods, Enshrouded, Vintage Story and the community.">
@@ -19,6 +19,9 @@
        fails if the stamps disagree). -->
   <script src="/js/config.js?v=20260918-2" defer></script>
   <script type="module" src="/js/forum/page-index.js?v=20260918-2"></script>
+  <!-- Reveals the Controls link only for a member who has a server. Hidden in the
+       markup, so JS-off and signed-out visitors never see it. -->
+  <script type="module" src="/js/admin/nav.js?v=20260922-2"></script>
 </head>
 <body class="forum">
   <a class="skip" href="#forum-main">Skip to content</a>
@@ -36,7 +39,7 @@
         <li><a href="/#support">Support</a></li>
         <li><a href="/#work">Workshop</a></li>
         <li><a href="/#contact">Contact</a></li>
-        <li><a href="/admin/">Controls</a></li>
+        <li id="nav-controls" hidden><a href="/admin/">Controls</a></li>
         <li><a href="https://discord.gg/PtMaTp385b" target="_blank" rel="noopener">Discord</a></li>
         <li class="nav-session" id="forum-session" aria-live="polite"></li>
       </ul>
