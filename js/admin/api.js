@@ -25,6 +25,41 @@ export const ACTION_LABELS = Object.freeze({
   skip_next_restart: "Skip next restart",
 });
 
+/** In-game commands, and the fields each one takes.
+ *
+ * Declared together so a control and its inputs cannot drift apart: adding a command
+ * without saying what it needs draws a button that the Worker then refuses, which is
+ * the failure the capability lists exist to prevent one layer down.
+ *
+ * `min`/`max` here are for the browser's own number input. They are a convenience,
+ * not the rule -- the Worker checks types and sizes, and the game box decides what is
+ * actually sensible for Project Zomboid. */
+export const COMMAND_SPECS = Object.freeze({
+  horde_spawn: {
+    label: "Spawn horde",
+    fields: [{ name: "count", kind: "number", label: "Zombies", min: 1, max: 200, value: 20, required: true }],
+  },
+  horde_stop: { label: "Stop horde", fields: [] },
+  horde_night: { label: "Force horde night", fields: [] },
+  horde_schedule: {
+    label: "Reschedule horde night",
+    fields: [{ name: "day", kind: "number", label: "World day", min: 1, max: 100000, required: true }],
+  },
+  airdrop: {
+    label: "Air drop",
+    fields: [
+      { name: "player", kind: "text", label: "On player (optional)", placeholder: "anyone" },
+      {
+        name: "crate", kind: "choice", label: "Crate (optional)",
+        choices: [["", "Random"], ["military", "Military"], ["medical", "Medical"],
+          ["materials", "Materials"], ["fooddrink", "Food/Drink"],
+          ["toolsmelee", "Tools/Melee"], ["literature", "Literature"]],
+      },
+    ],
+  },
+  supply_event: { label: "Supply event", fields: [] },
+});
+
 /** Which actions want a confirmation before they are sent. */
 export const DESTRUCTIVE = Object.freeze(new Set(["stop", "start", "restart"]));
 
@@ -116,6 +151,9 @@ export function createApi({ base, token = null, fetchImpl = fetch, onSignedOut =
     me: () => call("GET", "/v1/portal/me"),
     servers: () => call("GET", "/v1/portal/servers"),
     /** Queue one action. Returns {id, state}; the outcome arrives later via command(). */
+    /** Queue an in-game command with its declared parameters. */
+    runCommand: (serverKey, command, params = {}) =>
+      call("POST", "/v1/portal/commands", { server_key: serverKey, action: command, ...params }),
     run: (serverKey, action, { delaySeconds = null, reason = null } = {}) => {
       const body = { server_key: serverKey, action };
       if (delaySeconds !== null && delaySeconds !== undefined) body.delay_s = delaySeconds;

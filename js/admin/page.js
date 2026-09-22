@@ -7,9 +7,9 @@
 // queued; the outcome arrives when Chamberlain has re-checked the grant and acted, and the button
 // stays busy until then.
 import {
-  ACTION_LABELS, DEFAULT_API, DESTRUCTIVE, TOKEN_KEY, awaitOutcome, createApi, describeError,
-  describeStatus,
-} from "./api.js?v=20260921-2";
+  ACTION_LABELS, COMMAND_SPECS, DEFAULT_API, DESTRUCTIVE, TOKEN_KEY, awaitOutcome,
+  createApi, describeError, describeStatus,
+} from "./api.js?v=20260921-3";
 
 const $ = (sel, root = document) => root.querySelector(sel);
 
@@ -116,7 +116,108 @@ function card(api, server) {
   }
   box.append(row);
   box.append(el("p", "admin-outcome"));
+  if (Array.isArray(server.commands) && server.commands.length) {
+    box.append(commandSection(api, box, server));
+  }
   return box;
+}
+
+/** In-game commands: things done IN the world rather than to the server.
+ *
+ * Their own section, below the lifecycle row, because they are a different kind of
+ * act and because most of them take a value. Each is its own little form so one
+ * pending command does not lock the others -- spawning a horde and scheduling one
+ * are unrelated, and a shared busy state would imply otherwise. */
+function commandSection(api, box, server) {
+  const wrap = el("section", "admin-commands");
+  wrap.append(el("h3", "admin-commands-title", "In game"));
+  for (const name of server.commands) {
+    const spec = COMMAND_SPECS[name];
+    // A command the page has no spec for is skipped rather than drawn bare: the
+    // server said it can do it, but this page would not know what to ask for.
+    if (!spec) continue;
+    const form = el("form", "admin-command");
+    form.append(el("span", "admin-command-name", spec.label));
+    const inputs = new Map();
+    for (const field of spec.fields) {
+      const id = `cmd-${server.server_key}-${name}-${field.name}`;
+      const label = el("label", "admin-field");
+      label.htmlFor = id;
+      label.append(el("span", "admin-field-label", field.label));
+      let input;
+      if (field.kind === "choice") {
+        input = document.createElement("select");
+        for (const [value, text] of field.choices) {
+          const option = document.createElement("option");
+          option.value = value;
+          option.textContent = text;
+          input.append(option);
+        }
+      } else {
+        input = document.createElement("input");
+        input.type = field.kind === "number" ? "number" : "text";
+        if (field.min !== undefined) input.min = String(field.min);
+        if (field.max !== undefined) input.max = String(field.max);
+        if (field.value !== undefined) input.value = String(field.value);
+        if (field.placeholder) input.placeholder = field.placeholder;
+        if (field.required) input.required = true;
+      }
+      input.id = id;
+      input.className = "admin-input";
+      label.append(input);
+      inputs.set(field.name, { input, field });
+      form.append(label);
+    }
+    const go = el("button", "admin-action", "Run");
+    go.type = "submit";
+    form.append(go);
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      runCommand(api, box, form, server, name, spec, inputs);
+    });
+    wrap.append(form);
+  }
+  return wrap;
+}
+
+async function runCommand(api, box, form, server, name, spec, inputs) {
+  const outcome = $(".admin-outcome", box);
+  const params = {};
+  for (const [key, { input, field }] of inputs) {
+    const raw = input.value.trim();
+    if (!raw) {
+      if (field.required) {
+        outcome.textContent = `${field.label} is needed.`;
+        outcome.className = "admin-outcome admin-outcome--error";
+        return;
+      }
+      continue;   // omitted, not sent empty: the box treats absent as "you choose"
+    }
+    params[key] = field.kind === "number" ? Number(raw) : raw;
+  }
+  const buttons = form.querySelectorAll("button");
+  for (const b of buttons) b.disabled = true;
+  outcome.textContent = `${spec.label}: queued — waiting for Chamberlain…`;
+  outcome.className = "admin-outcome admin-outcome--pending";
+  try {
+    const { id } = await api.runCommand(server.server_key, name, params);
+    const done = await awaitOutcome(api, id);
+    if (done.timedOut) {
+      outcome.textContent = "Still waiting. The command may still run — reload to check.";
+      outcome.className = "admin-outcome admin-outcome--pending";
+    } else if (done.ok) {
+      outcome.textContent = `${spec.label}: done.`;
+      outcome.className = "admin-outcome admin-outcome--ok";
+    } else {
+      outcome.textContent = describeError({ status: 200, code: done.error });
+      outcome.className = "admin-outcome admin-outcome--error";
+    }
+  } catch (err) {
+    outcome.textContent = describeError(err);
+    outcome.className = "admin-outcome admin-outcome--error";
+  } finally {
+    for (const b of buttons) b.disabled = false;
+  }
 }
 
 /** The live state of one server: a headline, a supporting line, and who is on.

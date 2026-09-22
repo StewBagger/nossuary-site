@@ -583,3 +583,9 @@ textarea { font-family: var(--sans); line-height: 1.55; }
 .admin-state-detail { opacity: .8; }
 .admin-substate, .admin-players { margin: .3rem 0 0; font-size: .85rem; opacity: .75; }
 .admin-players-label { opacity: .7; }
+.admin-commands { margin: 1rem 0 0; border-top: 1px solid var(--line, #26302b); padding-top: .85rem; }
+.admin-commands-title { margin: 0 0 .6rem; font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; opacity: .65; }
+.admin-command { display: flex; flex-wrap: wrap; align-items: end; gap: .55rem; margin: 0 0 .55rem; }
+.admin-command-name { font-size: .92rem; min-width: 11rem; }
+.admin-field { display: flex; flex-direction: column; gap: .2rem; font-size: .78rem; opacity: .85; }
+.admin-input { font: inherit; font-size: .9rem; padding: .3rem .45rem; border-radius: 5px; border: 1px solid var(--line, #26302b); background: transparent; color: inherit; max-width: 11rem; }

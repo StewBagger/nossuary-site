@@ -228,3 +228,49 @@ test("status: restarting and starting are their own state, not offline", () => {
   assert.equal(api.describeStatus(stat({ state: "restarting" })).kind, "busy");
   assert.equal(api.describeStatus(stat({ state: "starting" })).kind, "busy");
 });
+
+// -- in-game commands -------------------------------------------------------------
+
+test("every command the page can draw declares its own fields", () => {
+  for (const [name, spec] of Object.entries(api.COMMAND_SPECS)) {
+    assert.ok(spec.label && spec.label.length > 2, name);
+    assert.ok(Array.isArray(spec.fields), name);
+    for (const f of spec.fields) {
+      assert.ok(f.name && f.label && f.kind, `${name}.${f.name}`);
+      if (f.kind === "number") assert.ok(Number.isFinite(f.min) && Number.isFinite(f.max), name);
+      if (f.kind === "choice") assert.ok(Array.isArray(f.choices) && f.choices.length, name);
+    }
+  }
+});
+
+test("the page's command list matches the Worker's", () => {
+  // Drift here draws a button the Worker refuses, or hides one it would allow.
+  assert.deepEqual(
+    Object.keys(api.COMMAND_SPECS).sort(),
+    ["airdrop", "horde_night", "horde_schedule", "horde_spawn", "horde_stop", "supply_event"],
+  );
+});
+
+test("runCommand sends the parameters flat, as the Worker expects", async () => {
+  const impl = fakeFetch([{ status: 202, body: { id: "x", state: "queued" } }]);
+  await api.createApi({ base: BASE, token: "t", fetchImpl: impl })
+    .runCommand("pz-stable", "horde_spawn", { count: 25 });
+  assert.deepEqual(JSON.parse(impl.calls[0].body),
+    { server_key: "pz-stable", action: "horde_spawn", count: 25 });
+});
+
+test("an airdrop with nothing chosen sends no parameters at all", async () => {
+  const impl = fakeFetch([{ status: 202, body: { id: "x" } }]);
+  await api.createApi({ base: BASE, token: "t", fetchImpl: impl })
+    .runCommand("pz-stable", "airdrop", {});
+  // Absent means "the mod chooses"; an empty string would be a name that matches
+  // nobody, which the box would then refuse.
+  assert.deepEqual(JSON.parse(impl.calls[0].body), { server_key: "pz-stable", action: "airdrop" });
+});
+
+test("the airdrop crate choices match what the game box accepts", () => {
+  const crate = api.COMMAND_SPECS.airdrop.fields.find((f) => f.name === "crate");
+  const values = crate.choices.map(([v]) => v).filter(Boolean);
+  assert.deepEqual(values.sort(),
+    ["fooddrink", "literature", "materials", "medical", "military", "toolsmelee"]);
+});
