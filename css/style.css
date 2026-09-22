@@ -570,3 +570,16 @@ textarea { font-family: var(--sans); line-height: 1.55; }
 .admin-empty { opacity: .75; font-size: .92rem; margin: 0; }
 .admin-gate { border: 1px solid var(--line, #26302b); border-radius: 10px; padding: 1.25rem; }
 .admin-status--error { color: #ff5263; }
+.admin-status-block { margin: 0 0 .85rem; }
+.admin-state { display: flex; align-items: center; gap: .45rem; margin: 0; font-size: .95rem; }
+.admin-dot { width: .6rem; height: .6rem; border-radius: 50%; background: currentColor; flex: none; }
+.admin-state--up { color: #99f2a8; }
+.admin-state--down { color: #ff5263; }
+.admin-state--warn { color: #f0b44c; }
+.admin-state--busy { color: #3fb6ff; }
+/* Silence is its own colour, not the offline one: "I cannot see it" and "it is off"
+   send an admin to different places. */
+.admin-state--silent { color: #8d918a; }
+.admin-state-detail { opacity: .8; }
+.admin-substate, .admin-players { margin: .3rem 0 0; font-size: .85rem; opacity: .75; }
+.admin-players-label { opacity: .7; }

@@ -146,3 +146,61 @@ export async function awaitOutcome(api, id, { timeoutMs = 45000, intervalMs = 10
     await wait(intervalMs);
   }
 }
+
+/** How long since Chamberlain's last push before a card is "not being heard from".
+ *
+ * Status is pushed every 60s by default, so five minutes is four missed pushes: long
+ * enough that one slow tick is not an alarm, short enough that an admin is not shown a
+ * player count from another era while deciding whether to restart. */
+export const STATUS_SILENT_MS = 5 * 60 * 1000;
+
+/**
+ * One server's status as a line a person can read.
+ *
+ * `kind` drives the colour; `headline` is the sentence; `detail` is the supporting
+ * line, or "" when there is nothing useful to add.
+ *
+ * SILENCE IS NOT OFFLINE, and this is the distinction the whole function exists for.
+ * "The server is down" and "I have not heard about this server" call for completely
+ * different actions -- restart the one, go and look at Chamberlain for the other --
+ * and showing them the same way sends an admin to the wrong place.
+ */
+export function describeStatus(server, now = Date.now()) {
+  const at = Number(server && server.status_at);
+  const s = server && server.status;
+  if (!s || !Number.isFinite(at)) {
+    return { kind: "silent", headline: "No status yet", detail: "Chamberlain hasn't reported on this server." };
+  }
+  if (now - at > STATUS_SILENT_MS) {
+    return { kind: "silent", headline: "Not being heard from", detail: `Last update ${ago(now - at)} ago.` };
+  }
+  const count = Number.isFinite(Number(s.player_count)) ? Number(s.player_count) : 0;
+  const max = Number.isFinite(Number(s.max_players)) ? Number(s.max_players) : null;
+  const who = count === 0 ? "nobody on" : `${count}${max ? `/${max}` : ""} on`;
+
+  if (s.state === "restarting") return { kind: "busy", headline: "Restarting", detail: "" };
+  if (s.state === "starting") return { kind: "busy", headline: "Starting", detail: "" };
+  if (s.state === "unreachable") {
+    return { kind: "silent", headline: "Chamberlain can't reach it", detail: "The server may be fine; the Warden isn't answering." };
+  }
+  if (!s.online) return { kind: "down", headline: "Offline", detail: "" };
+  if (s.stale) {
+    // The far side answered but its own view is old: up and quiet, not down.
+    return { kind: "warn", headline: `Online, reporting late`, detail: who };
+  }
+  const pending = s.lifecycle && s.lifecycle.restart_pending;
+  const secs = pending && Number(s.lifecycle.restart && s.lifecycle.restart.seconds_remaining);
+  if (pending && Number.isFinite(secs) && secs > 0) {
+    return { kind: "warn", headline: `Restart in ${ago(secs * 1000)}`, detail: who };
+  }
+  return { kind: "up", headline: "Online", detail: who };
+}
+
+function ago(ms) {
+  const s = Math.max(1, Math.round(ms / 1000));
+  if (s < 90) return `${s}s`;
+  const m = Math.round(s / 60);
+  if (m < 90) return `${m} minute${m === 1 ? "" : "s"}`;
+  const h = Math.round(m / 60);
+  return `${h} hour${h === 1 ? "" : "s"}`;
+}

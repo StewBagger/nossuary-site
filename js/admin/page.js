@@ -8,7 +8,8 @@
 // stays busy until then.
 import {
   ACTION_LABELS, DEFAULT_API, DESTRUCTIVE, TOKEN_KEY, awaitOutcome, createApi, describeError,
-} from "./api.js?v=20260921-1";
+  describeStatus,
+} from "./api.js?v=20260921-2";
 
 const $ = (sel, root = document) => root.querySelector(sel);
 
@@ -99,6 +100,7 @@ function card(api, server) {
   head.append(el("h2", null, server.display_name));
   head.append(el("span", "admin-level", server.level));
   box.append(head);
+  box.append(statusBlock(server));
 
   if (!server.actions.length) {
     box.append(el("p", "admin-empty", "No actions available at your level."));
@@ -115,6 +117,43 @@ function card(api, server) {
   box.append(row);
   box.append(el("p", "admin-outcome"));
   return box;
+}
+
+/** The live state of one server: a headline, a supporting line, and who is on.
+ *
+ * Player names are here because "who is on right now" is most of what you want before
+ * restarting something. The public status document on the front page deliberately
+ * carries a count and no names; this is the same fact shown to someone holding a grant
+ * on this server, not a widening of the public one. */
+function statusBlock(server) {
+  const wrap = el("div", "admin-status-block");
+  const verdict = describeStatus(server);
+  const line = el("p", `admin-state admin-state--${verdict.kind}`);
+  line.append(el("span", "admin-dot", ""));
+  line.append(el("span", null, verdict.headline));
+  if (verdict.detail) line.append(el("span", "admin-state-detail", ` — ${verdict.detail}`));
+  wrap.append(line);
+
+  const s = server.status;
+  if (s) {
+    const bits = [];
+    if (s.next_restart) bits.push(`Next restart ${s.next_restart}`);
+    const w = s.world;
+    if (w && Number.isFinite(Number(w.hour))) {
+      const hh = String(w.hour).padStart(2, "0");
+      const mm = String(w.minutes ?? 0).padStart(2, "0");
+      bits.push(`In-game ${hh}:${mm}${w.weather ? `, ${w.weather}` : ""}`);
+    }
+    if (bits.length) wrap.append(el("p", "admin-substate", bits.join(" · ")));
+    if (Array.isArray(s.players) && s.players.length) {
+      const who = el("p", "admin-players");
+      who.append(el("span", "admin-players-label", "On now: "));
+      // textContent, like everything else here: these names come from the game.
+      who.append(el("span", null, s.players.join(", ")));
+      wrap.append(who);
+    }
+  }
+  return wrap;
 }
 
 function busy(row, on) {

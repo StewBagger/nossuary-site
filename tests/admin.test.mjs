@@ -169,3 +169,62 @@ test("the build stamp agrees across the page and every admin import", () => {
 test("the page inserts nothing as HTML", () => {
   assert.ok(!/innerHTML|outerHTML|insertAdjacentHTML|document\.write/.test(pageJs));
 });
+
+// -- live status ------------------------------------------------------------------
+
+const stat = (over = {}, at = Date.now()) => ({
+  server_key: "pz-stable", display_name: "Null County", level: "operate", actions: [],
+  status_at: at,
+  status: {
+    state: "online", online: true, stale: false, player_count: 2, max_players: 32,
+    players: ["Plume", "Abe"], observed_at: "2026-09-21T12:00:00+00:00", ...over,
+  },
+});
+
+test("status: online reports who is on", () => {
+  const v = api.describeStatus(stat());
+  assert.equal(v.kind, "up");
+  assert.equal(v.headline, "Online");
+  assert.equal(v.detail, "2/32 on");
+});
+
+test("status: an empty server says so rather than showing a zero", () => {
+  assert.equal(api.describeStatus(stat({ player_count: 0, players: [] })).detail, "nobody on");
+});
+
+test("status: silence is NOT offline, and they are different colours", () => {
+  const never = api.describeStatus({ server_key: "x", status: null, status_at: null });
+  assert.equal(never.kind, "silent");
+
+  const old = api.describeStatus(stat({}, Date.now() - (api.STATUS_SILENT_MS + 1000)));
+  assert.equal(old.kind, "silent");
+  assert.match(old.detail, /Last update/);
+
+  // The distinction that matters: a server genuinely down is a different kind.
+  assert.equal(api.describeStatus(stat({ online: false, state: "offline" })).kind, "down");
+});
+
+test("status: unreachable blames the Warden, not the server", () => {
+  const v = api.describeStatus(stat({ state: "unreachable", online: false }));
+  assert.equal(v.kind, "silent");
+  assert.match(v.detail, /may be fine/);
+});
+
+test("status: a pending restart shows the countdown, not just 'online'", () => {
+  const v = api.describeStatus(stat({
+    lifecycle: { restart_pending: true, restart: { seconds_remaining: 240 } },
+  }));
+  assert.equal(v.kind, "warn");
+  assert.match(v.headline, /Restart in 4 minutes/);
+});
+
+test("status: stale means up and quiet, never down", () => {
+  const v = api.describeStatus(stat({ stale: true }));
+  assert.equal(v.kind, "warn");
+  assert.notEqual(v.kind, "down");
+});
+
+test("status: restarting and starting are their own state, not offline", () => {
+  assert.equal(api.describeStatus(stat({ state: "restarting" })).kind, "busy");
+  assert.equal(api.describeStatus(stat({ state: "starting" })).kind, "busy");
+});
