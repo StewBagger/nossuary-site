@@ -274,3 +274,53 @@ test("the airdrop crate choices match what the game box accepts", () => {
   assert.deepEqual(values.sort(),
     ["fooddrink", "literature", "materials", "medical", "military", "toolsmelee"]);
 });
+
+// -- confirmation-required commands ------------------------------------------------
+
+test("every dangerous command declares a warning and a phrase the reader can type", () => {
+  for (const [name, spec] of Object.entries(api.ADMIN_SPECS)) {
+    assert.ok(spec.label && spec.warning && spec.warning.length > 20, name);
+    // Either a fixed phrase, or the one whose phrase is the player's own name.
+    assert.ok(spec.phrase || spec.phraseIsPlayer, name);
+  }
+});
+
+test("the page's dangerous list matches the Worker's", () => {
+  assert.deepEqual(Object.keys(api.ADMIN_SPECS).sort(),
+    ["clean_mods", "set_access_level", "update_server"]);
+});
+
+test("the fixed phrases match what the game box demands", () => {
+  // Drift here shows an admin the wrong words to type and the box refuses them.
+  assert.equal(api.ADMIN_SPECS.clean_mods.phrase, "DELETE UNUSED MODS");
+  assert.equal(api.ADMIN_SPECS.update_server.phrase, "UPDATE SERVER");
+});
+
+test("the access-level phrase is the player's name, not a constant", () => {
+  assert.equal(api.ADMIN_SPECS.set_access_level.phraseIsPlayer, true);
+  assert.equal(api.ADMIN_SPECS.set_access_level.phrase, undefined);
+});
+
+test("runAdmin sends the phrase exactly as given, untrimmed", async () => {
+  const impl = fakeFetch([{ status: 202, body: { id: "x" } }]);
+  await api.createApi({ base: BASE, token: "t", fetchImpl: impl })
+    .runAdmin("pz-stable", "clean_mods", { confirm: "  delete unused mods  " });
+  assert.equal(JSON.parse(impl.calls[0].body).confirm, "  delete unused mods  ");
+});
+
+test("the page never carries a phrase in a value or placeholder attribute", () => {
+  // The confirmation has to be typed by a person. A prefilled box, or one whose
+  // placeholder is the answer, is the page performing it on the admin's behalf.
+  const confirmBlock = pageJs.slice(pageJs.indexOf("admin-input--confirm") - 600,
+    pageJs.indexOf("admin-input--confirm") + 600);
+  assert.ok(!/confirm\.value\s*=\s*["'`](?!\s*["'`])/.test(confirmBlock),
+    "the confirmation input is prefilled somewhere");
+  assert.ok(!/placeholder\s*=\s*.*phrase/i.test(pageJs),
+    "the phrase is offered as a placeholder");
+});
+
+test("access levels offered match what the game box accepts", () => {
+  const level = api.ADMIN_SPECS.set_access_level.fields.find((f) => f.name === "level");
+  assert.deepEqual(level.choices.map(([v]) => v).sort(),
+    ["admin", "gm", "moderator", "none", "observer", "overseer"]);
+});

@@ -60,6 +60,45 @@ export const COMMAND_SPECS = Object.freeze({
   supply_event: { label: "Supply event", fields: [] },
 });
 
+/** The commands the game box refuses without a typed phrase.
+ *
+ * `phrase` is shown to the reader so they know what to type. It is NEVER prefilled
+ * into the input and never sent unless a person typed it -- a page that filled the
+ * box in would be software performing the confirmation on the admin's behalf, which
+ * is precisely the thing the confirmation exists to prevent.
+ *
+ * `phraseIsPlayer` marks the one whose phrase is not a constant: for an access-level
+ * change you retype the PLAYER'S NAME, because the mistake worth catching is not
+ * "did you mean to do this" but "did you mean to do it to them". */
+export const ADMIN_SPECS = Object.freeze({
+  clean_mods: {
+    label: "Delete unused mods",
+    phrase: "DELETE UNUSED MODS",
+    warning: "Deletes mod folders from disk. There is no undo but SteamCMD and time.",
+    preview: "mods_unused",
+    fields: [],
+  },
+  update_server: {
+    label: "Update server",
+    phrase: "UPDATE SERVER",
+    warning: "Stops the server, runs SteamCMD against the live installation, starts it again.",
+    fields: [],
+  },
+  set_access_level: {
+    label: "Set access level",
+    phraseIsPlayer: true,
+    warning: "Grants or removes in-game powers. Admin and overseer are real power.",
+    fields: [
+      { name: "player", kind: "text", label: "Player", required: true },
+      {
+        name: "level", kind: "choice", label: "Level", required: true,
+        choices: [["moderator", "Moderator"], ["overseer", "Overseer"], ["gm", "GM"],
+          ["observer", "Observer"], ["admin", "Admin"], ["none", "None (remove)"]],
+      },
+    ],
+  },
+});
+
 /** Which actions want a confirmation before they are sent. */
 export const DESTRUCTIVE = Object.freeze(new Set(["stop", "start", "restart"]));
 
@@ -161,6 +200,9 @@ export function createApi({ base, token = null, fetchImpl = fetch, onSignedOut =
       return call("POST", "/v1/portal/commands", body);
     },
     command: (id) => call("GET", `/v1/portal/commands/${encodeURIComponent(id)}`),
+    /** A confirmation-required command. `confirm` is whatever the person typed. */
+    runAdmin: (serverKey, command, params = {}) =>
+      call("POST", "/v1/portal/commands", { server_key: serverKey, action: command, ...params }),
     grants: () => call("GET", "/v1/portal/grants"),
     setGrant: (discordId, serverKey, level) =>
       call("POST", "/v1/portal/grants", { discord_id: discordId, server_key: serverKey, level }),

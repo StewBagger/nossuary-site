@@ -7,9 +7,9 @@
 // queued; the outcome arrives when Chamberlain has re-checked the grant and acted, and the button
 // stays busy until then.
 import {
-  ACTION_LABELS, COMMAND_SPECS, DEFAULT_API, DESTRUCTIVE, TOKEN_KEY, awaitOutcome,
-  createApi, describeError, describeStatus,
-} from "./api.js?v=20260921-3";
+  ACTION_LABELS, ADMIN_SPECS, COMMAND_SPECS, DEFAULT_API, DESTRUCTIVE, TOKEN_KEY,
+  awaitOutcome, createApi, describeError, describeStatus,
+} from "./api.js?v=20260922-1";
 
 const $ = (sel, root = document) => root.querySelector(sel);
 
@@ -119,7 +119,182 @@ function card(api, server) {
   if (Array.isArray(server.commands) && server.commands.length) {
     box.append(commandSection(api, box, server));
   }
+  if (Array.isArray(server.admin) && server.admin.length) {
+    box.append(adminSection(api, box, server));
+  }
   return box;
+}
+
+/** The commands the box refuses without a typed phrase.
+ *
+ * Visually separated and last, because they are not things you reach for. Each shows
+ * what it will do, what to type, and an input that starts EMPTY and stays empty until
+ * a person fills it. Prefilling it would make the page perform the confirmation
+ * instead of the admin, which is the whole point of there being one. */
+function adminSection(api, box, server) {
+  const wrap = el("section", "admin-danger");
+  wrap.append(el("h3", "admin-danger-title", "Careful"));
+  for (const name of server.admin) {
+    const spec = ADMIN_SPECS[name];
+    if (!spec) continue;
+    const form = el("form", "admin-command admin-command--danger");
+    const head = el("div", "admin-danger-head");
+    head.append(el("span", "admin-command-name", spec.label));
+    head.append(el("span", "admin-warning", spec.warning));
+    form.append(head);
+
+    const inputs = new Map();
+    for (const field of spec.fields) {
+      const id = `adm-${server.server_key}-${name}-${field.name}`;
+      const label = el("label", "admin-field");
+      label.htmlFor = id;
+      label.append(el("span", "admin-field-label", field.label));
+      let input;
+      if (field.kind === "choice") {
+        input = document.createElement("select");
+        for (const [value, text] of field.choices) {
+          const option = document.createElement("option");
+          option.value = value;
+          option.textContent = text;
+          input.append(option);
+        }
+      } else {
+        input = document.createElement("input");
+        input.type = "text";
+        input.required = true;
+      }
+      input.id = id;
+      input.className = "admin-input";
+      label.append(input);
+      inputs.set(field.name, { input, field });
+      form.append(label);
+    }
+
+    const confirmLabel = el("label", "admin-field admin-field--confirm");
+    const cid = `adm-${server.server_key}-${name}-confirm`;
+    confirmLabel.htmlFor = cid;
+    confirmLabel.append(el("span", "admin-field-label",
+      spec.phraseIsPlayer ? "Retype the player's name" : `Type: ${spec.phrase}`));
+    const confirm = document.createElement("input");
+    confirm.type = "text";
+    confirm.id = cid;
+    confirm.className = "admin-input admin-input--confirm";
+    confirm.required = true;
+    confirm.autocomplete = "off";
+    // No placeholder carrying the phrase and no value: the box must be filled by a
+    // person, not by the page being helpful.
+    confirmLabel.append(confirm);
+    form.append(confirmLabel);
+
+    if (spec.preview) {
+      const look = el("button", "admin-action", "Show what would go");
+      look.type = "button";
+      look.addEventListener("click", () => preview(api, box, server, spec.preview, wrap));
+      form.append(look);
+    }
+    const go = el("button", "admin-action admin-action--danger", spec.label);
+    go.type = "submit";
+    form.append(go);
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      runDangerous(api, box, form, server, name, spec, inputs, confirm);
+    });
+    wrap.append(form);
+  }
+  return wrap;
+}
+
+async function preview(api, box, server, command, wrap) {
+  const outcome = $(".admin-outcome", box);
+  outcome.textContent = "Checking…";
+  outcome.className = "admin-outcome admin-outcome--pending";
+  try {
+    const { id } = await api.runCommand(server.server_key, command, {});
+    const done = await awaitOutcome(api, id);
+    const list = done.result && Array.isArray(done.result.unused) ? done.result.unused : null;
+    if (!done.ok) {
+      outcome.textContent = describeError({ status: 200, code: done.error });
+      outcome.className = "admin-outcome admin-outcome--error";
+      return;
+    }
+    const old = $(".admin-preview", wrap);
+    if (old) old.remove();
+    const panel = el("p", "admin-preview");
+    if (!list || !list.length) {
+      panel.textContent = "Nothing unused — there is nothing to delete.";
+    } else {
+      const n = done.result.count ?? list.length;
+      panel.append(el("span", "admin-preview-count", `${n} folder${n === 1 ? "" : "s"} would go: `));
+      panel.append(el("span", null, list.join(", ")));
+    }
+    wrap.append(panel);
+    outcome.textContent = "";
+    outcome.className = "admin-outcome";
+  } catch (err) {
+    outcome.textContent = describeError(err);
+    outcome.className = "admin-outcome admin-outcome--error";
+  }
+}
+
+async function runDangerous(api, box, form, server, name, spec, inputs, confirm) {
+  const outcome = $(".admin-outcome", box);
+  const params = {};
+  for (const [key, { input, field }] of inputs) {
+    const raw = input.value.trim();
+    if (!raw && field.required) {
+      outcome.textContent = `${field.label} is needed.`;
+      outcome.className = "admin-outcome admin-outcome--error";
+      return;
+    }
+    if (raw) params[key] = raw;
+  }
+  // Sent exactly as typed. The box decides whether it is right; this page does not
+  // check, trim or complete it.
+  params.confirm = confirm.value;
+  if (!params.confirm.trim()) {
+    outcome.textContent = "Type the confirmation to continue.";
+    outcome.className = "admin-outcome admin-outcome--error";
+    return;
+  }
+  const buttons = form.querySelectorAll("button");
+  for (const b of buttons) b.disabled = true;
+  outcome.textContent = `${spec.label}: queued — waiting for Chamberlain…`;
+  outcome.className = "admin-outcome admin-outcome--pending";
+  try {
+    const { id } = await api.runAdmin(server.server_key, name, params);
+    const done = await awaitOutcome(api, id, { timeoutMs: 90000 });
+    if (done.timedOut) {
+      outcome.textContent = "Still waiting. It may still be running — reload to check.";
+      outcome.className = "admin-outcome admin-outcome--pending";
+    } else if (done.ok) {
+      outcome.textContent = describeDangerous(name, done.result, spec);
+      outcome.className = "admin-outcome admin-outcome--ok";
+      confirm.value = "";
+    } else {
+      outcome.textContent = describeError({ status: 200, code: done.error });
+      outcome.className = "admin-outcome admin-outcome--error";
+    }
+  } catch (err) {
+    outcome.textContent = describeError(err);
+    outcome.className = "admin-outcome admin-outcome--error";
+  } finally {
+    for (const b of buttons) b.disabled = false;
+  }
+}
+
+function describeDangerous(name, result, spec) {
+  if (name === "clean_mods") {
+    const n = (result && result.count) || 0;
+    return n ? `Deleted ${n} unused mod folder${n === 1 ? "" : "s"}.` : "Nothing was unused.";
+  }
+  if (name === "update_server") return "Update started. The server will restart when it finishes.";
+  if (name === "set_access_level") {
+    const who = result && result.player;
+    const lvl = result && result.level;
+    const power = result && result.privileged ? " — that is real power in game." : "";
+    return `${who} is now ${lvl}.${power}`;
+  }
+  return `${spec.label}: done.`;
 }
 
 /** In-game commands: things done IN the world rather than to the server.
