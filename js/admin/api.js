@@ -136,6 +136,7 @@ const CODE_MESSAGES = {
   already_closed: "That poll had already closed.",
   unknown_channel: "Chamberlain can't post in that channel.",
   bad_options: "One of the options broke a rule. Check the list and try again.",
+  unknown_poll_deleted: "That poll had already been deleted.",
   send_failed: "The poll was saved but Discord refused the post. Check Chamberlain can send messages and attach files in that channel.",
 };
 

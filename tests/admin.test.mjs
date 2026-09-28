@@ -507,3 +507,27 @@ test("polls: the page waits for the authority rather than treating 202 as done",
   assert.equal((pollsJs.match(/runPoll\(/g) || []).length, 1,
     "every poll verb must go through the one sender that waits for the outcome");
 });
+
+test("polls: delete is the only destructive verb and it goes through the one sender", () => {
+  // Every verb must wait for the authority's outcome; a delete reported from the
+  // 202 would claim a poll was gone before anything had touched it.
+  assert.match(pollsJs, /deletePoll/);
+  assert.match(pollsJs, /poll_delete/);
+  assert.equal((pollsJs.match(/runPoll\(/g) || []).length, 1);
+});
+
+test("polls: deleting warns that it cannot be undone, and names the poll", () => {
+  // Close freezes a result the server can still read; delete throws the question,
+  // every vote and both posts away. The confirm has to say which one this is.
+  // Scoped to deletePoll: the page has other confirms (closing, deleting a
+  // template) and matching the first one would pass on the wrong sentence.
+  const fn = /async function deletePoll\([\s\S]*?\n}/.exec(pollsJs)[0];
+  const confirm = /window\.confirm\(([\s\S]*?)\)\) return;/.exec(fn)[1];
+  assert.match(confirm, /permanently/i);
+  assert.match(confirm, /cannot be undone/i);
+  assert.match(confirm, /\$\{question\}|"\$\{question\}"/);
+});
+
+test("polls: a deleted poll's outcome reports what actually went", () => {
+  assert.match(pollsJs, /r\.posts/);
+});

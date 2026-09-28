@@ -26,7 +26,7 @@
 import {
   DEFAULT_API, POLL_MAX_OPTIONS, TOKEN_KEY, awaitOutcome, checkPollOptions,
   createApi, describeError, describePoll, tallyRows,
-} from "./api.js?v=20260928-2";
+} from "./api.js?v=20260928-3";
 
 const state = {
   api: null,
@@ -279,6 +279,19 @@ async function deleteTemplate(name) {
   });
 }
 
+async function deletePoll(id, question) {
+  // Two sentences and a typed-out consequence, because this is the only button on
+  // the page that destroys something. Close freezes a result the server can still
+  // read; this throws the question, every vote and both posts away.
+  if (!window.confirm(
+    `Delete poll #${id} permanently?\n\n"${question}"\n\n`
+    + "Its posts in Discord and every vote on it go too. This cannot be undone.")) return;
+  await send("poll_delete", { poll_id: id }, {
+    pending: `Deleting poll #${id}…`,
+    done: (r) => `Poll #${id} deleted, along with ${r.posts} post${r.posts === 1 ? "" : "s"} and every vote on it.`,
+  });
+}
+
 async function closePoll(id) {
   if (!window.confirm(`Close poll #${id} now? Its result is frozen at the moment it closes.`)) return;
   await send("poll_close", { poll_id: id }, {
@@ -399,17 +412,25 @@ function renderPolls(polls) {
       card.append(el("p", "admin-state-detail", "The tally is hidden from everyone until this poll closes."));
     }
 
+    const actions = el("div", "admin-actions");
     if (!poll.closed_at) {
-      const actions = el("div", "admin-actions");
-      const close = el("button", "admin-action admin-action--danger", "Close now");
+      const close = el("button", "admin-action", "Close now");
       close.type = "button";
       close.addEventListener("click", () => closePoll(poll.id));
       const extend = el("button", "admin-action", "Reschedule");
       extend.type = "button";
       extend.addEventListener("click", () => extendPoll(poll.id));
       actions.append(close, extend);
-      card.append(actions);
     }
+    // Offered on CLOSED polls too, and that is the point: clearing the history is
+    // the reason this button exists, and a finished poll is exactly what needs
+    // clearing. Close is no longer styled as the dangerous one -- next to a real
+    // delete it is the mild option, and two red buttons teach nothing.
+    const drop = el("button", "admin-action admin-action--danger", "Delete");
+    drop.type = "button";
+    drop.addEventListener("click", () => deletePoll(poll.id, poll.question));
+    actions.append(drop);
+    card.append(actions);
     box.append(card);
   }
 }
