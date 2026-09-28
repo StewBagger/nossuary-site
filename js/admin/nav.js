@@ -8,7 +8,7 @@
 // The check is the same question the page itself asks: does this member have any
 // server at all? A member with a session but no grant sees nothing on /admin/, so
 // showing them the link would be a promise the page does not keep.
-import { DEFAULT_API, TOKEN_KEY, createApi } from "./api.js?v=20260928-1";
+import { DEFAULT_API, TOKEN_KEY, createApi } from "./api.js?v=20260928-2";
 
 const LINK_ID = "nav-controls";
 

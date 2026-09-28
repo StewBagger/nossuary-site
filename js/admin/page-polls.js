@@ -26,7 +26,7 @@
 import {
   DEFAULT_API, POLL_MAX_OPTIONS, TOKEN_KEY, awaitOutcome, checkPollOptions,
   createApi, describeError, describePoll, tallyRows,
-} from "./api.js?v=20260928-1";
+} from "./api.js?v=20260928-2";
 
 const state = {
   api: null,
@@ -361,8 +361,14 @@ function renderPolls(polls) {
     box.append(el("p", "admin-empty", "No polls yet."));
     return;
   }
+  const themes = (state.catalogue && state.catalogue.themes) || [];
   for (const poll of polls) {
     const card = el("div", "admin-card poll-card");
+    // The bars take the poll's OWN accent, the same colour Chamberlain draws its
+    // results card in. A page whose bars are always phosphor while Discord's are
+    // rust makes the two look like different features.
+    const accent = (themes.find((t) => t.key === poll.theme) || {}).accent;
+    if (accent) card.style.setProperty("--poll-accent", accent);
     const head = el("div", "admin-card-head");
     head.append(el("span", "poll-number", `#${poll.id}`));
     head.append(el("span", "poll-question-text", poll.question));
