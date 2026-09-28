@@ -607,3 +607,41 @@ textarea { font-family: var(--sans); line-height: 1.55; }
 .admin-grant-list { margin: 0 0 .8rem; }
 .admin-grant { margin: .2rem 0; font-size: .9rem; }
 .admin-grant-who { font-weight: 600; }
+
+/* Poll authoring (/admin/polls/). Reuses the admin card, field and action styles;
+   what is here is only the parts a poll has and a server control does not: the
+   option rows, the tally bars, and the likeness of the splash card.
+
+   Every colour comes from a custom property set by JS via CSSOM, never a style
+   attribute in markup -- which is why this page keeps the same strict style-src as
+   the rest of the admin surface. */
+.poll-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 20rem); gap: 1.5rem; align-items: start; }
+@media (max-width: 860px) { .poll-columns { grid-template-columns: minmax(0, 1fr); } }
+.poll-question { width: 100%; resize: vertical; font-family: inherit; }
+.poll-option { display: flex; align-items: center; gap: .4rem; margin: .3rem 0; }
+.poll-option-input { flex: 1 1 auto; min-width: 0; }
+.poll-option-letter { flex: 0 0 1.6rem; text-align: center; font-family: ui-monospace, monospace; font-weight: 700; color: var(--bone-dim, #a9a597); }
+.poll-move { flex: 0 0 auto; padding: .3rem .55rem; line-height: 1; }
+
+.poll-preview-card {
+  --poll-accent: #7b847f;
+  border: 1px solid var(--line, #26302b); border-radius: 10px;
+  padding: 1.1rem 1.2rem; min-height: 9rem;
+  background: linear-gradient(160deg, rgba(255,255,255,.035), rgba(0,0,0,.35));
+  border-left: 3px solid var(--poll-accent);
+}
+.poll-preview-rule { display: inline-block; width: 4px; height: 1rem; vertical-align: -.15rem; margin-right: .5rem; background: var(--poll-accent); }
+.poll-preview-label { display: inline; margin: 0; font-family: ui-monospace, monospace; font-size: .7rem; letter-spacing: .18em; color: var(--poll-accent); }
+.poll-preview-question { margin: .7rem 0 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.35rem; line-height: 1.2; }
+.poll-preview-footer { margin: .9rem 0 0; font-size: .8rem; color: var(--bone-dim, #a9a597); }
+
+.poll-card { margin: 0 0 .9rem; }
+.poll-number { font-family: ui-monospace, monospace; color: var(--bone-dim, #a9a597); margin-right: .5rem; }
+.poll-question-text { font-weight: 600; }
+.poll-template-question { margin: .2rem 0 .3rem; }
+.poll-tally { list-style: none; margin: .6rem 0 .4rem; padding: 0; }
+.poll-tally-row { display: flex; align-items: center; gap: .5rem; margin: .25rem 0; font-size: .9rem; }
+.poll-tally-label { flex: 0 0 11rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.poll-bar { --poll-share: 0%; flex: 1 1 auto; height: .5rem; border-radius: 3px; background: var(--track, #252b28); position: relative; overflow: hidden; }
+.poll-bar::before { content: ""; position: absolute; inset: 0 auto 0 0; width: var(--poll-share); background: var(--phosphor, #5bf29a); }
+.poll-tally-count { flex: 0 0 6rem; text-align: right; font-variant-numeric: tabular-nums; color: var(--bone-dim, #a9a597); }

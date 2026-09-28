@@ -126,6 +126,17 @@ const CODE_MESSAGES = {
   bridge_absent: "The server's in-game bridge isn't answering. Try again shortly.",
   unreachable: "Chamberlain couldn't reach that server.",
   queued_grants_disabled: "Granting through the website is switched off, or no owner phrase is configured on Chamberlain.",
+  // Polls. Each of these is a real answer Chamberlain can give, and each wants
+  // different words: "you may not" and "there is no such poll" send a reader to
+  // completely different places.
+  not_staff: "Only staff can open polls.",
+  polls_disabled: "Polls are switched off in Chamberlain's config.",
+  unknown_template: "There's no template by that name any more.",
+  unknown_poll: "There's no poll with that number.",
+  already_closed: "That poll had already closed.",
+  unknown_channel: "Chamberlain can't post in that channel.",
+  bad_options: "One of the options broke a rule. Check the list and try again.",
+  send_failed: "The poll was saved but Discord refused the post. Check Chamberlain can send messages and attach files in that channel.",
 };
 
 /** One friendly sentence for any failure. Plain text: callers set it with textContent. */
@@ -204,6 +215,17 @@ export function createApi({ base, token = null, fetchImpl = fetch, onSignedOut =
     /** A confirmation-required command. `confirm` is whatever the person typed. */
     runAdmin: (serverKey, command, params = {}) =>
       call("POST", "/v1/portal/commands", { server_key: serverKey, action: command, ...params }),
+    /** The poll form's catalogue: themes, channels, templates and polls.
+     *
+     * One request rather than four. All four lists are small, all four are derived
+     * copies Chamberlain pushes, and a form that cannot draw itself until four round
+     * trips have landed spends its first second showing empty selects. */
+    polls: () => call("GET", "/v1/portal/polls"),
+    /** Queue one poll verb. Returns {id, state}; the outcome arrives via command().
+     *
+     * Note there is no server_key: a poll has no server. The Worker fills that
+     * column with a constant because it is NOT NULL, and nothing reads it. */
+    runPoll: (action, params = {}) => call("POST", "/v1/portal/polls", { action, ...params }),
     grants: () => call("GET", "/v1/portal/grants"),
     /** Grant or revoke (level null). `confirm` is the owner's phrase, typed each
      * time and sent exactly as typed -- it is the one thing a compromised Worker
@@ -288,4 +310,100 @@ function ago(ms) {
   if (m < 90) return `${m} minute${m === 1 ? "" : "s"}`;
   const h = Math.round(m / 60);
   return `${h} hour${h === 1 ? "" : "s"}`;
+}
+
+
+/** How many options a poll may have, whatever the form lets you type.
+ *
+ * Discord's ceiling on components for one message. Chamberlain's own house limit is
+ * configurable and may be LOWER -- the catalogue carries it as `limits.max_options`
+ * and the form should prefer that; this is the number no configuration can raise. */
+export const POLL_MAX_OPTIONS = 25;
+
+/** The A, B, C… a poll's buttons are labelled with. Matches cogs/polls.LETTERS. */
+export const POLL_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXY";
+
+/**
+ * One poll's standing state, as a line a person can read.
+ *
+ * `kind` drives the colour, `headline` is the sentence, `detail` supports it.
+ *
+ * A CLOSED poll and an OPEN one that nobody has voted on both show zeroes, and they
+ * are not the same thing: one is a result and one is a question still being asked.
+ * That distinction is the reason this returns a kind rather than a string.
+ */
+export function describePoll(poll, now = Date.now()) {
+  if (!poll) return { kind: "silent", headline: "Unknown poll", detail: "" };
+  const voters = Number(poll.voters) || 0;
+  const who = voters === 1 ? "1 voter" : `${voters} voters`;
+  if (poll.closed_at) return { kind: "down", headline: "Closed", detail: who };
+  if (!poll.message_id) {
+    // Written but never posted: the claim-then-send shape leaves this recoverable,
+    // and an admin needs to know it is the reason nobody is voting.
+    return { kind: "warn", headline: "Not posted", detail: "Saved, but it never reached Discord." };
+  }
+  if (!poll.closes_at) return { kind: "up", headline: "Open", detail: `${who} · closes by hand` };
+  const ms = Date.parse(poll.closes_at) - now;
+  if (!Number.isFinite(ms)) return { kind: "up", headline: "Open", detail: who };
+  if (ms <= 0) return { kind: "warn", headline: "Closing", detail: `${who} · past its deadline` };
+  return { kind: "up", headline: "Open", detail: `${who} · closes in ${pollAgo(ms)}` };
+}
+
+/**
+ * A poll's options as rows ready to render: letter, label, count and percent.
+ *
+ * The percentage is of VOTES CAST, not of voters. On a multi-choice poll one member
+ * can be in several rows, so shares add to more than 100 against the voter count and
+ * to exactly 100 against the votes -- and the one that can be explained is the one
+ * to show.
+ *
+ * A poll whose tally is hidden returns counts of null rather than zero: the page must
+ * render "—" for those, and a zero would be a claim about a number nobody is allowed
+ * to see yet.
+ */
+export function tallyRows(poll) {
+  const options = Array.isArray(poll && poll.options) ? poll.options : [];
+  const hidden = Boolean(poll && poll.hide_results && !poll.closed_at);
+  const tally = (poll && poll.tally) || {};
+  const counts = options.map((_, i) => Number(tally[String(i)]) || 0);
+  const total = counts.reduce((a, b) => a + b, 0);
+  return options.map((label, i) => ({
+    letter: POLL_LETTERS[i] || "?",
+    label,
+    count: hidden ? null : counts[i],
+    share: hidden || total <= 0 ? null : Math.round((100 * counts[i]) / total),
+  }));
+}
+
+/**
+ * The option list, checked the way the Worker and Chamberlain both check it.
+ *
+ * Returns `{ ok: true, options }` or `{ ok: false, message }`. A THIRD copy of these
+ * rules, and deliberately: this one exists to say "two options both read Riverside"
+ * while the person is still looking at the field, rather than after a round trip.
+ * The Worker's copy refuses a page that skipped this, and Chamberlain's is the rule.
+ */
+export function checkPollOptions(values, max = POLL_MAX_OPTIONS) {
+  const options = (Array.isArray(values) ? values : [])
+    .map((v) => String(v == null ? "" : v).trim())
+    .filter(Boolean);
+  if (options.length < 2) return { ok: false, message: "A poll needs at least two options." };
+  if (options.length > max) return { ok: false, message: `That is ${options.length} options; the limit is ${max}.` };
+  const long = options.find((o) => o.length > 70);
+  if (long) return { ok: false, message: `"${long.slice(0, 40)}" is too long to fit on a button.` };
+  const lowered = options.map((o) => o.toLowerCase());
+  const dupe = lowered.find((o, i) => lowered.indexOf(o) !== i);
+  if (dupe !== undefined) {
+    return { ok: false, message: `Two options both read "${dupe}". Voters cannot tell them apart.` };
+  }
+  return { ok: true, options };
+}
+
+function pollAgo(ms) {
+  const m = Math.round(ms / 60000);
+  if (m < 90) return `${Math.max(1, m)} minute${m === 1 ? "" : "s"}`;
+  const h = Math.round(m / 60);
+  if (h < 48) return `${h} hour${h === 1 ? "" : "s"}`;
+  const d = Math.round(h / 24);
+  return `${d} day${d === 1 ? "" : "s"}`;
 }

@@ -371,3 +371,139 @@ test("the owner's phrase input is a password field and is never prefilled", () =
   assert.match(block, /type:\s*"password"/);
   assert.ok(!/value:\s*["'`][^"'`]/.test(block), "the phrase field is prefilled");
 });
+
+// -- polls ------------------------------------------------------------------------
+//
+// The poll surface is staff-authored and has no server_key: a poll is not done TO a
+// server, so DR-0011's per-server grants have nothing to hang on. What these pin down
+// is that the page never treats acceptance as success, never claims a number it is
+// not allowed to see, and never sends a poll the authority would have to refuse.
+
+const pollsPage = fs.readFileSync(path.join(ROOT, "admin", "polls", "index.html"), "utf8");
+const pollsJs = fs.readFileSync(path.join(ROOT, "js", "admin", "page-polls.js"), "utf8");
+
+test("polls: the catalogue is one request, not four", async () => {
+  const fetchImpl = fakeFetch([{ status: 200, body: { can_create: true, themes: [], channels: [], templates: [], polls: [] } }]);
+  const client = api.createApi({ base: BASE, token: "t", fetchImpl });
+  await client.polls();
+  assert.equal(fetchImpl.calls.length, 1);
+  assert.equal(fetchImpl.calls[0].url, `${BASE}/v1/portal/polls`);
+  assert.equal(fetchImpl.calls[0].method, "GET");
+});
+
+test("polls: runPoll sends the verb flat and never a server_key", async () => {
+  const fetchImpl = fakeFetch([{ status: 202, body: { id: "x", state: "queued" } }]);
+  const client = api.createApi({ base: BASE, token: "t", fetchImpl });
+  await client.runPoll("poll_open", { question: "Wipe?", options: ["Yes", "No"], channel_id: "1" });
+  const sent = JSON.parse(fetchImpl.calls[0].body);
+  assert.deepEqual(sent, { action: "poll_open", question: "Wipe?", options: ["Yes", "No"], channel_id: "1" });
+  assert.equal(sent.server_key, undefined);
+});
+
+test("polls: every refusal the poll plane can produce has a sentence a human can act on", () => {
+  // Mirrors chamberlain/portal/polls.py's PollResult docstring plus the Worker's
+  // own not_staff. A code with no sentence falls through to "something went wrong",
+  // which is the answer that sends an admin nowhere.
+  for (const code of ["not_staff", "polls_disabled", "unknown_template", "unknown_poll",
+    "already_closed", "unknown_channel", "bad_options", "send_failed"]) {
+    const said = api.describeError({ status: 200, code });
+    assert.notEqual(said, "Something went wrong. Try again.", code);
+  }
+});
+
+test("polls: a closed poll and an unvoted open one are not the same thing", () => {
+  const open = api.describePoll({ voters: 0, message_id: "1", closes_at: null });
+  const closed = api.describePoll({ voters: 0, message_id: "1", closed_at: "2026-09-28T00:00:00+00:00" });
+  assert.equal(open.kind, "up");
+  assert.equal(closed.kind, "down");
+  assert.notEqual(open.headline, closed.headline);
+});
+
+test("polls: a poll that was written but never posted says so", () => {
+  // The claim-then-send shape leaves this recoverable, and it is the reason nobody
+  // is voting -- which an admin has to be told rather than left to work out.
+  const v = api.describePoll({ voters: 0, message_id: null });
+  assert.equal(v.kind, "warn");
+  assert.match(v.headline, /not posted/i);
+});
+
+test("polls: a deadline in the past reads as closing, not as open", () => {
+  const v = api.describePoll({ voters: 2, message_id: "1", closes_at: "2020-01-01T00:00:00+00:00" });
+  assert.equal(v.kind, "warn");
+  assert.match(v.detail, /past its deadline/);
+});
+
+test("polls: a hidden tally renders no number at all, not a zero", () => {
+  const rows = api.tallyRows({ options: ["a", "b"], tally: { 0: 5, 1: 2 }, hide_results: true });
+  // A zero would be a claim about a number nobody is allowed to see yet.
+  assert.deepEqual(rows.map((r) => r.count), [null, null]);
+  assert.deepEqual(rows.map((r) => r.share), [null, null]);
+  assert.deepEqual(rows.map((r) => r.label), ["a", "b"]);
+});
+
+test("polls: once closed, a hidden tally is shown", () => {
+  const rows = api.tallyRows({ options: ["a", "b"], tally: { 0: 5, 1: 2 }, hide_results: true, closed_at: "2026-09-28T00:00:00+00:00" });
+  assert.deepEqual(rows.map((r) => r.count), [5, 2]);
+});
+
+test("polls: shares are of votes cast, so a multi-choice poll still adds to 100", () => {
+  // Against the VOTER count they would add to more than 100, because one member can
+  // be in several rows. The one that can be explained is the one to show.
+  const rows = api.tallyRows({ options: ["a", "b", "c"], tally: { 0: 2, 1: 1, 2: 1 }, voters: 2 });
+  assert.equal(rows.reduce((n, r) => n + r.share, 0), 100);
+});
+
+test("polls: an option with no votes is a row, not an absence", () => {
+  const rows = api.tallyRows({ options: ["a", "b"], tally: { 0: 3 } });
+  assert.deepEqual(rows.map((r) => r.count), [3, 0]);
+  assert.deepEqual(rows.map((r) => r.letter), ["A", "B"]);
+});
+
+test("polls: the option rules are checked before anything is sent", () => {
+  assert.match(api.checkPollOptions(["only"]).message, /at least two/i);
+  assert.match(api.checkPollOptions(["Yes", "yes"]).message, /both read/i);
+  assert.match(api.checkPollOptions(["Yes", "x".repeat(80)]).message, /too long/i);
+  assert.match(api.checkPollOptions(["a", "b", "c"], 2).message, /limit is 2/);
+  // Blank rows are dropped, not counted: the form always renders at least two.
+  assert.deepEqual(api.checkPollOptions(["Yes", "  ", "No", ""]).options, ["Yes", "No"]);
+  assert.equal(api.checkPollOptions(["Yes", "No"]).ok, true);
+});
+
+test("polls: the house ceiling is Discord's component limit", () => {
+  assert.equal(api.POLL_MAX_OPTIONS, 25);
+  assert.equal(api.POLL_LETTERS.length, 25);
+});
+
+test("polls: the page is not indexed and names the same portal origin", () => {
+  const configured = /portalApiUrl:\s*"([^"]+)"/.exec(configJs)[1];
+  const csp = /content="([^"]*default-src[^"]*)"/.exec(pollsPage)[1];
+  assert.equal(/connect-src ([^;]+)/.exec(csp)[1].trim(), new URL(configured).origin);
+  assert.match(csp, /object-src 'none'/);
+  assert.match(csp, /base-uri 'none'/);
+  // CSP governs style ATTRIBUTES in markup and <style> blocks, not CSSOM mutation,
+  // which is all this page does -- so it keeps the strict policy rather than opening
+  // style-src to get its preview swatch.
+  assert.ok(!/unsafe-inline/.test(csp), "the poll page must not need unsafe-inline");
+  assert.match(pollsPage, /name="robots" content="noindex/);
+});
+
+test("polls: the page inserts nothing as HTML", () => {
+  assert.ok(!/innerHTML|outerHTML|insertAdjacentHTML|document\.write/.test(pollsJs));
+});
+
+test("polls: the build stamp agrees with the rest of the admin surface", () => {
+  const stamps = new Set();
+  for (const text of [page, apiJs, pageJs, pollsPage, pollsJs]) {
+    for (const m of text.matchAll(/\?v=(\d{8}-\d+)/g)) stamps.add(m[1]);
+  }
+  assert.equal(stamps.size, 1, `stamps disagree: ${[...stamps].join(", ")}`);
+});
+
+test("polls: the page waits for the authority rather than treating 202 as done", () => {
+  // The whole architecture makes this mistake easy: the Worker answers 202 the moment
+  // the row is written, and nothing has happened yet. Every verb goes through one
+  // sender, and that sender is the only place a success message is produced.
+  assert.match(pollsJs, /awaitOutcome\(state\.api, queued\.id\)/);
+  assert.equal((pollsJs.match(/runPoll\(/g) || []).length, 1,
+    "every poll verb must go through the one sender that waits for the outcome");
+});

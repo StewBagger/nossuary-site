@@ -9,7 +9,7 @@
 import {
   ACTION_LABELS, ADMIN_SPECS, COMMAND_SPECS, DEFAULT_API, DESTRUCTIVE, TOKEN_KEY,
   awaitOutcome, createApi, describeError, describeStatus,
-} from "./api.js?v=20260922-2";
+} from "./api.js?v=20260928-1";
 
 const $ = (sel, root = document) => root.querySelector(sel);
 

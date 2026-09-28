@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Poll authoring (js/admin/page-polls.js). Everything the API returns is written with
+       textContent; nothing is ever inserted as HTML. connect-src must name the origin of
+       portalApiUrl in js/config.js (tests/admin.test.mjs checks it).
+       Nothing on this page posts anything: every write is QUEUED, and Chamberlain re-checks
+       whether this member may open a poll before it acts (Discord-Automation DR-0010). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://nossuary-portal.stewbagger.workers.dev; img-src 'self' data:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0b0d0c">
+  <title>Polls · Null Ossuary</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="stylesheet" href="/css/style.css?v=20260928-1">
+  <script src="/js/config.js?v=20260928-1" defer></script>
+  <script type="module" src="/js/admin/page-polls.js?v=20260928-1"></script>
+</head>
+<body class="forum">
+  <a class="skip" href="#admin-main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <a class="brand" href="/" aria-label="Null Ossuary home">
+      <img src="/assets/emblem-256.webp" alt="" width="36" height="36">
+      <span>Null Ossuary</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="/#play">Play</a></li>
+        <li><a href="/forums/">Forums</a></li>
+        <li><a href="/admin/">Server controls</a></li>
+        <li><a href="https://discord.gg/PtMaTp385b" target="_blank" rel="noopener">Discord</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="forum-page">
+    <section class="forum-hero" aria-labelledby="polls-title">
+      <div class="wrap">
+        <p class="eyebrow">Staff</p>
+        <h1 id="polls-title">Polls</h1>
+        <p class="lede">Ask the server a question. Every poll is queued and posted by Chamberlain —
+          nothing here reaches Discord directly, and a poll you open is the same poll
+          <code>/poll create</code> would have made.</p>
+      </div>
+    </section>
+
+    <div class="wrap forum-wrap">
+      <p class="forum-status admin-status" id="admin-status" role="alert" hidden></p>
+
+      <section class="admin-gate" id="admin-gate" hidden>
+        <h2>Sign in</h2>
+        <p id="admin-gate-reason"></p>
+        <p><a class="btn" href="/forums/">Go to the forums</a></p>
+      </section>
+
+      <div id="admin-main" aria-busy="true">
+        <p class="forum-loading"><span class="dot" aria-hidden="true"></span>Loading…</p>
+        <noscript><p class="forum-noscript">This page needs JavaScript. Turn it on and reload.</p></noscript>
+
+        <section class="admin-access poll-compose" id="poll-form-section" hidden aria-labelledby="poll-compose-title">
+          <h2 class="admin-access-title" id="poll-compose-title">New poll</h2>
+
+          <div class="poll-columns">
+            <div class="poll-form">
+              <label class="admin-field" for="poll-question">Question</label>
+              <textarea class="admin-input poll-question" id="poll-question" rows="2" maxlength="240"
+                        placeholder="Which map should Null County run next season?"></textarea>
+
+              <p class="admin-field">Options</p>
+              <div id="poll-options"></div>
+              <button class="admin-action" type="button" id="poll-add-option">Add an option</button>
+
+              <label class="admin-field" for="poll-theme">Splash art</label>
+              <select class="admin-input" id="poll-theme"></select>
+
+              <label class="admin-field" for="poll-channel">Post it in</label>
+              <select class="admin-input" id="poll-channel"></select>
+
+              <label class="admin-field" for="poll-hours">Hours until it closes</label>
+              <input class="admin-input" id="poll-hours" type="number" min="0" max="720"
+                     placeholder="Chamberlain's default">
+              <p class="admin-state-detail">0 means it closes only when an admin closes it.</p>
+
+              <label class="admin-field" for="poll-role">Restrict voting to one role (optional)</label>
+              <input class="admin-input" id="poll-role" type="text" inputmode="numeric"
+                     placeholder="Role id — left empty, everyone may vote">
+
+              <p class="admin-field">
+                <label><input type="checkbox" id="poll-multi"> Let each member pick more than one</label>
+              </p>
+              <p class="admin-field">
+                <label><input type="checkbox" id="poll-hide"> Hide the tally until it closes</label>
+              </p>
+
+              <div class="admin-actions">
+                <button class="admin-action" type="button" id="poll-open">Open the poll</button>
+              </div>
+
+              <label class="admin-field" for="poll-template-name">Save this as a template</label>
+              <input class="admin-input" id="poll-template-name" type="text" maxlength="32"
+                     placeholder="weekly-map">
+              <div class="admin-actions">
+                <button class="admin-action" type="button" id="poll-save-template">Save as template</button>
+              </div>
+            </div>
+
+            <aside class="poll-preview" aria-labelledby="poll-preview-title">
+              <h3 class="admin-commands-title" id="poll-preview-title">Preview</h3>
+              <div class="poll-preview-card" id="poll-preview-card"></div>
+              <p class="admin-state-detail">A likeness, not the artwork. The real card is drawn on
+                Chamberlain when the poll is posted, and this page cannot ask for one — nothing at
+                home accepts connections from the internet.</p>
+            </aside>
+          </div>
+        </section>
+
+        <section class="admin-access" aria-labelledby="poll-templates-title">
+          <h2 class="admin-access-title" id="poll-templates-title">Templates</h2>
+          <div id="poll-templates"></div>
+        </section>
+
+        <section class="admin-access" aria-labelledby="poll-list-title">
+          <h2 class="admin-access-title" id="poll-list-title">Polls</h2>
+          <div id="poll-list"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span class="brand">
+        <img src="/assets/emblem-256.webp" alt="" width="28" height="28" loading="lazy">
+        <span>Null Ossuary</span>
+      </span>
+      <span class="muted small">Polls · <a href="/">nossuary.com</a> · Actions are logged with your Discord id.</span>
+    </div>
+  </footer>
+</body>
+</html>
