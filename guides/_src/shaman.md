@@ -1,4 +1,33 @@
 Alliance Shaman exist, Windfury was rebuilt from the ground up, and the widely-repeated claim that Blizzard ruled out Shaman tanking has no Blizzard source.
+## Starting out
+Shaman is a hybrid. It wears mail, carries a shield, heals, throws lightning and fire at range, fights with a weapon in melee, and plants totems. Most classes do one of those things. Shaman does all of them adequately and picks which one it leans into with talents, which makes it flexible, useful in almost any group, and harder to describe than any other class on this list.
+It suits players who like solving the fight in front of them rather than running the same sequence. Levelling alone, you will heal yourself between pulls, soften something at range, then finish it with a mace. In a group you may be the healer one night and a damage dealer the next, with the same character and no change of gear beyond weapons.
+The awkward part is totems. These are short-lived objects you drop on the ground; they buff your party or harm nearby enemies while they stand. They do not follow you. Walk away and the benefit is behind you. They have a limited radius, they expire, and they cost mana to replace. Newcomers drop one at the start of a dungeon and never think about it again, which is close to wasting a quarter of the class. Forever reworked how totems are placed and managed, and the totem section below has the detail — read it once you are comfortable with the basics.
+### What the specs do
+| Spec | Role | In one line |
+| --- | --- | --- |
+| Elemental | Ranged DPS | Fire and lightning at range; the closest thing Shaman has to playing a caster. |
+| Enhancement | Melee DPS | Weapon in hand, weapon enchanted by you, spells woven between swings. |
+| Restoration | Healer | Keeping the group alive, with strong single-target and group healing. |
+You do not pick one at character creation. Talent points arrive as you level and you spend them across the three trees; the spec name is shorthand for where most of them went. A trainer will unlearn them for a fee that rises each time. In practice you can heal a low-level dungeon with damage talents and deal damage with healing talents, so early points are not a trap. If group roles are new to you: the tank holds the monster's attention so it hits the person built to take it, the healer keeps that person and everyone else standing, and DPS kills the thing. Shaman can be the healer or the DPS, and will often be asked to switch.
+### Your resource
+Mana, for everything. There is no second bar and no combat-generated resource, which makes Shaman one of the classes where resource management is the actual skill rather than a detail.
+Mana refills slowly while you stand still, faster while you drink, and much of it returns while you are not casting at all. It does not come back from hitting things. Healing spells are expensive, direct damage spells are expensive, and totems each cost mana every time you place them — which is the cost new players do not count, because a totem does not feel like a spell.
+Two habits keep you solvent. First, do not lead with your largest spell. A weaker rank of a heal or a bolt costs a fraction as much and is usually enough; the big one is for emergencies. Second, count your totems. Dropping four totems on every pull will empty your bar before the third fight, and most of the time one is the right number. In melee, your ordinary weapon swings cost nothing at all, so a fight you finish with the mace is a fight that leaves you ready for the next one.
+### Your first twenty levels
+Lightning Bolt is your opener and your ranged attack. Earth Shock is instant damage with no cast time, useful when something must be hit now. Flame Shock and Frost Shock arrive alongside it — one burns over time, the other slows an enemy that is running at you or away from you.
+Healing Wave is your heal and you will use it on yourself constantly while levelling. Learn early that its lower ranks exist and are cheaper.
+Weapon imbues are the button newcomers miss most. You enchant your own weapon, it lasts a good while, and it must be refreshed. One imbue adds damage and draws more attention; another adds fire damage on each hit. Have one active at all times.
+Then totems. Early on you want a stat totem for the party, a fire totem that attacks whatever is nearby, and a water totem that trickles healing into the group. Place them where the fight is going to happen, not where you were standing when you decided to place them.
+Lightning Shield sits on you and hurts things that hit you; put it up before a pull. Ghost Wolf is your travel form. Purge and your cleansing spells strip effects off enemies and allies, and almost nobody presses them in their first fifty hours.
+### Common beginner mistakes
+- Dropping totems at the start of a fight, then moving out of range and forgetting they exist.
+- Casting only the highest rank of Healing Wave, and running out of mana with the fight half won.
+- Letting the weapon imbue lapse and fighting with a plain weapon for several levels.
+- Dropping every totem you own on every pull, which is a mana cost you cannot sustain.
+- Standing at range to cast when the enemy is already on you and swinging would be free.
+- Treating Purge and cleansing as someone else's job in a group that has nobody else to do it.
+*Everything from here on is for players who have played WoW before: what Forever changed against the original game, and how well each claim is sourced.*
 ## Who can be a Shaman
 **Alliance Shaman are Dwarf, and only Dwarf.** Horde Shaman are Orc, Tauren, Troll and Skyborne — not Undead.
 The Skyborne split is the elegant part, and Blizzard justified it with lore: *"Horde-aligned Skyborne embrace elemental traditions and gain access to the Shaman class, while Alliance-aligned Skyborne pursue the arcane legacy of their ancestors and gain access to the Mage class."* One people, shared ancestry, divided by how they answered a crisis — the wind spirits vanished from Zephras Isle, and the Windshapers want them restored while the High Order concluded that dependence on elemental patrons had left them vulnerable. Faction is a character-creation choice, not a race choice.

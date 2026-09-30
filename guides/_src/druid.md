@@ -1,4 +1,37 @@
 Skyborne can be Druids on either faction — the only new path into the class in the patch. And bear lost something structural that has not been noticed loudly enough.
+## Starting out
+A druid is four classes sharing one character. Out of form you are a caster: ranged damage at distance, or healing. Shift into bear and you are a tank with high health and thick hide. Shift into cat and you are a stealthy melee attacker built on quick strikes. Later forms handle travel and water. No other class in the game covers this much ground.
+The flexibility is real and it is also the trap. A druid who picks a lane — tanking, healing, damage — and spends talents on it performs perfectly well. A druid who tries to be all four at once is worse at each of them than a specialist and often out of mana besides. Forms are not four full characters; they are one character's worth of power pointed in different directions.
+Honestly, the first levels are odd. You begin with no forms at all, casting spells like a weaker mage, and the class only becomes recognisable once bear arrives and then cat. Expect a stretch of levelling where you are not quite sure what you are. After that it clicks, and it clicks hard: a druid can solo comfortably, switch roles when a group needs it, and rarely finds itself useless.
+### What the specs do
+| Spec | Role | In one line |
+| --- | --- | --- |
+| Balance | Ranged DPS | Casts spell damage from distance, out of any animal form. |
+| Feral (bear) | Tank | High health and heavy hide; holds the monsters' attention in melee. |
+| Feral (cat) | Melee DPS | Stealth, positioning and quick strikes built into a finishing move. |
+| Restoration | Healer | Keeps the group up, largely through healing that ticks over time. |
+Bear and cat are two uses of one talent tree, so a feral druid can tank a dungeon and deal damage in the next one without changing anything but which form they shift into. Changing *tree* means paying a trainer to reset your talents. If you have not grouped before: the tank keeps the monsters hitting it, the healer keeps the tank alive, and the DPS players kill things. The useful thing about a druid is that you can be asked to change which of those you are doing halfway through an evening, and say yes.
+### Your resource
+You have three, and they do not talk to each other.
+Out of form you use **mana**: starts full, drains as you cast, refills by drinking. In **bear** you use **rage**: starts empty, fills as you fight and get hit, drains away out of combat. In **cat** you use **energy**: a small bar that refills steadily on its own, whether you are fighting or not — so cat is never starved, only paced. Cat also builds **combo points** on the target as you use your basic attacks; those points are fuel for a finisher, and they are lost if you change target or leave combat without spending them.
+The trap is mana. Shifting into a form does not carry your mana with it in any useful way, and you cannot eat or drink while shifted, so the mana bar you left at 20% is the one you come back to. A druid who levels entirely in cat form, kills something, and then needs a heal discovers there is nothing to heal with. The habit: watch your mana before you shift, not after, and drink to full while you are already out of form. Shifting also costs mana each time, so flipping in and out repeatedly is expensive in itself.
+### Your first twenty levels
+- **Wrath** — your basic ranged attack while you are still form-less. **Moonfire** — instant, so it works while moving, and it leaves damage burning. Your opener.
+- **Rejuvenation** — healing that ticks over time. Cast it and keep fighting; this is the efficient way to heal yourself. **Healing Touch** — the large, slow heal, for when a tick-over-time is not enough.
+- **Mark of the Wild** — a long buff for you and everyone near you. The most forgotten button in the class. Also **Thorns**, which hurts whatever hits you.
+- **Entangling Roots** — pins something in place. Good for escaping and for splitting a pair of monsters.
+- **Bear Form** — arrives around level ten and changes the class. **Maul** is your rage dump, **Growl** takes a monster's attention back, and the bear's roar weakens everything nearby.
+- **Cat Form** — arrives around level twenty. **Claw** and **Rake** build combo points, and a finisher spends them. Cat also brings stealth, which lets you pick which fight you take.
+- **Aquatic Form** and later **Travel Form** — not combat abilities, but they will save you hours.
+### Common beginner mistakes
+- Shifting into cat or bear on low mana, then needing a heal you cannot afford to cast.
+- Shifting back and forth repeatedly during one fight. Each shift costs mana and abandons the rage or energy you had built.
+- Fighting without **Mark of the Wild** up. It is a long buff, which is exactly why people forget it has expired.
+- Using **Growl** when somebody else is tanking, and pulling the monster onto yourself.
+- Attacking a monster from the front in cat form. Some of your best attacks require standing behind it, and from the front it can parry and block.
+- Ending a fight with a full set of combo points unspent, or building points and then switching to a different target.
+- Trying to tank, heal and deal damage in the same dungeon. Decide what you are for that run and tell the group.
+*Everything from here on is for players who have played WoW before: what Forever changed against the original game, and how well each claim is sourced.*
 ## Bear tanking
 Bear is one of three tanks. Two of the three biggest questions about it resolve **against** bear, and Blizzard has answered neither.
 ### Forever deleted bear's threat talent

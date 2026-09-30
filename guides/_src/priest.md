@@ -1,4 +1,31 @@
 Discipline became a real spec rather than a buff bot — but most of what is written about Priest is BlizzCon demo data that nobody has re-verified.
+## Starting out
+Priest is the game's archetypal healer. It wears cloth, has no pet and almost no melee presence; what it has is the broadest set of tools for keeping other people upright. A direct heal for repairing damage that has happened, a heal that ticks away over time, and a shield that stops damage before it lands rather than mending it afterwards. It also has a shadow-magic side that kills things perfectly well on its own, so you are not obliged to heal to reach level 60.
+Healing suits people who like watching other people. In a group you spend the fight looking at four health bars and barely at the monster. Some players find that the most interesting job in the game; others find it thankless. You will know within two dungeons which you are.
+At low level Priest is slow and fragile. You have few buttons, mana drains faster than you expect, individual kills take a while, and you sit down to drink a great deal. The compensation arrives the moment you group: healers are in short supply and you will rarely wait for an invitation. Be warned that the commonest way a Priest dies is watching everyone else's health and forgetting its own.
+### What the specs do
+| Spec | Role | In one line |
+| --- | --- | --- |
+| Discipline | Healer | Prevention and efficiency — shields, damage that never lands, and mana that lasts. |
+| Holy | Healer | The pure healing tree, with the largest heals and the group-healing tools. |
+| Shadow | Ranged DPS | Damage over time and mind magic, for killing rather than mending. |
+You are not locked into anything. Talent points arrive one at a time as you level, so early on you have barely enough to matter, and your trainer will wipe them for a fee if you change your mind. Healing spells are trained regardless of which tree you feed, so a Shadow Priest can still heal a low dungeon. On roles, if you have never grouped: the tank holds the monster's attention so it hits the person built to survive it, the healer keeps everyone alive, and the DPS kill it. Groups will assume you are the healer.
+### Your resource
+Mana is the blue bar, and it is the whole game for a Priest. Every spell costs some. Nothing you do in combat puts it back except potions, so think of a fight as a budget rather than a rotation.
+Out of combat it refills two ways. It trickles back on its own at a rate driven by your Spirit, and it refills quickly while you eat or drink. The trickle has a catch worth learning properly, usually called the five-second rule: finishing a cast switches that passive regeneration off for the next five seconds. Cast one spell after another and you receive almost none of it. Leave gaps and it resumes.
+In practice this means three habits. Pause deliberately rather than filling every second with a cast. Use your wand on weak targets, because attacking with it costs nothing and lets regeneration keep running. And drink to a full bar between fights, every single time, even when standing still for thirty seconds feels wasteful. New Priests die with health to spare and no mana, having skipped that half-minute eight fights in a row.
+### Your first twenty levels
+Smite is your damage spell to begin with, and Shadow Word: Pain is your first damage-over-time effect — apply it, then Smite while it ticks. Lesser Heal, and later Heal, are your repair tools. Renew heals a little each second and is what you cast while moving or on chip damage. Power Word: Shield absorbs a set amount of damage and is best cast before you are hit, not after.
+Power Word: Fortitude adds stamina and lasts a long while; cast it on yourself and on everyone in the group. Inner Fire improves your armour and is the buff newcomers forget after every death. Mind Blast is a harder-hitting shadow nuke on a short cooldown. Psychic Scream frightens nearby enemies into running away, which is how you survive a bad pull. Fade drops your threat and is the button that stops a monster chasing you across the room. You also learn to remove magic and disease, and to resurrect the dead.
+The two most-ignored buttons in this stretch are Fade and your wand.
+### Common beginner mistakes
+- Drinking to roughly half a mana bar and pulling again. Drink to full.
+- Casting your largest heal on a scratch. A small heal, or Renew, costs a fraction as much.
+- Shielding after the tank is already hurt, instead of before the pull.
+- Standing in melee range of the thing you are fighting because your spells reach that far.
+- Watching the tank's health so closely that you never notice your own, and dying with three heals you could have cast on yourself.
+- Forgetting Fortitude and Inner Fire after a death or a zone change.
+*Everything from here on is for players who have played WoW before: what Forever changed against the original game, and how well each claim is sourced.*
 ## Read this before using anything below
 **Two disjoint bodies of Priest information exist, and the detailed one is not the live one.**
 The long talent-by-talent list below comes from the **BlizzCon demo build**. Its own source says so — the Priest changes are "based largely on the BlizzCon demo build" — and its changelog stops on 15 September, two days before the beta opened. Blizzard's live beta notes contain exactly **seven** Priest lines across every build to date, all small bug fixes.

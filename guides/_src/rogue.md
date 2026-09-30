@@ -1,4 +1,31 @@
 Energy regenerates continuously, poisons and bleeds can crit, and Mutilate locks out Adrenaline Rush by exactly one talent point.
+## Starting out
+Rogue is a melee damage class built around stealth. You wear leather, you have no healing spells and no way to protect an ally, and your defence is not being hit in the first place. In exchange you have the best opening burst in the game, the ability to walk past fights you do not want, and one of the fastest kill speeds at low level.
+The class suits players who enjoy deciding when a fight starts. From stealth you pick the target, approach from the side the game rewards, and hit first. It punishes players who charge in and press buttons. You will die to two enemies at once in situations where a warrior would survive, and that is the honest trade rather than a flaw to be fixed with better gear.
+At low level it feels sharp and slightly exposed. Fights are short. You finish most of them near the end of your health bar, and you will spend real time eating between them. Positioning matters more than it does for any other starting class, because some of your best abilities require you to be behind the target, which means going around it while it is looking at something else.
+### What the specs do
+| Spec | Role | In one line |
+| --- | --- | --- |
+| Assassination | Melee DPS | Poisons, bleeds and daggers; damage that arrives over the whole fight. |
+| Combat | Melee DPS | Straightforward weapon damage with fewer conditions attached. |
+| Subtlety | Melee DPS | Stealth, openers and burst; the most demanding and the most rewarding in a duel. |
+There is no spec button. You gain talent points as you level and put them into three trees, and the spec name only describes where most went. Your trainer will unlearn them for a fee that grows with each reset, so an early choice is not a life sentence. Combat is the kindest of the three while you are learning. If you have not grouped before: the tank holds the monster's attention, the healer keeps people alive, and DPS kills the thing. Rogue is DPS, always, and nobody will expect anything else from you.
+### Your resource
+You have two resources and they work differently.
+Energy is your yellow bar. It does not come from dealing damage — it refills on its own, whether you are fighting or standing about, and it has a low ceiling. That means energy is not something you save for later; a full bar is wasted regeneration. The habit that separates a comfortable Rogue from a frustrated one is spending down to near empty rather than hovering at full, while keeping enough in hand for the one ability you actually need. Before you use something with a setup cost, check that you can afford both halves.
+Combo points are the second resource and they are the core loop. Certain abilities are builders: each use puts a point on the enemy you used it on, up to five. Other abilities are finishers, and they consume every point you have accumulated. More points make a bigger finisher. Points belong to the target you built them on — you cannot move them to a different enemy, and points still sitting on a mob when it dies are gone. Build, then spend, then build again. That rhythm is Rogue. Forever adjusted the fine detail of both energy and combo points, and the sections below cover it.
+### Your first twenty levels
+Sinister Strike is your default builder and will be most of what you press. Eviscerate is your default finisher: straight damage, spent when you have points to spend. Stealth slows you down and makes you hard to see; use it to choose fights and to avoid them. Backstab is a much stronger builder that requires a dagger and requires you to be behind the target.
+Slice and Dice is the finisher new players ignore, and on anything that lives more than a few seconds it is worth more than the damage from Eviscerate, because it makes every ordinary swing faster for its duration. Gouge staggers the target and turns it away from you, which is the only reliable way to get behind something you did not open on from stealth. Evasion and Sprint are your survival buttons and both are forgotten constantly. Kick interrupts a spell being cast at you. Sap removes one enemy from a fight for a while so that you can deal with its friend alone.
+Poisons come in as coatings you apply to your weapons, and they need reapplying. Check them the way a Hunter checks arrows.
+### Common beginner mistakes
+- Opening on a target that has a friend standing three yards away, then fighting both.
+- Hoarding energy at full instead of spending it, so regeneration is thrown away.
+- Building all the way to five points on something that dies at three, wasting the finisher entirely.
+- Never pressing Slice and Dice, and wondering why your damage falls behind on longer fights.
+- Standing in front of the target with a dagger equipped, so the strong builder is unavailable.
+- Letting Evasion, Sprint and Kick sit unbound, then dying with all three available.
+*Everything from here on is for players who have played WoW before: what Forever changed against the original game, and how well each claim is sourced.*
 ## Blizzard has published almost nothing about Rogue
 The entire Rogue section of the beta development notes is one line: *"Sap now correctly flags the Rogue for PvP when used on a target that is PvP flagged."* Everything below is datamining and community work.
 **A trap first.** Searching for Forever Rogue hotfixes surfaces real Blizzard pages mentioning Eviscerate and other Rogue abilities. **Those pages cover retail Midnight, Mists of Pandaria Classic, Season of Discovery, Burning Crusade Classic, Classic Era and Hardcore — there is no WoW Forever section on them at all.** Retail Rogue tuning is not Forever Rogue tuning.

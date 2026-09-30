@@ -1,4 +1,35 @@
 Damage curses became Banes, so you finally hold one of each — and the debuff cap, the question everyone asks, has no answer from Blizzard at all.
+## Starting out
+Warlock is a cloth caster that fights alongside a summoned demon and kills things slowly and inevitably. Where a Mage removes an enemy in a few seconds, a Warlock puts three or four rotting effects on it, steps back, and lets them run. Very little dies quickly to you. Almost everything dies eventually, including things several levels above you, which is why Warlock is generally the strongest caster to level on your own.
+The class also trades its own health for mana. New players read this as a bug or a trap; it is the engine the whole class runs on. Your health bar is a second mana bar, and learning to spend it without killing yourself is most of what separates a competent Warlock from a struggling one.
+Warlock suits people who like bookkeeping. At any moment you are tracking several timers on your target, your pet's health and behaviour, your own health, your mana and your stock of soul shards. That is more to hold in your head than any other caster asks for. Be warned that the damage feels underwhelming before you have gear behind it — the class is back-loaded, and the demon does much of the early work.
+### What the specs do
+| Spec | Role | In one line |
+| --- | --- | --- |
+| Affliction | Ranged DPS | Damage over time, curses and draining life from a target that is slowly dying. |
+| Demonology | Ranged DPS | The pet-focused tree, and the toughest Warlock to kill. |
+| Destruction | Ranged DPS | Direct fire and shadow damage, the closest a Warlock gets to a Mage. |
+Talents arrive one point per level and your trainer will reset them for a fee, so nothing you choose early is binding. All three trees are ranged damage; Warlock never tanks or heals, though a Voidwalker can hold a monster's attention well enough that solo play feels like having a tank. If you have not grouped before: the tank holds the monster's attention so it hits the person built to survive it, the healer keeps everyone alive, and the DPS kill it. You are DPS, plus a source of crowd control and utility.
+### Your resource
+You have three resources, and the pet is a fourth thing to manage.
+**Mana** is the usual blue bar. Spells cost it, nothing in combat refills it on its own. Out of combat it trickles back from Spirit and refills quickly when you eat or drink, subject to the five-second rule: finishing a cast switches that passive regeneration off for five seconds, so casting back-to-back gives you nearly none of it. Pause, and it resumes.
+**Health** is your mana reserve. Life Tap converts a chunk of health directly into mana, at will, in combat. This is why a Warlock rarely needs to sit and drink: you tap, keep casting, and let a drain spell or a healthstone put the health back later. The rule is to tap early and often while you are comfortable, never at low health with an enemy still alive. Warlocks who refuse to tap run dry constantly; Warlocks who tap at twenty percent health die.
+**Soul shards** are a consumable currency. You create them with Drain Soul on a dying enemy, and spend them on healthstones, on soulstones, and on summoning your demon after a death. They are earned one at a time and they occupy space, so farm a handful before a dungeon rather than discovering you have none at the door.
+The habit that fixes most new Warlocks: tap for mana while you are healthy, not when you are desperate.
+### Your first twenty levels
+Shadow Bolt is your direct nuke. Corruption and Immolate are your damage-over-time spells, applied first so they tick while you cast something else. Your damage curse is the third timer in that set. Curse of Weakness reduces what the target hits for, which matters when it is hitting you.
+Summon Imp comes first: a ranged firebolt, fragile, no use as a shield. Summon Voidwalker arrives a little later and changes how you play, because it holds the monster's attention while you cast from behind it. Health Funnel keeps it alive at the cost of your own health. Demon Skin and its successor are your armour buff.
+Life Tap is the button the whole class is built around. Drain Life returns health while damaging. Drain Soul produces your shards. Fear sends an enemy running for a while, which is your escape and your crowd control. Create Healthstone makes a self-heal you should always be carrying.
+The forgotten buttons are Life Tap, the healthstone sitting unused in your bag, and telling your pet to attack a specific target rather than whatever it noticed first.
+### Common beginner mistakes
+- Never using Life Tap, and drinking after every fight like a Mage without conjured water.
+- Using Life Tap at low health with the enemy still up.
+- Letting the Imp tank. It cannot. Summon the Voidwalker and let it take the hits.
+- Applying your whole set of timed effects to a weak enemy that dies in four seconds. That is wasted mana.
+- Never making healthstones, or making one and forgetting it exists.
+- Fearing an enemy in an open area so it runs into two more and brings them back.
+- Arriving at a dungeon with no soul shards and no way to resummon a dead demon.
+*Everything from here on is for players who have played WoW before: what Forever changed against the original game, and how well each claim is sourced.*
 ## The debuff cap
 **There is no Blizzard statement, and this was checked rather than assumed.** The forum threads asking directly have **zero blue replies** — the answers in them are literally *"Good questions, answers unknown at this time"*. It is not in the Deep Dive recap, not in the development notes, not in the Known Issues list, and a full-text search for blue posts on debuff limits across the Forever categories returns nothing.
 **It also cannot be tested in this beta.** The cap is 20, there are no raid bosses, and raids do not open until 9 December. Nobody can stack 16 debuffs in a way that proves anything.

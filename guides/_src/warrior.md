@@ -1,4 +1,37 @@
 Rage is normalized to weapon speed, critical hits no longer feed it, and Devastate does not exist. Protection was rebuilt around rage-on-avoidance and still runs dry.
+## Starting out
+A warrior wears plate, carries either one very large weapon or two smaller ones, and has no spells. No self-heal, no ranged attack worth the name, no way out of a fight you picked badly. Everything a warrior does happens within arm's reach of the thing trying to kill it, and the class has two jobs: be the one hitting, or be the one being hit.
+It suits players who would rather watch the enemy than watch their own bars. There is no long cast to plan around and little to manage at range. You react — the monster dodged, so you punish it; it is running, so you cripple its legs; it turned on the healer, so you take its attention back.
+Be told plainly: the first twenty levels are the weakest part of the class. Your damage is almost entirely the weapon in your hands, so a weapon upgrade changes more for you than for a mage, and a weapon four levels old makes you feel broken when you are not. Between fights you have bandages and food and nothing else, so you will spend real time sitting on the floor recovering. Warriors end up among the strongest things in the game. They get there late, and the early road is a slog.
+### What the specs do
+| Spec | Role | In one line |
+| --- | --- | --- |
+| Arms | Melee DPS | One big two-handed weapon, slow heavy swings, bleeds and a hard-hitting opener. |
+| Fury | Melee DPS | A weapon in each hand, fast and messy, hungry for gear and accuracy. |
+| Protection | Tank | Shield and a one-hander; keeps every monster looking at you and absorbs what they throw. |
+You spend talent points as you level, and a trainer will reset them for gold, so no choice you make at level 12 is permanent. If you have never grouped: the tank stands in front and keeps the monsters' attention so they hit the person built to survive it, the healer keeps the tank standing, and the DPS players kill things. A warrior tanks with a shield equipped or deals damage without one, and cannot usefully do both in the same fight.
+### Your resource
+Rage. Mana starts full and drains; rage does the opposite. You begin every fight at zero and earn rage by swinging at things and by being struck, then spend it on your abilities. Out of combat it drains away, so you cannot bank it between pulls.
+Two consequences follow, and both catch newcomers. First, the opening seconds of a fight are poor — you have nothing to press until you have hit something a few times, which is why warriors have abilities whose whole purpose is to hand you rage at the start. Second, rage has a ceiling, and rage generated while you are at the ceiling is gone. If you are sitting at full while auto-attacking, you are throwing away damage; spend it.
+Forever changed how rage is generated, and the change is significant enough that low-level habits from older versions will mislead you. The rage section further down this page has the detail.
+### Your first twenty levels
+- **Heroic Strike** — your rage dump. A harder version of your normal swing. This is where spare rage goes.
+- **Battle Shout** — raises attack power for you and your group. Newcomers forget it exists for entire levels. Cast it before the pull, every pull.
+- **Charge** — closes the gap and hands you rage, but only works out of combat. This is how you open a fight.
+- **Rend** — a bleed. Cheap, and worth applying to anything that will live more than a few seconds.
+- **Bloodrage** — rage on demand, paid for with a slice of your own health. The other button people forget.
+- **Thunder Clap** and **Demoralizing Shout** — area effects that slow and weaken everything around you. Useful when two things arrive instead of one.
+- **Hamstring** — slows a runner. Wounded monsters flee and fetch friends.
+- **Overpower** — only available after the enemy dodges you. Watch for it rather than pressing it blind.
+- **Defensive Stance, Taunt, Sunder Armor, Revenge, Shield Block** — the tanking kit. Stances are modes: one for damage, one for survival. Changing stance discards some of your rage, so do not flip between them casually.
+### Common beginner mistakes
+- Fighting without **Battle Shout** up, or letting it lapse mid-fight.
+- Attacking a monster from the front when you are not the tank. Facing you, it can parry and block; behind it, it cannot. A parry also speeds up its next swing at whoever is tanking.
+- Sitting at maximum rage while auto-attacking. That is free damage evaporating.
+- Using **Charge** to start a fight, then charging the next group before the first is dead.
+- Tanking without a shield equipped. A great deal of your tanking ability is conditional on having one.
+- Levelling with a badly outdated weapon. Warrior damage is the weapon; replace it often, and keep it repaired.
+*Everything from here on is for players who have played WoW before: what Forever changed against the original game, and how well each claim is sourced.*
 ## The seven things that break your muscle memory
 1. **Devastate does not exist.** The client holds 42 warrior spells and it is not among them. **Sunder Armor is the ability**, and Blizzard corrected its threat on all ranks on 24 September, adding Attack Power scaling. Vanilla's flat 301 threat is dead; the replacement is unpublished.
 2. **Never take the shield off.** Four things die with it — Defiance's threat, Bastion's damage, Master of Defense's rage, Shield Specialization's rage. Vanilla two-hand and dual-wield threat tanking is gone by design, and nothing warns you.

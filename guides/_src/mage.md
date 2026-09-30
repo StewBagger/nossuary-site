@@ -1,4 +1,33 @@
 Arcane Blast, Hot Streak and Fingers of Frost are new, Molten Armor is not in the game, and Arcane is drawing real criticism on the official forums.
+## Starting out
+Mage is the pure ranged caster. Cloth armour, no pet, no healing, no way to mend a mistake — and in exchange, the fastest kills and the highest burst damage in the game. The trade is honest and it is extreme. You are the best at removing a single enemy from a distance and the worst at surviving one that reaches you.
+Two things make Mage more than a damage number. It conjures its own food and water, which reads as flavour and is in fact a small permanent income: every other class buys drinks. And it has Polymorph, which turns one enemy into a sheep that wanders off harmlessly for a while. In this era of the game, taking one monster out of a fight of three is often worth more than any amount of damage, and Mages are the class that can do it reliably. Expect to be asked for it constantly.
+At low level the class feels strong and brittle at once. One enemy dies quickly. Two enemies is a genuine emergency, and three is usually a death. Frost is the forgiving choice for levelling, because it slows and freezes things and makes attacking you unpleasant. Fire kills faster and offers nothing at all when a pull goes wrong. Either works; pick the one whose failure mode you can stomach.
+### What the specs do
+| Spec | Role | In one line |
+| --- | --- | --- |
+| Arcane | Ranged DPS | Raw magic and mana tricks, with strong burst and useful utility. |
+| Fire | Ranged DPS | The highest damage in the game and the least margin for error. |
+| Frost | Ranged DPS | Slows, freezes and self-defence — the safest way to level and to solo. |
+Nothing is permanent. Talent points come one per level, so for a long while you have too few for a tree to feel distinct, and your trainer will reset them for a fee later. All three trees are ranged damage; Mage does not tank or heal, and that will not change. If you have not grouped before: the tank holds the monster's attention, the healer keeps everyone alive, the DPS kill it. Your job is the killing, plus keeping one enemy asleep as a sheep.
+### Your resource
+Mana is your only resource, and unlike a warrior's rage it does not build during a fight. It only goes down. Every spell has a cost, and a Mage's best spells cost a lot, so a fight is a budget you are spending.
+Between fights, mana comes back two ways. It trickles back on its own, at a rate driven by Spirit, and it refills quickly while you eat or drink. The trickle is governed by what players call the five-second rule: finishing a cast turns that passive regeneration off for five seconds. Cast continuously and you effectively have none of it. Stop for a few seconds and it starts again.
+This is why conjured water matters so much. You can make your own drink, anywhere, for nothing. Conjure a stack before you leave town, and drink to a full bar after every fight rather than pulling at half. You also learn a cooldown towards the end of your first twenty levels that refills a large amount of mana on the spot; treat it as an emergency measure, not part of your routine.
+The habit that saves new Mages is boring: sit, drink to full, then pull. A Mage with full mana kills three things in a row. A Mage at forty percent kills one and then stands there wanding.
+### Your first twenty levels
+Fireball and Frostbolt are your two workhorse nukes. Fireball hits harder over time; Frostbolt slows whatever it hits, which means the enemy spends longer walking towards you and less time hitting you. Most Mages level on one or the other and rarely both.
+Fire Blast is instant and on a short cooldown, so it is your damage while moving. Arcane Missiles channels a stream of damage and is efficient early. Frost Nova freezes everything around you in place — it is an escape button, not a damage button, and using it wrongly is the single commonest Mage error. Frost Armor, and its successors, buffs your armour and punishes anything attacking you; recast it after every death.
+Arcane Intellect raises your mana pool and should be on you and everyone you group with. Conjure Water and Conjure Food give you your own supplies. Polymorph is the sheep. Practise it out of combat, on the second monster of a pair, before you need it under pressure.
+The two buttons new Mages forget are Frost Nova followed by running away, and Polymorph on anything at all.
+### Common beginner mistakes
+- Standing still and trading hits when something closes the distance. Freeze it, walk away, and start casting again.
+- Treating Frost Nova as damage rather than as the thing that saves your life.
+- Never using Polymorph, and fighting two enemies when you could have fought one.
+- Forgetting Arcane Intellect and your armour buff after a death, a flight, or a zone change.
+- Leaving town without conjuring a stack of water, then buying drinks like everyone else.
+- Pulling again at half mana. You have free drink; there is no excuse.
+*Everything from here on is for players who have played WoW before: what Forever changed against the original game, and how well each claim is sourced.*
 ## Talents
 **Structure, from client data:** seven rows per tree, **51 points at 60**, 54 Mage talents across 18 Arcane, 17 Fire and 19 Frost. Headline counts: **5 new, 36 changed, 0 removed.** Everything that "went away" was renamed in place.
 ### The 16-point milestone

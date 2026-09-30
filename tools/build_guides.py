@@ -23,19 +23,31 @@ OUT = ROOT / "guides" / "wow-forever"
 STAMP = "20260930-1"
 
 # slug -> (display name, accent hex, one-line hook for the hub cards)
+# slug -> (display name, accent hex, roles, one-line hook)
+# The hook is written for someone who has never played -- the hub is the entry point, so
+# it says what the class IS, not what Forever changed about it.
 CLASSES = [
-    ("warrior", "Warrior", "#c79c6e", "Rage is normalized to weapon speed and crits no longer feed it. Devastate does not exist."),
-    ("paladin", "Paladin", "#f58cba", "Protection finally has a taunt — and it costs you a rotational button."),
-    ("hunter", "Hunter", "#abd473", "Misdirection is gone, pets inherit your stats, and Survival is genuinely melee."),
-    ("rogue", "Rogue", "#fff569", "Energy regenerates continuously, poisons crit, and Mutilate locks out Adrenaline Rush by one point."),
-    ("priest", "Priest", "#ffffff", "Discipline became a real spec. Most of what is written about Priest is demo-build data."),
-    ("shaman", "Shaman", "#3e9bff", "Alliance Shaman exist. Windfury was rebuilt. The tanking ban has no Blizzard source."),
-    ("mage", "Mage", "#69ccf0", "Arcane Blast, Hot Streak and Fingers of Frost are new. Molten Armor is not in the game."),
-    ("warlock", "Warlock", "#9482c9", "Damage curses became Banes, so you hold one of each. The debuff cap is unanswered."),
-    ("druid", "Druid", "#ff7d0a", "Skyborne can be Druids. Bear lost its threat talent and has no route to crit immunity."),
+    ("warrior", "Warrior", "#c79c6e", "Tank \u00b7 Melee",
+     "Plate-armoured fighter. Tanks or deals damage, and heals nobody. Hard early, formidable late."),
+    ("paladin", "Paladin", "#f58cba", "Tank \u00b7 Healer \u00b7 Melee",
+     "Plate hybrid that can do all three jobs. Very hard to kill, historically slow at killing."),
+    ("hunter", "Hunter", "#abd473", "Ranged",
+     "Ranged weapons and a pet that fights for you. The easiest class to level alone."),
+    ("rogue", "Rogue", "#fff569", "Melee",
+     "Stealth, daggers and burst damage. Kills fast, dies fast, and picks its fights."),
+    ("priest", "Priest", "#ffffff", "Healer \u00b7 Ranged",
+     "The archetypal healer \u2014 and a shadow caster if you would rather deal the damage."),
+    ("shaman", "Shaman", "#3e9bff", "Healer \u00b7 Ranged \u00b7 Melee",
+     "Elemental hybrid built around totems: short-lived objects that buff everyone near them."),
+    ("mage", "Mage", "#69ccf0", "Ranged",
+     "The highest burst damage and the thinnest body in the game. Conjures its own food and water."),
+    ("warlock", "Warlock", "#9482c9", "Ranged",
+     "A demon fights beside you while curses kill slowly. Trades its own health for mana."),
+    ("druid", "Druid", "#ff7d0a", "Tank \u00b7 Healer \u00b7 Ranged \u00b7 Melee",
+     "The shapeshifter \u2014 bear, cat and caster forms. The most flexible class in the game."),
 ]
-NAMES = {s: n for s, n, _, _ in CLASSES}
-ACCENTS = {s: a for s, _, a, _ in CLASSES}
+NAMES = {s: n for s, n, _, _, _ in CLASSES}
+ACCENTS = {s: a for s, _, a, _, _ in CLASSES}
 
 INLINE = [
     (re.compile(r"\[([^\]]+)\]\(([^)]+)\)"), r'<a href="\2" rel="noopener">\1</a>'),
@@ -52,7 +64,9 @@ def inline(text):
     return text
 
 
-def render(md):
+def render(md, headings=None):
+    if headings is None:
+        headings = []
     out, lines, i = [], md.split("\n"), 0
     while i < len(lines):
         line = lines[i]
@@ -63,7 +77,10 @@ def render(md):
             out.append(f"<h3>{inline(line[4:])}</h3>")
             i += 1
         elif line.startswith("## "):
-            out.append(f"<h2>{inline(line[3:])}</h2>")
+            text = line[3:]
+            slug = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+            headings.append((slug, text))
+            out.append(f'<h2 id="{slug}">{inline(text)}</h2>')
             i += 1
         elif line.startswith("> "):
             buf = []
@@ -95,14 +112,24 @@ def render(md):
                 i += 1
             out.append(f"<{tag}>" + "".join(f"<li>{x}</li>" for x in items) + f"</{tag}>")
         else:
-            buf = []
-            while i < len(lines) and lines[i].strip() and not re.match(
-                r"^(#|\||>|- |\d+\. )", lines[i]
-            ):
-                buf.append(inline(lines[i]))
-                i += 1
-            out.append("<p>" + " ".join(buf) + "</p>")
+            # One source line is one paragraph. These sources never wrap a paragraph
+            # across lines, so joining adjacent lines would silently weld separate
+            # paragraphs into a wall of text.
+            out.append("<p>" + inline(line) + "</p>")
+            i += 1
     return "\n        ".join(out)
+
+
+def contents(headings):
+    """An on-page contents list. These guides run long and serve two audiences at once --
+    someone new to the class and someone who only wants the Forever diff -- so the jump
+    list is doing real work, not decoration."""
+    if len(headings) < 3:
+        return ""
+    items = "".join(f'<li><a href="#{s}">{html.escape(t)}</a></li>' for s, t in headings)
+    return ('<nav class="guide-toc" aria-labelledby="toc-h">'
+            '<p class="eyebrow" id="toc-h">On this page</p>'
+            f"<ul>{items}</ul></nav>")
 
 
 def nav(active):
@@ -203,14 +230,16 @@ def main():
         sys.exit(f"no source directory: {SRC}")
     written = []
 
-    for slug, name, accent, hook in CLASSES:
+    for slug, name, accent, roles, hook in CLASSES:
         md = SRC / f"{slug}.md"
         if not md.exists():
             print(f"  skip {slug} (no source yet)")
             continue
         text = md.read_text()
         lede = text.split("\n")[0].lstrip("> ").strip()
-        body = render("\n".join(text.split("\n")[1:]))
+        headings = []
+        body = render("\n".join(text.split("\n")[1:]), headings)
+        body = contents(headings) + "\n        " + body
         d = OUT / slug
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(page(
@@ -222,7 +251,7 @@ def main():
 
     # the hub
     cards = []
-    for slug, name, accent, hook in CLASSES:
+    for slug, name, accent, roles, hook in CLASSES:
         live = (OUT / slug / "index.html").exists()
         href = f"/guides/wow-forever/{slug}/" if live else None
         tag = "a" if live else "div"
@@ -232,9 +261,10 @@ def main():
             f'<{tag} class="guide-card"{attr} style="--class-accent:{accent}">'
             f'<img src="/assets/guides/wow-forever/{slug}-256.webp" alt="" width="96" height="96" loading="lazy">'
             f'<span class="guide-card-name">{name}{soon}</span>'
+            f'<span class="guide-card-roles">{html.escape(roles)}</span>'
             f'<span class="guide-card-hook">{inline(hook)}</span></{tag}>')
     hub_md = SRC / "index.md"
-    intro = render("\n".join(hub_md.read_text().split("\n")[1:])) if hub_md.exists() else ""
+    intro = render("\n".join(hub_md.read_text().split("\n")[1:]), []) if hub_md.exists() else ""
     lede = hub_md.read_text().split("\n")[0].lstrip("> ").strip() if hub_md.exists() else ""
     body = f'<div class="guide-grid">{"".join(cards)}</div>\n        {intro}'
     OUT.mkdir(parents=True, exist_ok=True)

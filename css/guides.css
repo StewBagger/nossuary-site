@@ -25,17 +25,21 @@
   gap: 16px; margin: 0 0 48px;
 }
 .guide-card {
-  display: grid; grid-template-columns: 64px 1fr; grid-template-rows: auto auto;
+  display: grid; grid-template-columns: 64px 1fr; grid-template-rows: auto auto auto;
   column-gap: 16px; row-gap: 4px; align-items: center;
   padding: 18px; border: 1px solid var(--line); border-radius: 14px;
   background: linear-gradient(180deg, var(--stone) 0%, var(--bg-2) 100%);
   text-decoration: none; color: inherit;
   transition: border-color .15s ease, transform .15s ease;
 }
-.guide-card img { grid-row: 1 / span 2; width: 64px; height: 64px; border-radius: 12px; }
+.guide-card img { grid-row: 1 / span 3; width: 64px; height: 64px; border-radius: 12px; }
 .guide-card-name {
   font: 600 1.05rem/1.2 var(--sans); color: var(--bone);
   display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
+}
+.guide-card-roles {
+  font: 600 .64rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--class-accent); opacity: .85;
 }
 .guide-card-hook { font-size: .86rem; line-height: 1.45; color: var(--bone-dim); }
 a.guide-card:hover { border-color: var(--class-accent); transform: translateY(-2px); }
@@ -93,3 +97,21 @@ a.guide-card:hover .guide-card-name { color: var(--class-accent); }
   color: var(--grey); white-space: nowrap;
 }
 .guide-table tbody tr:last-child td { border-bottom: 0; }
+
+/* --- On-page contents -------------------------------------------------- */
+/* These pages serve a newcomer and a returning player in one document, so the jump
+   list is load-bearing: it is how each audience skips to its half. */
+.guide-toc {
+  max-width: 74ch; margin: 0 0 40px; padding: 18px 22px;
+  border: 1px solid var(--line); border-radius: 12px;
+  background: linear-gradient(180deg, var(--stone) 0%, var(--bg-2) 100%);
+}
+.guide-toc .eyebrow { margin: 0 0 10px; color: var(--class-accent); }
+.guide-toc ul {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 6px 20px;
+}
+.guide-toc li { margin: 0; }
+.guide-toc a { color: var(--bone-dim); text-decoration: none; font-size: .92rem; }
+.guide-toc a:hover { color: var(--class-accent); text-decoration: underline; }
+.guide-body h2 { scroll-margin-top: 20px; }

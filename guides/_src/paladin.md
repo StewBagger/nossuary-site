@@ -1,4 +1,37 @@
 Protection finally has a taunt, and the way it got one is the most complained-about design decision in the beta.
+## Starting out
+A paladin is a plate-wearing melee fighter who runs on mana. That single sentence surprises more newcomers than anything else about the class. You stand in the front rank swinging a weapon, and the bar you are watching is the blue one — the same resource a priest uses, spent on holy damage, on healing yourself, and on the shields and stuns that keep you upright.
+The class is built around durability and support rather than speed. You are very hard to kill, you can heal yourself mid-fight, and you carry blessings and auras that improve everyone standing near you. What you do not have is quick kills. At low level a paladin's fights are longer than a warrior's or a rogue's, and a great deal of your time is spent winning slowly and then walking to the next thing with most of your health intact.
+That trade suits some players enormously and bores others. If you like surviving what should have killed you, pulling three things on purpose and grinding them down, or being the person who keeps a group functioning, this is a comfortable class from level one. If you want each monster dead in four seconds, you will find the early levels tedious. Paladins are, on the other hand, forgiving: mistakes that kill other classes tend only to cost you time.
+### What the specs do
+| Spec | Role | In one line |
+| --- | --- | --- |
+| Holy | Healer | Keeps the group alive with efficient single-target healing. |
+| Protection | Tank | Wears the damage and holds attention through holy damage rather than weapon damage. |
+| Retribution | Melee DPS | Swings a two-hander and converts mana into extra damage on every hit. |
+Talents are spent as you level and a trainer will reset them for gold, so you can change your mind. Roles, if you have not grouped before: the tank keeps monsters attacking it instead of everyone else, the healer keeps the tank alive, and the DPS players do the killing. A paladin can do any of the three, but not at once, and a group notices immediately if you have decided you are doing all of them.
+### Your resource
+Mana. It starts full, it does not refill meaningfully in combat, and it refills between fights mostly by drinking. Everything you do costs some — your damage, your healing, your stun, your seals.
+The habit that decides whether a paladin feels good or terrible is learning what to *stop* spending mana on. Your normal weapon swing is free. Your seals and your damage abilities are not. If you spend every point of mana on making the fight faster, you have none left for the heal that saves it, and you will then sit drinking for longer than the fight lasted. The routine that works while levelling: keep a seal up, use your damage abilities while you are comfortably above half mana, and hold the rest in reserve for healing. Drink to full before you pull rather than topping up afterwards.
+Paladins also carry mana-restoring tools of their own — a blessing and a seal-and-judgement pairing that return mana as you fight. Newcomers overlook them entirely and then conclude the class runs dry. It does, if you do not use them.
+### Your first twenty levels
+- **Your seal** — a short buff, roughly half a minute, that changes what your weapon swings do. The first one adds holy damage to every hit. A seal that has expired is your single most common oversight; re-cast it in every fight.
+- **Judgement** — spends the active seal to throw its effect onto the enemy. Seal, then judge. Different seals judge into different things: extra damage, a debuff, mana back.
+- **Holy Light** — your large, slow heal. **Flash of Light** — the small, fast one. Use the small one while levelling; the large one is for emergencies and for healing other people.
+- **Your aura** — a permanent, free group buff. One at a time. It costs nothing to have running, so having none running is pure waste.
+- **Blessings** — your other group buff, cast on one target at a time. Attack power for the melee, mana return for casters. Re-cast after every death.
+- **Hammer of Justice** — a short stun. Its real use is stopping a caster mid-spell or buying time to heal, not squeezing out extra damage.
+- **Lay on Hands** and your **defensive cooldowns** — the buttons that make paladins near-unkillable. Long cooldowns, so they feel precious and newcomers hoard them until they are dead. Use them.
+- **Righteous Fury** — the toggle that makes your holy damage hold a monster's attention. On when you tank. Off when you do not.
+Forever reworked parts of the paladin tanking toolkit; the Protection section below covers what you actually get.
+### Common beginner mistakes
+- Letting the seal expire and swinging away without one. It is a short buff and it runs out mid-fight.
+- Leaving **Righteous Fury** switched on when someone else is tanking. You will pull monsters off them and not understand why.
+- Forgetting to re-apply your blessing and aura after a death or a zone change.
+- Spending down to empty on damage, then having no mana for the heal.
+- Using the stun as a damage button, so it is on cooldown when a caster starts something that needed interrupting.
+- Standing in front of a monster you are not tanking. From the front it can parry and block; from behind it cannot.
+*Everything from here on is for players who have played WoW before: what Forever changed against the original game, and how well each claim is sourced.*
 ## Why this class is unusually well documented
 **Exactly one build in the entire beta has changed a single Paladin number** — 24 September, labelled "the first balance changes of the beta". Every build since records "talents, spells and items did not change". Paladin is also the only class with its own section in Blizzard's Deep Dive panel recap. So the data here is more stable and better attested than for any other class.
 ## Class-wide changes
