@@ -3,8 +3,15 @@ build: 1.60.1.70124
 
 Rogue kills fast, dies fast and picks its fights. Forever moved Lockpicking to level 1 and made it a secondary skill, and Sap no longer breaks stealth.
 :::scope
-Written for levelling, 1 to 60. Forever's beta caps at level 30, so **no level-60 Rogue build has been tested.** Rogue is the class Blizzard has said least about — the entire Rogue section of the beta notes is one line about Sap and PvP flagging. Ability training levels below are read from the client; almost nothing else about Rogue is officially documented.
+Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Rogue build has been tested.** Rogue is the class Blizzard has said least about — the entire Rogue section of the beta notes is one line about Sap and PvP flagging. Ability training levels below are read from the client; almost nothing else about Rogue is officially documented.
 :::
+## Which spec?
+| Spec | Role | Levelling | In one line |
+| --- | --- | --- | --- |
+| **[Assassination](/guides/wow-forever/rogue/assassination/)** | Melee DPS | Contested — see below | Poisons and daggers, built around [[Ambush]] and bleed damage |
+| **[Combat](/guides/wow-forever/rogue/combat/)** | Melee DPS | **Safest pick** | Swords and maces, `Riposte`, and the most forgiving of the three |
+| **[Subtlety](/guides/wow-forever/rogue/subtlety/)** | Melee DPS | Viable | `Ghostly Strike`, openers from stealth, and the strongest PvP tree |
+**All three are melee damage, so pick on how you want to play rather than on role.** Combat is the low-risk answer while levelling; Subtlety is the duelling tree; Assassination's levelling strength is genuinely **disputed between sources** — one publishes a level-20 build and rates it 4 out of 5, another says it only comes together at 30. That disagreement is real and unresolved, and either side may be right.
 ## Is Rogue for you?
 Play Rogue if you like deciding when a fight starts, and you accept dying quickly as the price of killing quickly.
 :::strengths
@@ -23,25 +30,6 @@ Play Rogue if you like deciding when a fight starts, and you accept dying quickl
 **Does it level well?** Quickly, with a lot of eating in between.
 **Does it need a group?** No, and it is the best class in the game at avoiding fights it cannot win.
 :::
-## Your first talent points
-**The hybrid build**, usually written 2/2/7 — an Ambush opener with Sinister Strike filler. **Combat** is the kinder choice if you mean to run dungeons, and needs no weapon swapping or positioning.
-1. **`Remorseless Attacks`, 2 points.**
-2. **`Improved Sinister Strike`, 2 points** — Sinister Strike is your level-1 ability, so this pays immediately.
-3. **`Camouflage`, 3 points** and **`Opportunity`, 2 points.**
-4. **`Improved Ambush`, 2 points.**
-The straight Combat alternative takes `Lightning Reflexes`, `Improved Sinister Strike`, `Deflection` and `Precision` to reach **`Riposte`**, which is the best build for soloing elites.
-At 30, **Assassination becomes viable for the first time** because `Mutilate` unlocks — take `Malice`, `Remorseless Attacks`, `Ruthlessness`, `Relentless Strikes`, `Lethality` and `Vile Poisons` on the way.
-With the Legacy **Talented** perk, `Improved Sinister Strike` lands around level 7, which makes the flat stretch from 5 to 18 — before Ambush — noticeably less flat.
-## Levelling rotation
-1. **[[Instant Poison]] on both weapons** before you pull.
-2. **[[Stealth]] into [[Ambush]]** from 18. Below that, [[Cheap Shot]] from 26, or straight into Sinister Strike.
-3. **[[Backstab]]** if you can hold position behind them, otherwise **[[Sinister Strike]]**.
-4. At 5 combo points on something that will live: **[[Slice and Dice]]**.
-5. Otherwise **[[Eviscerate]]**.
-6. **[[Gouge]]** to reset position for a Backstab. **[[Kick]]** every dangerous cast.
-**Skip [[Rupture]] while levelling** — Slice and Dice is better, and Rupture was nerfed.
-**Two or more enemies:** **[[Sap]] one and kill the other.** Sap no longer breaks your stealth in Forever, which makes this far cleaner than it was. Subtlety has no area damage at all.
-**Energy regenerates slowly in Forever** — never sit at full, and remember combo points are locked to the target you built them on.
 ## Levelling milestones
 | Level | What you get |
 | --- | --- |
@@ -61,13 +49,6 @@ With the Legacy **Talented** perk, `Improved Sinister Strike` lands around level
 | 34 | [[Blind]] |
 | 40 | [[Safe Fall]], mount |
 **Every Rogue combat ability trains at its Classic level.** The only thing that moved is Pick Lock.
-## Stat priority
-1. **Weapon damage** — a slow main hand
-2. **Hit and Expertise**
-3. **Agility**
-4. **Attack Power**
-5. Critical strike, then Strength, then Stamina
-The tiebreaker worth remembering: **between a 15 DPS weapon at 1.9 speed and a 14 DPS weapon at 2.8 speed, take the slow one.**
 ## Which race
 **Alliance — Human** for long fights, on `Sword Specialization` at **+2% crit**, the largest weapon racial. **Gnome** is the better levelling pick for `Eureka!` and `Escape Artist`.
 **Horde — Orc, unambiguously.** `Axe Specialization` gives +1% crit — and **Rogues can use one-handed axes in Forever**, which is new.

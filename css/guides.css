@@ -194,3 +194,27 @@ a.guide-card:hover .guide-card-name { color: var(--class-accent); }
 .guide-mage { --class-accent: #69ccf0; }
 .guide-warlock { --class-accent: #9482c9; }
 .guide-druid { --class-accent: #ff7d0a; }
+
+/* --- Spec navigation ----------------------------------------------------- */
+/* Repeated identically on the class overview and every spec page, so the split reads as
+   one guide rather than several dead ends. Every site studied does this. */
+.spec-nav { margin: 0 0 22px; }
+.spec-nav ul {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.spec-nav li { margin: 0; }
+.spec-nav a {
+  display: inline-block; padding: 7px 14px; border-radius: 999px;
+  border: 1px solid var(--line); background: #070908;
+  font: 600 .82rem/1 var(--sans); color: var(--bone-dim); text-decoration: none;
+  transition: border-color .15s ease, color .15s ease;
+}
+.spec-nav a:hover { color: var(--class-accent); border-color: var(--class-accent); }
+.spec-nav a.on {
+  color: var(--bg); background: var(--class-accent); border-color: var(--class-accent);
+}
+.guide-meta .gm-role {
+  color: var(--bone); border: 1px solid var(--line);
+  border-radius: 4px; padding: 3px 7px;
+}

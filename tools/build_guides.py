@@ -64,6 +64,39 @@ CLASSES = [
      "The shapeshifter — bear, cat and caster forms. The most flexible class in the game."),
 ]
 
+
+# class slug -> [(spec slug, spec name, role)]
+# Every established guide site splits a class guide by specialisation -- Wowhead runs a
+# separate guide per spec, Icy Veins uses role tabs, classicwow.gg has an overview plus
+# per-spec children. A single page per class can only ever describe one spec's build and
+# rotation, which is the defect this structure fixes.
+# Druid's Feral tree does two genuinely different jobs from one build, so bear and cat
+# get separate pages and both say the talents are shared.
+SPECS = {
+    "warrior": [("arms", "Arms", "Melee DPS"), ("fury", "Fury", "Melee DPS"),
+                ("protection", "Protection", "Tank")],
+    "paladin": [("holy", "Holy", "Healer"), ("protection", "Protection", "Tank"),
+                ("retribution", "Retribution", "Melee DPS")],
+    "hunter": [("beast-mastery", "Beast Mastery", "Ranged DPS"),
+               ("marksmanship", "Marksmanship", "Ranged DPS"),
+               ("survival", "Survival", "Melee DPS")],
+    "rogue": [("assassination", "Assassination", "Melee DPS"),
+              ("combat", "Combat", "Melee DPS"), ("subtlety", "Subtlety", "Melee DPS")],
+    "priest": [("discipline", "Discipline", "Healer"), ("holy", "Holy", "Healer"),
+               ("shadow", "Shadow", "Ranged DPS")],
+    "shaman": [("elemental", "Elemental", "Ranged DPS"),
+               ("enhancement", "Enhancement", "Melee DPS"),
+               ("restoration", "Restoration", "Healer")],
+    "mage": [("arcane", "Arcane", "Ranged DPS"), ("fire", "Fire", "Ranged DPS"),
+             ("frost", "Frost", "Ranged DPS")],
+    "warlock": [("affliction", "Affliction", "Ranged DPS"),
+                ("demonology", "Demonology", "Ranged DPS"),
+                ("destruction", "Destruction", "Ranged DPS")],
+    "druid": [("balance", "Balance", "Ranged DPS"), ("feral-bear", "Feral \u2014 Bear", "Tank"),
+              ("feral-cat", "Feral \u2014 Cat", "Melee DPS"),
+              ("restoration", "Restoration", "Healer")],
+}
+
 INLINE = [
     (re.compile(r"\[\[([^\]]+)\]\]"), r'<span class="ab">\1</span>'),
     (re.compile(r"\[([^\]]+)\]\(([^)]+)\)"), r'<a href="\2" rel="noopener">\1</a>'),
@@ -181,6 +214,25 @@ def hoist_scope(body):
     return m.group(1), body.replace(m.group(1), "", 1).strip()
 
 
+def specnav(class_slug, class_name, active_spec=None):
+    """The spec bar, repeated identically on the class overview and every spec page.
+
+    Every site studied repeats one navigation bar across all of a class's pages, so the
+    split reads as one guide rather than several. Without it a spec page is a dead end.
+    """
+    if class_slug not in SPECS:
+        return ""
+    base = f"/guides/wow-forever/{class_slug}"
+    items = [(f"{base}/", "Overview", active_spec is None)]
+    items += [(f"{base}/{sl}/", nm, sl == active_spec)
+              for sl, nm, _ in SPECS[class_slug]]
+    li = "".join(
+        f'<li><a href="{h}"{" class=\"on\"" if on else ""}>{html.escape(t)}</a></li>'
+        for h, t, on in items)
+    return (f'<nav class="spec-nav" aria-label="{html.escape(class_name)} guide sections">'
+            f"<ul>{li}</ul></nav>")
+
+
 def contents(headings):
     if len(headings) < 3:
         return ""
@@ -192,9 +244,11 @@ def contents(headings):
 
 
 def nav():
+    # The primary nav is duplicated in index.html and roster/index.html. A new top-level page
+    # must be added in every one of them, or the guides' nav and the rest of the site disagree.
     items = [("/#play", "Play"), ("/#mods", "Mods"), ("/forums/", "Forums"),
-             ("/guides/wow-forever/", "Guides"), ("/#support", "Support"),
-             ("/#work", "Workshop"), ("/#contact", "Contact")]
+             ("/guides/wow-forever/", "Guides"), ("/roster/", "Roster"),
+             ("/#support", "Support"), ("/#work", "Workshop"), ("/#contact", "Contact")]
     return "\n        ".join(
         f'<li><a href="{h}"{" aria-current=\"page\"" if l == "Guides" else ""}>{l}</a></li>'
         for h, l in items)
@@ -215,22 +269,33 @@ def frontmatter(text):
 
 
 def page(slug, title, desc, standfirst, body, crest, canonical, crumb=None,
-         accent=None, meta=None):
+         accent=None, meta=None, parent=None, sn="", role=None):
     meta = meta or {}
     # NOTE: no inline style attribute anywhere on these pages. The CSP is
     # style-src 'self', which blocks style="" outright -- an inline custom property is
     # silently dropped and every accent falls back to the site default. Per-class accents
     # live in css/guides.css keyed off this class instead.
-    style = f" guide-{slug}" if accent else ""
+    # The accent is a CLASS colour, so it keys off the class slug -- on a spec page that
+    # is the parent, not this page's own slug. Deriving it from `slug` gave every spec
+    # page a class name like guide-shaman-enhancement, which matches no rule, so all 28
+    # of them silently fell back to the site default green.
+    style = f" guide-{parent[0] if parent else slug}" if accent else ""
     crumbs = ""
     if crumb:
+        trail = ['<li><a href="/">Home</a></li>',
+                 '<li><a href="/guides/wow-forever/">WoW: Forever</a></li>']
+        if parent:
+            pslug, pname = parent
+            trail.append(f'<li><a href="/guides/wow-forever/{pslug}/">{html.escape(pname)}</a></li>')
+        trail.append(f'<li aria-current="page">{html.escape(crumb)}</li>')
         crumbs = ('<nav class="crumbs" aria-label="Breadcrumb"><ol>'
-                  '<li><a href="/">Home</a></li>'
-                  '<li><a href="/guides/wow-forever/">WoW: Forever</a></li>'
-                  f'<li aria-current="page">{html.escape(crumb)}</li></ol></nav>')
+                  + "".join(trail) + "</ol></nav>")
     stamped = meta.get("updated", date.today().isoformat())
     build = meta.get("build", "")
-    bits = [f'<span class="gm-ver">WoW: Forever</span>',
+    bits = [f'<span class="gm-ver">WoW: Forever</span>']
+    if role:
+        bits.append(f'<span class="gm-role">{html.escape(role)}</span>')
+    bits += [
             f'<span>Updated {html.escape(stamped)}</span>']
     if build:
         bits.append(f'<span>Beta build {html.escape(build)}</span>')
@@ -286,6 +351,7 @@ def page(slug, title, desc, standfirst, body, crest, canonical, crumb=None,
 
     <div class="wrap forum-wrap" id="guide-main">
       {crumbs}
+      {sn}
       {metaline}
       <div class="section-head guide-body">
         {body}
@@ -327,11 +393,36 @@ def main():
         d = OUT / slug
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(page(
-            slug, f"{name} · WoW: Forever · Null Ossuary", hook, standfirst,
+            slug, f"{name} \u00b7 WoW: Forever \u00b7 Null Ossuary", hook, standfirst,
             body, slug, f"https://nossuary.com/guides/wow-forever/{slug}/",
-            name, accent, meta))
+            name, accent, meta, sn=specnav(slug, name)))
         written.append(slug)
-        print(f"  wrote guides/wow-forever/{slug}/index.html")
+        print(f"  wrote {slug}/")
+
+        for sslug, sname, role in SPECS.get(slug, []):
+            smd = SRC / f"{slug}-{sslug}.md"
+            if not smd.exists():
+                print(f"    skip {slug}/{sslug} (no source yet)")
+                continue
+            smeta, stext = frontmatter(smd.read_text())
+            slines = stext.split("\n")
+            sstand = inline(slines[0].strip())
+            sh = []
+            sbody = blocks("\n".join(slines[1:]), sh)
+            sscope, sbody = hoist_scope(sbody)
+            sbody = sscope + "\n        " + contents(sh) + "\n        " + sbody
+            sd = d / sslug
+            sd.mkdir(parents=True, exist_ok=True)
+            (sd / "index.html").write_text(page(
+                f"{slug}-{sslug}",
+                f"{sname} {name} \u00b7 WoW: Forever \u00b7 Null Ossuary",
+                f"{sname} {name} levelling guide for WoW: Forever \u2014 {role}.",
+                sstand, sbody, slug,
+                f"https://nossuary.com/guides/wow-forever/{slug}/{sslug}/",
+                sname, accent, smeta or meta, parent=(slug, name),
+                sn=specnav(slug, name, sslug), role=role))
+            written.append(f"{slug}/{sslug}")
+            print(f"    wrote {slug}/{sslug}/")
 
     cards = []
     for slug, name, accent, roles, hook in CLASSES:

@@ -3,8 +3,18 @@ build: 1.60.1.70124
 
 Druid is four classes in one character, and Forever changed its most important gearing rule: **your weapon's damage now scales Bear and Cat form**, where in Classic it did not matter at all.
 :::scope
-Written for levelling, 1 to 60. Forever's beta caps at level 30, so **no level-60 Druid build has been tested** — and because Moonkin Form is a 31-point capstone, **nobody in the beta has ever been in it**. One naming note: the Feral talent older guides call Mangle is **Primal Bite** in the current client.
+Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Druid build has been tested** — and because Moonkin Form is a 31-point capstone, **nobody in the beta has ever been in it**. One naming note: the Feral talent older guides call Mangle is **Primal Bite** in the current client.
 :::
+## Which spec?
+| Spec | Role | Levelling | In one line |
+| --- | --- | --- | --- |
+| **[Balance](/guides/wow-forever/druid/balance/)** | Ranged DPS | Viable, slower | `Eclipse` twisting, and [[Wrath]] got 50% more damage on 24 September |
+| **[Feral — Bear](/guides/wow-forever/druid/feral-bear/)** | Tank | **Your form from 10 to 20** | Leather tanking on rage and dodge, with no block and no parry |
+| **[Feral — Cat](/guides/wow-forever/druid/feral-cat/)** | Melee DPS | **Best from 20 on** | Energy and combo points, and +30% movement speed permanently |
+| **[Restoration](/guides/wow-forever/druid/restoration/)** | Healer | Slowest | HoTs, `Swiftmend`, and 1-second-cooldown [[Rejuvenation]] |
+**Bear and Cat share one tree and mostly one build**, which is why they get separate pages: the **rotations, stat priorities and gear are completely different** even where the talents are not. Bear is the only form you have from 10 to 20. **Cat Form does not exist until level 20 and now comes from a quest chain** in Moonglade, not a trainer.
+**Two habits from Classic you must unlearn.** **Your weapon's damage now counts in Bear and Cat Form** — three sources confirm it, so the weapon is chosen on damage, not as a stat stick. And **powershifting is dead**: `Furor` no longer grants a flat 40 energy on entering Cat Form, so dropping and re-entering form refills nothing.
+Restoration is honestly rated: *"You will be very hard to kill, but our damage is just too low to do the job efficiently."*
 ## Is Druid for you?
 Play Druid if you want to be able to do any job in the game on one character, and you accept a slow and slightly confusing first twenty levels.
 :::strengths
@@ -23,29 +33,6 @@ Play Druid if you want to be able to do any job in the game on one character, an
 **Does it level well?** Comfortably from 10, awkwardly before that.
 **Does it need a group?** No — and groups will take you as tank, healer or damage.
 :::
-## Your first talent points
-**Feral**, played as Bear from 10 and Cat from 20. Balance is a real alternative that never runs out of mana.
-1. **`Ferocity`, 5 points** — helps the Bear rage economy *and* Cat energy costs, so it pays in both forms.
-2. **`Brutal Impact`, 2 points** — stronger [[Bash]], and 30 seconds off its cooldown.
-3. **`Feral Instinct`, 1 point.**
-4. **`Feral Swiftness`, 2 points** — a permanent 30% movement bonus in Cat Form, plus dodge in every form.
-5. **`Feral Charge`** at 20.
-With the Legacy **Talented** perk, `Ferocity` completes by about level 9 — so **you enter Bear Form at 10 with the rage economy already fixed**, which is the cleanest payoff of that perk in the game, because 10 to 20 in Bear is Druid's roughest stretch.
-## Levelling rotation
-**Bear, from 10 — your levelling form until Cat arrives:**
-1. **[[Demoralizing Roar]]** on the pull.
-2. **Auto-attack and take hits to build rage.** [[Enrage]] gives 30 rage over 10 seconds on a one-minute cooldown.
-3. **[[Maul]]** as your rage dump.
-4. **[[Swipe]]** instead, on two or more.
-5. **[[Bash]]** to interrupt.
-**Cat, from 20:**
-1. **[[Prowl]]** to open where you can.
-2. **[[Claw]]** to build combo points.
-3. **[[Rip]]** at five points.
-4. **[[Faerie Fire]]** to shred armour — and in Forever it works **inside Cat and Bear form**.
-**Before 10:** [[Moonfire]] to pull, then [[Wrath]].
-**The trick worth knowing:** your mana pool keeps regenerating while you are shifted, even though the bar is hidden. So level in Bear, and **shift out to heal yourself between pulls** using mana that refilled while you were fighting.
-Keep [[Mark of the Wild]] and [[Thorns]] up. Your only crowd control while levelling is [[Entangling Roots]], which does little against casters.
 ## Levelling milestones
 | Level | What you get |
 | --- | --- |
@@ -65,10 +52,6 @@ Keep [[Mark of the Wild]] and [[Thorns]] up. Your only crowd control while level
 | 44 | [[Barkskin]] — **now costs nothing**, and the Classic downsides are gone |
 | 50 | [[Gift of the Wild]] — now party **and** raid |
 **[[Tree of Life]] and Flight Form do not exist in Forever.** Moonkin Form is still the 31-point Balance capstone, so it arrives at 40 — but it is no longer a dead aura: it grants the party **3% crit to all damage** at 45 yards and doubles your [[Omen of Clarity]] proc rate.
-## Stat priority
-**Feral, both bear and cat:** **Weapon DPS first**, then Agility, Strength, Attack Power, Hit, Critical strike.
-**Balance:** Spell Power, Intellect, Hit, Critical strike, Spirit.
-**This is the single most important change on this page.** In Classic, a Druid's form damage ignored the weapon entirely and you chose weapons for their stats. **Forever added weapon scaling to both Bear and Cat form**, so you now want **the highest-DPS two-hander you can hold**, kept sharpened. **Weapon speed is irrelevant**, because form attack speeds are fixed.
 ## Which race
 **Alliance — Night Elf.** `Elune's Light` gives **+10% crit for 15 seconds**, a genuine burst cooldown Night Elf never had, and Shadowmeld improves [[Prowl]].
 **Horde — Tauren.** `Endurance` now gives **+5% health and +1% hit**, and **`War Stomp` is usable while shapeshifted in Forever**, which it was not in Classic — so every form gets an area stun.

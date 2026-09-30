@@ -3,7 +3,7 @@ build: 1.60.1.70124
 
 Levelling guides for all nine classes in World of Warcraft: Forever — which relaunches the 1–60 game on **4 November 2026**, with everyone starting from scratch on the same day.
 :::scope
-**These are levelling guides, and that is deliberate.** Forever's beta caps at level 30 and never goes higher before launch, there is no raid testing, and item stats stay hidden until something drops. **No level-60 build, best-in-slot list or class ranking for Forever exists anywhere yet** — where you see one, it has been invented.
+**These are levelling guides, and that is deliberate.** Forever's beta is capped at level 20 right now and rises only to 30 before launch, there is no raid testing, and item stats stay hidden until something drops. **No level-60 build, best-in-slot list or class ranking for Forever exists anywhere yet** — where you see one, it has been invented.
 What we can state confidently: talent trees, ability training levels and spell changes, all read from the beta client. What is firmer still is anything Blizzard has published directly. Raids open **9 December**, five weeks after launch, and we will write the endgame half then.
 :::
 ## Everyone is new on 4 November

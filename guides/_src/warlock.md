@@ -3,8 +3,16 @@ build: 1.60.1.70124
 
 Warlock kills slowly and inevitably, with a demon tanking for you. Forever split damage curses into Banes, so **you now hold one Bane and one Curse at the same time** — and Life Tap gives twice the mana it used to.
 :::scope
-Written for levelling, 1 to 60. Forever's beta caps at level 30, so **no level-60 Warlock build has been tested.** The longest anyone has played is a level-38 demo. Ability training levels below are read from the beta client.
+Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Warlock build has been tested.** The longest anyone has played is a level-38 demo. Ability training levels below are read from the beta client.
 :::
+## Which spec?
+| Spec | Role | Levelling | In one line |
+| --- | --- | --- | --- |
+| **[Affliction](/guides/wow-forever/warlock/affliction/)** | Ranged DPS | **5/5 — joint best** | Instant [[Corruption]] from level 14, and DoTs can now crit |
+| **[Demonology](/guides/wow-forever/warlock/demonology/)** | Ranged DPS | **5/5 — joint best** | `Demonic Energies` turns your damage into pet healing and your Life Tap into pet mana |
+| **[Destruction](/guides/wow-forever/warlock/destruction/)** | Ranged DPS | 3.5/5 — the weak one | Hard-cast direct damage, and a wand currently competes with [[Shadow Bolt]] |
+**Affliction and Demonology are rated identically — 5 out of 5 for levelling — and Destruction is the only Warlock spec marked down.** The published reasoning for the gap is concrete: Destruction has *"less passive sustain than Affliction and less pet support than Demonology"*, most of its damage requires standing still, and Forever cut its direct-damage numbers hard. One guide declines to publish a level-20 Destruction build at all, on the grounds that a **free wand deals comparable damage to a mana-costing [[Shadow Bolt]]** at that level.
+**Your demon matters more than in Classic, in every spec**, because **demons now scale with your gear.** [[Voidwalker]] at 10 is the levelling pet; [[Succubus]] at 20 is the damage pet; **Forever trains the [[Felhunter]] at 30**, where Classic gated it behind a quest and withheld Spell Lock until 36.
 ## Is Warlock for you?
 Play Warlock if you want the strongest solo levelling in the game and you do not mind tracking half a dozen things at once.
 :::strengths
@@ -23,26 +31,6 @@ Play Warlock if you want the strongest solo levelling in the game and you do not
 **Does it level well?** It is one of the two easiest classes to level alone.
 **Does it need a group?** No. It is the strongest solo caster in the game.
 :::
-## Your first talent points
-**Affliction.** Five points in `Improved Corruption` makes [[Corruption]] instant, which turns levelling into tag, apply, move on.
-1. **`Suppression`, 5 points** — and note **four points already hit-caps you against same-level enemies**, because Forever removed Classic's inherent 1% miss.
-2. **`Improved Corruption`, 5 points** — instant Corruption, +10% damage.
-3. **`Amplify Curse`, 1 point.**
-**Demonology is a genuine alternative** and the pet does even more of the work: Forever's `Demonic Energies` heals your pet for a share of all your spell damage *and* passes it some of your Life Tap mana, so your normal rotation keeps it topped up for free. It does not take `Improved Corruption`, so Corruption keeps its cast time.
-**Destruction is the worst leveller** — hard-casting and mana-hungry, with its payoffs at 21 and 31 points.
-The Legacy **Talented** perk is the clearest case in the game here: at a level-20 cap it is worth about **two extra talent points**, which is exactly what buys `Amplify Curse` on top of the 5-and-5 core. Without it, drop that talent.
-## Levelling rotation
-1. **Send the demon in first.**
-2. **Curse** — [[Curse of Recklessness]] solo for the armour shred, [[Curse of the Elements]] on elites and caster groups.
-3. **[[Immolate]]**.
-4. **[[Corruption]]** — instant once talented.
-5. **[[Bane of Agony]]**, but only if the target will live about 24 seconds. It is back-loaded. **You can now apply it on top of your Curse.**
-6. **[[Drain Life]]** to recover what Life Tap cost you.
-7. **Wand as your main filler.**
-8. **[[Drain Soul]]** to finish when you want a shard.
-9. **Stop casting once your timers will finish it.**
-**Do not spam [[Shadow Bolt]] while levelling.** A wand does equal or better damage for the time spent, at no mana and less threat.
-**Two or more enemies:** spread [[Corruption]] and [[Bane of Agony]] across the pack while the Voidwalker holds them, **then** [[Rain of Fire]] if they will live. Timers first, never the reverse.
 ## Levelling milestones
 | Level | What you get |
 | --- | --- |
@@ -66,10 +54,6 @@ The Legacy **Talented** perk is the clearest case in the game here: at a level-2
 - **Succubus, from 20, as your damage pet** — measured at roughly a quarter of your total damage, by far the strongest damage demon. Keep the Voidwalker for elites.
 - **Felhunter, from 30**, for Spell Lock and Devour Magic.
 **`Demonic Sacrifice` inverted its buffs and now lasts two hours: sacrificing the Imp gives +15% Shadow, and the Succubus gives +15% Fire.** The Classic muscle memory is backwards.
-## Stat priority
-**Affliction and Demonology:** Spell Power, Hit, Intellect, Spirit, Critical strike, Stamina.
-**Destruction:** Spell Power, Hit, Haste, Critical strike — haste rises because it hard-casts and haste does not touch timed effects.
-**Spirit is far better than you remember**, because Life Tap now scales off it. And **crit is worth more because timed damage can crit** — but Warlock needs the most Intellect of any class per 1% spell crit, so crit is much cheaper bought from a racial or a Firestone than from stacking Intellect.
 ## Which race
 **Horde — Undead for levelling.** `Cannibalize` restores **35% health *and* mana**, which on a class whose whole loop is spending health for mana is close to a free full recovery on every corpse.
 **Horde — Orc for long-term damage**, now that `Blood Fury` gives **+10% spell power**. But note **Forever deleted `Command`**, the pet-damage racial that was the entire reason Orc was the Classic Warlock pick. Orc is now a caster race, not a pet race.

@@ -3,8 +3,17 @@ build: 1.60.1.70124
 
 Mage kills faster than anything and dies faster too. Forever added a Research and scroll system from level 6, and made Arcane a genuine levelling tree for the first time.
 :::scope
-Written for levelling, 1 to 60. Forever's beta caps at level 30, so **no level-60 Mage build has been tested.** Ability training levels below are read from the beta client. Note that caster base damage was cut across the board and spell coefficients raised to compensate — a lower tooltip number than Classic is usually not a nerf.
+Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Mage build has been tested.** Ability training levels below are read from the beta client. Note that caster base damage was cut across the board and spell coefficients raised to compensate — a lower tooltip number than Classic is usually not a nerf.
 :::
+## Which spec?
+| Spec | Role | Levelling | In one line |
+| --- | --- | --- | --- |
+| **[Arcane](/guides/wow-forever/mage/arcane/)** | Ranged DPS | **Newly excellent** | [[Arcane Blast]] and `Missile Barrage` — both new, and they make the tree real |
+| **[Fire](/guides/wow-forever/mage/fire/)** | Ranged DPS | Usable, slower | `Hot Streak` finally makes [[Pyroblast]] a button you press |
+| **[Frost](/guides/wow-forever/mage/frost/)** | Ranged DPS | **Best of the three** | Freeze, then [[Ice Lance]] for +300%. The safest spec in the game |
+**Frost or Arcane.** Frost is the comfortable answer — *"slowing and chilling everything they fight keeps them safe"*, with [[Frostbite]] often killing melee enemies before they reach you. Arcane is the genuinely new option: in Classic its tree had nothing to spend points on, and Forever gave it `Arcane Meditation` at **50% mana regeneration while casting** (Classic gave 3%), which is what makes it a levelling spec at all.
+**Fire is playable but slower**, for a specific reason rather than a vague one: its payoff talents sit at tiers 4 to 7 — levels 25 to 40 — and it needs a critical strike rate you only get from level-60 gear.
+**One correction worth carrying:** Mage area damage has **no target cap and no damage falloff** in Forever, contrary to a persistent belief. The slows attached to it were cut hard, though — `Improved Blizzard` maxes at **40%**, down from Classic's 65%.
 ## Is Mage for you?
 Play Mage if you want the fastest kills in the game and can accept that two enemies at once is an emergency.
 :::strengths
@@ -23,23 +32,6 @@ Play Mage if you want the fastest kills in the game and can accept that two enem
 **Does it level well?** Quickly, if you respect your own fragility.
 **Does it need a group?** No, and groups want you for Polymorph as much as damage.
 :::
-## Your first talent points
-**Frost.** It slows and freezes, which is what keeps a cloth-wearer alive, and Forever added [[Ice Lance]] to pay you for freezing things on purpose.
-1. **`Elemental Precision`** — missed spells are the biggest early damage loss, and it also helps against higher-level enemies in dungeons.
-2. **`Frostbite`, 3 points** — freeze chance, which is now a damage engine rather than just safety.
-3. **`Ice Shards`, 2 points** — the best straight damage increase across your frost spells.
-4. **[[Ice Lance]]** at 11.
-**Arcane is a real alternative in Forever, which is new** — built around [[Arcane Blast]], with separate solo and dungeon builds. Be aware that Arcane Blast does not exist until your eleventh talent point, so below 20 you are casting Frostbolt regardless.
-**Fire is not a levelling option before 30**, because you have no reliable way to use [[Pyroblast]] until then.
-With the Legacy **Talented** perk, `Elemental Precision` lands by about level 7 and `Frostbite` by 12 — pulling the freeze-into-Ice-Lance engine forward roughly five levels.
-## Levelling rotation
-1. **[[Frostbolt]] on repeat** until `Frostbite` freezes them.
-2. **[[Ice Lance]] into the freeze.** It does triple damage to frozen targets.
-3. **Do not cancel a Frostbolt to cast Ice Lance.** Finish the cast and queue Ice Lance next — it snapshots the frozen status and will pay full damage even if the freeze breaks.
-4. **When they reach you: [[Frost Nova]], walk backwards, keep going.** If Nova is down, re-chill with Frostbolt and wand while you gain distance.
-5. **Use your wand rather than [[Fire Blast]]** once you have one — same result, no mana.
-Keep a **rank 1 [[Frostbolt]]** on a separate bar slot for applying the slow cheaply or finishing something low.
-**Two or more enemies:** [[Arcane Explosion]] at 14 and [[Flamestrike]] at 16 are your power spikes. **Use Flamestrike while you do not have threat and Arcane Explosion when you do**, since it out-damages [[Blizzard]] until you have more talent points. **Mage area damage has no target cap in Forever**, so a bigger pull is strictly better — but start with one or two and watch your bars before trusting that.
 ## Levelling milestones
 | Level | What you get |
 | --- | --- |
@@ -58,13 +50,6 @@ Keep a **rank 1 [[Frostbolt]]** on a separate bar slot for applying the slow che
 | **40** | The four **portals**, **[[Frostfire Bolt]], new**, mount |
 | 50 | [[Teleport: Dalaran]], new |
 **[[Detect Magic]] is the only Mage spell deleted in Forever.** [[Frostfire Bolt]] is checked against **the lower of the target's frost and fire resistance** and counts as both schools, which may make it replace Fireball outright for a fire mage.
-## Stat priority
-1. **Spell Power**
-2. **Hit**
-3. **Intellect**
-4. **Critical strike**
-5. Spirit, then Stamina
-Frost's value while levelling is control and not dying, so a bigger mana pool outranks crit early. **Haste appears on no gear in the beta.** When downranking, do not drop below ranks learned at level 20, because coefficients plateau there.
 ## Which race
 **Alliance — Human or Gnome.** Human's `Sword Specialization` is **+2% spell and ability crit off a sword held purely as a stat stick**, which is a real change to the vanilla answer — though compare it honestly against a staff with better stats, because at levelling levels the staff often wins. Gnome brings `Expansive Mind` and the new `Eureka!`.
 **Horde — Orc is new to Mage in Forever**, and `Blood Fury` now gives **+10% spell power**, so it is finally a caster racial. Its axe racial is dead weight, since Mages cannot use axes.

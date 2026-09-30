@@ -3,8 +3,17 @@ build: 1.60.1.70124
 
 Shaman got the largest quality-of-life change of any class in Forever: weapon imbues last an hour instead of five minutes, totems last five minutes and reach thirty yards, and a totem bar drops four at once.
 :::scope
-Written for levelling, 1 to 60. Forever's beta caps at level 30, so **no level-60 Shaman build has been tested.** One fact below is single-sourced and contradicts vanilla — that Shaman learn mail at 40 rather than wearing it from level 1. We have flagged it in place. **Alliance Shaman are new in Forever, and Dwarf is the only Alliance option.**
+Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Shaman build has been tested.** One fact below is single-sourced and contradicts vanilla — that Shaman learn mail at 40 rather than wearing it from level 1. We have flagged it in place. **Alliance Shaman are new in Forever, and Dwarf is the only Alliance option.**
 :::
+## Which spec?
+| Spec | Role | Levelling | In one line |
+| --- | --- | --- | --- |
+| **[Elemental](/guides/wow-forever/shaman/elemental/)** | Ranged DPS | Viable | [[Lightning Bolt]] and [[Chain Lightning]], with the best burst of the three |
+| **[Enhancement](/guides/wow-forever/shaman/enhancement/)** | Melee DPS | **Best of the three** | Weapon imbues and melee, and the tree two sources agree on exactly |
+| **[Restoration](/guides/wow-forever/shaman/restoration/)** | Healer | Viable, slower | [[Chain Heal]] and `Nature's Swiftness` |
+**Enhancement is the levelling answer**, and it is the one build where two independent sources publish the same eleven points in the same order.
+**Two facts that will save you a mistake.** **Shamans cannot dual wield in Forever** — if you have played a later expansion, unlearn that. And a widely-published level-30 Elemental build **is not legal on the current client**: it spends 5 points on `Elemental Fury`, which Blizzard moved to row 6 on 24 September, putting it out of reach at 21 points. That build predates the change.
+**A note on Enhancement tanking.** You will see it discussed, usually pointing at `Spirit Weapons`. There is no Blizzard statement either way, no published tanking build, and the three positions in circulation disagree. Forever has **three** tanks — Protection Warrior, Protection Paladin and Feral Druid. Treat Shaman tanking as an experiment, not a plan.
 ## Is Shaman for you?
 Play Shaman if you like solving the fight in front of you rather than running the same sequence, and you want to be able to switch roles without rerolling.
 :::strengths
@@ -23,24 +32,6 @@ Play Shaman if you like solving the fight in front of you rather than running th
 **Does it level well?** Comfortably, especially as Enhancement.
 **Does it need a group?** No, and groups will take you as either healer or damage.
 :::
-## Your first talent points
-**Enhancement.** It is mana-cheap per kill and reaches [[Ghost Wolf]] improvements earliest. Elemental kills faster but drinks far more, and in Forever it is much more gear-dependent than it was.
-1. **`Thundering Strikes`, 5 points.**
-2. **`Mental Dexterity`, 3 points** — this is what makes Intellect a melee stat for you.
-3. **`Improved Ghost Wolf`, 2 points.**
-4. **`Shamanistic Focus`** at 11.
-Two independent published guides arrived at this exact build, which is about as solid as a Forever build gets. **Note `Improved Ghost Wolf` goes last because Ghost Wolf itself does not exist until 20** — with the Legacy **Talented** perk, take `Shamanistic Focus` around 15 and still defer the wolf talent.
-At 30, Enhancement adds `Elemental Weapons`, `Flurry` and **[[Stormstrike]] at 25**.
-One constraint for any later plan: **`Rage of the Farseer` and `Nature's Swiftness` together need 52 points and cannot coexist.**
-## Levelling rotation
-1. **Weapon imbue up** — [[Rockbiter Weapon]] solo, **[[Flametongue Weapon]] in groups**, because Rockbiter with `Spirit Weapons` inverts to *more* threat.
-2. **[[Lightning Shield]]** before the pull.
-3. **Totems** — [[Strength of Earth Totem]] and [[Searing Totem]]. Stoneskin instead if you are taking hits.
-4. **Rank 1 [[Lightning Bolt]]** to pull — cheap, and it drags them out of totem range.
-5. **[[Earth Shock]]**, or [[Frost Shock]] from 20.
-6. **[[Fire Nova]]** — only with a live fire totem.
-7. **Auto-attack it down**, which costs nothing and lets your mana return.
-**Two or more enemies:** [[Fire Nova]] on cooldown at three or more, and **place the fire totem in the pack rather than at your feet**. [[Chain Lightning]] from 32.
 ## Levelling milestones
 | Level | What you get |
 | --- | --- |
@@ -56,11 +47,6 @@ One constraint for any later plan: **`Rage of the Farseer` and `Nature's Swiftne
 | 40 | [[Chain Heal]], mount |
 | **42** | [[Grace of Air Totem]] — **the last new Shaman ability in the game.** 43 to 60 is ranks only |
 **[[Tranquil Air Totem]] is not in Forever.**
-## Stat priority
-**Enhancement:** Hit and Expertise, then Strength, Intellect, Agility, Critical strike. **Once `Mental Dexterity` is in, Intellect is a genuine melee stat for you.** Weapon damage first regardless.
-**Elemental:** Spell Power, Hit, Haste, Critical strike, Intellect.
-**Restoration:** Healing Power, Intellect, MP5, Spirit.
-Haste appears on **no gear in the beta**, so treat its placement as forward-looking.
 ## Which race
 **Alliance — Dwarf, and it is forced**, being the only Alliance Shaman. It is fine anyway: `Stoneform` is a real solo cooldown, and **`Mace Specialization` gives +1% crit to spells and abilities merely for holding a mace**, which Shaman train by default — so it is free crit for Elemental and Restoration too.
 **Horde — Orc.** `Blood Fury` now gives **+10% attack power *and* spell power**, so it is good for both damage specs.

@@ -1,0 +1,41 @@
+updated: 30 September 2026
+build: 1.60.1.70124
+
+Ranged physical damage without leaning on the pet — and in Forever, **the dungeon area-damage Hunter.**
+:::scope
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Marksmanship build has been tested.
+:::
+## Is Marksmanship worth levelling?
+**Not as a general levelling spec at low level — and the published guide says so about its own build.** Going 11 points deep into Marksmanship to reach `Lone Wolf` is described as *"not a good general play build"*, with the direct recommendation to *"use the Beast Mastery build at this level instead."*
+**What it is for is dungeons.** *"If you want to go deep into Marksmanship, the best use-case for it is for Dungeons, specifically to maximize your AoE damage."* An extra 20% damage on [[Multi-Shot]] is a lot in a pull.
+So: **Beast Mastery in the open world, Marksmanship if you are running dungeons.** That is the whole decision, and it is not a close call in either direction.
+## Your talent points
+**Level 20 — 0/11/0**, to reach `Lone Wolf`.
+The sequence is eleven points into Marksmanship. What you are buying is the tier-3 talent at the end of it, so the intermediate points follow the tree rather than a preference.
+**The warning that comes with it is explicit:** *"At low level, you should never take Lone Wolf unless your goal is to maximize your cleave and AoE damage in dungeons."*
+**If you are questing, spec Beast Mastery instead** — `Deadly Aspects` 5 and `Pathfinding` 2, which the Beast Mastery page covers.
+## Rotation
+**Single target is identical to Beast Mastery's**, because at this level the Hunter rotation is the Hunter rotation:
+1. **[[Aspect of the Hawk]]** up; [[Aspect of the Cheetah]] when kiting
+2. **[[Hunter's Mark]]** before the pull
+3. **Send the pet in first**, abilities on auto-cast
+4. **[[Serpent Sting]]** once the pet has the target
+5. **[[Aimed Shot]]** on cooldown
+6. **[[Auto Shot]]** as filler
+7. **[[Disengage]]** if you pull aggro; **[[Arcane Shot]]** only with mana to spare
+**Multi-target is where this spec earns its place:** [[Multi-Shot]] instead of [[Aimed Shot]], with `Lone Wolf` amplifying it.
+Below level 10, walk backwards between shots to stay out of the dead zone.
+## Stat priority
+**Weapon damage, then Agility**, then the highest item level you can wear. As with every Hunter spec, **the slower weapon is better** — [[Aimed Shot]] scales off damage per hit, not DPS. Hit is valuable but rarely appears on low-level gear.
+## What defines Marksmanship
+| Talent | Earliest level | What it does |
+| --- | --- | --- |
+| **`Lone Wolf`** | **exactly 20** | +20% damage. The whole reason to go eleven deep, and a dungeon talent specifically |
+| **`Lethal Attacks`** | 15 | The second-best early damage talent in the class, behind `Focused Fire` |
+| **`Hawk Eye`** | 10 | Extra range — kiting, and PvP |
+## What Forever changed for Hunters
+- **Pets are Ferocity, Cunning or Tenacity, with no inherent damage bonus by type**, and **they inherit some of your stats.** Even in Marksmanship the pet is not decoration — it holds the target while you shoot.
+- **`Improved Serpent Sting` no longer exists in the client**, removed without a Blizzard note. Any build list that still spends points there is stale.
+- The utility kit is unchanged and still the class's real advantage: [[Feign Death]], [[Freezing Trap]], [[Frost Trap]], [[Concussive Shot]], [[Disengage]].
+## At level 60
+Unknown, and the open question for this spec is specific: whether `Lone Wolf` remains a dungeon-only talent or becomes the single-target choice once deeper Marksmanship talents exist to support it.
