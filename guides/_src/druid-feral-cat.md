@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Energy and combo points in Cat Form, on bleeds rather than big hits. **The fastest and most mobile levelling spec in the beta — from level 20 onward.** Before 20 you are a bear.

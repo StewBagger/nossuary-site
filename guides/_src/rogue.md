@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Rogue kills fast, dies fast and picks its fights. Forever moved Lockpicking to level 1 as a secondary skill, did the same to Poisons, and **[[Sap]] now needs no stealth and does not break it**.
@@ -68,4 +68,4 @@ Play Rogue if you like deciding when a fight starts, and you accept dying quickl
 | Poisons scale with Attack Power and can crit | Crit is worth more than it was |
 | Energy regeneration is continuous, not ticked | You cannot bank a tick to arrive exactly when needed |
 ## At level 60
-Unknown. There is no tested 51-point build, no stat weights and no answer on whether Assassination's poison identity, Combat's `Hack and Slash` or Subtlety's Rupture engine wins — one major site declines even to publish a stat priority. Raids open 9 December.
+Unknown. There is no tested 51-point build, no stat weights and no answer on whether Assassination's poison identity, Combat's `Hack and Slash` or Subtlety's Rupture engine wins — one major site declines even to publish a stat priority. Raids open December 9.

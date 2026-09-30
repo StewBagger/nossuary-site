@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Shaman got the largest quality-of-life change of any class in Forever: weapon imbues last an hour instead of five minutes, totems last five minutes and reach thirty yards, and a totem bar drops four at once.
@@ -12,7 +12,7 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right n
 | **[Enhancement](/guides/wow-forever/shaman/enhancement/)** | Melee DPS | **Best of the three** | Weapon imbues and melee, and the tree two sources agree on exactly |
 | **[Restoration](/guides/wow-forever/shaman/restoration/)** | Healer | Viable, slower | [[Chain Heal]] and `Nature's Swiftness` |
 **Enhancement is the levelling answer**, and it is the one build where two independent sources publish the same eleven points in the same order.
-**Two facts that will save you a mistake.** **Shamans cannot dual wield in Forever** — if you have played a later expansion, unlearn that. And a widely-published level-30 Elemental build **is not legal on the current client**: it spends 5 points on `Elemental Fury`, which Blizzard moved to row 6 on 24 September, putting it out of reach at 21 points. That build predates the change.
+**Two facts that will save you a mistake.** **Shamans cannot dual wield in Forever** — if you have played a later expansion, unlearn that. And a widely-published level-30 Elemental build **is not legal on the current client**: it spends 5 points on `Elemental Fury`, which Blizzard moved to row 6 on September 24, putting it out of reach at 21 points. That build predates the change.
 **A note on Enhancement tanking.** You will see it discussed, usually pointing at `Spirit Weapons`. There is no Blizzard statement either way, no published tanking build, and the three positions in circulation disagree. Forever has **three** tanks — Protection Warrior, Protection Paladin and Feral Druid. Treat Shaman tanking as an experiment, not a plan.
 ## Is Shaman for you?
 Play Shaman if you like solving the fight in front of you rather than running the same sequence, and you want to be able to switch roles without rerolling.
@@ -66,4 +66,4 @@ Play Shaman if you like solving the fight in front of you rather than running th
 | [[Improved Ghost Wolf]] makes it instant and indoor-usable | Vanilla never allowed either |
 | Alliance Shaman exist | Dwarf only |
 ## At level 60
-Unknown. No source publishes a Shaman build past 30, and nobody has seen the level-30 Air totem quest. **On the persistent question of whether Enhancement can tank: there is no Blizzard source either way.** The threat talents are real — `Spirit Weapons` swings threat by 30% depending on your imbue — but the role claim is not supported, and Shaman has no taunt, no defensive cooldown and no Defense support. Raids open 9 December.
+Unknown. No source publishes a Shaman build past 30, and nobody has seen the level-30 Air totem quest. **On the persistent question of whether Enhancement can tank: there is no Blizzard source either way.** The threat talents are real — `Spirit Weapons` swings threat by 30% depending on your imbue — but the role claim is not supported, and Shaman has no taunt, no defensive cooldown and no Defense support. Raids open December 9.

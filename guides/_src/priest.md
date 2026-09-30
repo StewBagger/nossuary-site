@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Priest is the archetypal healer and always wanted for groups. The biggest change in Forever is that **[[Mind Flay]] is now a talent rather than a trained spell**, gated on 10 points in the Shadow tree — so in practice a Holy or Discipline Priest does not have it.
@@ -69,4 +69,4 @@ Play Priest if you want to be the person keeping everyone alive, and you are hap
 | [[Shadow Word: Death]] added at 32 | With health backlash if it fails to kill |
 | **[[Desperate Prayer]] is Dwarf-only now** | A Human Priest loses the self-heal it had in Classic |
 ## At level 60
-Unknown. No source publishes a Priest build past 30, and much of the detailed Priest material circulating comes from a pre-beta demo build that nobody has re-verified. Raids open 9 December.
+Unknown. No source publishes a Priest build past 30, and much of the detailed Priest material circulating comes from a pre-beta demo build that nobody has re-verified. Raids open December 9.

@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 *"A vampiric DPS specialization, healing allies based on how much shadow damage they deal."* **This is the Priest levelling spec, and the published advice for the other two is to use these talents until you can heal in groups.**
@@ -47,6 +47,6 @@ Hit sits lower than you might expect while levelling, and the reason is stated: 
 - **[[Shadow Word: Death]] is new** — all races, **level 32**, so out of reach at any beta cap. Its talent `Early Demise` needs 25 Shadow points.
 - **[[Shadowform]] now bars *healing* spells rather than Holy spells**, so [[Smite]], [[Holy Fire]] and [[Resurrection]] are usable inside it.
 - **New race-locked Priest spells:** `Divine Grace` (Human), `Chastise` (Dwarf), `Dark Sacrifice` (Undead), and `Confounding Flash` plus `Contingency Plan` for **Gnome, which is a new Priest race.**
-- **`Wand Specialization` is 2 ranks reaching 25%** where Classic needed 5 — which is why every wand-levelling build front-loads it. Separately, **wands no longer gain spell power** as of 24 September.
+- **`Wand Specialization` is 2 ranks reaching 25%** where Classic needed 5 — which is why every wand-levelling build front-loads it. Separately, **wands no longer gain spell power** as of September 24.
 ## At level 60
 Unknown, and the question is whether Shadow has a raid slot at all: losing the Shadow Vulnerability debuff role removes what it was *for* in Classic, its damage is single-target, and [[Vampiric Embrace]] heals only the party.

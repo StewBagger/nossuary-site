@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 The reactive Light healer with the broadest toolkit and the lowest skill floor — *"great all-rounders… very beginner-friendly."* **If you have never healed before, this is where to start, and you should still level as Shadow.**
@@ -40,7 +40,7 @@ Healing Power, then MP5, Spirit, Intellect, critical strike.
 - **[[Lightwell]] is no longer a talent — it is trained from level 40**, in 3 ranks.
 - **`Spiritual Guidance` now converts 25% of Spirit to healing but only 8% to spell damage**, where Classic gave 25% to both. **This is a direct nerf to Holy's solo damage** and part of why the levelling rating is 2.0.
 - **`Twilight Focus` now covers *any* spell at 23% per rank**, where Classic covered healing spells at 35%. `Litany of Light` refunds 5% of base cost when you alternate heals.
-- **[[Renew]] can now critically strike**, as of the 24 September patch.
+- **[[Renew]] can now critically strike**, as of the September 24 patch.
 - **[[Divine Spirit]] is trained from level 30**, not a talent. **[[Fear Ward]] is baseline for every Priest**, at 3 minutes' duration on a 3-minute cooldown.
 - **`Wand Specialization` is 2 ranks reaching 25%** where Classic needed 5, and **wands no longer gain spell power.**
 - **[[Mind Flay]] is talent-only**, gated on 10 Shadow points. **No published Holy build reaches it** — see the [Shadow](/guides/wow-forever/priest/shadow/) page.

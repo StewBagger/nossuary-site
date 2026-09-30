@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Shields and mitigation rather than repair — *"there cannot be Light without Dark."* **Rated 5 out of 5 for dungeons and 2.5 for levelling**, which tells you exactly what it is for.
@@ -42,7 +42,7 @@ Its ratings make the shape of the spec plain: **Overall 4.5, Levelling 2.5, Dung
 ## What Forever changed for Priests
 - **New:** `Power in Light`, `Twin Disciplines`, `Holy Precision`, `Soul Warding`, [[Penance]], `Renewed Hope`, `Divine Aegis`. **Removed:** `Unbreakable Will`, `Improved Power Word: Fortitude`, `Force of Will`.
 - **[[Divine Spirit]] is no longer a talent — it is trained from level 30.** [[Power Infusion]] now **requires [[Penance]]**.
-- **`Wand Specialization` is 2 ranks reaching 25%**, where Classic needed 5. That is the mechanical reason every wand-levelling build front-loads it. Separately, **wands no longer gain spell power** as of the 24 September patch.
+- **`Wand Specialization` is 2 ranks reaching 25%**, where Classic needed 5. That is the mechanical reason every wand-levelling build front-loads it. Separately, **wands no longer gain spell power** as of the September 24 patch.
 - **`Meditation` is 17% per rank**, where Classic gave 5%. `Mental Strength` now grants **+3% Intellect per rank — 15% at 5/5**, which this build takes.
 - **[[Power Word: Shield]] can now overwrite an existing shield** on a target who has no Weakened Soul.
 - **[[Mind Flay]] is talent-only in Forever**, gated on 10 points in Shadow. **No published Discipline build reaches it**, so in practice you will not have it — see the [Shadow](/guides/wow-forever/priest/shadow/) page.

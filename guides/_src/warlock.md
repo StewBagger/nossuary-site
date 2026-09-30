@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Warlock kills slowly and inevitably, with a demon tanking for you. Forever split damage curses into Banes, so **you now hold one Bane and one Curse at the same time** — and Life Tap gives twice the mana it used to.
@@ -77,4 +77,4 @@ Play Warlock if you want the strongest solo levelling in the game and you do not
 | `Demonic Sacrifice` buffs inverted, now 2 hours | Imp gives Shadow, Succubus gives Fire |
 | Soul shards are reagents with their own bag slot | Still do not stack |
 ## At level 60
-Unknown. Nothing about level-60 Warlock is known — no build, no gearing, no rotation, no spec ranking — because the beta caps at 20 and the longest play session anyone has had was a level-38 demo. Raids open 9 December.
+Unknown. Nothing about level-60 Warlock is known — no build, no gearing, no rotation, no spec ranking — because the beta caps at 20 and the longest play session anyone has had was a level-38 demo. Raids open December 9.

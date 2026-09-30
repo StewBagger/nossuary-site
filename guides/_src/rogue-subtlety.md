@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Stealth openers and a [[Rupture]]-driven bleed cycle. **The strongest PvP tree, the lowest-rated of the three overall, and it has no area damage of any kind.**

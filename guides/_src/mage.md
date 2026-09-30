@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Mage kills faster than anything and dies faster too. Forever added a Research and scroll system from level 6, and made Arcane a genuine levelling tree for the first time.
@@ -70,4 +70,4 @@ Play Mage if you want the fastest kills in the game and can accept that two enem
 | Research, scrolls and Comprehension added at 6 | An entirely new system, easy to miss |
 | `Mage Armor` returns 50% regen while casting | Was 30% |
 ## At level 60
-Unknown. No source publishes a Mage build past 30, so whether Arcane's new engine holds up, whether Fire takes over once Pyroblast is usable, and how far the scroll system goes are all untested. Raids open 9 December.
+Unknown. No source publishes a Mage build past 30, so whether Arcane's new engine holds up, whether Fire takes over once Pyroblast is usable, and how far the scroll system goes are all untested. Raids open December 9.

@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Ranged physical damage with a pet that carries a real share of the work. **This is the Hunter levelling spec, and the strongest levelling spec in the game.**
@@ -40,7 +40,7 @@ Forever changed pets more than it changed the Hunter.
 - **Pets inherit some of your stats**, so they scale as you gear up
 - Happiness and loyalty still exist — feed your pet
 - **Focus regenerates at 10 a second, about twice as fast as Classic**, and every pet uses the same system
-- **Ability ranks are taught, not inherited.** Tame a beast that already knows the rank, take your own pet back, and teach it with Beast Training at a training-point cost. **Loyalty gates training**, and it rises slowly. Note the 24 September build nerfed [[Tame Beast]] so it **no longer works on beasts above your own level**
+- **Ability ranks are taught, not inherited.** Tame a beast that already knows the rank, take your own pet back, and teach it with Beast Training at a training-point cost. **Loyalty gates training**, and it rises slowly. Note the September 24 build nerfed [[Tame Beast]] so it **no longer works on beasts above your own level**
 - **There is a new family, the Fox**
 **The early recommendation is a Bear**, for one specific reason: its **Swipe** is a 5-second-cooldown frontal cleave, and *"one of the rare pet abilities capable of dealing consistent AoE damage to hold aggro on multiple targets."*
 ## What defines Beast Mastery

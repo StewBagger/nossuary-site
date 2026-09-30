@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Melee weapon damage that feeds your spellcasting — [[Stormstrike]] and `Maelstrom Weapon` turn swings into [[Lightning Bolt]]s. **The Shaman levelling spec**, and the one build two independent sources publish identically.
@@ -43,7 +43,7 @@ Weapon DPS on a **slow two-hander**, then Hit and Expertise, critical strike, St
 - **Weapon imbues last 60 minutes instead of 5. Totems last 5 minutes instead of 2 and reach 30 yards instead of 20.** This is a large, unglamorous quality-of-life change and it affects how you play more than any single talent.
 - **New:** `Mental Dexterity`, `Shamanistic Focus` (−45% mana on Shocks and [[Lightning Shield]]), `Mental Quickness`, `Improved Stormstrike`, `Maelstrom Weapon`, `Rage of the Farseer`, and **`Spirit Weapons`**. **Removed:** `Two-Handed Axes and Maces` (now known without a talent), **`Parry`** (whose slot `Spirit Weapons` took), `Shield Specialization`, `Weapon Mastery`, `Enhancing Totems`, `Improved Weapon Totems`.
 - **`Improved Ghost Wolf` now does two things:** 3.0 seconds off the cast at 2/2, making [[Ghost Wolf]] **instant**, and indoor use. **The spell itself is unchanged from Classic** — both halves live in the talent.
-- **`Rage of the Farseer` no longer increases casting speed** as of 24 September. One site still says it does; that page is stale.
+- **`Rage of the Farseer` no longer increases casting speed** as of September 24. One site still says it does; that page is stale.
 - **A capstone conflict worth knowing early:** `Rage of the Farseer` needs **31 Enhancement** points and `Nature's Swiftness` needs **21 Restoration** — 52 against a 51-point budget. **They cannot coexist.** The same arithmetic blocks [[Lava Burst]] plus `Nature's Swiftness`.
 - **Hit and critical strike are now unified** across spell, melee and ranged, and Blizzard names Enhancement Shaman as a beneficiary.
 ## On Enhancement tanking
@@ -53,6 +53,6 @@ The three published positions:
 - **For:** *"This talent alone allows Enhancement Shamans to perform off-tanking duties, or serve as tanks for dungeons in a pinch."*
 - **Partly for:** `Spirit Weapons` plus `Improved Fire Nova` *"will turn Shamans into formidable AoE tanks"* — but *"The Shaman's survivability talents, however, are limited to `Anticipation` and `Toughness`. That might not be enough to let them comfortably tank end-game dungeons and raids."*
 - **Against:** *"Parry and Rockbiter threat are not a reason to sign up as a raid tank; your damage build still needs a tank to hold dangerous group enemies."*
-**There is no Blizzard statement either way** — not in the Deep Dive recap, the What's Next recap, the class-design article, or the 24 September beta notes, and the relevant forum thread has no developer reply. **Forever has three tanks in its own published taxonomy: Protection Warrior, Protection Paladin and Feral Druid**, and Enhancement Shaman is listed as damage. Treat tanking as an experiment, not a plan.
+**There is no Blizzard statement either way** — not in the Deep Dive recap, the What's Next recap, the class-design article, or the September 24 beta notes, and the relevant forum thread has no developer reply. **Forever has three tanks in its own published taxonomy: Protection Warrior, Protection Paladin and Feral Druid**, and Enhancement Shaman is listed as damage. Treat tanking as an experiment, not a plan.
 ## At level 60
 Unknown — everything downstream of `Maelstrom Weapon` rank 5 and `Rage of the Farseer`. Whether melee-into-instant-Bolt is a raid specialisation, and whether the `Spirit Weapons` threat mode has any sanctioned use, are both untested.

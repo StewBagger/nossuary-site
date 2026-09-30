@@ -1,9 +1,9 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Plate-wearing single-target healer with the best buff kit in the game — and Forever finally gives it an area-healing answer through the new `Light's Vigil` capstone.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Holy build has been tested. **One warning:** a published level-20 "Holy damage" build spends two points on `Improved Holy Strike`, **a talent that does not exist in the beta client** — its effect was made baseline for every Paladin in the 24 September build, which dropped [[Holy Strike]]'s cooldown to 10 seconds for everyone. That build cannot be entered as printed.
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Holy build has been tested. **One warning:** a published level-20 "Holy damage" build spends two points on `Improved Holy Strike`, **a talent that does not exist in the beta client** — its effect was made baseline for every Paladin in the September 24 build, which dropped [[Holy Strike]]'s cooldown to 10 seconds for everyone. That build cannot be entered as printed.
 :::
 ## Is Holy worth levelling?
 **Viable but slow, and its usual escape hatch is closed.** You will be nearly unkillable and you will kill nothing quickly. Worse for this spec specifically: **Forever cut dungeon experience hard, raising only dungeon *quest* experience**, so "just level in dungeons" is largely gone.

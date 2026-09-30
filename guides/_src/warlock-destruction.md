@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Hard-cast direct damage instead of ramping damage over time. **The one Warlock spec published guides mark down for levelling** — 3.5 out of 5, against 5 for the other two.

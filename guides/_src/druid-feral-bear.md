@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Leather tanking in Bear Form on rage and dodge — no block, no parry. **This is your only combat form between levels 10 and 20**, so every Druid plays it whether they intend to tank or not.

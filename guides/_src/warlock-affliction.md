@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Stacked shadow damage-over-time spells plus channelled drains, *"for players who enjoy watching their enemies slowly rot away."* **Rated 5 out of 5 for levelling** — joint best in the class.

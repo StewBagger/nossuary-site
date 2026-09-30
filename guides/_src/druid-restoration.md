@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Healing over time rather than repair — [[Rejuvenation]] and [[Regrowth]] feeding `Swiftmend`, with 1-second-cooldown blanket healing from the new `Gift of the Earthmother`.
@@ -49,7 +49,7 @@ Item level first while levelling: take the higher piece.
 ## What Forever changed for Restoration
 - **[[Wild Growth]] and `Gift of the Earthmother` are both new, and `Swiftmend` no longer consumes its trigger.** Together that is the "modern Resto" rework.
 - **[[Wild Growth]] follows the *target's party*, not the raid's lowest health bars.** Stated explicitly so you do not treat it as smart healing.
-- **Healing over time can now critically strike** — *"[[Rejuvenation]] can now land critical hits, as can [[Tranquility]] and [[Wild Growth]]"*, per the 24 September patch. One guide's FAQ is stale on this and still says only [[Regrowth]] can crit.
+- **Healing over time can now critically strike** — *"[[Rejuvenation]] can now land critical hits, as can [[Tranquility]] and [[Wild Growth]]"*, per the September 24 patch. One guide's FAQ is stale on this and still says only [[Regrowth]] can crit.
 - **Three new talents:** `Gift of the Earthmother`, `Living Spirit` and [[Wild Growth]], plus **`Reflection` rebuilt** — 50% of mana regeneration continues while casting at 3/3, where Classic's 3/3 gave 15%.
 - **`Naturalist` now also grants +5% to all your damage** at 5/5, where Classic only cut [[Healing Touch]]'s cast time — which is why Feral and Balance both want it.
 - `Nature's Focus` and `Subtlety` were broadened from a named-heal list to all Arcane and Nature spells. **`Furor` was rewritten**, so the Cat energy trick is gone — its Bear half is untouched. See the [Feral — Cat](/guides/wow-forever/druid/feral-cat/) page.

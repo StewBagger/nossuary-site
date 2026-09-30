@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Hunter is the easiest class in the game to level alone and one of the hardest to play well in a group. Your pet tanks while you shoot, and Forever made pets scale with your own gear.
@@ -69,4 +69,4 @@ Play Hunter if you want to kill things above your own level from the first hour,
 | The 8-yard dead zone remains | Forever did not fix it, despite heavy feedback |
 **One unresolved disagreement:** one major guide states your abilities no longer clip auto-shot, which would remove vanilla's hardest Hunter skill; another still advises shot-weaving. Blizzard has said the missing cast time is a **bug it intends to fix**, so assume weaving will matter.
 ## At level 60
-Unknown. Nothing past level 20 has been played, so the 31-point builds, whether `Lone Wolf` beats a live pet, whether [[Sniper Shot]]'s four-second cast is a damage loss, and whether melee Survival is viable at all are open questions. Raids open 9 December.
+Unknown. Nothing past level 20 has been played, so the 31-point builds, whether `Lone Wolf` beats a live pet, whether [[Sniper Shot]]'s four-second cast is a damage loss, and whether melee Survival is viable at all are open questions. Raids open December 9.

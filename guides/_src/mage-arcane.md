@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Burst damage on a mana curve you have to manage. **Arcane is genuinely new in Forever** — in Classic its tree had nothing worth spending points on, and now it is a levelling spec.

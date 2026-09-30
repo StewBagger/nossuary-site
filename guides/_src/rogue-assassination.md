@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Poison and bleed pressure on a single target, built around [[Mutilate]] — **a level-30 talent**, which is the whole argument about this spec.

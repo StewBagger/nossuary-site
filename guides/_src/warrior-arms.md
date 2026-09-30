@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Two-handed burst with bleeds and a 50% healing debuff. **At level 20 Arms is not really a spec — it is a weapon choice**, because its own engine sits at level 30 and beyond.

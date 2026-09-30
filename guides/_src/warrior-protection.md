@@ -1,9 +1,9 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Shield tanking, and one of Forever's three tanks. The tree is now **shield-gated** — three separate talents check for one, which kills Classic's dual-wield threat build outright.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch and no higher, so no level-60 Protection build has been tested. One live caveat: Blizzard's 24 September notes swap `Bastion` and `Focused Rage` between rows 5 and 6, and **the client has not applied it yet** — any build touching those rows will move.
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch and no higher, so no level-60 Protection build has been tested. One live caveat: Blizzard's September 24 notes swap `Bastion` and `Focused Rage` between rows 5 and 6, and **the client has not applied it yet** — any build touching those rows will move.
 :::
 ## Is Protection worth levelling?
 **Slower solo, and the best of the three if you are running dungeons.** The published assessment holds both halves at once: *"extremely slow when it comes to solo leveling"* and *"takes less damage and can handle dangerous pulls more safely, which makes solo leveling more forgiving."* Fewer kills per minute, far less time sitting down.

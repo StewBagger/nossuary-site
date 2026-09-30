@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Pure damage and nothing else — and Forever finally makes [[Pyroblast]] a spell you cast during a fight instead of before it.
@@ -38,7 +38,7 @@ Crit sits higher for Fire than for any other Mage spec — it is *"a great damag
 | **`Improved Scorch` 3/3** | 27 | 100% application chance, 5 stacks, **+3% per stack to the Fire damage *you* deal to that target.** This is a **personal** buff in Forever, not Classic's shared Fire vulnerability — do not take a group assignment to supply it |
 | **`Ignite` 5/5** | 19 | 40% of the spell's damage again over 4 seconds |
 ## What Forever changed for Fire
-- **`Hot Streak` is new and it changes the spec.** The published summary: *"This talent now allows Fire Mages to successfully incorporate Pyroblast into their normal gameplay besides cheesy PvP builds or pre-pulls."* It lasts **20 seconds** as of the 24 September patch — one site still says 15.
+- **`Hot Streak` is new and it changes the spec.** The published summary: *"This talent now allows Fire Mages to successfully incorporate Pyroblast into their normal gameplay besides cheesy PvP builds or pre-pulls."* It lasts **20 seconds** as of the September 24 patch — one site still says 15.
 - **`Incineration`** (renamed from Incinerate) moved from tier 3 to **tier 1** and now buffs [[Fire Blast]], [[Ice Lance]], [[Arcane Blast]] **and** [[Scorch]] — deliberately cross-school.
 - **Only one [[Flamestrike]] per Mage can be active at a time.** New restriction.
 - [[Combustion]] now lasts through **4** non-periodic Fire crits, up from 3. [[Blast Wave]] no longer requires [[Pyroblast]] and now dazes for 50%. `Impact` was cut from 5 ranks to 3. `Burning Soul` went from 2 ranks to 3 but is weaker per rank.

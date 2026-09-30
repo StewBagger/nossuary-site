@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Arcane and Nature caster with the new `Eclipse` mechanic — [[Wrath]] shortens your next [[Starfire]], so you alternate rather than spam one spell.
@@ -7,7 +7,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 :::
 ## Is Balance worth levelling?
 **Viable but slower than Feral.** The published verdict: *"Balance Druid is an ok levelling choice. It does have a bit more downtime than Feral Druid would, but the larger range on your abilities can make tagging mobs much easier… Expect to start out very slowly though."*
-**That verdict predates a significant buff.** On 24 September [[Wrath]] got *"About 50% more damage at every rank"*, `Improved Wrath` 5/5 now also cuts its mana cost by 50%, and `Moonglow` 3/3 cuts the mana cost of **all damaging** spells by 25%, where Classic's 3/3 cut a named list — heals included — by 9%. Restoration loses a mana talent in the trade. **Balance's levelling case is stronger than the published guides read.**
+**That verdict predates a significant buff.** On September 24 [[Wrath]] got *"About 50% more damage at every rank"*, `Improved Wrath` 5/5 now also cuts its mana cost by 50%, and `Moonglow` 3/3 cuts the mana cost of **all damaging** spells by 25%, where Classic's 3/3 cut a named list — heals included — by 9%. Restoration loses a mana talent in the trade. **Balance's levelling case is stronger than the published guides read.**
 ## Your talent points
 **Level 20 — 11/0/0.** Every published build opens `Improved Wrath` 5/5. They differ after that.
 **Build A**, with the order published: `Improved Wrath` 5/5 → `Nature's Reach` 2/2 → `Moonglow` 3/3 → `Improved Moonfire` 1/2. The reasoning given for `Improved Wrath` over `Nature's Focus` is that *"you generally end up with a better effective cast time anyway and the mana savings are very significant"*, and `Nature's Reach` is taken because it *"will reduce the chances your spells miss by a significant amount"* as well as extending [[Moonfire]]'s range for tagging.
@@ -37,6 +37,6 @@ Item level, then Spell Power, Intellect, Haste, critical strike, Spirit.
 - **[[Entangling Roots]] is no longer outdoors-only** either.
 - **[[Insect Swarm]] moved from Restoration into Balance.** `Improved Thorns` and `Natural Weapons` were removed.
 - **Three new talents:** `Genesis` (+5% periodic damage *and healing* at 5/5), `Nature's Majesty` (+4% crit with **spells and melee**), `Nature's Splendor`.
-- `Moonfury` and `Vengeance` were broadened from a named-spell list to all Arcane and Nature spells. **[[Thorns]] now scales with spell power** as of 24 September. [[Starfire]] rank 7 and [[Moonfire]] rank 10 had their damage **reduced**; [[Hurricane]] lost its 1-minute cooldown.
+- `Moonfury` and `Vengeance` were broadened from a named-spell list to all Arcane and Nature spells. **[[Thorns]] now scales with spell power** as of September 24. [[Starfire]] rank 7 and [[Moonfire]] rank 10 had their damage **reduced**; [[Hurricane]] lost its 1-minute cooldown.
 ## At level 60
 Unknown. Nobody has cast [[Starfire]] with `Eclipse` charges or stood in [[Moonkin Form]], and how much of Classic's hybrid tax survives is unresolved in every source.

@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Warrior is the slowest class to level in Forever and one of the strongest once geared. Rage now comes from weapon speed rather than damage dealt, and a critical hit no longer grants bonus rage on top of the swing.
@@ -47,7 +47,7 @@ Play Warrior if you want to watch the enemy rather than your own bars, and you d
 | 40 | Capstone talents, **plate armour**, mount |
 | 50 | [[Recklessness]] — still 30 minutes, where Retaliation and Shield Wall dropped to 15 |
 **Talent points are your level minus nine** — one at 10, eleven at 20, twenty-one at 30, fifty-one at 60. Tiers open at levels 10, 15, 20, 25, 30, 35 and 40. The Legacy perk **Talented** moves your first point earlier, down to level 5 at full rank, which is **26 points at level 30 rather than 21.**
-**[[Devastate]] is not in Forever — and it was not in Classic either.** It is a Burning Crusade ability, so lists that expect it are reading forward, not back. [[Sunder Armor]] is the ability, and it gained Attack Power scaling on 24 September.
+**[[Devastate]] is not in Forever — and it was not in Classic either.** It is a Burning Crusade ability, so lists that expect it are reading forward, not back. [[Sunder Armor]] is the ability, and it gained Attack Power scaling on September 24.
 ## Which race
 **Alliance — Night Elf.** `Elune's Light` gives +10% crit for 15 seconds and lines up with your cooldowns, `Shadowmeld` drops threat, and `Wisp Spirit` speeds corpse runs.
 **Horde — Orc.** `Blood Fury` is +10% attack power and `Axe Specialization` gives +1% crit, which makes axes worth seeking out.
@@ -69,4 +69,4 @@ Play Warrior if you want to watch the enemy rather than your own bars, and you d
 | The three major cooldowns no longer share a lockout | But only Retaliation and Shield Wall dropped to 15 minutes; **Recklessness is still 30** |
 | Plate armour at 40 | Cloth, leather and mail until then |
 ## At level 60
-Unknown, and we will not guess. No source publishes a Warrior build past level 30. Rage generation is currently low enough that one published guide says outright you *"will be struggling to press buttons on cooldown in endgame content, but this is likely to change before launch."* Raids open 9 December.
+Unknown, and we will not guess. No source publishes a Warrior build past level 30. Rage generation is currently low enough that one published guide says outright you *"will be struggling to press buttons on cooldown in endgame content, but this is likely to change before launch."* Raids open December 9.

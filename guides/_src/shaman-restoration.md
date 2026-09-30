@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Triage healing — a big wave, a fast wave, or a chain heal across a cluster, now with an instant repeatable heal over time. **The dungeon healer, and the lowest levelling score on any Shaman page.**
@@ -43,7 +43,7 @@ Healing Power, then critical strike, Haste, Intellect, MP5, Spirit, Stamina.
 - **`Healing Way` is now a flat +8% per rank to [[Healing Wave]] itself**, instead of a stacking per-target buff you had to build up with low-rank casts. **That removes an entire Classic upkeep habit** — if you played a Resto Shaman before, stop pre-stacking.
 - **[[Mana Tide Totem]] moved from row 7 to row 4 but was cut to 88 mana per tick, down from 170.**
 - **`Tidal Focus` now also grants global hit.** `Healing Focus` is 3 ranks reaching 70%. `Improved Reincarnation` now also grants +2% maximum health per rank, 4% at 2/2.
-- **[[Riptide]] can now critically strike**, as of the 24 September patch.
+- **[[Riptide]] can now critically strike**, as of the September 24 patch.
 - **Totems last 5 minutes instead of 2 and reach 30 yards instead of 20.** Weapon imbues last 60 minutes instead of 5.
 - **A capstone conflict:** `Nature's Swiftness` needs 21 Restoration points, and **either** 31-point capstone needs 31 — 52 against a 51-point budget. **`Nature's Swiftness` cannot coexist with `Rage of the Farseer` or [[Lava Burst]].**
 ## At level 60

@@ -1,9 +1,9 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Two-handed melee with Holy magic layered on top. **This is the Paladin levelling spec**, and Forever improved it more than any other — [[Holy Strike]] at level 6 turns it from auto-attack-and-wait into something you actually play.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Retribution build has been tested. **A specific warning for this spec:** a widely-published level-30 Retribution build spends two points on `Crusade`, **a talent that does not exist in the beta client** — it vanished from the Retribution tree in the 24 September build (1.60.1.70009), the beta's first balance pass, with no mention in Blizzard's notes. That build cannot be entered as printed, and no source publishes a legal replacement.
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Retribution build has been tested. **A specific warning for this spec:** a widely-published level-30 Retribution build spends two points on `Crusade`, **a talent that does not exist in the beta client** — it vanished from the Retribution tree in the September 24 build (1.60.1.70009), the beta's first balance pass, with no mention in Blizzard's notes. That build cannot be entered as printed, and no source publishes a legal replacement.
 :::
 ## Is Retribution worth levelling?
 **Yes, and it is the clear answer for Paladin.** [[Holy Strike]] from level 6 gives you a real button twenty levels before Classic gave you one. Rated good at everything except area damage.
@@ -40,7 +40,7 @@ Published gear lists split into a **Spell Power** build and an **Attack Power** 
 ## What Forever changed for Retribution
 - **Six new talents:** `Holy Conduit`, `Sanctified Judgement`, `Sacred Arbiter`, `Champion of the Light`, `Instrument of Law`, and the `Twist of Light` capstone.
 - **Four talents deleted:** `Improved Blessing of Might`, `Improved Retribution Aura`, `Improved Seal of the Crusader`, `Sanctity Aura`.
-- **`Crusade` vanished in the 24 September build and Blizzard never mentioned it** — which is exactly why bad builds keep republishing it.
-- `Vindication` now also grants **you** attack power. `Vengeance` was cut to 3 stacks and moved a tier. `Eye for an Eye` reflect cut from 30% to 10%. `Pursuit of Justice` now covers **mounted** speed. `Two-Handed Weapon Specialization` was nerfed on 24 September from 3% to **2% per rank — which is the Classic value**, so against Classic it is unchanged.
+- **`Crusade` vanished in the September 24 build and Blizzard never mentioned it** — which is exactly why bad builds keep republishing it.
+- `Vindication` now also grants **you** attack power. `Vengeance` was cut to 3 stacks and moved a tier. `Eye for an Eye` reflect cut from 30% to 10%. `Pursuit of Justice` now covers **mounted** speed. `Two-Handed Weapon Specialization` was nerfed on September 24 from 3% to **2% per rank — which is the Classic value**, so against Classic it is unchanged.
 ## At level 60
 Unknown — including where the two orphaned `Crusade` points should actually go. Whether the `Twist of Light` capstone or a Holy hybrid wins is an untested either-or at 51 points, and the author of one published guide now says *"it's looking like twisting might not be the way to go for Paladin raid DPS specs atm."*

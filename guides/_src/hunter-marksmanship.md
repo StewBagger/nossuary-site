@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Ranged physical damage without leaning on the pet — and in Forever, **the dungeon area-damage Hunter.**

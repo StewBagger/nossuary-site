@@ -1,9 +1,9 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Ranged caster mixing hard lightning casts with Shocks, interrupts and totems. **Its two best talents are level 30 and 40**, which is the whole story of this spec in the beta.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Elemental build has been tested. **A specific warning for this spec:** a widely-published level-30 Elemental build **is not legal on the current client.** It spends 5 points on `Elemental Fury`, which Blizzard **moved down to row 6 on 24 September** — needing 26 points, not 21. That site's data predates the change, and its prose and its own screenshot disagree with each other besides. **Treat no level-30 Elemental build as published.**
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Elemental build has been tested. **A specific warning for this spec:** a widely-published level-30 Elemental build **is not legal on the current client.** It spends 5 points on `Elemental Fury`, which Blizzard **moved down to row 6 on September 24** — needing 26 points, not 21. That site's data predates the change, and its prose and its own screenshot disagree with each other besides. **Treat no level-30 Elemental build as published.**
 :::
 ## Is Elemental worth levelling?
 **Viable but weak at the current cap, and the source calls it that directly.** The heading is *"Weak Damage"*: *"Because they are denied access to some of their best talents on the Level 20 bracket, such as [[Lava Burst]] and `Elemental Alacrity`, Elemental is quite weak at low levels. This is also not helped by the lowering of base spell damage in WoW Forever in favor of gear with more Spell Damage."*
@@ -41,7 +41,7 @@ Given that Forever moved caster power from base spells onto gear, **item level i
 - **[[Fire Nova Totem]] became [[Fire Nova]]** — an instant **10-yard** explosion cast **from your active Fire totem**, rather than a totem you drop and wait on. (The 30 yards is how far away you may now *place* a totem, up from 20 — a different number.) `Improved Fire Nova` replaces `Improved Fire Totems`. This is a real improvement and it changes how you open a pull.
 - **[[Lightning Bolt]] casts in 2.5 seconds instead of 3.0 from rank 4 — level 20 — upward, so the buff is live at the current cap. [[Chain Lightning]] casts in 2.0 instead of 2.5 at every rank.**
 - **Base spell damage was cut across the board**, with the power moved onto gear's spell power.
-- **`Elemental Alacrity`** (renamed from `Lightning Mastery`) **moved up to row 3, and `Elemental Fury` moved down to row 6** on 24 September — and Elemental Fury now requires `Call of Thunder`. `Call of Thunder` itself is now 1 rank at 3%. **This is the change that invalidated the published level-30 build.**
+- **`Elemental Alacrity`** (renamed from `Lightning Mastery`) **moved up to row 3, and `Elemental Fury` moved down to row 6** on September 24 — and Elemental Fury now requires `Call of Thunder`. `Call of Thunder` itself is now 1 rank at 3%. **This is the change that invalidated the published level-30 build.**
 - **Weapon imbues last 60 minutes instead of 5; totems last 5 minutes instead of 2 and reach 30 yards instead of 20.**
 - **Hit and critical strike are unified** across spell, melee and ranged.
 ## At level 60

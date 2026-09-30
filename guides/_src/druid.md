@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Druid is four classes in one character, and Forever changed its most important gearing rule: **your weapon's damage now scales Bear and Cat form**, where in Classic it did not matter at all.
@@ -8,7 +8,7 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right n
 ## Which spec?
 | Spec | Role | Levelling | In one line |
 | --- | --- | --- | --- |
-| **[Balance](/guides/wow-forever/druid/balance/)** | Ranged DPS | Viable, slower | `Eclipse` twisting, and [[Wrath]] got 50% more damage on 24 September |
+| **[Balance](/guides/wow-forever/druid/balance/)** | Ranged DPS | Viable, slower | `Eclipse` twisting, and [[Wrath]] got 50% more damage on September 24 |
 | **[Feral — Bear](/guides/wow-forever/druid/feral-bear/)** | Tank | **Your form from 10 to 20** | Leather tanking on rage and dodge, with no block and no parry |
 | **[Feral — Cat](/guides/wow-forever/druid/feral-cat/)** | Melee DPS | **Best from 20 on** | Energy and combo points, and +30% movement speed permanently |
 | **[Restoration](/guides/wow-forever/druid/restoration/)** | Healer | Slowest | HoTs, `Swiftmend`, and 1-second-cooldown [[Rejuvenation]] |
@@ -75,4 +75,4 @@ One honest caveat: **`Plainsrunning` does not stack with Cat Form or Travel Form
 | Consumables usable in form | A bear can drink a potion |
 | **Mangle is called [[Primal Bite]]** | Older guides use the old name |
 ## At level 60
-Unknown. No source publishes a Druid build past 30, and **nobody has ever been in Moonkin Form**, so whether Forever's reworked version makes Balance a real raid specialisation is untested. For bear tanking specifically, one published assessment is that Feral **remains the only tank with no straightforward way to become immune to critical strikes**, and it cannot block or parry — it has dodge, armour and health only. Raids open 9 December.
+Unknown. No source publishes a Druid build past 30, and **nobody has ever been in Moonkin Form**, so whether Forever's reworked version makes Balance a real raid specialisation is untested. For bear tanking specifically, one published assessment is that Feral **remains the only tank with no straightforward way to become immune to critical strikes**, and it cannot block or parry — it has dodge, armour and health only. Raids open December 9.

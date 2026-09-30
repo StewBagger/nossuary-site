@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Your demon fights alongside you and your own damage keeps it alive. **Rated 5 out of 5 for levelling — identical to Affliction**, and in Forever demons scale with your gear.

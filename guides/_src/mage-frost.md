@@ -1,4 +1,4 @@
-updated: 30 September 2026
+updated: September 30, 2026
 build: 1.60.1.70124
 
 Freeze the target, then hit it for **four times the damage** — the tooltip reads +300%. **This is the Mage levelling spec and the safest specialisation in the game** — enemies frequently die before they reach you.
