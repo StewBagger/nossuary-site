@@ -33,6 +33,9 @@
   transition: border-color .15s ease, transform .15s ease;
 }
 .guide-card img { grid-row: 1 / span 3; width: 64px; height: 64px; border-radius: 12px; }
+/* A section with no crest art (professions) -- without this the three children
+   auto-place into the 64px image column and the name overlaps the role badge. */
+.guide-card--plain { grid-template-columns: 1fr; }
 .guide-card-name {
   font: 600 1.05rem/1.2 var(--sans); color: var(--bone);
   display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;

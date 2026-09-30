@@ -65,6 +65,26 @@ CLASSES = [
 ]
 
 
+# Professions. A parallel section to the classes: its own hub at /professions/ and one
+# page each. Gathering and crafting are split because the first question a new player
+# actually asks is "which two do I pick", and the answer turns on that pairing.
+PROFESSIONS = [
+    ("mining", "Mining", "Gathering", "Ore and stone, and the only feed for Blacksmithing and Engineering."),
+    ("herbalism", "Herbalism", "Gathering", "Herbs, and the only feed for Alchemy."),
+    ("skinning", "Skinning", "Gathering", "Leather off things you already killed \u2014 the cheapest profession to carry."),
+    ("blacksmithing", "Blacksmithing", "Crafting", "Plate and mail armour, and weapons. Eats ore."),
+    ("leatherworking", "Leatherworking", "Crafting", "Leather and mail armour. Eats hides."),
+    ("tailoring", "Tailoring", "Crafting", "Cloth armour and bags, from drops rather than a gathering profession."),
+    ("engineering", "Engineering", "Crafting", "Bombs, gadgets, goggles and a mount. Expensive and unlike anything else."),
+    ("enchanting", "Enchanting", "Crafting", "Permanent bonuses on gear, funded by destroying gear."),
+    ("alchemy", "Alchemy", "Crafting", "Potions, elixirs and flasks \u2014 raid consumables."),
+    ("cooking", "Cooking", "Secondary", "Food buffs, and in Forever a +5% experience buff while you level."),
+    ("first-aid", "First Aid", "Secondary", "Bandages. For several classes this is the only self-heal for a long time."),
+    ("fishing", "Fishing", "Secondary", "Slow, peaceful, and it feeds Cooking."),
+    ("camping", "Camping", "System", "New in Forever. Every profession places camp objects that buff the group for an hour."),
+    ("merchants-favor", "Merchant's Favor", "System", "New in Forever. A second currency and 317 recipes no trainer teaches."),
+]
+
 # class slug -> [(spec slug, spec name, role)]
 # Every established guide site splits a class guide by specialisation -- Wowhead runs a
 # separate guide per spec, Icy Veins uses role tabs, classicwow.gg has an overview plus
@@ -96,6 +116,10 @@ SPECS = {
               ("feral-cat", "Feral \u2014 Cat", "Melee DPS"),
               ("restoration", "Restoration", "Healer")],
 }
+
+# The "new to this?" box label. Classes were the only section when this was
+# written; professions reuse the same block with a different noun.
+NEWBOX = ["New to this class?"]
 
 INLINE = [
     (re.compile(r"\[\[([^\]]+)\]\]"), r'<span class="ab">\1</span>'),
@@ -190,9 +214,9 @@ def directive(kind, buf, headings):
         return ('<aside class="guide-scope" aria-label="Scope and accuracy">'
                 f"{body}</aside>")
     if kind == "new":
-        headings.append(("new-to-this-class", "New to this class?"))
+        headings.append(("new-to-this-class", NEWBOX[0]))
         return ('<aside class="guide-newbox" id="new-to-this-class">'
-                '<p class="eyebrow">New to this class?</p>' + body + "</aside>")
+                f'<p class="eyebrow">{NEWBOX[0]}</p>' + body + "</aside>")
     cls = "pros" if kind == "strengths" else "cons"
     label = "Strengths" if kind == "strengths" else "Weaknesses"
     return (f'<aside class="guide-sw {cls}"><p class="eyebrow">{label}</p>{body}</aside>')
@@ -254,6 +278,17 @@ def nav():
         for h, l in items)
 
 
+def profnav(active=None):
+    """The profession bar, repeated identically on the hub and every profession page."""
+    out = [f'<a class="sn-item{"" if active else " on"}" '
+           f'href="/guides/wow-forever/professions/">All professions</a>']
+    for slug, name, kind, _ in PROFESSIONS:
+        on = " on" if slug == active else ""
+        out.append(f'<a class="sn-item{on}" '
+                   f'href="/guides/wow-forever/professions/{slug}/">{html.escape(name)}</a>')
+    return '<nav class="spec-nav" aria-label="Professions">' + "".join(out) + "</nav>"
+
+
 def frontmatter(text):
     meta, body = {}, text
     if not text.startswith("---"):
@@ -290,6 +325,13 @@ def page(slug, title, desc, standfirst, body, crest, canonical, crumb=None,
         trail.append(f'<li aria-current="page">{html.escape(crumb)}</li>')
         crumbs = ('<nav class="crumbs" aria-label="Breadcrumb"><ol>'
                   + "".join(trail) + "</ol></nav>")
+    # A section may not have art yet (professions did not, at first). Emit the crest
+    # only when the file is actually on disk -- a missing webp is a broken image on
+    # every page of that section, and a placeholder would have to be maintained.
+    crest_img = ""
+    if crest and (ROOT / "assets" / "guides" / "wow-forever" / f"{crest}-256.webp").exists():
+        crest_img = (f'<img class="guide-crest" src="/assets/guides/wow-forever/{crest}-256.webp"'
+                     ' alt="" width="128" height="128">')
     stamped = meta.get("updated", date.today().isoformat())
     build = meta.get("build", "")
     bits = [f'<span class="gm-ver">WoW: Forever</span>']
@@ -340,7 +382,7 @@ def page(slug, title, desc, standfirst, body, crest, canonical, crumb=None,
   <main class="forum-page">
     <section class="forum-hero guide-hero" aria-labelledby="guide-title">
       <div class="wrap guide-hero-inner">
-        <img class="guide-crest" src="/assets/guides/wow-forever/{crest}-256.webp" alt="" width="128" height="128">
+        {crest_img}
         <div>
           <p class="eyebrow">WoW: Forever</p>
           <h1 id="guide-title">{html.escape(title.split(' · ')[0])}</h1>
@@ -424,6 +466,66 @@ def main():
             written.append(f"{slug}/{sslug}")
             print(f"    wrote {slug}/{sslug}/")
 
+    # ---- professions: a hub at /professions/ plus one page each ----
+    NEWBOX[0] = "New to professions?"
+    prof_written = []
+    pd = OUT / "professions"
+    for slug, name, kind, hook in PROFESSIONS:
+        md = SRC / f"prof-{slug}.md"
+        if not md.exists():
+            print(f"  skip professions/{slug} (no source yet)")
+            continue
+        meta, text = frontmatter(md.read_text())
+        lines = text.split("\n")
+        standfirst = inline(lines[0].strip())
+        headings = []
+        body = blocks("\n".join(lines[1:]), headings)
+        scope, body = hoist_scope(body)
+        body = scope + "\n        " + contents(headings) + "\n        " + body
+        d = pd / slug
+        d.mkdir(parents=True, exist_ok=True)
+        (d / "index.html").write_text(page(
+            f"prof-{slug}", f"{name} \u00b7 WoW: Forever \u00b7 Null Ossuary",
+            f"{name} guide for WoW: Forever \u2014 {hook}",
+            standfirst, body, "professions",
+            f"https://nossuary.com/guides/wow-forever/professions/{slug}/",
+            name, None, meta, parent=("professions", "Professions"),
+            sn=profnav(slug), role=kind))
+        prof_written.append(f"professions/{slug}")
+        print(f"  wrote professions/{slug}/")
+
+    if prof_written:
+        pcards = []
+        for slug, name, kind, hook in PROFESSIONS:
+            live = (pd / slug / "index.html").exists()
+            tag = "a" if live else "div"
+            attr = (f' href="/guides/wow-forever/professions/{slug}/"' if live
+                    else ' aria-disabled="true"')
+            soon = "" if live else '<span class="guide-soon">coming soon</span>'
+            pcards.append(
+                f'<{tag} class="guide-card guide-card--plain"{attr}>'
+                f'<span class="guide-card-name">{html.escape(name)}{soon}</span>'
+                f'<span class="guide-card-roles">{html.escape(kind)}</span>'
+                f'<span class="guide-card-hook">{inline(hook)}</span></{tag}>')
+        phub_md = SRC / "prof-index.md"
+        pmeta, ptext = frontmatter(phub_md.read_text()) if phub_md.exists() else ({}, "")
+        plines = ptext.split("\n")
+        pstand = inline(plines[0].strip()) if plines else ""
+        ph = []
+        pintro = blocks("\n".join(plines[1:]), ph) if phub_md.exists() else ""
+        pscope, pintro = hoist_scope(pintro)
+        pbody = (pscope + "\n        " + contents(ph)
+                 + f'\n        <div class="guide-grid">{"".join(pcards)}</div>\n        '
+                 + pintro)
+        pd.mkdir(parents=True, exist_ok=True)
+        (pd / "index.html").write_text(page(
+            "prof-index", "Profession guides \u00b7 WoW: Forever \u00b7 Null Ossuary",
+            "Profession guides for World of Warcraft: Forever.",
+            pstand, pbody, "professions",
+            "https://nossuary.com/guides/wow-forever/professions/",
+            "Professions", None, pmeta, sn=profnav()))
+        print("  wrote professions/index.html")
+
     cards = []
     for slug, name, accent, roles, hook in CLASSES:
         live = (OUT / slug / "index.html").exists()
@@ -453,7 +555,7 @@ def main():
         standfirst, body, "index",
         "https://nossuary.com/guides/wow-forever/", None, None, meta))
     print("  wrote guides/wow-forever/index.html")
-    print(f"\n{len(written)} class page(s) + hub")
+    print(f"\n{len(written)} class page(s) + {len(prof_written)} profession page(s) + hubs")
 
 
 if __name__ == "__main__":

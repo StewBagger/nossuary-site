@@ -30,6 +30,12 @@ Honestly, the one whose fantasy appeals. Every class finishes the levelling game
 | Be wanted for groups from day one | Priest, Paladin, Druid, Warrior |
 | Have the most to learn | Druid, Shaman, Paladin, Warlock |
 Three honest warnings. **Warrior is the slowest and most frustrating class to level** and only becomes strong with good gear — a superb tank and a rough first character. **Hunter is by a distance the easiest to level and one of the hardest to play well in a group**, because the pet covers your mistakes until it suddenly cannot. And **Hunter is a ranged class for the whole levelling game** — its melee specialisation sits deep in a talent tree you will not reach until the forties.
+## Professions
+**[Profession guides are here](/guides/wow-forever/professions/)** — all twelve, plus the two systems Forever added.
+Three things worth knowing before you pick:
+- **Take Cooking at level 1.** 103 of its dishes give **+5% experience from kills**, and the first one works at skill 1 on a level-1 character. It costs you no primary slot.
+- **Only the six crafting professions earn Legacy Points.** Two gathering professions earns you none of the 18 on offer.
+- **Camping is new**, and it lets a group hand itself class buffs it does not have.
 ## What is new in Forever
 Beyond the new zones and dungeons, four changes affect how you level whatever you pick.
 - **Dungeon grinding is dead by design.** Mob experience inside dungeons was cut hard while dungeon *quest* experience was raised sharply. Run each dungeon once for its quests rather than repeating it.
