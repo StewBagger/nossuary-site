@@ -278,6 +278,17 @@ def nav():
         for h, l in items)
 
 
+def sectionnav(active):
+    """Classes / Professions switcher. Repeated on every guide page, because a
+    prose link on the hub is not a route anyone finds."""
+    items = [("classes", "/guides/wow-forever/", "Class guides"),
+             ("professions", "/guides/wow-forever/professions/", "Profession guides")]
+    out = "".join(
+        f'<a class="sec-item{" on" if k == active else ""}" href="{h}">{l}</a>'
+        for k, h, l in items)
+    return f'<nav class="sec-nav" aria-label="Guide sections">{out}</nav>'
+
+
 def profnav(active=None):
     """The profession bar, repeated identically on the hub and every profession page."""
     out = [f'<a class="sn-item{"" if active else " on"}" '
@@ -304,7 +315,7 @@ def frontmatter(text):
 
 
 def page(slug, title, desc, standfirst, body, crest, canonical, crumb=None,
-         accent=None, meta=None, parent=None, sn="", role=None):
+         accent=None, meta=None, parent=None, sn="", role=None, section="classes"):
     meta = meta or {}
     # NOTE: no inline style attribute anywhere on these pages. The CSP is
     # style-src 'self', which blocks style="" outright -- an inline custom property is
@@ -392,6 +403,7 @@ def page(slug, title, desc, standfirst, body, crest, canonical, crumb=None,
     </section>
 
     <div class="wrap forum-wrap" id="guide-main">
+      {sectionnav(section)}
       {crumbs}
       {sn}
       {metaline}
@@ -490,7 +502,7 @@ def main():
             standfirst, body, "professions",
             f"https://nossuary.com/guides/wow-forever/professions/{slug}/",
             name, None, meta, parent=("professions", "Professions"),
-            sn=profnav(slug), role=kind))
+            sn=profnav(slug), role=kind, section="professions"))
         prof_written.append(f"professions/{slug}")
         print(f"  wrote professions/{slug}/")
 
@@ -523,7 +535,7 @@ def main():
             "Profession guides for World of Warcraft: Forever.",
             pstand, pbody, "professions",
             "https://nossuary.com/guides/wow-forever/professions/",
-            "Professions", None, pmeta, sn=profnav()))
+            "Professions", None, pmeta, sn=profnav(), section="professions"))
         print("  wrote professions/index.html")
 
     cards = []
