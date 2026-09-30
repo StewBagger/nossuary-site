@@ -17,7 +17,7 @@ Ratings: **Overall 4.5, Levelling 2.5, Dungeon 5.0, Utility 4.0, Mobility 1.0.**
 **Icy Veins' build:** `Wand Specialization` 2 → **`Spirit Tap` 5** (Shadow) → the remaining 4 into `Twilight Focus` and/or `Improved Power Word: Shield`, whichever you are short on. The first two are called *"the most critical"* and *"the second most important"*; Icy Veins does not pin down the exact split of the last 4.
 **Wowhead's build** is the same shape it gives every Priest spec at 20, since the early rows are generic: `Wand Specialization` 2 → `Twilight Focus` 3 (Holy tree) → `Improved Renew` 2 → `Divine Fury` 4. No `Spirit Tap`, and no Discipline-tree talent beyond the wand point.
 **ClassicWoW.gg publishes no level-20 point order** — its talent page is the full level-60 tree, and it says plainly that this is "the full tree, not a suggested build." Its prose on the damage path: lead with `Power in Light` and `Holy Precision` for Holy-spell hit and the Holy Fire/Smite damage bonus, then strengthen those casts with `Holy Specialization`, `Divine Fury` and `Searing Light`.
-**No source publishes a level-30 Discipline build, healing or damage.** The beta itself is capped at level 20 — one talent row short of 30's unlock — so nobody has had the points to test one.
+**No source publishes a level-30 Discipline build, healing or damage.**
 **Level 30, 21/0/0 — our own extension, not a published build**, in order: `Wand Specialization` 2 → `Power in Light` 5 → `Holy Precision` 1 → `Martyrdom` 2 → [[Inner Focus]] 1 → `Meditation` 3 → `Mental Agility` 1 → `Mental Strength` 5 → **[[Penance]]** at 30.
 ## Rotation
 **Solo damage:**

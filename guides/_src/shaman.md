@@ -68,4 +68,4 @@ Play Shaman if you like solving the fight in front of you rather than running th
 | [[Improved Ghost Wolf]] makes it instant and indoor-usable | Vanilla never allowed either |
 | Alliance Shaman exist | Dwarf only |
 ## At level 60
-Unknown. No source publishes a Shaman build past 30, and nobody has seen the level-30 Air totem quest. **On the persistent question of whether Enhancement can tank: there is no Blizzard source either way.** The threat talents are real — `Spirit Weapons` swings threat by 30% depending on your imbue, but the role claim is not supported, and Shaman has no taunt, no defensive cooldown and no Defense support. Raids open December 9.
+Unknown. No source publishes a Shaman build past 30, and nobody has seen the level-30 Air totem quest. **On Enhancement tanking, the threat talents are real** — `Spirit Weapons` swings threat by 30% depending on your imbue, but the role claim is not supported, and Shaman has no taunt, no defensive cooldown and no Defense support. Raids open December 9.

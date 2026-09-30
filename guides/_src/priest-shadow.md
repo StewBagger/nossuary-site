@@ -17,7 +17,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 2. `Spirit Tap`, 5 points
 3. `Improved Shadow Word: Pain`, 2 points
 4. Final 2 points: *"there aren't a lot of good options: `Twilight Focus` if you find yourself playing mostly solo; `Blackout` if you're playing in a PvP environment; `Shadow Reach`… for some extra range."*
-**No source publishes a build that spends into [[Mind Flay]] at 20**, or a level-30 Shadow build. The beta itself is capped at level 20 — one talent row short of 30's unlock — so nobody has had the points to test either.
+**No source publishes a build that spends into [[Mind Flay]] at 20**, or a level-30 Shadow build.
 **Level 30, 0/0/21 — our own extension, not a published build**, in order: `Shadow Focus` 5 → `Improved Shadow Word: Pain` 2 → `Shadow Affinity` 3 → **[[Mind Flay]]** → `Improved Mind Flay` 2 → `Improved Mind Blast` 2 → `Shadow Weaving` 3 → **[[Vampiric Embrace]]** → `Improved Mind Blast` to 4/5.
 ## Rotation
 1. **[[Power Word: Fortitude]]** and **[[Inner Fire]]** up

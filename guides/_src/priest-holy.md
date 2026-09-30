@@ -15,7 +15,7 @@ Ratings: **Overall 3.5, Levelling 2.0, Dungeon 4.0, Utility 4.0, Mobility 1.0.**
 **Level 20: Icy Veins and Wowhead each publish a build, and they lean on different trees.**
 **Icy Veins' build, leaning on Shadow's mana regeneration:** `Wand Specialization` 2 → **`Spirit Tap` 5** → `Twilight Focus`, then the rest into `Improved Renew`. ⚠ Its prose and its own calculator disagree on whether `Spirit Tap` or `Twilight Focus` comes first; the totals are identical either way.
 **Wowhead's build, 2/9/0, Holy after the wand point:** `Wand Specialization` 2 → `Improved Renew` 3 → `Holy Specialization` 2 → `Divine Fury` 4. No `Spirit Tap` — Wowhead frames this as the generic early build it gives every Priest spec at 20, not a Holy-specific one.
-**No source publishes a level-30 Holy build.** The beta itself is capped at level 20 — one talent row short of 30's unlock — so nobody has had the points to test one.
+**No source publishes a level-30 Holy build.**
 **Level 30, 0/21/0 — our own extension, not a published build**, in order: `Holy Specialization` 5 → `Divine Fury` 5 → `Inspiration` 3 → **[[Holy Nova]]** → `Twilight Focus` 1 → `Improved Healing` 3 → **`Binding Heal`** → `Twilight Focus` to 2/3 → **[[Spirit of Redemption]]**.
 ## Rotation
 **Solo damage, Discipline's rotation minus [[Holy Fire]]:**

@@ -13,7 +13,7 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right n
 | **[Protection](/guides/wow-forever/paladin/protection/)** | Tank | Slower solo | The only tank that gears for **Spell Power**, because its threat is Holy damage |
 | **[Retribution](/guides/wow-forever/paladin/retribution/)** | Melee DPS | **Best of the three** | Two-hander plus Holy, and [[Holy Strike]] arrives at level 6 |
 **Retribution is the levelling answer and it is not close.** Forever improved it more than any other spec by giving every Paladin [[Holy Strike]] at level 6, twenty levels earlier than Classic gave you a button. Protection used to have dungeon levelling as its escape hatch; **Forever cut dungeon experience hard while raising only dungeon *quest* experience**, so that route is largely gone.
-**A warning that applies to two of the three specs:** stale build lists still spend points on `Crusade` and `Improved Holy Strike`. **Neither is in the client, and the two cases are not alike.** `Improved Holy Strike` was folded into the class — [[Holy Strike]]'s cooldown is now 10 seconds for every Paladin, and Blizzard's September 24 notes say so. **`Crusade` simply vanished from the Retribution tree with no mention at all.** Either way, builds containing them cannot be entered as printed.
+**The two cases are not alike.** `Improved Holy Strike` was folded into the class — [[Holy Strike]]'s cooldown is now 10 seconds for every Paladin, and Blizzard's September 24 notes say so. `Crusade` simply vanished from the Retribution tree with no mention at all.
 ## Is Paladin for you?
 Play Paladin if you want to be very hard to kill, to fill whichever role a group is short of, and you do not mind killing things slowly to get it.
 :::strengths
@@ -70,4 +70,4 @@ Play Paladin if you want to be very hard to kill, to fill whichever role a group
 | Resistance auras are raid-wide | |
 | Undead Paladins exist | With their own hub, quests and mounts |
 ## At level 60
-Unknown. No source publishes a Paladin build past 30, so whether Retribution's Seal of Command path or the new Spell Power path wins is untested, and two talents in the published level-30 builds do not exist in the current client, which is the clearest illustration of why those builds are projections. Raids open December 9.
+Unknown. No source publishes a Paladin build past 30, so whether Retribution's Seal of Command path or the new Spell Power path wins is untested. Raids open December 9.

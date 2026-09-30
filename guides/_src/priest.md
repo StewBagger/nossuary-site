@@ -12,7 +12,7 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right n
 | **[Discipline](/guides/wow-forever/priest/discipline/)** | Healer | 2.5/5 **solo**, 5.0/5 in dungeons | Mana efficiency and prevention rather than repair |
 | **[Holy](/guides/wow-forever/priest/holy/)** | Healer | 2.0/5 **solo**, 4.0/5 in dungeons | The strongest raw healing, and the slowest solo experience |
 | **[Shadow](/guides/wow-forever/priest/shadow/)** | Ranged DPS | **Best solo — 3.0/5** | [[Mind Flay]], and it is now **talent-only** |
-**If you are soloing, level Shadow and respec to heal.** The published ratings are blunt — Discipline **2.5 out of 5**, Holy **2.0**, and there is a hard reason behind them: **[[Mind Flay]] is a talent, gated behind 10 points in the Shadow tree, exactly as in Classic**, so no published Holy or Discipline build reaches it. A Priest without Mind Flay has [[Smite]] and a wand.
+**If you are soloing, level Shadow and respec to heal.** The published ratings are blunt — Discipline **2.5 out of 5**, Holy **2.0** — for the reason above: no published build for either reaches [[Mind Flay]]. A Priest without it has [[Smite]] and a wand.
 **But those numbers rate solo kill speed and nothing else.** The same source rates Discipline **5.0 out of 5 for dungeons**, the best of any Priest spec, and Holy 4.0 — **against Shadow's own dungeon rating of only 2.5**, the lowest of the three. **A healer never waits for a group**, so if you intend to level in dungeons the ranking effectively inverts, and Shadow is the one spec that does not benefit from it.
 **And Discipline has a solo pattern the ratings ignore:** [[Power Word: Shield]] absorbs the damage while your wand does the killing, at almost no mana cost. Slow, nearly unkillable, and how Discipline has soloed since vanilla.
 This is not a permanent commitment. Respeccing to Holy or Discipline once you want to heal dungeons is the normal path.
@@ -50,7 +50,7 @@ Play Priest if you want to be the person keeping everyone alive, and you are hap
 | **32** | **[[Shadow Word: Death]], new**, with 10% max-health backlash if it does not kill |
 | 40 | [[Greater Heal]], **[[Lightwell]] is now trained** (it was the Holy capstone), mount |
 | 48–60 | Prayer of Fortitude, Shadow Protection and Spirit all become **raid-wide** |
-**[[Mind Flay]] is talent-only, and always was.** It comes with the talent point and nothing else teaches it, and **the gate is 10 points in the Shadow tree, not your spec**, so a healing Priest is not forbidden from dipping for it, but **no published Holy or Discipline build reaches it.**
+**The gate is 10 points in the Shadow tree, not your spec** — a healing Priest is not forbidden from dipping for [[Mind Flay]], which is why it does not appear above as a level-gated ability.
 ## Which race
 **Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling.** Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Kill the vanilla answer first: you used to pick Dwarf for [[Fear Ward]], and Fear Ward is now baseline for everyone.** That reason is gone.
