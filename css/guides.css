@@ -115,3 +115,82 @@ a.guide-card:hover .guide-card-name { color: var(--class-accent); }
 .guide-toc a { color: var(--bone-dim); text-decoration: none; font-size: .92rem; }
 .guide-toc a:hover { color: var(--class-accent); text-decoration: underline; }
 .guide-body h2 { scroll-margin-top: 20px; }
+
+/* --- Metadata line ------------------------------------------------------ */
+/* Version, date and author on one line under the crumbs. On every guide site studied
+   this trio sits above the fold and does most of the work that hedging otherwise tries
+   to do: a reader who can see what build a page reflects forgives provisional content. */
+.guide-meta {
+  display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center;
+  margin: 0 0 26px; padding: 0 0 18px;
+  border-bottom: 1px solid rgba(47, 56, 52, .5);
+  font: 500 .76rem/1.4 var(--mono); letter-spacing: .06em;
+  text-transform: uppercase; color: var(--grey);
+}
+.guide-meta .gm-ver {
+  color: var(--class-accent); border: 1px solid currentColor;
+  border-radius: 4px; padding: 3px 7px;
+}
+
+/* --- The one uncertainty box -------------------------------------------- */
+/* All hedging lives here. The body is written in the indicative; a genuinely shaky claim
+   gets one "seems" inside its sentence. Hedging spread through body prose makes
+   confident and shaky claims read identically, which is worse than not hedging. */
+.guide-scope {
+  max-width: 74ch; margin: 0 0 32px; padding: 18px 22px;
+  border: 1px solid rgba(240, 180, 76, .38); border-left-width: 3px;
+  border-radius: 0 10px 10px 0; background: rgba(240, 180, 76, .06);
+}
+.guide-scope p { margin: 0 0 10px; color: var(--bone); font-size: .94rem; }
+.guide-scope p:last-child { margin-bottom: 0; }
+.guide-scope strong { color: var(--amber); }
+
+/* --- New to this class? ------------------------------------------------- */
+/* Bounded on purpose: ~80 words answering four questions. Softening the whole guide for
+   beginners instead dilutes it for everyone and still gives them no decision. */
+.guide-newbox {
+  max-width: 74ch; margin: 0 0 32px; padding: 20px 24px;
+  border: 1px solid var(--line); border-radius: 12px;
+  background: linear-gradient(180deg, var(--stone) 0%, var(--bg-2) 100%);
+}
+.guide-newbox .eyebrow { margin: 0 0 12px; color: var(--class-accent); }
+.guide-newbox p { margin: 0 0 10px; }
+.guide-newbox p:last-child, .guide-newbox ul:last-child { margin-bottom: 0; }
+
+/* --- Strengths / weaknesses --------------------------------------------- */
+.guide-sw {
+  max-width: 74ch; margin: 0 0 14px; padding: 14px 20px;
+  border-radius: 10px; border: 1px solid var(--line);
+}
+.guide-sw .eyebrow { margin: 0 0 8px; }
+.guide-sw ul { margin: 0; padding-left: 20px; }
+.guide-sw li { margin-bottom: 5px; }
+.guide-sw.pros { border-color: rgba(91, 242, 154, .3); background: rgba(91, 242, 154, .05); }
+.guide-sw.cons { border-color: rgba(224, 100, 90, .3); background: rgba(224, 100, 90, .05); }
+.guide-sw.pros .eyebrow { color: var(--phosphor); }
+.guide-sw.cons .eyebrow { color: var(--red, #e0645a); }
+.guide-sw.pros li::marker { content: "+  "; color: var(--phosphor); }
+.guide-sw.cons li::marker { content: "\2212  "; color: var(--red, #e0645a); }
+
+/* --- Ability names ------------------------------------------------------ */
+/* Every guide site links and icons every ability name. We have no spell IDs to link to,
+   so these are styled chips rather than fake links -- most of the scannability, none of
+   the broken tooltips. Swap for real links if IDs ever become available. */
+.ab {
+  font: 600 .93em var(--sans); color: var(--class-accent);
+  white-space: nowrap;
+}
+.guide-table .ab, li .ab { font-weight: 600; }
+
+/* --- Per-class accents --------------------------------------------------- */
+/* Set by class, never by a style attribute: these pages run style-src 'self', which
+   blocks inline styles, so an inline custom property is dropped without warning. */
+.guide-warrior { --class-accent: #c79c6e; }
+.guide-paladin { --class-accent: #f58cba; }
+.guide-hunter { --class-accent: #abd473; }
+.guide-rogue { --class-accent: #fff569; }
+.guide-priest { --class-accent: #ffffff; }
+.guide-shaman { --class-accent: #3e9bff; }
+.guide-mage { --class-accent: #69ccf0; }
+.guide-warlock { --class-accent: #9482c9; }
+.guide-druid { --class-accent: #ff7d0a; }

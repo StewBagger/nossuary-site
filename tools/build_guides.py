@@ -1,55 +1,71 @@
 #!/usr/bin/env python3
 """Render the WoW: Forever class guides from guides/_src/*.md into guides/wow-forever/.
 
-The site has no build step and that stays true: this is a one-off generator whose OUTPUT is
-committed, the same arrangement as branding/*/src/render.sh. Run it after editing a source
-file, then commit the generated HTML.
+The site has no build step and that stays true: this generator's OUTPUT is committed, the
+same arrangement as branding/*/src/render.sh. Run it after editing a source file, then
+commit the generated HTML.
 
     python3 tools/build_guides.py
 
-Markdown support is deliberately small -- headings, paragraphs, lists, tables, blockquotes,
-bold/italic/code and links. That is everything the guides use. It is NOT a general renderer
-and it does not escape HTML in a security-relevant way, because the only input is this repo's
-own source files. Never point it at anything a user can write.
+SOURCE FORMAT. A small superset of markdown, shaped by how the established guide sites
+actually build a class page:
+
+    key: value          front matter, until the first blank line
+    <blank>
+    First line          the standfirst -- one or two sentences that carry information,
+                        not "welcome to our guide"
+    :::scope            the ONE uncertainty box. All hedging lives here. Body prose is
+    ...                 written in the indicative; a genuinely shaky claim gets a single
+    :::                 "seems" inside the sentence, never a hedging sentence.
+    :::new              "New to this class?" -- bounded, ~80 words, four questions. The
+    ...                 whole newcomer budget. Softening the entire page instead is what
+    :::                 dilutes it for both audiences.
+    :::strengths        three bullets, one line each
+    :::weaknesses       three bullets, one line each
+    ## Heading          normal sections; H2s get anchors and feed the contents list
+    | a | b |           pipe tables
+    1. / -              lists
+    [[Ability]]         an ability chip -- styled, so a reader can scan for it
+
+Everything a player executes -- rotation, stat priority, talent order -- must be a
+numbered list with one action per line, never a paragraph. That is the single most common
+defect in a hand-written guide.
 """
 import html
 import pathlib
 import re
 import sys
+from datetime import date
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "guides" / "_src"
 OUT = ROOT / "guides" / "wow-forever"
-STAMP = "20260930-1"
+STAMP = "20260930-2"
 
-# slug -> (display name, accent hex, one-line hook for the hub cards)
-# slug -> (display name, accent hex, roles, one-line hook)
-# The hook is written for someone who has never played -- the hub is the entry point, so
-# it says what the class IS, not what Forever changed about it.
+# slug -> (display name, accent hex, roles, one-line hook for the hub cards)
 CLASSES = [
-    ("warrior", "Warrior", "#c79c6e", "Tank \u00b7 Melee",
+    ("warrior", "Warrior", "#c79c6e", "Tank · Melee",
      "Plate-armoured fighter. Tanks or deals damage, and heals nobody. Hard early, formidable late."),
-    ("paladin", "Paladin", "#f58cba", "Tank \u00b7 Healer \u00b7 Melee",
+    ("paladin", "Paladin", "#f58cba", "Tank · Healer · Melee",
      "Plate hybrid that can do all three jobs. Very hard to kill, historically slow at killing."),
     ("hunter", "Hunter", "#abd473", "Ranged",
      "Ranged weapons and a pet that fights for you. The easiest class to level alone."),
     ("rogue", "Rogue", "#fff569", "Melee",
      "Stealth, daggers and burst damage. Kills fast, dies fast, and picks its fights."),
-    ("priest", "Priest", "#ffffff", "Healer \u00b7 Ranged",
-     "The archetypal healer \u2014 and a shadow caster if you would rather deal the damage."),
-    ("shaman", "Shaman", "#3e9bff", "Healer \u00b7 Ranged \u00b7 Melee",
+    ("priest", "Priest", "#ffffff", "Healer · Ranged",
+     "The archetypal healer — and a shadow caster if you would rather deal the damage."),
+    ("shaman", "Shaman", "#3e9bff", "Healer · Ranged · Melee",
      "Elemental hybrid built around totems: short-lived objects that buff everyone near them."),
     ("mage", "Mage", "#69ccf0", "Ranged",
      "The highest burst damage and the thinnest body in the game. Conjures its own food and water."),
     ("warlock", "Warlock", "#9482c9", "Ranged",
      "A demon fights beside you while curses kill slowly. Trades its own health for mana."),
-    ("druid", "Druid", "#ff7d0a", "Tank \u00b7 Healer \u00b7 Ranged \u00b7 Melee",
-     "The shapeshifter \u2014 bear, cat and caster forms. The most flexible class in the game."),
+    ("druid", "Druid", "#ff7d0a", "Tank · Healer · Ranged · Melee",
+     "The shapeshifter — bear, cat and caster forms. The most flexible class in the game."),
 ]
-NAMES = {s: n for s, n, _, _, _ in CLASSES}
-ACCENTS = {s: a for s, _, a, _, _ in CLASSES}
 
 INLINE = [
+    (re.compile(r"\[\[([^\]]+)\]\]"), r'<span class="ab">\1</span>'),
     (re.compile(r"\[([^\]]+)\]\(([^)]+)\)"), r'<a href="\2" rel="noopener">\1</a>'),
     (re.compile(r"\*\*(.+?)\*\*"), r"<strong>\1</strong>"),
     (re.compile(r"(?<![*\w])\*([^*]+)\*(?!\*)"), r"<em>\1</em>"),
@@ -64,21 +80,36 @@ def inline(text):
     return text
 
 
-def render(md, headings=None):
-    if headings is None:
-        headings = []
+def slugify(text):
+    return re.sub(r"[^a-z0-9]+", "-", re.sub(r"<[^>]+>", "", text).lower()).strip("-")
+
+
+def blocks(md, headings):
+    """Render the source body. Returns HTML."""
     out, lines, i = [], md.split("\n"), 0
     while i < len(lines):
         line = lines[i]
         if not line.strip():
             i += 1
             continue
+
+        m = re.match(r"^:::(scope|new|strengths|weaknesses)\s*$", line)
+        if m:
+            kind, buf = m.group(1), []
+            i += 1
+            while i < len(lines) and not lines[i].startswith(":::"):
+                buf.append(lines[i])
+                i += 1
+            i += 1  # closing :::
+            out.append(directive(kind, buf, headings))
+            continue
+
         if line.startswith("### "):
             out.append(f"<h3>{inline(line[4:])}</h3>")
             i += 1
         elif line.startswith("## "):
             text = line[3:]
-            slug = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+            slug = slugify(text)
             headings.append((slug, text))
             out.append(f'<h2 id="{slug}">{inline(text)}</h2>')
             i += 1
@@ -93,8 +124,8 @@ def render(md, headings=None):
             while i < len(lines) and lines[i].startswith("|"):
                 rows.append([c.strip() for c in lines[i].strip().strip("|").split("|")])
                 i += 1
-            head, body = rows[0], [r for r in rows[2:]]
-            t = ["<div class=\"guide-table\"><table><thead><tr>"]
+            head, body = rows[0], rows[2:]
+            t = ['<div class="guide-table"><table><thead><tr>']
             t += [f"<th>{inline(c)}</th>" for c in head]
             t.append("</tr></thead><tbody>")
             for r in body:
@@ -113,49 +144,99 @@ def render(md, headings=None):
             out.append(f"<{tag}>" + "".join(f"<li>{x}</li>" for x in items) + f"</{tag}>")
         else:
             # One source line is one paragraph. These sources never wrap a paragraph
-            # across lines, so joining adjacent lines would silently weld separate
-            # paragraphs into a wall of text.
+            # across lines, so joining adjacent lines would weld separate paragraphs
+            # into a wall of text.
             out.append("<p>" + inline(line) + "</p>")
             i += 1
     return "\n        ".join(out)
 
 
+def directive(kind, buf, headings):
+    body = blocks("\n".join(buf), [])
+    if kind == "scope":
+        return ('<aside class="guide-scope" aria-label="Scope and accuracy">'
+                f"{body}</aside>")
+    if kind == "new":
+        headings.append(("new-to-this-class", "New to this class?"))
+        return ('<aside class="guide-newbox" id="new-to-this-class">'
+                '<p class="eyebrow">New to this class?</p>' + body + "</aside>")
+    cls = "pros" if kind == "strengths" else "cons"
+    label = "Strengths" if kind == "strengths" else "Weaknesses"
+    return (f'<aside class="guide-sw {cls}"><p class="eyebrow">{label}</p>{body}</aside>')
+
+
+SCOPE_RE = re.compile(r'(<aside class="guide-scope".*?</aside>)', re.S)
+
+
+def hoist_scope(body):
+    """Pull the scope box out of the body so it can sit ABOVE the contents list.
+
+    Every guide site studied puts its one uncertainty notice immediately after the
+    standfirst and before the first heading -- a reader must know what the page reflects
+    before they start acting on it, not after scrolling past a table of contents.
+    """
+    m = SCOPE_RE.search(body)
+    if not m:
+        return "", body
+    return m.group(1), body.replace(m.group(1), "", 1).strip()
+
+
 def contents(headings):
-    """An on-page contents list. These guides run long and serve two audiences at once --
-    someone new to the class and someone who only wants the Forever diff -- so the jump
-    list is doing real work, not decoration."""
     if len(headings) < 3:
         return ""
-    items = "".join(f'<li><a href="#{s}">{html.escape(t)}</a></li>' for s, t in headings)
+    items = "".join(f'<li><a href="#{s}">{html.escape(re.sub("<[^>]+>", "", t))}</a></li>'
+                    for s, t in headings)
     return ('<nav class="guide-toc" aria-labelledby="toc-h">'
             '<p class="eyebrow" id="toc-h">On this page</p>'
             f"<ul>{items}</ul></nav>")
 
 
-def nav(active):
-    items = [
-        ("/#play", "Play"), ("/#mods", "Mods"), ("/forums/", "Forums"),
-        ("/guides/wow-forever/", "Guides"), ("/#support", "Support"),
-        ("/#work", "Workshop"), ("/#contact", "Contact"),
-    ]
-    li = []
-    for href, label in items:
-        cur = ' aria-current="page"' if label == "Guides" and active else ""
-        li.append(f'<li><a href="{href}"{cur}>{label}</a></li>')
-    return "\n        ".join(li)
+def nav():
+    items = [("/#play", "Play"), ("/#mods", "Mods"), ("/forums/", "Forums"),
+             ("/guides/wow-forever/", "Guides"), ("/#support", "Support"),
+             ("/#work", "Workshop"), ("/#contact", "Contact")]
+    return "\n        ".join(
+        f'<li><a href="{h}"{" aria-current=\"page\"" if l == "Guides" else ""}>{l}</a></li>'
+        for h, l in items)
 
 
-def page(slug, title, desc, lede, body, crest, canonical, crumb=None, accent=None):
-    style = f' style="--class-accent:{accent}"' if accent else ""
+def frontmatter(text):
+    meta, body = {}, text
+    if not text.startswith("---"):
+        lines = text.split("\n")
+        n = 0
+        while n < len(lines) and re.match(r"^\w[\w-]*:\s", lines[n]):
+            k, v = lines[n].split(":", 1)
+            meta[k.strip()] = v.strip()
+            n += 1
+        if n:
+            body = "\n".join(lines[n:]).lstrip("\n")
+    return meta, body
+
+
+def page(slug, title, desc, standfirst, body, crest, canonical, crumb=None,
+         accent=None, meta=None):
+    meta = meta or {}
+    # NOTE: no inline style attribute anywhere on these pages. The CSP is
+    # style-src 'self', which blocks style="" outright -- an inline custom property is
+    # silently dropped and every accent falls back to the site default. Per-class accents
+    # live in css/guides.css keyed off this class instead.
+    style = f" guide-{slug}" if accent else ""
     crumbs = ""
     if crumb:
-        crumbs = (
-            '<nav class="crumbs" aria-label="Breadcrumb"><ol>'
-            '<li><a href="/">Home</a></li>'
-            '<li><a href="/guides/wow-forever/">WoW: Forever</a></li>'
-            f'<li aria-current="page">{html.escape(crumb)}</li>'
-            "</ol></nav>"
-        )
+        crumbs = ('<nav class="crumbs" aria-label="Breadcrumb"><ol>'
+                  '<li><a href="/">Home</a></li>'
+                  '<li><a href="/guides/wow-forever/">WoW: Forever</a></li>'
+                  f'<li aria-current="page">{html.escape(crumb)}</li></ol></nav>')
+    stamped = meta.get("updated", date.today().isoformat())
+    build = meta.get("build", "")
+    bits = [f'<span class="gm-ver">WoW: Forever</span>',
+            f'<span>Updated {html.escape(stamped)}</span>']
+    if build:
+        bits.append(f'<span>Beta build {html.escape(build)}</span>')
+    bits.append('<span>Null Ossuary</span>')
+    metaline = '<p class="guide-meta">' + " · ".join(bits) + "</p>"
+
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -175,7 +256,7 @@ def page(slug, title, desc, lede, body, crest, canonical, crumb=None, accent=Non
   <link rel="stylesheet" href="/css/style.css?v=20260918-2">
   <link rel="stylesheet" href="/css/guides.css?v={STAMP}">
 </head>
-<body class="forum guide"{style}>
+<body class="forum guide{style}">
   <a class="skip" href="#guide-main">Skip to content</a>
 
   <header class="nav" id="top">
@@ -185,7 +266,7 @@ def page(slug, title, desc, lede, body, crest, canonical, crumb=None, accent=Non
     </a>
     <nav aria-label="Primary">
       <ul>
-        {nav(True)}
+        {nav()}
         <li><a class="btn btn-sm" href="https://discord.gg/PtMaTp385b" target="_blank" rel="noopener">Join Discord</a></li>
       </ul>
     </nav>
@@ -198,13 +279,14 @@ def page(slug, title, desc, lede, body, crest, canonical, crumb=None, accent=Non
         <div>
           <p class="eyebrow">WoW: Forever</p>
           <h1 id="guide-title">{html.escape(title.split(' · ')[0])}</h1>
-          <p class="lede">{lede}</p>
+          <p class="lede">{standfirst}</p>
         </div>
       </div>
     </section>
 
     <div class="wrap forum-wrap" id="guide-main">
       {crumbs}
+      {metaline}
       <div class="section-head guide-body">
         {body}
       </div>
@@ -235,44 +317,50 @@ def main():
         if not md.exists():
             print(f"  skip {slug} (no source yet)")
             continue
-        text = md.read_text()
-        lede = text.split("\n")[0].lstrip("> ").strip()
+        meta, text = frontmatter(md.read_text())
+        lines = text.split("\n")
+        standfirst = inline(lines[0].strip())
         headings = []
-        body = render("\n".join(text.split("\n")[1:]), headings)
-        body = contents(headings) + "\n        " + body
+        body = blocks("\n".join(lines[1:]), headings)
+        scope, body = hoist_scope(body)
+        body = scope + "\n        " + contents(headings) + "\n        " + body
         d = OUT / slug
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(page(
-            slug, f"{name} · WoW: Forever · Null Ossuary",
-            hook, inline(lede), body, slug,
-            f"https://nossuary.com/guides/wow-forever/{slug}/", name, accent))
+            slug, f"{name} · WoW: Forever · Null Ossuary", hook, standfirst,
+            body, slug, f"https://nossuary.com/guides/wow-forever/{slug}/",
+            name, accent, meta))
         written.append(slug)
         print(f"  wrote guides/wow-forever/{slug}/index.html")
 
-    # the hub
     cards = []
     for slug, name, accent, roles, hook in CLASSES:
         live = (OUT / slug / "index.html").exists()
-        href = f"/guides/wow-forever/{slug}/" if live else None
         tag = "a" if live else "div"
-        attr = f' href="{href}"' if live else ' aria-disabled="true"'
+        attr = f' href="/guides/wow-forever/{slug}/"' if live else ' aria-disabled="true"'
         soon = "" if live else '<span class="guide-soon">coming soon</span>'
         cards.append(
-            f'<{tag} class="guide-card"{attr} style="--class-accent:{accent}">'
+            f'<{tag} class="guide-card guide-{slug}"{attr}>'
             f'<img src="/assets/guides/wow-forever/{slug}-256.webp" alt="" width="96" height="96" loading="lazy">'
             f'<span class="guide-card-name">{name}{soon}</span>'
             f'<span class="guide-card-roles">{html.escape(roles)}</span>'
             f'<span class="guide-card-hook">{inline(hook)}</span></{tag}>')
+
     hub_md = SRC / "index.md"
-    intro = render("\n".join(hub_md.read_text().split("\n")[1:]), []) if hub_md.exists() else ""
-    lede = hub_md.read_text().split("\n")[0].lstrip("> ").strip() if hub_md.exists() else ""
-    body = f'<div class="guide-grid">{"".join(cards)}</div>\n        {intro}'
+    meta, text = frontmatter(hub_md.read_text()) if hub_md.exists() else ({}, "")
+    lines = text.split("\n")
+    standfirst = inline(lines[0].strip()) if lines else ""
+    headings = []
+    intro = blocks("\n".join(lines[1:]), headings) if hub_md.exists() else ""
+    scope, intro = hoist_scope(intro)
+    body = (scope + "\n        " + contents(headings)
+            + f'\n        <div class="guide-grid">{"".join(cards)}</div>\n        ' + intro)
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "index.html").write_text(page(
         "index", "WoW: Forever class guides · Null Ossuary",
-        "Class guides for World of Warcraft: Forever, with every claim tagged by how well it is sourced.",
-        inline(lede), body, "index",
-        "https://nossuary.com/guides/wow-forever/"))
+        "Levelling guides for all nine classes in World of Warcraft: Forever.",
+        standfirst, body, "index",
+        "https://nossuary.com/guides/wow-forever/", None, None, meta))
     print("  wrote guides/wow-forever/index.html")
     print(f"\n{len(written)} class page(s) + hub")
 

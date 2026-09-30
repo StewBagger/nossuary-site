@@ -1,88 +1,89 @@
-Protection finally has a taunt, and the way it got one is the most complained-about design decision in the beta.
-## Starting out
-A paladin is a plate-wearing melee fighter who runs on mana. That single sentence surprises more newcomers than anything else about the class. You stand in the front rank swinging a weapon, and the bar you are watching is the blue one — the same resource a priest uses, spent on holy damage, on healing yourself, and on the shields and stuns that keep you upright.
-The class is built around durability and support rather than speed. You are very hard to kill, you can heal yourself mid-fight, and you carry blessings and auras that improve everyone standing near you. What you do not have is quick kills. At low level a paladin's fights are longer than a warrior's or a rogue's, and a great deal of your time is spent winning slowly and then walking to the next thing with most of your health intact.
-That trade suits some players enormously and bores others. If you like surviving what should have killed you, pulling three things on purpose and grinding them down, or being the person who keeps a group functioning, this is a comfortable class from level one. If you want each monster dead in four seconds, you will find the early levels tedious. Paladins are, on the other hand, forgiving: mistakes that kill other classes tend only to cost you time.
-### What the specs do
-| Spec | Role | In one line |
-| --- | --- | --- |
-| Holy | Healer | Keeps the group alive with efficient single-target healing. |
-| Protection | Tank | Wears the damage and holds attention through holy damage rather than weapon damage. |
-| Retribution | Melee DPS | Swings a two-hander and converts mana into extra damage on every hit. |
-Talents are spent as you level and a trainer will reset them for gold, so you can change your mind. Roles, if you have not grouped before: the tank keeps monsters attacking it instead of everyone else, the healer keeps the tank alive, and the DPS players do the killing. A paladin can do any of the three, but not at once, and a group notices immediately if you have decided you are doing all of them.
-### Your resource
-Mana. It starts full, it does not refill meaningfully in combat, and it refills between fights mostly by drinking. Everything you do costs some — your damage, your healing, your stun, your seals.
-The habit that decides whether a paladin feels good or terrible is learning what to *stop* spending mana on. Your normal weapon swing is free. Your seals and your damage abilities are not. If you spend every point of mana on making the fight faster, you have none left for the heal that saves it, and you will then sit drinking for longer than the fight lasted. The routine that works while levelling: keep a seal up, use your damage abilities while you are comfortably above half mana, and hold the rest in reserve for healing. Drink to full before you pull rather than topping up afterwards.
-Paladins also carry mana-restoring tools of their own — a blessing and a seal-and-judgement pairing that return mana as you fight. Newcomers overlook them entirely and then conclude the class runs dry. It does, if you do not use them.
-### Your first twenty levels
-- **Your seal** — a short buff, roughly half a minute, that changes what your weapon swings do. The first one adds holy damage to every hit. A seal that has expired is your single most common oversight; re-cast it in every fight.
-- **Judgement** — spends the active seal to throw its effect onto the enemy. Seal, then judge. Different seals judge into different things: extra damage, a debuff, mana back.
-- **Holy Light** — your large, slow heal. **Flash of Light** — the small, fast one. Use the small one while levelling; the large one is for emergencies and for healing other people.
-- **Your aura** — a permanent, free group buff. One at a time. It costs nothing to have running, so having none running is pure waste.
-- **Blessings** — your other group buff, cast on one target at a time. Attack power for the melee, mana return for casters. Re-cast after every death.
-- **Hammer of Justice** — a short stun. Its real use is stopping a caster mid-spell or buying time to heal, not squeezing out extra damage.
-- **Lay on Hands** and your **defensive cooldowns** — the buttons that make paladins near-unkillable. Long cooldowns, so they feel precious and newcomers hoard them until they are dead. Use them.
-- **Righteous Fury** — the toggle that makes your holy damage hold a monster's attention. On when you tank. Off when you do not.
-Forever reworked parts of the paladin tanking toolkit; the Protection section below covers what you actually get.
-### Common beginner mistakes
-- Letting the seal expire and swinging away without one. It is a short buff and it runs out mid-fight.
-- Leaving **Righteous Fury** switched on when someone else is tanking. You will pull monsters off them and not understand why.
-- Forgetting to re-apply your blessing and aura after a death or a zone change.
-- Spending down to empty on damage, then having no mana for the heal.
-- Using the stun as a damage button, so it is on cooldown when a caster starts something that needed interrupting.
-- Standing in front of a monster you are not tanking. From the front it can parry and block; from behind it cannot.
-*Everything from here on is for players who have played WoW before: what Forever changed against the original game, and how well each claim is sourced.*
-## Why this class is unusually well documented
-**Exactly one build in the entire beta has changed a single Paladin number** — 24 September, labelled "the first balance changes of the beta". Every build since records "talents, spells and items did not change". Paladin is also the only class with its own section in Blizzard's Deep Dive panel recap. So the data here is more stable and better attested than for any other class.
-## Class-wide changes
-**Holy Strike**, new at level 6, is universally liked — the first thing every critical thread praises. Eight ranks, 50% weapon damage plus Holy damage, **10-second cooldown**, and because it is pure Holy it bypasses armour. The 10 seconds is baseline for **all three specs**: Blizzard deleted Improved Holy Strike and folded it in, saying a talent that cut a core ability's cooldown that early in a *healing* tree "made this feel like a talent that was required".
-**Seal of Fury**, new at level 10, is a trained spell rather than a talent. With a shield equipped each attack grants an absorb, and **unleashing it taunts the target for 4 seconds**. Blizzard says it "favors fast weapons", and beta testing bears that out hard — "dramatically better with a 1.9 speed weapon than a 2.8".
-**Hammer of the Righteous**, new at 40, hits up to four targets. **Nobody has ever used it** — it is twenty levels above the beta cap, and its tooltip shares a cooldown with a spell that does not exist in Forever.
-**Consecration went baseline at 20 and was gutted.** Rank 5 now does 96 damage to everything with the **first four enemies** taking an extra 216, against Classic's 384 to everything. That is about −19% on the first four and **−75% on everyone past them**. Blizzard's stated intent was to kill dungeon AoE farming.
-Also: **Divine Shield is now the Wrath version** (−50% damage dealt, not the attack-speed penalty), a large nerf worst for Reckoning builds. **Blessing of Might rank 7 dropped to 133 attack power from 185** with Improved Blessing of Might gone — about a 39% loss against a talented Classic paladin, and possibly a bug, since every other Blessing baked its talent in as a buff. **Lay on Hands is a 20-minute cooldown.** **Blessing of Sanctuary was removed from the class entirely.**
-## The 16-point milestone
-| Gold one-pointer | Holy | Protection | Retribution |
-| --- | --- | --- | --- |
-| 11 | Voice of Truth | Improved Seal of Fury | Seal of Command |
-| **16** | **Divine Favor** | **Swift Judgement** | **Sacred Arbiter** |
-| 21 | **Holy Shock** | Templar's Bulwark | Repentance |
-| 31 | **Light's Vigil** | Holy Shield | **Twist of Light** |
-The 11-point slots in Holy and Protection were vacated by Consecration and Blessing of Kings going baseline.
-## Protection
-**Seals are no longer consumed by Judgement**, and Judgement debuff durations went from 10 seconds to **40** for Light, Wisdom and Crusader.
-New: **Swift Judgement** finishes Judgement's cooldown and makes the next one free — Blizzard's words, it "can reset Judgment once per minute so a missed taunt does not end the moment". **Templar's Bulwark** absorbs **100% of max health for 8 seconds** on a 5-minute cooldown. **Iron Creed** gives Holy Strike threat and, with Righteous Fury up, damage reduction.
-**Reckoning was redesigned** to 8% per rank on **block** plus 20% on being crit, and Blizzard's reason is exact: "to work for tanks who are immune to critical hits" — a crit-immune tank got nothing from Classic Reckoning. **Improved Righteous Fury was repurposed** from threat to −2% damage taken per rank. **Shield Specialization** now returns mana on block.
-### What beta tanks actually found
-This is the most useful practical material available for any tank in Forever.
-- **Prot Paladin threat is almost entirely spell power.** *"SP is broadly superior to AP across the board entirely."* This is why the stat priority leads with Spell Power, which reads as bizarre for a tank until you know why.
-- **Holy Strike's threat is weak** — *"pretty worthless compared to the rest of your toolkit"* — because it lives and dies on spell power.
-- **Steady-state threat is excellent.** "Fantastic", "extremely competitive". **The opening pull is the weak point:** *"a resisted taunt into a missed auto on pull, there just isn't a reliable fallback for passive TPS."*
-- **Righteous Fury is learned at 16**, where Defensive Stance and Bear Form arrive at 10.
-**Stat priority at 20**, explicitly provisional: Spell Power, Hit, Stamina, Defense, Armor, Block, Intellect, Strength, Agility. Spell Power leads because Consecration and Holy Strike *are* the threat engine, and hit matters for taunt reliability.
-## Holy
-New: **Voice of Truth** grants 6 seconds of silence and interrupt immunity. **Reverence** lets up to 30% of mana regeneration continue while casting. **Divine Precision** gives **+18% Holy spell hit** at 3 ranks. **Light's Vigil** is the new capstone — a 30-second mark whose next Holy Shock triggers no cooldown and either deals damage with a 75% mana refund, or heals the target's party.
-**Infusion of Light** cuts Holy Light's cast after a Holy Shock or Flash of Light crit — note **Holy Light crits do not trigger it**, so it does not chain.
-**Two nerfs to watch.** **Illumination now refunds only 50% of base cost** where Classic refunded all of it, so crit no longer self-funds — which is exactly what makes Reverence load-bearing. And **Holy Shock was nerfed heavily** on its way down from 31 points to 21.
-**Rotation at 20 is not a rotation:** Flash of Light primary, Holy Light for large deficits, Lay on Hands as the emergency, and Judgement and Holy Strike on cooldown for damage.
-**Stats:** Healing Power, Intellect, MP5, Crit, Haste, Spirit — with two notes that carry to 60. **Spirit is genuinely good now**, because Reverence and The Human Spirit make it work during casting. And MP5 is unaffected by the five-second rule.
-## Retribution
-New: **Sacred Arbiter** gives **+20% Holy Strike damage** since 24 September and makes Holy Strike refresh all Judgement effects **including those applied by other Paladins**. **Champion of the Light** adds up to 33% of your Intellect to spell damage per rank, which **makes Intellect an offensive stat for Ret**. **Sanctified Judgement** refunds the judged seal's mana.
-**Twist of Light** is the capstone: replacing one of four seals grants an **Echo**, so your next melee attack applies the replaced seal's effects while the new one stays active.
-**Nerfed on 24 September:** Two-Handed Weapon Specialization to 2/4/6%, and Vengeance to **three stacks and non-periodic crits only**.
-### The forced choice at 60
-**Twist of Light needs 31 points in Retribution and Holy Shock needs 21 in Holy. 51 points cannot buy both.** So Ret splits into deep Echo-twisting versus a Shockadin hybrid, and nothing exists to say which wins. The most detailed writeup judges twisting weak — but that is informed opinion, not data.
-**One live trap: judging with Seal of Fury active taunts**, even if you took Fury only for an Echo swap. A Ret paladin can pull a boss off the tank this way.
-**There is no published Ret stat priority.** Icy Veins publishes two separate level-20 gear lists, spell-power and attack-power, and declines to rank them.
-## Race
-**Undead is the only Horde Paladin race**, and Skyborne cannot be Paladin.
-| Race | What matters |
+updated: 30 September 2026
+build: 1.60.1.70124
+
+Paladin is a plate-wearing melee fighter that runs on mana, and it is no longer faction-locked — Undead Paladins are new in Forever, with their own class hub in Tirisfal Glades.
+:::scope
+Written for levelling, 1 to 60. Forever's beta caps at level 30, so **no level-60 Paladin build has been tested.** One specific warning: two talents that appear in published level-30 builds elsewhere — `Crusade` and `Improved Holy Strike` — **are absent from the current beta client**, so those builds cannot be entered as printed. Treat any level-30 Paladin build you find as a projection.
+:::
+## Is Paladin for you?
+Play Paladin if you want to be very hard to kill, to fill whichever role a group is short of, and you do not mind killing things slowly to get it.
+:::strengths
+- Extremely durable — mistakes that kill other classes usually only cost you time
+- Can tank, heal or deal damage, so you are never short of a group
+- Strong buffs and auras that improve everyone near you
+:::
+:::weaknesses
+- Kills slowly, particularly before level 20
+- Mana-hungry in a way that surprises people who expect a melee class
+- No area damage at all until [[Consecration]] at 20
+:::
+:::new
+**Is the rotation simple?** Yes. Keep a seal up, judge it, strike on cooldown.
+**Is it forgiving?** The most forgiving class in the game. You will die rarely.
+**Does it level well?** Steadily rather than quickly. Fights are longer than a Warrior's or a Rogue's.
+**Does it need a group?** No, it solos comfortably — and groups will take you instantly in any role.
+:::
+## Your first talent points
+**Retribution.** It is the only real levelling answer, though Forever added a genuine alternative — see below.
+1. **`Deflection`, 5 points** — parry reduces damage *and* speeds up your next swing, so it is offence and defence at once.
+2. **`Improved Judgement`, 2 points** — lowers Judgement's cooldown.
+3. **`Conviction`** with the next points.
+4. **`Seal of Command` at 20.**
+**Respec at 20 if you can spare the gold.** Published advice is to swap `Deflection` for **`Benediction`** and `Conviction` for **`Holy Conduit`**, purely for mana — especially on [[Consecration]], which becomes your strongest dungeon tool.
+**The Forever alternative is a Holy damage build.** It skips `Seal of Command` for `Improved Seals` and `Divine Strength`, and scales off **Spell Power**, which Forever now puts on early gear. The distinguishing line is simple: Seal of Command wants a slow heavy weapon; the Holy path wants spell power.
+With the Legacy **Talented** perk, points start at level 5, which puts **`Seal of Command` in reach around level 15 instead of 20** — the biggest early shift of any class.
+## Levelling rotation
+1. **Always have a seal up** — [[Seal of Righteousness]] by default, [[Seal of Command]] once talented.
+2. On anything that will live, [[Seal of the Crusader]] then **[[Judgement]]** to apply the Holy damage debuff, then **switch back**.
+3. **[[Holy Strike]]** on cooldown.
+4. **[[Judgement]]** on cooldown, as mana allows.
+5. With Seal of Command: **[[Hammer of Justice]] to stun, then [[Judgement]]** — Judgement of Command hits much harder into a stunned target.
+6. **[[Exorcism]]** on Undead and Demons only.
+7. [[Holy Light]] to top up between pulls.
+Keep a Blessing on yourself and an Aura running. Both are free once cast and both are constantly forgotten.
+**Two or more enemies:** you have none until 20. Then **[[Consecration]]**, which hits four targets well and is expensive. Do not over-pull before it.
+## Levelling milestones
+| Level | What you get |
 | --- | --- |
-| **Human** | Sword Specialization is **+2% spell *and* ability crit** — double any other weapon racial, and live for Holy since it works off a stat-stick |
-| **Dwarf** | **Stoneform is now a flat ~10% physical damage reduction** instead of armour, plus bleed, poison and disease immunity |
-| **Undead** | **Touch of the Grave** is new, and **Cannibalize now restores mana as well as health** |
-Picks: **Dwarf for Protection**, for Stoneform. **Human for Holy.** **Human for Ret** if a good sword exists — though Dwarf edges ahead specifically at 20, because the class quest reward Verigan's Fist is an overbudgeted mace.
-## The taunt complaint, and the counter-current
-The dominant objection is not that the taunt is bad — it is that **it costs a rotational button**. *"Instead of simply using Judgment as part of our normal rotation, we have to constantly think about holding Judgment for Taunt."* The near-universal ask is Righteous Defense or the Wrath taunt-or-damage model. Blizzard has not replied, and made **no Protection changes at all** on 24 September — the spec drawing the loudest feedback was untouched.
-Read that against a real counter-current. A healer with experience of all three tanks: *"pallies did better tanking than the other two by a landslide."* And *"right now prot warrior is struggling hard thanks to the normalized rage."* One Paladin main's summary of the politics: *"A thread right now on how pallies should be buffed is going to go over like a fart in church."*
-## Still unknown
-Seal of Fury's taunt range — the 10-yard figure is community-sourced and Blizzard never states it. Whether Holy Shield still has 4 charges. Whether the Blessing of Might nerf and Consecration's partial scaling are bugs. And a direct conflict between Blizzard's recap, which says Instrument of Law makes **Holy Wrath** instant, and the live client, which says it cuts **Hammer of Wrath**'s cast.
+| 1 | [[Holy Light]], [[Seal of Righteousness]], [[Devotion Aura]]. **Mail from level 1** |
+| 4 | [[Judgement]], [[Blessing of Might]] |
+| **6** | **[[Holy Strike]], new in Forever** — a real attack this early, and universally liked |
+| 8 | [[Hammer of Justice]] |
+| **10** | [[Lay on Hands]] (20 min, was an hour), **[[Seal of Fury]], new** — the tank seal, and **judging it taunts** |
+| 16 | [[Righteous Fury]] |
+| **20** | **[[Consecration]] is now trained for every spec** (was a talent), **[[Blessing of Kings]] now trained**, [[Exorcism]], [[Flash of Light]], and [[Seal of Command]] via talent |
+| 26 | [[Blessing of Salvation]] — now 1 hour, was 5 minutes |
+| 30 | [[Divine Intervention]], [[Holy Shock]] via talent — moved down from a 31-point capstone |
+| 34 | [[Divine Shield]] — now **−50% your damage**, and applies Forbearance |
+| **40** | **Plate armour**, [[Summon Warhorse]], **[[Hammer of the Righteous]], new** — needs a one-hander |
+| 50 | [[Holy Wrath]] — now also stuns for 2 seconds |
+| 52–60 | Greater Blessings — now **1 hour**, so timers stop desyncing |
+**[[Blessing of Sanctuary]] is not in Forever**, in either form.
+## Stat priority
+1. **Weapon DPS** — slow and heavy
+2. **Hit and Expertise**
+3. **Critical strike**
+4. **Spell Power**
+5. Strength, then Intellect, then Agility
+Spell Power sits unusually high for a melee class because [[Holy Strike]], [[Judgement]] and [[Consecration]] all scale with it. **Intellect climbs steeply at 25 points in Retribution**, where `Champion of the Light` converts it into spell damage.
+## Which race
+**Alliance — Human or Dwarf.** Human's `Sword Specialization` is **+2% crit to spells and abilities** off a sword used purely as a stat stick, which is the largest weapon racial and feeds both gearing paths. Dwarf's `Stoneform` is a real solo cooldown.
+**Horde — Undead, and it is forced**, being the only Horde Paladin. It is good anyway: **`Cannibalize` now restores 35% health *and* mana**, which on a mana-using melee class is close to a free recovery on every corpse.
+**Forever changed the answer outright — "Paladin is Alliance" is dead.** Undead Paladins get their own hub at **Bandarion Keep** in the previously inaccessible Whispering Wood, Tirisfal Glades, and their own level 40 and 60 mount quests.
+## Quality of life
+- **Seals, Blessings and Auras are three separate always-on systems, and new players drop one.** Set an aura and forget it. Keep a blessing on yourself. Keep a seal up always — **and since Judgement no longer consumes your seal in Forever, there is no excuse for letting it lapse.**
+- **Only one-handed maces are known by default.** Every other weapon skill, including all two-handers, must be bought from a weapon master. Polearms from 20.
+- **Do the level-20 class quest** — it rewards a deliberately over-budgeted weapon. Alliance get **Verigan's Fist**; Horde get a new Forsaken chain out of Bandarion Keep.
+- **[[Consecration]] at 20 changes the class** from single-target to area-capable, and every spec now gets it. Budget mana for it.
+## What changed from Classic
+| Change | What it means for you |
+| --- | --- |
+| **Judgement no longer consumes your seal** | You stop re-casting after every Judgement. This is the most-discussed change in the beta |
+| [[Consecration]] and [[Blessing of Kings]] trained at 20 | Every spec gets both, without spending talent points |
+| [[Holy Strike]] at 6 and [[Seal of Fury]] at 10 | Two new baseline buttons inside the first ten levels |
+| Blessings last 1 hour, Greater Blessings too | No more desynced buff timers |
+| [[Seal of Command]] moved to Retribution tier 3 | Live at level 20 rather than as a 31-point capstone |
+| Resistance auras are raid-wide | |
+| Undead Paladins exist | With their own hub, quests and mounts |
+## At level 60
+Unknown. No source publishes a Paladin build past 30, so whether Retribution's Seal of Command path or the new Spell Power path wins is untested — and two talents in the published level-30 builds do not exist in the current client, which is the clearest illustration of why those builds are projections. Raids open 9 December.
