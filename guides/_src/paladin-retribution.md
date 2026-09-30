@@ -42,7 +42,7 @@ Published gear lists split into a **Spell Power** build and an **Attack Power** 
 ## What Forever changed for Retribution
 - **Six new talents:** `Holy Conduit`, `Sanctified Judgement`, `Sacred Arbiter`, `Champion of the Light`, `Instrument of Law`, and the `Twist of Light` capstone.
 - **Four talents deleted:** `Improved Blessing of Might`, `Improved Retribution Aura`, `Improved Seal of the Crusader`, `Sanctity Aura`.
-- **`Crusade` vanished in the September 24 build and Blizzard never mentioned it**, which is exactly why bad builds keep republishing it.
+- **`Crusade` is gone from the Retribution tree**, removed in the September 24 build with no note from Blizzard.
 - `Vindication` now also grants **you** attack power. `Vengeance` moved a tier and now stacks up to **5 times** rather than Classic's single 8-second buff. `Eye for an Eye` reflect cut from 30% to 10%. `Pursuit of Justice` now covers **mounted** speed. `Two-Handed Weapon Specialization` is **3% per rank, 9% at max**, we found no source for the September nerf some builds cite, and both Icy Veins and ClassicWoW.gg's talent data confirm 3% is still current.
 ## At level 60
-Unknown, including where the two orphaned `Crusade` points should actually go. Whether the `Twist of Light` capstone or a Holy hybrid wins is an untested either-or at 51 points, and the author of one published guide now says *"it's looking like twisting might not be the way to go for Paladin raid DPS specs atm."*
+Unknown. Whether the `Twist of Light` capstone or a Holy hybrid wins is an untested either-or at 51 points, and the author of one published guide now says *"it's looking like twisting might not be the way to go for Paladin raid DPS specs atm."*

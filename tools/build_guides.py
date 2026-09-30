@@ -40,7 +40,7 @@ from datetime import date
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "guides" / "_src"
 OUT = ROOT / "guides" / "wow-forever"
-STAMP = "20260930-2"
+STAMP = "20260930-3"
 
 # slug -> (display name, accent hex, roles, one-line hook for the hub cards)
 CLASSES = [
@@ -302,6 +302,42 @@ def profnav(active=None):
     return '<nav class="spec-nav" aria-label="Professions">' + "".join(out) + "</nav>"
 
 
+# ---- Sources -----------------------------------------------------------------
+# Front matter carries them:  sources: Wowhead|https://... ;; Icy Veins|https://...
+# A guide that cites nothing is indistinguishable from a guide that invented its
+# numbers, and these pages make claims a reader will act on for a hundred hours.
+# Three majors only -- Wowhead, Icy Veins and ClassicWoW.gg. Forum and reseller
+# posts are deliberately not cited: they are downstream of these, when they are not
+# simply wrong.
+SOURCE_NOTE = ("Compiled from the three major Forever guide sites and cross-checked against "
+               "each other. Game facts \u2014 talent ranks, tooltip values, what exists in the "
+               "tree at all \u2014 are settled against the client itself, read through "
+               "<a href=\"https://foreverchanges.pro\" rel=\"noopener\">foreverchanges.pro</a> "
+               "and <a href=\"https://wago.tools\" rel=\"noopener\">wago.tools</a>, which outrank "
+               "a guide site's prose whenever the two conflict. Where the guides disagree with "
+               "each other, this page says which said what.")
+
+
+def sources_block(meta, headings):
+    raw = (meta or {}).get("sources", "").strip()
+    items = []
+    for part in raw.split(";;"):
+        part = part.strip()
+        if "|" not in part:
+            continue
+        name, url = part.split("|", 1)
+        url = url.strip()
+        if not url.startswith("https://"):
+            continue
+        items.append(f'<li><a href="{html.escape(url, quote=True)}" '
+                     f'rel="noopener nofollow" target="_blank">{inline(name.strip())}</a></li>')
+    if not items:
+        return ""
+    headings.append(("sources", "Sources"))
+    return ('\n        <section class="guide-sources"><h2 id="sources">Sources</h2>'
+            f'<p>{SOURCE_NOTE}</p><ul>' + "".join(items) + "</ul></section>")
+
+
 def frontmatter(text):
     meta, body = {}, text
     if not text.startswith("---"):
@@ -446,7 +482,8 @@ def main():
         headings = []
         body = blocks("\n".join(lines[1:]), headings)
         scope, body = hoist_scope(body)
-        body = scope + "\n        " + contents(headings) + "\n        " + body
+        body = (scope + "\n        " + contents(headings) + "\n        " + body
+                + sources_block(meta, headings))
         d = OUT / slug
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(page(
@@ -467,7 +504,8 @@ def main():
             sh = []
             sbody = blocks("\n".join(slines[1:]), sh)
             sscope, sbody = hoist_scope(sbody)
-            sbody = sscope + "\n        " + contents(sh) + "\n        " + sbody
+            sbody = (sscope + "\n        " + contents(sh) + "\n        " + sbody
+                     + sources_block(smeta or meta, sh))
             sd = d / sslug
             sd.mkdir(parents=True, exist_ok=True)
             (sd / "index.html").write_text(page(
@@ -496,7 +534,8 @@ def main():
         headings = []
         body = blocks("\n".join(lines[1:]), headings)
         scope, body = hoist_scope(body)
-        body = scope + "\n        " + contents(headings) + "\n        " + body
+        body = (scope + "\n        " + contents(headings) + "\n        " + body
+                + sources_block(meta, headings))
         d = pd / slug
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(page(
@@ -531,7 +570,8 @@ def main():
         pscope, pintro = hoist_scope(pintro)
         pbody = (pscope + "\n        " + contents(ph)
                  + f'\n        <div class="guide-grid">{"".join(pcards)}</div>\n        '
-                 + pintro)
+                 + pintro
+                 + sources_block(pmeta, ph))
         pd.mkdir(parents=True, exist_ok=True)
         (pd / "index.html").write_text(page(
             "prof-index", "Profession guides \u00b7 WoW: Forever \u00b7 Null Ossuary",
@@ -562,7 +602,8 @@ def main():
     intro = blocks("\n".join(lines[1:]), headings) if hub_md.exists() else ""
     scope, intro = hoist_scope(intro)
     body = (scope + "\n        " + contents(headings)
-            + f'\n        <div class="guide-grid">{"".join(cards)}</div>\n        ' + intro)
+            + f'\n        <div class="guide-grid">{"".join(cards)}</div>\n        ' + intro
+            + sources_block(meta, headings))
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "index.html").write_text(page(
         "index", "WoW: Forever class guides · Null Ossuary",
@@ -597,7 +638,8 @@ def main():
     lintro = blocks("\n".join(llines[1:]), lh) if land_md.exists() else ""
     lscope, lintro = hoist_scope(lintro)
     lbody = (lscope + f'\n        <div class="guide-grid">{seccards}</div>\n        '
-             + contents(lh) + "\n        " + lintro)
+             + contents(lh) + "\n        " + lintro
+             + sources_block(lmeta, lh))
     land_dir = ROOT / "guides"
     (land_dir / "index.html").write_text(page(
         "landing", "Guides \u00b7 Null Ossuary",
