@@ -1,0 +1,95 @@
+/* WoW: Forever class guides (/guides/wow-forever/**). Loaded ONLY by those pages, so
+   style.css keeps its own ?v= stamp and no other page needs touching.
+   --class-accent is set per page by tools/build_guides.py. */
+
+.guide { --class-accent: var(--phosphor); }
+
+/* --- Hero ------------------------------------------------------------- */
+.guide-hero { border-bottom: 1px solid rgba(47, 56, 52, .5); }
+.guide-hero-inner { display: flex; align-items: center; gap: 28px; }
+.guide-hero h1 { color: var(--bone); }
+.guide-hero .eyebrow { color: var(--class-accent); }
+.guide-crest {
+  flex: none; width: 128px; height: 128px; border-radius: 22px;
+  border: 1px solid var(--line);
+  box-shadow: 0 0 44px -8px var(--class-accent);
+}
+@media (max-width: 640px) {
+  .guide-hero-inner { flex-direction: column; align-items: flex-start; gap: 18px; }
+  .guide-crest { width: 88px; height: 88px; }
+}
+
+/* --- Hub grid --------------------------------------------------------- */
+.guide-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px; margin: 0 0 48px;
+}
+.guide-card {
+  display: grid; grid-template-columns: 64px 1fr; grid-template-rows: auto auto;
+  column-gap: 16px; row-gap: 4px; align-items: center;
+  padding: 18px; border: 1px solid var(--line); border-radius: 14px;
+  background: linear-gradient(180deg, var(--stone) 0%, var(--bg-2) 100%);
+  text-decoration: none; color: inherit;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.guide-card img { grid-row: 1 / span 2; width: 64px; height: 64px; border-radius: 12px; }
+.guide-card-name {
+  font: 600 1.05rem/1.2 var(--sans); color: var(--bone);
+  display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
+}
+.guide-card-hook { font-size: .86rem; line-height: 1.45; color: var(--bone-dim); }
+a.guide-card:hover { border-color: var(--class-accent); transform: translateY(-2px); }
+a.guide-card:hover .guide-card-name { color: var(--class-accent); }
+.guide-card[aria-disabled] { opacity: .5; }
+.guide-soon {
+  font: 600 .6rem/1 var(--mono); letter-spacing: .12em; text-transform: uppercase;
+  color: var(--grey); border: 1px solid var(--line); border-radius: 4px; padding: 3px 5px;
+}
+@media (prefers-reduced-motion: reduce) { a.guide-card:hover { transform: none; } }
+
+/* --- Body ------------------------------------------------------------- */
+/* Prose keeps a reading measure; the card grid and tables use the full wrap. */
+.guide-body { max-width: none; }
+.guide-body > p,
+.guide-body > ul,
+.guide-body > ol,
+.guide-body > h2,
+.guide-body > h3,
+.guide-body > blockquote,
+.guide-body > .guide-table { max-width: 74ch; }
+.guide-body h2 {
+  margin: 56px 0 14px; padding-top: 22px;
+  border-top: 1px solid rgba(47, 56, 52, .5);
+  color: var(--class-accent);
+}
+.guide-body h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+.guide-body h3 { margin: 32px 0 10px; color: var(--bone); font-size: 1.1rem; }
+.guide-body p, .guide-body li { line-height: 1.65; }
+.guide-body p { margin: 0 0 14px; }
+.guide-body ul, .guide-body ol { margin: 0 0 16px; padding-left: 22px; }
+.guide-body li { margin-bottom: 7px; }
+.guide-body strong { color: var(--bone); }
+.guide-body code {
+  font: .86em var(--mono); background: #070908;
+  border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px;
+}
+.guide-body a { color: var(--class-accent); }
+.guide-body blockquote {
+  margin: 0 0 18px; padding: 14px 18px;
+  border-left: 3px solid var(--class-accent);
+  background: rgba(255, 255, 255, .025); border-radius: 0 8px 8px 0;
+}
+.guide-body blockquote p { margin: 0; color: var(--bone); }
+
+/* Tables scroll rather than squash: several carry five columns of tooltip values. */
+.guide-table { overflow-x: auto; margin: 0 0 22px; }
+.guide-table table { width: 100%; border-collapse: collapse; font-size: .9rem; min-width: 460px; }
+.guide-table th, .guide-table td {
+  text-align: left; padding: 9px 14px 9px 0;
+  border-bottom: 1px solid rgba(47, 56, 52, .55); vertical-align: top;
+}
+.guide-table th {
+  font: 600 .72rem/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--grey); white-space: nowrap;
+}
+.guide-table tbody tr:last-child td { border-bottom: 0; }
