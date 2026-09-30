@@ -271,7 +271,7 @@ def nav():
     # The primary nav is duplicated in index.html and roster/index.html. A new top-level page
     # must be added in every one of them, or the guides' nav and the rest of the site disagree.
     items = [("/#play", "Play"), ("/#mods", "Mods"), ("/forums/", "Forums"),
-             ("/guides/wow-forever/", "Guides"), ("/roster/", "Roster"),
+             ("/guides/", "Guides"), ("/roster/", "Roster"),
              ("/#support", "Support"), ("/#work", "Workshop"), ("/#contact", "Contact")]
     return "\n        ".join(
         f'<li><a href="{h}"{" aria-current=\"page\"" if l == "Guides" else ""}>{l}</a></li>'
@@ -279,6 +279,8 @@ def nav():
 
 
 def sectionnav(active):
+    if active is None:
+        return ""
     """Classes / Professions switcher. Repeated on every guide page, because a
     prose link on the hub is not a route anyone finds."""
     items = [("classes", "/guides/wow-forever/", "Class guides"),
@@ -329,6 +331,7 @@ def page(slug, title, desc, standfirst, body, crest, canonical, crumb=None,
     crumbs = ""
     if crumb:
         trail = ['<li><a href="/">Home</a></li>',
+                 '<li><a href="/guides/">Guides</a></li>',
                  '<li><a href="/guides/wow-forever/">WoW: Forever</a></li>']
         if parent:
             pslug, pname = parent
@@ -567,6 +570,42 @@ def main():
         standfirst, body, "index",
         "https://nossuary.com/guides/wow-forever/", None, None, meta))
     print("  wrote guides/wow-forever/index.html")
+    # ---- /guides/ : the landing page, so "Guides" is not a synonym for
+    # "class guides". Both sections hang off it as equals.
+    SECTIONS = [
+        ("/guides/wow-forever/", "Class guides",
+         f"All nine classes, {sum(len(v) for v in SPECS.values())} specialisation pages",
+         "Talent order at 20 and 30, a rotation, stat priority, and what each tree does "
+         "differently in Forever."),
+        ("/guides/wow-forever/professions/", "Profession guides",
+         f"{len(PROFESSIONS)} pages, every profession",
+         "Nine primaries, three secondary skills, and the two systems Forever added: "
+         "Camping and Merchant's Favor."),
+    ]
+    seccards = "".join(
+        f'<a class="guide-card guide-card--plain" href="{h}">'
+        f'<span class="guide-card-name">{html.escape(n)}</span>'
+        f'<span class="guide-card-roles">{html.escape(r)}</span>'
+        f'<span class="guide-card-hook">{inline(k)}</span></a>'
+        for h, n, r, k in SECTIONS)
+
+    land_md = SRC / "landing.md"
+    lmeta, ltext = frontmatter(land_md.read_text()) if land_md.exists() else ({}, "")
+    llines = ltext.split("\n")
+    lstand = inline(llines[0].strip()) if llines else ""
+    lh = []
+    lintro = blocks("\n".join(llines[1:]), lh) if land_md.exists() else ""
+    lscope, lintro = hoist_scope(lintro)
+    lbody = (lscope + f'\n        <div class="guide-grid">{seccards}</div>\n        '
+             + contents(lh) + "\n        " + lintro)
+    land_dir = ROOT / "guides"
+    (land_dir / "index.html").write_text(page(
+        "landing", "Guides \u00b7 Null Ossuary",
+        "Class and profession guides for World of Warcraft: Forever.",
+        lstand, lbody, "index", "https://nossuary.com/guides/",
+        None, None, lmeta, section=None))
+    print("  wrote guides/index.html")
+
     print(f"\n{len(written)} class page(s) + {len(prof_written)} profession page(s) + hubs")
 
 
