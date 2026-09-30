@@ -44,7 +44,7 @@ Plan around two bottlenecks. Five of those seven steps are fish, all taught by v
 ## What Forever changed
 - **123 recipes, 42 of them new**, plus 6 more bought with [Merchant's Favor](/guides/wow-forever/professions/merchants-favor/).
 - **The experience buff itself.** Classic food gave stats; Forever food gives stats *and* 5% more experience from kills.
-- **Cooks own the campfire.** [[Basic Campfire Kit]] at skill 1 supports 3 camp objects, [[Journeyman Campfire Kit]] at 90 supports 5, and [[Expert Campfire Kit]] at 200 supports 10. [[Cookie's Feast]] arrives at 140 and the [[Iron Oven]] at 300. Without a cook, nobody's camp objects go down. See [Camping](/guides/wow-forever/professions/camping/).
+- **Cooks own the campfire.** [[Basic Campfire Kit]] at skill 1 supports 3 camp objects, [[Journeyman Campfire Kit]] at **140** supports 5, and [[Expert Campfire Kit]] at **220** supports 10 (their Blueprints come earlier, at 90 and 200). [[Cookie's Feast]] arrives at 140 and the [[Iron Oven]] at 300. Without a cook, nobody's camp objects go down. See [Camping](/guides/wow-forever/professions/camping/).
 - **New buff types that vanilla food never had:** Healing Power (the tea line, up to 44), Spirit (the smoothie line, up to 20), Armor ([[Plated Armorfish]] at 150), and even zone movement speed ([[Sweetpaw Jam]] gives +15% in Hyjal).
 - **`Master Chef`**, a Legacy perk, gives your cooking recipes a **10% to 50% chance of producing an extra result** across five ranks.
 - **`Gourmand`**, another Legacy perk, extends food buffs by 33%, 67% or 100% across three ranks.

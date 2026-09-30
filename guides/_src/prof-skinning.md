@@ -8,7 +8,7 @@ The skill formula and camp objects are read from the beta client and are solid. 
 ## Is Skinning worth taking?
 **Yes if you already kill beasts; it is the weakest of the three as a pure money profession.** Leather demand is narrower than ore or herbs.
 **It earns no Legacy Points.** Only the six crafting professions do.
-**The real argument is [[Camp Chair]] at skill 20: 2% critical strike with spells and attacks** for everyone sitting nearby, the same as [[Leader of the Pack]]'s aura. That is a **raid-wide crit buff off a gathering profession**, and it matters most to a group with no Balance Druid. They do not stack.
+**The real argument is [[Camp Chair]] at skill 20: 2% critical strike with spells and attacks** for everyone sitting nearby, the same as [[Moonkin Form]]'s aura. That is a **raid-wide crit buff off a gathering profession**, and it matters most to a group with no Balance Druid. They do not stack.
 Take it on a class that kills beasts anyway: Hunter, Druid, Rogue. It costs almost nothing there. As a standalone grind it is painful, because unlike Mining and Herbalism it has no craft to fall back on.
 ## What it pairs with
 **Skinning with Leatherworking.** Unchanged, and Leatherworking gained **271 new recipes**, the largest count of any profession, so leather demand is up.

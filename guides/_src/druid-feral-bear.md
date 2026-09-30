@@ -1,9 +1,10 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Level 20 Feral Tank Druid|https://www.wowhead.com/forever/guide/classes/druid/feral/level-20-tank-overview ;; Icy Veins — Feral Druid|https://www.icy-veins.com/wow-forever/feral-druid-melee-dps-and-tank-pve-guide ;; ClassicWoW.gg — Bear Druid|https://classicwow.gg/forever/guides/druid/bear
 
 Leather tanking in Bear Form on rage and dodge: no block, no parry. **This is your only combat form between levels 10 and 20**, so every Druid plays it whether they intend to tank or not.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Bear build has been tested. **Bear and Cat share one talent tree** and mostly one build. They have separate pages here because the rotations, stat priorities and gear are completely different even where the talents are not.
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Bear build has been tested. **Bear and Cat share one talent tree** and mostly one build. They have separate pages here because the rotations, stat priorities and gear are completely different even where the talents are not. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Bear worth levelling?
 **You do not get a choice before level 20.** Bear Form comes from a class quest at 10; Cat Form does not exist until 20. The published advice: *"As you reach Level 10 you will mainly want to level in Bear Form, using your Mana to heal yourself after killing enemies, and then recovering your Mana while in Bear Form."*
@@ -18,7 +19,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 5. **[[Feral Charge]]** at 20
 **A tank-specific alternative** skips `Ferocity` entirely for armour: `Heart of the Wild` 5 / `Feral Swiftness` 2 / `Thick Hide` 3 / [[Feral Charge]] 1.
 **A third:** `Ferocity` 5 / `Heart of the Wild` 3 / `Feral Swiftness` 2 / [[Feral Charge]] 1. *"The fastest way to go — literally, due to `Feral Swiftness` and [[Feral Charge]]."*
-**Level 30: 0/21/0.** One published build stays dual-role and adds `Savage Fury` 2 · `Sharpened Claws` 2 · `Predatory Strikes` 3 · `Blood Frenzy` 2 · **[[Leader of the Pack]] 1**. A tank-specific one takes `Feral Instinct` 3 and `Primal Bite` 1 instead of the cat mobility. Both spend the twenty-first point on [[Leader of the Pack]].
+**Level 30: 0/21/0 — our own extension, not a published build.** No source has posted one. A dual-role reading adds `Savage Fury` 2 · `Sharpened Claws` 2 · `Predatory Strikes` 3 · `Blood Frenzy` 2 · **[[Leader of the Pack]] 1**. A tank-specific reading takes `Feral Instinct` 3 and `Primal Bite` 1 instead of the cat mobility. Both spend the twenty-first point on [[Leader of the Pack]].
 ## Threat and mitigation rotation
 1. **[[Growl]]** to pull and to hold. Rage comes from taking hits and auto-attacking
 2. **[[Enrage]]**: 30 rage over 10 seconds on a 1-minute cooldown, *"at the cost of reducing your Armor slightly"*
@@ -48,8 +49,8 @@ The Forever Feral spellbook is thin under the cap.
 ## What defines Bear
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
-| **`Thick Hide` 3/3** | 17 | **Completely rewritten, and compressed from five ranks to three.** Classic gave **+10% armour from items at 5/5**; Forever gives +3 base armour per level and +2 more per point of defense skill above five times your level, multiplied by your form |
-| **`Primal Bite`** | ~25 | The new single-target rage button. **This is the talent formerly called Mangle**, and the game is not yet translated, so you will see both names |
+| **`Thick Hide` 3/3** | 17 | **Completely rewritten, and compressed from five ranks to three.** Classic gave **+10% armour from items at 5/5**; Forever gives +3 base armour per level and +2 more per point of defense skill above five times your level, multiplied by your form. **It also applies in Cat, Dire Bear and Moonkin Form**, not just Bear |
+| **`Primal Bite`** | ~25 | The new single-target rage button: **100% weapon damage plus 26, for 20 Rage on a 6-second cooldown**, usable only in Bear or Dire Bear Form. **This is the talent formerly called Mangle**, and the game is not yet translated, so you will see both names |
 | **`Natural Reaction` 5/5** | 39 | New. +5% dodge and **100% chance to gain 5 rage on every dodge** |
 | **[[Berserk]]** | **40** | The 31-point capstone. Not in the beta |
 ## What Forever changed for Bear
@@ -57,8 +58,8 @@ The Forever Feral spellbook is thin under the cap.
 - **[[Frenzied Regeneration]] is now a real defensive cooldown:** *"Each point of Rage is converted into 1% health"*, where Classic gave 10 flat health. Ranks 2 and 3 were deleted; the one remaining rank trains at **36**.
 - **[[Enrage]] front-loads**: *"Instantly generates 10 Rage and another 20 Rage over 10 sec"*, where Classic gave 20 over 10 with nothing up front.
 - **Bear Form's health bonus went from +20 to +180.** [[Growl]]'s cooldown dropped to 8 seconds. [[Demoralizing Roar]] is −46 attack power, up from −30. **[[Faerie Fire]] is usable in Bear, Dire Bear and Cat Form.**
-- **A new rage economy:** `Natural Reaction` gives rage on dodge, `Blood Frenzy` gives it on crit at 100% by 2/2. `Improved Enrage` and `Faerie Fire (Feral)` are **gone as talents because their effects became baseline**: [[Enrage]] now front-loads 10 rage itself, and ordinary [[Faerie Fire]] works in form. [[Lacerate]] was added.
-- `Heart of the Wild` **kept its bear clause exactly: +20% Stamina at 5/5, the same as Classic**, while the Intellect and Cat Strength clauses were both halved to +10%. It also moved from tier 5 to tier 1, which is why a level-20 build can take it.
-- **Two renames to watch for:** `Mangle` is now **`Primal Bite`** (and lost its debuff), and `Primal Fury` is now **`Blood Frenzy`**, its bear clause unchanged from Classic at 100% for 5 extra rage on a crit, plus a new Cat clause Classic did not have. Half the guide sites still use the old names for the same nodes.
+- **A new rage economy:** `Natural Reaction` gives rage on dodge, `Blood Frenzy` gives it on crit. `Improved Enrage` and `Faerie Fire (Feral)` are **gone as talents because their effects became baseline**: [[Enrage]] now front-loads 10 rage itself, and ordinary [[Faerie Fire]] works in form. [[Lacerate]] was added.
+- `Heart of the Wild` **kept its bear clause exactly: +20% Stamina at 5/5, the same as Classic**, while the Intellect and Cat Strength clauses were both halved to +10%. It also moved from tier 6 to tier 1, which is why a level-20 build can take it.
+- **One rename, and one merge:** `Mangle` is now **`Primal Bite`** (and lost its debuff). Separately, Classic's `Primal Fury` (the Bear rage talent) and `Blood Frenzy` (the Cat combo-point talent) were merged into one node, and **the client calls it `Blood Frenzy`**. It carries the Bear rage clause plus a Cat clause Classic did not have. **`Primal Fury` is not selectable in the Forever tree**, so build lists naming it cannot be entered as printed; ClassicWoW.gg has the direction the other way round. Half the guide sites still use the old Mangle name for the renamed node.
 ## At level 60
 Unknown. Whether Bear holds threat and survives without Classic's armour-from-items scaling is untested. Nobody has had [[Berserk]], [[Lacerate]], Dire Bear Form, [[Frenzied Regeneration]] or a level-60 defense value.

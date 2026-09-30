@@ -1,9 +1,10 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Level 20 Frost Mage|https://www.wowhead.com/forever/guide/classes/mage/frost/level-20-dps-overview ;; Icy Veins — Frost Mage|https://www.icy-veins.com/wow-forever/frost-mage-ranged-dps-pve-guide ;; ClassicWoW.gg — Frost Mage|https://classicwow.gg/forever/guides/mage/frost
 
 Freeze the target, then hit it for **four times the damage** (the tooltip reads +300%). **This is the Mage levelling spec and the safest specialisation in the game.** Enemies frequently die before they reach you.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Frost build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40, so a **tier-3 talent like [[Ice Lance]] arrives at exactly level 20**, the eleventh point.
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Frost build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40, so a **tier-3 talent like [[Ice Lance]] arrives at exactly level 20**, the eleventh point. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Frost worth levelling?
 **Yes. It is the levelling spec.** The published verdict: *"Frost Mages are going to have a comfortable time leveling… slowing and chilling everything they fight keeps them safe. With `Frostbite`, melee enemies will often not even reach you before killing them."*
@@ -21,7 +22,7 @@ Its damage ceiling is lower than Fire's: *"Frost Mage won't top the damage meter
 2. `Improved Frostbolt`, 5 points
 3. `Frostbite`, 3 points
 4. **[[Ice Lance]]** at 20
-**Level 30: 0/0/21**, with the per-level order published: `Improved Frostbolt` 1→3 (levels 10–12), `Elemental Precision` 1→4 (13–16), `Frostbite` 1→3 (17–19), **[[Ice Lance]] at 20**, `Ice Shards` 1→4 (21–24), **[[Ice Block]] at 25**, `Shatter` 1→3 (26–28), `Ice Shards` 5/5 (29), **`Fingers of Frost` at 30**.
+**Level 30: 0/0/21 — our own extension, not a published build.** Per-level: `Improved Frostbolt` 1→3 (levels 10–12), `Elemental Precision` 1→4 (13–16), `Frostbite` 1→3 (17–19), **[[Ice Lance]] at 20**, `Ice Shards` 1→4 (21–24), **[[Ice Block]] at 25**, `Shatter` 1→3 (26–28), `Ice Shards` 5/5 (29), **`Fingers of Frost` at 30**.
 A third source publishes a dungeon variant that takes `Piercing Ice` over `Frostbite`, on the grounds that in a group the tank is holding the enemy anyway.
 ## Rotation
 1. **[[Frost Armor]]** and [[Arcane Intellect]] up. Frost Armor itself procs `Frostbite` when you are hit
@@ -30,10 +31,15 @@ A third source publishes a dungeon variant that takes `Piercing Ice` over `Frost
 4. Melee on you → **[[Frost Nova]]**, back away, [[Ice Lance]] as you retreat
 5. **Wand** to finish low-health enemies rather than spending mana
 6. From 30, spend `Fingers of Frost` stacks on [[Ice Lance]]
-**Multi-target:** [[Flamestrike]] while you hold no threat, then **[[Arcane Explosion]] once you do**: *"Arcane Explosion… has higher DPS than Blizzard until we get more talent points."* Note that **only one Flamestrike can be active per Mage at a time** in Forever, which is new.
+**Multi-target:** [[Flamestrike]] while you hold no threat, then **[[Arcane Explosion]] once you do**: *"Arcane Explosion… has higher DPS than Blizzard until we get more talent points."*
 ## Stat priority
-Spell Power and Frost spell power, then Hit, spell Haste, critical strike, Intellect, Spirit, MP5.
-Sources disagree on the top of the list. One ranks **Hit first** (*"capping your Hit Chance is a high priority"*) and pushes crit harder (*"Frost Mage is a crit-based spec"*). **Nobody publishes the actual hit cap.** One guide says so outright: *"There will be a cap where you can stop investing in this, but we don't know what it is yet."* Take Intellect for a mana bar that lasts a whole pull.
+Icy Veins is the only one of the three tracked sources that ranks Frost's stats; its order:
+1. **Hit** — *"capping your Hit Chance is a high priority"*. Nobody publishes the actual cap: *"There will be a cap where you can stop investing in this, but we don't know what it is yet."*
+2. **Spell Power (Frost)** — scales every spell and your wand damage
+3. **Critical strike** — *"Frost Mage is a crit-based spec"*: `Ice Shards` doubles the crit-damage bonus at 5/5
+4. **Spirit** — *"Frost Mages have limited tools for resource management, so Spirit will be a good stat to increase where you can"*
+5. **Intellect** — a bigger mana pool for a whole pull, plus a small crit bonus
+6. **Stamina** — a dump stat that comes along for free on most gear (Agility and Strength trail further behind, and Strength is explicitly "not useful")
 ## What defines Frost
 | Talent | Earliest level | What it does |
 | --- | --- | --- |

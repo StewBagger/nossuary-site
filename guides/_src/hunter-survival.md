@@ -38,11 +38,14 @@ Below level 10, walk backwards between shots to stay out of the dead zone.
 | Talent or ability | Earliest level | What it does |
 | --- | --- | --- |
 | **`Deflection` 5/5** | 14 | +10% base parry. Parry is not a stat Hunters normally have |
-| **[[Deterrence]]** | 20 | The on-use defensive cooldown, and half of the PvP case |
+| **[[Deterrence]]** | 20 | +25% dodge and parry for 10 seconds, 5-minute cooldown, and half of the PvP case |
 | **`Entrapment` 3/5** | 15 | **Every** trap you trigger roots what it catches — 1 second per rank, so 3 seconds at the three points this build spends, 5 at full |
+| **`Strider Kick`** | deep in the tree, past level 20 | An instant, no-trigger-needed melee attack for 100% weapon damage, 8-second cooldown. One of the two abilities that make Survival melee real rather than reactive |
+| **`Expose Prey`** | deep in the tree, past level 20 | Your attacks on a [[Hunter's Mark]]ed target have a chance to activate [[Mongoose Bite]] for 5 seconds — the offensive route into a bite that used to require dodging first |
 ## What Forever changed for Hunters
-- **Forever normalised pet attack speed, not pet damage**: families still carry their own damage, armour and health modifiers (Raptor +10%, Boar −10%), and **pets inherit some of your stats.**
+- **Pets lost their per-family damage/armour modifiers.** Icy Veins is explicit: *"Pets no longer have an inherent damage buff or reduction based on type."* They are now sorted into three roles instead — Ferocity, Cunning, Tenacity — and still **inherit some of your stats.**
 - **`Improved Serpent Sting` and `Improved Scorpid Sting` were folded into `Improved Stings`** (Marksmanship, tier 2, 3 ranks). Build lists naming the old talents cannot be entered as printed.
-- The utility kit is intact: [[Feign Death]], [[Freezing Trap]], [[Frost Trap]], [[Concussive Shot]], [[Disengage]]. It, and Survival is the spec built around it.
+- **Survival's actual melee toolkit is new and deep in the tree**: `Strider Kick` (an instant weapon-damage attack), `Expose Prey` (turns your own attacks into [[Mongoose Bite]] procs off a marked target), and `Lacerating Strikes` (adds a 21-second bleed worth 40% of the bite's damage to every Mongoose Bite). None of the three is available at level 20 — see the scope box above for when Wowhead and Icy Veins say they start to matter.
+- The utility kit — [[Feign Death]], [[Freezing Trap]], [[Frost Trap]], [[Concussive Shot]], [[Disengage]] — is intact, and Survival is the spec built around it.
 ## At level 60
-Unknown, and this is the spec with the most riding on it: whether Forever intends Survival as a melee Hunter, a trap-and-control Hunter, or a ranged spec with a defensive tree bolted on. Nothing published answers that.
+Unknown, and this is the spec with the most riding on it: whether Forever intends Survival as a melee Hunter, a trap-and-control Hunter, or a ranged spec with a defensive tree bolted on. Nothing published tests that, though Icy Veins' read of the talent kit — bleeds off marked targets, real melee crit and offhand support — argues for melee being the intended destination, just not the levelling path.

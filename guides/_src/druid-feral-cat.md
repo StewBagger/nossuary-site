@@ -1,9 +1,10 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Level 20 Feral Druid DPS|https://www.wowhead.com/forever/guide/classes/druid/feral/level-20-dps-overview ;; Icy Veins — Feral Druid|https://www.icy-veins.com/wow-forever/feral-druid-melee-dps-and-tank-pve-guide ;; ClassicWoW.gg — Cat Druid|https://classicwow.gg/forever/guides/druid/cat
 
 Energy and combo points in Cat Form, on bleeds rather than big hits. **The fastest and most mobile levelling spec in the beta, from level 20 onward.** Before 20 you are a bear.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Cat build has been tested. **Bear and Cat share one talent tree** and mostly one build; they have separate pages because the rotations, stat priorities and gear are completely different.
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Cat build has been tested. **Bear and Cat share one talent tree** and mostly one build; they have separate pages because the rotations, stat priorities and gear are completely different. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Cat worth levelling?
 **Yes. It is the strongest published recommendation of the three Druid specs, but only from 20.** `Feral Swiftness` gives *"a permanent 30% speed buff while in Cat Form"*. You also have [[Prowl]], and shapeshifting breaks roots. One guide calls Feral *"one of the fastest and most mobile specializations in the WoW Forever beta."*
@@ -13,7 +14,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 **Two sources do split them at 20.** The cat-specific lists are:
 - **Dungeons:** `Ferocity` 5 / `Heart of the Wild` 5 / `Savage Fury` 1
 - **Duels:** `Ferocity` 5 / `Heart of the Wild` 1 / `Feral Swiftness` 2 / `Brutal Impact` 2 / `Savage Fury` 1
-**Level 30: 0/21/0. The divergence from Bear is documented exactly:**
+**Level 30: 0/21/0 — our own extension, not a published build.** No source has posted one. Where Cat and Bear diverge on the shared tree:
 | Talent | Cat | Bear |
 | --- | --- | --- |
 | `Ferocity` | **3**/5 | **5**/5 |
@@ -69,7 +70,7 @@ The reason Agility leads is that *"in cat form it is attack power, critical stri
 - **[[Claw]] became a weapon-damage multiplier**: *"110% normal damage plus 27"*, where Classic gave a flat *"27 additional damage."* [[Ferocious Bite]] is unchanged from Classic, and trains at 32.
 - **Cat Form's flat attack power was cut from 40 to 12** plus Agility. This is the mechanism behind the weapon change.
 - **Six new talents:** `Primal Bite`, `Predatory Instincts`, `King of the Jungle`, `Natural Reaction`, `Rend and Tear`, [[Berserk]]. `Heart of the Wild` moved to tier 1. `Feral Instinct` was rewritten from bear threat to **+30% [[Swipe]] damage**.
-- **Two renames:** `Mangle` is now the `Primal Bite` talent and **is gone from the spellbook**; `Primal Fury` is now `Blood Frenzy`, with a new cat clause giving combo-point generators a 100% chance at an extra point on a crit.
+- **A rename and a merge:** `Mangle` is now the `Primal Bite` talent and **is gone from the spellbook**; Classic's `Primal Fury` and `Blood Frenzy` were merged into one node, and **the client calls it `Blood Frenzy`**. It gained a cat clause giving combo-point generators a chance at an extra point on a crit. **`Primal Fury` is not selectable**, so lists naming it cannot be entered as printed.
 - **All damage-over-time effects can now crit.**
 ## At level 60
 Unknown. The open question is whether bleed-centric damage with `Rend and Tear` beats a Rogue once [[Berserk]], `King of the Jungle` and real weapons exist.

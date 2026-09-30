@@ -1,27 +1,26 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Level 20 Subtlety Guide|https://www.wowhead.com/forever/guide/classes/rogue/subtlety/level-20-dps-overview ;; Icy Veins — Subtlety Rogue PvE Guide|https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide ;; ClassicWoW.gg — Subtlety Rogue|https://classicwow.gg/forever/guides/rogue/subtlety
 
 Stealth openers and a [[Rupture]]-driven bleed cycle. **The strongest PvP tree, the lowest-rated of the three overall, and it has no area damage of any kind.**
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Subtlety build has been tested.
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Subtlety build has been tested — and none of our three sources publish a level-30 build yet either. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Subtlety worth levelling?
-**Viable, and the lowest-rated Rogue spec overall — 2.5 out of 5, against 3.0 for the other two. All three are rated 4 out of 5 for levelling specifically.** The heading is *"Weakest Among Rogue Specs"*: *"Subtlety gets the short end of the stick, with most of its higher-impact talents being unavailable until you can put more talent points into the tree."*
+**Viable, and the lowest-rated Rogue spec overall by Icy Veins — 2.5 out of 5 Overall, against 3.0 for the other two. All three are rated 4 out of 5 for levelling specifically.** The heading is *"Weakest Among Rogue Specs"*: *"Subtlety gets the short end of the stick, with most of its higher-impact talents being unavailable until you can put more talent points into the tree."* **Wowhead agrees in stronger language**, calling the spec *"wholly underwhelming at this level bracket"* and noting the Rogue lacks *"our primary builder `Hemorrhage`"* and the talents that support [[Rupture]] this early.
 **Two blunt reasons, both worth knowing before you commit.** *"One of the biggest issues the spec has is its positional requirement… you won't be able to do so very often when leveling solo."* And: *"Subtlety has **no AoE capabilities whatsoever**."*
 It still scores 4 out of 5 for levelling on **mobility and stealth** grounds — you skip fights other classes have to win, and it does not come online until [[Ambush]] at level 18.
 ## Your talent points
-**Level 20: three published builds, and one of them is not a Subtlety build at all.**
-**Pure Subtlety, version A:** `Opportunity` 2 → `Camouflage` 3 → `Improved Ambush` 3 → `Setup` 2 → **`Ghostly Strike`** at 20.
-**Pure Subtlety, version B:** `Opportunity` 2 → `Camouflage` 3 → `Setup` 3 → `Improved Ambush` 2 → **`Ghostly Strike`** at 20. **Same five talents; the third point sits on `Setup` instead of `Improved Ambush`.** Either is fine.
-**The hybrid, 2/2/7**, and it is a genuinely different way to play: `Remorseless Attacks` 2 (Assassination) + `Improved Sinister Strike` 2 (Combat) + `Opportunity` 2, `Camouflage` 3, `Improved Ambush` 2 (Subtlety). Its intent: *"you'll use Daggers and [[Ambush]] as an opener on every mob, followed by a weapon swap macro and [[Sinister Strike]] spam."*
-**Level 30: 0/0/21**, in order: `Opportunity` 2 → `Camouflage` 3 → `Setup` 3 → `Improved Ambush` 3 → `Ghostly Strike` 1 → `Initiative` 3 → `Serrated Blades` 3 → `Camouflage` 5/5 → **`Hemorrhage`** at 30. A level-30 hybrid also exists at 6/2/13.
+**Icy Veins publishes a pure-Subtlety build**, built around `Camouflage` (shorter Stealth cooldown, faster move speed), `Improved Ambush` and `Ghostly Strike`, with an explicit flex: drop `Ghostly Strike` and `Setup` for `Remorseless Attacks` instead if you are chain-pulling — *"this gives you close to 100% Crit Chance with Ambush."* It does not come together until [[Ambush]] at 18, and Icy Veins' own alternative for the levels before that is to borrow `Improved Sinister Strike` from Combat and use a slow main-hand instead.
+**Wowhead publishes two different level 20 builds**, and neither is Subtlety-flavoured in the way Icy Veins' is. Its **Backstab Build** is the same dagger/`Puncturing Wounds` allocation it publishes on the Assassination and Combat pages — Backstab as primary builder, 3 points into `Puncturing Wounds`, some into `Improved Sinister Strike` "solely for when you inevitably pull aggro." Its **Ambush Build** instead spends points on `Improved Ambush`, for *"a strong opener every time you're able to get back into Stealth."*
+**Level 30: 0/0/21 — our own extension, not a published build.** No source has posted one; the beta has not reached 30. Extending the level 20 build on the tree's own point costs: `Opportunity` 2 → `Camouflage` 3 → `Setup` 3 → `Improved Ambush` 3 → `Ghostly Strike` 1 → `Initiative` 3 → `Serrated Blades` 3 → `Camouflage` 5/5 → **`Hemorrhage`** at 30.
 ## Rotation
 1. **Open from [[Stealth]] with [[Ambush]]**: this requires a dagger
 2. **Weapon-swap macro to a slow main hand**, or stay on the dagger
 3. Build with **[[Backstab]]** behind the target, otherwise **[[Sinister Strike]]**. **`Ghostly Strike` is your non-positional builder** — that is the point of it
 4. **[[Slice and Dice]]** on durable targets, **[[Eviscerate]]** otherwise. *"[[Rupture]] is rarely used at lower levels."*
 5. **Dagger-only alternative:** [[Gouge]] then [[Backstab]]. But wait for near-maximum energy first
-**From 30:** `Hemorrhage` to build, then [[Rupture]] immediately on long fights.
+**Once `Hemorrhage` is reachable:** use it to build, then [[Rupture]] immediately on long fights.
 **Multi-target: none.** *"No AoE capabilities whatsoever."* Said plainly because a table with a blank in it invites you to go looking.
 ## Stat priority
 Weapon damage **favouring a slow main hand**, then Hit and Expertise, Agility, attack power, critical strike, Strength.
@@ -29,8 +28,8 @@ This spec's list differs from the other two, and the published example is the cl
 ## What defines Subtlety
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
-| **`Ghostly Strike`** | **exactly 20** | 125% weapon damage, **180% with a dagger**, plus 15% dodge for 7 seconds. Non-positional |
-| **`Hemorrhage`** | **exactly 30** | 100% weapon damage, 145% with a dagger, and the target takes **+15% [[Rupture]] damage from you** |
+| **`Ghostly Strike`** | **exactly 20** | 125% weapon damage, **180% with a dagger**, plus 15% dodge for 7 seconds. Non-positional, awards 1 combo point |
+| **`Hemorrhage`** | **exactly 30** | 100% weapon damage, 145% with a dagger, and the target takes **+15% [[Rupture]] damage from you** for 15 seconds. Awards 1 combo point |
 | **`Cutthroat`** | 35 | [[Backstab]] can make your next [[Ambush]] usable **without [[Stealth]]** |
 ## What Forever changed for Rogues
 - **`Hemorrhage` is no longer a shared physical-damage debuff.** It is now a personal [[Rupture]] amplifier — it does nothing for the rest of your group, so do not take a raid assignment on it.
@@ -40,4 +39,4 @@ This spec's list differs from the other two, and the published example is the cl
 - **Poisons and Lockpicking are secondary skills now**, not class skills, and **poison stacks with a sharpening stone.** **Rogues can learn axes**, starting at skill 1.
 - **Hit and critical strike are unified** across spell, melee and ranged.
 ## At level 60
-Unknown: whether the `Thousand Cuts` and `Hemorrhage` bleed cycle is a real raid specialisation. It needs 31 Subtlety points, and one source notes that **[[Mutilate]] and `Thousand Cuts` cannot coexist** inside a 51-point budget.
+Unknown: whether the `Thousand Cuts` and `Hemorrhage` bleed cycle is a real raid specialisation. ClassicWoW.gg puts `Thousand Cuts` at 31 Subtlety points minimum (it requires `Preparation`) and [[Mutilate]] at 21 Assassination points — together that is 52, one more than Forever's 51-point budget, so **the two cannot coexist in one build.**

@@ -1,12 +1,13 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Level 20 Marksmanship Hunter|https://www.wowhead.com/forever/guide/classes/hunter/marksmanship/level-20-dps-overview ;; Icy Veins — Marksmanship Hunter Ranged DPS PvE Guide|https://www.icy-veins.com/wow-forever/marksmanship-hunter-ranged-dps-pve-guide ;; ClassicWoW.gg — MM Hunter Overview & Changes|https://classicwow.gg/forever/guides/hunter/marksmanship
 
 Ranged physical damage without leaning on the pet, and in Forever, **the dungeon area-damage Hunter.**
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Marksmanship build has been tested.
 :::
 ## Is Marksmanship worth levelling?
-**Fine to level, and a poor *soloing* build, which is a narrower complaint than it sounds.** Going 11 points deep to reach `Lone Wolf` is described as *"not a good general play build"*, with the recommendation to *"use the Beast Mastery build at this level instead."*
+**Fine to level, and a poor *soloing* build, which is a narrower complaint than it sounds.** Going 11 points deep to reach `Lone Wolf` is described as *"not a good general play build"*, with the recommendation to *"use the Beast Mastery build at this level instead."* Wowhead agrees from the other direction: *"a pet will currently do more damage than the bonus you would get from Lone Wolf, so taking a couple of points in the BM tree is strongly advised."*
 **Read that in proportion.** At level 20 you have eleven points, the Hunter rotation is **identical across all three specs**, and most of the difference is four flexible talent points. Nobody is stuck.
 **What it is for is dungeons.** *"If you want to go deep into Marksmanship, the best use-case for it is for Dungeons, specifically to maximize your AoE damage."* An extra 20% damage on [[Multi-Shot]] is a lot in a pull.
 So: **Beast Mastery if you mostly quest alone, Marksmanship if you mostly run dungeons.** That is the whole decision, and neither choice is a mistake.
@@ -35,8 +36,9 @@ Below level 10, walk backwards between shots to stay out of the dead zone.
 | **`Lethal Attacks`** | 10 | The second-best early damage talent in the class, behind `Focused Fire`. Forever widened it from ranged-weapon crit to crit with **all** attacks |
 | **`Hawk Eye`** | 10 | Extra range, kiting, and PvP |
 ## What Forever changed for Hunters
-- **Forever normalised pet attack speed, not pet damage**, families still carry damage, armour and health modifiers (Raptor +10%, Boar −10%), and **pets inherit some of your stats.** **But see `Lone Wolf` below: the eleven-deep build and a live pet are alternatives, not partners.**
+- **Pets lost their per-family damage/armour modifiers.** Icy Veins is explicit: *"Pets no longer have an inherent damage buff or reduction based on type."* They are now sorted into three roles instead, Ferocity, Cunning, Tenacity, and still **inherit some of your stats.** **But see `Lone Wolf` above: the eleven-deep build and a live pet are alternatives, not partners.**
 - **`Improved Serpent Sting` and `Improved Scorpid Sting` were folded into `Improved Stings`** (Marksmanship, tier 2, 3 ranks), which keeps the +6% Serpent Sting damage and adds a [[Viper Sting]] cooldown cut. Build lists naming the old talents are stale.
+- **`Sniper Shot` is Marksmanship's new capstone**: a 4-second cast, 15-second cooldown shot for a flat damage increase. Icy Veins calls out the obvious risk, that long a cast may turn out to be a damage loss in practice once real fights are played, though it will hit hard whenever you get the window.
 - The utility kit is unchanged and still the class's real advantage: [[Feign Death]], [[Freezing Trap]], [[Frost Trap]], [[Concussive Shot]], [[Disengage]].
 ## At level 60
-Unknown, and the open question for this spec is specific: whether `Lone Wolf` remains a dungeon-only talent or becomes the single-target choice once deeper Marksmanship talents exist to support it.
+Unknown, and the open question for this spec is specific: whether `Lone Wolf` remains a dungeon-only talent or becomes the single-target choice once deeper Marksmanship talents exist to support it, and whether `Sniper Shot`'s four-second cast pays for itself.

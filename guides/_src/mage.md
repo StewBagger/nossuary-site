@@ -1,19 +1,20 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Level 20 Arcane Mage|https://www.wowhead.com/forever/guide/classes/mage/arcane/level-20-dps-overview ;; Wowhead — Level 20 Fire Mage|https://www.wowhead.com/forever/guide/classes/mage/fire/level-20-dps-overview ;; Wowhead — Level 20 Frost Mage|https://www.wowhead.com/forever/guide/classes/mage/frost/level-20-dps-overview ;; Icy Veins — Mage Class Overview|https://www.icy-veins.com/wow-forever/mage-class-overview ;; ClassicWoW.gg — Mage|https://classicwow.gg/forever/guides/mage
 
 Mage kills faster than anything and dies faster too. Forever added a Research and scroll system from level 6, and made Arcane a genuine levelling tree for the first time.
 :::scope
-Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Mage build has been tested.** Ability training levels below are read from the beta client. Note that caster base damage was cut across the board and spell coefficients raised to compensate, a lower tooltip number than Classic is usually not a nerf.
+Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Mage build has been tested.** Ability training levels below are read from the beta client. Note that caster base damage was cut across the board and spell coefficients raised to compensate, a lower tooltip number than Classic is usually not a nerf. Neither Wowhead nor ClassicWoW.gg publishes a levelling score for the three specs. Icy Veins is the only one of the three that rates them, and it gives both a number out of five and a heading, so this page reports both.
 :::
 ## Which spec?
 | Spec | Role | Levelling | In one line |
 | --- | --- | --- | --- |
-| **[Arcane](/guides/wow-forever/mage/arcane/)** | Ranged DPS | **Rated highest — 4.0/5** | [[Arcane Blast]] and `Missile Barrage`, both new, and they make the tree real |
-| **[Fire](/guides/wow-forever/mage/fire/)** | Ranged DPS | Usable — 2.5/5 | `Hot Streak` finally makes [[Pyroblast]] a button you press |
-| **[Frost](/guides/wow-forever/mage/frost/)** | Ranged DPS | **Safest — 3.5/5** | Freeze, then [[Ice Lance]] for +300%. The safest spec in the game |
-**Frost or Arcane**, and the published ratings put **Arcane ahead for levelling, 4.0 against Frost's 3.5.** Frost is still the more forgiving answer — *"slowing and chilling everything they fight keeps them safe"*, with [[Frostbite]] often killing melee enemies before they reach you. Arcane is the genuinely new option: in Classic its tree had nothing to spend points on, and Forever gave it `Arcane Meditation` at **50% mana regeneration while casting** (Classic gave 15%), which is what makes it a levelling spec at all.
-**Fire is playable but slower**, for a specific reason rather than a vague one: its payoff talents sit at tiers 4 to 7, levels 25 to 40, and it needs a critical strike rate you only get from level-60 gear.
-**One correction worth carrying:** Mage area damage has **no target cap and no damage falloff** in Forever, contrary to a persistent belief. The slows attached to it were cut hard, though — `Improved Blizzard` maxes at **40%**, down from Classic's 65%.
+| **[Arcane](/guides/wow-forever/mage/arcane/)** | Ranged DPS | **Icy Veins 4/5 — "A Solid Leveling Spec"** | [[Arcane Blast]] and `Missile Barrage`, both new, and they make the tree real |
+| **[Fire](/guides/wow-forever/mage/fire/)** | Ranged DPS | Icy Veins 2.5/5 — "Usable, But Better Options Are Available" | `Hot Streak` finally makes [[Pyroblast]] a button you press |
+| **[Frost](/guides/wow-forever/mage/frost/)** | Ranged DPS | **Icy Veins 3.5/5 — "Smooth and Steady, but Not Fast"** | Freeze, then [[Ice Lance]] for +300%. The safest spec in the game |
+**Arcane first, Frost second**, on the only numbers any of the three publishes: Icy Veins scores Arcane **4/5** for levelling against Frost's **3.5** and Fire's **2.5**. Its Frost guide heads the leveling section *"Smooth and Steady, but Not Fast"*: *"Frost Mages are going to have a comfortable time leveling. They might not be able to burst enemies down as quickly as other classes and Mage specs, but slowing and chilling everything they fight keeps them safe."* [[Frostbite]] often kills melee enemies before they reach you. Arcane gets the more enthusiastic heading, *"A Solid Leveling Spec"*, outright: *"Arcane Mages in Forever level up very well."* Arcane is the genuinely new option: Forever gave it `Arcane Meditation` at **50% mana regeneration while casting** (Classic gave 15%), which is what makes it a levelling spec at all.
+**Fire is playable but slower.** Icy Veins says so directly: its own heading is *"Usable, But Better Options Are Available"*, and it names the reason: *"the Fire spec relies a lot on scoring Critical Strikes... at low levels, your Critical Strike chance is not very high and you only gain high levels of Critical Strike chance through gear at or near the Level 60 content."* Its payoff talents sit deep in the tree as well.
+**One claim worth flagging rather than stating flat:** none of the three sources confirms or denies a target cap or damage falloff on Mage area spells in Forever. Treat that as genuinely open rather than settled either way. The slows attached to area damage were cut hard, though; `Improved Blizzard` maxes at **40%**, down from Classic's 65% (ClassicWoW.gg's talent tooltip: rank 3 reads "lowers the target's movement speed by 40% for 1.5 sec").
 ## Is Mage for you?
 Play Mage if you want the fastest kills in the game and can accept that two enemies at once is an emergency.
 :::strengths
@@ -65,8 +66,8 @@ Play Mage if you want the fastest kills in the game and can accept that two enem
 | --- | --- |
 | [[Ice Lance]] added as an 11-point Frost talent | Freezing things is now a damage engine, not just an escape |
 | [[Arcane Blast]] and Hot Streak added | Arcane became a genuine levelling tree |
-| **Area damage is barely changed, but the slows were cut hard** | `Improved Blizzard` is 40% at max rank, down from 65%. Kiting needs more room |
-| **Mage area damage has no target cap** | Bigger pulls are strictly better, if you survive them, with one new limit: **only one [[Flamestrike]] can be active per Mage at a time** |
+| **The slows on area damage were cut hard** | `Improved Blizzard` is 40% at max rank, down from 65%. Kiting needs more room |
+| **Whether area damage keeps a target cap is unconfirmed** | None of the three tracked sources states it either way for Forever |
 | [[Detect Magic]] deleted | The armours are Frost, Ice and Mage. There is no [[Molten Armor]], and there never was in Classic either |
 | Research, scrolls and Comprehension added at 6 | An entirely new system, easy to miss |
 | `Mage Armor` returns 50% regen while casting | Was 30% |

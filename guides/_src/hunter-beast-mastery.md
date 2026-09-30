@@ -1,9 +1,10 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Level 20 Beast Mastery Hunter|https://www.wowhead.com/forever/guide/classes/hunter/beast-mastery/level-20-dps-overview ;; Icy Veins — Beast Mastery Hunter Ranged DPS PvE Guide|https://www.icy-veins.com/wow-forever/beast-mastery-hunter-ranged-dps-pve-guide ;; ClassicWoW.gg — BM Hunter Overview & Changes|https://classicwow.gg/forever/guides/hunter/beast-mastery
 
 Ranged physical damage with a pet that carries a real share of the work. **This is the Hunter levelling spec, and the strongest levelling spec in the game.**
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Beast Mastery build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40.
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Beast Mastery build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40. The beta also runs a **Legacy system**, extra talent points stacked on top of the normal rate, so some published level 20 builds show talents — `Summon Hawk` chief among them — that a character levelling without it would not reach until several levels later.
 :::
 ## Is Beast Mastery worth levelling?
 **Yes, and nothing beats it.** The published verdict on taming a pet at level 10 is blunt: *"the single greatest leveling tool that any class gets without exception."*
@@ -19,6 +20,7 @@ The reason Beast Mastery specifically is the answer at low level is `Deadly Aspe
    - `Lethal Attacks` — *"a close second"*
    - `Hawk Eye`, extra range, for kiting and PvP
    - `Bestial Swiftness`, if all 10 go into Beast Mastery, your pet closes on targets far faster
+`Summon Hawk` is deeper still, at 16 points spent in this tree, so it is not part of the base level-20 build; see *What Forever changed* below.
 ## Rotation
 The honest version first: **early Hunter is mostly Auto Shot**, and that is by design.
 1. **[[Aspect of the Hawk]]** up before you engage, unless you are kiting, in which case [[Aspect of the Cheetah]]
@@ -30,13 +32,15 @@ The honest version first: **early Hunter is mostly Auto Shot**, and that is by d
 7. **[[Disengage]]** if you pull the target off your pet
 8. **[[Arcane Shot]]** only with mana to spare
 **Multi-target:** [[Multi-Shot]] in place of [[Aimed Shot]].
+**Once you have `Summon Hawk`** (16 points into this tree, later than a base level-20 build reaches, see *Your talent points*), it joins the rotation as a genuine damage cooldown: an initial hit, then 18 seconds of the hawk attacking on its own, up to two hawks at a time. It shares its 6-second cooldown with [[Arcane Shot]], so the choice is which one you press, not both.
 **The mana rule that matters most:** *"Even if you are out of mana, it will always be more efficient to just attack the next target and regenerate your mana slowly while using basic attacks."* Spend what mana you have on [[Mend Pet]] and [[Serpent Sting]] first.
 ## Stat priority
 **Weapon damage, then Agility**, and past that, take the higher item level.
 Weapon damage is *"far and away your most important stat"*, and there is a subtlety worth knowing: **prefer the slower weapon.** [[Aimed Shot]] calculates from your weapon's damage per hit, not its DPS, so a slow high-damage bow makes your abilities hit harder. Hit is strong but barely exists on gear at this level.
 ## Your pet
 Forever changed pets more than it changed the Hunter.
-- **Forever normalised pet attack *speed*, not pet damage.** Every pet swings every 2.0 seconds and gets its family's speed back through a passive, but **families still carry their own damage, armour and health modifiers, and the spread is real.** A Raptor deals **+10%** damage, a Bat **+7%**, a Bear **−9%**, a Boar **−10%**, all measured against a beast of no family at the same level. Pick for the family's abilities *and* its stat line
+- **Pets no longer carry a flat, per-family damage buff or penalty** (Icy Veins is explicit: *"Pets no longer have an inherent damage buff or reduction based on type"*). What still varies by family is each pet's unique ability, a Bear's [[Swipe]], for instance, not a hidden damage modifier. Pick for the family's ability, not for a stat line that no longer exists
+- **Pets are now sorted into three classifications — Ferocity, Cunning, or Tenacity** — replacing the old damage/armour split
 - **Pets inherit some of your stats**, so they scale as you gear up
 - Happiness and loyalty still exist, feed your pet
 - **Focus regenerates at 10 a second, about twice as fast as Classic**, and every pet uses the same system
@@ -49,8 +53,10 @@ Forever changed pets more than it changed the Hunter.
 | **`Deadly Aspects`** | 10, maxed at 14 | A **10% chance on [[Auto Shot]]** — 2% per rank, of **+30% ranged attack speed for 12 seconds, and only while [[Aspect of the Hawk]] is up.** There is a melee half too, off [[Aspect of the Beast]]. The reason this is the levelling tree |
 | **`Pathfinding`** | 15 | **+6% to [[Aspect of the Cheetah]] and [[Aspect of the Pack]]**, not to movement speed generally, and worth nothing while you are in Hawk |
 | **`Bestial Swiftness`** | 20 | Pet movement speed, quality of life while levelling, real value in PvP |
+| **`Summon Hawk`** | 16 points into this tree (later than a base level-20 build) | Summons a hawk that hits once then attacks for 18 seconds on its own, up to two active; shares its cooldown with [[Arcane Shot]] |
 ## What Forever changed for Hunters
-- **Pet attack speed was normalised, not pet damage** (above), family damage, armour and health modifiers are still live, and **pets scale off your stats.**
+- **Pets lost their per-family damage/armour modifiers and gained a three-way role split** (above), Ferocity, Cunning, Tenacity, and **pets scale off your stats.**
+- **`Summon Hawk` is new**: a Beast Mastery talent, not a baseline ability, and it competes with [[Arcane Shot]] for the same cooldown rather than stacking with it.
 - **`Improved Serpent Sting` and `Improved Scorpid Sting` were folded into one new talent, `Improved Stings`** (Marksmanship, tier 2, 3 ranks), it keeps the +6% Serpent Sting damage and adds a [[Viper Sting]] cooldown cut and a longer [[Scorpid Sting]]. Stale lists naming the old talents cannot be entered as printed; the points belong in `Improved Stings`.
 - The utility kit is intact and still the class's signature: [[Feign Death]] usually drops you out of the fight entirely (*"one of the most valuable leveling spells"*, though enemies keep hitting your pet), and **cancel it: left running its full 6 minutes it actually kills you**, [[Freezing Trap]], [[Frost Trap]], [[Concussive Shot]], and [[Disengage]] as a threat dump rather than a leap.
 ## At level 60

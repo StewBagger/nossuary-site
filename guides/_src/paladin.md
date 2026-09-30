@@ -1,5 +1,6 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Level 20 Holy Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/holy/level-20-healer-overview ;; Wowhead — Level 20 Protection Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/protection/level-20-tank-overview ;; Wowhead — Level 20 Retribution Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-20-dps-overview ;; Icy Veins — Paladin Class Overview|https://www.icy-veins.com/wow-forever/paladin-class-overview ;; ClassicWoW.gg — Paladin|https://classicwow.gg/forever/guides/paladin
 
 Paladin is a plate-wearing melee fighter that runs on mana, and it is no longer faction-locked — Undead Paladins are new in Forever, with their own class hub in Tirisfal Glades.
 :::scope
@@ -56,7 +57,7 @@ Play Paladin if you want to be very hard to kill, to fill whichever role a group
 ## Quality of life
 - **Seals, Blessings and Auras are three separate always-on systems, and new players drop one.** Set an aura and forget it. Keep a blessing on yourself. Keep a seal up always — **and since Judgement no longer consumes your seal in Forever, there is no excuse for letting it lapse.**
 - **Only one-handed maces are known by default.** Every other weapon skill, including all two-handers, must be bought from a weapon master. Polearms from 20.
-- **Do the level-20 class quest**, it rewards a deliberately over-budgeted weapon. Alliance get **Verigan's Fist**; Horde get a new Forsaken chain out of Bandarion Keep.
+- **Do the level-20 class quest**, it rewards a deliberately over-budgeted weapon. Alliance get **Verigan's Fist** from *The Test of Righteousness*; Horde get **Wolfsbane**, even slower and more powerful, from *Diplomatic Incident*, starting at level 18 in Bandarion Keep.
 - **[[Consecration]] at 20 changes the class** from single-target to area-capable, and every spec now gets it. Budget mana for it.
 ## What changed from Classic
 | Change | What it means for you |
@@ -65,7 +66,7 @@ Play Paladin if you want to be very hard to kill, to fill whichever role a group
 | [[Consecration]] and [[Blessing of Kings]] trained at 20 | Every spec gets both, without spending talent points |
 | [[Holy Strike]] at 6 and [[Seal of Fury]] at 10 | Two new baseline buttons inside the first ten levels |
 | Blessings last 1 hour, Greater Blessings too | No more desynced buff timers |
-| [[Seal of Command]] moved to Retribution tier 3 | Live at level 20 rather than as a 31-point capstone |
+| `Repentance` moved from tier 7 to tier 5 | The Retribution capstone slot is now `Twist of Light`. [[Seal of Command]] is unchanged: tier 3, live at 20, as in Classic |
 | Resistance auras are raid-wide | |
 | Undead Paladins exist | With their own hub, quests and mounts |
 ## At level 60

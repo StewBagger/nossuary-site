@@ -22,11 +22,11 @@ Every profession has three objects, at skill **20, 140 and 300**. The 140 and 30
 | **Enchanting** | [[Enchanted Lute]] | **308 armour, +13 all stats, +22 all resistances** | [[Mark of the Wild]] |
 | **Blacksmithing** | [[Sharpening Wheel]] | **34 Strength** | [[Strength of Earth Totem]] |
 | **Tailoring** | [[Faction Banner]] | **32 Spirit**: **your faction only** | [[Divine Spirit]] |
-| **Skinning** | [[Camp Chair]] | **2% critical strike** | [[Leader of the Pack]] |
+| **Skinning** | [[Camp Chair]] | **2% critical strike** | [[Moonkin Form]] |
 | **Herbalism** | [[Incense Candle]] | **25 Intellect** | [[Arcane Intellect]] |
 | **First Aid** | [[First Aid Kit]] | **56 Stamina** | [[Power Word: Fortitude]] |
 | **Leatherworking** | [[Camp Tent]] | **Rested experience, up to 5% of a level** | None |
-| **Engineering** | [[Reagent Bot]] | A vendor, and repairs | None |
+| **Engineering** | [[Reagent Bot]] | A reagent vendor. Repairs come with the skill-140 [[Repair Bot]] | None |
 | **Cooking** | The campfire itself | Capacity for other objects | None |
 **A camp hands a group the class buffs it does not have.** A party with no Paladin can still have Blessing of Kings, Might and Wisdom. **None of them stacks with the real thing**, so you get one or the other.
 The [[Camp Tent]] tops up rather than stacks: *"does nothing if you already have more."* The [[Faction Banner]] only buffs your own faction, and has separate Horde and Alliance recipes.

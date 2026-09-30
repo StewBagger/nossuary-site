@@ -1,5 +1,6 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Level 20 Assassination Guide|https://www.wowhead.com/forever/guide/classes/rogue/assassination/level-20-dps-overview ;; Wowhead — Level 20 Combat Rogue Guide|https://www.wowhead.com/forever/guide/classes/rogue/combat/level-20-dps-overview ;; Wowhead — Level 20 Subtlety Guide|https://www.wowhead.com/forever/guide/classes/rogue/subtlety/level-20-dps-overview ;; Icy Veins — Rogue Class Overview|https://www.icy-veins.com/wow-forever/rogue-class-overview ;; ClassicWoW.gg — Rogue|https://classicwow.gg/forever/guides/rogue
 
 Rogue kills fast, dies fast and picks its fights. Forever moved Lockpicking to level 1 as a secondary skill, did the same to Poisons, and **[[Sap]] now needs no stealth and does not break it**.
 :::scope
@@ -11,7 +12,7 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right n
 | **[Assassination](/guides/wow-forever/rogue/assassination/)** | Melee DPS | Contested, see below | Poisons and daggers, built around [[Ambush]] and bleed damage |
 | **[Combat](/guides/wow-forever/rogue/combat/)** | Melee DPS | **Safest pick** | Swords and maces, `Riposte`, and the most forgiving of the three |
 | **[Subtlety](/guides/wow-forever/rogue/subtlety/)** | Melee DPS | Viable | `Ghostly Strike`, openers from stealth, and the strongest PvP tree |
-**All three are melee damage, so pick on how you want to play rather than on role.** Combat is the low-risk answer while levelling; Subtlety is the duelling tree; Assassination's levelling strength is genuinely **disputed between sources**, one publishes a level-20 build and rates it 4 out of 5, another says it only comes together at 30. That disagreement is real and unresolved, and either side may be right.
+**All three are melee damage, so pick on how you want to play rather than on role.** Combat is the low-risk answer — Wowhead calls it **"probably the most 'complete' Rogue specialization at level 20."** Assassination is a genuine three-way split: **Icy Veins** rates its levelling **4 out of 5** (tied with Combat) and calls it *"likely to be very strong especially in this level bracket due to the potency of talents like `Remorseless Attacks`,"* while **Wowhead** calls the same level bracket *"wholly underwhelming"* and says Assassination *"will ultimately play the same as the Combat Rogue for now"* until [[Mutilate]] unlocks. Subtlety draws Wowhead's same *"wholly underwhelming"* verdict and is Icy Veins' lowest-rated spec overall (2.5 vs 3.0 for the other two) — mobility and stealth are why you would still pick it.
 ## Is Rogue for you?
 Play Rogue if you like deciding when a fight starts, and you accept dying quickly as the price of killing quickly.
 :::strengths

@@ -37,7 +37,7 @@ Unchanged from Classic, and confirmed in the client.
 | **[Alchemy](/guides/wow-forever/professions/alchemy/)** | Crafting | Yes | Potions, elixirs, flasks. Raid consumables |
 | **[Blacksmithing](/guides/wow-forever/professions/blacksmithing/)** | Crafting | Yes | Plate and mail armour, and weapons |
 | **[Enchanting](/guides/wow-forever/professions/enchanting/)** | Crafting | Yes | Permanent bonuses on gear, funded by destroying gear |
-| **[Engineering](/guides/wow-forever/professions/engineering/)** | Crafting | Yes | Bombs, gadgets, goggles and a mount |
+| **[Engineering](/guides/wow-forever/professions/engineering/)** | Crafting | Yes | Bombs, gadgets, goggles and trinkets. **No mount and no tier set** |
 | **[Leatherworking](/guides/wow-forever/professions/leatherworking/)** | Crafting | Yes | Leather and mail armour |
 | **[Tailoring](/guides/wow-forever/professions/tailoring/)** | Crafting | Yes | Cloth armour and bags |
 **The classic pairings still make sense**: Mining with Blacksmithing or Engineering, Herbalism with Alchemy, Skinning with Leatherworking, because a crafting profession that has to buy its own materials is expensive. Nothing published suggests Forever changed that logic.

@@ -1,5 +1,6 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Level 20 Elemental Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/elemental/level-20-dps-overview ;; Icy Veins — Elemental Shaman PvE Guide|https://www.icy-veins.com/wow-forever/elemental-shaman-ranged-dps-pve-guide ;; ClassicWoW.gg — Elemental Shaman|https://classicwow.gg/forever/guides/shaman/elemental
 
 Ranged caster mixing hard lightning casts with Shocks, interrupts and totems. **Its two best talents are level 30 and 40**, which is the whole story of this spec in the beta.
 :::scope
@@ -19,7 +20,8 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 `Convection` is offered as a swap for `Elemental Warding`. Take it if mana is your problem rather than survival.
 **Build B:** `Convection` 5 / `Concussion` 5 / **`Elemental Focus` 1**.
 **A PvP variant:** `Convection` 1 / `Concussion` 5 / `Reverberation` 5.
-**Level 30: nothing publishable.** See the warning above: the one circulating build cannot be entered on the current client.
+**Wowhead itself disagrees with both.** Its own Level 20 build spends these 11 points outside the Elemental tree entirely, into Restoration for `Mindfulness` and [[Water Shield]], for the mana sustain, and treats `Concussion`, `Call of Flame` and `Elemental Focus` as what you spend **Legacy System** bonus points on instead. Icy Veins' Build A above spends the base 11 in the Elemental tree itself. Both builds are legal; the sites disagree on where the points go, not on what exists.
+**Level 30: nothing worth printing, and no published build to fall back on.** None of the three sources has posted a level 30 build for any spec, and the one build circulating for Elemental cannot be entered on the current client, so this page gives no level 30 order rather than derive one around a talent that does not work.
 ## Rotation
 1. **Pre-place your totems** before the pull. [[Call of the Elements]] at 20 does it in one button. **[[Searing Totem]] last**, because it starts attacking
 2. **[[Lightning Bolt]]** to pull
@@ -35,7 +37,7 @@ Given that Forever moved caster power from base spells onto gear, **item level i
 | --- | --- | --- |
 | **`Elemental Focus`** | **exactly 20** | 10% Clearcasting chance on any Fire, Frost or Nature damage spell |
 | **`Lightning Overload`** | **exactly 30** | New. 3% per rank for a **free, half-damage, no-threat duplicate** of your Bolt or [[Chain Lightning]] |
-| **[[Lava Burst]]** | **40** | New, the row-7 capstone. 2.5-second cast, 10-second cooldown, **+20% with your own [[Flame Shock]] up**. Not in the beta |
+| **[[Lava Burst]]** | **40** | New, the row-7 capstone. 2.5-second cast, 10-second cooldown, **+20% with your own [[Flame Shock]] up**. Unreachable at either beta cap |
 ## What Forever changed for Elemental
 - **New:** [[Lava Burst]], `Lightning Overload`, `Earthbound`. **Removed:** `Elemental Mastery`, `Totemic Mastery`.
 - **[[Fire Nova Totem]] became [[Fire Nova]]**: an instant **10-yard** explosion cast **from your active Fire totem**, rather than a totem you drop and wait on. (The 30 yards is a different number: how far away you may now *place* a totem, up from 20.) `Improved Fire Nova` replaces `Improved Fire Totems`. A real improvement, and it changes how you open a pull.

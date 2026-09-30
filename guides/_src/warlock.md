@@ -1,17 +1,18 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Level 20 Affliction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-20-dps-overview ;; Wowhead — Level 20 Demonology Warlock|https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-20-dps-overview ;; Wowhead — Level 20 Destruction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/destruction/level-20-dps-overview ;; Icy Veins — Warlock Class Overview|https://www.icy-veins.com/wow-forever/warlock-class-overview ;; ClassicWoW.gg — Warlock|https://classicwow.gg/forever/guides/warlock
 
 Warlock kills slowly and inevitably, with a demon tanking for you. Forever split damage curses into Banes, so **you now hold one Bane and one Curse at the same time**, and Life Tap gives twice the mana it used to.
 :::scope
 Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Warlock build has been tested.** The longest anyone has played is a level-38 demo. Ability training levels below are read from the beta client.
 :::
 ## Which spec?
-| Spec | Role | Levelling | In one line |
+| Spec | Role | Levelling (Icy Veins) | In one line |
 | --- | --- | --- | --- |
 | **[Affliction](/guides/wow-forever/warlock/affliction/)** | Ranged DPS | **5/5, joint best** | Instant [[Corruption]] from level 14, and DoTs can now crit |
 | **[Demonology](/guides/wow-forever/warlock/demonology/)** | Ranged DPS | **5/5, joint best** | `Demonic Energies` turns your damage into pet healing and your Life Tap into pet mana |
 | **[Destruction](/guides/wow-forever/warlock/destruction/)** | Ranged DPS | 3.5/5, the weak one | Hard-cast direct damage, and a wand currently competes with [[Shadow Bolt]] |
-**Affliction and Demonology are rated identically — 5 out of 5 for levelling, and Destruction is the only Warlock spec marked down.** The published reasoning for the gap is concrete: Destruction has *"less passive sustain than Affliction and less pet support than Demonology"*, most of its damage requires standing still, and Forever cut its direct-damage numbers hard. One guide declines to publish a level-20 Destruction build at all, on the grounds that a **free wand deals comparable damage to a mana-costing [[Shadow Bolt]]** at that level.
+**Icy Veins rates Affliction and Demonology identically — 5/5 for levelling — and Destruction the only Warlock spec marked down, at 3.5/5.** The published reasoning for the gap is concrete: Destruction has *"less passive sustain than Affliction and less pet support than Demonology"*, most of its damage requires standing still, and Forever cut its direct-damage numbers hard. Wowhead's own Level 20 overview goes further still, for all three specs: *"you'll use your wand more for damage because it deals more DPS than Shadow Bolt, and it's also mana-free."* Destruction pushes back on its own weak page: `Bane` cuts [[Shadow Bolt]]'s cast time enough that it beats the wand there specifically, where the other two specs keep wanding.
 **Your demon matters more than in Classic, in every spec**, because **demons now scale with your gear**, asserted from hands-on testing by two guides and implied by Blizzard's own known-issues list, though **nothing published quantifies it.** [[Voidwalker]] at 10 is the levelling pet; [[Succubus]] at 20 is the damage pet; **Forever trains the [[Felhunter]] at 30**, where Classic gated it behind a quest and withheld Spell Lock until 36.
 ## Is Warlock for you?
 Play Warlock if you want the strongest solo levelling in the game and you do not mind tracking half a dozen things at once.
@@ -51,21 +52,25 @@ Play Warlock if you want the strongest solo levelling in the game and you do not
 **[[Curse of Shadow]] and [[Dark Pact]] are not in Forever.** Curse of Shadow was folded into the all-schools Curse of the Elements.
 ### Which demon, when
 - **Imp, levels 2 to 10**: fragile and runs out of mana.
-- **Voidwalker, from 10, and it is the answer**: in Forever it generates enormous threat and can compete with real tanks for aggro.
+- **Voidwalker, from 10, and it is the answer**: in Forever it generates enormous threat and can compete with real tanks for aggro through its threat spell `Torment`, though Wowhead flags that Torment is noticeably weaker until you train rank 2 at 20.
 - **Succubus, from 20, as your damage pet**: measured at roughly a quarter of your total damage, by far the strongest damage demon. Keep the Voidwalker for elites.
 - **Felhunter, from 30**, for Spell Lock and Devour Magic.
 **`Demonic Sacrifice` inverted its buffs and now lasts two hours: sacrificing the Imp gives +15% Shadow, and the Succubus gives +15% Fire.** The Classic muscle memory is backwards.
 ## Which race
-**Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling.** Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
-**Horde: Undead for levelling.** `Cannibalize` restores **35% health *and* mana**, which on a class whose whole loop is spending health for mana is close to a free full recovery on every corpse.
-**Horde: Orc for long-term damage**, now that `Blood Fury` gives **+10% spell power**. But note **Forever deleted `Command`**, the pet-damage racial that was the entire reason Orc was the Classic Warlock pick. Orc is now a caster race, not a pet race.
-**Alliance: Human.** `Sword Specialization` is **+2% spell and ability crit**, and since **timed damage can crit in Forever it applies to your whole damage profile**. `The Human Spirit` feeds Life Tap.
-**Skyborne cannot be a Warlock.** Both major guides decline to name an overall winner.
+**Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling** — Icy Veins calls the field too close to rank and says the races are close in terms of damage. Warlock has **five** playable races in Forever: Human and Gnome on the Alliance, Orc and Undead on the Horde, plus the newly playable **Troll**. Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Will to Survive` (Human, stuns). A free trinket slot is worth more than any damage racial below.
+**Horde: Undead for levelling.** `Cannibalize` restores 7% health *and* mana every 2 seconds for 10 seconds off a nearby Humanoid or Undead corpse, close to 35% of each over its full duration. `Touch of the Grave` adds a 10% chance for your spells and attacks to drain up to 5% of the target's health.
+**Horde: Orc for long-term damage**, now that `Blood Fury` gives **+10% spell power**. `Shatter Curse` is new: it strips your own Curses and Banes, grants brief immunity to them, and cuts magic damage taken by 15% for 8 seconds. Note **Forever deleted `Command`**, the pet-damage racial that was the entire reason Orc was the Classic Warlock pick. Orc is now a caster race, not a pet race.
+**Horde: Troll is new to Warlock.** `Berserking` gives +10% casting speed for 10 seconds, a real cooldown for Destruction's hard casts but weak for Affliction, whose drains and channels it does not speed up.
+**Alliance: Gnome.** `Escape Artist` removes movement-impairing effects and grants brief immunity to them. `Eureka!` is new: a 2-minute cooldown that cuts the mana cost of your next three damaging spells by 50% and adds 10% damage.
+**Alliance: Human.** `Sword Specialization` is **+2% spell critical strike** while a sword is equipped, and since **timed damage can crit in Forever it applies to your whole damage profile**. `The Human Spirit` feeds Life Tap.
+**Icy Veins declines to name an overall winner**, calling the current racial balance preliminary and subject to change through beta.
 ## Quality of life
 - **Soul shards got better but not fixed.** They are now classed as a **Reagent**, and Forever added a reagent bag slot, so your soul bag no longer eats one of your four real bags. **They still do not stack.**
 - **Four class quests, all mandatory:** Imp at 2, Voidwalker at 10, Succubus at 20, Felhunter at 30. They are short and they are how you get your demons.
 - **Tailoring and Enchanting.** Tailoring makes your bags including the soul bag, and Enchanting makes the wand you should be using instead of Shadow Bolt.
 - **Budget for Grimoires**: Warlocks spend more gold than most classes keeping demon abilities trained.
+- **The Legacy System hands out extra talent points from world exploration**, on top of your level-based points. Wowhead puts the cap at 7 legacy points before level 25, worth 2 extra talent points, enough to reach one tier further than your character level alone would allow.
+- **Demons take a `Move To` order now.** Icy Veins flags it as a real quality-of-life addition: a 100-yard-range command that repositions your pet on demand, instead of relying on Follow and Stay.
 ## What changed from Classic
 | Change | What it means for you |
 | --- | --- |

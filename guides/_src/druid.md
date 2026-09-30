@@ -1,5 +1,6 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Level 20 Balance Druid Guide|https://www.wowhead.com/forever/guide/classes/druid/balance/level-20-dps-overview ;; Wowhead — Level 20 Feral Druid DPS Guide|https://www.wowhead.com/forever/guide/classes/druid/feral/level-20-dps-overview ;; Wowhead — Level 20 Feral Tank Druid Guide|https://www.wowhead.com/forever/guide/classes/druid/feral/level-20-tank-overview ;; Wowhead — Level 20 Restoration Druid Guide|https://www.wowhead.com/forever/guide/classes/druid/restoration/level-20-healer-overview ;; Icy Veins — Druid Class Overview|https://www.icy-veins.com/wow-forever/druid-class-overview ;; ClassicWoW.gg — Druid|https://classicwow.gg/forever/guides/druid
 
 Druid is four classes in one character, and Forever changed its most important gearing rule: **your weapon's damage now scales Bear and Cat form**. In Classic it did not matter at all.
 :::scope
@@ -54,8 +55,8 @@ Play Druid if you want to be able to do any job in the game on one character, an
 **[[Tree of Life]] and Flight Form do not exist in Forever.** Moonkin Form is still the 31-point Balance capstone, so it arrives at 40. It is no longer a dead aura: it grants the party **3% crit to all damage** at 45 yards and doubles your [[Omen of Clarity]] proc rate.
 ## Which race
 Race matters far less than spec, gear and knowing your rotation, and **no race is a wrong answer for levelling.** Racials decide things in **PvP**, specifically the ones that break crowd control: `Will of the Forsaken` (Undead: fear, sleep and charm), `Escape Artist` (Gnome: roots and snares) and `Stoneform` (Dwarf: bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
-**Alliance: Night Elf.** `Elune's Light` gives **+10% crit for 15 seconds**, a genuine burst cooldown Night Elf never had, and **[[Shadowmeld]] now works while shapeshifted**, so a prowling cat can meld. Forever dropped Classic's clause making druids harder to detect while prowling. Do not count on that half.
-**Horde: Tauren.** `Endurance` now gives **+5% health and +1% hit**, and **`War Stomp` is usable while shapeshifted in Forever**, which it was not in Classic, so every form gets an area stun.
+**Alliance: Night Elf.** `Elune's Light` gives **+10% crit for 15 seconds**, a genuine burst cooldown Night Elf never had, and **[[Shadowmeld]] still improves Prowl** in Forever, giving a prowling cat an extra edge at staying undetected.
+**Horde: Tauren.** `Endurance` now gives **+5% health and +1% hit**, and `War Stomp` seems usable while shapeshifted in Forever, giving every form a short AoE stun.
 **`Plainsrunning` does not stack with Cat Form or Travel Form**, so it is worth less to a Druid than to other classes. The same applies to Skyborne's `Skysight`.
 **Skyborne can be Druids on both factions**, the only new path into the class, with forms made for the race.
 ## Quality of life

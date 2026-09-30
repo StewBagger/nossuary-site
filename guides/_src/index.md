@@ -1,9 +1,10 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Forever class guides|https://www.wowhead.com/forever/guides/classes ;; Icy Veins — Choosing your class|https://www.icy-veins.com/wow-forever/choosing-your-main ;; ClassicWoW.gg — Forever vs Classic Era: what changes|https://classicwow.gg/forever/changes
 
 Levelling guides for all nine classes in World of Warcraft: Forever, which relaunches the 1–60 game on **November 4, 2026**, with everyone starting from scratch on the same day.
 :::scope
-**These are levelling guides.** Forever's beta is capped at level 20 right now and rises only to 30 before launch, there is no raid testing, and item stats stay hidden until something drops. **No level-60 build, best-in-slot list or class ranking for Forever exists yet.** Anything claiming otherwise is made up.
+**These are levelling guides.** Forever's beta is capped at level 20 right now and rises only to 30 before launch, there is no raid testing, and item stats stay hidden until something drops. **No level-60 build, best-in-slot list or class ranking for Forever exists yet.** We checked the three sites these guides are compiled from: ClassicWoW.gg publishes the complete level-60 talent trees and a calculator, and says of them *"this is the full tree, not a suggested build"*; Icy Veins' tier-list directory lists every tier list as *"COMING SOON"*; Wowhead's class guides stop at level 20. A level-60 ranking found elsewhere was not read off a tested character.
 What we can state confidently: talent trees, ability training levels and spell changes, all read from the beta client. What is firmer still is anything Blizzard has published directly. Raids open **December 9**, five weeks after launch, and we will write the endgame half then.
 :::
 ## Everyone is new on November 4
@@ -52,6 +53,10 @@ Three things worth knowing before you pick:
 Beyond the new zones and dungeons, four changes affect how you level whatever you pick.
 - **Dungeon grinding is dead by design.** Mob experience inside dungeons was cut hard while dungeon *quest* experience was raised sharply. Run each dungeon once for its quests rather than repeating it.
 - **Talent points can eventually start earlier than 10. But not on your first character.** The account-wide Legacy system has a perk, `Talented`: five ranks, each moving your first talent point one level earlier, from 10 down to 5. It costs **ten Legacy Points** — five ranks of `Well Rested` first, then five of its own, and Legacy Points are earned one per challenge, such as levelling a class to 25, 45 or 60, or a profession to 150, 225 or 300. **A brand-new account on November 4 has none.** The 51-point total at 60 never changes; the perk only moves when the points arrive, and at full rank a level-30 character holds 26 points instead of 21.
-- **Six new race and class combinations**: Gnome Priest, Human Hunter, Dwarf Shaman, Orc Mage, Troll Warlock and Undead Paladin. **Paladin and Shaman are no longer faction-locked.**
+- **Six new race and class combinations**: Gnome Priest, Human Hunter, Dwarf Shaman, Orc Mage, Troll Warlock and Undead Paladin. **Paladin and Shaman are no longer faction-locked.** Blizzard says more combinations are planned.
+- **There is a tenth race.** The **Skyborne** are neutral, playable on either faction, with their own starting area in the Zephras Isles, and they play **Druid, Hunter, Rogue and Warrior on both sides, Mage on Alliance only and Shaman on Horde only.** The race and its starting experience need an optional upgrade purchase, so this is the one class-and-race choice on this page that costs money.
+- **Every race now carries four racials**, two active and two passive, and the familiar names often do something different. Do not pick from a Classic racial ranking.
+- **Every one of the 27 talent trees gained a fourth one-point ability at 16 points**, alongside the existing 11, 21 and 31-point talents. Talents that merely improved a class buff, such as Divine Spirit, Blessing of Kings and Mark of the Wild, were removed, because those improvements are baseline now.
+- **Hit and critical strike are combined across melee, ranged and spells**, and healing gear also grants some bonus damage. One stat line now serves a whole character, which is why weapon and gear advice on these pages differs from Classic's.
 - **Weapon-specialisation racials became critical-strike racials**, and they work off an equipped weapon rather than one you swing, so weapon type is now worth a thought even for casters.
 The levelling pace itself is unchanged from Classic. Expect to walk a great deal before your mount, to drink after fights if you use mana, and for dying to cost time rather than progress.

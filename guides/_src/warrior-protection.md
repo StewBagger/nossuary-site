@@ -1,19 +1,20 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Level 20 Protection Warrior|https://www.wowhead.com/forever/guide/classes/warrior/protection/level-20-tank-overview ;; Icy Veins — Protection Warrior|https://www.icy-veins.com/wow-forever/protection-warrior-tank-pve-guide ;; ClassicWoW.gg — Protection Warrior|https://classicwow.gg/forever/guides/warrior/protection
 
 Shield tanking, and one of Forever's three tanks. The tree is now **shield-gated**, three separate talents check for one, which kills Classic's dual-wield threat build outright.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch and no higher, so no level-60 Protection build has been tested. One live caveat: Blizzard's September 24 notes swap `Bastion` and `Focused Rage` between rows 5 and 6, and **the client has not applied it yet**, any build touching those rows will move.
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch and no higher, so no level-60 Protection build has been tested. One live caveat: Blizzard's September 24 notes swap `Bastion` and `Focused Rage` between rows 5 and 6, and **the client has not applied it yet**, any build touching those rows will move. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended. Separately, ClassicWoW.gg flags whether `Vanguard`'s Charge-in-Defensive-Stance works mid-combat as unverified on the live beta, not confirmed either way.
 :::
 ## Is Protection worth levelling?
-**Slower solo, and the best of the three if you are running dungeons.** The published assessment holds both halves at once: *"extremely slow when it comes to solo leveling"* and *"takes less damage and can handle dangerous pulls more safely, which makes solo leveling more forgiving."* Fewer kills per minute, far less time sitting down.
+**Slower solo, and the best of the three if you are running dungeons.** Icy Veins holds both halves at once: *"extremely slow when it comes to solo leveling,"* but *"takes less damage and can handle dangerous pulls more safely."* This makes solo levelling more forgiving even while it's slower, and its Levelling score (2.5/5) is the highest of the three Warrior specs on Icy Veins' scale. Fewer kills per minute, far less time sitting down.
 Worth knowing before you commit: **a full Protection spec is not required to tank at low level.**
 ## Your talent points
-**Level 20: 0/0/11.** Two published builds agree on the first seven points and differ on the rest.
+**Level 20: 0/0/11.** Wowhead and Icy Veins agree on the first ten points and split on the last.
 1. `Shield Specialization`, 5 points, taken mainly for **5 rage on every block**
-2. `Improved Bloodrage`, 2 points
-3. Then either **`Improved Thunder Clap` 3** for more area threat, or **`Anticipation` 3** for Defense
-4. `Master of Defense`, 1 point — **a 50% chance** of 5 rage on a dodge or parry
+2. **`Improved Thunder Clap`, 3 points** for cheaper area threat, now usable in Defensive Stance
+3. `Improved Bloodrage`, 2 points
+4. The eleventh point is where the two sources part ways. **Icy Veins** spends it on `Master of Defense` for **a 50% chance** of 5 rage on a dodge or parry. **Wowhead** puts it in `Improved Revenge` instead (+20% Revenge damage) and explicitly argues against `Master of Defense` at level 20, reasoning that ~10% total avoidance makes its proc too rare to be worth a point yet; Wowhead names `Last Stand` as its own stated alternative for that point.
 **Level 30: 0/0/21**, reaching `Vanguard`: `Shield Specialization` 5, `Anticipation` 4, `Improved Bloodrage` 2, `Master of Defense` 2, `Defiance` 3, `Improved Sunder Armor` 3, `Vanguard` 1, `Bastion` 1. `Concussion Blow` is a strong alternative for that last point.
 ## Rotation
 1. **[[Battle Shout]]** always up, **[[Bloodrage]]** between pulls
@@ -25,15 +26,14 @@ Worth knowing before you commit: **a full Protection spec is not required to tan
 **Multi-target is the payoff, and it is why the rage talents matter:** with the recommended build you can afford far more [[Thunder Clap]] and [[Cleave]] than a Warrior otherwise could.
 Differences from the damage specs: **[[Revenge]] replaces [[Overpower]]**, and [[Rend]] and [[Slam]] drop out entirely.
 ## Stat priority
-Weapon damage, **Hit**, Strength, Agility, Armor, Stamina, then crit, crit above Agility if you care only about threat.
-A second published view weights it differently and is worth holding beside that one: **armour and Stamina first, then Defense**, and on the weapon **the slowest swing wins**, because [[Heroic Strike]] adds the same damage regardless of speed, so a slow one-hander is more threat for the same rage.
+Weapon damage, **Hit**, Strength, Agility, Armor, Stamina, then crit, crit above Agility if you care only about threat (Icy Veins' published order).
 **Hit now improves [[Taunt]] reliability**, which is a Forever-specific reason to value it.
 ## What defines Protection
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
 | **`Shield Specialization`** | maxed by 14 | +5% block and a **100% chance of 5 rage on block**. Classic gave 1 rage |
-| **`Master of Defense`** | 20 | **A 50% chance per rank** of 5 rage on a dodge or parry with a shield, over two ranks. Both published level-20 builds are named after it |
-| **`Vanguard`** | 25 | [[Charge]] usable in Defensive Stance, still not in combat |
+| **`Master of Defense`** | 20 | **A 50% chance per rank** of 5 rage on a dodge or parry with a shield, over two ranks. Icy Veins' level-20 build takes it; Wowhead's does not |
+| **`Vanguard`** | 25 | [[Charge]] usable in Defensive Stance. Whether that extends to mid-combat is unverified on the live beta (see scope) |
 | **`Shield Slam`** | 40 | The capstone, and heavily buffed — 421–439 against Classic's 225–235 |
 ## What Forever changed for Protection
 - **[[Thunder Clap]] is usable in Defensive Stance**, and **`Improved Thunder Clap` moved in from Arms** with its rage reduction doubled. This is described as one of the largest improvements the spec received.
@@ -42,4 +42,4 @@ A second published view weights it differently and is worth holding beside that 
 - **`Improved Revenge` no longer grants a stun**: it gives +60% Revenge damage instead, and [[Concussion Blow]] carries the stun now.
 - `Improved Taunt` and `Improved Shield Block` are gone from the tree because **both effects became baseline**: [[Taunt]]'s cooldown is 8 seconds without a point, and [[Shield Block]] blocks 2 attacks over 7 seconds where Classic blocked 1 over 5. You lose the talents and keep the effects.
 ## At level 60
-Unknown. Whether shield-only tanking holds up now that the threat talents are shield-gated is untested, and the published stat ordering is explicitly called a rough ranking that *"will change largely depending on the gear you have available."*
+Unknown. Whether shield-only tanking holds up now that the threat talents are shield-gated is untested, and Icy Veins is explicit that its stat priority and gear picks are Level 20 snapshots, not an endgame ranking — Forever reworked dungeon loot and item stats wholesale, so nothing past 20 has been playtested by any of the three sources.

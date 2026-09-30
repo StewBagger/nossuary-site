@@ -1,7 +1,8 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Level 20 Arms Warrior|https://www.wowhead.com/forever/guide/classes/warrior/arms/level-20-dps-overview ;; Wowhead — Level 20 Fury Warrior|https://www.wowhead.com/forever/guide/classes/warrior/fury/level-20-dps-overview ;; Wowhead — Level 20 Protection Warrior|https://www.wowhead.com/forever/guide/classes/warrior/protection/level-20-tank-overview ;; Icy Veins — Warrior Class Overview|https://www.icy-veins.com/wow-forever/warrior-class-overview ;; ClassicWoW.gg — Warrior|https://classicwow.gg/forever/guides/warrior
 
-Warrior is the slowest class to level in Forever and one of the strongest once geared. Rage now comes from weapon speed rather than damage dealt, and a critical hit no longer grants bonus rage on top of the swing.
+Icy Veins rates Warrior one of the harder classes to level and one of the strongest once geared. Wowhead takes the opposite tone on the levelling itself — Forever's changes make Arms "feel phenomenal," a deliberate contrast with Vanilla's reputation. Rage now comes from weapon speed rather than damage dealt, and a critical hit no longer grants bonus rage on top of the swing.
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Warrior build has been tested by anyone.** Talent trees and ability training levels below are read from the beta client and are solid; anything about endgame is not, and we have left it out rather than guessed.
 :::
@@ -9,9 +10,10 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 | Spec | Role | Levelling | In one line |
 | --- | --- | --- | --- |
 | **[Arms](/guides/wow-forever/warrior/arms/)** | Melee DPS | Viable, slower | Two-handed bleeds and burst, but its engine is level 30+ |
-| **[Fury](/guides/wow-forever/warrior/fury/)** | Melee DPS | **Best of the three** | Dual-wield rage dump, though you cannot dual wield until 20 |
+| **[Fury](/guides/wow-forever/warrior/fury/)** | Melee DPS | Tied with Arms at 20 | Dual-wield rage dump, though you cannot dual wield until 20 |
 | **[Protection](/guides/wow-forever/warrior/protection/)** | Tank | Slower solo, best in dungeons | Shield tanking, and the tree is now shield-gated |
 **An honest note that saves you a respec: at level 20 all three published Warrior builds are nearly the same.** The Arms and Fury level-20 builds are *identical*, eleven points in the Fury tree, because nothing in Arms is worth reaching yet. Pick by what you want at 30 and beyond, not by what you can feel at 20.
+**No source names an outright best leveller among the three specs, and the one number available cuts against instinct.** Icy Veins scores each spec's Level 20 toolkit for Levelling out of 5: Arms and Fury tie at 2.0, and Protection actually rates higher at 2.5, because its survivability offsets slower kills on their scale.
 ## Is Warrior for you?
 Play Warrior if you want to watch the enemy rather than your own bars, and you do not mind a hard first thirty levels in exchange for being formidable later.
 :::strengths
@@ -20,14 +22,14 @@ Play Warrior if you want to watch the enemy rather than your own bars, and you d
 - No resource to manage before a fight starts, you begin at zero and build
 :::
 :::weaknesses
-- Both published guides rate it the worst leveller in the game
+- Icy Veins rates it one of the harder classes to level, especially once your weapon falls behind
 - No self-heal until [[Victory Rush]] at level 20, and no ranged attack worth the name
 - Utterly dependent on keeping your weapon current
 :::
 :::new
 **Is the rotation simple?** Yes, four or five buttons while levelling, and you react rather than follow a sequence.
 **Is it forgiving?** No. Pulling two enemies alone will often kill you, and you have no escape.
-**Does it level well?** It is the slowest. Expect to sit and eat often before level 20.
+**Does it level well?** Icy Veins calls it one of the harder classes; Wowhead calls Forever's changes a big improvement on Classic. Expect to sit and eat often before level 20.
 **Does it need a group?** It benefits more than any other class. A Warrior with a healer is transformed.
 :::
 ## Levelling milestones
@@ -40,7 +42,7 @@ Play Warrior if you want to watch the enemy rather than your own bars, and you d
 | 12 | [[Overpower]], [[Shield Bash]] — **your only interrupt until [[Pummel]] at 38**, so keep a shield in the bag |
 | 14 | **[[Tactical Mastery]] is now trained, not a talent**, it retains 10 rage through a stance change |
 | 16 | [[Shield Block]], now **2 attacks over 7 seconds**, was 1 over 5 |
-| **20** | **[[Victory Rush]], new**, free, and heals 10% of max health. **Dual wield unlocks.** [[Cleave]] and [[Retaliation]] as in Classic, both re-tuned, and **[[Slam]] trained earlier, but it now carries an 18-second cooldown it never had.** Eleventh talent point |
+| **20** | **[[Victory Rush]], new**: free, heals 10% of max health, usable within 20 sec of a kill, and has its own 30-second cooldown (Icy Veins) so it will not proc on every kill. **Dual wield unlocks.** [[Cleave]] and [[Retaliation]] as in Classic, both re-tuned, and **[[Slam]] trained earlier, but it now carries a 15-second cooldown it never had.** Eleventh talent point |
 | 24 | [[Execute]] |
 | **30** | **Second class quest — [[Berserker Stance]]**, [[Intercept]]. Twenty-first talent point |
 | 36 | [[Whirlwind]] |
@@ -70,4 +72,4 @@ Play Warrior if you want to watch the enemy rather than your own bars, and you d
 | The three major cooldowns no longer share a lockout | But only Retaliation and Shield Wall dropped to 15 minutes; **Recklessness is still 30** |
 | Plate armour at 40 | Cloth, leather and mail until then |
 ## At level 60
-Unknown, and we will not guess. No source publishes a Warrior build past level 30. Rage generation is currently low enough that one published guide says outright you *"will be struggling to press buttons on cooldown in endgame content, but this is likely to change before launch."* Raids open December 9.
+Unknown, and we will not guess. No source publishes a Warrior build past level 20 — the beta itself has not gone further yet. Icy Veins flags Fury as the spec hit hardest by the rage rework and says outright: *"we are unsure currently if there will be additional ways to generate Rage at Level 60, as these changes alone greatly reduce Fury Warrior's Rage generation."* Raids open December 9.

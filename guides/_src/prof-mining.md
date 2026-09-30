@@ -7,7 +7,7 @@ Vein types, skill thresholds and camp objects are read from the beta client and 
 :::
 ## Is Mining worth taking?
 **Yes, as a money profession**: more so than in vanilla, because Waylaid Crates give low-level ore a guaranteed buyer it never had.
-Mining crafts nothing itself; its entire value is feedstock and gold. It also **earns no Legacy Points**, since only the six crafting professions do. If you are chasing the 16-point cap, this is the wrong pick.
+Mining crafts nothing itself; its entire value is feedstock and gold. It also **earns no Legacy Points**, since only the six crafting professions do. If you are chasing the 18 Tradeskill points, this is the wrong pick.
 **The real argument beyond gold is the camp object.** [[Lodestone]] at skill 20 gives **90 melee attack power** to everyone sitting nearby, the same effect as [[Blessing of Might]]. A melee group without a Paladin wants a miner at the fire.
 ## What it pairs with
 **Mining with Blacksmithing, or Mining with Engineering.** Both still hold; both of those professions eat ore and have no other feed. Nothing published suggests Forever changed that.
@@ -40,7 +40,7 @@ Byte-for-byte identical to Classic. **No vein is flagged as new.**
   | --- | --- | --- |
   | 20 | **[[Lodestone]]** | **90 melee attack power** nearby. Exclusive with [[Blessing of Might]] |
   | 140 | [[Rock Garden]] | Blueprint. **Spawns a common mining node over time**, and keeps the Lodestone buff |
-  | 300 | [[Molten Foundry]] | Blueprint. **Gates the most advanced Blacksmithing recipes** |
+  | 300 | [[Molten Foundry]] | Blueprint. Required by recipes that call for it, and keeps the Lodestone buff |
 - **Ore now buys recipes.** Waylaid Crates take raw ore, converting it into [Merchant's Favor](/guides/wow-forever/professions/merchants-favor/). Low-level ore has a price floor it never had.
 - **`Bountiful Harvest`**, a Legacy perk, gives up to **+100% more Scarce materials** from Mining, Herbalism and Skinning across five ranks.
 - **There is no Mining specialisation.** Claims that you can specialise into extra ore or rare materials are not in the client data. Do not go looking.

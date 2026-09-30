@@ -1,9 +1,10 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Level 20 Enhancement Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-20-dps-overview ;; Icy Veins — Enhancement Shaman PvE Guide|https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide ;; ClassicWoW.gg — Enhancement Shaman|https://classicwow.gg/forever/guides/shaman/enhancement
 
 Melee weapon damage that feeds your spellcasting: [[Stormstrike]] and `Maelstrom Weapon` turn swings into [[Lightning Bolt]]s. **The Shaman levelling spec**, and the one build two independent sources publish identically.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Enhancement build has been tested. Talent rows unlock at levels 10, 15, 20, 25, 30, 35 and 40. **Every tree now has a single-point talent in row 4, the new 16-point milestone.**
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Enhancement build has been tested. Talent rows unlock at levels 10, 15, 20, 25, 30, 35 and 40. **Every tree now has a single-point talent in row 4, the new 16-point milestone.** No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Enhancement worth levelling?
 **Yes, and the published agreement is unusually clear:** *"Due to its added mobility, Enhancement will remain the preferred open world leveling spec."*
@@ -18,7 +19,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 **Take `Improved Ghost Wolf` last on that row:** *"Put points in this last on the row, since [[Ghost Wolf]] only unlocks at Level 20."* Points in it before then do nothing.
 **A third source disagrees on those two points** and spends them on `Improved Lightning Shield` instead, which is reasonable for a dungeon build where travel form is worthless. Its PvP list takes `Improved Ghost Wolf` 2 plus `Earth's Grasp` 2 and only `Thundering Strikes` 3.
 **A published mana alternative, with a warning attached:** *"Due to the Mana concerns at Level 20, there is an alternative build that goes into Restoration to reach both `Mindfulness` & [[Water Shield]]… once the cap increases this path will prevent you from reaching deeper into the Enhancement tree without a costly respec."*
-**Level 30: 0/21/0**, in order: `Thundering Strikes` 5 → `Mental Dexterity` 3 → `Improved Ghost Wolf` 2 → `Shamanistic Focus` 1 → `Elemental Weapons` 3 → `Ancestral Knowledge` 1 → **[[Stormstrike]]** → `Flurry` 4 → `Improved Stormstrike` 1.
+**Level 30: 0/21/0 — our own extension**, in order: `Thundering Strikes` 5 → `Mental Dexterity` 3 → `Improved Ghost Wolf` 2 → `Shamanistic Focus` 1 → `Elemental Weapons` 3 → `Ancestral Knowledge` 1 → **[[Stormstrike]]** → `Flurry` 4 → `Improved Stormstrike` 1.
 ## Rotation
 1. **Imbue your weapon: [[Rockbiter Weapon]] solo, [[Flametongue Weapon]] in groups**
 2. **[[Lightning Shield]]** up before you engage
@@ -27,7 +28,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 5. **[[Earth Shock]]** solo, or [[Frost Shock]] once you learn it. **In groups, alternate [[Flame Shock]] and [[Frost Shock]] to hold your threat down**
 6. **[[Fire Nova]]** with an active Fire totem
 7. **Auto-attack**: most of your damage
-**From 30, insert [[Stormstrike]]** before your [[Lightning Bolt]] or [[Earth Shock]]: 8-second cooldown, +20% for 12 seconds.
+**From 25, insert [[Stormstrike]]** before your [[Lightning Bolt]] or [[Earth Shock]]: 8-second cooldown, +20% for 12 seconds.
 **Multi-target: [[Fire Nova]], and it is *"extremely Mana hungry."*** Take that literally: *"especially early, Enhancement really needs to be engaging things one at a time."*
 ## Stat priority
 Weapon DPS on a **slow two-hander**, then Hit and Expertise, critical strike, Strength, Intellect, Agility, Spell Power, Spirit, Stamina.
@@ -43,7 +44,7 @@ Weapon DPS on a **slow two-hander**, then Hit and Expertise, critical strike, St
 - **Weapon imbues last 60 minutes instead of 5. Totems last 5 minutes instead of 2 and reach 30 yards instead of 20.** Unglamorous, and it affects how you play more than any single talent.
 - **New:** `Mental Dexterity`, `Shamanistic Focus` (−45% mana on Shocks and [[Lightning Shield]]), `Mental Quickness`, `Improved Stormstrike`, `Maelstrom Weapon`, `Rage of the Farseer`, and **`Spirit Weapons`**. **Removed:** `Two-Handed Axes and Maces` (now known without a talent), **`Parry`** (whose slot `Spirit Weapons` took), `Shield Specialization`, `Weapon Mastery`, `Enhancing Totems`, `Improved Weapon Totems`.
 - **`Improved Ghost Wolf` now does two things:** 3.0 seconds off the cast at 2/2, making [[Ghost Wolf]] **instant**, and indoor use. **The spell itself is unchanged from Classic**; both halves live in the talent.
-- **`Rage of the Farseer` no longer increases casting speed** as of September 24. One site still says it does; that page is stale.
+- **`Rage of the Farseer` no longer increases casting speed** as of September 24, per Wowhead's own spell data. ClassicWoW.gg's talent tooltip and FAQ still say it boosts casting speed too; that data is stale.
 - **A capstone conflict:** `Rage of the Farseer` needs **31 Enhancement** points and `Nature's Swiftness` needs **21 Restoration**: 52 against a 51-point budget. **They cannot coexist.** The same arithmetic blocks [[Lava Burst]] plus `Nature's Swiftness`.
 - **Hit and critical strike are now unified** across spell, melee and ranged, and Blizzard names Enhancement Shaman as a beneficiary.
 ## On Enhancement tanking

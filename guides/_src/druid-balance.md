@@ -1,9 +1,10 @@
 updated: September 30, 2026
 build: 1.60.1.70124
+sources: Wowhead — Level 20 Balance Druid Guide|https://www.wowhead.com/forever/guide/classes/druid/balance/level-20-dps-overview ;; Icy Veins — Balance Druid|https://www.icy-veins.com/wow-forever/balance-druid-ranged-dps-pve-guide ;; ClassicWoW.gg — Balance Druid|https://classicwow.gg/forever/guides/druid/balance
 
 Arcane and Nature caster with the new `Eclipse` mechanic — [[Wrath]] shortens your next [[Starfire]], so you alternate rather than spam one spell.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Balance build has been tested. **[[Moonkin Form]] is the 31-point capstone**, which means level 40 — **nobody in the beta has ever been in it**, at any cap.
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Balance build has been tested. **[[Moonkin Form]] is the 31-point capstone**, which means level 40 — **nobody in the beta has ever been in it**, at any cap. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Balance worth levelling?
 **Viable but slower than Feral.** The published verdict: *"Balance Druid is an ok levelling choice. It does have a bit more downtime than Feral Druid would, but the larger range on your abilities can make tagging mobs much easier… Expect to start out very slowly though."*
@@ -13,7 +14,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 **Build A**, with the order published: `Improved Wrath` 5/5 → `Nature's Reach` 2/2 → `Moonglow` 3/3 → `Improved Moonfire` 1/2. The reasoning given for `Improved Wrath` over `Nature's Focus` is that *"you generally end up with a better effective cast time anyway and the mana savings are very significant"*, and `Nature's Reach` is taken because it *"will reduce the chances your spells miss by a significant amount"* as well as extending [[Moonfire]]'s range for tagging.
 **Build B:** `Improved Wrath` 5 / `Moonglow` 3 / `Nature's Majesty` 2 / `Nature's Reach` 1 — *"You'll never run out of mana with these talents."*
 **Build C**, a dungeon list: `Improved Wrath` 5 / `Moonglow` 3 / `Nature's Majesty` 1 / `Nature's Reach` 2.
-**Level 30: 21/0/0**, one published build: `Improved Wrath` 5 · `Moonglow` 3 · `Nature's Majesty` 2 · `Nature's Reach` 2 · `Improved Moonfire` 2 · `Nature's Splendor` 1 · **[[Insect Swarm]] 1** · `Improved Starfire` 5. A second takes `Genesis` 5 and `Nature's Grace` instead of `Improved Starfire`.
+**Level 30: 21/0/0 — our own extension, not a published build.** No source has posted one. Taking it on the tree's point costs: `Improved Wrath` 5 · `Moonglow` 3 · `Nature's Majesty` 2 · `Nature's Reach` 2 · `Improved Moonfire` 2 · `Nature's Splendor` 1 · **[[Insect Swarm]] 1** · `Improved Starfire` 5. A legal alternative swaps `Improved Starfire` for `Genesis` 5 and `Nature's Grace`.
 ## Rotation
 The honest version: at these levels it is short.
 1. **Apply and maintain [[Moonfire]]**
@@ -29,7 +30,7 @@ Item level, then Spell Power, Intellect, Haste, critical strike, Spirit.
 | --- | --- | --- |
 | **`Eclipse`** | **30** | New. [[Wrath]] cuts the cast time of your next 2 [[Starfire]]s — 0.50 s at 3/3, 4 charges, 15 seconds. **No crit required**, which is what replaces Classic's Starfire spam with genuine alternation |
 | **`Nature's Grace`** | ~30 | **Rewritten**: now +10% casting speed *and* −10% global cooldown for 3 seconds on a **non-periodic** crit. Damage-over-time crits do not trigger it |
-| **[[Moonkin Form]]** | **40** | The 31-point capstone. Unreachable in the beta |
+| **[[Moonkin Form]]** | **40** | The 31-point capstone. Also raises armour from items by 360% while shapeshifted. Unreachable in the beta |
 ## What Forever changed for Balance
 - **`Eclipse` is new**, and it is the spec's identity.
 - **[[Moonkin Form]]'s aura is now all critical strike**: spell *and* melee, within **45 yards**, up from spell crit at 30. It is **mutually exclusive with `Leader of the Pack`**, it doubles [[Omen of Clarity]]'s proc chance, and **you cannot cast healing spells in it** (Classic allowed only Balance spells, which is a different restriction).
