@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The WoW: Forever guild roster (js/roster.js). Hand-written, not generated:
+       tools/build_guides.py renders the class guides and nothing else.
+       Everything the roster document returns is written with textContent; nothing is ever
+       inserted as HTML. connect-src must name the origin of rosterUrl in js/config.js
+       (tests/roster.test.mjs checks it). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://nossuary-status.stewbagger.workers.dev; img-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" content="#0b0d0c">
+  <title>Guild roster · WoW: Forever · Null Ossuary</title>
+  <meta name="description" content="Who is playing what in Null Ossuary's WoW: Forever guild — by class, by profession and by role, for Alliance and Horde. Launches 4 November 2026.">
+  <link rel="canonical" href="https://nossuary.com/roster/">
+  <meta property="og:title" content="Guild roster · WoW: Forever · Null Ossuary">
+  <meta property="og:description" content="Who is playing what in Null Ossuary's WoW: Forever guild — by class, by profession and by role, for Alliance and Horde. Launches 4 November 2026.">
+  <meta property="og:image" content="https://nossuary.com/assets/guides/wow-forever/og-1200x630.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/style.css?v=20260930-3">
+  <link rel="stylesheet" href="/css/roster.css?v=20260930-3">
+  <!-- ?v= is this page's build stamp: bump it on every reference here whenever roster.css,
+       roster.js, style.css or config.js changes (tests/roster.test.mjs fails if they disagree). -->
+  <script src="/js/config.js?v=20260930-3" defer></script>
+  <script type="module" src="/js/roster.js?v=20260930-3"></script>
+</head>
+<body class="forum roster">
+  <a class="skip" href="#roster-main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <a class="brand" href="/" aria-label="Null Ossuary home">
+      <img src="/assets/emblem-256.webp" alt="" width="36" height="36">
+      <span>Null Ossuary</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="/#play">Play</a></li>
+        <li><a href="/#mods">Mods</a></li>
+        <li><a href="/forums/">Forums</a></li>
+        <li><a href="/guides/wow-forever/">Guides</a></li>
+        <li><a href="/roster/" aria-current="page">Roster</a></li>
+        <li><a href="/#support">Support</a></li>
+        <li><a href="/#work">Workshop</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a class="btn btn-sm" href="https://discord.gg/PtMaTp385b" target="_blank" rel="noopener">Join Discord</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="forum-page">
+    <section class="forum-hero" aria-labelledby="roster-title">
+      <div class="wrap">
+        <p class="eyebrow">WoW: Forever</p>
+        <h1 id="roster-title">Guild roster</h1>
+        <p class="lede">Who is playing what when the servers open — by class, by profession and by
+          role, for both factions. Published from the sign-up sheet; it changes as people change
+          their minds, which they will.</p>
+      </div>
+    </section>
+
+    <div class="wrap forum-wrap" id="roster-main">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Guild roster</li>
+        </ol>
+      </nav>
+
+      <p class="rs-meta">
+        <span class="rs-meta-badge">WoW: Forever</span>
+        <span id="roster-updated" class="rs-loading">Loading the roster…</span>
+        <span id="roster-launch">Launches 4 November 2026</span>
+      </p>
+
+      <p id="roster-note" class="forum-status forum-status-warn" role="status" hidden></p>
+
+      <noscript>
+        <p class="forum-status forum-status-warn">The roster is published as a live document and
+          needs JavaScript to read it. WoW: Forever launches 4 November 2026 — the Discord has the
+          same list.</p>
+      </noscript>
+
+      <div id="roster-empty" class="rs-intro" hidden>
+        <h2>Nobody has signed up yet</h2>
+        <p>This page is the guild's roster for <strong>World of Warcraft: Forever</strong>, which
+          launches <strong>4 November 2026</strong>. Once members start declaring a faction, a race
+          and a class, they appear here — and so does the thing the guild actually needs to know:
+          which professions and which roles nobody has covered.</p>
+        <p class="muted">Sign up in the Discord. You can be listed by name or not; either way you
+          are counted.</p>
+      </div>
+
+      <div id="roster-totals" class="rs-totals" hidden>
+        <dl class="rs-figures">
+          <div>
+            <dt>Members</dt>
+            <dd data-count="members">—</dd>
+          </div>
+          <div>
+            <dt>Characters</dt>
+            <dd data-count="characters">—</dd>
+          </div>
+        </dl>
+        <p id="roster-anon" class="muted small"></p>
+        <p id="roster-unplaced" class="muted small" hidden></p>
+      </div>
+
+      <section class="rs-faction rs-alliance" data-faction="Alliance" aria-labelledby="alliance-h">
+        <div class="rs-faction-head">
+          <h2 id="alliance-h">Alliance</h2>
+          <dl class="rs-figures rs-figures-inline">
+            <div>
+              <dt>Members</dt>
+              <dd data-count="members">—</dd>
+            </div>
+            <div>
+              <dt>Characters</dt>
+              <dd data-count="characters">—</dd>
+            </div>
+          </dl>
+        </div>
+        <p class="muted small" data-anon hidden></p>
+
+        <div class="rs-tabs" role="tablist" aria-label="Alliance roster views">
+          <button type="button" role="tab" id="alliance-tab-class" aria-controls="alliance-class" aria-selected="true">By class</button>
+          <button type="button" role="tab" id="alliance-tab-profession" aria-controls="alliance-profession" aria-selected="false" tabindex="-1">By profession</button>
+          <button type="button" role="tab" id="alliance-tab-role" aria-controls="alliance-role" aria-selected="false" tabindex="-1">By role</button>
+        </div>
+        <div class="rs-panel" role="tabpanel" id="alliance-class" data-view="class" aria-labelledby="alliance-tab-class" tabindex="0">
+          <p class="rs-loading muted">Loading…</p>
+        </div>
+        <div class="rs-panel" role="tabpanel" id="alliance-profession" data-view="profession" aria-labelledby="alliance-tab-profession" tabindex="0" hidden>
+          <p class="rs-loading muted">Loading…</p>
+        </div>
+        <div class="rs-panel" role="tabpanel" id="alliance-role" data-view="role" aria-labelledby="alliance-tab-role" tabindex="0" hidden>
+          <p class="rs-loading muted">Loading…</p>
+        </div>
+      </section>
+
+      <section class="rs-faction rs-horde" data-faction="Horde" aria-labelledby="horde-h">
+        <div class="rs-faction-head">
+          <h2 id="horde-h">Horde</h2>
+          <dl class="rs-figures rs-figures-inline">
+            <div>
+              <dt>Members</dt>
+              <dd data-count="members">—</dd>
+            </div>
+            <div>
+              <dt>Characters</dt>
+              <dd data-count="characters">—</dd>
+            </div>
+          </dl>
+        </div>
+        <p class="muted small" data-anon hidden></p>
+
+        <div class="rs-tabs" role="tablist" aria-label="Horde roster views">
+          <button type="button" role="tab" id="horde-tab-class" aria-controls="horde-class" aria-selected="true">By class</button>
+          <button type="button" role="tab" id="horde-tab-profession" aria-controls="horde-profession" aria-selected="false" tabindex="-1">By profession</button>
+          <button type="button" role="tab" id="horde-tab-role" aria-controls="horde-role" aria-selected="false" tabindex="-1">By role</button>
+        </div>
+        <div class="rs-panel" role="tabpanel" id="horde-class" data-view="class" aria-labelledby="horde-tab-class" tabindex="0">
+          <p class="rs-loading muted">Loading…</p>
+        </div>
+        <div class="rs-panel" role="tabpanel" id="horde-profession" data-view="profession" aria-labelledby="horde-tab-profession" tabindex="0" hidden>
+          <p class="rs-loading muted">Loading…</p>
+        </div>
+        <div class="rs-panel" role="tabpanel" id="horde-role" data-view="role" aria-labelledby="horde-tab-role" tabindex="0" hidden>
+          <p class="rs-loading muted">Loading…</p>
+        </div>
+      </section>
+
+      <section class="rs-legend" aria-labelledby="legend-h">
+        <h2 id="legend-h" class="rs-subhead-h">How to read this</h2>
+        <ul>
+          <li><strong>Priority</strong> is how firm the intention is. A <em>1st pick</em> is what
+            someone means to play; a 2nd or 3rd pick is a maybe. Weaker picks are shown more
+            quietly, and they are never left out of a count.</li>
+          <li><strong>“a member”</strong> is a real person who asked not to be listed by name.
+            They are in every table and every total.</li>
+          <li><strong>gap</strong> marks a profession or a role nobody has taken. Those rows stay
+            on the page precisely because they are empty.</li>
+          <li>A class colour is decoration — the class name is always written out beside it.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span class="brand">
+        <img src="/assets/emblem-256.webp" alt="" width="28" height="28" loading="lazy">
+        <span>Null Ossuary</span>
+      </span>
+      <span class="muted small">WoW: Forever guild roster · <a href="/">nossuary.com</a> · <a href="/guides/wow-forever/">Class guides</a> · World of Warcraft is a trademark of Blizzard Entertainment; not affiliated.</span>
+    </div>
+  </footer>
+</body>
+</html>

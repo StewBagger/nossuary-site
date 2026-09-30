@@ -1,0 +1,219 @@
+/* WoW: Forever guild roster (/roster/). Loaded ONLY by that page, the arrangement
+   css/guides.css uses, so style.css keeps its own ?v= stamp and no other page is touched.
+
+   Every colour here comes from style.css's custom properties. The ONE exception is
+   --class-accent, which is per-character data from the roster document: js/roster.js sets it
+   through the CSSOM (never a style attribute — this page runs style-src 'self', which drops
+   an inline style outright) after checking it is a plain hex triplet, and every rule below
+   falls back to --phosphor when it was not set. A colour is never the only carrier of
+   meaning: the class NAME sits beside every accent. */
+
+.roster { --class-accent: var(--phosphor); }
+
+/* --- The line under the crumbs ------------------------------------------ */
+/* Version, freshness and the launch date on one line, the way the guides' .guide-meta works:
+   a reader who can see what a page reflects forgives it being provisional. */
+.rs-meta {
+  display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center;
+  margin: 0 0 26px; padding: 0 0 18px;
+  border-bottom: 1px solid rgba(47, 56, 52, .5);
+  font: 500 .76rem/1.4 var(--mono); letter-spacing: .06em;
+  text-transform: uppercase; color: var(--grey);
+}
+.rs-meta-badge {
+  color: var(--phosphor); border: 1px solid currentColor;
+  border-radius: 4px; padding: 3px 7px;
+}
+.rs-meta #roster-launch { color: var(--amber); }
+
+/* --- Empty state -------------------------------------------------------- */
+/* Before launch this is the whole page, so it has to read as a finished thing rather than
+   as a table that failed to load. */
+.rs-intro {
+  max-width: 74ch; margin: 0 0 36px; padding: 24px 26px;
+  border: 1px solid var(--line); border-radius: 14px;
+  background: linear-gradient(180deg, var(--stone) 0%, var(--bg-2) 100%);
+}
+.rs-intro h2 { font-size: 1.5rem; margin-bottom: .6em; }
+.rs-intro p:last-child { margin-bottom: 0; }
+
+/* --- Totals ------------------------------------------------------------- */
+.rs-totals { margin: 0 0 40px; }
+.rs-figures {
+  display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 12px; padding: 0;
+}
+.rs-figures > div {
+  min-width: 132px; padding: 14px 18px;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: linear-gradient(180deg, var(--stone) 0%, var(--bg-2) 100%);
+}
+.rs-figures dt {
+  font: 600 .66rem/1 var(--mono); letter-spacing: .16em; text-transform: uppercase;
+  color: var(--grey); margin-bottom: 8px;
+}
+.rs-figures dd {
+  margin: 0; font: 600 1.6rem/1 var(--serif); color: var(--bone);
+}
+.rs-figures-inline > div { min-width: 104px; padding: 10px 14px; }
+.rs-figures-inline dd { font-size: 1.25rem; }
+.rs-totals p { margin: 0 0 6px; max-width: 74ch; }
+
+/* --- A faction ---------------------------------------------------------- */
+/* Two sections, never one table with a faction column: the two halves of the guild never
+   play together, and every count a reader wants is a per-faction count. */
+.rs-faction {
+  margin: 0 0 52px; padding: 24px 0 0;
+  border-top: 1px solid rgba(47, 56, 52, .5);
+}
+/* The two factions are told apart by their headings and their own counts, not by a colour:
+   a faction tint here would be the one hardcoded palette on the page, and it would compete
+   with the nine class accents, which ARE data. */
+.rs-faction h2 { margin: 0; }
+.rs-faction-head {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 14px 24px; margin: 0 0 12px;
+}
+.rs-faction-head .rs-figures { margin: 0; }
+
+/* --- View switch -------------------------------------------------------- */
+/* The same bar shape as the guides' .spec-nav, because it does the same job: one reader
+   wants the class spread, another wants profession coverage, and neither should wait for
+   a page load to get it. */
+.rs-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 20px; }
+.rs-tabs button {
+  padding: 8px 15px; border-radius: 999px;
+  border: 1px solid var(--line); background: #070908;
+  font: 600 .84rem/1 var(--sans); color: var(--bone-dim); cursor: pointer;
+  transition: border-color .15s ease, color .15s ease, background .15s ease;
+}
+.rs-tabs button:hover { color: var(--class-accent); border-color: var(--class-accent); }
+.rs-tabs button[aria-selected="true"] {
+  color: var(--bg); background: var(--class-accent); border-color: var(--class-accent);
+}
+.rs-panel:focus-visible { outline: 2px solid var(--phosphor); outline-offset: 6px; }
+.rs-empty { margin: 8px 0 0; }
+
+/* --- Tables ------------------------------------------------------------- */
+/* Wide tables scroll rather than squash — the .guide-table arrangement from css/guides.css.
+   Real table semantics throughout: a row header per class, per profession and per role. */
+.rs-table { overflow-x: auto; margin: 0 0 26px; }
+.rs-table table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.rs-table th, .rs-table td {
+  text-align: left; padding: 10px 16px 10px 0;
+  border-bottom: 1px solid rgba(47, 56, 52, .55); vertical-align: top;
+}
+.rs-table thead th {
+  font: 600 .72rem/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--grey); white-space: nowrap;
+}
+.rs-table tbody th { font: 600 .92rem/1.5 var(--sans); color: var(--bone); }
+.rs-table tbody tr:last-child td, .rs-table tbody tr:last-child th { border-bottom: 0; }
+.rs-table:focus-visible { outline: 2px solid var(--phosphor); outline-offset: 3px; }
+
+/* A weaker intention reads more quietly — and is still fully there. Dimmed with the site's
+   own secondary text colour rather than opacity, so it stays legible. */
+.rs-row-quiet td, .rs-row-quiet th { color: var(--bone-dim); }
+.rs-row-quiet .rs-class-name { color: var(--bone-dim); }
+.rs-row-quiet .rs-dot { box-shadow: none; opacity: .6; }
+.rs-row-gap th { color: var(--amber); }
+
+/* How firm the intention is, in words — never a colour on its own. Every row states one,
+   including the firmest, so a reader never has to work out what an absent badge meant. */
+.rs-badge {
+  display: inline-block; white-space: nowrap;
+  font: 600 .66rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase;
+  border: 1px solid var(--line); border-radius: 4px; padding: 4px 6px;
+  color: var(--bone-dim);
+}
+.rs-badge-primary { color: var(--phosphor); border-color: rgba(91, 242, 154, .35); }
+.rs-badge-secondary { color: var(--bone-dim); }
+.rs-badge-tertiary, .rs-badge-unstated { color: var(--grey); border-style: dashed; }
+
+/* --- Class accents ------------------------------------------------------ */
+.rs-class { display: inline-flex; align-items: baseline; gap: 8px; }
+.rs-dot {
+  flex: none; width: 9px; height: 9px; border-radius: 50%;
+  background: var(--class-accent, var(--phosphor));
+  box-shadow: 0 0 8px -1px var(--class-accent, var(--phosphor));
+  transform: translateY(-1px);
+}
+.rs-class-name { color: var(--bone); text-decoration: none; }
+a.rs-class-name { text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
+a.rs-class-name:hover { color: var(--class-accent, var(--phosphor)); text-decoration-color: currentColor; }
+
+/* --- The class spread --------------------------------------------------- */
+.rs-spread {
+  list-style: none; margin: 0 0 22px; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.rs-spread li {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px;
+  background: #070908; font-size: .86rem;
+}
+.rs-spread-count { font: 600 .78rem/1 var(--mono); color: var(--bone-dim); }
+.rs-spread-gap { border-style: dashed; }
+.rs-spread-gap .rs-class-name, .rs-spread-gap .rs-spread-count { color: var(--grey); }
+.rs-spread-gap .rs-dot { box-shadow: none; opacity: .45; }
+
+/* --- Who is taking it --------------------------------------------------- */
+.rs-takers { display: flex; flex-wrap: wrap; gap: 6px 10px; }
+.rs-taker {
+  display: inline-flex; align-items: baseline; gap: 7px;
+  padding: 4px 9px; border: 1px solid var(--line); border-radius: 999px;
+  background: #070908; white-space: nowrap;
+}
+.rs-taker-class { font: .72rem/1 var(--mono); color: var(--grey); text-transform: uppercase; letter-spacing: .08em; }
+.rs-quiet { border-style: dashed; color: var(--bone-dim); }
+.rs-prio { font: 600 .66rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--grey); }
+
+/* A member who asked not to be named is shown, counted and marked as such — never omitted,
+   never given a name. */
+.rs-anon { color: var(--bone-dim); font-style: italic; }
+.rs-pending { color: var(--grey); font-style: italic; }
+
+/* --- Gaps --------------------------------------------------------------- */
+/* The whole point of the profession view: a profession nobody has taken is a finding, so it
+   is drawn louder than the rows that are covered, not quietly left out. */
+.rs-gap {
+  font: 600 .7rem/1 var(--mono); letter-spacing: .12em; text-transform: uppercase;
+  color: var(--amber); border: 1px solid rgba(240, 180, 76, .45); border-radius: 4px;
+  padding: 4px 7px; display: inline-block;
+}
+.rs-row-gap { background: rgba(240, 180, 76, .05); }
+.rs-extra {
+  margin-left: 8px; font: 600 .62rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--grey); border: 1px dashed var(--line); border-radius: 4px; padding: 3px 5px;
+}
+
+/* --- Sub-headings ------------------------------------------------------- */
+.rs-subhead {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: 6px 16px; margin: 26px 0 12px;
+  font: 600 .78rem/1.4 var(--mono); letter-spacing: .14em; text-transform: uppercase;
+  color: var(--bone);
+}
+.rs-gap-count { color: var(--amber); }
+.rs-covered-count { color: var(--phosphor); }
+.rs-subhead-h { font-size: 1.35rem; }
+
+/* --- Legend ------------------------------------------------------------- */
+.rs-legend {
+  max-width: 74ch; margin: 0; padding: 22px 26px;
+  border: 1px solid var(--line); border-radius: 14px;
+  background: linear-gradient(180deg, var(--stone) 0%, var(--bg-2) 100%);
+}
+.rs-legend ul { margin: 0; padding-left: 20px; }
+.rs-legend li { margin-bottom: 8px; color: var(--bone-dim); font-size: .92rem; }
+.rs-legend li:last-child { margin-bottom: 0; }
+.rs-legend strong { color: var(--bone); }
+
+/* --- Phone -------------------------------------------------------------- */
+@media (max-width: 620px) {
+  .rs-faction-head { align-items: flex-start; }
+  .rs-figures > div { min-width: 0; flex: 1 1 128px; }
+  .rs-tabs { gap: 6px; }
+  .rs-tabs button { padding: 8px 12px; font-size: .8rem; }
+  .rs-table table { font-size: .86rem; }
+  .rs-table th, .rs-table td { padding-right: 12px; }
+}

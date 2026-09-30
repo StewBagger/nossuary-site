@@ -90,6 +90,15 @@ window.OSSUARY = {
   // null = show addresses without live status.
   statusUrl: "https://nossuary-status.stewbagger.workers.dev/v1/status",
 
+  // WoW: Forever guild roster JSON (roster/, js/roster.js): the same Worker and the same
+  // outbound-only arrangement as statusUrl — Chamberlain publishes the sign-up sheet, the
+  // browser never asks anyone at home for it. Nobody is named here who did not ask to be.
+  // null = the roster page says the feed is not wired up yet and still shows the launch date.
+  // Changing it means changing connect-src in roster/index.html's CSP too
+  // (tests/roster.test.mjs checks), and the DEFAULT_ROSTER copy in js/roster.js (used when a
+  // cached config.js predates this key).
+  rosterUrl: "https://nossuary-status.stewbagger.workers.dev/v1/roster",
+
   // Sign in with Steam (link/, link/discord/ and link/done/, js/link.js). The pages call this
   // Worker's /link/discord/start and /exchange (Discord says who is signing in) and
   // /link/steam/verify. No secret is involved on this side: link tokens are signed and checked by
