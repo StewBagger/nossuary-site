@@ -1,7 +1,7 @@
 updated: September 30, 2026
 build: 1.60.1.70124
 
-Dual-wield rage dump. The least-bad Warrior levelling choice — though **the spec's own gimmick is unavailable for the entire time you are levelling towards it.**
+Dual-wield rage dump. The least-bad Warrior levelling choice, though **the spec's own gimmick is unavailable for the entire time you are levelling towards it.**
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch and no higher, so no level-60 Fury build has been tested. Talent tiers unlock at 10, 15, 20, 25, 30, 35, and the capstone at **40**.
 :::
@@ -9,11 +9,11 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 **Yes — it is the least-bad Warrior levelling choice, with a real caveat.** Fury's tier 1 and 2 talents are what *every* Warrior takes, which is why the published Arms and Fury level-20 builds are **identical**.
 Against it: **you cannot dual-wield until level 20**, and [[Whirlwind]] is **level 36**. So for the first twenty levels you are a two-handed Warrior with Fury talents, and the spec does not exist as such until well past that.
 ## Your talent points
-**Level 20 — 0/11/0.**
+**Level 20: 0/11/0.**
 1. `Cruelty`, 5 points
 2. `Unbridled Wrath`, 5 points
 3. The eleventh point is the only disagreement between published builds — **`Piercing Howl`** for a slow, or **`Improved Cleave`**. On a PvP realm, take Piercing Howl.
-**Level 30 — 0/21/0**, reaching `Death Wish`: `Cruelty` 5, `Unbridled Wrath` 5, `Improved Cleave` 3, `Blood Craze` 2, **`Dual Wield Specialization` 5**, `Death Wish` 1.
+**Level 30: 0/21/0**, reaching `Death Wish`: `Cruelty` 5, `Unbridled Wrath` 5, `Improved Cleave` 3, `Blood Craze` 2, **`Dual Wield Specialization` 5**, `Death Wish` 1.
 `Raging Blows` is only half-dead at this level — its [[Whirlwind]] half waits until 36, but the other half cuts [[Cleave]]'s rage cost by 2, which stacks with `Improved Cleave`. Take it as a rage talent or not at all.
 ## Rotation
 **Identical to Arms at low level, minus [[Slam]].** The two specs genuinely play the same until 30, and saying so is more useful than padding.
@@ -26,7 +26,7 @@ Against it: **you cannot dual-wield until level 20**, and [[Whirlwind]] is **lev
 7. **[[Sunder Armor]]** once or twice, stopping below 50%
 **Multi-target: avoid it.** [[Cleave]] once or twice; the shouts are mitigation, not damage.
 ## Stat priority
-Weapon damage, then **Hit** — *especially* important while dual-wielding, since a missed swing is rage you never earn — then critical strike, Strength, Agility, Stamina.
+Weapon damage, then **Hit**, which matters *especially* while dual-wielding because a missed swing is rage you never earn, then critical strike, Strength, Agility, Stamina.
 **Dual-wielding out-generates a two-hander on rage**, roughly 5.2 per second against 4.5, and `Dual Wield Specialization` adds **+100% off-hand rage generation** on top. The two-hander's compensation is bigger individual hits and 2 rage per `Unbridled Wrath` proc instead of 1.
 ## What defines Fury
 | Talent | Earliest level | What it does |
@@ -37,8 +37,8 @@ Weapon damage, then **Hit** — *especially* important while dual-wielding, sinc
 ## What Forever changed for Fury
 - **Three new talents:** `Boundless Rage` (+30 maximum rage), `Raging Blows` ([[Whirlwind]] also strikes with the off-hand, and Cleave costs 2 less), and `Precision` (+3% hit).
 - **`Iron Will` moved in from Protection.** `Improved Slam` moved out to Arms.
-- **`Enrage` was rewritten** — a 30% chance on **any** damage taken, where Classic required an incoming critical hit.
-- **[[Bloodthirst]] no longer heals you by itself** — the heal moved into `Blood Craze`, which now triggers on Bloodthirst damage as well as on being crit or taking a hit worth more than 20% of your health. Bloodthirst's damage was cut from 45% to 35% of attack power and it gained +10% movement speed instead.
+- **`Enrage` was rewritten**: a 30% chance on **any** damage taken, where Classic required an incoming critical hit.
+- **[[Bloodthirst]] no longer heals you by itself**: the heal moved into `Blood Craze`, which now triggers on Bloodthirst damage as well as on being crit or taking a hit worth more than 20% of your health. Bloodthirst's damage was cut from 45% to 35% of attack power and it gained +10% movement speed instead.
 - `Flurry` was nerfed from 30% to 25% and now requires `Enrage`. `Improved Battle Shout` and `Improved Demoralizing Shout` were deleted.
 ## At level 60
 Unknown, and the published sources are unusually frank about it: *"we are unsure currently if there will be additional ways to generate Rage at Level 60, as these changes alone greatly reduce Fury Warrior's Rage generation"*, and *"you will be struggling to press buttons on cooldown in endgame content, but this is likely to change before launch."*

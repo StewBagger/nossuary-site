@@ -8,15 +8,15 @@ The skill formula and camp objects are read from the beta client and are solid. 
 ## Is Skinning worth taking?
 **Yes if you already kill beasts; it is the weakest of the three as a pure money profession.** Leather demand is narrower than ore or herbs.
 **It earns no Legacy Points.** Only the six crafting professions do.
-**The real argument is [[Camp Chair]] at skill 20: 2% critical strike with spells and attacks** for everyone sitting nearby — the same as [[Leader of the Pack]]'s aura. That is a **raid-wide crit buff off a gathering profession**, and it matters most to a group with no Balance Druid. They do not stack.
-**The honest recommendation:** take it on a class that kills beasts anyway — Hunter, Druid, Rogue — where it costs you almost nothing. As a standalone grind it is painful, because unlike Mining and Herbalism it has no craft to fall back on.
+**The real argument is [[Camp Chair]] at skill 20: 2% critical strike with spells and attacks** for everyone sitting nearby, the same as [[Leader of the Pack]]'s aura. That is a **raid-wide crit buff off a gathering profession**, and it matters most to a group with no Balance Druid. They do not stack.
+Take it on a class that kills beasts anyway: Hunter, Druid, Rogue. It costs almost nothing there. As a standalone grind it is painful, because unlike Mining and Herbalism it has no craft to fall back on.
 ## What it pairs with
-**Skinning with Leatherworking.** Unchanged — and Leatherworking gained **271 new recipes**, the largest count of any profession, so leather demand is up.
+**Skinning with Leatherworking.** Unchanged, and Leatherworking gained **271 new recipes**, the largest count of any profession, so leather demand is up.
 ## How the skill requirement works
-Published explicitly, and it is not a node table — it keys off the beast's level:
+Published explicitly, and it keys off the beast's level rather than a node table:
 - **Skill 1** covers everything up to level 10
-- **Ten points per level** from 11 to 20 — so a level-16 beast asks for 60
-- **Five times the level** from there — so a level-40 beast asks for 200
+- **Ten points per level** from 11 to 20, so a level-16 beast asks for 60
+- **Five times the level** from there, so a level-40 beast asks for 200
 ## Levelling it
 | Your skill | Beast levels | Where |
 | --- | --- | --- |
@@ -31,10 +31,10 @@ Published explicitly, and it is not a node table — it keys off the beast's lev
 - **Three camp objects**, all new, and two of them do things no gathering profession has ever done:
   | Skill | Object | What it does |
   | --- | --- | --- |
-  | 20 | **[[Camp Chair]]** | **2% critical strike** nearby — exclusive with [[Leader of the Pack]] |
-  | 140 | [[Field Guide]] | Blueprint. **Grants [[Track Beasts]] to whoever reads it** — a non-Hunter can have it |
+  | 20 | **[[Camp Chair]]** | **2% critical strike** nearby. Exclusive with [[Leader of the Pack]] |
+  | 140 | [[Field Guide]] | Blueprint. **Grants [[Track Beasts]] to whoever reads it**, so a non-Hunter can have it |
   | 300 | [[Trapper's Workbench]] | Blueprint. **Holds one trap** |
 - **Leather buys recipes** through Waylaid Crates, the same as ore and herbs.
 - **There is no Skinning specialisation.**
 ## What is not known
-**Whether a Skinning Knife is still required** — not published either way. The trap mechanic behind [[Trapper's Workbench]] is entirely undocumented: no source explains what traps are, where they come from or what they do. Skinnable creature lists and trainer requirements are unconfirmed.
+**Whether a Skinning Knife is still required**: not published either way. The trap mechanic behind [[Trapper's Workbench]] is entirely undocumented: no source explains what traps are, where they come from or what they do. Skinnable creature lists and trainer requirements are unconfirmed.

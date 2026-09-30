@@ -1,35 +1,35 @@
 updated: September 30, 2026
 build: 1.60.1.70124
 
-**The most changed secondary skill in Forever** — 17 of its 31 recipes are new. It is no longer just bandages: First Aid now cures poison, disease and bleeds, and makes healing potions.
+**The most changed secondary skill in Forever**, with 17 of its 31 recipes new. It is no longer just bandages: First Aid now cures poison, disease and bleeds, and makes healing potions.
 :::scope
 Recipe names and skill levels are read from the beta client and are solid. **One open question with real consequences:** it is not published whether Alchemy keeps its own healing potions now that First Aid makes them. Trainer rank thresholds are unpublished.
 :::
 ## Is First Aid worth it?
 **Yes, and materially more than in Classic.** It costs no primary slot, and Forever turned it from "bandages for classes with no heal" into a genuine utility skill.
-**The headline for a levelling player:** if your class has no dispel, you can now buy your way out of poison, disease and bleed effects off a free secondary skill. That was not possible in vanilla.
-**For several classes this is still your only self-heal for a long time** — Warrior and Rogue especially. Take it at level 1 and keep it current.
+If your class has no dispel, you can now buy your way out of poison, disease and bleed effects off a free secondary skill. That was not possible in vanilla.
+**For several classes this is still your only self-heal for a long time**: Warrior and Rogue especially. Take it at level 1 and keep it current.
 ## What it makes
 **Bandages**, as in Classic, topping out at the new [[Crystal Infused Bandage]] at skill 285, which heals **2500 over 10 seconds**.
-**Cures — the new category, and the reason to care:**
+**Cures, the new category and the reason to care:**
 | Skill | Item | Cures | In combat? |
 | --- | --- | --- | --- |
 | 80 / 130 / 215 / 300 | [[Anti-Venom]] | **Poison**, up to level 25 / 35 / 45 / 65 | **Yes** |
 | 90 / 140 / 210 / 280 | [[Simple Poultice]] → [[Powerful Poultice]] | **Disease** | **No** |
 | 120 / 200 / 265 | [[Woolen Tourniquet]] → [[Surgical Tourniquet]] | **Bleeds** | **No** |
-**Note which is which.** Anti-Venom works mid-fight; poultices and tourniquets do not. That makes the poultice and tourniquet lines a between-pulls tool, not an emergency button.
+Anti-Venom works mid-fight; poultices and tourniquets do not, so plan those two lines for between pulls.
 **Healing potions**, from [[Minor Healing Potion]] at skill 55 up to [[Major Healing Potion]] at 275, which restores 1050 to 1750.
 ## Camp objects
 First Aid places three, like every profession:
 | Skill | Object | What it does |
 | --- | --- | --- |
-| 20 | [[First Aid Kit]] | **56 Stamina** — but it is exclusive with [[Power Word: Fortitude]], so it replaces a Priest's buff rather than adding to it |
+| 20 | [[First Aid Kit]] | **56 Stamina**, but exclusive with [[Power Word: Fortitude]], so it replaces a Priest's buff rather than adding to it |
 | 140 | [[Toxin Study]] | Blueprint |
 | 300 | [[Plague Doctor's Laboratory]] | Blueprint |
 ## What Forever changed
-- **31 recipes, 17 of them new** — proportionally the largest overhaul of any profession.
+- **31 recipes, 17 of them new**: proportionally the largest overhaul of any profession.
 - **Three whole categories that did not exist:** curatives for poison, disease and bleeds; craftable healing potions; and camp objects.
-- **`Field Medicine`**, a Legacy perk in the Adventure tree, cuts the **Recently Bandaged** cooldown by 5 or 10 seconds across two ranks. **Read the exclusion:** it is *"ineffective in dungeons, raids, and battlegrounds."* It is a solo and levelling perk only.
+- **`Field Medicine`**, a Legacy perk in the Adventure tree, cuts the **Recently Bandaged** cooldown by 5 or 10 seconds across two ranks. Mind the exclusion: it is *"ineffective in dungeons, raids, and battlegrounds."* Solo and levelling only.
 ## What is not known
 Whether **Alchemy still makes healing potions** now that First Aid does. If it does not, that is a significant change to Alchemy's value and nobody has published it either way.
 Trainer rank thresholds, as for every profession except Fishing.

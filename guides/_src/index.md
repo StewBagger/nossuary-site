@@ -1,9 +1,9 @@
 updated: September 30, 2026
 build: 1.60.1.70124
 
-Levelling guides for all nine classes in World of Warcraft: Forever — which relaunches the 1–60 game on **November 4, 2026**, with everyone starting from scratch on the same day.
+Levelling guides for all nine classes in World of Warcraft: Forever, which relaunches the 1–60 game on **November 4, 2026**, with everyone starting from scratch on the same day.
 :::scope
-**These are levelling guides, and that is deliberate.** Forever's beta is capped at level 20 right now and rises only to 30 before launch, there is no raid testing, and item stats stay hidden until something drops. **No level-60 build, best-in-slot list or class ranking for Forever exists anywhere yet** — where you see one, it has been invented.
+**These are levelling guides.** Forever's beta is capped at level 20 right now and rises only to 30 before launch, there is no raid testing, and item stats stay hidden until something drops. **No level-60 build, best-in-slot list or class ranking for Forever exists yet.** Anything claiming otherwise is made up.
 What we can state confidently: talent trees, ability training levels and spell changes, all read from the beta client. What is firmer still is anything Blizzard has published directly. Raids open **December 9**, five weeks after launch, and we will write the endgame half then.
 :::
 ## Everyone is new on November 4
@@ -20,7 +20,7 @@ Some classes do only one of these. Some do all three, though never at once — y
 Because groups need three DPS and only one of each other role, **DPS is the most common thing to be and the hardest to get invited as.** Tanks and healers get invited instantly. There is no automatic group finder in Forever, so grouping means asking.
 ## "Best for levelling" almost always means "best for soloing"
 **This is the most important thing on the page, and every guide site gets it wrong by omission.**
-When a guide rates a spec for levelling, it is nearly always rating **how fast it kills things by itself.** That is a real question, and it is not the only one. **Levelling in groups and dungeons is a different activity**, and the specs that rate worst for soloing — healers especially — are often the ones that reach 60 with the least waiting, because a healer never sits in a queue.
+When a guide rates a spec for levelling, it is nearly always rating **how fast it kills things by itself.** That is a real question, and it is not the only one. **Levelling in groups and dungeons is a different activity**, and the specs that rate worst for soloing, healers especially, are often the ones that reach 60 with the least waiting, because a healer never sits in a queue.
 Forever sharpens the distinction: it **cut dungeon kill experience while raising dungeon *quest* experience**, so a dungeon route is a deliberate design, not a workaround.
 So when a page below says a spec is *slow*, read it as **slow to kill things alone**. Every spec in the game can reach level 60. None of them is a trap.
 **Where it matters most:**
@@ -43,7 +43,7 @@ Honestly, the one whose fantasy appeals. Every class finishes the levelling game
 | Have the most to learn | Druid, Shaman, Paladin, Warlock |
 Three honest warnings. **Warrior is the slowest and most frustrating class to level** and only becomes strong with good gear — a superb tank and a rough first character. **Hunter is by a distance the easiest to level and one of the hardest to play well in a group**, because the pet covers your mistakes until it suddenly cannot. And **Hunter is a ranged class for the whole levelling game** — its melee specialisation sits deep in a talent tree you will not reach until the forties.
 ## Professions
-**[Profession guides are here](/guides/wow-forever/professions/)** — all twelve, plus the two systems Forever added.
+**[Profession guides are here](/guides/wow-forever/professions/)**: all twelve, plus the two systems Forever added.
 Three things worth knowing before you pick:
 - **Take Cooking at level 1.** 103 of its dishes give **+5% experience from kills**, and the first one works at skill 1 on a level-1 character. It costs you no primary slot.
 - **Only the six crafting professions earn Legacy Points.** Two gathering professions earns you none of the 18 on offer.
@@ -51,7 +51,7 @@ Three things worth knowing before you pick:
 ## What is new in Forever
 Beyond the new zones and dungeons, four changes affect how you level whatever you pick.
 - **Dungeon grinding is dead by design.** Mob experience inside dungeons was cut hard while dungeon *quest* experience was raised sharply. Run each dungeon once for its quests rather than repeating it.
-- **Talent points can eventually start earlier than 10 — but not on your first character.** The account-wide Legacy system has a perk, `Talented`: five ranks, each moving your first talent point one level earlier, from 10 down to 5. It costs **ten Legacy Points** — five ranks of `Well Rested` first, then five of its own — and Legacy Points are earned one per challenge, such as levelling a class to 25, 45 or 60, or a profession to 150, 225 or 300. **A brand-new account on November 4 has none.** The 51-point total at 60 never changes; the perk only moves when the points arrive, and at full rank a level-30 character holds 26 points instead of 21.
+- **Talent points can eventually start earlier than 10. But not on your first character.** The account-wide Legacy system has a perk, `Talented`: five ranks, each moving your first talent point one level earlier, from 10 down to 5. It costs **ten Legacy Points** — five ranks of `Well Rested` first, then five of its own, and Legacy Points are earned one per challenge, such as levelling a class to 25, 45 or 60, or a profession to 150, 225 or 300. **A brand-new account on November 4 has none.** The 51-point total at 60 never changes; the perk only moves when the points arrive, and at full rank a level-30 character holds 26 points instead of 21.
 - **Six new race and class combinations**: Gnome Priest, Human Hunter, Dwarf Shaman, Orc Mage, Troll Warlock and Undead Paladin. **Paladin and Shaman are no longer faction-locked.**
-- **Weapon-specialisation racials became critical-strike racials**, and they work off an equipped weapon rather than one you swing — so weapon type is now worth a thought even for casters.
+- **Weapon-specialisation racials became critical-strike racials**, and they work off an equipped weapon rather than one you swing, so weapon type is now worth a thought even for casters.
 The levelling pace itself is unchanged from Classic. Expect to walk a great deal before your mount, to drink after fights if you use mana, and for dying to cost time rather than progress.

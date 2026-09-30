@@ -3,15 +3,15 @@ build: 1.60.1.70124
 
 Hunter is the easiest class in the game to level alone and one of the hardest to play well in a group. Your pet tanks while you shoot, and Forever made pets scale with your own gear.
 :::scope
-Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Hunter build has been tested.** Ability training levels below are read from the beta client and are reliable. One live disagreement worth knowing: published guides differ on whether shots still clip your auto-attack — see *What changed* below.
+Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Hunter build has been tested.** Ability training levels below are read from the beta client and are reliable. One live disagreement worth knowing: published guides differ on whether shots still clip your auto-attack, see *What changed* below.
 :::
 ## Which spec?
 | Spec | Role | Levelling | In one line |
 | --- | --- | --- | --- |
 | **[Beast Mastery](/guides/wow-forever/hunter/beast-mastery/)** | Ranged DPS | **Best in the game** | `Deadly Aspects` procs +30% ranged attack speed while [[Aspect of the Hawk]] is up, and your pet does a real share of the work |
-| **[Marksmanship](/guides/wow-forever/hunter/marksmanship/)** | Ranged DPS | Slower **solo**, strong in dungeons | `Lone Wolf` at exactly 20 for +20% damage with **all** attacks — but only while you have **no pet out** |
+| **[Marksmanship](/guides/wow-forever/hunter/marksmanship/)** | Ranged DPS | Slower **solo**, strong in dungeons | `Lone Wolf` at exactly 20 for +20% damage with **all** attacks, but only while you have **no pet out** |
 | **[Survival](/guides/wow-forever/hunter/survival/)** | Melee DPS | Slowest **solo**; fine in groups | Parry, [[Deterrence]] and nastier traps. A PvP spec right now |
-**Beast Mastery if you are soloing.** Taming a pet at level 10 is described as *"the single greatest leveling tool that any class gets without exception"*, and Beast Mastery's early talents — haste and movement speed — are what solo questing wants.
+**Beast Mastery if you are soloing.** Taming a pet at level 10 is described as *"the single greatest leveling tool that any class gets without exception"*, and Beast Mastery's early talents, haste and movement speed, are what solo questing wants.
 **But keep the gap in proportion.** At eleven points the **rotation is identical across all three specs**, and the difference is four flexible talent points. Hunter has a long reputation for *"best spec, nothing else acceptable"* thinking imported from raiding; **at levelling cap that framing does not survive contact with the talent trees.** Marksmanship is the dungeon cleave build and Survival is the duelling build, and neither is a mistake.
 Respec when your goal changes: Marksmanship for dungeon pulls, Survival for duels.
 ## Is Hunter for you?
@@ -19,7 +19,7 @@ Play Hunter if you want to kill things above your own level from the first hour,
 :::strengths
 - The strongest solo levelling class in the game
 - Your pet holds the enemy, so you take very little damage
-- Very low downtime — you rarely stop to recover
+- Very low downtime, you rarely stop to recover
 :::
 :::weaknesses
 - Ammunition, a quiver and pet food all cost bag space and money
@@ -27,7 +27,7 @@ Play Hunter if you want to kill things above your own level from the first hour,
 - The pet covers your mistakes solo, then stops covering them in a group
 :::
 :::new
-**Is the rotation simple?** Yes — mark, send the pet, sting, shoot.
+**Is the rotation simple?** Yes, mark, send the pet, sting, shoot.
 **Is it forgiving?** Extremely, while solo. Much less so in a dungeon, where the pet is not the tank.
 **Does it level well?** Better than any other class.
 **Does it need a group?** No. Hunter is the class to pick if you mostly play alone.
@@ -35,28 +35,28 @@ Play Hunter if you want to kill things above your own level from the first hour,
 ## Levelling milestones
 | Level | What you get |
 | --- | --- |
-| 1 | [[Auto Shot]], [[Raptor Strike]] — now scales with weapon damage |
+| 1 | [[Auto Shot]], [[Raptor Strike]], now scales with weapon damage |
 | 4 | [[Serpent Sting]] |
 | 6 | [[Arcane Shot]], [[Hunter's Mark]] |
 | **10** | **The class quest, and the whole class.** Tame Beast, Call Pet, Feed Pet, Revive Pet, Beast Training, plus [[Aspect of the Hawk]] |
 | 12 | [[Mend Pet]], [[Wing Clip]] |
 | 16 | [[Immolation Trap]], [[Mongoose Bite]] |
-| 18 | [[Multi-Shot]] — now a single rank, 3 targets, sharing a cooldown with Aimed Shot |
+| 18 | [[Multi-Shot]], now a single rank, 3 targets, sharing a cooldown with Aimed Shot |
 | **20** | **[[Aimed Shot]] is now trained and baseline** (it was a talent), [[Aspect of the Cheetah]], [[Freezing Trap]], [[Disengage]]. Polearms trainable |
-| 22 | [[Scorpid Sting]] — now reduces the target's hit chance by 2% |
-| 26 | [[Rapid Fire]] — now boosts melee speed too |
-| 30 | [[Feign Death]], **[[Lacerate]], new**, [[Aspect of the Beast]] — now +50 melee attack power |
+| 22 | [[Scorpid Sting]], now reduces the target's hit chance by 2% |
+| 26 | [[Rapid Fire]], now boosts melee speed too |
+| 30 | [[Feign Death]], **[[Lacerate]], new**, [[Aspect of the Beast]], now +50 melee attack power |
 | 34 | [[Explosive Trap]] |
 | **40** | **Mail armour from the class trainer**, mount, [[Volley]], [[Aspect of the Pack]] |
-| 46 | [[Aspect of the Wild]] — now raid-wide |
+| 46 | [[Aspect of the Wild]], now raid-wide |
 **[[Misdirection]] is not in Forever.** Two published guides mention it; it is a Burning Crusade ability and it is absent from the client. **[[Wyvern Sting]] is also gone**, replaced by `Lacerating Strikes`.
 ## Which race
-**Read this section in proportion.** Race is the smallest of the choices on this page — well behind spec, gear and knowing your rotation — and **no race is a wrong answer for levelling.** Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead — fear, sleep and charm), `Escape Artist` (Gnome — roots and snares) and `Stoneform` (Dwarf — bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
+**Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling.** Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Horde — Tauren**, and it is called the single strongest Hunter race across both factions. **`Plainsrunning` ramps to +30% movement speed**, which lets you stutter-step and shoot from level 1 while keeping [[Aspect of the Hawk]] up instead of swapping to Cheetah. `Endurance` also now gives **+1% hit**.
-**Alliance — Human, which is new to Hunter in Forever.** `Sword Specialization` is **+2% crit**, the largest weapon racial, and it is general crit — so it applies to your shots off a sword carried purely as a stat stick.
+**Alliance — Human, which is new to Hunter in Forever.** `Sword Specialization` is **+2% crit**, the largest weapon racial, and it is general crit, so it applies to your shots off a sword carried purely as a stat stick.
 **Forever changed the answer.** Tauren Hunter was the weak vanilla pick and is now the strongest. **Dwarf lost Gun Specialization** and gained a mace racial it cannot use, which is a genuine grievance.
 ## Quality of life
-- **Level 10 is the class. Do the pet chain the moment you reach it.** **Tame a Bear first** — `Swipe` is one of the few pet abilities that holds threat on several targets at once. Note that in Forever **you cannot tame a beast above your own level**.
+- **Level 10 is the class. Do the pet chain the moment you reach it.** **Tame a Bear first**: `Swipe` is one of the few pet abilities that holds threat on several targets at once. Note that in Forever **you cannot tame a beast above your own level**.
 - **Ammunition and the quiver are real costs.** The quiver gives a ranged attack-speed bonus and **does not stack, so carry exactly one**. Buy ammunition in stacks whenever you pass a vendor.
 - **[[Aspect of the Cheetah]] is your mount until 40** and should be up almost all the time in the world; `Pathfinding` pushes it to +36%.
 - **Two trainers matter:** your class trainer gives **mail at 40**, and a weapon master teaches anything you did not start with — **polearms only from 20**. As a Human, the trip worth making is one-handed swords, for the crit.
