@@ -22,7 +22,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 **Level 30 — 21/0/0**, in order: `Malice` 5 → `Remorseless Attacks` 2 → `Ruthlessness` 3 → `Relentless Strikes` 1 → `Lethality` 5 → `Vile Poisons` 4 → **[[Mutilate]]** at 30. *"The level 30 cap unlocks Mutilate… extremely strong in both dungeons and solo play."*
 ## Rotation
 **At level 20 all three Rogue specs play identically.**
-1. **[[Instant Poison]] on both weapons**
+1. **From 20, [[Instant Poison]] on both weapons**
 2. **Open from [[Stealth]] with [[Ambush]]**
 3. **[[Backstab]] behind the target, otherwise [[Sinister Strike]]**
 4. At 5 combo points, **[[Slice and Dice]]** if the target will survive its duration

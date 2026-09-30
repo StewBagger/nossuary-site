@@ -23,7 +23,7 @@ Play Priest if you want to be the person keeping everyone alive, and you are hap
 :::weaknesses
 - Slow and fragile at low level, with a great deal of sitting and drinking
 - Mana drains faster than you expect
-- The commonest way a Priest dies is watching everyone else's health
+- The most common way a Priest dies is watching everyone else's health
 :::
 :::new
 **Is the rotation simple?** Yes — a damage-over-time, a nuke, then your wand.
@@ -47,7 +47,7 @@ Play Priest if you want to be the person keeping everyone alive, and you are hap
 | **32** | **[[Shadow Word: Death]], new** — with 10% max-health backlash if it does not kill |
 | 40 | [[Greater Heal]], **[[Lightwell]] is now trained** (it was the Holy capstone), mount |
 | 48–60 | Prayer of Fortitude, Shadow Protection and Spirit all become **raid-wide** |
-**The change that matters most: [[Mind Flay]] is no longer a trainer spell.** It comes with the talent point and nothing else teaches it, so **a Holy or Discipline Priest never gets Mind Flay in Forever.**
+**The change that matters most: [[Mind Flay]] is no longer a trainer spell.** It comes with the talent point and nothing else teaches it, and **the gate is 10 points in the Shadow tree, not your spec** — so a healing Priest is not forbidden from dipping for it, but **no published Holy or Discipline build reaches it.**
 ## Which race
 **Kill the vanilla answer first: you used to pick Dwarf for [[Fear Ward]], and Fear Ward is now baseline for everyone.** That reason is gone.
 **Alliance — Gnome**, a brand-new Priest combination, for `Contingency Plan` and `Confounding Flash` — an area confuse on up to five enemies, which is the best panic button any Priest race has. **Dwarf is the stronger pure leveller**, though: `Desperate Prayer` at level 10 is a full instant self-heal nothing else on Alliance has that early, and **`Mace Specialization` is the only weapon-crit racial a Priest can actually use** — Human's larger sword racial is dead weight on a class that cannot equip swords.
@@ -60,7 +60,7 @@ Play Priest if you want to be the person keeping everyone alive, and you are hap
 ## What changed from Classic
 | Change | What it means for you |
 | --- | --- |
-| **[[Mind Flay]] is talent-only** | Holy and Discipline never get it |
+| **[[Mind Flay]] is talent-only** | 10 points in Shadow; no published Holy or Discipline build reaches it |
 | [[Fear Ward]] baseline for all races | But cut from 10 minutes to 3 |
 | [[Devouring Plague]] available to all races | It was Undead-only |
 | [[Divine Spirit]] and [[Lightwell]] now trained | Both were talents |

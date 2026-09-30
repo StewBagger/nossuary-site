@@ -1,12 +1,12 @@
 updated: 30 September 2026
 build: 1.60.1.70124
 
-Stealth openers and a [[Rupture]]-driven bleed cycle. **The strongest PvP tree, the weakest of the three for levelling, and it has no area damage at all.**
+Stealth openers and a [[Rupture]]-driven bleed cycle. **The strongest PvP tree, the lowest-rated of the three overall, and it has no area damage of any kind.**
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Subtlety build has been tested.
 :::
 ## Is Subtlety worth levelling?
-**Viable, and rated the worst Rogue spec by the source that rates them.** The heading is *"Weakest Among Rogue Specs"*: *"Subtlety gets the short end of the stick, with most of its higher-impact talents being unavailable until you can put more talent points into the tree."*
+**Viable, and the lowest-rated Rogue spec overall — 2.5 out of 5, against 3.0 for the other two. All three are rated 4 out of 5 for levelling specifically.** The heading is *"Weakest Among Rogue Specs"*: *"Subtlety gets the short end of the stick, with most of its higher-impact talents being unavailable until you can put more talent points into the tree."*
 **Two blunt reasons, both worth knowing before you commit.** *"One of the biggest issues the spec has is its positional requirement… you won't be able to do so very often when leveling solo."* And: *"Subtlety has **no AoE capabilities whatsoever**."*
 It still scores 4 out of 5 for levelling on **mobility and stealth** grounds — you skip fights other classes have to win — and it does not come online until [[Ambush]] at level 18.
 ## Your talent points
@@ -35,7 +35,7 @@ This spec's list differs from the other two, and the published example is the cl
 ## What Forever changed for Rogues
 - **`Hemorrhage` is no longer a shared physical-damage debuff.** It is now a personal [[Rupture]] amplifier — it does nothing for the rest of your group, so do not take a raid assignment on it.
 - **`Improved Ambush` moved from row 3 to row 2**, which is exactly why an 11-point Subtlety build can reach it at all. `Setup` moved from row 4 to row 2 and now hits 100% at rank 3. `Premeditation` moved from row 7 to row 4 and no longer needs `Preparation`.
-- **[[Sap]] no longer breaks your [[Stealth]].**
+- **[[Sap]] no longer requires [[Stealth]] and no longer breaks it** — the first half is the larger change.
 - **New:** `Dirty Tricks`, `Improved Distract`, `Quietus`, `Cutthroat`, `Thousand Cuts`. **Removed:** `Improved Sap`, `Sleight of Hand`, `Deadliness`.
 - **Poisons and Lockpicking are secondary skills now**, not class skills, and **poison stacks with a sharpening stone.** **Rogues can learn axes**, starting at skill 1.
 - **Hit and critical strike are unified** across spell, melee and ranged.

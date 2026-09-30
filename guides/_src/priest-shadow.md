@@ -8,8 +8,8 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 ## Is Shadow worth levelling?
 **Yes — and it is the highest-rated Priest spec for levelling at 3 out of 5**, against Discipline's 2.5 and Holy's 2.0. It is also slower than it sounds early on, and the published reason is specific:
 *"Slow Starters, Better Later — In lower levels, Shadow has a complicated leveling curve. The spec is incredibly reliant on `Spirit Tap` for its mana regeneration. Failing to get last hits on enemies will generally lead you to drinking more often."*
-**It gets better twice, at known levels.** At **30**, [[Vampiric Embrace]] lets any nearby death proc `Spirit Tap`. At **40**, [[Shadowform]]'s 50% mana cut improves it *"drastically."*
-**Learn one habit immediately: land the killing blow.** `Spirit Tap` is your mana economy and it only fires on your own kills.
+**It gets better twice, at known levels.** At **25**, [[Vampiric Embrace]] lets `Spirit Tap` proc off the death of any enemy **it has afflicted**, not just your own killing blows. At **40**, [[Shadowform]]'s 50% mana cut improves it *"drastically."*
+**Learn one habit immediately: land the killing blow.** `Spirit Tap` is your mana economy and it fires only when *you* kill something worth experience — grey mobs do not count.
 ## Your talent points
 **Level 20 — three published builds, and they disagree about whether to take [[Mind Flay]] at all.**
 **Build A, 2/2/7** — no [[Mind Flay]], because 7 Shadow points cannot reach it:
@@ -47,6 +47,6 @@ Hit sits lower than you might expect while levelling, and the reason is stated: 
 - **[[Shadow Word: Death]] is new** — all races, **level 32**, so out of reach at any beta cap. Its talent `Early Demise` needs 25 Shadow points.
 - **[[Shadowform]] now bars *healing* spells rather than Holy spells**, so [[Smite]], [[Holy Fire]] and [[Resurrection]] are usable inside it.
 - **New race-locked Priest spells:** `Divine Grace` (Human), `Chastise` (Dwarf), `Dark Sacrifice` (Undead), and `Confounding Flash` plus `Contingency Plan` for **Gnome, which is a new Priest race.**
-- **`Wand Specialization` is 2 ranks at 13% each** instead of 5 at 5% — which is why every wand-levelling build front-loads it. Separately, **wands no longer gain spell power** as of 24 September.
+- **`Wand Specialization` is 2 ranks reaching 25%** where Classic needed 5 — which is why every wand-levelling build front-loads it. Separately, **wands no longer gain spell power** as of 24 September.
 ## At level 60
 Unknown, and the question is whether Shadow has a raid slot at all: losing the Shadow Vulnerability debuff role removes what it was *for* in Classic, its damage is single-target, and [[Vampiric Embrace]] heals only the party.

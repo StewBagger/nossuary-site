@@ -31,7 +31,7 @@ Weapon damage, then **Hit**, critical strike, Strength, Agility, Stamina. Slow a
 ## What defines Arms
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
-| **`Weaponmaster`** | 25 | Replaces all four weapon specialisations. Axe and polearm +5% crit, mace and staff 15% armour ignore, sword a 5% extra-attack proc |
+| **`Weaponmaster`** | 30 | Replaces all four weapon specialisations. Axe and polearm +5% crit, mace and staff 15% armour ignore, sword a 5% extra-attack proc |
 | **`Bloodthrill`** | 30 | Melee hits on **your own** [[Rend]] target proc [[Overpower]] with no dodge needed — 20% at 5 points, 6-second window |
 | **`Mortal Strike`** | 40 | The capstone. Requires `Sweeping Strikes` |
 **A 51-point squeeze worth knowing early:** [[Mortal Strike]] needs 31 points in Arms and `Death Wish` needs 21 in Fury. That is 52. **They are mutually exclusive.**

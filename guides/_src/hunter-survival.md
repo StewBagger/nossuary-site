@@ -37,10 +37,10 @@ Below level 10, walk backwards between shots to stay out of the dead zone.
 | --- | --- | --- |
 | **`Deflection` 5/5** | 14 | +10% base parry. Parry is not a stat Hunters normally have |
 | **[[Deterrence]]** | 20 | The on-use defensive cooldown, and half of the PvP case |
-| **`Entrapment` 3/3** | 20 | Turns [[Freezing Trap]] and [[Frost Trap]] from tools into problems |
+| **`Entrapment` 3/5** | 15 | **Every** trap you trigger roots what it catches — 1 second per rank, so 3 seconds at the three points this build spends, 5 at full |
 ## What Forever changed for Hunters
-- **Pets are Ferocity, Cunning or Tenacity, type carries no inherent damage modifier**, and **pets inherit some of your stats.**
-- **`Improved Serpent Sting` was deleted from the client** with no Blizzard note; build lists that still include it are stale and cannot be entered.
+- **Forever normalised pet attack speed, not pet damage** — families still carry their own damage, armour and health modifiers (Raptor +10%, Boar −10%) — and **pets inherit some of your stats.**
+- **`Improved Serpent Sting` and `Improved Scorpid Sting` were folded into `Improved Stings`** (Marksmanship, tier 2, 3 ranks). Build lists naming the old talents cannot be entered as printed.
 - The utility kit — [[Feign Death]], [[Freezing Trap]], [[Frost Trap]], [[Concussive Shot]], [[Disengage]] — is intact, and Survival is the spec built around it.
 ## At level 60
 Unknown, and this is the spec with the most riding on it: whether Forever intends Survival as a melee Hunter, a trap-and-control Hunter, or a ranged spec with a defensive tree bolted on. Nothing published answers that.

@@ -58,15 +58,15 @@ The reason Agility leads is that *"in cat form it is attack power, critical stri
 ## What defines Cat
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
-| **`Feral Swiftness` 2/2** | ~14 | +30% Cat movement speed **and +4% dodge in all forms**. Renamed from `Feline Swiftness`, and **no longer outdoors-only** |
-| **`King of the Jungle`** | ~30 | New. [[Tiger's Fury]] instantly grants 20 energy per rank — **60 at 3/3** |
-| **`Rend and Tear` 5/5** | ~34 | New. +10% melee damage **against bleeding targets** — the reason bleeds now matter more than [[Shred]] |
-| **[[Berserk]]** | **40** | The 31-point capstone: +100% crit on combo-point generators for 15 seconds, [[Primal Bite]] hits 3 targets with no cooldown, and fear immunity |
+| **`Feral Swiftness` 2/2** | 16 | +30% Cat movement speed **and +4% dodge in all forms**. Renamed from `Feline Swiftness`, and **no longer outdoors-only** |
+| **`King of the Jungle`** | 30 at 1/3, 32 at 3/3 | New. [[Tiger's Fury]] instantly grants 20 energy per rank — **60 at 3/3** |
+| **`Rend and Tear` 5/5** | 39 | New. +10% melee damage **against bleeding targets** — the reason bleeds now matter more than [[Shred]] |
+| **[[Berserk]]** | **40** | The 31-point capstone, and it needs [[Leader of the Pack]] first. For a Cat it is **+100% crit on combo-point generators for 15 seconds and fear immunity** — the three-target [[Primal Bite]] clause needs Bear or Dire Bear, so **it is not a Cat cleave** |
 ## What Forever changed for Cat
 - **Powershifting is dead.** `Furor` was rewritten: instead of a flat 40 energy on entering Cat Form, you *"regain 100% of the Energy you had when you were last in Cat Form, plus 10 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 100"* at 5/5. Stated plainly: *"Leaving an empty bar and instantly re-entering supplies no flat refill."*
 - **[[Tiger's Fury]] was reworked** — it costs nothing (Classic: 30 energy), has a **30-second cooldown** (Classic: 1 second), and is now a flat **+15% physical damage** buff. Ranks 2 to 4 were deleted.
-- **The spec was rebalanced off [[Shred]] and onto bleeds.** Shred was cut from 225% to **155%** weapon damage; [[Rip]] was buffed enormously — rank 6 ticks for 243/396/549/702/855 against Classic's 45/73/101/129/157.
-- **[[Claw]] became a weapon-damage multiplier** — *"110% normal damage plus 27"*, where Classic gave a flat *"27 additional damage."* [[Ferocious Bite]]'s energy conversion doubled.
+- **The spec was rebalanced off [[Shred]] and onto bleeds.** Shred was cut from 225% to **155%** weapon damage; [[Rip]] was buffed enormously — rank 6 deals 243/396/549/702/855 **over 12 seconds** by combo point, against Classic's 45/73/101/129/157, and it now scales with attack power.
+- **[[Claw]] became a weapon-damage multiplier** — *"110% normal damage plus 27"*, where Classic gave a flat *"27 additional damage."* [[Ferocious Bite]] is unchanged from Classic, and trains at 32.
 - **Cat Form's flat attack power was cut from 40 to 12** plus Agility. This is the mechanism behind the weapon change.
 - **Six new talents:** `Primal Bite`, `Predatory Instincts`, `King of the Jungle`, `Natural Reaction`, `Rend and Tear`, [[Berserk]]. `Heart of the Wild` moved to tier 1. `Feral Instinct` was rewritten from bear threat to **+30% [[Swipe]] damage**.
 - **Two renames:** `Mangle` is now the `Primal Bite` talent and **is gone from the spellbook**; `Primal Fury` is now `Blood Frenzy`, with a new cat clause giving combo-point generators a 100% chance at an extra point on a crit.

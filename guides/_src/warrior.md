@@ -1,7 +1,7 @@
 updated: 30 September 2026
 build: 1.60.1.70124
 
-Warrior is the slowest class to level in Forever and one of the strongest once geared. Rage now comes from weapon speed rather than damage dealt, and critical hits no longer feed it at all.
+Warrior is the slowest class to level in Forever and one of the strongest once geared. Rage now comes from weapon speed rather than damage dealt, and a critical hit no longer grants bonus rage on top of the swing.
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Warrior build has been tested by anyone.** Talent trees and ability training levels below are read from the beta client and are solid; anything about endgame is not, and we have left it out rather than guessed.
 :::
@@ -37,17 +37,17 @@ Play Warrior if you want to watch the enemy rather than your own bars, and you d
 | 4 | [[Charge]], [[Rend]] |
 | 6 | [[Thunder Clap]] — 20% slow now, was 10%, and it scales with attack power |
 | **10** | **Class quest — mandatory.** [[Defensive Stance]], [[Sunder Armor]], [[Taunt]], [[Bloodrage]]. First talent point |
-| 12 | [[Overpower]], [[Shield Bash]] — your only interrupt, so keep a shield in the bag |
+| 12 | [[Overpower]], [[Shield Bash]] — **your only interrupt until [[Pummel]] at 38**, so keep a shield in the bag |
 | 14 | **[[Tactical Mastery]] is now trained, not a talent** — it retains 10 rage through a stance change |
 | 16 | [[Shield Block]] — now **2 attacks over 7 seconds**, was 1 over 5 |
-| **20** | **[[Victory Rush]], new** — free, and heals 10% of max health. **Dual wield unlocks.** [[Cleave]], [[Retaliation]], and [[Slam]] trained earlier than Classic. Eleventh talent point |
+| **20** | **[[Victory Rush]], new** — free, and heals 10% of max health. **Dual wield unlocks.** [[Cleave]] and [[Retaliation]] as in Classic, both re-tuned, and **[[Slam]] trained earlier — but it now carries an 18-second cooldown it never had.** Eleventh talent point |
 | 24 | [[Execute]] |
 | **30** | **Second class quest — [[Berserker Stance]]**, [[Intercept]]. Twenty-first talent point |
 | 36 | [[Whirlwind]] |
 | 40 | Capstone talents, **plate armour**, mount |
 | 50 | [[Recklessness]] — still 30 minutes, where Retaliation and Shield Wall dropped to 15 |
 **Talent points are your level minus nine** — one at 10, eleven at 20, twenty-one at 30, fifty-one at 60. Tiers open at levels 10, 15, 20, 25, 30, 35 and 40. The Legacy perk **Talented** moves your first point earlier, down to level 5 at full rank, which is **26 points at level 30 rather than 21.**
-**[[Devastate]] is not in Forever.** [[Sunder Armor]] is the ability, and it gained Attack Power scaling on 24 September.
+**[[Devastate]] is not in Forever — and it was not in Classic either.** It is a Burning Crusade ability, so lists that expect it are reading forward, not back. [[Sunder Armor]] is the ability, and it gained Attack Power scaling on 24 September.
 ## Which race
 **Alliance — Night Elf.** `Elune's Light` gives +10% crit for 15 seconds and lines up with your cooldowns, `Shadowmeld` drops threat, and `Wisp Spirit` speeds corpse runs.
 **Horde — Orc.** `Blood Fury` is +10% attack power and `Axe Specialization` gives +1% crit, which makes axes worth seeking out.
@@ -56,18 +56,17 @@ Play Warrior if you want to watch the enemy rather than your own bars, and you d
 - **Do the level-10 class quest immediately, and the level-30 one on time.** They are how you get [[Defensive Stance]], [[Sunder Armor]], [[Taunt]] and later [[Berserker Stance]]. A Warrior who skips them has no tanking kit at all.
 - **Keep the weapon current and its skill trained.** A new weapon type will not perform as expected while its skill lags.
 - **Carry a one-hander and shield permanently** for [[Shield Bash]] interrupts and [[Mocking Blow]] pulls.
-- **Mining and Blacksmithing** lets you craft your own weapons and armour. **First Aid is your only fast self-heal** before 20, and food now grants **+5% experience**.
+- **Mining and Blacksmithing** lets you craft your own weapons and armour. **First Aid is your only fast self-heal** before 20, and **103 cooked dishes now give +5% experience from kills while you are well fed** — 15 minutes a serving, and quest experience is unaffected.
 - **Group when you can, and pull two.** Rage from damage taken survives in Forever but is small, so the one place it pays is levelling alongside a healer.
 ## What changed from Classic
 | Change | What it means for you |
 | --- | --- |
 | Rage normalized to weapon speed | Damage dealt no longer feeds rage |
-| **Critical hits give no bonus rage** | The vanilla loop of gear → damage → rage is gone. This is dev-confirmed as intentional |
+| **Critical hits give no bonus rage** | The swing still generates rage normally; what is gone is the extra rage a crit used to add on top, and with it the vanilla loop of gear → damage → rage. Dev-confirmed as intentional |
 | Yellow attacks generate no rage | [[Heroic Strike]] and [[Cleave]] are net rage losses while levelling |
-| [[Victory Rush]] added at 20 | Your first and only self-heal |
+| [[Victory Rush]] added at 20 | **Your first self-heal, and the only one you get without spending a point** — `Blood Craze` is the other, and it now also fires off [[Bloodthirst]] |
 | [[Tactical Mastery]] baseline at 14 | You keep 10 rage through a stance change without spending a point |
 | The three major cooldowns no longer share a lockout | But only Retaliation and Shield Wall dropped to 15 minutes; **Recklessness is still 30** |
-| [[Devastate]] absent | [[Sunder Armor]] is the ability, now scaling with attack power |
 | Plate armour at 40 | Cloth, leather and mail until then |
 ## At level 60
 Unknown, and we will not guess. No source publishes a Warrior build past level 30. Rage generation is currently low enough that one published guide says outright you *"will be struggling to press buttons on cooldown in endgame content, but this is likely to change before launch."* Raids open 9 December.

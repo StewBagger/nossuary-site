@@ -38,12 +38,12 @@ Its ratings make the shape of the spec plain: **Overall 4.5, Levelling 2.5, Dung
 | **[[Penance]]** | **exactly 30** | New. 12-second cooldown; pulses instantly then once a second for 2 seconds. **Heals an ally or damages an enemy** |
 | **`Soul Warding`** | **25** | The 16-point milestone: −4 seconds off [[Power Word: Shield]]'s cooldown and −15% mana |
 | **`Divine Aegis`** | 35 | Critical heals leave an absorb worth 5% of the heal |
-| **`Power in Light`** | 15 | The engine of the Smite build, and why [[Holy Fire]] opens the rotation |
+| **`Power in Light`** | **10** | Tier 1, so available with your first point. The engine of the Smite build, and why [[Holy Fire]] opens the rotation |
 ## What Forever changed for Priests
 - **New:** `Power in Light`, `Twin Disciplines`, `Holy Precision`, `Soul Warding`, [[Penance]], `Renewed Hope`, `Divine Aegis`. **Removed:** `Unbreakable Will`, `Improved Power Word: Fortitude`, `Force of Will`.
 - **[[Divine Spirit]] is no longer a talent — it is trained from level 30.** [[Power Infusion]] now **requires [[Penance]]**.
-- **`Wand Specialization` is 2 ranks at 13% each**, not 5 at 5%. That is the mechanical reason every wand-levelling build front-loads it. Separately, **wands no longer gain spell power** as of the 24 September patch.
-- **`Meditation` is 17% per rank**, where Classic gave 5%. `Mental Strength` now grants **+3% Intellect**.
+- **`Wand Specialization` is 2 ranks reaching 25%**, where Classic needed 5. That is the mechanical reason every wand-levelling build front-loads it. Separately, **wands no longer gain spell power** as of the 24 September patch.
+- **`Meditation` is 17% per rank**, where Classic gave 5%. `Mental Strength` now grants **+3% Intellect per rank — 15% at 5/5**, which this build takes.
 - **[[Power Word: Shield]] can now overwrite an existing shield** on a target who has no Weakened Soul.
 - **[[Mind Flay]] is talent-only in Forever**, gated on 10 points in Shadow. **No published Discipline build reaches it**, so in practice you will not have it — see the [Shadow](/guides/wow-forever/priest/shadow/) page.
 ## At level 60

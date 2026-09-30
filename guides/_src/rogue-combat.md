@@ -25,7 +25,7 @@ Its stated use: *"High amount of survivability… best for soloing elites or cle
 **Level 30 — 0/21/0**, in this order: `Improved Sinister Strike` 2 → `Improved Eviscerate` 3 → `Precision` 3 → `Deflection` 3 → `Riposte` 1 → `Endurance` 2 → `Improved Sprint` 1 → `Flawless Execution` 1 → `Dual Wield Specialization` 4 → **[[Blade Flurry]]** at 30.
 ## Rotation
 **At level 20 all three Rogue specs play the same**, and the source says so: *"During the early stages of Rogue leveling, it is difficult to really differentiate the specializations."*
-1. **[[Instant Poison]] on both weapons**
+1. **From 20, [[Instant Poison]] on both weapons**
 2. **Open from [[Stealth]] with [[Ambush]]**
 3. **[[Backstab]] if you are behind the target, otherwise [[Sinister Strike]]**
 4. At 5 combo points, **[[Slice and Dice]]** if the target will survive its duration
@@ -39,7 +39,7 @@ Published gear advice adds: **slow main hand, fast off hand**, and *"Intellect a
 | --- | --- | --- |
 | **`Riposte`** | **exactly 20** | After a parry: 150% weapon damage and a **6-second disarm** |
 | **[[Blade Flurry]]** | **exactly 30** | +20% melee speed and one extra target for 15 seconds |
-| **`Hack and Slash`** | 30 | **Replaces the three weapon specialisations.** At 5 ranks: axe and sword get a 5% extra attack, dagger and fist 5% crit, mace **15% armour ignore** |
+| **`Hack and Slash`** | 30 | **It replaces Sword Specialization** — the dagger, fist and mace ones were removed outright. At 5 ranks (level 34): axe and sword get a 5% extra attack, dagger and fist 5% crit, mace **15% armour ignore** |
 ## What Forever changed for Rogues
 - **Poisons and Lockpicking are now secondary skills** — *"like First Aid"* — not Rogue class skills. Poison numbers are lower with more charges: [[Instant Poison]] rank 1 is *"13 to 17 instead of 19 to 25, 60 instead of 40"* charges. **Poison and a sharpening stone now stack.**
 - **Rogues can learn axes.** Note that the skill **starts at 1**, so a new axe will miss constantly until you raise it.

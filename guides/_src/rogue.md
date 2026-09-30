@@ -1,7 +1,7 @@
 updated: 30 September 2026
 build: 1.60.1.70124
 
-Rogue kills fast, dies fast and picks its fights. Forever moved Lockpicking to level 1 and made it a secondary skill, and Sap no longer breaks stealth.
+Rogue kills fast, dies fast and picks its fights. Forever moved Lockpicking to level 1 as a secondary skill, did the same to Poisons, and **[[Sap]] now needs no stealth and does not break it**.
 :::scope
 Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Rogue build has been tested.** Rogue is the class Blizzard has said least about — the entire Rogue section of the beta notes is one line about Sap and PvP flagging. Ability training levels below are read from the client; almost nothing else about Rogue is officially documented.
 :::
@@ -45,14 +45,14 @@ Play Rogue if you like deciding when a fight starts, and you accept dying quickl
 | **20** | **Poisons, via the class quest.** [[Instant Poison]] and [[Crippling Poison]], plus [[Rupture]] |
 | 22 | [[Vanish]], [[Distract]] — now also lowers enemy stealth detection |
 | 26 | [[Cheap Shot]] |
-| **30** | [[Kidney Shot]], [[Deadly Poison]], and **[[Mutilate]], [[Blade Flurry]], [[Adrenaline Rush]] and [[Hemorrhage]] all become reachable** — the real identity shift |
+| **30** | [[Kidney Shot]], [[Deadly Poison]], and **[[Mutilate]] — new in Forever — plus [[Blade Flurry]] and [[Hemorrhage]] all become reachable**. [[Adrenaline Rush]] is a 31-point capstone and waits until 40 — the real identity shift |
 | 34 | [[Blind]] |
 | 40 | [[Safe Fall]], mount |
-**Every Rogue combat ability trains at its Classic level.** The only thing that moved is Pick Lock.
+**Every Rogue combat ability trains at its Classic level.** What moved is the two utility systems: **Lockpicking and Poisons are both secondary skills now, like First Aid**, and Pick Lock came down to level 1 with it.
 ## Which race
 **Alliance — Human** for long fights, on `Sword Specialization` at **+2% crit**, the largest weapon racial. **Gnome** is the better levelling pick for `Eureka!` and `Escape Artist`.
 **Horde — Orc, unambiguously.** `Axe Specialization` gives +1% crit — and **Rogues can use one-handed axes in Forever**, which is new.
-**Forever changed the answer three ways.** Weapon racials became crit racials; Rogues gained one-handed axes; and **Sword, Dagger, Fist and Mace Specialization were all deleted from the Combat tree**, folded into one talent called `Hack and Slash`. There is no longer a sword-spec reason to be Combat.
+**Forever changed the answer three ways.** Weapon racials became crit racials; Rogues gained one-handed axes; and **`Hack and Slash` replaced Sword Specialization**, absorbing the dagger, fist and mace slots — one talent branching by weapon, **axes included**, which is the other half of why Orc's racial matters. There is no longer a sword-*exclusive* reason to be Combat, but swords are still served there.
 ## Quality of life
 - **The level-20 poison quest is the one thing that must be done.** Reagents come from a poison vendor near your class trainer. In Forever, **poisons stack with sharpening stones *and* Windfury Totem at the same time** — it used to be one or the other — and **poison damage now scales with Attack Power and can crit**.
 - **You need two weapons and a swap macro:** a dagger main-hand for [[Ambush]] and [[Backstab]], and a slow non-dagger for [[Sinister Strike]]. Swapping **costs a global cooldown and resets your swing timer**.
@@ -63,7 +63,7 @@ Play Rogue if you like deciding when a fight starts, and you accept dying quickl
 | --- | --- |
 | **[[Sap]] no longer breaks stealth** and needs no stealth | Splitting a pair of enemies is far easier |
 | [[Pick Lock]] at level 1, as a secondary skill | Free money and utility from the start |
-| All four weapon specialisations folded into `Hack and Slash` | One talent covers whichever weapon you hold |
+| `Hack and Slash` replaced Sword Specialization; the other three were removed | One talent branches by whichever weapon you hold — **axes included** |
 | **Rogues can use one-handed axes** | Which is why Orc's racial now matters |
 | Poisons scale with Attack Power and can crit | Crit is worth more than it was |
 | Energy regeneration is continuous, not ticked | You cannot bank a tick to arrive exactly when needed |

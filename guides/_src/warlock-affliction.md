@@ -40,7 +40,7 @@ All four come from class quests. [[Imp]] at **2**, [[Voidwalker]] at **10**, [[S
 | --- | --- | --- |
 | **`Improved Corruption` 5/5** | **14** | **Makes [[Corruption]] instant cast.** Corruption's base cast is 2 seconds and 5/5 removes exactly 2 seconds. The single most important talent in the tree |
 | **`Suppression` 5/5** | 14 | **Rewritten in Forever** — now +5% hit to *all* spells and −20% threat, where Classic gave Affliction-only resistance reduction |
-| **`Pandemic` 3/3** | ~25 | New. +100% critical damage on all your damage-over-time effects at 3/3 — the talent that cashes in the fact that they can crit |
+| **`Pandemic` 3/3** | 22 | New. **+99% critical damage** on Corruption, both Banes, [[Siphon Life]], `Wrack` and both Drains — the talent that cashes in DoT crits. **[[Immolate]] is not on the list** |
 | **`Wrack`** | **40** | The 31-point capstone. Not reachable in the beta at any cap |
 ## What Forever changed for Affliction
 - **Damage-over-time effects can critically strike.** Called *"one of the largest overall Warlock mechanical changes"*, and both `Malevolence` and `Pandemic` are new talents built on it.

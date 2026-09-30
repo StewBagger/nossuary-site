@@ -1,7 +1,7 @@
 updated: 30 September 2026
 build: 1.60.1.70124
 
-Freeze the target, then hit it for triple damage. **This is the Mage levelling spec and the safest specialisation in the game** — enemies frequently die before they reach you.
+Freeze the target, then hit it for **four times the damage** — the tooltip reads +300%. **This is the Mage levelling spec and the safest specialisation in the game** — enemies frequently die before they reach you.
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Frost build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40, so a **tier-3 talent like [[Ice Lance]] arrives at exactly level 20** — the eleventh point.
 :::
@@ -26,7 +26,7 @@ A third source publishes a dungeon variant that takes `Piercing Ice` over `Frost
 ## Rotation
 1. **[[Frost Armor]]** and [[Arcane Intellect]] up. Frost Armor itself procs `Frostbite` when you are hit
 2. **[[Frostbolt]]** until `Frostbite` freezes the target
-3. **[[Ice Lance]] into the freeze.** The critical detail: *"Do not cancel Frostbolt to cast Ice Lance. Finish your current cast, then queue up Ice Lance next"* — **Ice Lance snapshots the target's frozen status at cast time**
+3. **[[Ice Lance]] into the freeze.** The critical detail: *"Do not cancel Frostbolt to cast Ice Lance. Finish your current cast, then queue up Ice Lance next"* — one source reports that **[[Ice Lance]] snapshots the target's frozen status**, so a queued cast still lands as if frozen. No tooltip states it — but the advice holds either way, because cancelling a [[Frostbolt]] costs you more than a late Ice Lance
 4. Melee on you → **[[Frost Nova]]**, back away, [[Ice Lance]] as you retreat
 5. **Wand** to finish low-health enemies rather than spending mana
 6. From 30, spend `Fingers of Frost` stacks on [[Ice Lance]]
@@ -38,9 +38,9 @@ Sources disagree on the top of the list in a way worth knowing: one ranks **Hit 
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
 | **[[Ice Lance]]** | **exactly 20** | New in Forever. Instant, no cooldown, **+300% damage to frozen targets** |
-| **`Frostbite` 3/3** | 19 | 15% chance for your Chill effects to freeze. This is the engine that feeds Ice Lance and `Shatter` |
+| **`Frostbite` 3/3** | 17 | 15% chance for your Chill effects to freeze. This is the engine that feeds Ice Lance and `Shatter` |
 | **`Fingers of Frost`** | **exactly 30** | New. 15% chance to treat your next spell as if the target were frozen — **without rooting it** |
-| **`Shatter` 3/3** | 28 | 50% at max rank, up from Classic's 30% |
+| **`Shatter` 3/3** | 27 | **50% for three points, where Classic needed five** — the ceiling is unchanged, the cost is not |
 ## What Forever changed for Frost
 - **[[Ice Lance]] and `Fingers of Frost` are both brand new**, and together they are the spec.
 - **The slows were cut hard.** `Improved Blizzard` maxes at **40%** (Classic: 65%; rank 1 is 15% where Classic gave 30%). [[Cone of Cold]] is 40% over 6 seconds, down from 50% over 8. `Permafrost` was rewritten to +33% Chill duration and +10% extra slow at 3/3.

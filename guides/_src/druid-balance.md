@@ -7,7 +7,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 :::
 ## Is Balance worth levelling?
 **Viable but slower than Feral.** The published verdict: *"Balance Druid is an ok levelling choice. It does have a bit more downtime than Feral Druid would, but the larger range on your abilities can make tagging mobs much easier… Expect to start out very slowly though."*
-**That verdict predates a significant buff.** On 24 September [[Wrath]] got *"About 50% more damage at every rank"*, `Improved Wrath` 5/5 now also cuts its mana cost by 50%, and `Moonglow` 3/3 cuts the mana cost of all damaging spells by 25% where Classic gave 3% on a narrow list. **Balance's levelling case is stronger than the published guides read.**
+**That verdict predates a significant buff.** On 24 September [[Wrath]] got *"About 50% more damage at every rank"*, `Improved Wrath` 5/5 now also cuts its mana cost by 50%, and `Moonglow` 3/3 cuts the mana cost of **all damaging** spells by 25%, where Classic's 3/3 cut a named list — heals included — by 9%. Restoration loses a mana talent in the trade. **Balance's levelling case is stronger than the published guides read.**
 ## Your talent points
 **Level 20 — 11/0/0.** Every published build opens `Improved Wrath` 5/5. They differ after that.
 **Build A**, with the order published: `Improved Wrath` 5/5 → `Nature's Reach` 2/2 → `Moonglow` 3/3 → `Improved Moonfire` 1/2. The reasoning given for `Improved Wrath` over `Nature's Focus` is that *"you generally end up with a better effective cast time anyway and the mana savings are very significant"*, and `Nature's Reach` is taken because it *"will reduce the chances your spells miss by a significant amount"* as well as extending [[Moonfire]]'s range for tagging.

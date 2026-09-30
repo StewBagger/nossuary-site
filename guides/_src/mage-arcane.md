@@ -32,15 +32,15 @@ Spell Power and Arcane spell power, then Hit, spell Haste, Intellect, critical s
 ## What defines Arcane
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
-| **[[Arcane Blast]]** | **20** (22 in the dungeon build) | New. +10% to all your *other* spells per cast, **+175% mana cost per cast**, 4 stacks, 8 seconds |
+| **[[Arcane Blast]]** | **20** (22 in the dungeon build) | New. +10% to all your *other* spells per cast, **+175% mana cost per cast**, 4 stacks, 8 seconds **or until you cast any other damage spell** |
 | **`Missile Barrage`** | **25** | New. 40% from [[Arcane Blast]], 20% from [[Fireball]] or [[Frostbolt]]: next [[Arcane Missiles]] is half the channel and **free** |
-| **`Arcane Meditation` 3/3** | 28 | **50% of mana regeneration continues while casting**, up from Classic's 15%. One source calls the new value *"astonishing"* |
+| **`Arcane Meditation` 3/3** | 27 | **50% of mana regeneration continues while casting**, up from Classic's 15%. One source calls the new value *"astonishing"* |
 ## What Forever changed for Arcane
 - **[[Arcane Blast]] and `Missile Barrage` are both new.** The published summary: *"The former now finally grants Arcane Mage a main spell that it can rely on, while the latter introduces an RNG mechanic that empowers Arcane Missiles."*
 - **`Arcane Meditation` went from 15% to 50%.** This is what makes Arcane a levelling spec.
 - **`Arcane Mind` was rewritten** — now +10% Intellect at 5/5 **and +100% Arcane critical damage**, where Classic gave flat maximum mana.
 - `Arcane Impact` (renamed from `Improved Arcane Explosion`) now buffs **all** Arcane spells' crit. `Improved Channeling` (renamed from `Improved Arcane Missiles`) now protects [[Arcane Blast]] too, 70% at 5/5.
-- `Wand Specialization` moved to tier 1. `Arcane Focus` was rewritten from resistance reduction to plain Arcane hit. `Magic Absorption` went from 5 ranks to 2. **[[Improved Counterspell]] now always silences for 2 seconds** instead of a 50% chance at 4.
+- `Wand Specialization` moved to tier 1. `Arcane Focus` was rewritten from resistance reduction to plain Arcane hit. `Magic Absorption` went from 5 ranks to 2. **[[Improved Counterspell]] no longer rolls a chance** — rank 1 always silences for 2 seconds and rank 2 for 4, where Classic gave a 50% chance at rank 1. At 2/2 it is unchanged.
 - **[[Arcane Explosion]] was barely touched** — rank 6 is 232–252, against Classic's 243–263.
 ## At level 60
 Unknown. The specific open question: whether [[Arcane Blast]]'s +175%-per-stack mana curve is survivable with level-60 mana pools and raid buffs, or whether Arcane stays a burst and levelling spec. One source also notes *"it is yet unknown how Haste will interact with Missile Barrage."*

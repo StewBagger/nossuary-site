@@ -12,7 +12,7 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right n
 | **[Demonology](/guides/wow-forever/warlock/demonology/)** | Ranged DPS | **5/5 — joint best** | `Demonic Energies` turns your damage into pet healing and your Life Tap into pet mana |
 | **[Destruction](/guides/wow-forever/warlock/destruction/)** | Ranged DPS | 3.5/5 — the weak one | Hard-cast direct damage, and a wand currently competes with [[Shadow Bolt]] |
 **Affliction and Demonology are rated identically — 5 out of 5 for levelling — and Destruction is the only Warlock spec marked down.** The published reasoning for the gap is concrete: Destruction has *"less passive sustain than Affliction and less pet support than Demonology"*, most of its damage requires standing still, and Forever cut its direct-damage numbers hard. One guide declines to publish a level-20 Destruction build at all, on the grounds that a **free wand deals comparable damage to a mana-costing [[Shadow Bolt]]** at that level.
-**Your demon matters more than in Classic, in every spec**, because **demons now scale with your gear.** [[Voidwalker]] at 10 is the levelling pet; [[Succubus]] at 20 is the damage pet; **Forever trains the [[Felhunter]] at 30**, where Classic gated it behind a quest and withheld Spell Lock until 36.
+**Your demon matters more than in Classic, in every spec**, because **demons now scale with your gear** — asserted from hands-on testing by two guides and implied by Blizzard's own known-issues list, though **nothing published quantifies it.** [[Voidwalker]] at 10 is the levelling pet; [[Succubus]] at 20 is the damage pet; **Forever trains the [[Felhunter]] at 30**, where Classic gated it behind a quest and withheld Spell Lock until 36.
 ## Is Warlock for you?
 Play Warlock if you want the strongest solo levelling in the game and you do not mind tracking half a dozen things at once.
 :::strengths
@@ -40,10 +40,11 @@ Play Warlock if you want the strongest solo levelling in the game and you do not
 | **6** | **[[Life Tap]] — now scales with Spirit, and gives roughly double the mana it did in Classic** |
 | 8 | **[[Bane of Agony]]** (renamed from Curse of Agony), [[Fear]] |
 | **10** | **Voidwalker class quest**, [[Drain Soul]] — now grants shards from **damaged** targets, not only kills — and [[Create Healthstone]] |
-| 14 | [[Drain Life]], [[Curse of Recklessness]] — no longer gives the enemy attack power, so it is a straight buff now |
+| 14 | [[Drain Life]], [[Curse of Recklessness]] — no longer gives the enemy attack power — a buff at low level, but its armour reduction also fell at higher ranks (505 against Classic's 640 at rank 4), so it is a trade later |
 | **20** | **Succubus class quest**, [[Ritual of Summoning]], [[Rain of Fire]], and **[[Curse of the Elements]] moved much earlier** — from 32 in Classic — **and now hits every magic school** |
 | 28 | **[[Create Firestone]] — reworked into a weapon imbue giving up to +2% spell crit** |
-| 30 | **Summon Felhunter**, [[Hellfire]], [[Banish]] |
+| 28 | [[Banish]] |
+| 30 | **Summon Felhunter**, [[Hellfire]] |
 | **36** | **[[Create Spellstone]] — reworked into a weapon imbue giving up to +2% spell haste**, notable because haste is on no gear |
 | **40** | **[[Summon Felsteed]] — your free mount**, [[Howl of Terror]] |
 | 60 | **[[Bane of Doom]]**, [[Summon Dreadsteed]], **[[Portal of Summoning]], new** |
@@ -68,7 +69,7 @@ Play Warlock if you want the strongest solo levelling in the game and you do not
 | Change | What it means for you |
 | --- | --- |
 | **Damage curses became Banes** | You hold one Bane *and* one Curse on the same target |
-| **The 16-debuff limit is gone** | Nothing gets cut for slots any more |
+| **The 16-debuff limit: unknown** | Blizzard has not said whether it survives, and no beta test has reached a raid. Do not plan slots around either answer |
 | [[Life Tap]] scales with Spirit and gives about double | Spirit is suddenly a real Warlock stat |
 | [[Curse of the Elements]] at 20, all magic schools | It was level 32 and Fire/Frost only |
 | Firestone and Spellstone are weapon imbues now | +2% spell crit and +2% spell haste respectively |

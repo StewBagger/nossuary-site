@@ -14,7 +14,7 @@ Ratings: **Overall 3.5, Levelling 2.0, Dungeon 4.0, Utility 4.0, Mobility 1.0.**
 **Build A, 2/4/5**, leaning on Shadow's mana regeneration: `Wand Specialization` 2 / `Twilight Focus` 2 / **`Spirit Tap` 5** / `Improved Renew` 2. ⚠ Its prose and its own calculator disagree on whether `Spirit Tap` or `Twilight Focus` comes first. The totals are identical either way.
 **Build B, 0/11/0**, pure Holy: `Improved Renew` 3 / `Holy Specialization` 5 / `Divine Fury` 3. **No `Wand Specialization`, no `Spirit Tap`.**
 **Build C, 0/11/0**, also pure: `Holy Specialization` 5 → `Divine Fury` 5 → **[[Holy Nova]]** at 20.
-**Level 30 — 0/21/0**, in order: `Holy Specialization` 5 → `Divine Fury` 5 → `Inspiration` 3 → **[[Holy Nova]]** → `Twilight Focus` 1 → `Improved Healing` 3 → **`Binding Heal`** → `Twilight Focus` 2 → **[[Spirit of Redemption]]**.
+**Level 30 — 0/21/0**, in order: `Holy Specialization` 5 → `Divine Fury` 5 → `Inspiration` 3 → **[[Holy Nova]]** → `Twilight Focus` 1 → `Improved Healing` 3 → **`Binding Heal`** → `Twilight Focus` to 2/3 → **[[Spirit of Redemption]]**.
 ## Rotation
 **Solo damage — this is Discipline's rotation minus [[Holy Fire]]:**
 1. **[[Power Word: Fortitude]]** and **[[Inner Fire]]** up
@@ -37,12 +37,12 @@ Healing Power, then MP5, Spirit, Intellect, critical strike.
 | **[[Prayer of Mending]]** | **40** | New, the row-7 capstone. A bouncing heal with 5 jumps, one carrier at a time. Not in the beta |
 ## What Forever changed for Priests
 - **New:** `Binding Heal`, `Litany of Light`, [[Prayer of Mending]]. **Removed:** `Improved Prayer of Healing`.
-- **[[Lightwell]] is no longer a talent.** One source says it is trained from level 40; the others only say it was removed from the tree, so treat the training level as single-sourced.
+- **[[Lightwell]] is no longer a talent — it is trained from level 40**, in 3 ranks.
 - **`Spiritual Guidance` now converts 25% of Spirit to healing but only 8% to spell damage**, where Classic gave 25% to both. **This is a direct nerf to Holy's solo damage** and part of why the levelling rating is 2.0.
 - **`Twilight Focus` now covers *any* spell at 23% per rank**, where Classic covered healing spells at 35%. `Litany of Light` refunds 5% of base cost when you alternate heals.
 - **[[Renew]] can now critically strike**, as of the 24 September patch.
 - **[[Divine Spirit]] is trained from level 30**, not a talent. **[[Fear Ward]] is baseline for every Priest**, at 3 minutes' duration on a 3-minute cooldown.
-- **`Wand Specialization` is 2 ranks at 13% each**, and **wands no longer gain spell power.**
+- **`Wand Specialization` is 2 ranks reaching 25%** where Classic needed 5, and **wands no longer gain spell power.**
 - **[[Mind Flay]] is talent-only**, gated on 10 Shadow points. **No published Holy build reaches it** — see the [Shadow](/guides/wow-forever/priest/shadow/) page.
 ## At level 60
 Unknown: whether [[Prayer of Mending]] and `Litany of Light` give Holy enough mana efficiency and raid throughput to close the gap that Discipline currently holds in every published rating.

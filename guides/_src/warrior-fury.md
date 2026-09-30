@@ -14,7 +14,7 @@ Against it: **you cannot dual-wield until level 20**, and [[Whirlwind]] is **lev
 2. `Unbridled Wrath`, 5 points
 3. The eleventh point is the only disagreement between published builds — **`Piercing Howl`** for a slow, or **`Improved Cleave`**. On a PvP realm, take Piercing Howl.
 **Level 30 — 0/21/0**, reaching `Death Wish`: `Cruelty` 5, `Unbridled Wrath` 5, `Improved Cleave` 3, `Blood Craze` 2, **`Dual Wield Specialization` 5**, `Death Wish` 1.
-Skip `Raging Blows` at this level — it buffs [[Whirlwind]], which you do not have until 36.
+`Raging Blows` is only half-dead at this level — its [[Whirlwind]] half waits until 36, but the other half cuts [[Cleave]]'s rage cost by 2, which stacks with `Improved Cleave`. Take it as a rage talent or not at all.
 ## Rotation
 **Identical to Arms at low level, minus [[Slam]].** The two specs genuinely play the same until 30, and saying so is more useful than padding.
 1. **[[Battle Shout]]** and **[[Bloodrage]]**
@@ -38,7 +38,7 @@ Weapon damage, then **Hit** — *especially* important while dual-wielding, sinc
 - **Three new talents:** `Boundless Rage` (+30 maximum rage), `Raging Blows` ([[Whirlwind]] also strikes with the off-hand, and Cleave costs 2 less), and `Precision` (+3% hit).
 - **`Iron Will` moved in from Protection.** `Improved Slam` moved out to Arms.
 - **`Enrage` was rewritten** — a 30% chance on **any** damage taken, where Classic required an incoming critical hit.
-- **[[Bloodthirst]] lost its self-heal entirely** and its damage was cut from 45% to 35% of attack power, gaining +10% movement speed instead.
+- **[[Bloodthirst]] no longer heals you by itself** — the heal moved into `Blood Craze`, which now triggers on Bloodthirst damage as well as on being crit or taking a hit worth more than 20% of your health. Bloodthirst's damage was cut from 45% to 35% of attack power and it gained +10% movement speed instead.
 - `Flurry` was nerfed from 30% to 25% and now requires `Enrage`. `Improved Battle Shout` and `Improved Demoralizing Shout` were deleted.
 ## At level 60
 Unknown, and the published sources are unusually frank about it: *"we are unsure currently if there will be additional ways to generate Rage at Level 60, as these changes alone greatly reduce Fury Warrior's Rage generation"*, and *"you will be struggling to press buttons on cooldown in endgame content, but this is likely to change before launch."*

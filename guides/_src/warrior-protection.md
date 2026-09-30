@@ -13,7 +13,7 @@ Worth knowing before you commit: **a full Protection spec is not required to tan
 1. `Shield Specialization`, 5 points — taken mainly for **5 rage on every block**
 2. `Improved Bloodrage`, 2 points
 3. Then either **`Improved Thunder Clap` 3** — more area threat — or **`Anticipation` 3** for Defense
-4. `Master of Defense`, 1 point — 5 rage on a dodge or parry
+4. `Master of Defense`, 1 point — **a 50% chance** of 5 rage on a dodge or parry
 **Level 30 — 0/0/21**, reaching `Vanguard`: `Shield Specialization` 5, `Anticipation` 4, `Improved Bloodrage` 2, `Master of Defense` 2, `Defiance` 3, `Improved Sunder Armor` 3, `Vanguard` 1, `Bastion` 1. `Concussion Blow` is a strong alternative for that last point.
 ## Rotation
 1. **[[Battle Shout]]** always up, **[[Bloodrage]]** between pulls
@@ -32,7 +32,7 @@ A second published view weights it differently and is worth holding beside that 
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
 | **`Shield Specialization`** | maxed by 14 | +5% block and a **100% chance of 5 rage on block**. Classic gave 1 rage |
-| **`Master of Defense`** | 20 | 5 rage on a dodge or parry with a shield. Both published level-20 builds are named after it |
+| **`Master of Defense`** | 20 | **A 50% chance per rank** of 5 rage on a dodge or parry with a shield, over two ranks. Both published level-20 builds are named after it |
 | **`Vanguard`** | 25 | [[Charge]] usable in Defensive Stance — still not in combat |
 | **`Shield Slam`** | 40 | The capstone, and heavily buffed — 421–439 against Classic's 225–235 |
 ## What Forever changed for Protection
@@ -40,6 +40,6 @@ A second published view weights it differently and is worth holding beside that 
 - **The tree is now shield-gated.** `Defiance`, `Bastion` and `Master of Defense` all require a shield, which kills Classic's dual-wield threat setup. `Defiance` was also cut from 5 ranks to 3.
 - **Three new talents:** `Master of Defense`, `Vanguard`, and `Focused Rage`. **`Bastion` replaces `One-Handed Weapon Specialization`** at +10% damage with a shield equipped.
 - **`Improved Revenge` no longer grants a stun** — it gives +60% Revenge damage instead, and [[Concussion Blow]] carries the stun now.
-- `Improved Taunt` and `Improved Shield Block` were **deleted**.
+- `Improved Taunt` and `Improved Shield Block` are gone from the tree because **both effects became baseline**: [[Taunt]]'s cooldown is 8 seconds without a point, and [[Shield Block]] blocks 2 attacks over 7 seconds where Classic blocked 1 over 5. You lose the talents and keep the effects.
 ## At level 60
 Unknown. Whether shield-only tanking holds up now that the threat talents are shield-gated is untested, and the published stat ordering is explicitly called a rough ranking that *"will change largely depending on the gear you have available."*

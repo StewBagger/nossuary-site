@@ -36,13 +36,13 @@ The [[Imp]] becomes viable here specifically: it *"can run out of Mana quickly, 
 ## What defines Demonology
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
-| **`Demonic Energies`** | **15** | New, and the spec. At 2/2: **15% of all your spell damage heals your pet, and 100% of your [[Life Tap]] mana is mirrored to it.** *"A really smooth loop where your normal damage and resource management also help keep your demon ready for the next pull"* |
+| **`Demonic Energies`** | **16** | New, and the spec. At 2/2: **15% of all your spell damage heals your pet, and 100% of your [[Life Tap]] mana is mirrored to it.** *"A really smooth loop where your normal damage and resource management also help keep your demon ready for the next pull"* |
 | **`Unholy Power` 5/5** | 14 | **Moved from tier 4 to tier 1** and now covers *all* pet damage, where Classic was melee only |
-| **`Fel Vitality` 3/3** | 16 | Renamed from `Fel Intellect`. +15% pet health **and** mana **and** your own maximum mana |
+| **`Fel Vitality` 3/3** | 17 | Renamed from `Fel Intellect`. +15% pet health **and** mana **and** your own maximum mana |
 | **[[Soul Link]]** | **30** | **Moved from tier 7 to tier 5**, which is the only reason a 21-point build can reach it |
 ## What Forever changed for Demonology
 - **Demons now scale with your gear** — *"Warlock demons now scale with the Warlock's stats, making them deal much more damage and become much tankier."*
-- **Seven new talents**: `Demonic Aegis`, `Demonic Energies`, `Decimation`, `Demonic Brand`, `Improved Felhunter`, `Demonic Knowledge`, and the capstone **`Demonic Pact`** — *"Your [[Demonic Sacrifice]] effect is no longer cancelled by summoning a different Demon pet."* The published reaction: *"At last, we can play with our pet out instead of sacrificing it."*
+- **Seven new talents**: `Demonic Aegis`, `Demonic Energies`, `Decimation`, `Demonic Brand`, `Improved Felhunter`, `Demonic Knowledge`, and the capstone **`Demonic Pact`** — *"Your [[Demonic Sacrifice]] effect is no longer cancelled by summoning a different Demon pet. **Resummoning the sacrificed pet will still cancel the effect.**"* So you keep the sacrifice buff *and* a demon — just not the demon you sacrificed. The published reaction: *"At last, we can play with our pet out instead of sacrificing it."*
 - **[[Demonic Sacrifice]] lasts 2 hours** (Classic: 30 minutes) and **its bonuses swapped** — [[Imp]] now gives +15% **Shadow** where Classic gave Fire, and [[Succubus]] gives +15% **Fire** where Classic gave Shadow.
 - **`Master Demonologist` was rewritten** — Imp gives Fire damage, Voidwalker reduces physical damage taken, Succubus gives Shadow damage, Felhunter reduces magic damage taken.
 - **The tree was front-loaded:** `Unholy Power` 4→1, `Improved Health Funnel` 2→1, [[Demonic Sacrifice]] 5→3, `Master Summoner` 4→3, [[Soul Link]] 7→5. **Five removed:** `Improved Healthstone`, `Fel Stamina`, `Improved Firestone`, `Improved Spellstone`, `Improved Subjugate Demon`.

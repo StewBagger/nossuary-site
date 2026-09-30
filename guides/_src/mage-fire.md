@@ -34,14 +34,14 @@ Crit sits higher for Fire than for any other Mage spec — it is *"a great damag
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
 | **`Hot Streak`** | **25** | New, and the headline. Non-periodic crits cut [[Pyroblast]]'s cast by 25% per stack — **3 stacks turns 6 seconds into 1.5**. Pyroblast's own crits do not feed it |
-| **`Wake of Fire`** | 15 | New, replacing `Improved Fire Blast`. −2 s off [[Fire Blast]], and +50% crit on the next one after a kill |
-| **`Improved Scorch` 3/3** | 28 | 100% application chance, +3% Fire damage taken per stack, 5 stacks |
+| **`Wake of Fire`** | 10 | New, replacing `Improved Fire Blast`. −2 s off [[Fire Blast]], and +50% crit on the next one after a kill |
+| **`Improved Scorch` 3/3** | 27 | 100% application chance, 5 stacks, **+3% per stack to the Fire damage *you* deal to that target.** This is a **personal** buff in Forever, not Classic's shared Fire vulnerability — do not take a group assignment to supply it |
 | **`Ignite` 5/5** | 19 | 40% of the spell's damage again over 4 seconds |
 ## What Forever changed for Fire
 - **`Hot Streak` is new and it changes the spec.** The published summary: *"This talent now allows Fire Mages to successfully incorporate Pyroblast into their normal gameplay besides cheesy PvP builds or pre-pulls."* It lasts **20 seconds** as of the 24 September patch — one site still says 15.
 - **`Incineration`** (renamed from Incinerate) moved from tier 3 to **tier 1** and now buffs [[Fire Blast]], [[Ice Lance]], [[Arcane Blast]] **and** [[Scorch]] — deliberately cross-school.
 - **Only one [[Flamestrike]] per Mage can be active at a time.** New restriction.
 - [[Combustion]] now lasts through **4** non-periodic Fire crits, up from 3. [[Blast Wave]] no longer requires [[Pyroblast]] and now dazes for 50%. `Impact` was cut from 5 ranks to 3. `Burning Soul` went from 2 ranks to 3 but is weaker per rank.
-- **Mage area damage has no target cap and no falloff** — that applies here too, and it is the published position.
+- **No Mage area spell carries a target cap in its tooltip**, and Forever does print caps where it means them — Paladin's [[Consecration]] names its first four targets. Whether damage *falls off* past some count is a **separate and open question**: one guide says there is no falloff, players report a reduction past the fourth or fifth target, and Blizzard has not answered. Do not build a farming plan on the falloff claim.
 ## At level 60
 Unknown, and for Fire the uncertainty is existential: every source ties the spec to a critical strike rate *"you only gain… through gear at or near the Level 60 content"*, which is precisely the thing nobody has.

@@ -38,8 +38,8 @@ Given that Forever moved caster power from base spells onto gear, **item level i
 | **[[Lava Burst]]** | **40** | New, the row-7 capstone. 2.5-second cast, 10-second cooldown, **+20% with your own [[Flame Shock]] up**. Not in the beta |
 ## What Forever changed for Elemental
 - **New:** [[Lava Burst]], `Lightning Overload`, `Earthbound`. **Removed:** `Elemental Mastery`, `Totemic Mastery`.
-- **[[Fire Nova Totem]] became [[Fire Nova]]** — a 30-yard explosion cast **from your active Fire totem**, rather than a totem you drop and wait on. `Improved Fire Nova` replaces `Improved Fire Totems`. This is a real improvement and it changes how you open a pull.
-- **[[Lightning Bolt]] at max rank casts in 2.5 seconds instead of 3.0. [[Chain Lightning]] rank 1 casts in 2.0 instead of 2.5.**
+- **[[Fire Nova Totem]] became [[Fire Nova]]** — an instant **10-yard** explosion cast **from your active Fire totem**, rather than a totem you drop and wait on. (The 30 yards is how far away you may now *place* a totem, up from 20 — a different number.) `Improved Fire Nova` replaces `Improved Fire Totems`. This is a real improvement and it changes how you open a pull.
+- **[[Lightning Bolt]] casts in 2.5 seconds instead of 3.0 from rank 4 — level 20 — upward, so the buff is live at the current cap. [[Chain Lightning]] casts in 2.0 instead of 2.5 at every rank.**
 - **Base spell damage was cut across the board**, with the power moved onto gear's spell power.
 - **`Elemental Alacrity`** (renamed from `Lightning Mastery`) **moved up to row 3, and `Elemental Fury` moved down to row 6** on 24 September — and Elemental Fury now requires `Call of Thunder`. `Call of Thunder` itself is now 1 rank at 3%. **This is the change that invalidated the published level-30 build.**
 - **Weapon imbues last 60 minutes instead of 5; totems last 5 minutes instead of 2 and reach 30 yards instead of 20.**

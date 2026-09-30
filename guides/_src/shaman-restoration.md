@@ -36,13 +36,13 @@ Healing Power, then critical strike, Haste, Intellect, MP5, Spirit, Stamina.
 | --- | --- | --- |
 | **[[Water Shield]]** | **exactly 20** | New. 3 globes; 2% of maximum mana when you are hit or when you crit a heal; 10 minutes. **One Elemental Shield at a time** — [[Lightning Shield]] replaces it |
 | **[[Mana Tide Totem]]** | **25** | **Moved from row 7 to row 4** and no longer needs `Restorative Totems`. The 16-point milestone |
-| **`Nature's Swiftness`** | **exactly 30** | Your instant emergency heal |
+| **`Nature's Swiftness`** | **exactly 30** | Your next **Nature spell** becomes instant, whatever it is — in practice a [[Healing Wave]] you cannot be interrupted out of |
 | **[[Riptide]]** | **40** | New, the row-7 capstone. Instant, 6-second cooldown, and a [[Chain Heal]] cast *directly* on the Riptide target is 25% stronger |
 ## What Forever changed for Restoration
 - **New:** `Mindfulness` (17% per rank of mana regeneration continues while casting, up to 50%), [[Water Shield]], [[Riptide]]. **Removed:** `Nature's Guidance` among others.
 - **`Healing Way` is now a flat +8% per rank to [[Healing Wave]] itself**, instead of a stacking per-target buff you had to build up with low-rank casts. **That removes an entire Classic upkeep habit** — if you played a Resto Shaman before, stop pre-stacking.
 - **[[Mana Tide Totem]] moved from row 7 to row 4 but was cut to 88 mana per tick, down from 170.**
-- **`Tidal Focus` now also grants global hit.** `Healing Focus` is 3 ranks reaching 70%. `Improved Reincarnation` now also grants +2% maximum health.
+- **`Tidal Focus` now also grants global hit.** `Healing Focus` is 3 ranks reaching 70%. `Improved Reincarnation` now also grants +2% maximum health per rank, 4% at 2/2.
 - **[[Riptide]] can now critically strike**, as of the 24 September patch.
 - **Totems last 5 minutes instead of 2 and reach 30 yards instead of 20.** Weapon imbues last 60 minutes instead of 5.
 - **A capstone conflict:** `Nature's Swiftness` needs 21 Restoration points, and **either** 31-point capstone needs 31 — 52 against a 51-point budget. **`Nature's Swiftness` cannot coexist with `Rage of the Farseer` or [[Lava Burst]].**

@@ -8,10 +8,10 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right n
 ## Which spec?
 | Spec | Role | Levelling | In one line |
 | --- | --- | --- | --- |
-| **[Arcane](/guides/wow-forever/mage/arcane/)** | Ranged DPS | **Newly excellent** | [[Arcane Blast]] and `Missile Barrage` — both new, and they make the tree real |
-| **[Fire](/guides/wow-forever/mage/fire/)** | Ranged DPS | Usable, slower | `Hot Streak` finally makes [[Pyroblast]] a button you press |
-| **[Frost](/guides/wow-forever/mage/frost/)** | Ranged DPS | **Best of the three** | Freeze, then [[Ice Lance]] for +300%. The safest spec in the game |
-**Frost or Arcane.** Frost is the comfortable answer — *"slowing and chilling everything they fight keeps them safe"*, with [[Frostbite]] often killing melee enemies before they reach you. Arcane is the genuinely new option: in Classic its tree had nothing to spend points on, and Forever gave it `Arcane Meditation` at **50% mana regeneration while casting** (Classic gave 3%), which is what makes it a levelling spec at all.
+| **[Arcane](/guides/wow-forever/mage/arcane/)** | Ranged DPS | **Rated highest — 4.0/5** | [[Arcane Blast]] and `Missile Barrage` — both new, and they make the tree real |
+| **[Fire](/guides/wow-forever/mage/fire/)** | Ranged DPS | Usable — 2.5/5 | `Hot Streak` finally makes [[Pyroblast]] a button you press |
+| **[Frost](/guides/wow-forever/mage/frost/)** | Ranged DPS | **Safest — 3.5/5** | Freeze, then [[Ice Lance]] for +300%. The safest spec in the game |
+**Frost or Arcane**, and the published ratings put **Arcane ahead for levelling, 4.0 against Frost's 3.5.** Frost is still the more forgiving answer — *"slowing and chilling everything they fight keeps them safe"*, with [[Frostbite]] often killing melee enemies before they reach you. Arcane is the genuinely new option: in Classic its tree had nothing to spend points on, and Forever gave it `Arcane Meditation` at **50% mana regeneration while casting** (Classic gave 15%), which is what makes it a levelling spec at all.
 **Fire is playable but slower**, for a specific reason rather than a vague one: its payoff talents sit at tiers 4 to 7 — levels 25 to 40 — and it needs a critical strike rate you only get from level-60 gear.
 **One correction worth carrying:** Mage area damage has **no target cap and no damage falloff** in Forever, contrary to a persistent belief. The slows attached to it were cut hard, though — `Improved Blizzard` maxes at **40%**, down from Classic's 65%.
 ## Is Mage for you?
@@ -48,7 +48,7 @@ Play Mage if you want the fastest kills in the game and can accept that two enem
 | 30 | [[Ice Armor]] |
 | 34 | [[Mage Armor]] — now returns **50%** of regeneration while casting, was 30% |
 | **40** | The four **portals**, **[[Frostfire Bolt]], new**, mount |
-| 50 | [[Teleport: Dalaran]], new |
+| 50 | [[Teleport: Dalaran]], **new — Gnome, Human and High Order Skyborne only** |
 **[[Detect Magic]] is the only Mage spell deleted in Forever.** [[Frostfire Bolt]] is checked against **the lower of the target's frost and fire resistance** and counts as both schools, which may make it replace Fireball outright for a fire mage.
 ## Which race
 **Alliance — Human or Gnome.** Human's `Sword Specialization` is **+2% spell and ability crit off a sword held purely as a stat stick**, which is a real change to the vanilla answer — though compare it honestly against a staff with better stats, because at levelling levels the staff often wins. Gnome brings `Expansive Mind` and the new `Eureka!`.
@@ -64,9 +64,9 @@ Play Mage if you want the fastest kills in the game and can accept that two enem
 | --- | --- |
 | [[Ice Lance]] added as an 11-point Frost talent | Freezing things is now a damage engine, not just an escape |
 | [[Arcane Blast]] and Hot Streak added | Arcane became a genuine levelling tree |
-| **Area damage is barely changed, but the slows were cut hard** | `Improved Blizzard` is 40–45% at max rank, down from 65%. Kiting needs more room |
-| **Mage area damage has no target cap** | Bigger pulls are strictly better, if you survive them |
-| [[Molten Armor]] and [[Detect Magic]] absent | The armours are Frost, Ice and Mage |
+| **Area damage is barely changed, but the slows were cut hard** | `Improved Blizzard` is 40% at max rank, down from 65%. Kiting needs more room |
+| **Mage area damage has no target cap** | Bigger pulls are strictly better, if you survive them — with one new limit: **only one [[Flamestrike]] can be active per Mage at a time** |
+| [[Detect Magic]] deleted | The armours are Frost, Ice and Mage. There is no [[Molten Armor]] — and there never was in Classic either |
 | Research, scrolls and Comprehension added at 6 | An entirely new system, easy to miss |
 | `Mage Armor` returns 50% regen while casting | Was 30% |
 ## At level 60
