@@ -12,11 +12,14 @@
 //   "professions": {"primary": [...9], "secondary": [...3]},
 //   "totals":      {members, characters, by_faction: {Alliance: {members, characters}, ...}},
 //   "characters":  [{name|null, slot, priority, faction, race, race_display, class, class_name,
-//                    colour, trees[], roles[], ruleset, char_name|null, primary[], secondary[]}] }
+//                    colour, trees[], roles[], ruleset, char_name|null, note|null,
+//                    primary[], secondary[]}] }
 //
 // `name` is the MEMBER, null when they chose not to be listed; `char_name` is the in-game
 // character, null until it exists. A null name is never dropped and never given a name —
-// it is counted and shown as ANON_NAME.
+// it is counted and shown as ANON_NAME. `note` is the member's own free text about that
+// character, written in Discord; it is null or absent for most of the roster, and it is the
+// only field on this page a member composes rather than picks, so it is treated as hostile.
 
 // A browser holding a cached config.js that predates `rosterUrl` still gets a roster.
 // Keep in step with js/config.js (tests/roster.test.mjs fails if they disagree).
@@ -58,6 +61,37 @@ export function displayName(ch) {
 export function charName(ch) {
   const raw = ch && typeof ch.char_name === "string" ? ch.char_name.trim() : "";
   return raw || null;
+}
+
+// The member's own note about this character ("main tank if we need one"). Absent, null or
+// blank for most of the roster, and an absent note draws NOTHING — no empty element and no
+// stray separator — rather than the word "null".
+//
+// It is free text a person typed, so it is the one value on this page composed rather than
+// chosen, and it is handled exactly like every other string from the document: it reaches the
+// page through textContent and never as HTML, so nothing here escapes or strips it and the
+// text a member wrote is shown back to them verbatim. What IS done is shape: whitespace is
+// collapsed so a pasted newline cannot stretch a table cell, and the length is clamped —
+// the publisher promises at most NOTE_MAX characters and the page does not take its word.
+export const NOTE_MAX = 140;
+
+export function charNote(ch) {
+  const raw = ch && typeof ch.note === "string" ? ch.note.replace(/\s+/g, " ").trim() : "";
+  if (!raw) return null;
+  return raw.length <= NOTE_MAX ? raw : `${raw.slice(0, NOTE_MAX - 1).trimEnd()}…`;
+}
+
+// What the note's button is CALLED. A table can hold a dozen of these, and a screen reader
+// moving button to button through "note, note, note" learns nothing about which row it is on,
+// so every button names its own character — and, where the character has no name yet, the
+// member and the class, which is all the row itself is claiming.
+export function noteLabel(ch) {
+  const who = displayName(ch).label;
+  const named = charName(ch);
+  const klass = (typeof ch?.class_name === "string" && ch.class_name.trim())
+    || (typeof ch?.class === "string" && ch.class.trim()) || "";
+  const about = named || (klass ? `their ${klass}` : "their character");
+  return `Note from ${who} about ${about}`;
 }
 
 export function priorityKey(value) {
@@ -340,6 +374,13 @@ function classTag(name, colour, href) {
 }
 
 // One person in a "who is taking this" list: member, class, and how strong the intention is.
+//
+// Deliberately NO note here. These chips answer a coverage question — is anyone on this
+// profession, is anyone tanking — and the same character appears in one chip per profession
+// and per role, so a note would be repeated up to six times and would bury the answer. The
+// chip is also a nowrap pill in a wrapping row: 140 characters of prose inside one would
+// stretch the row past the table. The note is shown in full, once, in the by-class view,
+// where every character has exactly one row.
 function takerChip(ch) {
   const who = displayName(ch);
   const prio = priorityLabel(ch.priority);
@@ -374,7 +415,87 @@ function emptyPanel(text) {
   return el("p", { class: "rs-empty muted", text });
 }
 
-function renderClassView(doc, faction) {
+// --- The member's note, as a disclosure -------------------------------------------
+//
+// A button on the character's line, and a bubble it reveals. Click or tap, never hover: a
+// hover-only note is unreachable on a phone, and this page's rule is that nothing carries
+// meaning by hover alone.
+//
+// The bubble is IN FLOW — a block inside the same cell, directly after the button — and the
+// row grows when it opens. It is not an absolutely-positioned popover, because this table
+// scrolls horizontally inside `.rs-table { overflow-x: auto }`: a popover would either be
+// clipped by that scroller or have to escape it, and escaping it means the bubble no longer
+// travels with the row it belongs to. In flow it cannot be clipped, it cannot widen the
+// table (the CSS caps it in ch and wraps), it needs no measuring, and it lands in the reading
+// order immediately after its own button on every screen width.
+
+let noteSeq = 0;      // ids have to be unique across the page, not just within one table
+let openNote = null;  // exactly one note is open at a time; this is the one
+
+function setNoteOpen(pair, open) {
+  pair.button.setAttribute("aria-expanded", open ? "true" : "false");
+  pair.bubble.hidden = !open;
+}
+
+// Exported so the page can shut an open note when the panels underneath it are replaced, and
+// so the tests can start from a known state.
+export function closeOpenNote({ focus = false } = {}) {
+  const pair = openNote;
+  if (!pair) return false;
+  openNote = null;
+  setNoteOpen(pair, false);
+  if (focus && typeof pair.button.focus === "function") pair.button.focus();
+  return true;
+}
+
+function noteDisclosure(ch, text) {
+  const id = `rs-note-${++noteSeq}`;
+  const button = el("button", {
+    type: "button", class: "rs-note-toggle", "aria-expanded": "false", "aria-controls": id,
+    // The visible word is "note"; the accessible name starts with the same word, so "click
+    // note" still works by voice, and adds the one thing the word alone cannot say.
+    "aria-label": noteLabel(ch), text: "note",
+  });
+  const bubble = el("span", {
+    class: "rs-note muted", id, role: "note", tabindex: "0", hidden: true, text,
+  });
+  const pair = { button, bubble };
+
+  button.addEventListener("click", (e) => {
+    // This click is the one thing that must NOT reach the page-wide dismissal below.
+    if (typeof e?.stopPropagation === "function") e.stopPropagation();
+    const wasOpen = openNote === pair;
+    closeOpenNote();               // opening a second note closes the first
+    if (!wasOpen) { openNote = pair; setNoteOpen(pair, true); }
+  });
+  // A click inside the bubble is not a click "elsewhere": selecting the text must not shut it.
+  bubble.addEventListener("click", (e) => {
+    if (typeof e?.stopPropagation === "function") e.stopPropagation();
+  });
+  const escape = (e) => {
+    if (e?.key !== "Escape") return;
+    if (typeof e.stopPropagation === "function") e.stopPropagation();
+    closeOpenNote({ focus: true });
+  };
+  button.addEventListener("keydown", escape);
+  bubble.addEventListener("keydown", escape);
+  return [button, bubble];
+}
+
+// Wired once, on the document, rather than per render: the panels are rebuilt every refresh
+// and a per-render listener would pile up. Escape anywhere closes the open note and puts the
+// focus back on the button that opened it.
+export function wireNoteDismiss(root) {
+  if (!root || typeof root.addEventListener !== "function") return;
+  root.addEventListener("click", () => closeOpenNote());
+  root.addEventListener("keydown", (e) => { if (e?.key === "Escape") closeOpenNote({ focus: true }); });
+}
+
+// Exported for tests/roster.test.mjs, which renders it against a stand-in document to prove
+// that free text from the feed reaches the page as text and never as markup, and to work the
+// disclosure. Everything below the divider still needs a `document`; the export does not
+// change that.
+export function renderClassView(doc, faction) {
   const rows = classRows(doc, faction);
   const taken = rows.filter((r) => r.count);
   // The class list travels with the document. Before the first publish there isn't one, and a
@@ -396,11 +517,17 @@ function renderClassView(doc, faction) {
       const who = displayName(ch);
       const prio = priorityKey(ch.priority);
       const cname = charName(ch);
+      // The note belongs to the character, so its button sits on the character's line and the
+      // bubble opens in that same cell — a ninth column would be empty on most rows. A
+      // character without a note gets NO button and no placeholder for one.
+      // `text:` is the only way the note can reach the page: el() has no HTML path at all.
+      const memberNote = charNote(ch);
       body.push(el("tr", { class: prio === "tertiary" ? "rs-row-quiet" : null },
         el("th", { scope: "row" }, classTag(row.name, row.colour, row.guide)),
         el("td", {}, cname
           ? el("span", { text: cname })
-          : el("span", { class: "rs-pending", text: NO_CHARACTER })),
+          : el("span", { class: "rs-pending", text: NO_CHARACTER }),
+          ...(memberNote ? noteDisclosure(ch, memberNote) : [])),
         el("td", {}, el("span", { class: who.anonymous ? "rs-anon" : null, text: who.label })),
         el("td", { text: ch.race_display || ch.race || "—" }),
         el("td", { text: (Array.isArray(ch.trees) && ch.trees.length ? ch.trees.join(" / ") : "Undecided") }),
@@ -573,6 +700,8 @@ function renderTotals(doc) {
 }
 
 function render(doc, now = Date.now()) {
+  // The panels below are about to be replaced, and an open note is drawn inside one of them.
+  closeOpenNote();
   const age = renderMeta(doc, now);
   renderTotals(doc);
   for (const section of document.querySelectorAll("[data-faction]")) renderFaction(section, doc);
@@ -603,6 +732,7 @@ async function refreshRoster() {
 
 function boot() {
   wireTabs();
+  wireNoteDismiss(document);
   const launch = $("#roster-launch");
   if (launch) {
     // Before any document arrives the page still knows when WoW: Forever opens.

@@ -172,6 +172,56 @@ a.rs-class-name:hover { color: var(--class-accent, var(--phosphor)); text-decora
 .rs-anon { color: var(--bone-dim); font-style: italic; }
 .rs-pending { color: var(--grey); font-style: italic; }
 
+/* --- The member's note --------------------------------------------------- */
+/* The member's own words about a character, republished from Discord, behind a button on
+   that character's line. Click or tap to open, again to close — never hover, which would put
+   it out of reach on a phone.
+
+   THE BUTTON is a quiet micro-pill, the same shape as .rs-prio and .rs-extra, and it exists
+   only on rows that have a note. It is sized so it fits INSIDE the line box of the character
+   name beside it (.62rem text, line-height 1, 3px padding, 1px border ≈ 18px against a ~19px
+   line box), so a row carrying one is not taller than a row that does not and the column does
+   not shift as the eye goes down it.
+
+   THE BUBBLE is in flow, not an absolutely-positioned popover: this table lives inside
+   .rs-table { overflow-x: auto }, which would clip a popover, and a popover that escaped the
+   scroller would stop travelling with its own row. In flow it cannot be clipped, the row
+   simply grows while it is open, and the width cap in ch means 140 characters wrap into a
+   block instead of stretching the Character column. overflow-wrap handles the member who
+   types one unbroken 140-character word. The min-width is the other half of that: a cell in a
+   narrow column would otherwise squeeze the bubble into a one-word ribbon, so an OPEN bubble
+   asks its column for a readable measure and the scroller absorbs the difference; a closed one
+   is display: none and asks for nothing, so the table is its normal width the rest of the time.
+
+   No speech-bubble tail: the bubble opens at the left edge of the cell while the button sits
+   wherever the character's name ends, and before launch most characters are "not rolled yet",
+   so a corner tail would be pointing at nothing on most rows. The open button keeps a brighter
+   border instead, which says which one is open and is true at any width.
+
+   [hidden] is declared explicitly: an author `display: block` beats the UA sheet's
+   [hidden] { display: none }, and without this line every note would be permanently open. */
+.rs-note-toggle {
+  margin-left: 8px; vertical-align: baseline;
+  font: 600 .62rem/1 var(--mono); letter-spacing: .1em; text-transform: lowercase;
+  color: var(--grey); background: var(--bg-2);
+  border: 1px solid var(--line); border-radius: 999px; padding: 3px 7px;
+  cursor: pointer;
+  transition: color .15s ease, border-color .15s ease;
+}
+.rs-note-toggle:hover { color: var(--bone-dim); border-color: var(--bone-dim); }
+.rs-note-toggle:focus-visible { outline: 2px solid var(--phosphor); outline-offset: 2px; }
+.rs-note-toggle[aria-expanded="true"] { color: var(--bone); border-color: var(--bone-dim); }
+
+.rs-note {
+  display: block; margin: 9px 0 2px; min-width: 24ch; max-width: 34ch;
+  padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px;
+  background: var(--bg-2);
+  font-size: .84em; font-style: italic; line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.rs-note[hidden] { display: none; }
+.rs-note:focus-visible { outline: 2px solid var(--phosphor); outline-offset: 2px; }
+
 /* --- Gaps --------------------------------------------------------------- */
 /* The whole point of the profession view: a profession nobody has taken is a finding, so it
    is drawn louder than the rows that are covered, not quietly left out. */
@@ -216,4 +266,6 @@ a.rs-class-name:hover { color: var(--class-accent, var(--phosphor)); text-decora
   .rs-tabs button { padding: 8px 12px; font-size: .8rem; }
   .rs-table table { font-size: .86rem; }
   .rs-table th, .rs-table td { padding-right: 12px; }
+  .rs-note { max-width: 28ch; }
+  .rs-note-toggle { margin-left: 6px; }
 }
