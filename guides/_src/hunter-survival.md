@@ -6,9 +6,10 @@ The durable Hunter — parry, a defensive cooldown, and traps that are genuinely
 Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Survival build has been tested.
 :::
 ## Is Survival worth levelling?
-**No, if you want to level quickly.** The published advice does not hedge: *"At Level 20, you should not go Survival if all you care about is damage or leveling quickly"* — go Beast Mastery or Marksmanship, which *"both offer far better damage talents at low levels."*
+**Slowest of the three if you are soloing — and note the condition the source attaches.** Its advice is *"you should not go Survival **if all you care about is damage or leveling quickly**"*, and Beast Mastery or Marksmanship *"both offer far better damage talents at low levels."*
+**That is a statement about solo kill speed, not about whether the spec works.** In a group, where something else is holding the target, Survival's durability costs you very little.
 **What Survival is actually good at right now is PvP.** `Deflection` plus [[Deterrence]] gives you 10% base parry and an on-use defensive cooldown, which makes you *"extremely strong in PvP against other melee"* — the matchup a Hunter normally fears most. Add `Entrapment` and your traps become, in the source's words, *"exceptionally more annoying to deal with."*
-Level Beast Mastery and respec to Survival when you want to duel. That is the honest recommendation.
+If solo speed is what you care about, level Beast Mastery and respec to Survival when you want to duel. If you are levelling in groups, play whichever you enjoy — the gap is small.
 ## Your talent points
 **Level 20 — 0/0/11**, a durability build rather than a damage one.
 1. **`Deflection`, 5 points** — +10% base parry

@@ -6,7 +6,7 @@ Triage healing — a big wave, a fast wave, or a chain heal across a cluster, no
 Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Restoration build has been tested. **[[Chain Heal]] is level 40**, so the spec's signature spell does not exist at any beta cap.
 :::
 ## Is Restoration worth levelling?
-**No, not solo.** The published heading is *"Healer Leveling"*: *"As a Healer specialization, Restoration lacks most of the damage talent support of other classes and has no area damage, making it more of a group leveling specialization."* Ratings: Overall 4.0, **Levelling 2.0.**
+**Slow to solo, strong in a group — and the rating only measures the first.** The published heading is *"Healer Leveling"*: *"As a Healer specialization, Restoration lacks most of the damage talent support of other classes and has no area damage, making it more of a group leveling specialization."* Ratings: Overall 4.0, **Levelling 2.0.**
 **What it is for is dungeons:** *"Restoration will make you a strong dungeon healer."*
 **Level Enhancement and respec when you want to heal**, or level in groups from the start. Soloing as Restoration means playing a worse Elemental Shaman: *"you will mostly use [[Lightning Bolt]] and [[Flame Shock]]… as if you were Elemental, with the downside of having no extra damage from talents."*
 ## Your talent points

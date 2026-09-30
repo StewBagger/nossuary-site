@@ -18,6 +18,18 @@ Group content is built around three jobs. You do not have to choose now, but the
 | **DPS** | Deal damage and kill things | Three |
 Some classes do only one of these. Some do all three, though never at once — you switch by respending talent points and changing gear.
 Because groups need three DPS and only one of each other role, **DPS is the most common thing to be and the hardest to get invited as.** Tanks and healers get invited instantly. There is no automatic group finder in Forever, so grouping means asking.
+## "Best for levelling" almost always means "best for soloing"
+**This is the most important thing on the page, and every guide site gets it wrong by omission.**
+When a guide rates a spec for levelling, it is nearly always rating **how fast it kills things by itself.** That is a real question, and it is not the only one. **Levelling in groups and dungeons is a different activity**, and the specs that rate worst for soloing — healers especially — are often the ones that reach 60 with the least waiting, because a healer never sits in a queue.
+Forever sharpens the distinction: it **cut dungeon kill experience while raising dungeon *quest* experience**, so a dungeon route is a deliberate design, not a workaround.
+So when a page below says a spec is *slow*, read it as **slow to kill things alone**. Every spec in the game can reach level 60. None of them is a trap.
+**Where it matters most:**
+| If you mostly | Then |
+| --- | --- |
+| Quest alone | Take the solo recommendation. It is measuring the right thing |
+| Run dungeons | Healers and tanks are among the fastest, not the slowest. Ignore the low levelling scores |
+| Play with a friend | Almost anything works. Pick what you want to play at 60 |
+
 ## Which class should you pick?
 Honestly, the one whose fantasy appeals. Every class finishes the levelling game solo, and the differences below change how it *feels* far more than whether you succeed.
 | If you want to… | Consider |

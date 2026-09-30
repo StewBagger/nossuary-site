@@ -6,9 +6,10 @@ The reactive Light healer with the broadest toolkit and the lowest skill floor �
 Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Holy build has been tested. Talent rows unlock at levels 10, 15, 20, 25, 30, 35 and 40.
 :::
 ## Is Holy worth levelling?
-**No — and this is the bluntest verdict published about any spec in the game.** The heading is *"Zero AoE and Lackluster Damage"*: *"While Holy Priests are great at their role of healing, they lack tools to solo level effectively. It's typically recommended to play with a group if you plan to level as Holy, otherwise it is a better idea to primarily use Shadow talents until you're able to get into group content."*
+**The slowest Priest spec to solo — and that is the only thing the rating measures.** The published heading is *"Zero AoE and Lackluster Damage"*: *"While Holy Priests are great at their role of healing, they lack tools to solo level effectively. It's typically recommended to play with a group if you plan to level as Holy, otherwise it is a better idea to primarily use Shadow talents until you're able to get into group content."*
 Ratings: **Overall 3.5, Levelling 2.0, Dungeon 4.0, Utility 4.0, Mobility 1.0.**
-**Level Shadow and respec.** Nothing is lost by doing that — you will heal dungeons perfectly well with Shadow talents while you get there, and Holy is the most forgiving healing spec once you arrive.
+**If you are soloing, level Shadow and respec.** Nothing is lost — you will heal dungeons perfectly well with Shadow talents on the way, and Holy is the most forgiving healing spec once you arrive.
+**If you are levelling in groups, Holy is fine.** It is rated 4.0 out of 5 for dungeons, and a healer never waits for an invite. *"Slower"* here means slower at killing things by yourself, which is not the same as slower at reaching 60.
 ## Your talent points
 **Level 20 — three published builds, and they disagree fundamentally about whether to spend points outside the tree.**
 **Build A, 2/4/5**, leaning on Shadow's mana regeneration: `Wand Specialization` 2 / `Twilight Focus` 2 / **`Spirit Tap` 5** / `Improved Renew` 2. ⚠ Its prose and its own calculator disagree on whether `Spirit Tap` or `Twilight Focus` comes first. The totals are identical either way.

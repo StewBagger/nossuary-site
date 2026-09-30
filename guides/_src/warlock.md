@@ -56,6 +56,7 @@ Play Warlock if you want the strongest solo levelling in the game and you do not
 - **Felhunter, from 30**, for Spell Lock and Devour Magic.
 **`Demonic Sacrifice` inverted its buffs and now lasts two hours: sacrificing the Imp gives +15% Shadow, and the Succubus gives +15% Fire.** The Classic muscle memory is backwards.
 ## Which race
+**Read this section in proportion.** Race is the smallest of the choices on this page — well behind spec, gear and knowing your rotation — and **no race is a wrong answer for levelling.** Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead — fear, sleep and charm), `Escape Artist` (Gnome — roots and snares) and `Stoneform` (Dwarf — bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Horde — Undead for levelling.** `Cannibalize` restores **35% health *and* mana**, which on a class whose whole loop is spending health for mana is close to a free full recovery on every corpse.
 **Horde — Orc for long-term damage**, now that `Blood Fury` gives **+10% spell power**. But note **Forever deleted `Command`**, the pet-damage racial that was the entire reason Orc was the Classic Warlock pick. Orc is now a caster race, not a pet race.
 **Alliance — Human.** `Sword Specialization` is **+2% spell and ability crit**, and since **timed damage can crit in Forever it applies to your whole damage profile**. `The Human Spirit` feeds Life Tap.

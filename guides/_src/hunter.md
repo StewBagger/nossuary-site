@@ -9,9 +9,10 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right n
 | Spec | Role | Levelling | In one line |
 | --- | --- | --- | --- |
 | **[Beast Mastery](/guides/wow-forever/hunter/beast-mastery/)** | Ranged DPS | **Best in the game** | `Deadly Aspects` procs +30% ranged attack speed while [[Aspect of the Hawk]] is up, and your pet does a real share of the work |
-| **[Marksmanship](/guides/wow-forever/hunter/marksmanship/)** | Ranged DPS | Poor solo, strong in dungeons | `Lone Wolf` at exactly 20 for +20% damage with **all** attacks — but only while you have **no pet out** |
-| **[Survival](/guides/wow-forever/hunter/survival/)** | Melee DPS | Worst of the three | Parry, [[Deterrence]] and nastier traps. A PvP spec right now |
-**Level Beast Mastery.** Taming a pet at level 10 is described in the published guides as *"the single greatest leveling tool that any class gets without exception"*, and Beast Mastery's early talents — haste and movement speed — are exactly what levelling wants. The Marksmanship guide says of its own level-20 build that it is *"not a good general play build"*, and the Survival one says outright *"you should not go Survival if all you care about is damage or leveling quickly."*
+| **[Marksmanship](/guides/wow-forever/hunter/marksmanship/)** | Ranged DPS | Slower **solo**, strong in dungeons | `Lone Wolf` at exactly 20 for +20% damage with **all** attacks — but only while you have **no pet out** |
+| **[Survival](/guides/wow-forever/hunter/survival/)** | Melee DPS | Slowest **solo**; fine in groups | Parry, [[Deterrence]] and nastier traps. A PvP spec right now |
+**Beast Mastery if you are soloing.** Taming a pet at level 10 is described as *"the single greatest leveling tool that any class gets without exception"*, and Beast Mastery's early talents — haste and movement speed — are what solo questing wants.
+**But keep the gap in proportion.** At eleven points the **rotation is identical across all three specs**, and the difference is four flexible talent points. Hunter has a long reputation for *"best spec, nothing else acceptable"* thinking imported from raiding; **at levelling cap that framing does not survive contact with the talent trees.** Marksmanship is the dungeon cleave build and Survival is the duelling build, and neither is a mistake.
 Respec when your goal changes: Marksmanship for dungeon pulls, Survival for duels.
 ## Is Hunter for you?
 Play Hunter if you want to kill things above your own level from the first hour, and you do not mind managing ammunition, a quiver and a pet.
@@ -50,6 +51,7 @@ Play Hunter if you want to kill things above your own level from the first hour,
 | 46 | [[Aspect of the Wild]] — now raid-wide |
 **[[Misdirection]] is not in Forever.** Two published guides mention it; it is a Burning Crusade ability and it is absent from the client. **[[Wyvern Sting]] is also gone**, replaced by `Lacerating Strikes`.
 ## Which race
+**Read this section in proportion.** Race is the smallest of the choices on this page — well behind spec, gear and knowing your rotation — and **no race is a wrong answer for levelling.** Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead — fear, sleep and charm), `Escape Artist` (Gnome — roots and snares) and `Stoneform` (Dwarf — bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Horde — Tauren**, and it is called the single strongest Hunter race across both factions. **`Plainsrunning` ramps to +30% movement speed**, which lets you stutter-step and shoot from level 1 while keeping [[Aspect of the Hawk]] up instead of swapping to Cheetah. `Endurance` also now gives **+1% hit**.
 **Alliance — Human, which is new to Hunter in Forever.** `Sword Specialization` is **+2% crit**, the largest weapon racial, and it is general crit — so it applies to your shots off a sword carried purely as a stat stick.
 **Forever changed the answer.** Tauren Hunter was the weak vanilla pick and is now the strongest. **Dwarf lost Gun Specialization** and gained a mace racial it cannot use, which is a genuine grievance.

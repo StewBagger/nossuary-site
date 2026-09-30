@@ -6,9 +6,10 @@ Ranged physical damage without leaning on the pet — and in Forever, **the dung
 Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Marksmanship build has been tested.
 :::
 ## Is Marksmanship worth levelling?
-**Not as a general levelling spec at low level — and the published guide says so about its own build.** Going 11 points deep into Marksmanship to reach `Lone Wolf` is described as *"not a good general play build"*, with the direct recommendation to *"use the Beast Mastery build at this level instead."*
+**Fine to level, and a poor *soloing* build — which is a narrower complaint than it sounds.** Going 11 points deep to reach `Lone Wolf` is described as *"not a good general play build"*, with the recommendation to *"use the Beast Mastery build at this level instead."*
+**Read that in proportion.** At level 20 you have eleven points, the Hunter rotation is **identical across all three specs**, and most of the difference is four flexible talent points. Nobody is stuck.
 **What it is for is dungeons.** *"If you want to go deep into Marksmanship, the best use-case for it is for Dungeons, specifically to maximize your AoE damage."* An extra 20% damage on [[Multi-Shot]] is a lot in a pull.
-So: **Beast Mastery in the open world, Marksmanship if you are running dungeons.** That is the whole decision, and it is not a close call in either direction.
+So: **Beast Mastery if you mostly quest alone, Marksmanship if you mostly run dungeons.** That is the whole decision, and neither choice is a mistake.
 ## Your talent points
 **Level 20 — 0/11/0**, to reach `Lone Wolf`.
 The sequence is eleven points into Marksmanship. What you are buying is the tier-3 talent at the end of it, so the intermediate points follow the tree rather than a preference.

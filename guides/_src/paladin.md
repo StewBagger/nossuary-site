@@ -49,6 +49,7 @@ Play Paladin if you want to be very hard to kill, to fill whichever role a group
 | 52–60 | Greater Blessings — now **1 hour**, so timers stop desyncing |
 **[[Blessing of Sanctuary]] is not in Forever**, in either form.
 ## Which race
+**Read this section in proportion.** Race is the smallest of the choices on this page — well behind spec, gear and knowing your rotation — and **no race is a wrong answer for levelling.** Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead — fear, sleep and charm), `Escape Artist` (Gnome — roots and snares) and `Stoneform` (Dwarf — bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Alliance — Human or Dwarf.** Human's `Sword Specialization` is **+2% crit to spells and abilities** off a sword used purely as a stat stick, which is the largest weapon racial and feeds both gearing paths. Dwarf's `Stoneform` is a real solo cooldown.
 **Horde — Undead, and it is forced**, being the only Horde Paladin. It is good anyway: **`Cannibalize` now restores 35% health *and* mana**, which on a mana-using melee class is close to a free recovery on every corpse.
 **Forever changed the answer outright — "Paladin is Alliance" is dead.** Undead Paladins get their own hub at **Bandarion Keep** in the previously inaccessible Whispering Wood, Tirisfal Glades, and their own level 40 and 60 mount quests.

@@ -10,7 +10,7 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right n
 | --- | --- | --- | --- |
 | **[Elemental](/guides/wow-forever/shaman/elemental/)** | Ranged DPS | Viable | [[Lightning Bolt]] and [[Chain Lightning]], with the best burst of the three |
 | **[Enhancement](/guides/wow-forever/shaman/enhancement/)** | Melee DPS | **Best of the three** | Weapon imbues and melee, and the tree two sources agree on exactly |
-| **[Restoration](/guides/wow-forever/shaman/restoration/)** | Healer | Viable, slower | [[Chain Heal]] and `Nature's Swiftness` |
+| **[Restoration](/guides/wow-forever/shaman/restoration/)** | Healer | Slow **solo**, strong in groups | [[Chain Heal]] and `Nature's Swiftness` |
 **Enhancement is the levelling answer**, and it is the one build where two independent sources publish the same eleven points in the same order.
 **Two facts that will save you a mistake.** **Shamans cannot dual wield in Forever** — if you have played a later expansion, unlearn that. And a widely-published level-30 Elemental build **is not legal on the current client**: it spends 5 points on `Elemental Fury`, which Blizzard moved to row 6 on September 24, putting it out of reach at 21 points. That build predates the change.
 **A note on Enhancement tanking.** You will see it discussed, usually pointing at `Spirit Weapons`. There is no Blizzard statement either way, no published tanking build, and the three positions in circulation disagree. Forever has **three** tanks — Protection Warrior, Protection Paladin and Feral Druid. Treat Shaman tanking as an experiment, not a plan.
@@ -48,6 +48,7 @@ Play Shaman if you like solving the fight in front of you rather than running th
 | **42** | [[Grace of Air Totem]] — **the last new Shaman ability in the game.** 43 to 60 is ranks only |
 **[[Tranquil Air Totem]] is not in Forever.**
 ## Which race
+**Read this section in proportion.** Race is the smallest of the choices on this page — well behind spec, gear and knowing your rotation — and **no race is a wrong answer for levelling.** Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead — fear, sleep and charm), `Escape Artist` (Gnome — roots and snares) and `Stoneform` (Dwarf — bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Alliance — Dwarf, and it is forced**, being the only Alliance Shaman. It is fine anyway: `Stoneform` is a real solo cooldown, and **`Mace Specialization` gives +1% crit to spells and abilities merely for holding a mace**, which Shaman train by default — so it is free crit for Elemental and Restoration too.
 **Horde — Orc.** `Blood Fury` now gives **+10% attack power *and* spell power**, so it is good for both damage specs.
 **Tauren is newly competitive**, because `Endurance` now adds **+1% hit** alongside its health. **Do not pick Skyborne for mobility** — a tester established that `Skysight` does not stack with any movement ability, and the author of the guide that claimed otherwise conceded the point.

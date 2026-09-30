@@ -6,9 +6,11 @@ Shields and mitigation rather than repair — *"there cannot be Light without Da
 Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Discipline build has been tested. Talent rows unlock at levels 10, 15, 20, 25, 30, 35 and 40.
 :::
 ## Is Discipline worth levelling?
-**No, not solo.** The published heading is *"Struggles To Solo Level"*: *"Discipline Priest has decent single-target damage, but they lack in AoE damage. It's typically recommended to play with a group if you plan to level as Discipline, otherwise it is a better idea to primarily use Shadow talents until you're able to get into group content."*
+**Slower to solo, and excellent in a group — those are different answers and the ratings only measure the first.** The published heading is *"Struggles To Solo Level"*: *"Discipline Priest has decent single-target damage, but they lack in AoE damage. It's typically recommended to play with a group if you plan to level as Discipline, otherwise it is a better idea to primarily use Shadow talents until you're able to get into group content."*
 Its ratings make the shape of the spec plain: **Overall 4.5, Levelling 2.5, Dungeon 5.0, Utility 4.0, Mobility 1.0.** It is the best dungeon healer in the class and among the worst soloers in the game.
-**The recommendation is to level Shadow and respec.** That is not a workaround — it is what the guides say to do.
+**If you are soloing, level Shadow and respec.** That is what the guides recommend, and it is sound.
+**If you are levelling in groups, you do not need to.** Discipline is rated 5.0 out of 5 for dungeons — the highest of any Priest spec — and a healer who is always wanted never waits for a group. Forever also cut dungeon *kill* experience while raising dungeon **quest** experience, so a dungeon route is a real route, not a consolation.
+**And there is a solo pattern the ratings ignore: shield and wand.** [[Power Word: Shield]] absorbs the damage, your wand does the killing, and you spend almost no mana. It is slow, it is close to unkillable, and it is how Discipline has soloed since vanilla.
 ## Your talent points
 **Level 20 — there is a healer build and a damage build, and the damage one is a real published option.**
 **Healer, 6/0/5:** `Wand Specialization` 2 → **`Spirit Tap` 5** (Shadow) → `Twin Disciplines` 3 → `Improved Power Word: Shield` 1. The first two are called *"the most critical"* and *"the second most important"*.
