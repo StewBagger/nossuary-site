@@ -77,8 +77,35 @@ p { margin: 0 0 1em; }
 .nav li a:not(.btn) { color: var(--bone-dim); text-decoration: none; font-size: .95rem; }
 .nav li a:not(.btn):hover { color: var(--bone); }
 @media (max-width: 760px) {
-  .nav li:not(:last-child) { display: none; }
+  /* Do NOT hide the nav items here. This rule used to be
+     `.nav li:not(:last-child) { display: none; }`, which left only the Join
+     Discord button on a phone -- so Forums, Guides and Roster had no route in
+     at all on mobile, and the only way to reach them was to know the URL.
+     The nav scrolls sideways instead: every destination stays reachable. */
   .brand span { display: none; }
+  .nav { padding: 10px 14px; gap: 10px; }
+  /* The brand must not shrink or the scrolling list pushes it off screen. */
+  .brand { flex: 0 0 auto; }
+  /* The list lives inside a <nav> wrapper, so the wrapper is what the header
+     flexes -- constrain it, or the ul overflows the header instead of scrolling. */
+  .nav > nav { flex: 1 1 auto; min-width: 0; }
+  .nav ul {
+    flex: 1 1 auto; min-width: 0;
+    gap: 16px; overflow-x: auto; flex-wrap: nowrap;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+    padding: 2px 0;
+  }
+  .nav ul::-webkit-scrollbar { display: none; }
+  .nav li { flex: 0 0 auto; }
+  .nav li a:not(.btn) { font-size: .88rem; white-space: nowrap; }
+  /* Join Discord is the site's primary action and must not scroll away with
+     the rest of the list. It sticks to the right edge of the scroller, with a
+     fade so the links pass under it rather than colliding. */
+  .nav li:last-child {
+    position: sticky; right: 0; padding-left: 14px;
+    background: linear-gradient(90deg, rgba(11, 13, 12, 0) 0%, rgba(11, 13, 12, .92) 35%);
+  }
+  .nav .btn { padding: 8px 14px; font-size: .85rem; white-space: nowrap; }
 }
 
 /* --- Buttons ----------------------------------------------------------- */
