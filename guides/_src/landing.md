@@ -4,12 +4,18 @@ sources: Wowhead — Forever guides|https://www.wowhead.com/forever/guides ;; Ic
 
 Guides for **World of Warcraft: Forever**, which relaunches the 1–60 game on **November 4, 2026** with everyone starting from scratch on the same day.
 :::scope
-Everything here is written for levelling, 1 to 60. Forever's beta is capped at level 20 right now and rises only to 30 before launch, professions cap at skill 225, and item stats stay hidden until something drops. **No level-60 build, best-in-slot list or class ranking for Forever exists yet**, checked against the three sites these guides are compiled from, none of which publishes one. Raids open **December 9**, and we will write the endgame half then.
+Everything here is written for levelling, 1 to 60. Forever's beta is capped at level 20 right now and rises only to 30 before launch, professions cap at skill 225, and item stats stay hidden until something drops. **No level-60 build, best-in-slot list or class ranking for Forever exists yet**, checked against the three sites these guides are compiled from: ClassicWoW.gg publishes the complete level-60 talent trees and a calculator, and says of them *"this is the full tree, not a suggested build"*; Icy Veins' tier-list directory lists every tier list as *"COMING SOON"*; Wowhead's class guides stop at level 20. Raids open **December 9**, and we will write the endgame half then.
 :::
 ## What is here
-**53 pages**, read from the beta client rather than remembered from vanilla, and written to say plainly where something is unknown instead of guessing.
+**53 pages**, taken from foreverchanges.pro's reading of the beta client rather than remembered from vanilla, and written to say plainly where something is unknown instead of guessing.
 Every page lists the pages it was compiled from. The three sources are **Wowhead**, **Icy Veins** and **ClassicWoW.gg**, cross-checked against each other; where they disagree on something you would act on, the page names which said what rather than quietly picking a winner. Forum threads and boosting-service blogs are not cited, because they are downstream of these three when they are not simply wrong.
 **The class guides** cover all nine classes with a separate page for every specialisation, 28 in total, each with its talent order at 20 and 30, a rotation, stat priority, and what its tree actually does differently in Forever.
 **The profession guides** cover all nine primary professions, the three secondary skills, and the two systems Forever added that have no vanilla equivalent: **Camping** and **Merchant's Favor**.
+## Where this comes from
+**We have not read the game client ourselves.** No install, no data extraction. Saying so matters, because a lot of what follows is stated flatly.
+**The spine of these guides is [foreverchanges.pro](https://foreverchanges.pro), a client-diff site**, which publishes per-rank tooltips, talent tiers and a Forever-versus-Classic comparison for **beta build 1.60.1.70124**. It reads the client through [wago.tools](https://wago.tools), a public database-table archive. That build is listed on wago.tools and we have spot-checked the readings against it directly.
+**Secondary sources, used for opinion and build lists rather than mechanics:** Icy Veins and classicwow.gg. **Blizzard's own posts** are treated as the strongest evidence wherever they say anything.
+**Two sources are deliberately excluded.** Warcraft Tavern carries stale talent data and has asserted mechanics from later expansions that Forever does not have, so it is never a sole source here. Wowhead blocks us outright.
+**The known weakness in that chain:** a talent existing in the client is not proof it is reachable. The same tables carry leftovers from Season of Discovery and from later expansions. Where that distinction matters we say so rather than inferring.
 ## If you only read one thing
 **Take Cooking at level 1.** 103 of its 123 dishes give **+5% experience from kills** while you are well fed, and the first one works at Cooking skill 1 on a level-1 character. It costs you no primary profession slot. Nothing else in the game pays off that early for that little effort.

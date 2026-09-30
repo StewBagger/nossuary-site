@@ -15,7 +15,7 @@ Warrior as a class is rated a poor leveller by Icy Veins, which calls it one of 
 2. `Unbridled Wrath`, 5 points — **2 rage per proc with a two-hander**, which is the whole point
 3. `Piercing Howl`, 1 point
 **The real-Arms alternative at 20**, if you would rather commit early: `Improved Heroic Strike` 3, `Improved Rend` 3, `Improved Charge` 2, `Improved Overpower` 2, then 1 point into `Deep Wounds`. Improved Rend is forced here, it is Deep Wounds' prerequisite.
-**Level 30: 21/0/0**, reaching `Sweeping Strikes`: `Improved Heroic Strike` 3, `Improved Rend` 3, `Improved Charge` 2, `Improved Tactical Mastery` 2, `Improved Overpower` 2, `Deep Wounds` 3, `Two-Handed Weapon Specialization` 3, `Impale` 2, `Sweeping Strikes` 1.
+**Level 30: 21/0/0 — our own extension, not a published build**, reaching `Sweeping Strikes`: `Improved Heroic Strike` 3, `Improved Rend` 3, `Improved Charge` 2, `Improved Tactical Mastery` 2, `Improved Overpower` 2, `Deep Wounds` 3, `Two-Handed Weapon Specialization` 3, `Impale` 2, `Sweeping Strikes` 1.
 ## Rotation
 1. **[[Battle Shout]]** always up; **[[Bloodrage]]** on cooldown, ideally between pulls
 2. **[[Charge]]** to open, out of combat only, so ranged-pull a group instead

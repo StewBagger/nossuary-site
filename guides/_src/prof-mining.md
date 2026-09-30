@@ -3,7 +3,7 @@ build: 1.60.1.70124
 
 Ore, stone and smelting. **The vein table is unchanged from Classic**, so your old route still works. What changed is what the ore is worth, and a camp object that hands your group 90 attack power.
 :::scope
-Vein types, skill thresholds and camp objects are read from the beta client and are solid. **Professions are capped at skill 225 in the beta.** The zone recommendations below are **Classic spawn data**. Forever's new zones, including Zephras Isle, are not counted yet. Node density, respawn rules and skill-up rates are unpublished.
+Vein types, skill thresholds and camp objects are come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta.** The zone recommendations below are **Classic spawn data**. Forever's new zones, including Zephras Isle, are not counted yet. Node density, respawn rules and skill-up rates are unpublished.
 :::
 ## Is Mining worth taking?
 **Yes, as a money profession**: more so than in vanilla, because Waylaid Crates give low-level ore a guaranteed buyer it never had.

@@ -3,7 +3,7 @@ build: 1.60.1.70124
 
 Bombs, trinkets, goggles and gadgets. **Forever did not fold it into the new crafted-gear economy**: no tier set, fewest trade-camp recipes, and still the most expensive thing in the game to level.
 :::scope
-Recipes and skill levels are read from the beta client and are solid. **Professions cap at skill 225 in the beta**, and **33 Engineering recipes make something the client will not describe.** Whether Engineering's raid value went up or down is genuinely unpublished. Nobody has said.
+Recipes and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta**, and **33 Engineering recipes make something the client will not describe.** Whether Engineering's raid value went up or down is genuinely unpublished. Nobody has said.
 :::
 ## Is Engineering worth taking?
 **Take it for utility and fun.** It earns **Legacy Points** like the other crafting professions, but it got no tier set, only 29 trade-camp recipes (the fewest of any profession), and it is the most expensive to buy out.

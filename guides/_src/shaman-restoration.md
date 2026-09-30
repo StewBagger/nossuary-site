@@ -20,7 +20,7 @@ Dungeons are what it is for: *"Restoration will make you a strong dungeon healer
 `Improved Reincarnation` is offered as a swap for `Natural Grace`.
 **Build B:** `Improved Healing Wave` 5 / `Tidal Focus` 5 / `Healing Focus` 1, with **no [[Water Shield]]**. That is a real difference.
 **One major source publishes no level-20 Restoration build at all.** Its level-20 recommendation for every Shaman is the Enhancement build, on the grounds that you should be levelling in it.
-**Level 30: 0/0/21 — our own extension**, in order: `Improved Healing Wave` 5 → `Mindfulness` 3 → `Totemic Focus` 2 → [[Water Shield]] 1 → `Ancestral Healing` 3 → `Totemic Focus` 3 → **[[Mana Tide Totem]]** → `Totemic Focus` 5/5 → `Tidal Focus` 2 → **`Nature's Swiftness`** at 30.
+**Level 30: 0/0/21 — our own extension, not a published build**, in order: `Improved Healing Wave` 5 → `Mindfulness` 3 → `Totemic Focus` 2 → [[Water Shield]] 1 → `Ancestral Healing` 3 → `Totemic Focus` 3 → **[[Mana Tide Totem]]** → `Totemic Focus` 5/5 → `Tidal Focus` 2 → **`Nature's Swiftness`** at 30.
 ## Healing priority
 1. **Pre-place your totems**, [[Searing Totem]] last
 2. **[[Healing Wave]]** on injured targets

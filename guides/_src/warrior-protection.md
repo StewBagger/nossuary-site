@@ -15,7 +15,7 @@ Worth knowing before you commit: **a full Protection spec is not required to tan
 2. **`Improved Thunder Clap`, 3 points** for cheaper area threat, now usable in Defensive Stance
 3. `Improved Bloodrage`, 2 points
 4. The eleventh point is where the two sources part ways. **Icy Veins** spends it on `Master of Defense` for **a 50% chance** of 5 rage on a dodge or parry. **Wowhead** puts it in `Improved Revenge` instead (+20% Revenge damage) and explicitly argues against `Master of Defense` at level 20, reasoning that ~10% total avoidance makes its proc too rare to be worth a point yet; Wowhead names `Last Stand` as its own stated alternative for that point.
-**Level 30: 0/0/21**, reaching `Vanguard`: `Shield Specialization` 5, `Anticipation` 4, `Improved Bloodrage` 2, `Master of Defense` 2, `Defiance` 3, `Improved Sunder Armor` 3, `Vanguard` 1, `Bastion` 1. `Concussion Blow` is a strong alternative for that last point.
+**Level 30: 0/0/21 — our own extension, not a published build**, reaching `Vanguard`: `Shield Specialization` 5, `Anticipation` 4, `Improved Bloodrage` 2, `Master of Defense` 2, `Defiance` 3, `Improved Sunder Armor` 3, `Vanguard` 1, `Bastion` 1. `Concussion Blow` is a strong alternative for that last point.
 ## Rotation
 1. **[[Battle Shout]]** always up, **[[Bloodrage]]** between pulls
 2. **[[Charge]]** to open in Battle Stance, then **swap straight back to Defensive**, until you have `Vanguard`

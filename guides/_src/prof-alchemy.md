@@ -3,7 +3,7 @@ build: 1.60.1.70124
 
 Potions, elixirs, flasks and transmutes. **The most substantially rewritten profession in Forever** — 70 of its 179 recipes are new, including three whole consumable ladders and **four new raid flasks.**
 :::scope
-Recipes, skill levels and reagents are read from the beta client and are solid. **Professions are capped at skill 225 in the beta**, so nothing above that has been crafted by anyone. The levelling route below is **computed from recipe skill-colours, not tested**. The source publishing it says so. Where the new herbs come from is unpublished.
+Recipes, skill levels and reagents are come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta**, so nothing above that has been crafted by anyone. The levelling route below is **computed from recipe skill-colours, not tested**. The source publishing it says so. Where the new herbs come from is unpublished.
 :::
 ## Is Alchemy worth taking?
 **Yes, and of the crafting professions it has the strongest case.** It is a money profession *and* a raid-utility profession. It also earns **Legacy Points** at skill 150, 225 and 300, and grants a title.

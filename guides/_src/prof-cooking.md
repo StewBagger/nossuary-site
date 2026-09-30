@@ -3,7 +3,7 @@ build: 1.60.1.70124
 
 **Take this at level 1.** 103 of Cooking's 123 dishes give **+5% experience from kills** while you are well fed, and the first one is available at Cooking skill 1 on a level-1 character.
 :::scope
-Recipe counts, skill levels and buff values are read from the beta client and are solid. **Not known:** whether the experience buff stacks with the Cozy Sleeping Bag's +3% or with rested experience, and whether the `Gourmand` perk's doubled duration really lands at 30 minutes. That figure is arithmetic on a 15-minute base; nobody has published it.
+Recipe counts, skill levels and buff values are come from foreverchanges.pro's reading of the beta client and are solid. **Not known:** whether the experience buff stacks with the Cozy Sleeping Bag's +3% or with rested experience, and whether the `Gourmand` perk's doubled duration really lands at 30 minutes. That figure is arithmetic on a 15-minute base; nobody has published it.
 :::
 ## Is Cooking worth it?
 **Yes, and it is the clearest call in the whole profession system.** It costs you no primary slot and the payoff starts at skill 1. No other profession improves your levelling *while* you level rather than paying out at 60.

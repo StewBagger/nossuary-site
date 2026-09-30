@@ -16,7 +16,7 @@ Blunt version: solo-questing Holy from 1 to 30 is a poor choice. It makes sense 
 3. `Spiritual Focus` or `Improved Seals`, 2 points — Icy Veins' default is `Spiritual Focus` for pure healing; Wowhead's own build spends them on `Improved Seals` instead, for the extra Judgement damage. Either is defensible
 4. `Reverence`, 1 point
 Note that `Healing Light`'s [[Holy Shock]] component is dead weight **at the current level-20 cap** — [[Holy Shock]] is exactly level 30, so it comes online when the cap rises.
-**Level 30: 21/0/0 — our own extension**, reaching [[Holy Shock]]: `Divine Intellect` 5, `Healing Light` 3, `Spiritual Focus` 2, `Reverence` 3, `Purifying Power` 2, `Infusion of Light` 2, `Divine Favor` 1, `Illumination` 2, [[Holy Shock]] 1.
+**Level 30: 21/0/0 — our own extension, not a published build**, reaching [[Holy Shock]]: `Divine Intellect` 5, `Healing Light` 3, `Spiritual Focus` 2, `Reverence` 3, `Purifying Power` 2, `Infusion of Light` 2, `Divine Favor` 1, `Illumination` 2, [[Holy Shock]] 1.
 ## Rotation
 **Healing:**
 1. **[[Flash of Light]]** as your primary heal, cheap and fast

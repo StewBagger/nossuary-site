@@ -3,7 +3,7 @@ build: 1.60.1.70124
 
 Leather off things you already killed — **the cheapest profession in the game to carry**, and its camp object gives your whole group 2% critical strike.
 :::scope
-The skill formula and camp objects are read from the beta client and are solid. **Professions are capped at skill 225 in the beta.** Whether a Skinning Knife is still required is **not published.** Skinnable creature lists, leather tables and trainer requirements are explicitly unconfirmed.
+The skill formula and camp objects are come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta.** Whether a Skinning Knife is still required is **not published.** Skinnable creature lists, leather tables and trainer requirements are explicitly unconfirmed.
 :::
 ## Is Skinning worth taking?
 **Yes if you already kill beasts; it is the weakest of the three as a pure money profession.** Leather demand is narrower than ore or herbs.

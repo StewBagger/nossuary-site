@@ -4,7 +4,7 @@ sources: Wowhead — Level 20 Beast Mastery Hunter|https://www.wowhead.com/forev
 
 Hunter is the easiest class in the game to level alone and one of the hardest to play well in a group. Your pet tanks while you shoot, and Forever made pets scale with your own gear.
 :::scope
-Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Hunter build has been tested.** Ability training levels below are read from the beta client and are reliable. The beta also runs a **Legacy system**, bonus talent points on top of the normal one-per-level rate, so a beta character can reach deep talents earlier than levelling alone would get them: Wowhead's own level 20 Beast Mastery build reaches `Summon Hawk`, which needs 16 points spent in the Beast Mastery tree, at level 20 with Legacy active and level 25 without it.
+Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Hunter build has been tested.** Ability training levels below are come from foreverchanges.pro's reading of the beta client and are reliable. The beta also runs a **Legacy system**, bonus talent points on top of the normal one-per-level rate, so a beta character can reach deep talents earlier than levelling alone would get them: Wowhead's own level 20 Beast Mastery build reaches `Summon Hawk`, which needs 16 points spent in the Beast Mastery tree, at level 20 with Legacy active and level 25 without it.
 :::
 ## Which spec?
 | Spec | Role | Levelling | In one line |

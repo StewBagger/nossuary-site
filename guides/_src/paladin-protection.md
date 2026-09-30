@@ -17,7 +17,7 @@ You can still safely pull several enemies and grind them down, but you will stru
 4. The eleventh point is either **`Shield Specialization`** or **`Improved Seal of Fury`**
 Named alternatives for that last point: `Improved Righteous Fury` for damage reduction, or `Sacred Duty` for stamina. If you do not want the hit, max `Anticipation` instead of `Precision`.
 **Wowhead currently recommends this Retribution dip outright**, not as a fallback: `Holy Conduit` and `Benediction` give more mana retention right now than `Improved Seal of Fury` does. Part of that gap is a live bug, [[Seal of Fury]] is granting its `Improved Seal of Fury` mana return even on builds that never talented it, so Wowhead expects the two routes to even out once that is fixed and more `Shield Specialization` ranks unlock at 30. It trades durability for uptime, and no exact point total is published for it.
-**Level 30: 0/21/0 — our own extension**, reaching `Reckoning`: `Redoubt` 5, `Precision` 3, `Anticipation` 4, `Improved Seal of Fury` 1, `Improved Righteous Fury` 3, `Swift Judgement` 1, `One-Handed Weapon Specialization` 3, `Reckoning` 1.
+**Level 30: 0/21/0 — our own extension, not a published build**, reaching `Reckoning`: `Redoubt` 5, `Precision` 3, `Anticipation` 4, `Improved Seal of Fury` 1, `Improved Righteous Fury` 3, `Swift Judgement` 1, `One-Handed Weapon Specialization` 3, `Reckoning` 1.
 ## Rotation
 **Multi-target is the default here**, which is unusual for a tank.
 1. **[[Righteous Fury]]** up at all times

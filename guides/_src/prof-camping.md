@@ -3,7 +3,7 @@ build: 1.60.1.70124
 
 **New in Forever, and not optional flavour.** A cook lights a fire, everyone drops one crafted object beside it, and the whole group carries the buffs for an hour, including buffs that normally need a specific class.
 :::scope
-Camp objects, skill levels and buff values are read from the beta client and are solid. **Several mechanics are genuinely unsettled**, including whether camps work in cities and instances, whether you must be grouped to receive someone else's buff, and where each Blueprint drops. Blizzard's own panel and the beta client also disagree on two numbers, flagged below.
+Camp objects, skill levels and buff values are come from foreverchanges.pro's reading of the beta client and are solid. **Several mechanics are genuinely unsettled**, including whether camps work in cities and instances, whether you must be grouped to receive someone else's buff, and where each Blueprint drops. Blizzard's own panel and the beta client also disagree on two numbers, flagged below.
 :::
 ## How camping works
 1. **A cook places a campfire.** [[Basic Campfire Kit]] takes 1 Simple Wood and Flint and Tinder. It burns **15 minutes**, and no other campfire can be within 100 yards

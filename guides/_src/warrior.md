@@ -4,7 +4,7 @@ sources: Wowhead — Level 20 Arms Warrior|https://www.wowhead.com/forever/guide
 
 Icy Veins rates Warrior one of the harder classes to level and one of the strongest once geared. Wowhead takes the opposite tone on the levelling itself — Forever's changes make Arms "feel phenomenal," a deliberate contrast with Vanilla's reputation. Rage now comes from weapon speed rather than damage dealt, and a critical hit no longer grants bonus rage on top of the swing.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Warrior build has been tested by anyone.** Talent trees and ability training levels below are read from the beta client and are solid; anything about endgame is not, and we have left it out rather than guessed.
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Warrior build has been tested by anyone.** Talent trees and ability training levels below are come from foreverchanges.pro's reading of the beta client and are solid; anything about endgame is not, and we have left it out rather than guessed.
 :::
 ## Which spec?
 | Spec | Role | Levelling | In one line |

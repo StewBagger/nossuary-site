@@ -24,7 +24,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 | `Shredding Attacks` | **3**/3 | — |
 | `Primal Bite` | — | **1**/1 |
 | `Savage Fury`, `Feral Charge`, `Sharpened Claws`, `Blood Frenzy`, [[Leader of the Pack]] | same | same |
-**Cat buys `Feral Swiftness` and `Shredding Attacks` ([[Shred]]'s energy cost) and underfills `Ferocity`. Bear buys full `Ferocity`, `Feral Instinct` for [[Swipe]], and `Primal Bite`.** Both spend the twenty-first point on [[Leader of the Pack]]. A third published build stays deliberately dual-role at 30.
+**Cat buys `Feral Swiftness` and `Shredding Attacks` ([[Shred]]'s energy cost) and underfills `Ferocity`. Bear buys full `Ferocity`, `Feral Instinct` for [[Swipe]], and `Primal Bite`.** Both spend the twenty-first point on [[Leader of the Pack]]. A third reading stays deliberately dual-role at 30.
 ## Rotation
 **At level 20 it is two buttons:**
 1. **[[Claw]]** to build combo points

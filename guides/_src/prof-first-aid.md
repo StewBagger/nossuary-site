@@ -3,7 +3,7 @@ build: 1.60.1.70124
 
 **The most changed secondary skill in Forever**, with 17 of its 31 recipes new. It is no longer just bandages: First Aid now cures poison, disease and bleeds, and makes healing potions.
 :::scope
-Recipe names and skill levels are read from the beta client and are solid. **One open question with real consequences:** it is not published whether Alchemy keeps its own healing potions now that First Aid makes them. Trainer rank thresholds are unpublished.
+Recipe names and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **One open question with real consequences:** it is not published whether Alchemy keeps its own healing potions now that First Aid makes them. Trainer rank thresholds are unpublished.
 :::
 ## Is First Aid worth it?
 **Yes, and materially more than in Classic.** It costs no primary slot, and Forever turned it from "bandages for classes with no heal" into a genuine utility skill.

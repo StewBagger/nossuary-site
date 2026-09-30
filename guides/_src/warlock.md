@@ -4,7 +4,7 @@ sources: Wowhead — Level 20 Affliction Warlock|https://www.wowhead.com/forever
 
 Warlock kills slowly and inevitably, with a demon tanking for you. Forever split damage curses into Banes, so **you now hold one Bane and one Curse at the same time**, and Life Tap gives twice the mana it used to.
 :::scope
-Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Warlock build has been tested.** The longest anyone has played is a level-38 demo. Ability training levels below are read from the beta client.
+Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Warlock build has been tested.** The longest anyone has played is a level-38 demo. Ability training levels below come from foreverchanges.pro's reading of the beta client.
 :::
 ## Which spec?
 | Spec | Role | Levelling (Icy Veins) | In one line |

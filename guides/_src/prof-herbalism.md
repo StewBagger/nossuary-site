@@ -3,7 +3,7 @@ build: 1.60.1.70124
 
 Herbs, and the only feed for Alchemy. **The herb table is unchanged from Classic.** But six new herbs exist in the client with no published node, and Tauren Cultivation was rewritten from the ground up.
 :::scope
-Herb list, skill thresholds and camp objects are read from the beta client and are solid. **Professions are capped at skill 225 in the beta.** The zones below are **Classic spawn data**; Forever's new zones are not counted. Node locations, respawns and required skill are explicitly unconfirmed by the source publishing the client data.
+Herb list, skill thresholds and camp objects are come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta.** The zones below are **Classic spawn data**; Forever's new zones are not counted. Node locations, respawns and required skill are explicitly unconfirmed by the source publishing the client data.
 :::
 ## Is Herbalism worth taking?
 **Yes, and it is the strongest of the three gathering professions right now.** Alchemy gained 70 new recipes and four new raid flasks, and all of that demand lands on herbs.

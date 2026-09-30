@@ -3,7 +3,7 @@ build: 1.60.1.70124
 
 Professions still run 1 to 300 and you still pick two primaries. What changed is everything around them: **919 new recipes, a camping system, a second currency, and a food buff that gives +5% experience from level one.**
 :::scope
-Recipe counts, skill levels, trainer ranks and buff values below are read from the beta client and are solid. **Professions are capped at skill 225 in the beta**, everything above that is read from client data, not played. Node density, respawn timers and skill-up rates are unpublished for every gathering profession, and the zone recommendations in the gathering guides are Classic spawn data: **Forever's new zones are not counted yet.**
+Recipe counts, skill levels, trainer ranks and buff values below are come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta**, everything above that is read from client data, not played. Node density, respawn timers and skill-up rates are unpublished for every gathering profession, and the zone recommendations in the gathering guides are Classic spawn data: **Forever's new zones are not counted yet.**
 :::
 Looking for a class instead? **[The class guides are here](/guides/wow-forever/)**, all nine, one page per specialisation.
 ## Start here: the three things that matter most

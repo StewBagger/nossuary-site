@@ -4,7 +4,7 @@ sources: Wowhead — Level 20 Arcane Mage|https://www.wowhead.com/forever/guide/
 
 Mage kills faster than anything and dies faster too. Forever added a Research and scroll system from level 6, and made Arcane a genuine levelling tree for the first time.
 :::scope
-Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Mage build has been tested.** Ability training levels below are read from the beta client. Note that caster base damage was cut across the board and spell coefficients raised to compensate, a lower tooltip number than Classic is usually not a nerf. Neither Wowhead nor ClassicWoW.gg publishes a levelling score for the three specs. Icy Veins is the only one of the three that rates them, and it gives both a number out of five and a heading, so this page reports both.
+Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Mage build has been tested.** Ability training levels below come from foreverchanges.pro's reading of the beta client. Note that caster base damage was cut across the board and spell coefficients raised to compensate, a lower tooltip number than Classic is usually not a nerf. Neither Wowhead nor ClassicWoW.gg publishes a levelling score for the three specs. Icy Veins is the only one of the three that rates them, and it gives both a number out of five and a heading, so this page reports both.
 :::
 ## Which spec?
 | Spec | Role | Levelling | In one line |

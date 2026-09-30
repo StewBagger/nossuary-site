@@ -3,7 +3,7 @@ build: 1.60.1.70124
 
 Leather and mail armour, cloaks, armour kits and quivers. **The biggest profession in the game at 512 recipes, 271 of them new**, and the one whose vanilla knowledge is most wrong.
 :::scope
-Recipes, reagents and skill levels are read from the beta client and are solid. **Professions cap at skill 225 in the beta.** **80 Leatherworking recipes make something the client will not describe**, because Blizzard is hiding item stats until they drop. Best-in-slot figures are level 20, the beta cap.
+Recipes, reagents and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta.** **80 Leatherworking recipes make something the client will not describe**, because Blizzard is hiding item stats until they drop. Best-in-slot figures are level 20, the beta cap.
 :::
 ## Is Leatherworking worth taking?
 **Yes, and for leather and mail wearers it is close to mandatory.** It earns **Legacy Points**, it owns **four crafted tier sets**, and it received more new content than any other profession.

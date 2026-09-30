@@ -18,7 +18,7 @@ It is not written off: *"The AoE leveling potential of Fire is also respectable.
 3. `Ignite`, 3 points
 4. **[[Pyroblast]]** at 20
 **The order is counter-intuitive:** *"Your instinct might tell you to put talent points into Ignite next, but since on low levels we have such a low chance for a Critical Strike, the talent barely adds any dps. Instead, we will put two talent points into Wake of Fire."* `Wake of Fire` grants +50% crit on your next [[Fire Blast]] after a kill, which then makes `Ignite` worth having.
-**Level 30: 0/21/0 — our own extension**, per-level: `Improved Fireball` 1→5 (10–14), `Ignite` 1→5 (15–19), **[[Pyroblast]] at 20**, `Incineration` 1→3 (21–23), `Burning Soul` 1 (24), **`Hot Streak` at 25**, `Improved Scorch` 1→3 (26–28), `Burning Soul` 2 (29), `Critical Mass` 1 (30).
+**Level 30: 0/21/0 — our own extension, not a published build**, per-level: `Improved Fireball` 1→5 (10–14), `Ignite` 1→5 (15–19), **[[Pyroblast]] at 20**, `Incineration` 1→3 (21–23), `Burning Soul` 1 (24), **`Hot Streak` at 25**, `Improved Scorch` 1→3 (26–28), `Burning Soul` 2 (29), `Critical Mass` 1 (30).
 ## Rotation
 1. **[[Frost Armor]]** and [[Arcane Intellect]] up, or [[Mage Armor]] from 34 if mana is tight
 2. **Open with [[Pyroblast]]** ([[Fireball]] before 20) to land the damage-over-time component on the pull

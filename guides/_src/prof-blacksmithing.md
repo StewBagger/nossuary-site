@@ -3,7 +3,7 @@ build: 1.60.1.70124
 
 Plate, mail, weapons and stones. In vanilla it was the money profession. **In Forever it is a raid-power profession.** 197 of its 437 recipes are new, and it owns two crafted tier sets.
 :::scope
-Recipes, reagents and skill levels are read from the beta client and are solid. **Professions cap at skill 225 in the beta.** **Blizzard is deliberately hiding item stats until they drop**, so 70 Blacksmithing recipes make something the client will not describe. Every "best in slot" figure below is **level 20**, the beta cap; nobody knows the level-60 answers.
+Recipes, reagents and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta.** **Blizzard is deliberately hiding item stats until they drop**, so 70 Blacksmithing recipes make something the client will not describe. Every "best in slot" figure below is **level 20**, the beta cap; nobody knows the level-60 answers.
 :::
 ## Is Blacksmithing worth taking?
 **Yes, if you wear plate or mail.** Warriors and Paladins first. It earns **Legacy Points** at skill 150, 225 and 300, and it makes gear that is genuinely competitive rather than a stopgap.

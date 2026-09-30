@@ -3,7 +3,7 @@ build: 1.60.1.70124
 
 Slow and peaceful, and in Forever no longer optional if you want Cooking: **five of Cooking's seven levelling steps are fish.**
 :::scope
-Skill levels and camp objects are read from the beta client and are solid. **The rank thresholds below are Classic's**, and the source publishing them marks them as Classic values rather than confirmed Forever ones. Fishing is nonetheless the only profession with any published rank data at all.
+Skill levels and camp objects are come from foreverchanges.pro's reading of the beta client and are solid. **The rank thresholds below are Classic's**, and the source publishing them marks them as Classic values rather than confirmed Forever ones. Fishing is nonetheless the only profession with any published rank data at all.
 :::
 ## Is Fishing worth it?
 **Yes, if you intend to cook**, and you should: [Cooking](/guides/wow-forever/professions/cooking/) gives +5% experience from kills. Fishing costs no primary slot and it feeds that route directly.

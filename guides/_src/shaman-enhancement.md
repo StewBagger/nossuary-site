@@ -19,7 +19,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 **Take `Improved Ghost Wolf` last on that row:** *"Put points in this last on the row, since [[Ghost Wolf]] only unlocks at Level 20."* Points in it before then do nothing.
 **A third source disagrees on those two points** and spends them on `Improved Lightning Shield` instead, which is reasonable for a dungeon build where travel form is worthless. Its PvP list takes `Improved Ghost Wolf` 2 plus `Earth's Grasp` 2 and only `Thundering Strikes` 3.
 **A published mana alternative, with a warning attached:** *"Due to the Mana concerns at Level 20, there is an alternative build that goes into Restoration to reach both `Mindfulness` & [[Water Shield]]… once the cap increases this path will prevent you from reaching deeper into the Enhancement tree without a costly respec."*
-**Level 30: 0/21/0 — our own extension**, in order: `Thundering Strikes` 5 → `Mental Dexterity` 3 → `Improved Ghost Wolf` 2 → `Shamanistic Focus` 1 → `Elemental Weapons` 3 → `Ancestral Knowledge` 1 → **[[Stormstrike]]** → `Flurry` 4 → `Improved Stormstrike` 1.
+**Level 30: 0/21/0 — our own extension, not a published build**, in order: `Thundering Strikes` 5 → `Mental Dexterity` 3 → `Improved Ghost Wolf` 2 → `Shamanistic Focus` 1 → `Elemental Weapons` 3 → `Ancestral Knowledge` 1 → **[[Stormstrike]]** → `Flurry` 4 → `Improved Stormstrike` 1.
 ## Rotation
 1. **Imbue your weapon: [[Rockbiter Weapon]] solo, [[Flametongue Weapon]] in groups**
 2. **[[Lightning Shield]]** up before you engage

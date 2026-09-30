@@ -3,7 +3,7 @@ build: 1.60.1.70124
 
 Permanent bonuses on gear, paid for by destroying other gear. **Forever gave enchanters a new role: you are the supply chain for every crafted tier set in the game.**
 :::scope
-Recipes, reagents and skill levels are read from the beta client and are solid. **Professions cap at skill 225 in the beta.** One of the sources below has no Forever Enchanting page at all, so this profession is more thinly covered than the others.
+Recipes, reagents and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta.** One of the sources below has no Forever Enchanting page at all, so this profession is more thinly covered than the others.
 :::
 ## Is Enchanting worth taking?
 **Yes if you are a caster also taking Tailoring, or if you want the most durable gold engine in the game.** It earns **Legacy Points** at 150, 225 and 300.

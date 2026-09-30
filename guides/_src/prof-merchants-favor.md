@@ -3,7 +3,7 @@ build: 1.60.1.70124
 
 **New in Forever: a second currency, and 317 recipes no trainer teaches.** Open from level 10 to any class and any profession, **including none at all.**
 :::scope
-Recipe counts, costs and mechanics are read from the beta client and are solid. **One count is disputed**: the figure of 317 recipes comes from the client diff, while another source's breakdown totals about 305. The seven trades involved are agreed. Treat the number as roughly 300 to 320.
+Recipe counts, costs and mechanics are come from foreverchanges.pro's reading of the beta client and are solid. **One count is disputed**: the figure of 317 recipes comes from the client diff, while another source's breakdown totals about 305. The seven trades involved are agreed. Treat the number as roughly 300 to 320.
 :::
 ## What it is
 A reputation-free currency you earn by handing in **Waylaid Crates**, and spend on recipes that no trainer sells.

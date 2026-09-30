@@ -14,7 +14,7 @@ Against it: **you cannot dual-wield until level 20**, and [[Whirlwind]] is **lev
 1. `Cruelty`, 5 points
 2. `Unbridled Wrath`, 5 points
 3. The eleventh point is the only disagreement between published builds — **`Piercing Howl`** for a slow, or **`Improved Cleave`**. On a PvP realm, take Piercing Howl.
-**Level 30: 0/21/0**, reaching `Death Wish`: `Cruelty` 5, `Unbridled Wrath` 5, `Improved Cleave` 3, `Blood Craze` 2, **`Dual Wield Specialization` 5**, `Death Wish` 1.
+**Level 30: 0/21/0 — our own extension, not a published build**, reaching `Death Wish`: `Cruelty` 5, `Unbridled Wrath` 5, `Improved Cleave` 3, `Blood Craze` 2, **`Dual Wield Specialization` 5**, `Death Wish` 1.
 `Raging Blows` is only half-dead at this level — its [[Whirlwind]] half waits until 36, but the other half cuts [[Cleave]]'s rage cost by 2, which stacks with `Improved Cleave`. Take it as a rage talent or not at all.
 ## Rotation
 **Identical to Arms at low level, minus [[Slam]].** The two specs genuinely play the same until 30, and saying so is more useful than padding.
