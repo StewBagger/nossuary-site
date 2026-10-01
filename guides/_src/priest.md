@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 1, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Discipline Priest Guide|https://www.wowhead.com/forever/guide/classes/priest/discipline/level-20-healer-overview ;; Wowhead — Level 20 Holy Priest Guide|https://www.wowhead.com/forever/guide/classes/priest/holy/level-20-healer-overview ;; Wowhead — Level 20 Shadow Priest Guide|https://www.wowhead.com/forever/guide/classes/priest/shadow/level-20-dps-overview ;; Icy Veins — Priest Class Overview|https://www.icy-veins.com/wow-forever/priest-class-overview ;; ClassicWoW.gg — Priest Class Overview & Changes|https://classicwow.gg/forever/guides/priest
+sources: Blizzard — Class Deep Dives: Priest and Warrior|https://worldofwarcraft.blizzard.com/en-us/news/24301514 ;; Wowhead — Level 20 Discipline Priest Guide|https://www.wowhead.com/forever/guide/classes/priest/discipline/level-20-healer-overview ;; Wowhead — Level 20 Holy Priest Guide|https://www.wowhead.com/forever/guide/classes/priest/holy/level-20-healer-overview ;; Wowhead — Level 20 Shadow Priest Guide|https://www.wowhead.com/forever/guide/classes/priest/shadow/level-20-dps-overview ;; Icy Veins — Priest Class Overview|https://www.icy-veins.com/wow-forever/priest-class-overview ;; ClassicWoW.gg — Priest Class Overview & Changes|https://classicwow.gg/forever/guides/priest
 
 Priest is the archetypal healer and always wanted for groups. The thing to know before you pick a spec is that **[[Mind Flay]] is talent-only, as it was in Classic**, gated on 10 points in the Shadow tree, so in practice a Holy or Discipline Priest does not have it.
 :::scope
-Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Priest build has been tested.** A specific caution for this class: much of what is written about Priest elsewhere comes from the BlizzCon demo build rather than the live beta, and Blizzard has shipped only a handful of small Priest changes since. Ability training levels below are read from the client.
+Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Priest build has been tested.** On September 30, 2026 Blizzard published its own Priest Class Deep Dive — not a handful of small changes, but a wide pass across baseline abilities, every racial spell and all three talent trees. This page follows Blizzard's post over the three guide sites wherever they disagree. Ability training levels below are read from the client. Blizzard's own caveat: *"class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."*
 :::
 ## Which spec?
 | Spec | Role | Levelling | In one line |
@@ -46,17 +46,27 @@ Play Priest if you want to be the person keeping everyone alive, and you are hap
 | 14 | [[Psychic Scream]] |
 | 16 | [[Heal]] |
 | **20** | [[Holy Fire]], [[Flash Heal]], **[[Fear Ward]] is now baseline for every race** (though cut from 10 minutes to 3), **[[Devouring Plague]] is now available to every race**, second racial spell |
-| 30 | **[[Divine Spirit]] is now trained** (was a talent), [[Prayer of Healing]], now 40 yards and heals the target's party |
-| **32** | **[[Shadow Word: Death]], new**, with 10% max-health backlash if it does not kill |
+| 30 | **[[Divine Spirit]] is now trained** (was a talent), [[Prayer of Healing]], now 40 yards and heals **the target's party and their pets**, not your own |
+| **32** | **[[Shadow Word: Death]], new**, instant, 15-second cooldown, with 10% max-health backlash if it does not kill |
 | 40 | [[Greater Heal]], **[[Lightwell]] is now trained** (it was the Holy capstone), mount |
 | 48–60 | Prayer of Fortitude, Shadow Protection and Spirit all become **raid-wide** |
 **The gate is 10 points in the Shadow tree, not your spec** — a healing Priest is not forbidden from dipping for [[Mind Flay]], which is why it does not appear above as a level-gated ability.
 ## Which race
 **Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling.** Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Kill the vanilla answer first: you used to pick Dwarf for [[Fear Ward]], and Fear Ward is now baseline for everyone.** That reason is gone.
-**Alliance: Gnome**, a brand-new Priest combination, for `Contingency Plan` and `Confounding Flash`, an area confuse on up to five enemies, which is the best panic button any Priest race has. **Dwarf is the stronger pure leveller**, though: `Desperate Prayer` at level 10 is a full instant self-heal nothing else on Alliance has that early, and **`Mace Specialization` is the only weapon-crit racial a Priest can actually use** — Human's larger sword racial is dead weight on a class that cannot equip swords.
-**Horde: Undead**, for `Cannibalize` and `Dark Sacrifice`. One correction worth carrying: **`Dark Sacrifice` is on a ten-minute cooldown**, so it is an emergency mana button, not a repeatable trade. **The name of Undead's second Priest-exclusive racial is not settled between sources:** Icy Veins calls it `Touch of the Grave`, ClassicWoW.gg calls it `Touch of Weakness`, and Wowhead's own class-quest table marks the level-20 Undead Priest spell "coming soon" — not yet in the client either way.
+**Alliance: Gnome**, whose two Priest racials are **brand new this patch** — `Confounding Flash` and `Contingency Plan`, the best panic button any Priest race has. **Dwarf is the stronger pure leveller**, though: `Desperate Prayer` at level 10 is a full instant self-heal nothing else on Alliance has that early, Dwarf also picks up a new level-20 racial, `Chastise` (damages and immobilises a Humanoid target for 2 seconds, instant, 2-minute cooldown), and **`Mace Specialization` is the only weapon-crit racial a Priest can actually use** — Human's larger sword racial is dead weight on a class that cannot equip swords.
+**Horde: Undead, for `Touch of Weakness` and `Dark Sacrifice`.** Blizzard's class post settles what this page used to carry as an open, three-way disagreement: Icy Veins named Undead's second Priest racial `Touch of the Grave`, ClassicWoW.gg named it `Touch of Weakness`, and Wowhead's own class-quest table marked the level-20 Undead Priest spell "coming soon" rather than pick a side. **Blizzard's answer: Undead keeps `Touch of Weakness` unchanged, and gains a new level-20 spell, `Dark Sacrifice`** — cannibalise your own health to gain Mana over time, with the Mana gain increased by Spirit. Undead's `Fade` also now has double the threat reduction of every other race's. One figure worth carrying separately from Blizzard's post: datamined client data puts `Dark Sacrifice` on a ten-minute cooldown, which would make it an emergency mana button rather than a repeatable trade — Blizzard's own post does not state a cooldown, so treat the ten minutes as unconfirmed.
 **Skyborne cannot be a Priest.**
+**Every Priest race's spells, re-evaluated by Blizzard:**
+| Race | Spell 1 | Spell 2 |
+| --- | --- | --- |
+| Gnome | `Confounding Flash` (10) — confuses up to 5 nearby enemies 3s, broken by damage, 0.5s cast, 2-min CD. **New.** | `Contingency Plan` (20) — 30s ward; below 35% health it grants an absorb shield plus a heal-over-time, stacking with [[Renew]] and [[Power Word: Shield]], instant, 5-min CD. **New.** |
+| Dwarf | `Desperate Prayer` — instant self-heal. Unchanged. | `Chastise` (20) — damages and immobilises a Humanoid for 2s, instant, 2-min CD. **New.** |
+| Human | `Divine Grace` (10) — instantly heals a friendly target below 50% health and clears their Weakened Soul; cannot target yourself; 5-min CD. **New.** | `Feedback`. Unchanged. |
+| Night Elf | `Starshards` (10) — damage increased substantially, now a 30-second cooldown. | `Elune's Grace` (20) — now a 50% chance to avoid melee and ranged attacks for 15s or until 3 attacks miss, 5-min CD. |
+| Troll | `Hex of Weakness`. Unchanged. | `Shadowguard`. Unchanged. |
+| Undead | `Touch of Weakness`. Unchanged. | `Dark Sacrifice` (20) — cannibalise your own health for Mana over time, gain increased by Spirit. **New.** |
+Blizzard did not publish a level for Troll's two spells or for Human's `Feedback`; the "second racial spell" the milestones table above flags at **level 20** is the race's level-20 column entry wherever one is given.
 ## Quality of life
 - **The wand is the levelling mechanic.** Wand skill is default, so a wand works the moment you loot one, and `Wand Specialization` is now two points instead of five. Get one early.
 - **Re-drag your action bars, or use macros.** Before level 20 nearly every even level brings a new rank of Smite, Mind Blast, Shadow Word: Pain or Power Word: Shield, and **bars do not update themselves**. A `/cast Spell Name` macro always fires the highest rank you know.
@@ -71,6 +81,8 @@ Play Priest if you want to be the person keeping everyone alive, and you are hap
 | `Wand Specialization` is 2 ranks, not 5 | Same bonus for three fewer points |
 | `Meditation` returns up to 50% regen while casting | Was 15%. Spirit is a far better stat now |
 | [[Shadow Word: Death]] added at 32 | With health backlash if it fails to kill |
+| [[Prayer of Healing]] now heals the **target's** party | It no longer heals your own party — read the target before you cast |
+| [[Renew]] can stack from multiple Priests | Two Priests renewing the same tank is no longer wasted |
 | **[[Desperate Prayer]] is Dwarf-only now** | A Human Priest loses the self-heal it had in Classic |
 ## At level 60
 Unknown. No source publishes a Priest build past 30, and much of the detailed Priest material circulating comes from a pre-beta demo build that nobody has re-verified. Raids open December 9.

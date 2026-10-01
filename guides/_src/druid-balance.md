@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 1, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Balance Druid Guide|https://www.wowhead.com/forever/guide/classes/druid/balance/level-20-dps-overview ;; Icy Veins — Balance Druid|https://www.icy-veins.com/wow-forever/balance-druid-ranged-dps-pve-guide ;; ClassicWoW.gg — Balance Druid|https://classicwow.gg/forever/guides/druid/balance
+sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Wowhead — Level 20 Balance Druid Guide|https://www.wowhead.com/forever/guide/classes/druid/balance/level-20-dps-overview ;; Icy Veins — Balance Druid|https://www.icy-veins.com/wow-forever/balance-druid-ranged-dps-pve-guide ;; ClassicWoW.gg — Balance Druid|https://classicwow.gg/forever/guides/druid/balance
 
 Arcane and Nature caster with the new `Eclipse` mechanic — [[Wrath]] shortens your next [[Starfire]], so you alternate rather than spam one spell.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Balance build has been tested. **[[Moonkin Form]] is the 31-point capstone**, which means level 40 — **nobody in the beta has ever been in it**, at any cap. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Balance build has been tested. **[[Moonkin Form]] is the 31-point capstone**, which means level 40 — **nobody in the beta has ever been in it**, at any cap. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended. Blizzard's own caveat: *"class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."*
 :::
 ## Is Balance worth levelling?
 **Viable but slower than Feral.** The published verdict: *"Balance Druid is an ok levelling choice. It does have a bit more downtime than Feral Druid would, but the larger range on your abilities can make tagging mobs much easier… Expect to start out very slowly though."*
@@ -32,12 +32,15 @@ Item level, then Spell Power, Intellect, Haste, critical strike, Spirit.
 | **`Nature's Grace`** | ~30 | **Rewritten**: now +10% casting speed *and* −10% global cooldown for 3 seconds on a **non-periodic** crit. Damage-over-time crits do not trigger it |
 | **[[Moonkin Form]]** | **40** | The 31-point capstone. Also raises armour from items by 360% while shapeshifted. Unreachable in the beta |
 ## What Forever changed for Balance
+- **[[Wrath]] itself was redesigned to a much cheaper Mana cost with lower base damage to match** — Blizzard's own framing of the baseline change; the September 24 buff (+50% damage at every rank, above) was layered on top of this redesign, not instead of it.
 - **`Eclipse` is new**, and it is the spec's identity.
 - **[[Moonkin Form]]'s aura is now all critical strike**: spell *and* melee, within **45 yards**, up from spell crit at 30. It is **mutually exclusive with `Leader of the Pack`**, it doubles [[Omen of Clarity]]'s proc chance, and **you cannot cast healing spells in it** (Classic allowed only Balance spells, which is a different restriction).
 - **[[Omen of Clarity]] and [[Nature's Grasp]] are no longer talents**: they are trained, at 20 and 10. **[[Nature's Grasp]] was also rewritten**: it now affects the next melee attack that strikes you rather than a 35% chance on any hit, it is **castable while shapeshifted**, and it is no longer outdoors-only.
 - **[[Entangling Roots]] is no longer outdoors-only** either.
-- **[[Insect Swarm]] moved from Restoration into Balance.** `Improved Thorns` and `Natural Weapons` were removed.
-- **Three new talents:** `Genesis` (+5% periodic damage *and healing* at 5/5), `Nature's Majesty` (+4% crit with **spells and melee**), `Nature's Splendor`.
+- **[[Insect Swarm]] moved from Restoration into Balance, and `Natural Shapeshifter` moved the other way, into Restoration.** `Improved Thorns` is now a baseline ability, like [[Omen of Clarity]] and [[Nature's Grasp]]. `Natural Weapons` was **folded into Restoration's `Naturalist` talent**, not simply deleted.
+- **Three talents moved up a row:** `Moonglow` (row 5 → row 2, and now cuts **only** damaging-spell Mana cost, no longer touching heals), `Nature's Reach` (row 3 → row 2, now also raising hit chance and covering all your damaging spells, not just [[Moonfire]]'s range), and `Improved Entangling Roots` moved the other way, row 2 → row 3, and was redesigned: instead of preventing interruption it now significantly increases the root's damage and lowers the chance for other damage to break it early.
+- **`Improved Moonfire` now costs 2 talent points instead of 5** for the same effect.
+- **Three new talents:** `Genesis` (+5% periodic damage *and healing* at 5/5, row 1), `Nature's Majesty` (+4% crit with **spells and melee**, row 2), and **`Nature's Splendor`**, the new 11-point gold medal talent — requires `Nature's Majesty` and extends the duration of [[Moonfire]], [[Rejuvenation]], [[Regrowth]] and [[Insect Swarm]].
 - `Moonfury` and `Vengeance` were broadened from a named-spell list to all Arcane and Nature spells. **[[Thorns]] now scales with spell power** as of September 24. [[Starfire]] rank 7 and [[Moonfire]] rank 10 had their damage **reduced**; [[Hurricane]] lost its 1-minute cooldown.
 ## At level 60
 Unknown. Nobody has cast [[Starfire]] with `Eclipse` charges or stood in [[Moonkin Form]], and how much of Classic's hybrid tax survives is unresolved in every source.

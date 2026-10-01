@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 1, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Arms Warrior|https://www.wowhead.com/forever/guide/classes/warrior/arms/level-20-dps-overview ;; Icy Veins — Arms Warrior|https://www.icy-veins.com/wow-forever/arms-warrior-melee-dps-pve-guide ;; ClassicWoW.gg — Arms Warrior|https://classicwow.gg/forever/guides/warrior/arms
+sources: Blizzard — Class Deep Dives: Priest and Warrior|https://worldofwarcraft.blizzard.com/en-us/news/24301514 ;; Wowhead — Level 20 Arms Warrior|https://www.wowhead.com/forever/guide/classes/warrior/arms/level-20-dps-overview ;; Icy Veins — Arms Warrior|https://www.icy-veins.com/wow-forever/arms-warrior-melee-dps-pve-guide ;; ClassicWoW.gg — Arms Warrior|https://classicwow.gg/forever/guides/warrior/arms
 
 Two-handed burst with bleeds and a 50% healing debuff. **At level 20 Arms is not really a spec, it is a weapon choice**, because its own engine sits at level 30 and beyond.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch and no higher, so no level-60 Arms build has been tested by anyone. Talent tiers unlock at fixed levels: tier 1 at 10, then 15, 20, 25, 30, 35, and the capstone at **40**. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch and no higher, so no level-60 Arms build has been tested by anyone. Talent tiers unlock at fixed levels: tier 1 at 10, then 15, 20, 25, 30, 35, and the capstone at **40**. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended. Blizzard's own caveat: "class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."
 :::
 ## Is Arms worth levelling?
 **Viable, but slower, and be clear about why.** The published level-20 Arms build spends **all eleven points in the Fury tree**, because there is nothing in Arms worth reaching yet. Arms' actual engine is Rend into `Bloodthrill` into [[Overpower]], which is tier 5 and therefore **level 30 at the earliest**, and [[Mortal Strike]] is **level 40**.
@@ -37,9 +37,11 @@ Weapon damage, then **Hit**, critical strike, Strength, Agility, Stamina. Slow a
 | **`Mortal Strike`** | 40 | The capstone. Requires `Sweeping Strikes` |
 **A 51-point squeeze worth knowing early:** [[Mortal Strike]] needs 31 points in Arms and `Death Wish` needs 21 in Fury. That is 52. **They are mutually exclusive.**
 ## What Forever changed for Arms
-- **`Improved Slam` moved from Fury into Arms** and cut from 5 ranks to 2. It reduces the global cooldown and cast time of [[Slam]] by up to 0.5 sec across its 2 ranks, and stops Slam from interrupting your swing timer — Classic's version only shortened the cast. [[Slam]]'s own 15-second cooldown is untouched by the talent (ClassicWoW.gg's exact tooltip text; Icy Veins confirms the cooldown itself doesn't move).
+- **`Improved Slam` moved from Fury into Arms** and cut from 5 ranks to 2. Blizzard's own description: it reduces the cooldown, global cooldown, *and* cast time of [[Slam]] together, and stops Slam from interrupting your swing timer — this corrects our earlier line (sourced from ClassicWoW.gg and Icy Veins) that Slam's own 15-second cooldown was untouched by the talent.
 - **All four weapon-specialisation talents were deleted** and replaced by one `Weaponmaster`. The Classic mace stun proc is gone, replaced by armour penetration.
-- **Two entirely new talents:** `Bloodthrill`, and `Spearing Strike` — 40% weapon damage, **+80% against Giants, Dragonkin and mounted targets, and it dismounts them.**
-- `Anger Management` now **generates** 1 rage every 3 seconds in combat, on top of its old decay reduction. `Impale` no longer requires `Deep Wounds`. `Improved Rend` was nerfed and `Two-Handed Weapon Specialization` cut from 5 ranks to 3.
+- **Two entirely new talents:** `Bloodthrill`, and `Spearing Strike` — an instant attack for 15 Rage on a 20-second cooldown, dealing a percentage of weapon damage and dismounting the target; Blizzard says that damage is **doubled** against a mounted target, a Dragon, or a Giant (not the +80% our prior tooltip reading suggested).
+- `Anger Management` generates 1 Rage every 3 seconds in combat on top of its cooldown-reduction effect — **this is unchanged from Classic**; Blizzard's own notes say only its tooltip was clarified, with no functionality change, correcting our earlier read of it as a new Forever buff. `Impale` no longer requires `Deep Wounds`. `Improved Rend` was nerfed and `Two-Handed Weapon Specialization` cut from 5 ranks to 3.
+- **`Improved Tactical Mastery`** (the talent formerly just named `Tactical Mastery`) now retains **3 more Rage per point, to a maximum of 25**, when you change Stances — on top of the 10 Rage baseline Tactical Mastery trains at level 14 (Blizzard).
+- `Improved Overpower` moved from row 3 up to row 2. `Iron Will` — the Stun-resistance talent — moved in from Protection to row 2 as well, and now reduces the **duration** of Stuns on you rather than increasing resistance to them (Blizzard).
 ## At level 60
 Unknown. Nobody has tested whether the Rend, `Bloodthrill` and `Improved Slam` package beats a Fury or hybrid split, and gear cannot be planned for — Forever reworked dungeon loot and item stats wholesale, so Classic equipment lists do not transfer.

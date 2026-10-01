@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 1, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Beast Mastery Hunter|https://www.wowhead.com/forever/guide/classes/hunter/beast-mastery/level-20-dps-overview ;; Icy Veins — Beast Mastery Hunter Ranged DPS PvE Guide|https://www.icy-veins.com/wow-forever/beast-mastery-hunter-ranged-dps-pve-guide ;; ClassicWoW.gg — BM Hunter Overview & Changes|https://classicwow.gg/forever/guides/hunter/beast-mastery
+sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Wowhead — Level 20 Beast Mastery Hunter|https://www.wowhead.com/forever/guide/classes/hunter/beast-mastery/level-20-dps-overview ;; Icy Veins — Beast Mastery Hunter Ranged DPS PvE Guide|https://www.icy-veins.com/wow-forever/beast-mastery-hunter-ranged-dps-pve-guide ;; ClassicWoW.gg — BM Hunter Overview & Changes|https://classicwow.gg/forever/guides/hunter/beast-mastery
 
 Ranged physical damage with a pet that carries a real share of the work. **This is the Hunter levelling spec, and the strongest levelling spec in the game.**
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Beast Mastery build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40. The beta also runs a **Legacy system**, extra talent points stacked on top of the normal rate, so some published level 20 builds show talents — `Summon Hawk` chief among them — that a character levelling without it would not reach until several levels later.
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Beast Mastery build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40. The beta also runs a **Legacy system**, extra talent points stacked on top of the normal rate, so some published level 20 builds show talents — `Summon Hawk` chief among them — that a character levelling without it would not reach until several levels later. **Blizzard's own caveat applies to everything on this page:** *"class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."*
 :::
 ## Is Beast Mastery worth levelling?
 **Yes, and nothing beats it.** The published verdict on taming a pet at level 10 is blunt: *"the single greatest leveling tool that any class gets without exception."*
@@ -41,11 +41,12 @@ Weapon damage is *"far and away your most important stat"*, and there is a subtl
 Forever changed pets more than it changed the Hunter.
 - **Pets no longer carry a flat, per-family damage buff or penalty** (Icy Veins is explicit: *"Pets no longer have an inherent damage buff or reduction based on type"*). What still varies by family is each pet's unique ability, a Bear's [[Swipe]], for instance, not a hidden damage modifier. Pick for the family's ability, not for a stat line that no longer exists
 - **Pets are now sorted into three classifications — Ferocity, Cunning, or Tenacity** — replacing the old damage/armour split
-- **Pets inherit some of your stats**, so they scale as you gear up
+- **Pets inherit some of your stats, so they scale as you gear up — and Blizzard confirms that is now the only way to buff them.** Pets can no longer receive player buffs that increase their stats, so a stat buff you cast lands on you, not your pet
 - Happiness and loyalty still exist, feed your pet
 - **Focus regenerates at 10 a second, about twice as fast as Classic**, and every pet uses the same system
 - **Ability ranks are taught, not inherited.** Tame a beast that already knows the rank, take your own pet back, and teach it with Beast Training at a training-point cost. **Loyalty gates training**, and it rises slowly. Note the September 24 build nerfed [[Tame Beast]] so it **no longer works on beasts above your own level**
-- **There is a new family, the Fox**
+- **Every family can now learn either [[Bite]] or [[Claw]] (some both), and either [[Dive]] or [[Dash]], on top of one ability unique to that family** — the Bear's [[Swipe]] is one of those, not a leftover damage modifier. Full family/ability list, including the new Fox's `Trickster's Dance`, on the [Hunter overview](/guides/wow-forever/hunter/#pet-families)
+- **Foxes are a new pet family**, added in this Forever pass
 **The early recommendation is a Bear**, for one specific reason: its **Swipe** is a 5-second-cooldown frontal cleave, and *"one of the rare pet abilities capable of dealing consistent AoE damage to hold aggro on multiple targets."*
 ## What defines Beast Mastery
 | Talent | Earliest level | What it does |
@@ -54,6 +55,19 @@ Forever changed pets more than it changed the Hunter.
 | **`Pathfinding`** | 15 | **+6% to [[Aspect of the Cheetah]] and [[Aspect of the Pack]]**, not to movement speed generally, and worth nothing while you are in Hawk |
 | **`Bestial Swiftness`** | 20 | Pet movement speed, quality of life while levelling, real value in PvP |
 | **`Summon Hawk`** | 16 points into this tree (later than a base level-20 build) | Summons a hawk that hits once then attacks for 18 seconds on its own, up to two active; shares its cooldown with [[Arcane Shot]] |
+## Beast Mastery talent changes, Classic to Forever
+Beyond the level-20 build above, Blizzard's own changelog for the tree:
+- `Deadly Aspects` (formerly `Improved Aspect of the Hawk`) now also carries a chance for melee attacks to grant increased attack speed while [[Aspect of the Beast]] is active — the tree's support for a melee-leaning build
+- `Endurance Training` absorbed the old `Thick Hide` talent, so it now grants your pet both Health and Armor in one talent
+- `Focused Fire`, new, increases all damage you **and** your active pet deal
+- `Aspect of the Monkey` now grants twice the Dodge, and your pet gains half the benefit of it
+- `Pathfinding` moved from row 3 to row 2
+- `Unleashed Fury`'s pet-damage bonus is slightly smaller, but now also benefits a summoned Hawk
+- `Improved Mend Pet` now also cuts Mend Pet's Mana cost
+- `Ferocity`'s pet critical-strike bonus is slightly smaller, but now also benefits a summoned Hawk
+- `Intimidation` now requires `Bestial Swiftness` first, and now also grants your pet +100% critical strike chance on its next attack
+- `Bestial Discipline` now also regenerates Mana from Spirit while you cast
+- **Removed:** `Improved Eyes of the Beast` is a baseline ability now, and `Thick Hide` no longer exists as its own talent — see `Endurance Training` above
 ## What Forever changed for Hunters
 - **Pets lost their per-family damage/armour modifiers and gained a three-way role split** (above), Ferocity, Cunning, Tenacity, and **pets scale off your stats.**
 - **`Summon Hawk` is new**: a Beast Mastery talent, not a baseline ability, and it competes with [[Arcane Shot]] for the same cooldown rather than stacking with it.

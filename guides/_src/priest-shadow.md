@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 1, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Shadow Priest Guide|https://www.wowhead.com/forever/guide/classes/priest/shadow/level-20-dps-overview ;; Icy Veins — Shadow Priest Ranged DPS PvE Guide|https://www.icy-veins.com/wow-forever/shadow-priest-ranged-dps-pve-guide ;; ClassicWoW.gg — Shadow Priest Guide|https://classicwow.gg/forever/guides/priest/shadow ;; ClassicWoW.gg — Priest Class Overview & Changes|https://classicwow.gg/forever/guides/priest
+sources: Blizzard — Class Deep Dives: Priest and Warrior|https://worldofwarcraft.blizzard.com/en-us/news/24301514 ;; Wowhead — Level 20 Shadow Priest Guide|https://www.wowhead.com/forever/guide/classes/priest/shadow/level-20-dps-overview ;; Icy Veins — Shadow Priest Ranged DPS PvE Guide|https://www.icy-veins.com/wow-forever/shadow-priest-ranged-dps-pve-guide ;; ClassicWoW.gg — Shadow Priest Guide|https://classicwow.gg/forever/guides/priest/shadow ;; ClassicWoW.gg — Priest Class Overview & Changes|https://classicwow.gg/forever/guides/priest
 
 *"A vampiric DPS specialization, healing allies based on how much shadow damage they deal."* **This is the Priest levelling spec, and the published advice for the other two is to use these talents until you can heal in groups.**
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Shadow build has been tested. Talent rows unlock at levels 10, 15, 20, 25, 30, 35 and 40. **[[Shadowform]] is row 7, so level 40 and unreachable in the beta.** No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Shadow build has been tested. Talent rows unlock at levels 10, 15, 20, 25, 30, 35 and 40, with a new one-point milestone at 16 alongside the existing ones at 11, 21 and 31. **[[Shadowform]] is row 7, so level 40 and unreachable in the beta.** No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended. Blizzard's own September 30, 2026 Class Deep Dive post is folded in below and takes priority over the three guide sites; its own caveat applies: *"class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."*
 :::
 ## Is Shadow worth levelling?
 **Yes. It is the highest-rated Priest spec for levelling at 3 out of 5**, against Discipline's 2.5 and Holy's 2.0. It is slower than it sounds early on:
@@ -16,7 +16,8 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 1. `Wand Specialization`, 2 points
 2. `Spirit Tap`, 5 points
 3. `Improved Shadow Word: Pain`, 2 points
-4. Final 2 points: *"there aren't a lot of good options: `Twilight Focus` if you find yourself playing mostly solo; `Blackout` if you're playing in a PvP environment; `Shadow Reach`… for some extra range."*
+4. Final 2 points: *"there aren't a lot of good options: `Twilight Focus` if you find yourself playing mostly solo; `Blackout` if you're playing in a PvP environment; `Shadow Reach`… for some extra range."* `Shadow Reach` is now only 2 points for the same effect, down a row to row 2, so this option now buys the full talent instead of a partial rank.
+**Blizzard moved `Shadow Focus` up to row 1 and changed what it does**: it now increases the chance for Shadow spells to hit, rather than reducing the target's chance to resist. The 5 points spent on it below buy Shadow hit chance, not resist reduction.
 **No source publishes a build that spends into [[Mind Flay]] at 20**, or a level-30 Shadow build.
 **Level 30, 0/0/21 — our own extension, not a published build**, in order: `Shadow Focus` 5 → `Improved Shadow Word: Pain` 2 → `Shadow Affinity` 3 → **[[Mind Flay]]** → `Improved Mind Flay` 2 → `Improved Mind Blast` 2 → `Shadow Weaving` 3 → **[[Vampiric Embrace]]** → `Improved Mind Blast` to 4/5.
 ## Rotation
@@ -30,21 +31,29 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 **Multi-target:** *"you can deal damage to multiple enemies by applying [[Shadow Word: Pain]] to multiple targets… this can be extremely mana-intensive, especially if you miss last hits to proc `Spirit Tap`."* Pain everything, then wand them down.
 ## Stat priority
 Spell Power, then critical strike, Hit, Intellect, Stamina, MP5.
-Hit sits lower than you might expect while levelling: *"While fighting enemies at your level, you'll need very little hit chance… Hit will take center stage when talking about endgame content."*
+Hit sits lower than you might expect while levelling: *"While fighting enemies at your level, you'll need very little hit chance… Hit will take center stage when talking about endgame content."* It sits lower still now that `Shadow Focus` — row 1, 5 points, the first pick in the build above — grants Shadow hit chance directly from the talent tree instead of its old job of lowering target resist.
 ## What defines Shadow
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
 | **[[Mind Flay]]** | **20**, with 10 points in the tree | **A talent, as in Classic.** One point grants all **6 spell ranks** |
-| **[[Vampiric Embrace]]** | **25** | 30 seconds of your party healing for 20% of your Shadow damage, and it now also lets `Spirit Tap` proc off the deaths of afflicted enemies |
-| **[[Shadowform]]** | **40** | +10% Shadow damage, **−50% Shadow mana cost**, +100% Shadow crit damage bonus, −15% physical damage taken |
+| **[[Vampiric Embrace]]** | **25** | Now the 16-point gold medal, moved up to row 3. 30 seconds of your party healing for 20% of your Shadow damage, 1-minute cooldown, and it now also lets `Spirit Tap` proc off the deaths of afflicted enemies |
+| **[[Shadowform]]** | **40** | **−50% Shadow mana cost**, **+100% Shadow crit damage bonus** — both Blizzard-confirmed — against a **flat Shadow damage bonus Blizzard says is decreased** from Classic's (no new number published; the old +10% figure is stale), plus −15% physical damage taken |
 ## What Forever changed for Priests
 - **[[Mind Flay]] is talent-only, as it was in Classic.** The client is explicit: *"Comes with the talent point, no trainer teaches it."* What Forever changed is the damage, 63 from 75 at rank 1. **It is gated on 10 points in Shadow Magic, not on your spec**, so a Holy or Discipline Priest can dip for it. **No published Holy or Discipline build reaches it**, and their rotations contain no Mind Flay at all.
-- **`Shadow Weaving` is now a personal stacking buff, not the raid-wide Shadow Vulnerability debuff.** It no longer feeds other Shadow casters or Warlocks. Do not take a raid assignment on it.
+- **`Shadow Focus` moved from row 2 to row 1, and now increases Shadow spell hit chance instead of reducing the target's resist chance.** See Stat priority above.
+- **`Shadow Reach` moved from row 4 to row 2, and now costs only 2 points for the same range bonus.**
+- **`Improved Mind Flay`** (new, row 3, requires [[Mind Flay]]): increases Mind Flay's damage and range, but reduces how much it slows the target's movement.
+- **`Shadow Affinity`'s threat reduction on Shadow spells increased slightly.**
+- **`Shadow Weaving` is now a personal stacking buff, not the raid-wide Shadow Vulnerability debuff.** Blizzard's post adds a number our own data didn't have: its **damage percentage is also reduced, moderately**. It no longer feeds other Shadow casters or Warlocks. Do not take a raid assignment on it.
+- **`Devouring Contagion`** (new, row 5): cuts [[Devouring Plague]]'s Mana cost, and when a target dies while afflicted, Devouring Plague jumps to a new enemy within 5 yards carrying its remaining duration.
+- **`Early Demise`** (new, row 6, needs 25 Shadow points): raises [[Shadow Word: Death]]'s critical strike chance against targets under 20% health.
+- **[[Silence]] no longer requires `Improved Psychic Scream`** as a prerequisite. **`Improved Psychic Scream` now requires `Blackout`** instead.
+- **Removed:** `Improved Vampiric Embrace` — folded into the base `Vampiric Embrace` redesign above.
 - **[[Devouring Plague]] is no longer Undead-only**: Dwarf, Human, Night Elf and Troll can learn it, and its cooldown dropped from 3 minutes to 1.
 - **[[Fear Ward]] is baseline for every Priest**, but nerfed: 3 minutes' duration on a 3-minute cooldown, where Classic gave 10 minutes on 30 seconds.
-- **[[Shadow Word: Death]] is new**, for all races at **level 32**, so out of reach at any beta cap. Its talent `Early Demise` needs 25 Shadow points.
-- **[[Shadowform]] now bars *healing* spells rather than Holy spells**, so [[Smite]], [[Holy Fire]] and [[Resurrection]] are usable inside it.
-- **New race-locked Priest spells:** `Divine Grace` (Human), `Chastise` (Dwarf), `Dark Sacrifice` (Undead), and `Confounding Flash` plus `Contingency Plan` for **Gnome, which is a new Priest race.**
+- **[[Shadow Word: Death]] is new**, for all races at **level 32**, so out of reach at any beta cap. Instant cast, 15-second cooldown; if it does not kill the target you take 10% of your max health in damage. Its talent `Early Demise` above needs 25 Shadow points.
+- **[[Shadowform]] now bars *healing* spells rather than Holy spells**, so [[Smite]], [[Holy Fire]] and [[Resurrection]] are usable inside it. See What defines Shadow above for the Mana-cost, crit-damage and flat-damage numbers.
+- **New race-locked Priest spells:** `Divine Grace` (Human), `Chastise` (Dwarf), `Dark Sacrifice` (Undead), and `Confounding Flash` plus `Contingency Plan` for **Gnome**, which is a new Priest race in Forever and needed racials of its own — vanilla Priests were Human, Dwarf, Night Elf, Troll and Undead.
 - **`Wand Specialization` is 2 ranks reaching 25%** where Classic needed 5, which is why every wand-levelling build front-loads it. Separately, **wands no longer gain spell power** as of September 24.
 ## At level 60
 Unknown: whether Shadow has a raid slot at all. Losing the Shadow Vulnerability debuff role removes what it was *for* in Classic, and what is left is single-target damage plus a [[Vampiric Embrace]] that heals only the party.

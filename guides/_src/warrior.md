@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 1, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Arms Warrior|https://www.wowhead.com/forever/guide/classes/warrior/arms/level-20-dps-overview ;; Wowhead — Level 20 Fury Warrior|https://www.wowhead.com/forever/guide/classes/warrior/fury/level-20-dps-overview ;; Wowhead — Level 20 Protection Warrior|https://www.wowhead.com/forever/guide/classes/warrior/protection/level-20-tank-overview ;; Icy Veins — Warrior Class Overview|https://www.icy-veins.com/wow-forever/warrior-class-overview ;; ClassicWoW.gg — Warrior|https://classicwow.gg/forever/guides/warrior
+sources: Blizzard — Class Deep Dives: Priest and Warrior|https://worldofwarcraft.blizzard.com/en-us/news/24301514 ;; Wowhead — Level 20 Arms Warrior|https://www.wowhead.com/forever/guide/classes/warrior/arms/level-20-dps-overview ;; Wowhead — Level 20 Fury Warrior|https://www.wowhead.com/forever/guide/classes/warrior/fury/level-20-dps-overview ;; Wowhead — Level 20 Protection Warrior|https://www.wowhead.com/forever/guide/classes/warrior/protection/level-20-tank-overview ;; Icy Veins — Warrior Class Overview|https://www.icy-veins.com/wow-forever/warrior-class-overview ;; ClassicWoW.gg — Warrior|https://classicwow.gg/forever/guides/warrior
 
-Icy Veins rates Warrior one of the harder classes to level and one of the strongest once geared. Wowhead takes the opposite tone on the levelling itself — Forever's changes make Arms "feel phenomenal," a deliberate contrast with Vanilla's reputation. Rage now comes from weapon speed rather than damage dealt, and a critical hit no longer grants bonus rage on top of the swing.
+Icy Veins rates Warrior one of the harder classes to level and one of the strongest once geared. Wowhead takes the opposite tone on the levelling itself — Forever's changes make Arms "feel phenomenal," a deliberate contrast with Vanilla's reputation. Rage from dealing damage is now fully normalized to weapon speed, and Blizzard has confirmed critical strikes will give **75% more Rage** than a non-critical hit — reversing the launch beta, which gave no bonus Rage for a crit at all.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Warrior build has been tested by anyone.** Talent trees and ability training levels below are come from foreverchanges.pro's reading of the beta client and are solid; anything about endgame is not, and we have left it out rather than guessed.
+Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Warrior build has been tested by anyone.** Talent trees and ability training levels below are come from foreverchanges.pro's reading of the beta client and are solid; anything about endgame is not, and we have left it out rather than guessed. Blizzard's own caveat on its September 30 Class Deep Dive applies to everything on this page: "class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."
 :::
 ## Which spec?
 | Spec | Role | Levelling | In one line |
@@ -16,13 +16,16 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 **No source names an outright best leveller among the three specs, and the one number available cuts against instinct.** Icy Veins scores each spec's Level 20 toolkit for Levelling out of 5: Arms and Fury tie at 2.0, and Protection actually rates higher at 2.5, because its survivability offsets slower kills on their scale.
 ## Is Warrior for you?
 Play Warrior if you want to watch the enemy rather than your own bars, and you do not mind a hard first thirty levels in exchange for being formidable later.
+Blizzard's own September 30 Class Deep Dive is worth weighing against the "hardest class to level" reputation above: the post opens by flagging **Rage-generation bugs still being tracked down in the beta**, separate from the intended design, and two of its changes target exactly the early-game Rage starvation reviewers describe — Rage from taking damage no longer shrinks for wearing Armor, and a critical hit is back to giving **75% more Rage** than a normal swing. None of that touches the other reasons Warrior levels slowly (no self-heal before 20, no ranged attack, full dependence on a current weapon), so the reputation holds, just for a narrower set of reasons than before.
+Blizzard's closing assessment of the class, in its own words:
+> Warriors remain the masters of melee combat. They have a unique strength in dealing sustained damage to multiple melee targets, found on no other melee class. They have a powerful toolkit to solve nearly any problem, but they lack the tools to easily recover from taking too much damage. And they have unique buffs and debuffs that only Warriors can supply.
 :::strengths
 - The best tank in the game once you have [[Defensive Stance]] and a shield
 - Enormous damage ceiling with a good weapon
 - No resource to manage before a fight starts, you begin at zero and build
 :::
 :::weaknesses
-- Icy Veins rates it one of the harder classes to level, especially once your weapon falls behind
+- Icy Veins rates it one of the harder classes to level; Blizzard's Rage fixes (Armor no longer shrinks it, crits restored) target this but do not erase it
 - No self-heal until [[Victory Rush]] at level 20, and no ranged attack worth the name
 - Utterly dependent on keeping your weapon current
 :::
@@ -35,7 +38,7 @@ Play Warrior if you want to watch the enemy rather than your own bars, and you d
 ## Levelling milestones
 | Level | What you get |
 | --- | --- |
-| 1 | [[Heroic Strike]], [[Battle Shout]], now 3 minutes, though weaker |
+| 1 | [[Heroic Strike]], [[Battle Shout]] — 3 minutes baseline now (`Booming Voice`'s old job), Attack Power bonus trimmed to offset both factions having two casters who can buff it, but Improved Battle Shout's bonus is baked into the base number (Blizzard) |
 | 4 | [[Charge]], [[Rend]] |
 | 6 | [[Thunder Clap]] — 20% slow now, was 10%, and it scales with attack power |
 | **10** | **Class quest, mandatory.** [[Defensive Stance]], [[Sunder Armor]], [[Taunt]], [[Bloodrage]]. First talent point |
@@ -61,11 +64,13 @@ Play Warrior if you want to watch the enemy rather than your own bars, and you d
 - **Carry a one-hander and shield permanently** for [[Shield Bash]] interrupts and [[Mocking Blow]] pulls.
 - **Mining and Blacksmithing** lets you craft your own weapons and armour. **First Aid is your only fast self-heal** before 20, and **103 cooked dishes now give +5% experience from kills while you are well fed** — 15 minutes a serving, and quest experience is unaffected.
 - **Group when you can, and pull two.** Rage from damage taken survives in Forever but is small, so the one place it pays is levelling alongside a healer.
+- **[[Thunder Clap]] now works from [[Defensive Stance]]** (Blizzard), so AoE threat no longer forces a stance swap.
 ## What changed from Classic
 | Change | What it means for you |
 | --- | --- |
-| Rage normalized to weapon speed | Damage dealt no longer feeds rage |
-| **Critical hits give no bonus rage** | The swing still generates rage normally; what is gone is the extra rage a crit used to add on top, and with it the vanilla loop of gear → damage → rage. Dev-confirmed as intentional |
+| Rage from dealing damage normalized to weapon speed | Raw damage dealt no longer feeds rage, swing speed does |
+| **Critical hits give 75% more Rage than a non-crit** | The launch beta gave no bonus Rage for a crit at all; Blizzard is re-adding it, reversing our earlier read that the loss was intentional and permanent |
+| **Armor no longer reduces Rage from taking damage** | Blizzard kept the old formula but now calculates it as if every Warrior always had 50% damage reduction from Armor, so your own gear stops mattering to your Rage income. Damage-absorption effects like Power Word: Shield also stop blocking Rage gain |
 | Yellow attacks generate no rage | [[Heroic Strike]] and [[Cleave]] are net rage losses while levelling |
 | [[Victory Rush]] added at 20 | **Your first self-heal, and the only one you get without spending a point** — `Blood Craze` is the other, and it now also fires off [[Bloodthirst]] |
 | [[Tactical Mastery]] baseline at 14 | You keep 10 rage through a stance change without spending a point |

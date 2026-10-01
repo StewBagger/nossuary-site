@@ -310,12 +310,13 @@ def profnav(active=None):
 # posts are deliberately not cited: they are downstream of these, when they are not
 # simply wrong.
 SOURCE_NOTE = ("Compiled from the three major Forever guide sites and cross-checked against "
-               "each other. Game facts \u2014 talent ranks, tooltip values, what exists in the "
-               "tree at all \u2014 are settled against the client itself, read through "
+               "each other. Where Blizzard has published an official class deep dive, that post "
+               "outranks all three and the page is written from it. Everything else \u2014 talent "
+               "ranks, tooltip values, what exists in the tree at all \u2014 is settled against the "
+               "client itself, read through "
                "<a href=\"https://foreverchanges.pro\" rel=\"noopener\">foreverchanges.pro</a> "
-               "and <a href=\"https://wago.tools\" rel=\"noopener\">wago.tools</a>, which outrank "
-               "a guide site's prose whenever the two conflict. Where the guides disagree with "
-               "each other, this page says which said what.")
+               "and <a href=\"https://wago.tools\" rel=\"noopener\">wago.tools</a>. Where the "
+               "guides disagree with each other, this page says which said what.")
 
 
 def sources_block(meta, headings):

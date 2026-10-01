@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 1, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Beast Mastery Hunter|https://www.wowhead.com/forever/guide/classes/hunter/beast-mastery/level-20-dps-overview ;; Wowhead — Level 20 Marksmanship Hunter|https://www.wowhead.com/forever/guide/classes/hunter/marksmanship/level-20-dps-overview ;; Wowhead — Level 20 Survival Hunter|https://www.wowhead.com/forever/guide/classes/hunter/survival/level-20-dps-overview ;; Icy Veins — Hunter Class Guide|https://www.icy-veins.com/wow-forever/hunter-class-overview ;; ClassicWoW.gg — Hunter Overview & Changes|https://classicwow.gg/forever/guides/hunter
+sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Wowhead — Level 20 Beast Mastery Hunter|https://www.wowhead.com/forever/guide/classes/hunter/beast-mastery/level-20-dps-overview ;; Wowhead — Level 20 Marksmanship Hunter|https://www.wowhead.com/forever/guide/classes/hunter/marksmanship/level-20-dps-overview ;; Wowhead — Level 20 Survival Hunter|https://www.wowhead.com/forever/guide/classes/hunter/survival/level-20-dps-overview ;; Icy Veins — Hunter Class Guide|https://www.icy-veins.com/wow-forever/hunter-class-overview ;; ClassicWoW.gg — Hunter Overview & Changes|https://classicwow.gg/forever/guides/hunter
 
 Hunter is the easiest class in the game to level alone and one of the hardest to play well in a group. Your pet tanks while you shoot, and Forever made pets scale with your own gear.
 :::scope
-Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Hunter build has been tested.** Ability training levels below are come from foreverchanges.pro's reading of the beta client and are reliable. The beta also runs a **Legacy system**, bonus talent points on top of the normal one-per-level rate, so a beta character can reach deep talents earlier than levelling alone would get them: Wowhead's own level 20 Beast Mastery build reaches `Summon Hawk`, which needs 16 points spent in the Beast Mastery tree, at level 20 with Legacy active and level 25 without it.
+Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Hunter build has been tested.** Ability training levels below are come from foreverchanges.pro's reading of the beta client and are reliable. The beta also runs a **Legacy system**, bonus talent points on top of the normal one-per-level rate, so a beta character can reach deep talents earlier than levelling alone would get them: Wowhead's own level 20 Beast Mastery build reaches `Summon Hawk`, which needs 16 points spent in the Beast Mastery tree, at level 20 with Legacy active and level 25 without it. **Blizzard's own caveat applies to everything on this page:** *"class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."*
 :::
 ## Which spec?
 | Spec | Role | Levelling | In one line |
@@ -15,8 +15,10 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right n
 **Beast Mastery if you are soloing.** Taming a pet at level 10 is described as *"the single greatest leveling tool that any class gets without exception"*, and Beast Mastery's early talents, haste and movement speed, are what solo questing wants.
 **But keep the gap in proportion.** At eleven points the **rotation is identical across all three specs**, and the difference is four flexible talent points. Hunter has a long reputation for *"best spec, nothing else acceptable"* thinking imported from raiding; **at levelling cap that framing does not survive contact with the talent trees.** Marksmanship is the dungeon cleave build and Survival is the duelling build, and neither is a mistake.
 Respec when your goal changes: Marksmanship for dungeon pulls, Survival for duels.
+**Blizzard frames the three trees as a spectrum, not a rung ladder:** a Hunter can *"double down on ... ranged combat and their pets, choose not to have a pet at all, or ... dance back and forth between ranged and melee combat."* **Read that as the design's endgame intent, not a levelling claim** — at the current beta cap, Survival's own melee payoff still does not land until level 32 (see the Survival guide), so through everything tested so far, Hunter plays as a ranged class with pet support, whichever tree you pick.
 ## Is Hunter for you?
 Play Hunter if you want to kill things above your own level from the first hour, and you do not mind managing ammunition, a quiver and a pet.
+**Blizzard's own framing of the class:** Hunters have *"an amazing toolkit of problem-solving Aspects and attacks but cannot Stun or Interrupt,"* and in solo or small-group play the pet, not you, does the tanking.
 :::strengths
 - The strongest solo levelling class in the game
 - Your pet holds the enemy, so you take very little damage
@@ -51,7 +53,7 @@ Play Hunter if you want to kill things above your own level from the first hour,
 | 34 | [[Explosive Trap]] |
 | **40** | **Mail armour from the class trainer**, mount, [[Volley]], [[Aspect of the Pack]] |
 | 46 | [[Aspect of the Wild]], now raid-wide |
-**[[Misdirection]] is not in Forever.** Two published guides mention it; it is a Burning Crusade ability and it is absent from the client. **[[Wyvern Sting]] is also gone**, with no stand-in named for it (ClassicWoW.gg).
+**[[Misdirection]] is not in Forever.** Two published guides mention it; it is a Burning Crusade ability and it is absent from the client. **[[Wyvern Sting]] is gone, but it was not left without a replacement** — Blizzard confirms it was folded, together with Killer Instinct and Improved Feign Death, into a new Survival talent, `Resourcefulness` (see the Survival guide). ClassicWoW.gg's "no stand-in named for it" does not hold against the primary source.
 ## Which race
 **Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling.** Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Horde — Tauren**, and it is called the single strongest Hunter race across both factions. **`Plainsrunning` ramps to +30% movement speed**, which lets you stutter-step and shoot from level 1 while keeping [[Aspect of the Hawk]] up instead of swapping to Cheetah. `Endurance` also now gives **+1% hit**.
@@ -63,12 +65,38 @@ Play Hunter if you want to kill things above your own level from the first hour,
 - **Ammunition and the quiver are real costs.** The quiver gives a ranged attack-speed bonus and **does not stack, so carry exactly one**. Buy ammunition in stacks whenever you pass a vendor.
 - **[[Aspect of the Cheetah]] is your mount until 40** and should be up almost all the time in the world; `Pathfinding` pushes it to +36%.
 - **Two trainers matter:** your class trainer gives **mail at 40**, and a weapon master teaches anything you did not start with — **polearms only from 20**. As a Human, the trip worth making is one-handed swords, for the crit.
+## Pet families
+**The pet model changed, not just the numbers on it.** Pets no longer carry a per-family damage buff or penalty; instead they scale off your own gear, and identity now comes from each family's kit rather than a hidden multiplier. Blizzard confirms every pet family can now learn either [[Bite]] or [[Claw]] (some families both), and either [[Dive]] or [[Dash]]. On top of that shared kit, **every family has exactly one ability nothing else has**:
+| Family | Unique ability | What it does |
+| --- | --- | --- |
+| Bat | `Sonic Blast` | Damage, plus a spellcasting slow on the target |
+| Bear | [[Swipe]] | Damaging attack that hits 3 targets |
+| Bird of Prey (formerly Owl) | `Mine!` | Damage and disarms the target |
+| Boar | `Charge` | Charges to and immobilizes the target, and gains Attack Power on the pet's next attack |
+| Carrion Bird | `Demoralizing Screech` | Damages nearby enemies and reduces their melee Attack Power |
+| Cat | `Prowl` | Stealth, and increased damage on the next attack from Stealth |
+| Crab | `Pinch` | Damage and slows the target's movement |
+| Crocolisk | `Dismember` | Damage and reduces the target's healing received by 50% |
+| **Fox** *(new family)* | `Trickster's Dance` | Increases the pet's dodge chance and attack speed for 12 seconds |
+| Gorilla | `Thunderstomp` | Damages enemies in an area |
+| Hyena | `Tendon Rip` | Movement slow and a bleed over time on the target |
+| Raptor | `Savage Rend` | Bleed over time on the target |
+| Scorpid | `Poison` | Stacking damage over time on the target |
+| Spider | `Web` | Immobilizes the target and deals damage over time |
+| Tallstrider | `Dust Cloud` | Reduces the target's armor |
+| Turtle | `Shell Shield` | Reduces damage taken and attack speed for 12 seconds |
+| Windserpent | `Lightning Breath` | 20-yard-range damaging attack |
+| Wolf | `Furious Howl` | Increases party members' melee Attack Power |
+**Foxes are new to Forever.** Pick a family for its unique ability now, not for a damage stat that no longer exists — an earlier version of this page removed per-family damage modifiers on Icy Veins' authority, and Blizzard's post confirms that read: the model is gear-scaling plus a unique ability, not a hidden multiplier.
 ## What changed from Classic
 | Change | What it means for you |
 | --- | --- |
-| **Pets inherit 10% of your attack power and 100% of your crit** | Your gear now makes your pet stronger |
+| **Pets inherit 10% of your attack power and 100% of your crit** | Your gear now makes your pet stronger, but **a pet can no longer be stat-buffed directly** — Blizzard confirms pets can no longer receive player buffs that increase their stats, so gear the Hunter, not the pet |
 | [[Aimed Shot]] trained at 20, not talented | Every Hunter gets it, and it shares a cooldown with [[Multi-Shot]] |
-| **Traps usable in combat**, cooldowns 15s → 30s | Fire and Frost traps have separate limits, so you can hold one of each |
+| **[[Arcane Shot]] no longer shares a cooldown with [[Aimed Shot]]** | You can press both; the shared cooldown moved onto [[Multi-Shot]] instead, per Blizzard |
+| **Traps usable in combat**, cooldowns 15s → 30s | Fire-based and Frost-based traps now have separate cooldowns, so you can hold one of each; **you can still only place a trap at your own location** |
+| **[[Disengage]]'s threat reduction is doubled** | Blizzard confirms the leap-and-drop-threat tool is stronger than it was |
+| **[[Aspect of the Beast]] now also grants melee Attack Power** | Worth holding up over Hawk once you're fighting in melee |
 | [[Misdirection]] absent | There is no threat-transfer tool in Forever, for anyone |
 | Survival became a melee specialisation | It is not a levelling spec |
 | The 8-yard dead zone remains | Forever did not fix it, despite heavy feedback |
