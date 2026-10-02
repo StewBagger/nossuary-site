@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Affliction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-20-dps-overview ;; Icy Veins — Affliction Warlock|https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-guide ;; ClassicWoW.gg — Aff Warlock|https://classicwow.gg/forever/guides/warlock/affliction
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Affliction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-20-dps-overview ;; Icy Veins — Affliction Warlock|https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-guide ;; ClassicWoW.gg — Aff Warlock|https://classicwow.gg/forever/guides/warlock/affliction
 
 Stacked shadow damage-over-time spells plus channelled drains, *"for players who enjoy watching their enemies slowly rot away."* **Icy Veins rates it 5 out of 5 for levelling**, joint best in the class.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Affliction build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so no level-60 Affliction build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Affliction worth levelling?
 **Yes. One of the two best levelling specs in the game.** *"Affliction Warlocks have always been excellent levelers, and that strength shows up early in WoW Forever… Learning how to balance those tools lets you move through enemies with very little downtime."*
@@ -12,8 +12,8 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 Excellent questing, merely good in fast dungeons. Learn to stop casting when your existing damage-over-time effects will finish the job.
 ## Your talent points
 **Level 20: 11/0/0, and the two sources that publish a build disagree on the shape of it.**
-**Icy Veins:** `Improved Corruption` 5/5 → `Improved Life Tap` 2/2 → `Suppression` 3/5 → `Soul Harvesting` 1/2. Its own note: *"The final point in Soul Harvesting is optional, so feel free to move it elsewhere."*
-**Wowhead** takes `Suppression` further, to 4/5, on different reasoning: *"4 points is enough to reach Hit cap against a same-level target, and it helps if you push slightly higher-level content."* Its only other fixed pick is `Improved Corruption` 5/5; the rest, including `Improved Life Tap` and `Soul Harvesting`, is filed as playstyle-dependent, alongside off-tree options like `Unholy Power` and `Destructive Reach`.
+**Icy Veins:** `Improved Corruption` 5/5 → `Improved Life Tap` 2/2 → `Suppression` 3/5 → `Soul Harvest` 1/2 (renamed from `Soul Harvesting` on October 1, the same day its Mana regeneration bonus went from bugged and non-functional to correctly granting 50/100%). Its own note, written before the fix: *"The final point in Soul Harvesting is optional, so feel free to move it elsewhere."* **With the bonus actually working now, that second point buys a real 50% more Mana regeneration instead of nothing — worth reconsidering, not an automatic skip.**
+**Wowhead** takes `Suppression` further, to 4/5, on different reasoning: *"4 points is enough to reach Hit cap against a same-level target, and it helps if you push slightly higher-level content."* Its only other fixed pick is `Improved Corruption` 5/5; the rest, including `Improved Life Tap` and `Soul Harvest`, is filed as playstyle-dependent, alongside off-tree options like `Unholy Power` and `Destructive Reach`.
 **ClassicWoW.gg does not publish a suggested build at all** for any spec, by design; its talent tree is browsable, not prescriptive.
 **The Legacy System adds points beyond these 11.** Wowhead puts the cap at 7 legacy points from world exploration before level 25, worth 2 extra talent points, enough to reach one tier further. Its picks there: `Pandemic` first, for the critical-damage payoff; `Improved Bane of Agony` next, now 10% for 2 points instead of Classic's 6% for 3; `Amplify Curse` if you want the single-point cooldown; skip `Fel Concentration`, since you are not draining enough yet for it to matter.
 **Level 30: 21/0/0 — our own extension, not a published build.** No source has posted one; the beta has not reached 30. Extending the level 20 build on the tree's own point costs, two readings share a core and split on five points. Both take `Suppression` 5, `Improved Corruption` 5, `Nightfall` 2 and [[Siphon Life]] 1. One then takes `Malediction` 4 + `Amplify Curse` + `Pandemic` 3; the other takes `Malediction` 5 + `Improved Drains` 3.
@@ -30,7 +30,7 @@ Icy Veins and Wowhead order the opening DoTs differently, and both give a reason
 7. **Wand as filler.** This is not a typo: *"At Level 20 with Greater Magic Wand, [[Shadow Bolt]] currently deals less damage for the time spent casting while also costing Mana and generating additional threat"*, and Wowhead agrees for levelling generally: *"you'll use your wand more for damage because it deals more DPS than Shadow Bolt, and it's also mana-free"*
 8. **[[Drain Soul]]** to finish, for the shard
 9. **Stop spending mana when your existing effects will finish the enemy**
-From 30, [[Shadow Bolt]] becomes worth casting on `Nightfall` procs, with [[Life Tap]] *"ideally while moving."*
+From 30, [[Shadow Bolt]] becomes worth casting on `Nightfall` procs — but not while [[Drain Soul]] is still channelling. Starting another cast now correctly interrupts the channel, where it previously kept channelling through it, so take the free proc before you start Drain Soul, not during it. [[Life Tap]] *"ideally while moving."*
 **Multi-target:** *"For maximum damage on AoE and only if the pack lives long enough, spread your DoTs first and then use [[Rain of Fire]]."* If the pack dies fast, skip the effects and go straight to Rain of Fire.
 ## Stat priority
 Spell Power, then Hit, Intellect, Spirit, critical strike, Stamina, Haste.
@@ -49,8 +49,9 @@ All four come from class quests. [[Imp]] at **2**, [[Voidwalker]] at **10**, [[S
 ## What Forever changed for Affliction
 - **Damage-over-time effects can critically strike.** One source calls it *"one of the largest overall Warlock mechanical changes"*. Both `Malevolence` and `Pandemic` are new talents built on it.
 - **[[Bane of Agony]] and [[Bane of Doom]] are no longer Curses**: *"no longer competes with your Curse, which means you can keep your big damage rolling while still bringing the debuff your group needs."* A Bane and a Curse now coexist on one target.
-- **Six new talents**: `Malediction`, `Soul Harvesting`, `Improved Drains`, `Pandemic`, `Malevolence`, `Wrack`. **Six removed**: `Improved Curse of Weakness`, `Grim Reach`, `Dark Pact`, `Improved Curse of Exhaustion`, `Improved Drain Soul`, `Improved Drain Mana`.
+- **Six new talents**: `Malediction`, `Soul Harvest`, `Improved Drains`, `Pandemic`, `Malevolence`, `Wrack`. **Six removed**: `Improved Curse of Weakness`, `Grim Reach`, `Dark Pact`, `Improved Curse of Exhaustion`, `Improved Drain Soul`, `Improved Drain Mana`.
 - **[[Life Tap]] converts 40 health to 40 mana and Spirit increases the amount** (Classic: a flat 20 to 20). `Improved Life Tap` moved to tier 1.
 - `Nightfall` now procs off [[Corruption]], [[Drain Soul]], [[Drain Life]] and `Wrack`. `Soul Siphon` was rewritten to 4% per other Affliction effect, up to 36%. **[[Drain Soul]] now has a shard chance on damage, not only on a kill.**
+- **[[Drain Soul]] is now correctly interrupted the moment you begin casting another spell.** It previously kept channelling through a new cast; that bug is what let the Nightfall line above treat a proc as free.
 ## At level 60
 Unknown, and one guide says why: *"Critical striking DoTs, Pandemic, Wrack, Improved Drains, and the new Drain Soul execute bonuses all scale together in ways that cannot easily be evaluated from a Level 38 build."*

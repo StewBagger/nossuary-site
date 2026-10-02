@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Assassination Guide|https://www.wowhead.com/forever/guide/classes/rogue/assassination/level-20-dps-overview ;; Icy Veins — Assassination Rogue PvE Guide|https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-guide ;; ClassicWoW.gg — Assassination Rogue|https://classicwow.gg/forever/guides/rogue/assassination
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Assassination Guide|https://www.wowhead.com/forever/guide/classes/rogue/assassination/level-20-dps-overview ;; Icy Veins — Assassination Rogue PvE Guide|https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-guide ;; ClassicWoW.gg — Assassination Rogue|https://classicwow.gg/forever/guides/rogue/assassination
 
 Poison and bleed pressure on a single target, built around [[Mutilate]] — it needs **21 Assassination talent points**, which is the whole argument about this spec.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Assassination build has been tested, and none of our three sources publish a level-30 build yet either — the cap has not risen that far. Talent rows unlock at levels 10, 15, 20, 25, 30, 35 and 40. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so no level-60 Assassination build has been tested, and none of our three sources publish a level-30 build yet either — the cap has not risen that far. Talent rows unlock at levels 10, 15, 20, 25, 30, 35 and 40. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Assassination worth levelling?
 **Sources genuinely disagree, and we are not going to pretend otherwise.**
@@ -46,7 +46,7 @@ Weapon damage, then Hit and Expertise, Agility, critical strike, Strength, Stami
 - **[[Mutilate]] and `Venom` are both new.**
 - `Improved Gouge` moved **in** from Combat; `Improved Eviscerate` moved **out** to Combat. `Puncturing Wounds` is a new **Combat** talent that buffs [[Mutilate]], which is why the two trees now talk to each other.
 - **Rogues can learn axes**, and the skill starts at 1.
-- **Baseline nerfs:** [[Rupture]] rank 6 is *"159 instead of 272"*; [[Eviscerate]] rank 6 was lowered. **The base [[Expose Armor]] ability was buffed** to *"450 instead of 340"* armor per combo point at rank 5 — but the separate **`Improved Expose Armor` talent (2 ranks) no longer adds to that armor value.** It now cuts the ability's Energy cost (5/10) and refunds 1–2 combo points when cast at 5 combo points (Icy Veins, ClassicWoW.gg).
+- **Baseline nerfs:** [[Rupture]] rank 6 is *"159 instead of 272"*; [[Eviscerate]] rank 6 was lowered. **The base [[Expose Armor]] ability was buffed** to *"450 instead of 340"* armor per combo point at rank 5 — but the separate **`Improved Expose Armor` talent (2 ranks) no longer adds to that armor value.** It now cuts the ability's Energy cost (5/10) and refunds 1–2 combo points when cast at 5 combo points (Icy Veins, ClassicWoW.gg). **Fixed October 1: a missed Expose Armor no longer costs you all your combo points** (Blizzard) — the finisher is safe to throw at low hit chance.
 - **Hit and critical strike are now unified across spell, melee and ranged.**
 ## At level 60
 Unknown: whether poison scaling and `Venom` upkeep make Assassination competitive with Combat in raids. There is no raid PTR, **item stats are hidden until the items drop**, and both 31-point capstones are untested.

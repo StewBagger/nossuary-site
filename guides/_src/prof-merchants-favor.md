@@ -1,5 +1,6 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
+sources: Blizzard — Beta Development Notes, updated October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
 
 **New in Forever: a second currency, and 317 recipes no trainer teaches.** Open from level 10 to any class and any profession, **including none at all.**
 :::scope
@@ -35,8 +36,8 @@ These come only from this system. At **skill 300**, **1,000 Merchant's Favor** b
 ## Craftsman's Writs
 A separate item, and the optional reputation path: **150 different crafting orders**, 30 each for Alchemy, Blacksmithing, Engineering, Leatherworking and Tailoring. **Enchanting has none.**
 ## Crate tiers
-Apprentice and Journeyman from level 10, Expert from 20, Artisan from 35. **Only Apprentice and Journeyman crates have been seen in the beta**, a consequence of the level cap.
+Apprentice and Journeyman from level 10, Expert from 20, Artisan from 35. **Only Apprentice and Journeyman crates had been seen in the beta as of September 30**, a consequence of the level cap sitting right at Expert's level-20 threshold. **The cap rose to 30 on October 1**, comfortably clearing that threshold — Expert crates should now be reachable, but no source has confirmed one has actually dropped. Artisan still needs level 35, so it stays out of reach.
 ## The Legacy perk
 **`Performance Bonus`**, in the Professions tree, gives a **5%, 10% or 15% chance of doubled Merchant's Favor** on a crate turn-in across three ranks.
 ## What is not known
-The exact recipe count, as above. Whether Expert and Artisan crates behave as expected, since nobody has seen one. And real gold values for any of it: there are no prices before launch, so every cost estimate in circulation is weighed by vendor value rather than by what players will actually pay.
+The exact recipe count, as above. Whether Expert crates behave as expected, now that the October 1 cap rise puts level 20 in reach — and whether Artisan does too, though level 35 is still beyond the level-30 cap. And real gold values for any of it: there are no prices before launch, so every cost estimate in circulation is weighed by vendor value rather than by what players will actually pay.

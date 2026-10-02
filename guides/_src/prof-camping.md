@@ -1,5 +1,6 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
+sources: Blizzard — Beta Development Notes, updated October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
 
 **New in Forever, and not optional flavour.** A cook lights a fire, everyone drops one crafted object beside it, and the whole group carries the buffs for an hour, including buffs that normally need a specific class.
 :::scope
@@ -40,5 +41,9 @@ You can learn a Blueprint well before you can craft the kit, which is why guides
 ## Two published numbers that disagree
 - **Blizzard's panel says the [[Sharpening Wheel]] gives attack power. The beta client says Strength.** The client is what is live, and both guide sites follow it.
 - **Blizzard's panel says a basic campfire allows three objects.** The client shows 3, 5 and 10 for the three kit tiers. The panel was describing the basic kit.
+## What changed in the October 1 build
+- **Campfires no longer damage players below level 5, and deal reduced damage to players under 90% health.**
+- **The [[Boosted Rest]] debuff has a new icon and a rewritten tooltip**, Blizzard's own words: *"intended to make the effect clearer."* No value changed. The only rest-related camp object on this page is Leatherworking's [[Camp Tent]]; Blizzard's note names the debuff but not the object it belongs to, so that link is inferred here, not stated by Blizzard.
+- **Camping tooltips now say "mutually exclusive" instead of just "exclusive"**, which Blizzard says was *"causing confusion around functionality."* This page already described effects as not stacking rather than exclusive, so nothing above needed correcting for it. The wording had drifted on the [Skinning page](/guides/wow-forever/professions/skinning/) instead: its own camp-object table named **Leader of the Pack**, where this page's table above and Skinning's own prose both already said [[Moonkin Form]]. Fixed there to agree, using Blizzard's new term.
 ## What is not known
 Whether camps function in cities and in instances. Whether you must be **grouped** to receive another player's buff — this matters a lot and nobody has answered it. How many objects one craft produces. And where each of the 140 and 300 Blueprints drops, beyond "specific dungeon bosses". Two are known: Alchemy's [[Fermenter]] Blueprint drops in **Wailing Caverns** and **Ruins of Lordaeron**.

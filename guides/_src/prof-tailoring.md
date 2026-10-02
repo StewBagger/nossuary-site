@@ -1,9 +1,10 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
+sources: Blizzard — Beta Development Notes, updated October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
 
 Cloth armour, bags and cloaks, from drops rather than a gathering profession. **For cloth wearers it is the strongest profession at the levelling cap**: [[Pristine Circlet]] is best in slot for 16 specs.
 :::scope
-Recipes, reagents and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta**, and **57 Tailoring recipes make something the client will not describe.** Best-in-slot figures are level 20.
+Recipes, reagents and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta**, and **57 Tailoring recipes make something the client will not describe.** Best-in-slot figures are level 20, which was the beta cap when they were written; the cap rose to 30 on October 1 and they have not been re-checked.
 :::
 ## Is Tailoring worth taking?
 **Yes, if you wear cloth.** It earns **Legacy Points**, and the published verdict for Warlocks is blunt: *"Almost all of the Best in Slot for Warlocks right now come from Tailoring, making it highly suggested."*

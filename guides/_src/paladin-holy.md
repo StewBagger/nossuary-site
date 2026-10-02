@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Holy Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/holy/level-20-healer-overview ;; Icy Veins — Holy Paladin Healer Guide|https://www.icy-veins.com/wow-forever/holy-paladin-healer-pve-guide ;; ClassicWoW.gg — Holy Paladin|https://classicwow.gg/forever/guides/paladin/holy
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Holy Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/holy/level-20-healer-overview ;; Icy Veins — Holy Paladin Healer Guide|https://www.icy-veins.com/wow-forever/holy-paladin-healer-pve-guide ;; ClassicWoW.gg — Holy Paladin|https://classicwow.gg/forever/guides/paladin/holy
 
 Plate-wearing single-target healer with the best buff kit in the game, and Forever finally gives it an area-healing answer through the new `Light's Vigil` capstone.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Holy build has been tested. **One warning:** a published level-20 "Holy damage" build spends two points on `Improved Holy Strike`, **a talent that does not exist in the beta client**, its effect was made baseline for every Paladin in the September 24 build, which dropped [[Holy Strike]]'s cooldown to 10 seconds for everyone. That build cannot be entered as printed. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so no level-60 Holy build has been tested. **One warning:** a published level-20 "Holy damage" build spends two points on `Improved Holy Strike`, **a talent that does not exist in the beta client**, its effect was made baseline for every Paladin in the September 24 build, which dropped [[Holy Strike]]'s cooldown to 10 seconds for everyone. That build cannot be entered as printed. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Holy worth levelling?
 **Viable but slow, and its usual escape hatch is closed.** You will be nearly unkillable and you will kill nothing quickly. Worse for this spec specifically: **Forever cut dungeon experience hard, raising only dungeon *quest* experience**, so "just level in dungeons" is largely gone.
@@ -22,7 +22,7 @@ Note that `Healing Light`'s [[Holy Shock]] component is dead weight **at the cur
 1. **[[Flash of Light]]** as your primary heal, cheap and fast
 2. **[[Holy Light]]** only with mana to spare, on someone in real danger
 3. **[[Lay on Hands]]** as the emergency, it heals for your full health and **consumes all your mana**, so you are finished healing for that fight
-4. Maintain [[Blessing of Might]] on the party, plus [[Devotion Aura]] or [[Retribution Aura]]
+4. Maintain [[Blessing of Might]] on the party, plus [[Devotion Aura]] or [[Retribution Aura]] — **live bug as of October 1:** [[Retribution Aura]] currently reflects off the *target's* spell power instead of yours, not intended design, so treat its output as unreliable until Blizzard fixes it
 **While soloing, your damage rotation is Retribution's minus [[Seal of Command]]**, keep a seal up, and press [[Holy Strike]] and [[Judgement]] on cooldown. Saying that plainly rather than repeating it.
 **Multi-target: there effectively is none below 30.** `Light's Vigil` is a 31-point capstone and [[Consecration]] is expensive, so area healing is spreading [[Flash of Light]] around.
 ## Stat priority

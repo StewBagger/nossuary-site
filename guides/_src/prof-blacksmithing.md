@@ -1,9 +1,10 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
+sources: Blizzard — Beta Development Notes, updated October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
 
 Plate, mail, weapons and stones. In vanilla it was the money profession. **In Forever it is a raid-power profession.** 197 of its 437 recipes are new, and it owns two crafted tier sets.
 :::scope
-Recipes, reagents and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta.** **Blizzard is deliberately hiding item stats until they drop**, so 70 Blacksmithing recipes make something the client will not describe. Every "best in slot" figure below is **level 20**, the beta cap; nobody knows the level-60 answers.
+Recipes, reagents and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta.** **Blizzard is deliberately hiding item stats until they drop**, so 70 Blacksmithing recipes make something the client will not describe. Every "best in slot" figure below is **level 20**, which was the beta cap when it was written; the cap rose to 30 on October 1 and these have not been re-checked against it. Nobody knows the level-60 answers.
 :::
 ## Is Blacksmithing worth taking?
 **Yes, if you wear plate or mail.** Warriors and Paladins first. It earns **Legacy Points** at skill 150, 225 and 300, and it makes gear that is genuinely competitive rather than a stopgap.
@@ -20,6 +21,7 @@ The advice that comes with it: *"Use Blacksmithing to fill useful gaps in your e
 - **Profession perk, new and not vanilla at all:** *"various stat-boosting belt buckles and Repair All, a cooldown to repair all of your gear for free."* Skill level, cost and values are **not published**.
 - **Certification** at skill 300 for 1,000 Merchant's Favor unlocks the account-wide title **"the Blacksmith"**.
 - **Only 6 of 437 recipes changed their reagents.** Blacksmithing's existing costs are essentially untouched.
+- **New in the October 1 build: a number of Blacksmithing recipes are now random dungeon drops**, a third acquisition route alongside the trainer and the trade-camp plans above. Blizzard names Blacksmithing and Leatherworking as the two professions this covers; no drop list or which dungeons has been published.
 ## Specialisations
 `Armorsmith`, `Weaponsmith` and the three Master sub-specialisations (Swordsmith, Hammersmith, Axesmith) **are all present in the beta client** and wired into the live skill line, with their vanilla descriptions intact. The spec-gated plans are still in the data too: Persuader, Arcanite Champion, Corruption, Heartseeker, Masterwork Stormhammer, Hammer of the Titans.
 **Everything else about them is unknown.** Skill level, whether they are still mutually exclusive, what switching costs. No guide site mentions them at all, and **presence in the client proves only that they were not removed.** The beta caps professions at 225 and characters at 20 to 30, and every specialisation sits above that, so **no tester can reach one.**

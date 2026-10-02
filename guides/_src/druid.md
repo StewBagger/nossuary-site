@@ -1,10 +1,10 @@
-updated: October 1, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
-sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Wowhead — Level 20 Balance Druid Guide|https://www.wowhead.com/forever/guide/classes/druid/balance/level-20-dps-overview ;; Wowhead — Level 20 Feral Druid DPS Guide|https://www.wowhead.com/forever/guide/classes/druid/feral/level-20-dps-overview ;; Wowhead — Level 20 Feral Tank Druid Guide|https://www.wowhead.com/forever/guide/classes/druid/feral/level-20-tank-overview ;; Wowhead — Level 20 Restoration Druid Guide|https://www.wowhead.com/forever/guide/classes/druid/restoration/level-20-healer-overview ;; Icy Veins — Druid Class Overview|https://www.icy-veins.com/wow-forever/druid-class-overview ;; ClassicWoW.gg — Druid|https://classicwow.gg/forever/guides/druid
+sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Balance Druid Guide|https://www.wowhead.com/forever/guide/classes/druid/balance/level-20-dps-overview ;; Wowhead — Level 20 Feral Druid DPS Guide|https://www.wowhead.com/forever/guide/classes/druid/feral/level-20-dps-overview ;; Wowhead — Level 20 Feral Tank Druid Guide|https://www.wowhead.com/forever/guide/classes/druid/feral/level-20-tank-overview ;; Wowhead — Level 20 Restoration Druid Guide|https://www.wowhead.com/forever/guide/classes/druid/restoration/level-20-healer-overview ;; Icy Veins — Druid Class Overview|https://www.icy-veins.com/wow-forever/druid-class-overview ;; ClassicWoW.gg — Druid|https://classicwow.gg/forever/guides/druid
 
 Druid is four classes in one character, and Forever changed its most important gearing rule: **your weapon's damage now scales Bear and Cat form**. In Classic it did not matter at all.
 :::scope
-Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Druid build has been tested**. Moonkin Form is a 31-point capstone, so **nobody in the beta has ever been in it**. Naming note, confirmed by Blizzard's own class deep dive: the Feral talent older guides call Mangle is **Primal Bite** in the current client — *"We have opted to go with this ability instead of Mangle."* Blizzard's own caveat applies throughout: *"class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."*
+Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so **no level-60 Druid build has been tested**. Moonkin Form is a 31-point capstone, so **nobody in the beta has ever been in it**. Naming note, confirmed by Blizzard's own class deep dive: the Feral talent older guides call Mangle is **Primal Bite** in the current client — *"We have opted to go with this ability instead of Mangle."* Blizzard's own caveat applies throughout: *"class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."*
 :::
 ## Which spec?
 | Spec | Role | Levelling | In one line |
@@ -69,10 +69,11 @@ Race matters far less than spec, gear and knowing your rotation, and **no race i
 | Change | What it means for you |
 | --- | --- |
 | **Weapon damage now scales Bear, Cat and Dire Bear form** | Auto-attack DPS equals your weapon's DPS outright, at a fixed 1.0-second swing in Cat Form and 2.5 seconds in Bear/Dire Bear, and weapon-damage abilities use the same numbers. Chase weapon DPS, not weapon stats — the reverse of Classic |
-| `Tiger's Fury` removed | Replaced by a new Feral talent, `Shifting Power` — not live in the beta yet. See [Feral — Cat](/guides/wow-forever/druid/feral-cat/) |
+| `Tiger's Fury` removed | **Live as of October 1, not merely announced.** Replaced by a new Feral talent, `Shifting Power` — Row 4, connected to `Shredding Attacks`, Cat Form only. See [Feral — Cat](/guides/wow-forever/druid/feral-cat/) |
+| All Shapeshift Forms immune to Disarm (Oct 1) | Only once you are already shifted: disarmed *before* you shift, the form does **not** clear the Disarm, and you deal reduced damage for its duration |
 | [[Revive]] added at level 12 | An out-of-combat resurrect, **eight levels before [[Rebirth]]** |
 | [[Nature's Grasp]] and [[Omen of Clarity]] now trained | Both were talents; Omen now procs off melee too |
-| [[Faerie Fire]] usable in forms | The separate feral version is gone |
+| [[Faerie Fire]] usable in forms | The separate feral version is gone, and as of October 1 it no longer resets your swing timer when used |
 | `Swiftmend` moved to Restoration tier 4 | A healer gets it about fifteen levels earlier, and **it no longer consumes the heal-over-time** |
 | [[Barkskin]] costs nothing | And no longer slows your casting |
 | [[Hurricane]]'s cooldown removed | Fixes the Balance area-damage hole |

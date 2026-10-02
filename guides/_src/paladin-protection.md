@@ -1,17 +1,17 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Protection Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/protection/level-20-tank-overview ;; Icy Veins — Protection Paladin Tank Guide|https://www.icy-veins.com/wow-forever/protection-paladin-tank-pve-guide ;; ClassicWoW.gg — Protection Paladin|https://classicwow.gg/forever/guides/paladin/protection
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Protection Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/protection/level-20-tank-overview ;; Icy Veins — Protection Paladin Tank Guide|https://www.icy-veins.com/wow-forever/protection-paladin-tank-pve-guide ;; ClassicWoW.gg — Protection Paladin|https://classicwow.gg/forever/guides/paladin/protection
 
 Shield tanking that generates threat from Holy damage rather than weapon damage, which makes it **the only tank in the game that gears for Spell Power.**
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Protection build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so no level-60 Protection build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Protection worth levelling?
 **Slower solo, and Forever specifically nerfed the thing it used to be good at.** Protection Paladin was historically one of the best dungeon-levelling specs in the game because of [[Consecration]]. Forever **cut dungeon experience hard** while raising only dungeon *quest* experience, which one published guide calls out directly as hurting this spec more than any other.
 You can still safely pull several enemies and grind them down, but you will struggle to kill bosses and high-health single targets quickly, and **mana is the real limiter**.
 ## Your talent points
 **Level 20: 0/11/0.** Two published builds agree on the first ten points.
-1. `Redoubt`, 5 points
+1. `Redoubt`, 5 points — the October 1 build cut its granted Block chance to **4/8/12/16/20% per rank** (20% at the 5 points this build spends, was 30%), a real nerf. It is still the first pick: no alternative tier-1 Protection talent is published, and the Block chance it grants still feeds `Holy Shield` (also changed this build, now a **30%** base chance to Block, up from 20%) and `Reckoning`'s block-triggered proc. **Our build advice stands.**
 2. `Precision`, 3 points — +3% hit
 3. `Anticipation`, 2 points
 4. The eleventh point is either **`Shield Specialization`** or **`Improved Seal of Fury`**
@@ -42,8 +42,8 @@ Spell Power first genuinely is correct here, and the reason is worth stating: in
 ## What Forever changed for Protection
 - **Five new talents:** `Improved Seal of Fury`, `Sacred Duty`, `Swift Judgement`, `Templar's Bulwark`, and `Iron Creed`.
 - **`Improved Righteous Fury` is a different talent under the same name**, it now gives −2% damage taken per rank while Righteous Fury is up, where Classic gave threat.
-- **`Redoubt` was rewritten** into a proc: a 10% chance on being hit to grant +6% block for 10 seconds or 5 blocks.
-- `Reckoning` now **also procs on a block**, an 8% chance after blocking a melee attack, on top of the 20% chance after a non-periodic critical strike against you. `Anticipation` moved a tier and doubled at max rank to +20 Defense. `Holy Shield` was nerfed to +20% block but buffed to 110 damage per block, and **now requires `Templar's Bulwark`**.
+- **`Redoubt` was rewritten** into a proc: a 10% chance on being hit to grant **+4% block per rank (20% at max rank)** for 10 seconds or 5 blocks — cut from +6%/30% at max rank in the October 1 build.
+- `Reckoning` now **also procs on a block**, an 8% chance after blocking a melee attack, on top of the 20% chance after a non-periodic critical strike against you. `Anticipation` moved a tier and doubled at max rank to +20 Defense. `Holy Shield` was nerfed to +20% block when Forever launched, buffed to 110 damage per block, and **now requires `Templar's Bulwark`**; the October 1 build raised its Block chance again, to **30%**.
 - **`Blessing of Kings` left the tree to become baseline at 20.** `Blessing of Sanctuary` was removed from the class entirely, alongside `Improved Devotion Aura` and `Improved Concentration Aura`.
 ## At level 60
 Unknown, and there is a specific open question: **whether a 4-second conditional taunt can hold a raid boss.** Wowhead also reports a live [[Consecration]] bug worth knowing about now: targets standing inside it, even under four of them, often do not take its full damage, particularly near the edge of the ring, and moving the pack recalculates it correctly. Whether that is fixed before launch is unknown.

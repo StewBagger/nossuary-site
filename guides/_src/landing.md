@@ -1,10 +1,10 @@
 updated: September 30, 2026
 build: 1.60.1.70124
-sources: Wowhead — Forever guides|https://www.wowhead.com/forever/guides ;; Icy Veins — WoW Forever class guides|https://www.icy-veins.com/wow-forever/class-guides ;; ClassicWoW.gg — WoW Forever guides|https://classicwow.gg/forever/guides
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Forever guides|https://www.wowhead.com/forever/guides ;; Icy Veins — WoW Forever class guides|https://www.icy-veins.com/wow-forever/class-guides ;; ClassicWoW.gg — WoW Forever guides|https://classicwow.gg/forever/guides
 
 Guides for **World of Warcraft: Forever**, which relaunches the 1–60 game on **November 4, 2026** with everyone starting from scratch on the same day.
 :::scope
-Everything here is written for levelling, 1 to 60. Forever's beta is capped at level 20 right now and rises only to 30 before launch, professions cap at skill 225, and item stats stay hidden until something drops. **No level-60 build, best-in-slot list or class ranking for Forever exists yet**, checked against the three sites these guides are compiled from: ClassicWoW.gg publishes the complete level-60 talent trees and a calculator, and says of them *"this is the full tree, not a suggested build"*; Icy Veins' tier-list directory lists every tier list as *"COMING SOON"*; Wowhead's class guides stop at level 20. Raids open **December 9**, and we will write the endgame half then.
+Everything here is written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, raised from 20 that day, professions cap at skill 225, and item stats stay hidden until something drops. **No level-60 build, best-in-slot list or class ranking for Forever exists yet**, checked against the three sites these guides are compiled from: ClassicWoW.gg publishes the complete level-60 talent trees and a calculator, and says of them *"this is the full tree, not a suggested build"*; Icy Veins' tier-list directory lists every tier list as *"COMING SOON"*; Wowhead's class guides stop at level 20. Raids open **December 9**, and we will write the endgame half then.
 :::
 ## What is here
 **53 pages**, taken from foreverchanges.pro's reading of the beta client rather than remembered from vanilla, and written to say plainly where something is unknown instead of guessing.

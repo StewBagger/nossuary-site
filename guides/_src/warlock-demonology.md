@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Demonology Warlock|https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-20-dps-overview ;; Icy Veins — Demonology Warlock|https://www.icy-veins.com/wow-forever/demonology-warlock-ranged-dps-pve-guide ;; ClassicWoW.gg — Demo Warlock|https://classicwow.gg/forever/guides/warlock/demonology
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Demonology Warlock|https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-20-dps-overview ;; Icy Veins — Demonology Warlock|https://www.icy-veins.com/wow-forever/demonology-warlock-ranged-dps-pve-guide ;; ClassicWoW.gg — Demo Warlock|https://classicwow.gg/forever/guides/warlock/demonology
 
 Your demon fights alongside you and your own damage keeps it alive. **Icy Veins rates it 5 out of 5 for levelling, identical to Affliction.** In Forever, demons scale with your gear.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Demonology build has been tested. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so no level-60 Demonology build has been tested. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Demonology worth levelling?
 **Yes. Joint best in the class.** *"Demonology is an excellent solo leveler because your demon can take a lot of pressure off you while you cast from range."*
@@ -12,7 +12,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising t
 ## Your talent points
 **Level 20: 11/0/0, and Icy Veins and Wowhead disagree on whether `Improved Corruption` belongs in it at all.**
 **Icy Veins:** `Improved Corruption` 5 (Affliction) + `Unholy Power` 5 + `Demonic Energies` 1. Its own case for the Affliction points: *"Unlike Affliction, this build does not take Improved Corruption, so Corruption still has a cast time"* is framed as a cost worth paying to get `Unholy Power` and `Demonic Energies` online.
-**Wowhead puts `Improved Corruption` in the flexible pile instead.** Its fixed picks are `Unholy Power` first, then `Suppression` to 4/5 for the hit cap, *"it helps if you push slightly higher-level content."* Everything else, including `Improved Corruption`, `Improved Life Tap`, `Soul Harvesting`, `Demonic Embrace`, `Improved Voidwalker`, `Fel Vitality`, `Demonic Energies` and `Destructive Reach`, is filed as playstyle-dependent.
+**Wowhead puts `Improved Corruption` in the flexible pile instead.** Its fixed picks are `Unholy Power` first, then `Suppression` to 4/5 for the hit cap, *"it helps if you push slightly higher-level content."* Everything else, including `Improved Corruption`, `Improved Life Tap`, `Soul Harvest`, `Demonic Embrace`, `Improved Voidwalker`, `Fel Vitality`, `Demonic Energies` and `Destructive Reach`, is filed as playstyle-dependent.
 **ClassicWoW.gg does not publish a suggested build** for any spec, by design.
 **The Legacy System adds points beyond these 11.** Wowhead puts the cap at 7 legacy points from world exploration before level 25, worth 2 extra talent points. Its top pick there is `Improved Sayaad`, *"the strongest per point benefit"* for Succubus damage; it calls `Demonic Sacrifice` *"likely not worth it due to losing out on your pet's DPS"* this early.
 **Level 30: 21/0/0 — our own extension, not a published build.** No source has posted one; the beta has not reached 30. Extending the level 20 build on the tree's own point costs: `Unholy Power` 5 → `Fel Vitality` 3 → `Demonic Energies` 2 → `Improved Sayaad` 3 → [[Demonic Sacrifice]] 1 → `Master Summoner` 2 → [[Fel Domination]] 1 → `Demonic Brand` 3 → [[Soul Link]] 1.

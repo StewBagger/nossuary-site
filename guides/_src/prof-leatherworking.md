@@ -1,9 +1,10 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
+sources: Blizzard — Beta Development Notes, updated October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
 
 Leather and mail armour, cloaks, armour kits and quivers. **The biggest profession in the game at 512 recipes, 271 of them new**, and the one whose vanilla knowledge is most wrong.
 :::scope
-Recipes, reagents and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta.** **80 Leatherworking recipes make something the client will not describe**, because Blizzard is hiding item stats until they drop. Best-in-slot figures are level 20, the beta cap.
+Recipes, reagents and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta.** **80 Leatherworking recipes make something the client will not describe**, because Blizzard is hiding item stats until they drop. Best-in-slot figures are level 20, which was the beta cap when they were written; the cap rose to 30 on October 1 and they have not been re-checked.
 :::
 ## Is Leatherworking worth taking?
 **Yes, and for leather and mail wearers it is close to mandatory.** It earns **Legacy Points**, it owns **four crafted tier sets**, and it received more new content than any other profession.
@@ -28,6 +29,7 @@ The published verdicts are unusually consistent. For Hunters: *"one of the stron
 - **Cured Rugged Hide now makes 2 instead of 1.** Wild Leather Cloak and Leggings dropped from 6 Wildvine to 2.
 - **Profession perk, new:** *"bracer kits with various stat bonuses, and a saddle that increases mounted speed."* Details **not published**.
 - **Certification** at 300 for 1,000 Favor → the title **"the Leatherworker"**.
+- **New in the October 1 build: a number of Leatherworking recipes are now random dungeon drops**, a third route alongside the trainer and the Merchant's Favor plans above. Blizzard names Leatherworking and Blacksmithing as the two professions this covers; no drop list or which dungeons has been published.
 ## Specialisations
 `Dragonscale`, `Elemental` and `Tribal` Leatherworking are **present in the beta client** with intact descriptions, and the vanilla spec-gated patterns are still in the data: Devilsaur, Corehound Boots, Chromatic Cloak, Stormshroud. **New** Dragonscale epics exist too: Black and Blue Dragonscale Helm, Red Dragonscale Leggings.
 **Skill level, exclusivity and switch cost are all unknown**, and no guide site mentions them. As with Blacksmithing, presence in the client means only that they were not removed. Nobody in the beta can reach one.

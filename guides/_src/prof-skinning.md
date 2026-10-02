@@ -1,5 +1,6 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
+sources: Blizzard — Beta Development Notes, updated October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
 
 Leather off things you already killed — **the cheapest profession in the game to carry**, and its camp object gives your whole group 2% critical strike.
 :::scope
@@ -31,7 +32,7 @@ Published explicitly, and it keys off the beast's level rather than a node table
 - **Three camp objects**, all new, and two of them do things no gathering profession has ever done:
   | Skill | Object | What it does |
   | --- | --- | --- |
-  | 20 | **[[Camp Chair]]** | **2% critical strike** nearby. Exclusive with [[Leader of the Pack]] |
+  | 20 | **[[Camp Chair]]** | **2% critical strike** nearby. Mutually exclusive with [[Moonkin Form]] |
   | 140 | [[Field Guide]] | Blueprint. **Grants [[Track Beasts]] to whoever reads it**, so a non-Hunter can have it |
   | 300 | [[Trapper's Workbench]] | Blueprint. **Holds one trap** |
 - **Leather buys recipes** through Waylaid Crates, the same as ore and herbs.

@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Destruction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/destruction/level-20-dps-overview ;; Icy Veins — Destruction Warlock|https://www.icy-veins.com/wow-forever/destruction-warlock-ranged-dps-pve-guide ;; ClassicWoW.gg — Destro Warlock|https://classicwow.gg/forever/guides/warlock/destruction
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Destruction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/destruction/level-20-dps-overview ;; Icy Veins — Destruction Warlock|https://www.icy-veins.com/wow-forever/destruction-warlock-ranged-dps-pve-guide ;; ClassicWoW.gg — Destro Warlock|https://classicwow.gg/forever/guides/warlock/destruction
 
 Hard-cast direct damage instead of ramping damage over time. **The one Warlock spec Icy Veins marks down for levelling**: 3.5 out of 5, against 5 for the other two.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Destruction build has been tested. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so no level-60 Destruction build has been tested. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Destruction worth levelling?
 **Viable but distinctly slower, and Icy Veins is the only one of the three sources to score it.** Its ratings, out of 5:
@@ -19,7 +19,7 @@ The reasons, in the sources' own words: *"You have less passive sustain than Aff
 ## Your talent points
 **Level 20: 0/0/11, and Icy Veins and Wowhead disagree on how much of the build is fixed.**
 **Icy Veins'** build is fully specified: `Bane` 5, `Destructive Reach` 2, `Cataclysm` 3, [[Shadowburn]] 1. *"`Improved Shadow Bolt` and `Aftermath` are both strong alternatives, but this build prioritizes reliable leveling benefits that do not depend on Critical Strike, since we won't have much at this level."*
-**Wowhead commits to far less.** Its only fixed pick is `Bane`, *"reduces the cast time of your main source of damage."* Everything else, `Improved Shadow Bolt`, `Destructive Reach`, `Aftermath`, `Molten Skin`, `Improved Corruption`, `Improved Life Tap`, `Soul Harvesting`, is filed as playstyle-dependent, and notably it does **not** put a fixed point into `Cataclysm` or [[Shadowburn]] at 20 the way Icy Veins does; it pushes both toward the Legacy System instead.
+**Wowhead commits to far less.** Its only fixed pick is `Bane`, *"reduces the cast time of your main source of damage."* Everything else, `Improved Shadow Bolt`, `Destructive Reach`, `Aftermath`, `Molten Skin`, `Improved Corruption`, `Improved Life Tap`, `Soul Harvest`, is filed as playstyle-dependent, and notably it does **not** put a fixed point into `Cataclysm` or [[Shadowburn]] at 20 the way Icy Veins does; it pushes both toward the Legacy System instead.
 **ClassicWoW.gg does not publish a suggested build** for any spec, by design.
 **The Legacy System adds points beyond these 11.** Wowhead puts the cap at 7 legacy points from world exploration before level 25, worth 2 extra talent points. Its picks there are [[Shadowburn]], *"instant burst on demand, at the cost of a soul shard. Good for finishing runners and for damage while moving"*, and `Ruin`, *"increases the bonus damage on your destruction crits."*
 **Level 30: 0/0/21 — our own extension, not a published build.** No source has posted one; the beta has not reached 30. Extending the level 20 build on the tree's own point costs, two readings differ by **exactly one 5-point block**: both take `Bane` 5, `Ruin` 5, [[Shadowburn]] 1, `Agonizing Flames` 3, [[Conflagrate]] 1, [[Bane of Havoc]] 1. Then one adds `Improved Shadow Bolt` 5 and the other adds `Aftermath` 5. `Shadow and Flame` stays out of reach either way.

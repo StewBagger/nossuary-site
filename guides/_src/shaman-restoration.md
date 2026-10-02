@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Restoration Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-20-healer-overview ;; Icy Veins — Restoration Shaman PvE Guide|https://www.icy-veins.com/wow-forever/restoration-shaman-healer-pve-guide ;; ClassicWoW.gg — Restoration Shaman|https://classicwow.gg/forever/guides/shaman/restoration
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Restoration Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-20-healer-overview ;; Icy Veins — Restoration Shaman PvE Guide|https://www.icy-veins.com/wow-forever/restoration-shaman-healer-pve-guide ;; ClassicWoW.gg — Restoration Shaman|https://classicwow.gg/forever/guides/shaman/restoration
 
 Triage healing — a big wave, a fast wave, or a chain heal across a cluster, now with an instant repeatable heal over time. **The dungeon healer, and the lowest levelling score on any Shaman page.**
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Restoration build has been tested. **[[Chain Heal]] is level 40**, so the spec's signature spell does not exist at any beta cap. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so no level-60 Restoration build has been tested. **[[Chain Heal]] is level 40**, so the spec's signature spell does not exist at any beta cap. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Restoration worth levelling?
 **Slow to solo, strong in a group. The rating only measures the first.** The published heading is *"Healer Leveling"*: *"As a Healer specialization, Restoration lacks most of the damage talent support of other classes and has no area damage, making it more of a group leveling specialization."* Ratings: Overall 4.0, **Levelling 2.0.**

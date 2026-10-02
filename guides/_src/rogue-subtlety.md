@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Subtlety Guide|https://www.wowhead.com/forever/guide/classes/rogue/subtlety/level-20-dps-overview ;; Icy Veins — Subtlety Rogue PvE Guide|https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide ;; ClassicWoW.gg — Subtlety Rogue|https://classicwow.gg/forever/guides/rogue/subtlety
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Subtlety Guide|https://www.wowhead.com/forever/guide/classes/rogue/subtlety/level-20-dps-overview ;; Icy Veins — Subtlety Rogue PvE Guide|https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide ;; ClassicWoW.gg — Subtlety Rogue|https://classicwow.gg/forever/guides/rogue/subtlety
 
 Stealth openers and a [[Rupture]]-driven bleed cycle. **The strongest PvP tree, the lowest-rated of the three overall, and it has no area damage of any kind.**
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Subtlety build has been tested — and none of our three sources publish a level-30 build yet either. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so no level-60 Subtlety build has been tested — and none of our three sources publish a level-30 build yet either. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Subtlety worth levelling?
 **Viable, and the lowest-rated Rogue spec overall by Icy Veins — 2.5 out of 5 Overall, against 3.0 for the other two. All three are rated 4 out of 5 for levelling specifically.** The heading is *"Weakest Among Rogue Specs"*: *"Subtlety gets the short end of the stick, with most of its higher-impact talents being unavailable until you can put more talent points into the tree."* **Wowhead agrees in stronger language**, calling the spec *"wholly underwhelming at this level bracket"* and noting the Rogue lacks *"our primary builder `Hemorrhage`"* and the talents that support [[Rupture]] this early.
@@ -33,7 +33,7 @@ This spec's list differs from the other two, and the published example is the cl
 | **`Cutthroat`** | 35 | [[Backstab]] can make your next [[Ambush]] usable **without [[Stealth]]** |
 ## What Forever changed for Rogues
 - **`Hemorrhage` is no longer a shared physical-damage debuff.** It is now a personal [[Rupture]] amplifier — it does nothing for the rest of your group, so do not take a raid assignment on it.
-- **`Improved Ambush` moved from row 3 to row 2**, which is exactly why an 11-point Subtlety build can reach it at all. `Setup` moved from row 4 to row 2 and now hits 100% at rank 3. `Premeditation` moved from row 7 to row 4 and no longer needs `Preparation`.
+- **`Improved Ambush` moved from row 3 to row 2**, which is exactly why an 11-point Subtlety build can reach it at all. `Setup` moved from row 4 to row 2 and now hits 100% at rank 3. **October 1 build:** `Setup` now only awards its combo point when the target you dodged or resisted a spell from is also your current target, narrower than before. Leveling solo is single-target already, so this does not change the build's `Setup` pick. `Premeditation` moved from row 7 to row 4 and no longer needs `Preparation`.
 - **[[Sap]] no longer requires [[Stealth]] and no longer breaks it**: the first half is the larger change.
 - **New:** `Dirty Tricks`, `Improved Distract`, `Quietus`, `Cutthroat`, `Thousand Cuts`. **Removed:** `Improved Sap`, `Sleight of Hand`, `Deadliness`.
 - **Poisons and Lockpicking are secondary skills now**, not class skills, and **poison stacks with a sharpening stone.** **Rogues can learn axes**, starting at skill 1.

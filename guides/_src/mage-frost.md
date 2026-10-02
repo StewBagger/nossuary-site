@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Frost Mage|https://www.wowhead.com/forever/guide/classes/mage/frost/level-20-dps-overview ;; Icy Veins — Frost Mage|https://www.icy-veins.com/wow-forever/frost-mage-ranged-dps-pve-guide ;; ClassicWoW.gg — Frost Mage|https://classicwow.gg/forever/guides/mage/frost
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Frost Mage|https://www.wowhead.com/forever/guide/classes/mage/frost/level-20-dps-overview ;; Icy Veins — Frost Mage|https://www.icy-veins.com/wow-forever/frost-mage-ranged-dps-pve-guide ;; ClassicWoW.gg — Frost Mage|https://classicwow.gg/forever/guides/mage/frost
 
 Freeze the target, then hit it for **four times the damage** (the tooltip reads +300%). **This is the Mage levelling spec and the safest specialisation in the game.** Enemies frequently die before they reach you.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Frost build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40, so a **tier-3 talent like [[Ice Lance]] arrives at exactly level 20**, the eleventh point. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so no level-60 Frost build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40, so a **tier-3 talent like [[Ice Lance]] arrives at exactly level 20**, the eleventh point. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Frost worth levelling?
 **Yes. It is the levelling spec.** The published verdict: *"Frost Mages are going to have a comfortable time leveling… slowing and chilling everything they fight keeps them safe. With `Frostbite`, melee enemies will often not even reach you before killing them."*
@@ -26,7 +26,7 @@ Its damage ceiling is lower than Fire's: *"Frost Mage won't top the damage meter
 A third source publishes a dungeon variant that takes `Piercing Ice` over `Frostbite`, on the grounds that in a group the tank is holding the enemy anyway.
 ## Rotation
 1. **[[Frost Armor]]** and [[Arcane Intellect]] up. Frost Armor itself procs `Frostbite` when you are hit
-2. **[[Frostbolt]]** until `Frostbite` freezes the target
+2. **[[Frostbolt]]** until `Frostbite` freezes the target. **Cast at or near your trained rank** — downranking now gives a reduced, and at enough of a level gap a flat **0%**, chance to proc `Frostbite`, so the old habit of spamming a cheap low-rank Frostbolt for the slow no longer works
 3. **[[Ice Lance]] into the freeze.** The critical detail: *"Do not cancel Frostbolt to cast Ice Lance. Finish your current cast, then queue up Ice Lance next"* — one source reports that **[[Ice Lance]] snapshots the target's frozen status**, so a queued cast still lands as if frozen. No tooltip states it. Cancelling a [[Frostbolt]] costs you more than a late Ice Lance anyway
 4. Melee on you → **[[Frost Nova]]**, back away, [[Ice Lance]] as you retreat
 5. **Wand** to finish low-health enemies rather than spending mana
@@ -50,8 +50,9 @@ Icy Veins is the only one of the three tracked sources that ranks Frost's stats;
 ## What Forever changed for Frost
 - **[[Ice Lance]] and `Fingers of Frost` are both brand new**, and together they are the spec.
 - **The slows were cut hard.** `Improved Blizzard` maxes at **40%** (Classic: 65%; rank 1 is 15% where Classic gave 30%). [[Cone of Cold]] is 40% over 6 seconds, down from 50% over 8. `Permafrost` was rewritten to +33% Chill duration and +10% extra slow at 3/3.
-- **`Winter's Chill` now applies only to your own [[Frostbolt]] and [[Ice Lance]]**, where Classic let any Frost spell apply it.
+- **`Winter's Chill` now applies only to your own [[Frostbolt]] and [[Ice Lance]]**, where Classic let any Frost spell apply it. **As of October 1 its application no longer rolls separately to resist** — Blizzard's reasoning: the triggering spell already had to hit to apply it, so a second resist roll was redundant.
 - `Frostbite` moved columns; `Frost Channeling` moved up a tier; [[Ice Block]] moved to tier 4; **[[Ice Barrier]] now requires `Cold Snap`** rather than Ice Block.
 - **Frostfire Bolt is a new trained Fire spell** checked against the *lower* of the target's Frost and Fire resistance. But **rank 1 is level 40**, so it is not in the beta.
+- **Downranking is no longer free, and this spec feels it first.** A spell cast well below your level now gets less benefit from Spell Power and a reduced chance to trigger your own talents — Blizzard's own example is this spec's: **a rank 1 [[Frostbolt]] at level 60 has a 0% chance to proc `Frostbite`.** Rank-1 Frostbolt spam for a cheap slow, long a standard Frost habit, is no longer free; cast near your trained rank if you want the freeze.
 ## At level 60
 Unknown. The open question is whether [[Ice Lance]], `Fingers of Frost` and a personalised `Winter's Chill` make Frost a real raid specialisation, or leave it the kiting spec it was in Classic.

@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Arcane Mage|https://www.wowhead.com/forever/guide/classes/mage/arcane/level-20-dps-overview ;; Icy Veins — Arcane Mage|https://www.icy-veins.com/wow-forever/arcane-mage-ranged-dps-pve-guide ;; ClassicWoW.gg — Arcane Mage|https://classicwow.gg/forever/guides/mage/arcane
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Arcane Mage|https://www.wowhead.com/forever/guide/classes/mage/arcane/level-20-dps-overview ;; Icy Veins — Arcane Mage|https://www.icy-veins.com/wow-forever/arcane-mage-ranged-dps-pve-guide ;; ClassicWoW.gg — Arcane Mage|https://classicwow.gg/forever/guides/mage/arcane
 
 Burst damage on a mana curve you have to manage. **Arcane is genuinely new in Forever**. Its Classic tree had nothing worth spending points on. Now it is a levelling spec.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 20** right now, rising to 30 before launch, so no level-60 Arcane build has been tested. No source has posted a level 30 build either — the beta has not reached it yet — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so no level-60 Arcane build has been tested. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Arcane worth levelling?
 **Yes, and it is the biggest change to the class.** Icy Veins' heading is literally *"A Solid Leveling Spec"*: *"Arcane Mages in Forever level up very well… The `Arcane Meditation` talent significantly reduces downtime between fights… and `Missile Barrage` reduces the mana cost of Arcane Missiles by 100%."*

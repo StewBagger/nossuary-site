@@ -1,5 +1,6 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
+sources: Blizzard — Beta Development Notes, updated October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
 
 Bombs, trinkets, goggles and gadgets. **Forever did not fold it into the new crafted-gear economy**: no tier set, fewest trade-camp recipes, and still the most expensive thing in the game to level.
 :::scope
@@ -11,7 +12,7 @@ Recipes and skill levels are come from foreverchanges.pro's reading of the beta 
 1. **You are a Gnome.** The racial was rewritten for Forever (see below)
 2. **PvP.** The published Hunter advice is *"Engineering for valuable PvP items"*
 3. **As a second profession at 60**, once Blacksmithing has given you the gear: *"After Blacksmithing has provided the gear you need, you can replace it with Engineering."*
-One item carries the hard evidence at the beta cap. [[Minor Recombobulator]] at Engineering 140 appears in **32 of the level-20 best-in-slot lists**, effectively every class and spec in the game.
+One item carries the hard evidence at the beta cap. [[Minor Recombobulator]] at Engineering 140 appears in **32 of the level-20 best-in-slot lists**, effectively every class and spec in the game. **That figure is level 20**, which was the beta cap when it was written; the cap rose to 30 on October 1 and it has not been re-checked.
 The Mage guide adds a warning: *"without a Herbalism or Mining alt, these will be difficult or expensive to level."*
 ## What it pairs with
 **Mining.** Unchanged.

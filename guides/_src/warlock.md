@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Affliction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-20-dps-overview ;; Wowhead — Level 20 Demonology Warlock|https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-20-dps-overview ;; Wowhead — Level 20 Destruction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/destruction/level-20-dps-overview ;; Icy Veins — Warlock Class Overview|https://www.icy-veins.com/wow-forever/warlock-class-overview ;; ClassicWoW.gg — Warlock|https://classicwow.gg/forever/guides/warlock
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Affliction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-20-dps-overview ;; Wowhead — Level 20 Demonology Warlock|https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-20-dps-overview ;; Wowhead — Level 20 Destruction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/destruction/level-20-dps-overview ;; Icy Veins — Warlock Class Overview|https://www.icy-veins.com/wow-forever/warlock-class-overview ;; ClassicWoW.gg — Warlock|https://classicwow.gg/forever/guides/warlock
 
 Warlock kills slowly and inevitably, with a demon tanking for you. Forever split damage curses into Banes, so **you now hold one Bane and one Curse at the same time**, and Life Tap gives twice the mana it used to.
 :::scope
-Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Warlock build has been tested.** The longest anyone has played is a level-38 demo. Ability training levels below come from foreverchanges.pro's reading of the beta client.
+Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so **no level-60 Warlock build has been tested.** The longest anyone has played is a level-38 demo. Ability training levels below come from foreverchanges.pro's reading of the beta client.
 :::
 ## Which spec?
 | Spec | Role | Levelling (Icy Veins) | In one line |
@@ -45,7 +45,7 @@ Play Warlock if you want the strongest solo levelling in the game and you do not
 | **20** | **Succubus class quest**, [[Ritual of Summoning]], [[Rain of Fire]], and **[[Curse of the Elements]] moved much earlier**, from 32 in Classic — **and now hits every magic school** |
 | 28 | **[[Create Firestone]], reworked into a weapon imbue giving up to +2% spell crit** |
 | 28 | [[Banish]] |
-| 30 | **Summon Felhunter**, [[Hellfire]] |
+| 30 | **Summon Felhunter**, [[Hellfire]], which can now critically strike |
 | **36** | **[[Create Spellstone]], reworked into a weapon imbue giving up to +2% spell haste**, notable because haste is on no gear |
 | **40** | **[[Summon Felsteed]], your free mount**, [[Howl of Terror]] |
 | 60 | **[[Bane of Doom]]**, [[Summon Dreadsteed]], **[[Portal of Summoning]], new** |
@@ -71,6 +71,7 @@ Play Warlock if you want the strongest solo levelling in the game and you do not
 - **Budget for Grimoires**: Warlocks spend more gold than most classes keeping demon abilities trained.
 - **The Legacy System hands out extra talent points from world exploration**, on top of your level-based points. Wowhead puts the cap at 7 legacy points before level 25, worth 2 extra talent points, enough to reach one tier further than your character level alone would allow.
 - **Demons take a `Move To` order now.** Icy Veins flags it as a real quality-of-life addition: a 100-yard-range command that repositions your pet on demand, instead of relying on Follow and Stay.
+- **Aggressive Mode is back.** The October 1 build restored it to the pet tab of your spell book, so your demon can be set to engage on its own again instead of waiting on an Attack order every pull.
 ## What changed from Classic
 | Change | What it means for you |
 | --- | --- |
@@ -83,4 +84,4 @@ Play Warlock if you want the strongest solo levelling in the game and you do not
 | `Demonic Sacrifice` buffs inverted, now 2 hours | Imp gives Shadow, Succubus gives Fire |
 | Soul shards are reagents with their own bag slot | Still do not stack |
 ## At level 60
-Unknown. Nothing about level-60 Warlock is known. Nobuild, no gearing, no rotation, no spec ranking. The beta caps at 20 and the longest play session anyone has had was a level-38 demo. Raids open December 9.
+Unknown. Nothing about level-60 Warlock is known: no build, no gearing, no rotation, no spec ranking. The beta caps at 30 as of the October 1 build, and the longest play session anyone has had was a level-38 demo. Raids open December 9.

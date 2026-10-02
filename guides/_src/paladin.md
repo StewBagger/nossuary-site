@@ -1,10 +1,10 @@
-updated: September 30, 2026
+updated: October 2, 2026
 build: 1.60.1.70124
-sources: Wowhead — Level 20 Holy Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/holy/level-20-healer-overview ;; Wowhead — Level 20 Protection Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/protection/level-20-tank-overview ;; Wowhead — Level 20 Retribution Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-20-dps-overview ;; Icy Veins — Paladin Class Overview|https://www.icy-veins.com/wow-forever/paladin-class-overview ;; ClassicWoW.gg — Paladin|https://classicwow.gg/forever/guides/paladin
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Holy Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/holy/level-20-healer-overview ;; Wowhead — Level 20 Protection Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/protection/level-20-tank-overview ;; Wowhead — Level 20 Retribution Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-20-dps-overview ;; Icy Veins — Paladin Class Overview|https://www.icy-veins.com/wow-forever/paladin-class-overview ;; ClassicWoW.gg — Paladin|https://classicwow.gg/forever/guides/paladin
 
 Paladin is a plate-wearing melee fighter that runs on mana, and it is no longer faction-locked — Undead Paladins are new in Forever, with their own class hub in Tirisfal Glades.
 :::scope
-Written for levelling, 1 to 60. Forever's beta is capped at **level 20** right now, rising to 30 before launch and no higher, so **no level-60 Paladin build has been tested.** One specific warning: two talents that appear in published level-30 builds elsewhere — `Crusade` and `Improved Holy Strike` — **are absent from the current beta client**, so those builds cannot be entered as printed. Treat any level-30 Paladin build you find as a projection.
+Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so **no level-60 Paladin build has been tested.** One specific warning: two talents that appear in published level-30 builds elsewhere — `Crusade` and `Improved Holy Strike` — **are absent from the current beta client**, so those builds cannot be entered as printed. Treat any level-30 Paladin build you find as a projection.
 :::
 ## Which spec?
 | Spec | Role | Levelling | In one line |
@@ -56,6 +56,7 @@ Play Paladin if you want to be very hard to kill, to fill whichever role a group
 **Forever changed the answer outright — "Paladin is Alliance" is dead.** Undead Paladins get their own hub at **Bandarion Keep** in the previously inaccessible Whispering Wood, Tirisfal Glades, and their own level 40 and 60 mount quests.
 ## Quality of life
 - **Seals, Blessings and Auras are three separate always-on systems, and new players drop one.** Set an aura and forget it. Keep a blessing on yourself. Keep a seal up always — **and since Judgement no longer consumes your seal in Forever, there is no excuse for letting it lapse.**
+- **[[Retribution Aura]] has a live bug as of October 1:** it reflects damage using the *target's* spell power rather than the Paladin's. Blizzard lists this under Known Issues, not as intended design — expect it fixed, not to plan around it.
 - **Only one-handed maces are known by default.** Every other weapon skill, including all two-handers, must be bought from a weapon master. Polearms from 20.
 - **Do the level-20 class quest**, it rewards a deliberately over-budgeted weapon. Alliance get **Verigan's Fist** from *The Test of Righteousness*; Horde get **Wolfsbane**, even slower and more powerful, from *Diplomatic Incident*, starting at level 18 in Bandarion Keep.
 - **[[Consecration]] at 20 changes the class** from single-target to area-capable, and every spec now gets it. Budget mana for it.
