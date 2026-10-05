@@ -1,15 +1,15 @@
-updated: October 2, 2026
+updated: October 5, 2026
 build: 1.60.1.70124
-sources: Blizzard — Beta Development Notes, updated October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
-Leather off things you already killed — **the cheapest profession in the game to carry**, and its camp object gives your whole group 2% critical strike.
+Leather off things you already killed — **the cheapest profession in the game to carry**, and on the client reading its camp object gives your whole group 2% critical strike.
 :::scope
 The skill formula and camp objects are come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta.** Whether a Skinning Knife is still required is **not published.** Skinnable creature lists, leather tables and trainer requirements are explicitly unconfirmed.
 :::
 ## Is Skinning worth taking?
 **Yes if you already kill beasts; it is the weakest of the three as a pure money profession.** Leather demand is narrower than ore or herbs.
 **It earns no Legacy Points.** Only the six crafting professions do.
-**The real argument is [[Camp Chair]] at skill 20: 2% critical strike with spells and attacks** for everyone sitting nearby, the same as [[Moonkin Form]]'s aura. That is a **raid-wide crit buff off a gathering profession**, and it matters most to a group with no Balance Druid. They do not stack.
+**The real argument is [[Camp Chair]] at skill 20: 2% critical strike with spells and attacks** for everyone sitting nearby. **That whole claim is foreverchanges.pro's reading of the client** — Blizzard has published nothing about a Camp Chair, about camp objects or about their values. On that reading it is a **raid-wide crit buff off a gathering profession**, and it does not stack with the Druid auras that cover the same ground: [[Moonkin Form]] and [[Leader of the Pack]], which Blizzard does say are mutually exclusive with each other. It matters most to a group with neither.
 Take it on a class that kills beasts anyway: Hunter, Druid, Rogue. It costs almost nothing there. As a standalone grind it is painful, because unlike Mining and Herbalism it has no craft to fall back on.
 ## What it pairs with
 **Skinning with Leatherworking.** Unchanged, and Leatherworking gained **271 new recipes**, the largest count of any profession, so leather demand is up.
@@ -28,11 +28,12 @@ Published explicitly, and it keys off the beast's level rather than a node table
 | 205–250 | 41–50 | Tanaris, Feralas, Hinterlands, Felwood |
 | 255–300 | 51–60 | Winterspring, Azshara, Silithus, Eastern Plaguelands |
 ## What Forever changed
+- **A creature can be skinned once and once only.** Blizzard's October 1 build: *"Creatures can once again only be skinned a single time before disappearing."* The multi-skin behaviour of the earlier beta builds is gone, so a corpse is one skinner's.
 - **No new leather, hide or scale type is flagged as new** in the skinning tables.
 - **Three camp objects**, all new, and two of them do things no gathering profession has ever done:
   | Skill | Object | What it does |
   | --- | --- | --- |
-  | 20 | **[[Camp Chair]]** | **2% critical strike** nearby. Mutually exclusive with [[Moonkin Form]] |
+  | 20 | **[[Camp Chair]]** | **2% critical strike** nearby, on the client reading. Mutually exclusive with [[Moonkin Form]] and [[Leader of the Pack]] |
   | 140 | [[Field Guide]] | Blueprint. **Grants [[Track Beasts]] to whoever reads it**, so a non-Hunter can have it |
   | 300 | [[Trapper's Workbench]] | Blueprint. **Holds one trap** |
 - **Leather buys recipes** through Waylaid Crates, the same as ore and herbs.

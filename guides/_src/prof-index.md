@@ -1,9 +1,10 @@
-updated: September 30, 2026
+updated: October 5, 2026
 build: 1.60.1.70124
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
 Professions still run 1 to 300 and you still pick two primaries. What changed is everything around them: **919 new recipes, a camping system, a second currency, and a food buff that gives +5% experience from level one.**
 :::scope
-Recipe counts, skill levels, trainer ranks and buff values below are come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta**, everything above that is read from client data, not played. Node density, respawn timers and skill-up rates are unpublished for every gathering profession, and the zone recommendations in the gathering guides are Classic spawn data: **Forever's new zones are not counted yet.**
+Recipe counts, skill levels, trainer ranks and buff values below are come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta**, everything above that is read from client data, not played. Node density, respawn timers and skill-up rates are unpublished for every gathering profession bar one line: Blizzard's October 1 build *"reduced the amount of Poor Copper Vein nodes available in starter areas"*. The zone recommendations in the gathering guides are Classic spawn data: **Forever's new zones are not counted yet.**
 :::
 Looking for a class instead? **[The class guides are here](/guides/wow-forever/)**, all nine, one page per specialisation.
 ## Start here: the three things that matter most
@@ -51,7 +52,7 @@ Unchanged from Classic, and confirmed in the client.
 **Rogues: Poisons and Lockpicking are now tradeskills, not class spells.** They are described in the client as secondary skills *"like First Aid"*. But they sit in a separate class-based bucket and **do not count against your three secondaries.** The practical gain is that Lockpicking now levels like a tradeskill.
 ## What Forever changed
 - **919 new recipes** across the trades, against Blizzard's published *"over 600"*. Leatherworking gained the most (271 new of 512), then Blacksmithing (197 of 437) and Tailoring (180 of 414).
-- **[Camping](/guides/wow-forever/professions/camping/) is new.** A cook lights a campfire; every profession can then place **three camp objects**, one at skill 20, then two more from Blueprints at 140 and 300. Sit or craft for a minute and the buffs last **an hour**, and you can leave.
+- **[Camping](/guides/wow-forever/professions/camping/) is new.** A cook lights a campfire; every profession can then place **three camp objects**, one at skill 20, then two more from Blueprints at 140 and 300. Wait a minute at the fire and the buffs last **an hour**, and you can leave. Since the September 24 build, sitting, sitting in a chair, sleeping, lying down and the kneeling emote all count, and you may buff, cast and craft while you wait.
 - **[Merchant's Favor](/guides/wow-forever/professions/merchants-favor/) is new**: a second currency, and **317 recipes that no trainer teaches.** Open from level 10 to any class and any profession, including none.
 - **A new material class, "Scarce materials"**, exists in Mining, Herbalism and Skinning. What counts as scarce is not published.
 - **The Legacy system** adds 11 profession-relevant perks across three trees, including `Working Overtime` (up to +20% chance of a skill-up), `Bountiful Harvest` (up to +100% scarce materials while gathering) and `Master Chef` (up to a 50% chance of an extra cooking result).
@@ -74,9 +75,9 @@ Unchanged from Classic, and confirmed in the client.
 ## Specialisations
 Only three professions have them, exactly as in vanilla: **Blacksmithing** (Armorsmith, Weaponsmith, and the three Master smiths), **Leatherworking** (Dragonscale, Elemental, Tribal) and **Engineering** (Gnomish, Goblin). **Tailoring, Enchanting and Alchemy have none**, if you remember Elixir or Potion Mastery, that is Burning Crusade.
 All ten are present in the beta client with their descriptions intact. **Beyond that, almost nothing is known**, not the skill levels, not whether they are still mutually exclusive, not what switching costs. **Only Engineering's has a published sentence confirming it is a live system**, quest-based as in vanilla.
-The reason nobody knows is structural: **the beta caps professions at 225 and characters at 20 to 30, and every specialisation sits above that.** No tester can reach one.
+The reason nobody knows is structural: **the beta caps professions at 225 and characters at 30, and every specialisation sits above that.** No tester can reach one.
 ## What is not known
 - **Gathering material tables beyond Classic's.** Two ores (Pitchblende, Heavy Thorium Ore) and six herbs (Demonsage, Death Lotus, Marefoil, Stranglevine, Rosecap, Frilled Lichen) exist in the client as crafting reagents **with no published gathering node.** They are probably the "Scarce materials" `Bountiful Harvest` boosts, but nobody has confirmed that.
-- **Gathering node density, respawn rules and skill-up rates.** Unpublished for all three gathering professions.
+- **Gathering node density, respawn rules and skill-up rates.** Unpublished for all three gathering professions, with one exception: Blizzard thinned the Poor Copper Vein nodes in the starter areas on October 1. That is the only node-density figure Blizzard has published for any of them.
 - **Legacy perk point costs**, and whether perks can be refunded. In the beta a class trainer resets them for 10 gold.
 - **Whether the +5% experience stacks** with the Cozy Sleeping Bag's +3% or with rested experience. Nobody has tested it.

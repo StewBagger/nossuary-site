@@ -1,4 +1,4 @@
-updated: September 30, 2026
+updated: October 5, 2026
 build: 1.60.1.70124
 
 Potions, elixirs, flasks and transmutes. **The most substantially rewritten profession in Forever** — 70 of its 179 recipes are new, including three whole consumable ladders and **four new raid flasks.**
@@ -39,7 +39,7 @@ Plus new **Mageblood** (mana per 5 seconds) and **Cleric's** (healing done) elix
 ## Camp objects
 | Skill | Object | What it does |
 | --- | --- | --- |
-| 20 | **[[Mana Well]]** | **29 mana every 5 seconds** nearby. Exclusive with [[Blessing of Wisdom]] |
+| 20 | **[[Mana Well]]** | **29 mana every 5 seconds** nearby. Mutually exclusive with [[Blessing of Wisdom]] |
 | 140 | [[Fermenter]] | Blueprint, drops in **Wailing Caverns** and **Ruins of Lordaeron**. Makes four new reagents |
 | 300 | [[Alchemy Laboratory]] | Blueprint. **Required for the top recipes** |
 ## Levelling it

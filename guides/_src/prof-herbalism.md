@@ -1,5 +1,6 @@
-updated: September 30, 2026
+updated: October 5, 2026
 build: 1.60.1.70124
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Beta Known Issues, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-known-issues-october-1/2352687 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
 Herbs, and the only feed for Alchemy. **The herb table is unchanged from Classic.** But six new herbs exist in the client with no published node, and Tauren Cultivation was rewritten from the ground up.
 :::scope
@@ -8,7 +9,7 @@ Herb list, skill thresholds and camp objects are come from foreverchanges.pro's 
 ## Is Herbalism worth taking?
 **Yes, and it is the strongest of the three gathering professions right now.** Alchemy gained 70 new recipes and four new raid flasks, and all of that demand lands on herbs.
 **It earns no Legacy Points.** Only the six crafting professions do.
-The camp object is [[Incense Candle]] at skill 20: **25 Intellect** to everyone sitting nearby, the same as [[Arcane Intellect]]. It is redundant if you have a Mage, since the two do not stack.
+The camp object is [[Incense Candle]] at skill 20: **25 Intellect** to everyone sitting nearby, and it does not stack with [[Arcane Intellect]] — **that is foreverchanges.pro's reading of the client; Blizzard publishes no camp-object value and no equivalence to a class buff.** It is redundant if you have a Mage.
 ## What it pairs with
 **Herbalism with Alchemy.** Unchanged, and Alchemy has no other feed.
 For a veteran: with [Merchant's Favor](/guides/wow-forever/professions/merchants-favor/) able to buy recipes, and crates purchasable from the auction house, the Herbalism half of that pair is **more optional than it used to be.**
@@ -29,11 +30,11 @@ This is the cheapest profession in the game to level. The only cost is travel.
 - **Three camp objects**, all new:
   | Skill | Object | What it does |
   | --- | --- | --- |
-  | 20 | **[[Incense Candle]]** | **25 Intellect** nearby, exclusive with [[Arcane Intellect]] |
+  | 20 | **[[Incense Candle]]** | **25 Intellect** nearby, mutually exclusive with [[Arcane Intellect]] |
   | 140 | [[Greenhouse]] | Blueprint. **Grows herbs over time from planted seeds** |
   | 300 | [[Seed Hybridizer]] | Blueprint. **Multiplies seeds, or combines them into rarer tiers** |
 - **A seed economy now exists**, and it is entirely undocumented. Both higher camp objects reference seeds and rarer tiers; no source, drop table or tier list has been published.
-- **Herbs now buy recipes.** For example, *Waylaid Crate: Apprentice Herbs* asks for 20 Peacebloom, 20 Silverleaf, 10 Earthroot, 10 Mageroyal or 10 Briarthorn. **Vanilla's worthless starter herbs have a guaranteed buyer.**
+- **Herbs now buy recipes.** For example, *Waylaid Crate: Apprentice Herbs* asks for 20 Peacebloom, 20 Silverleaf, 10 Earthroot, 10 Mageroyal or 10 Briarthorn. **Vanilla's worthless starter herbs have a guaranteed buyer.** **The crates are still partly broken in the beta**: Blizzard's Known Issues post, last edited October 1, carries *"Waylaid Crates do not function on items with a maximum stack size smaller than the quantity required"*, annotated *"This is fixed in the next Beta build"* — and neither the September 24 nor the October 1 change log carries that fix, so a correct turn-in can still be refused.
 - **There is no Herbalism specialisation.** Claims about specialising into rare lotus or extra herbs per node are not in the client data.
 ## What is not known
 Where the six new herbs are gathered. What a "Scarce material" is. The entire seed system. Whether Find Herbs tracking changed at all. And node locations and respawns in Forever's own zones.

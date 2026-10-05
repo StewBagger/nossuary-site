@@ -1,13 +1,13 @@
-updated: October 2, 2026
+updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Protection Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/protection/level-20-tank-overview ;; Icy Veins — Protection Paladin Tank Guide|https://www.icy-veins.com/wow-forever/protection-paladin-tank-pve-guide ;; ClassicWoW.gg — Protection Paladin|https://classicwow.gg/forever/guides/paladin/protection
 
 Shield tanking that generates threat from Holy damage rather than weapon damage, which makes it **the only tank in the game that gears for Spell Power.**
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so no level-60 Protection build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Protection build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Protection worth levelling?
-**Slower solo, and Forever specifically nerfed the thing it used to be good at.** Protection Paladin was historically one of the best dungeon-levelling specs in the game because of [[Consecration]]. Forever **cut dungeon experience hard** while raising only dungeon *quest* experience, which one published guide calls out directly as hurting this spec more than any other.
+**Slower solo, and Forever specifically nerfed the thing it used to be good at.** Protection Paladin was historically one of the best dungeon-levelling specs in the game because of [[Consecration]]. Forever **cut dungeon experience hard**, which one published guide calls out directly as hurting this spec more than any other — and the October 1 build went further, cutting the extra experience on dungeon quests by 50% as a deliberate reduction in levelling speed.
 You can still safely pull several enemies and grind them down, but you will struggle to kill bosses and high-health single targets quickly, and **mana is the real limiter**.
 ## Your talent points
 **Level 20: 0/11/0.** Two published builds agree on the first ten points.
@@ -31,6 +31,7 @@ Named alternatives for that last point: `Improved Righteous Fury` for damage red
 ## Stat priority
 **Spell Power**, then Hit, Stamina, Defense, Armor, Block, Intellect, Strength, Agility.
 Spell Power first genuinely is correct here, and the reason is worth stating: in Forever a Paladin's threat *is* Holy damage — [[Seal of Fury]], [[Consecration]] and [[Holy Strike]], all amplified by [[Righteous Fury]], and Seal of Fury's absorb is worth half of that damage again. Take mail over leather where the stats are close, and **carry a shield**, which Seal of Fury's absorb requires.
+**[[Righteous Fury]]'s multiplier moved in the September 24 build, and Blizzard's own wording there does not parse.** The note reads *"Righteous Fury: Holy threat increase increased to 60% (was 90%)"* — 60% is lower than 90%, so the verb and the numbers contradict each other. Both figures are Blizzard's; which way the multiplier actually moved is not something that post settles, so read it as an apparent slip rather than a published buff or nerf. The case for Spell Power is unaffected either way: the amplifier multiplies Holy damage whichever number is live.
 **Leave spell power weapons alone below 20.** Wowhead flags a real trap here: a weapon with a heavy spell power roll carries roughly a 25% melee damage penalty, and you do not have the spell-power talents yet to make that trade pay off. A plain melee weapon out-damages it until you hit 20.
 ## What defines Protection
 | Talent or ability | Earliest level | What it does |
@@ -46,4 +47,4 @@ Spell Power first genuinely is correct here, and the reason is worth stating: in
 - `Reckoning` now **also procs on a block**, an 8% chance after blocking a melee attack, on top of the 20% chance after a non-periodic critical strike against you. `Anticipation` moved a tier and doubled at max rank to +20 Defense. `Holy Shield` was nerfed to +20% block when Forever launched, buffed to 110 damage per block, and **now requires `Templar's Bulwark`**; the October 1 build raised its Block chance again, to **30%**.
 - **`Blessing of Kings` left the tree to become baseline at 20.** `Blessing of Sanctuary` was removed from the class entirely, alongside `Improved Devotion Aura` and `Improved Concentration Aura`.
 ## At level 60
-Unknown, and there is a specific open question: **whether a 4-second conditional taunt can hold a raid boss.** Wowhead also reports a live [[Consecration]] bug worth knowing about now: targets standing inside it, even under four of them, often do not take its full damage, particularly near the edge of the ring, and moving the pack recalculates it correctly. Whether that is fixed before launch is unknown.
+Unknown, and there is a specific open question: **whether a 4-second conditional taunt can hold a raid boss.** The [[Consecration]] bug Wowhead reported — targets inside the ring not taking its full damage, worst near the edge — is **fixed.** Blizzard's September 24 build repaired Consecration's failure to apply its increased damage effect to some targets, its inconsistent Z axis, and a case where it pulled targets vertically above or below the caster.

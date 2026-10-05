@@ -1,14 +1,15 @@
-updated: September 30, 2026
+updated: October 5, 2026
 build: 1.60.1.70124
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
-Ore, stone and smelting. **The vein table is unchanged from Classic**, so your old route still works. What changed is what the ore is worth, and a camp object that hands your group 90 attack power.
+Ore, stone and smelting. **The vein table is unchanged from Classic**, so your old route still works — but Blizzard thinned the copper in the starter areas on October 1, which is where that route begins. What changed otherwise is what the ore is worth, and a camp object that hands your group 90 attack power.
 :::scope
-Vein types, skill thresholds and camp objects are come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta.** The zone recommendations below are **Classic spawn data**. Forever's new zones, including Zephras Isle, are not counted yet. Node density, respawn rules and skill-up rates are unpublished.
+Vein types, skill thresholds and camp objects are come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta.** The zone recommendations below are **Classic spawn data**. Forever's new zones, including Zephras Isle, are not counted yet. Node density, respawn rules and skill-up rates are unpublished, apart from the October 1 cut to Poor Copper Vein nodes in the starter areas.
 :::
 ## Is Mining worth taking?
 **Yes, as a money profession**: more so than in vanilla, because Waylaid Crates give low-level ore a guaranteed buyer it never had.
 Mining crafts nothing itself; its entire value is feedstock and gold. It also **earns no Legacy Points**, since only the six crafting professions do. If you are chasing the 18 Tradeskill points, this is the wrong pick.
-**The real argument beyond gold is the camp object.** [[Lodestone]] at skill 20 gives **90 melee attack power** to everyone sitting nearby, the same effect as [[Blessing of Might]]. A melee group without a Paladin wants a miner at the fire.
+**The real argument beyond gold is the camp object.** [[Lodestone]] at skill 20 gives **90 melee attack power** to everyone sitting nearby and does not stack with [[Blessing of Might]] — **that is foreverchanges.pro's reading of the client; Blizzard publishes no camp-object value and no equivalence to a class buff.** A melee group without a Paladin wants a miner at the fire.
 ## What it pairs with
 **Mining with Blacksmithing, or Mining with Engineering.** Both still hold; both of those professions eat ore and have no other feed. Nothing published suggests Forever changed that.
 ## The veins
@@ -31,14 +32,16 @@ Byte-for-byte identical to Classic. **No vein is flagged as new.**
 4. **175 → 245**: Mithril and Truesilver. Badlands, Hinterlands, Alterac, Searing Gorge
 5. **245 → 300**: Small and Rich Thorium. Winterspring, Azshara, Swamp of Sorrows, Blasted Lands
 **Smelting what you mine gives skill points too**, until the recipe turns grey. Do not vendor raw ore while you are levelling.
-**The bottleneck is 175 to 245**, the familiar Mithril desert. It eats travel time rather than gold.
+**Step 1 got slower on October 1.** Blizzard reduced the number of Poor Copper Vein nodes in the starter areas, so budget more travel between copper than a Classic route predicts.
+**The bottleneck is still 175 to 245**, the familiar Mithril desert. It eats travel time rather than gold.
 ## What Forever changed
+- **Fewer copper nodes in the starter areas.** Blizzard's October 1 build *"reduced the amount of Poor Copper Vein nodes available in starter areas"* — the only node-density change Blizzard has published for any gathering profession.
 - **Two new smelting recipes:** [[Azerothium Bar]] at skill 275 (2 Pitchblende + 1 Coal) and [[Heavy Thorium Bar]] at 300 (1 Heavy Thorium Ore).
 - **Two new ores with no published source.** `Pitchblende` and `Heavy Thorium Ore` are in the client's item table but **appear in no vein's drop list.** Where you get them is the biggest open question in Mining.
 - **Three camp objects**, all new:
   | Skill | Object | What it does |
   | --- | --- | --- |
-  | 20 | **[[Lodestone]]** | **90 melee attack power** nearby. Exclusive with [[Blessing of Might]] |
+  | 20 | **[[Lodestone]]** | **90 melee attack power** nearby. Mutually exclusive with [[Blessing of Might]] |
   | 140 | [[Rock Garden]] | Blueprint. **Spawns a common mining node over time**, and keeps the Lodestone buff |
   | 300 | [[Molten Foundry]] | Blueprint. Required by recipes that call for it, and keeps the Lodestone buff |
 - **Ore now buys recipes.** Waylaid Crates take raw ore, converting it into [Merchant's Favor](/guides/wow-forever/professions/merchants-favor/). Low-level ore has a price floor it never had.

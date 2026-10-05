@@ -1,6 +1,6 @@
-updated: October 2, 2026
+updated: October 5, 2026
 build: 1.60.1.70124
-sources: Blizzard — Beta Development Notes, updated October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
 Permanent bonuses on gear, paid for by destroying other gear. **Forever gave enchanters a new role: you are the supply chain for every crafted tier set in the game.**
 :::scope
@@ -26,6 +26,7 @@ This profession changed more than any other.
 - **84 of 165 enchants had their reagents changed, overwhelmingly downward.** Enchant Bracer Stamina now takes 3 Soul Dust where it took 6. Boots Greater Stamina takes 6 Dream Dust where it took 10. **Enchanting is materially cheaper in Forever.**
 - **Six Season of Discovery enchants are obtainable**, but **twelve more sit dead in the client with no vendor selling them**, including Retricutioner, Dismantle, Excellent Spirit and Superior Intellect. **If you played Season of Discovery, do not assume your enchants came with you.**
 - **New craftables**: staves, off-hands, seven new wands, and three new Heart of the Mountain trinkets at 285.
+- **The wands are not a gold line.** Blizzard's October 1 build made *"all crafted common and uncommon quality wands"* sell at vendors for **1 copper**, and the September 24 build stopped wands gaining any *additional* damage from the user's spell damage. Craft them to wear or to disenchant; vendoring one pays nothing.
 - **New gloves enchant, [[Lotus Claw]]** at 295 — *"a small chance to acquire Death Lotus when gathering any herb in Hyjal."*
 - **Profession perk, new: ring enchants** for attack power, spell power or Stamina, **on your own rings only**. A later-expansion perk in a vanilla relaunch. **Values, skill and cost are not published.**
 - **Certification** at 300 for 1,000 Favor → the title **"the Enchanter"**.

@@ -1,10 +1,10 @@
-updated: October 2, 2026
+updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Frost Mage|https://www.wowhead.com/forever/guide/classes/mage/frost/level-20-dps-overview ;; Icy Veins — Frost Mage|https://www.icy-veins.com/wow-forever/frost-mage-ranged-dps-pve-guide ;; ClassicWoW.gg — Frost Mage|https://classicwow.gg/forever/guides/mage/frost
 
 Freeze the target, then hit it for **four times the damage** (the tooltip reads +300%). **This is the Mage levelling spec and the safest specialisation in the game.** Enemies frequently die before they reach you.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so no level-60 Frost build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40, so a **tier-3 talent like [[Ice Lance]] arrives at exactly level 20**, the eleventh point. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Frost build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40, so a **tier-3 talent like [[Ice Lance]] arrives at exactly level 20**, the eleventh point. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Frost worth levelling?
 **Yes. It is the levelling spec.** The published verdict: *"Frost Mages are going to have a comfortable time leveling… slowing and chilling everything they fight keeps them safe. With `Frostbite`, melee enemies will often not even reach you before killing them."*

@@ -1,6 +1,6 @@
-updated: October 2, 2026
+updated: October 5, 2026
 build: 1.60.1.70124
-sources: Blizzard — Beta Development Notes, updated October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Beta Known Issues, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-known-issues-october-1/2352687 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
 **New in Forever: a second currency, and 317 recipes no trainer teaches.** Open from level 10 to any class and any profession, **including none at all.**
 :::scope
@@ -14,9 +14,10 @@ A reputation-free currency you earn by handing in **Waylaid Crates**, and spend 
 **A crate pays 5 to 20 Favor. Most recipes cost 30 to 240.** Every recipe is several crates' worth.
 **Crates are tradeable**, so most players buy them at the auction house rather than hunting them. **Crates that take crafted goods are green and pay double** the white raw-material ones.
 **Favor is per-character, not account-wide.** Every alt starts from zero.
+**Two crate bugs are still live.** Blizzard's Known Issues post, last edited October 1, carries *"Waylaid Crates do not function on items with a maximum stack size smaller than the quantity required"* and *"Waylaid Crate: Apprentice Curiosities does not accept Greater Magic Essence, and incorrectly allows you to target Lesser Magic Essence"*. Both are annotated *"This is fixed in the next Beta build"*, and neither the September 24 nor the October 1 change log carries the fix — so in the beta a correct turn-in can still be refused, and one crate asks for the wrong essence.
 ## Why it matters even if you have no profession
 **You need no profession to fill a crate or earn Favor**, and it opens at level 10. It is the only part of the profession system that is open to everyone.
-**It also gives low-level raw materials a guaranteed buyer they never had in vanilla.** Peacebloom and copper ore now have a price floor. If you are levelling a gathering profession, this is where the early junk goes.
+**It also gives low-level raw materials a guaranteed buyer they never had in vanilla.** Peacebloom and copper ore now have a price floor — subject to the two crate bugs above, which are unfixed as of the October 1 build. If you are levelling a gathering profession, this is where the early junk goes.
 ## What you can buy
 **317 recipes across seven trades**, the six crafting professions plus Cooking:
 | Trade | Recipes |

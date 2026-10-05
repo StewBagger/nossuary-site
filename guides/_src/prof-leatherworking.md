@@ -1,6 +1,6 @@
-updated: October 2, 2026
+updated: October 5, 2026
 build: 1.60.1.70124
-sources: Blizzard — Beta Development Notes, updated October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
 
 Leather and mail armour, cloaks, armour kits and quivers. **The biggest profession in the game at 512 recipes, 271 of them new**, and the one whose vanilla knowledge is most wrong.
 :::scope
@@ -29,7 +29,7 @@ The published verdicts are unusually consistent. For Hunters: *"one of the stron
 - **Cured Rugged Hide now makes 2 instead of 1.** Wild Leather Cloak and Leggings dropped from 6 Wildvine to 2.
 - **Profession perk, new:** *"bracer kits with various stat bonuses, and a saddle that increases mounted speed."* Details **not published**.
 - **Certification** at 300 for 1,000 Favor → the title **"the Leatherworker"**.
-- **New in the October 1 build: a number of Leatherworking recipes are now random dungeon drops**, a third route alongside the trainer and the Merchant's Favor plans above. Blizzard names Leatherworking and Blacksmithing as the two professions this covers; no drop list or which dungeons has been published.
+- **A dungeon-drop route that was always meant to exist now works.** Blizzard's October 1 build made available *"a number of recipes intended for Blacksmithing and Leatherworking as random drops in dungeons"* — the word is *intended*, so this is a third route alongside the trainer and the Merchant's Favor plans finally going live, not one added on the day. No drop list and no list of dungeons has been published.
 ## Specialisations
 `Dragonscale`, `Elemental` and `Tribal` Leatherworking are **present in the beta client** with intact descriptions, and the vanilla spec-gated patterns are still in the data: Devilsaur, Corehound Boots, Chromatic Cloak, Stormshroud. **New** Dragonscale epics exist too: Black and Blue Dragonscale Helm, Red Dragonscale Leggings.
 **Skill level, exclusivity and switch cost are all unknown**, and no guide site mentions them. As with Blacksmithing, presence in the client means only that they were not removed. Nobody in the beta can reach one.

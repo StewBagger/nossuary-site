@@ -1,10 +1,10 @@
-updated: October 2, 2026
+updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Fire Mage|https://www.wowhead.com/forever/guide/classes/mage/fire/level-20-dps-overview ;; Icy Veins — Fire Mage|https://www.icy-veins.com/wow-forever/fire-mage-ranged-dps-pve-guide ;; ClassicWoW.gg — Fire Mage|https://classicwow.gg/forever/guides/mage/fire
 
 Pure damage and nothing else. Forever finally makes [[Pyroblast]] a spell you cast during a fight instead of before it.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so no level-60 Fire build has been tested. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Fire build has been tested. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Fire worth levelling?
 **Usable, but slower than Frost or Arcane.**
@@ -46,7 +46,7 @@ Below 60 the problem is availability, not ranking: low-level gear does not carry
 | **`Improved Scorch` 3/3** | 27 | 100% application chance, 5 stacks, **+3% per stack to the Fire damage *you* deal to that target.** This is a **personal** buff in Forever, not Classic's shared Fire vulnerability — do not take a group assignment to supply it. **As of October 1 the Fire Vulnerability debuff no longer rolls a second time to see if it resists** — once your Scorch lands, the stack applies |
 | **`Ignite` 5/5** | 19 | 40% of the spell's damage again over 4 seconds |
 ## What Forever changed for Fire
-- **`Heating Up` is new and it changes the spec**, and it carried a rename: Blizzard shipped it as `Hot Streak` and renamed it to `Heating Up` on October 1, *"since it is no longer dependent on having a 'streak'."* Every other guide site still calls it `Hot Streak` — same talent. It turns a non-periodic Fire crit into a stacking 25%-per-stack cut to [[Pyroblast]]'s cast time, up to three stacks, for **15 seconds** — Icy Veins and ClassicWoW.gg both give that duration and both are explicit it is a *reduction*, not an instant-cast proc: *"this is not a two-crits-then-instant-Pyroblast rule."*
+- **`Heating Up` is new and it changes the spec**, and it carried a rename: Blizzard shipped it as `Hot Streak` and renamed it to `Heating Up` on October 1, *"since it is no longer dependent on having a 'streak'."* Every other guide site still calls it `Hot Streak` — same talent. It turns a non-periodic Fire crit into a stacking 25%-per-stack cut to [[Pyroblast]]'s cast time, up to three stacks, for **20 seconds** — the September 24 build raised the buff's duration from 15 seconds, so the 15 that Icy Veins and ClassicWoW.gg still give is pre-patch. Both are right that it is a *reduction*, not an instant-cast proc: *"this is not a two-crits-then-instant-Pyroblast rule."*
 - **`Incineration`** (renamed from Incinerate) moved from tier 3 to **tier 1** and now buffs [[Fire Blast]], [[Ice Lance]], [[Arcane Blast]] **and** [[Scorch]] — deliberately cross-school.
 - [[Combustion]]'s charge count **returned to 3 non-periodic Fire crits on October 1** (it briefly ran at 4 before that, which is what the three tracked guide sites still describe — treat any "4 charges" claim as pre-patch). [[Blast Wave]] no longer requires [[Pyroblast]] and now dazes for 50%. `Impact` was cut from 5 ranks to 3. `Burning Soul` went from 2 ranks to 3 but is weaker per rank.
 - **Whether Mage area spells keep a target cap or falloff in Forever is unconfirmed.** None of the three tracked sources states it either way — don't build a farming plan on an assumption in either direction.

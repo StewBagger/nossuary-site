@@ -1,4 +1,4 @@
-updated: September 30, 2026
+updated: October 5, 2026
 build: 1.60.1.70124
 
 Slow and peaceful, and in Forever no longer optional if you want Cooking: **five of Cooking's seven levelling steps are fish.**
@@ -15,10 +15,10 @@ Skill levels and camp objects are come from foreverchanges.pro's reading of the 
 ## Camp objects
 | Skill | Object | What it does |
 | --- | --- | --- |
-| **20** | **[[Fish Bowl]]** | **8% to all stats** for everyone sitting nearby, the same effect as [[Blessing of Kings]]. Needs a Raw Brilliant Smallfish and an Empty Vial |
+| **20** | **[[Fish Bowl]]** | **8% to all stats** for everyone sitting nearby, and it does not stack with [[Blessing of Kings]] — the client reading, not a Blizzard figure. Needs a Raw Brilliant Smallfish and an Empty Vial |
 | 140 | [[Fishing Rack]] | Blueprint. Produces uncommon fish on a 1-hour cycle, and keeps the Fish Bowl's 8% |
 | 300 | [[Fishing Hut]] | Blueprint. Produces rare fish, and keeps the 8% |
-**A Fish Bowl at skill 20 gives a party Blessing of Kings without a Paladin**, which is the best reason to take Fishing in Forever. **It does not stack with the real thing**: camp buffs never stack with the class buff they copy, so you keep one or the other.
+**A Fish Bowl at skill 20 stands in for Blessing of Kings when the party has no Paladin**, which is the best reason to take Fishing in Forever. **It does not stack with the real thing**: on foreverchanges.pro's reading of the client, a camp buff never stacks with the class buff it copies, so you keep one or the other. **Blizzard publishes no camp-object value and no equivalence to a class buff**, so the 8% and the match to [[Blessing of Kings]] are the client's, not Blizzard's.
 ## Ranks
 | Rank | Skill |
 | --- | --- |

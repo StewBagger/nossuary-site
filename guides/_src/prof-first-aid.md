@@ -1,4 +1,4 @@
-updated: September 30, 2026
+updated: October 5, 2026
 build: 1.60.1.70124
 
 **The most changed secondary skill in Forever**, with 17 of its 31 recipes new. It is no longer just bandages: First Aid now cures poison, disease and bleeds, and makes healing potions.
@@ -23,7 +23,7 @@ Anti-Venom works mid-fight; poultices and tourniquets do not, so plan those two 
 First Aid places three, like every profession:
 | Skill | Object | What it does |
 | --- | --- | --- |
-| 20 | [[First Aid Kit]] | **56 Stamina**, but exclusive with [[Power Word: Fortitude]], so it replaces a Priest's buff rather than adding to it |
+| 20 | [[First Aid Kit]] | **56 Stamina**, but mutually exclusive with [[Power Word: Fortitude]], so a Priest's buff and this one are an either-or rather than a total |
 | 140 | [[Toxin Study]] | Blueprint |
 | 300 | [[Plague Doctor's Laboratory]] | Blueprint |
 ## What Forever changed

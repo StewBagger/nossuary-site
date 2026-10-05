@@ -1,6 +1,6 @@
-updated: October 2, 2026
+updated: October 5, 2026
 build: 1.60.1.70124
-sources: Blizzard — Beta Development Notes, updated October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
+sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
 Bombs, trinkets, goggles and gadgets. **Forever did not fold it into the new crafted-gear economy**: no tier set, fewest trade-camp recipes, and still the most expensive thing in the game to level.
 :::scope
@@ -21,6 +21,7 @@ The Mage guide adds a warning: *"without a Herbalism or Mining alt, these will b
 - **Engineering-only gating is fully intact, and is being applied to brand-new items.** 98 items carry a *"Requires Engineering"* line, **20 of them new**. The vanilla ones are untouched: Gnomish Rocket Boots, Parachute Cloak, Arcanite Dragonling, Force Reactive Disk, Goblin Jumper Cables XL, Master Engineer's Goggles, Bloodvine Goggles.
 - **Goggles now exist for every armour type.** New at skill 200: Floppy (cloth), **Bent (leather), Stuckbutton (mail), Dented (plate)**. In vanilla, engineer headgear was effectively cloth-only. **Plate and mail wearers now have an engineer head slot.** New engineer-only belts at 175 too.
 - **Two new consumable brands, "SAF-T" and "EZ-Thro"**, spanning the whole skill range. The top ones are real: **[[EZ-Thro Dark Bomb]]** at 300 (225–675 fire damage and a 4-second stun) and **[[EZ-Thro Mana Bomb]]** (burns 675–1125 mana, 5-second silence, and 50% of the drained mana as damage).
+- **Those two brands are the Druid's bombs.** Blizzard's class deep dive is the only official word on Engineering: most engineering bombs still cannot be used while shapeshifted, *"but some specific new recipes can be used while shapeshifted. See the SAF-T and EZ-Thro recipes."* A Druid taking Engineering should level those two lines and treat the rest of the bomb list as unusable in form.
 - **[[SAF-T Ultra Precision Scope]]** at 300 — a permanent **+2% critical strike** on a bow, gun or crossbow.
 - **New thrown weapons**: Satchel of Copper, Bronze, Iron and Dark Iron Bombs, which *"explode on impact"* and carry Stamina.
 - **[[Compact Critter Carrier]]** at 225 *"allows Hunters in your group to access their stabled pets."*

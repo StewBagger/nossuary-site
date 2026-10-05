@@ -1,6 +1,6 @@
-updated: October 2, 2026
+updated: October 5, 2026
 build: 1.60.1.70124
-sources: Blizzard — Beta Development Notes, updated October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
+sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
 
 Plate, mail, weapons and stones. In vanilla it was the money profession. **In Forever it is a raid-power profession.** 197 of its 437 recipes are new, and it owns two crafted tier sets.
 :::scope
@@ -21,10 +21,10 @@ The advice that comes with it: *"Use Blacksmithing to fill useful gaps in your e
 - **Profession perk, new and not vanilla at all:** *"various stat-boosting belt buckles and Repair All, a cooldown to repair all of your gear for free."* Skill level, cost and values are **not published**.
 - **Certification** at skill 300 for 1,000 Merchant's Favor unlocks the account-wide title **"the Blacksmith"**.
 - **Only 6 of 437 recipes changed their reagents.** Blacksmithing's existing costs are essentially untouched.
-- **New in the October 1 build: a number of Blacksmithing recipes are now random dungeon drops**, a third acquisition route alongside the trainer and the trade-camp plans above. Blizzard names Blacksmithing and Leatherworking as the two professions this covers; no drop list or which dungeons has been published.
+- **A dungeon-drop route that was always meant to exist now works.** Blizzard's October 1 build made available *"a number of recipes intended for Blacksmithing and Leatherworking as random drops in dungeons"* — the word is *intended*, so this is a third acquisition route alongside the trainer and the trade-camp plans finally going live, not one added on the day. No drop list and no list of dungeons has been published.
 ## Specialisations
 `Armorsmith`, `Weaponsmith` and the three Master sub-specialisations (Swordsmith, Hammersmith, Axesmith) **are all present in the beta client** and wired into the live skill line, with their vanilla descriptions intact. The spec-gated plans are still in the data too: Persuader, Arcanite Champion, Corruption, Heartseeker, Masterwork Stormhammer, Hammer of the Titans.
-**Everything else about them is unknown.** Skill level, whether they are still mutually exclusive, what switching costs. No guide site mentions them at all, and **presence in the client proves only that they were not removed.** The beta caps professions at 225 and characters at 20 to 30, and every specialisation sits above that, so **no tester can reach one.**
+**Everything else about them is unknown.** Skill level, whether they are still mutually exclusive, what switching costs. No guide site mentions them at all, and **presence in the client proves only that they were not removed.** The beta caps professions at 225 and characters at 30, and every specialisation sits above that, so **no tester can reach one.**
 ## Levelling it
 1. **1 → 75**: Rough Sharpening Stone (~26), then Rough Grinding Stone (~74)
 2. **75 → 150**: copper and bronze armour

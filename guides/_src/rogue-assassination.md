@@ -1,10 +1,10 @@
-updated: October 2, 2026
+updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Assassination Guide|https://www.wowhead.com/forever/guide/classes/rogue/assassination/level-20-dps-overview ;; Icy Veins — Assassination Rogue PvE Guide|https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-guide ;; ClassicWoW.gg — Assassination Rogue|https://classicwow.gg/forever/guides/rogue/assassination
 
 Poison and bleed pressure on a single target, built around [[Mutilate]] — it needs **21 Assassination talent points**, which is the whole argument about this spec.
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day and is the cap for the rest of the beta, so no level-60 Assassination build has been tested, and none of our three sources publish a level-30 build yet either — the cap has not risen that far. Talent rows unlock at levels 10, 15, 20, 25, 30, 35 and 40. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
+Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Assassination build has been tested. Talent rows unlock at levels 10, 15, 20, 25, 30, 35 and 40. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Assassination worth levelling?
 **Sources genuinely disagree, and we are not going to pretend otherwise.**
@@ -20,7 +20,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1
 5. **`Relentless Strikes`** at 20
 **`Improved Slice and Dice` is explicitly rejected:** *"mobs and even bosses in this level bracket are unlikely to survive long enough."*
 **Wowhead publishes two different level 20 builds**, and neither is this one. Its **Backstab Build** puts 3 points into `Puncturing Wounds` for **+30% Backstab crit and a 45% chance of a bonus combo point**, plus `Improved Sinister Strike` "solely for when you inevitably pull aggro." Its **Relentless Strikes Build** spends those points on `Relentless Strikes` and `Ruthlessness` for Energy economy instead, on either a dagger or a slow one-hander. Wowhead's own framing explains the overlap with Combat: at 20 it says Assassination "will ultimately play the same as the Combat Rogue for now."
-**Level 30: 21/0/0 — our own extension, not a published build.** No source has posted one; the beta has not reached 30. Extending the level 20 build on the tree's own point costs: `Malice` 5 → `Remorseless Attacks` 2 → `Ruthlessness` 3 → `Relentless Strikes` 1 → `Lethality` 5 → `Vile Poisons` 4 → **[[Mutilate]]** at 30. What is confirmed: [[Mutilate]] costs 21 Assassination points (ClassicWoW.gg), `Venom` is a 31-point capstone, so unreachable at either beta cap, and `Cold Blood` — a guaranteed-crit cooldown on your next finisher — "was moved higher in the talent tree" for Forever (Icy Veins), reachable well before Classic's tree allowed.
+**Level 30: 21/0/0 — our own extension, not a published build.** No source has posted one; the cap only reached 30 on October 1. Extending the level 20 build on the tree's own point costs: `Malice` 5 → `Remorseless Attacks` 2 → `Ruthlessness` 3 → `Relentless Strikes` 1 → `Lethality` 5 → `Vile Poisons` 4 → **[[Mutilate]]** at 30. What is confirmed: [[Mutilate]] costs 21 Assassination points (ClassicWoW.gg), `Venom` is a 31-point capstone, so unreachable at either beta cap, and `Cold Blood` — a guaranteed-crit cooldown on your next finisher — "was moved higher in the talent tree" for Forever (Icy Veins), reachable well before Classic's tree allowed.
 ## Rotation
 **At level 20 all three Rogue specs play identically.**
 1. **From 20, [[Instant Poison]] on both weapons**
