@@ -7,7 +7,7 @@ Dual-wield rage dump, though **the spec's own gimmick is unavailable for the ent
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Fury build has been tested. Talent tiers unlock at 10, 15, 20, 25, 30, 35, and the capstone at **40**. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended. Blizzard's own caveat: "class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes." The crit-Rage bonus is the live example — it has already moved from 75% to 100% inside the beta, so treat the figure as tuning in progress.
 :::
 ## Is Fury worth levelling?
-**Yes — it is the least-bad Warrior levelling choice, with a real caveat.** Fury's tier 1 and 2 talents are what *every* Warrior takes, which is why the published Arms and Fury level-20 builds are **identical**.
+**No source rates Fury the best Warrior leveller: Icy Veins ties it with Arms at 2.0/5 for Levelling and scores Protection higher at 2.5/5, and neither Wowhead nor ClassicWoW.gg publishes a score.** What it does have going for it is that Fury's tier 1 and 2 talents are what *every* Warrior takes, which is why the published Arms and Fury level-20 builds are **identical**.
 Against it: **you cannot dual-wield until level 20**, and [[Whirlwind]] is **level 36**. So for the first twenty levels you are a two-handed Warrior with Fury talents, and the spec does not exist as such until well past that.
 ## Your talent points
 **Level 20: 0/11/0.**
@@ -17,7 +17,7 @@ Against it: **you cannot dual-wield until level 20**, and [[Whirlwind]] is **lev
 **Level 30: 0/21/0 — our own extension, not a published build**, reaching `Death Wish`: `Cruelty` 5, `Unbridled Wrath` 5, `Furious Precision` 3, `Blood Craze` 2, **`Dual Wield Specialization` 5**, `Death Wish` 1. `Furious Precision` fills the three points `Improved Cleave` used to hold — it is the new row 3 talent (+4/7/10% off-hand hit) that replaced `Boundless Rage`, and it is also the closest thing left to the off-hand hit chance `Dual Wield Specialization` itself no longer grants (see Stat priority).
 **`Raging Blows` changed shape and this build does not take it.** It no longer makes [[Whirlwind]] strike with your off-hand — **Whirlwind now always strikes with both weapons, no talent required, for every Warrior who dual-wields.** What is left of `Raging Blows` is a flat Rage discount, 3 off both [[Cleave]] and [[Whirlwind]] (up from 2, Cleave-only). Worth a point if you have one spare past 21; not worth restructuring the build for.
 ## Rotation
-**Identical to Arms at low level, minus [[Slam]].** The two specs genuinely play the same until 30, and saying so is more useful than padding.
+**Identical to Arms at low level, minus [[Slam]].** The two specs play the same until 30.
 1. **[[Battle Shout]]** and **[[Bloodrage]]**
 2. **[[Charge]]** to open
 3. **[[Demoralizing Shout]]** on non-casters

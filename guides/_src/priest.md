@@ -2,7 +2,7 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Class Deep Dives: Priest and Warrior|https://worldofwarcraft.blizzard.com/en-us/news/24301514 ;; Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap ;; Wowhead — Level 20 Discipline Priest Guide|https://www.wowhead.com/forever/guide/classes/priest/discipline/level-20-healer-overview ;; Wowhead — Level 20 Holy Priest Guide|https://www.wowhead.com/forever/guide/classes/priest/holy/level-20-healer-overview ;; Wowhead — Level 20 Shadow Priest Guide|https://www.wowhead.com/forever/guide/classes/priest/shadow/level-20-dps-overview ;; Icy Veins — Priest Class Overview|https://www.icy-veins.com/wow-forever/priest-class-overview ;; ClassicWoW.gg — Priest Class Overview & Changes|https://classicwow.gg/forever/guides/priest
 
-Priest is the archetypal healer and always wanted for groups. The thing to know before you pick a spec is that **[[Mind Flay]] is talent-only in Forever** — the client gives it with a Shadow talent point rather than a trainer, gated on 10 points in that tree, where Classic taught it at level 20 — so in practice a Holy or Discipline Priest does not have it.
+Priest is a cloth-wearing caster with two healing specialisations and one ranged damage specialisation. The thing to know before you pick a spec is that **[[Mind Flay]] is talent-only in Forever** — the client gives it with a Shadow talent point rather than a trainer, gated on 10 points in that tree, where Classic taught it at level 20 — so in practice a Holy or Discipline Priest does not have it.
 :::scope
 Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so **no level-60 Priest build has been tested.** On September 30, 2026 Blizzard published its own Priest Class Deep Dive — not a handful of small changes, but a wide pass across baseline abilities, every racial spell and all three talent trees. This page follows Blizzard's post over the three guide sites wherever they disagree. Ability training levels below are read from the client. Blizzard's own caveat: *"class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."*
 :::
@@ -10,29 +10,29 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of t
 | Spec | Role | Levelling | In one line |
 | --- | --- | --- | --- |
 | **[Discipline](/guides/wow-forever/priest/discipline/)** | Healer | 2.5/5 **solo**, 5.0/5 in dungeons | Mana efficiency and prevention rather than repair |
-| **[Holy](/guides/wow-forever/priest/holy/)** | Healer | 2.0/5 **solo**, 4.0/5 in dungeons | The strongest raw healing, and the slowest solo experience |
-| **[Shadow](/guides/wow-forever/priest/shadow/)** | Ranged DPS | **Best solo — 3.0/5** | [[Mind Flay]], which the client makes **talent-only** |
-**If you are soloing, level Shadow and respec to heal.** The published ratings are blunt — Discipline **2.5 out of 5**, Holy **2.0** — for the reason above: no published build for either reaches [[Mind Flay]]. A Priest without it has [[Smite]] and a wand.
-**But those numbers rate solo kill speed and nothing else.** The same source rates Discipline **5.0 out of 5 for dungeons**, the best of any Priest spec, and Holy 4.0 — **against Shadow's own dungeon rating of only 2.5**, the lowest of the three. **A healer never waits for a group**, so if you intend to level in dungeons the ranking effectively inverts, and Shadow is the one spec that does not benefit from it.
-**And Discipline has a solo pattern the ratings ignore:** [[Power Word: Shield]] absorbs the damage while your wand does the killing, at almost no mana cost. Slow, nearly unkillable, and how Discipline has soloed since vanilla.
+| **[Holy](/guides/wow-forever/priest/holy/)** | Healer | 2.0/5 **solo**, 4.0/5 in dungeons | Published as *"great all-rounders… very beginner-friendly"*, and the lowest solo rating of the three |
+| **[Shadow](/guides/wow-forever/priest/shadow/)** | Ranged DPS | **3.0/5 solo**, highest of the three; 2.5/5 in dungeons | [[Mind Flay]], which the client makes **talent-only** |
+**The published advice for soloing is to level with Shadow talents and respec to heal — the Discipline and Holy guides both say it in the same words:** *"it is a better idea to primarily use Shadow talents until you're able to get into group content."* The published ratings are blunt — Discipline **2.5 out of 5**, Holy **2.0** — for the reason above: no published build for either reaches [[Mind Flay]]. A Priest without it has [[Smite]] and a wand.
+**But those numbers rate solo kill speed and nothing else.** The same source rates Discipline **5.0 out of 5 for dungeons**, the best of any Priest spec, and Holy 4.0 — **against Shadow's own dungeon rating of only 2.5**, the lowest of the three. **Those dungeon scores invert the ranking if you intend to level in dungeons** — our own reading of the published numbers, not a published verdict — and Shadow is the one spec that does not benefit from it.
+**Discipline also has a solo pattern no source scores — our own reading:** [[Power Word: Shield]] absorbs the damage while your wand does the killing, at almost no mana cost. Slow, nearly unkillable, and how Discipline has soloed since vanilla.
 This is not a permanent commitment. Respeccing to Holy or Discipline once you want to heal dungeons is the normal path, and **`Dual Specialization` becomes available at level 40**, so from there you carry both. Below 40 it is a trainer visit, and in the beta the price is **1 silver** if you have not changed talents recently; a second reset costs much more and drops back to 1 silver an hour later. Blizzard calls that price *"temporary for the Beta only."*
 ## Is Priest for you?
 Play Priest if you want to be the person keeping everyone alive, and you are happy watching health bars rather than the fight.
 :::strengths
-- The broadest healing toolkit in the game, and always in demand for groups
-- A shadow specialisation that kills perfectly well on its own
+- The published dungeon ratings are the highest numbers on this page: Discipline 5.0, Holy 4.0
+- Shadow is the highest-rated Priest spec for solo levelling, 3.0 out of 5
 - A shield that prevents damage rather than repairing it
 :::
 :::weaknesses
-- Slow and fragile at low level, with a great deal of sitting and drinking
-- Mana drains faster than you expect
-- The most common way a Priest dies is watching everyone else's health
+- The published headings for both healing specs: *"Struggles To Solo Level"* and *"Zero AoE and Lackluster Damage"*
+- *"The main reason you'll die while playing as a Priest is running out of mana while still fighting against a healthy foe"*
+- Mobility is rated 1.0 out of 5 for both healing specs, the lowest score either carries
 :::
 :::new
 **Is the rotation simple?** Yes, a damage-over-time, a nuke, then your wand.
-**Is it forgiving?** Not solo. You are cloth-wearing and squishy.
-**Does it level well?** Slowly alone, comfortably in a group.
-**Does it need a group?** It does not require one, but healers are scarce and you will never wait for an invitation.
+**Is it forgiving?** Not solo. Cloth armour, and the published warning is running out of mana mid-fight.
+**Does it level well?** The published ratings split: 2.0 to 2.5 out of 5 solo, 4.0 to 5.0 in dungeons.
+**Does it need a group?** It does not require one. The published dungeon ratings are the highest numbers on this page, and the solo ones the lowest.
 :::
 ## Levelling milestones
 | Level | What you get |
@@ -52,9 +52,9 @@ Play Priest if you want to be the person keeping everyone alive, and you are hap
 | 48–60 | Prayer of Fortitude, Shadow Protection and Spirit all become **raid-wide** |
 **The client puts the gate at 10 points in the Shadow tree, not at your spec** — a healing Priest is not forbidden from dipping for [[Mind Flay]], which is why it does not appear above as a level-gated ability.
 ## Which race
-**Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling.** Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
+**Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling** *(ours, not a source's)*. Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Kill the vanilla answer first: you used to pick Dwarf for [[Fear Ward]], and Fear Ward is now baseline for everyone.** That reason is gone.
-**Alliance: Gnome**, whose two Priest racials are **brand new this patch** — `Confounding Flash` and `Contingency Plan`, the best panic button any Priest race has. **Dwarf is the stronger pure leveller**, though: `Desperate Prayer` at level 10 is a full instant self-heal nothing else on Alliance has that early, and Dwarf also picks up a new level-20 racial, `Chastise` (damages and immobilises a Humanoid target for 2 seconds, instant, 2-minute cooldown).
+**Alliance: Gnome**, whose two Priest racials are **brand new this patch** — `Confounding Flash` and `Contingency Plan`, the only area confuse and the only automatic below-35% absorb in the table below. **Dwarf's case is a self-heal**, though: `Desperate Prayer` at level 10 is a full instant self-heal nothing else on Alliance has that early, and Dwarf also picks up a new level-20 racial, `Chastise` (damages and immobilises a Humanoid target for 2 seconds, instant, 2-minute cooldown).
 **Horde: Undead, for `Touch of Weakness` and `Dark Sacrifice`.** Blizzard's class post settles what this page used to carry as an open, three-way disagreement: Icy Veins named Undead's second Priest racial `Touch of the Grave`, ClassicWoW.gg named it `Touch of Weakness`, and Wowhead's own class-quest table marked the level-20 Undead Priest spell "coming soon" rather than pick a side. **Blizzard's answer: Undead keeps `Touch of Weakness` unchanged, and gains a new level-20 spell, `Dark Sacrifice`** — cannibalise your own health to gain Mana over time, with the Mana gain increased by Spirit. **[[Fade]]'s doubled threat reduction is not part of the case for Undead** — Blizzard lists that under Baseline Abilities, so every Priest of every race has it. **Separately: every Undead character, not just Priests, also has the general-race ability `Cannibalize`** — distinct from `Touch of Weakness` and `Dark Sacrifice` above, and not a Priest racial at all — and the October 1 build fixed it so **it cannot be used while the caster is immune to Physical damage**. One figure worth carrying separately from Blizzard's post: datamined client data puts `Dark Sacrifice` on a ten-minute cooldown, which would make it an emergency mana button rather than a repeatable trade — Blizzard's own post does not state a cooldown, so treat the ten minutes as unconfirmed.
 **Skyborne cannot be a Priest.**
 **Every Priest race's spells, re-evaluated by Blizzard:**

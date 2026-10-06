@@ -2,14 +2,14 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Restoration Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-20-healer-overview ;; Icy Veins — Restoration Shaman PvE Guide|https://www.icy-veins.com/wow-forever/restoration-shaman-healer-pve-guide ;; ClassicWoW.gg — Restoration Shaman|https://classicwow.gg/forever/guides/shaman/restoration
 
-Triage healing — a big wave, a fast wave, or a chain heal across a cluster, now with an instant repeatable heal over time. **The dungeon healer, and the lowest levelling score on any Shaman page.**
+Triage healing — a big wave, a fast wave, or a chain heal across a cluster, now with an instant repeatable heal over time. **The published ratings put it highest of the three Shaman specs overall, at 4.0, and lowest for levelling, at 2.0.**
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Restoration build has been tested. **[[Chain Heal]] is level 40**, so the spec's signature spell does not exist at any beta cap. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Restoration worth levelling?
 **Slow to solo, strong in a group. The rating only measures the first.** The published heading is *"Healer Leveling"*: *"As a Healer specialization, Restoration lacks most of the damage talent support of other classes and has no area damage, making it more of a group leveling specialization."* Ratings: Overall 4.0, **Levelling 2.0.**
 Dungeons are what it is for: *"Restoration will make you a strong dungeon healer."*
-**Level Enhancement and respec when you want to heal**, or level in groups from the start. Soloing as Restoration means playing a worse Elemental Shaman: *"you will mostly use [[Lightning Bolt]] and [[Flame Shock]]… as if you were Elemental, with the downside of having no extra damage from talents."*
+**One major source's own advice is to level Enhancement and respec when you want to heal** — its level-20 recommendation for every Shaman is the Enhancement build (see below) — or level in groups from the start. Soloing as Restoration means playing a worse Elemental Shaman: *"you will mostly use [[Lightning Bolt]] and [[Flame Shock]]… as if you were Elemental, with the downside of having no extra damage from talents."*
 ## Your talent points
 **Level 20: 0/0/11.** Two published builds.
 **Build A:**
@@ -48,4 +48,4 @@ Healing bonus on gear now also grants **one third as much spell damage**, which 
 - **Totems last 5 minutes instead of 2 and reach 30 yards instead of 20.** Weapon imbues last 60 minutes instead of 5.
 - **A capstone conflict:** `Nature's Swiftness` needs 21 Restoration points, and **either** 31-point capstone needs 31: 52 against a 51-point budget. **`Nature's Swiftness` cannot coexist with `Rage of the Far Seer` or [[Lava Burst]].**
 ## At level 60
-Unknown. [[Riptide]] into [[Chain Heal]] is clearly the intended raid pattern, but **Chain Heal arrives at level 40 and no raid has been tested**, so its throughput and mana profile at 60 are unmeasured.
+Unknown. [[Riptide]] into [[Chain Heal]] is what [[Riptide]]'s own 25% bonus points at, but **Chain Heal arrives at level 40 and no raid has been tested**, so its throughput and mana profile at 60 are unmeasured.

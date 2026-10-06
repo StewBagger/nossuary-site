@@ -7,11 +7,11 @@ Ore, stone and smelting. **The vein table is unchanged from Classic**, so your o
 Vein types, skill thresholds and camp objects are come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta.** The zone recommendations below are **Classic spawn data**. Forever's new zones, including Zephras Isle, are not counted yet. Node density, respawn rules and skill-up rates are unpublished, apart from the October 1 cut to Poor Copper Vein nodes in the starter areas.
 :::
 ## Is Mining worth taking?
-**Yes, as a money profession**: more so than in vanilla, because Waylaid Crates give low-level ore a guaranteed buyer it never had.
+Waylaid Crates give low-level ore a guaranteed buyer it never had in vanilla, which makes Mining a better money profession than it was *(ours, not a source's)*.
 Mining crafts nothing itself; its entire value is feedstock and gold. It also **earns no Legacy Points**, since only the six crafting professions do. If you are chasing the 18 Tradeskill points, this is the wrong pick.
 **The real argument beyond gold is the camp object.** [[Lodestone]] at skill 20 gives **90 melee attack power** to everyone sitting nearby and does not stack with [[Blessing of Might]] — **that is foreverchanges.pro's reading of the client; Blizzard publishes no camp-object value and no equivalence to a class buff.** A melee group without a Paladin wants a miner at the fire.
 ## What it pairs with
-**Mining with Blacksmithing, or Mining with Engineering.** Both still hold; both of those professions eat ore and have no other feed. Nothing published suggests Forever changed that.
+**Blacksmithing and Engineering both eat ore, and Mining is the only profession that gathers it.** Neither has another feed. Nothing published suggests Forever changed that.
 ## The veins
 Byte-for-byte identical to Classic. **No vein is flagged as new.**
 | Skill | Vein |

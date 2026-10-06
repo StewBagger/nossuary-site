@@ -2,17 +2,17 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
-Leather off things you already killed — **the cheapest profession in the game to carry**, and on the client reading its camp object gives your whole group 2% critical strike.
+Leather off things you already killed — **the cheapest profession in the game to carry** *(ours, not a source's)*. It keys off the beast's level rather than a node table, and on the client reading its camp object gives your whole group 2% critical strike.
 :::scope
 The skill formula and camp objects are come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta.** Whether a Skinning Knife is still required is **not published.** Skinnable creature lists, leather tables and trainer requirements are explicitly unconfirmed.
 :::
 ## Is Skinning worth taking?
-**Yes if you already kill beasts; it is the weakest of the three as a pure money profession.** Leather demand is narrower than ore or herbs.
+It is the weakest of the three as a pure money profession, because leather demand is narrower than ore or herbs *(ours, not a source's)*.
 **It earns no Legacy Points.** Only the six crafting professions do.
 **The real argument is [[Camp Chair]] at skill 20: 2% critical strike with spells and attacks** for everyone sitting nearby. **That whole claim is foreverchanges.pro's reading of the client** — Blizzard has published nothing about a Camp Chair, about camp objects or about their values. On that reading it is a **raid-wide crit buff off a gathering profession**, and it does not stack with the Druid auras that cover the same ground: [[Moonkin Form]] and [[Leader of the Pack]], which Blizzard does say are mutually exclusive with each other. It matters most to a group with neither.
-Take it on a class that kills beasts anyway: Hunter, Druid, Rogue. It costs almost nothing there. As a standalone grind it is painful, because unlike Mining and Herbalism it has no craft to fall back on.
+Our own advice, which no source publishes: take it on a class that kills beasts anyway — Hunter, Druid, Rogue — where it costs almost nothing. As a standalone grind it is painful, because unlike Mining and Herbalism it has no craft to fall back on.
 ## What it pairs with
-**Skinning with Leatherworking.** Unchanged, and Leatherworking gained **271 new recipes**, the largest count of any profession, so leather demand is up.
+**Leatherworking eats leather, and Skinning is the only profession that gathers it.** Unchanged, and Leatherworking gained **271 new recipes**, the largest count of any profession, so leather demand is up.
 ## How the skill requirement works
 Published explicitly, and it keys off the beast's level rather than a node table:
 - **Skill 1** covers everything up to level 10

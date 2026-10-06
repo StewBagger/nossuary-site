@@ -9,7 +9,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1
 ## Is Bear worth levelling?
 **You do not get a choice before level 20.** Bear Form comes from a class quest at 10; Cat Form does not exist until 20. The published advice: *"As you reach Level 10 you will mainly want to level in Bear Form, using your Mana to heal yourself after killing enemies, and then recovering your Mana while in Bear Form."*
 **Be aware the class starts slowly:** *"Since Bear Form is not unlocked until Level 10, and Cat Form first at level 20, Feral Druid has a fairly slow start."*
-**Forever has three tanks**: Protection Warrior, Protection Paladin and Feral Druid. Bear is a real one.
+**Three tanks — Protection Warrior, Protection Paladin and Feral Druid — is the common assumption, not a Blizzard taxonomy**: Blizzard's own Druid deep dive credits Druids with the *"ability to serve any combat role"* and publishes no tank list.
 ## Your talent points
 **Level 20: 0/11/0.** Four different level-20 Feral builds are published and **they disagree on most of the eleven points.** Here is the one with a published click order:
 1. **`Ferocity`, 5 points**: *"helping with both your Rage economy while leveling allowing for more [[Maul]] casts, and reducing your energy cost in Cat Form"*
@@ -50,7 +50,7 @@ The Forever Feral spellbook is thin under the cap.
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
 | **`Thick Hide` 3/3** | 17 | **Completely rewritten, and compressed from five ranks to three.** Classic gave **+10% armour from items at 5/5**; Forever gives +3 base armour per level and +2 more per point of defense skill above five times your level, multiplied by your form. **It also applies in Cat, Dire Bear and Moonkin Form**, not just Bear |
-| **`Primal Bite`** | ~25 | The new single-target rage button: **100% weapon damage plus 26, for 20 Rage on a 6-second cooldown**, usable only in Bear or Dire Bear Form. Requires `Savage Fury` as a prerequisite. **This is the talent formerly called Mangle** — Blizzard's own words: *"We have opted to go with this ability instead of Mangle"* — and the rename is finished in the client: *"All talents referencing Mangle now reference Primal Bite."* Mangle is gone from the spellbook. **Its threat generation was roughly doubled in the October 1 build**, which is the clearest reason yet to prioritise it over [[Maul]] once you have it |
+| **`Primal Bite`** | ~25 | The new single-target rage button: **100% weapon damage plus 26, for 20 Rage on a 6-second cooldown**, usable only in Bear or Dire Bear Form. Requires `Savage Fury` as a prerequisite. **This is the talent formerly called Mangle** — Blizzard's own words: *"We have opted to go with this ability instead of Mangle"* — and the rename is finished in the client: *"All talents referencing Mangle now reference Primal Bite."* Mangle is gone from the spellbook. **Its threat generation was roughly doubled in the October 1 build** — our own reading of that change, which no source has published, is to prioritise it over [[Maul]] once you have it |
 | **`Natural Reaction`** | 39 | New, Bear-oriented, row 6. It increases your Dodge chance and gives each Dodge **a chance to grant 5 rage** — Blizzard publishes neither a rank count nor the percentages |
 | **[[Berserk]]** | **40** | The 31-point capstone — 15-second duration, 3-minute cooldown, usable in Bear, Cat or Dire Bear Form. Not in the beta |
 ## What Forever changed for Bear

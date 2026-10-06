@@ -6,8 +6,8 @@ Slow and peaceful, and in Forever no longer optional if you want Cooking: **five
 Skill levels and camp objects are come from foreverchanges.pro's reading of the beta client and are solid. **The rank thresholds below are Classic's**, and the source publishing them marks them as Classic values rather than confirmed Forever ones. Fishing is nonetheless the only profession with any published rank data at all.
 :::
 ## Is Fishing worth it?
-**Yes, if you intend to cook**, and you should: [Cooking](/guides/wow-forever/professions/cooking/) gives +5% experience from kills. Fishing costs no primary slot and it feeds that route directly.
-**On its own terms it is still the slowest thing in the game.** It now has a reason beyond itself, though: the fish, a camp object worth having, and its own Legacy perk.
+[Cooking](/guides/wow-forever/professions/cooking/) gives +5% experience from kills, and Fishing costs no primary slot and feeds that route directly. You should cook, and therefore you should fish *(ours, not a source's)*.
+On its own terms it is still the slowest thing in the game, but it now has reasons beyond itself: the fish, a camp object worth having, and its own Legacy perk *(ours, not a source's)*.
 ## Getting started
 1. **Learn Fishing** from a trainer. There is now one **by the pond in Valanaar, the Skyborne city**
 2. You also get **[[Find Fish]]** (nearby fishing nodes appear on the minimap) and **[[Bait and Tackle]]**, which lets you place Fishing camp objects
@@ -18,7 +18,7 @@ Skill levels and camp objects are come from foreverchanges.pro's reading of the 
 | **20** | **[[Fish Bowl]]** | **8% to all stats** for everyone sitting nearby, and it does not stack with [[Blessing of Kings]] — the client reading, not a Blizzard figure. Needs a Raw Brilliant Smallfish and an Empty Vial |
 | 140 | [[Fishing Rack]] | Blueprint. Produces uncommon fish on a 1-hour cycle, and keeps the Fish Bowl's 8% |
 | 300 | [[Fishing Hut]] | Blueprint. Produces rare fish, and keeps the 8% |
-**A Fish Bowl at skill 20 stands in for Blessing of Kings when the party has no Paladin**, which is the best reason to take Fishing in Forever. **It does not stack with the real thing**: on foreverchanges.pro's reading of the client, a camp buff never stacks with the class buff it copies, so you keep one or the other. **Blizzard publishes no camp-object value and no equivalence to a class buff**, so the 8% and the match to [[Blessing of Kings]] are the client's, not Blizzard's.
+**A Fish Bowl at skill 20 stands in for Blessing of Kings when the party has no Paladin.** **It does not stack with the real thing**: on foreverchanges.pro's reading of the client, a camp buff never stacks with the class buff it copies, so you keep one or the other. **Blizzard publishes no camp-object value and no equivalence to a class buff**, so the 8% and the match to [[Blessing of Kings]] are the client's, not Blizzard's.
 ## Ranks
 | Rank | Skill |
 | --- | --- |

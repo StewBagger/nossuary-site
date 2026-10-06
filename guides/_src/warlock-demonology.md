@@ -7,8 +7,8 @@ Your demon fights alongside you and your own damage keeps it alive. **Icy Veins 
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Demonology build has been tested. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Demonology worth levelling?
-**Yes. Joint best in the class.** *"Demonology is an excellent solo leveler because your demon can take a lot of pressure off you while you cast from range."*
-**One cost, in the source's own words:** *"Unlike Affliction, this build does not take `Improved Corruption`, so [[Corruption]] still has a cast time"*, which means *"setting up multiple enemies takes longer than it does for Affliction."* Single target it is even; on packs Affliction is faster.
+**Yes — on Icy Veins' scores, joint best in the class.** *"Demonology is an excellent solo leveler because your demon can take a lot of pressure off you while you cast from range."*
+**One cost, in the source's own words:** *"Unlike Affliction, this build does not take `Improved Corruption`, so [[Corruption]] still has a cast time"*, which means *"setting up multiple enemies takes longer than it does for Affliction."*
 ## Your talent points
 **Level 20: 11/0/0, and Icy Veins and Wowhead disagree on whether `Improved Corruption` belongs in it at all.**
 **Icy Veins:** `Improved Corruption` 5 (Affliction) + `Unholy Power` 5 + `Demonic Energies` 1. Its own case for the Affliction points: *"Unlike Affliction, this build does not take Improved Corruption, so Corruption still has a cast time"* is framed as a cost worth paying to get `Unholy Power` and `Demonic Energies` online.
@@ -36,7 +36,7 @@ Same order as Affliction, **different reasoning at two places.** Spell Power bec
 **A stated limitation:** *"Demon scaling also needs additional testing to determine exactly how each of your stats affects your active demon."*
 ## Your demon
 Same unlocks as every Warlock — [[Imp]] 2, [[Voidwalker]] 10, [[Succubus]] 20, [[Felhunter]] 30. But *"Your Demonology talents make every one of them stronger, so the best choice depends on what you are doing."* The Voidwalker's threat spell is `Torment`; Wowhead notes it is noticeably weaker until rank 2 trains at 20.
-The [[Imp]] becomes viable here: it *"can run out of Mana quickly, but `Demonic Energies` helps significantly by restoring its Mana whenever you Life Tap."*
+The [[Imp]]'s mana problem is answered here: it *"can run out of Mana quickly, but `Demonic Energies` helps significantly by restoring its Mana whenever you Life Tap."*
 ## What defines Demonology
 | Talent | Earliest level | What it does |
 | --- | --- | --- |

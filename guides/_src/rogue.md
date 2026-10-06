@@ -2,34 +2,34 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Assassination Guide|https://www.wowhead.com/forever/guide/classes/rogue/assassination/level-20-dps-overview ;; Wowhead — Level 20 Combat Rogue Guide|https://www.wowhead.com/forever/guide/classes/rogue/combat/level-20-dps-overview ;; Wowhead — Level 20 Subtlety Guide|https://www.wowhead.com/forever/guide/classes/rogue/subtlety/level-20-dps-overview ;; Icy Veins — Rogue Class Overview|https://www.icy-veins.com/wow-forever/rogue-class-overview ;; ClassicWoW.gg — Rogue|https://classicwow.gg/forever/guides/rogue ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap
 
-Rogue kills fast, dies fast and picks its fights. Forever moved Lockpicking to level 1 as a secondary skill, did the same to Poisons, and **[[Sap]] now needs no stealth and does not break it**.
+Rogue is a leather-wearing melee class with no self-heal that opens fights from stealth. Forever moved Lockpicking to level 1 as a secondary skill, did the same to Poisons, and **[[Sap]] now needs no stealth and does not break it**.
 :::scope
 Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so **no level-60 Rogue build has been tested.** Rogue remains the class Blizzard has said least about — the October 1 notes give it two lines: the [[Expose Armor]] combo-point fix (below) and a Subtlety tweak to `Setup` (see the Subtlety guide). Ability training levels below are read from the client; almost nothing else about Rogue is officially documented.
 :::
 ## Which spec?
-| Spec | Role | Levelling | In one line |
+| Spec | Role | Levelling (Icy Veins) | In one line |
 | --- | --- | --- | --- |
-| **[Assassination](/guides/wow-forever/rogue/assassination/)** | Melee DPS | Contested, see below | Poisons and daggers, built around [[Ambush]] and bleed damage |
-| **[Combat](/guides/wow-forever/rogue/combat/)** | Melee DPS | **Safest pick** | Swords and maces, `Riposte`, and the most forgiving of the three |
-| **[Subtlety](/guides/wow-forever/rogue/subtlety/)** | Melee DPS | Viable | `Ghostly Strike`, openers from stealth, and the strongest PvP tree |
-**All three are melee damage, so pick on how you want to play rather than on role.** Combat is the low-risk answer — Wowhead calls it **"probably the most 'complete' Rogue specialization at level 20."** Assassination is a genuine three-way split: **Icy Veins** rates its levelling **4 out of 5** (tied with Combat) and calls it *"likely to be very strong especially in this level bracket due to the potency of talents like `Remorseless Attacks`,"* while **Wowhead** calls the same level bracket *"wholly underwhelming"* and says Assassination *"will ultimately play the same as the Combat Rogue for now"* until [[Mutilate]] unlocks. Subtlety draws Wowhead's same *"wholly underwhelming"* verdict and is Icy Veins' lowest-rated spec overall (2.5 vs 3.0 for the other two) — mobility and stealth are why you would still pick it.
+| **[Assassination](/guides/wow-forever/rogue/assassination/)** | Melee DPS | 4/5, 3.0 overall | Poisons and daggers, built around [[Ambush]] and bleed damage |
+| **[Combat](/guides/wow-forever/rogue/combat/)** | Melee DPS | 4/5, 3.0 overall | Swords and maces, `Riposte`, and Wowhead's *"most 'complete'"* Rogue spec at 20 |
+| **[Subtlety](/guides/wow-forever/rogue/subtlety/)** | Melee DPS | 4/5, 2.5 overall | `Ghostly Strike`, openers from stealth, and **no area damage of any kind** |
+**All three are melee damage, so pick on how you want to play rather than on role.** **Icy Veins is the only one of the three sources that scores the specs**, and it gives all three the same **4 out of 5** for levelling, separating them on its Overall score alone: 3.0 for Assassination and Combat, 2.5 for Subtlety. **Icy Veins and Wowhead agree about Combat** — Wowhead calls it *"probably the most 'complete' Rogue specialization at level 20,"* and Icy Veins *"an incredibly simple class to play and to optimize damage."* **About Assassination they genuinely disagree, and we are not going to pretend otherwise:** Icy Veins says it is *"likely to be very strong especially in this level bracket due to the potency of talents like `Remorseless Attacks`,"* while Wowhead calls the same level bracket *"wholly underwhelming"* and says Assassination *"will ultimately play the same as the Combat Rogue for now"* until [[Mutilate]] unlocks. **About Subtlety they agree again:** Icy Veins heads its section *"Weakest Among Rogue Specs"*, and Wowhead gives it the same *"wholly underwhelming"* verdict. **ClassicWoW.gg scores nothing**, and is cited on these pages for talent costs and mechanics only.
 ## Is Rogue for you?
-Play Rogue if you like deciding when a fight starts, and you accept dying quickly as the price of killing quickly.
+Play Rogue if you like deciding when a fight starts, and you are willing to level a class wearing leather with no self-heal.
 :::strengths
-- The best opening burst in the game, and you choose every fight from stealth
-- Walks past anything it does not want to fight
-- Very fast kills at low level
+- You choose when every fight starts: [[Stealth]] from level 1, opening with [[Ambush]] from 18
+- [[Stealth]] and [[Sprint]] let you walk past a fight instead of winning it
+- **Icy Veins rates all three specs 4 out of 5 for levelling**
 :::
 :::weaknesses
 - Leather armour, no healing, and no way to protect an ally
-- Two enemies at once is a genuine emergency
-- Positioning matters more than for any other starting class
+- No area damage before [[Blade Flurry]] at 30, and Wowhead says Subtlety has *"no AoE capabilities whatsoever"*
+- [[Backstab]] and [[Ambush]] both need you behind the target, and a weapon swap costs a global cooldown
 :::
 :::new
-**Is the rotation simple?** Yes, build combo points, spend them. Two buttons plus utility.
-**Is it forgiving?** No. You have no heal and very little armour.
-**Does it level well?** Quickly, with a lot of eating in between.
-**Does it need a group?** No, and it is the best class in the game at avoiding fights it cannot win.
+**Is the rotation simple?** Icy Veins calls Combat *"two buttons"* — build combo points, then spend them.
+**Is it forgiving?** No: no self-heal, and leather armour.
+**Does it level well?** Icy Veins rates all three specs 4 out of 5 for levelling.
+**Does it need a group?** No. [[Stealth]] lets you walk past the fights you would lose.
 :::
 ## Levelling milestones
 | Level | What you get |
@@ -51,7 +51,7 @@ Play Rogue if you like deciding when a fight starts, and you accept dying quickl
 | 40 | [[Safe Fall]], mount |
 **Every Rogue combat ability trains at its Classic level.** What moved is the two utility systems: **Lockpicking and Poisons are both secondary skills now, like First Aid**, and Pick Lock came down to level 1 with it.
 ## Which race
-**Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling.** Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
+**Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling** *(ours, not a source's)*. Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Alliance: Human** for long fights, on `Sword Specialization` at **+2% crit**, the largest weapon racial. **Gnome** is the better levelling pick for `Eureka!` and `Escape Artist`.
 **Horde: Orc, unambiguously.** `Axe Specialization` gives +1% crit, and **Rogues can use one-handed axes in Forever**, which is new.
 **Forever changed the answer three ways.** Weapon racials became crit racials; Rogues gained one-handed axes; and **`Hack and Slash` replaced Sword Specialization**, absorbing the dagger, fist and mace slots, one talent branching by weapon, **axes included**, which is the other half of why Orc's racial matters. There is no longer a sword-*exclusive* reason to be Combat, but swords are still served there.

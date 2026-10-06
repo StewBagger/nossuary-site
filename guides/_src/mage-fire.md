@@ -7,10 +7,10 @@ Pure damage and nothing else. Forever finally makes [[Pyroblast]] a spell you ca
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Fire build has been tested. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Fire worth levelling?
-**Usable, but slower than Frost or Arcane.**
+**Icy Veins rates Fire 2.5/5 for levelling, the lowest of its three Mage scores (Arcane 4/5, Frost 3.5/5), under the heading *"Usable, But Better Options Are Available"*; Wowhead and ClassicWoW.gg publish no levelling score.**
 Before level 30 you have *"no reliable way to use Pyroblast other than a pre-pull cast."* And the payoff talents sit deep: *"at low levels, your Critical Strike chance is not very high… the bread-and-butter talents that make Fire work very well are deep down in the Fire and Frost talent trees."* Those tiers are levels 25 through 40.
 **Forever also nerfed Fire's baseline damage.** [[Fireball]] rank 12 hits for 425–541 where Classic gave 596–760; [[Scorch]] and [[Pyroblast]] were cut similarly. `Ruin`-style payoffs moved deeper.
-It is not written off: *"The AoE leveling potential of Fire is also respectable."* But one published guide does not publish a level-20 Fire build at all, consistent with its own advice.
+It is not written off: *"The AoE leveling potential of Fire is also respectable."* But one published guide does not publish a level-20 Fire build at all.
 ## Your talent points
 **Level 20: 0/11/0.**
 1. `Improved Fireball`, 5 points
@@ -51,4 +51,4 @@ Below 60 the problem is availability, not ranking: low-level gear does not carry
 - [[Combustion]]'s charge count **returned to 3 non-periodic Fire crits on October 1** (it briefly ran at 4 before that, which is what the three tracked guide sites still describe — treat any "4 charges" claim as pre-patch). [[Blast Wave]] no longer requires [[Pyroblast]] and now dazes for 50%. `Impact` was cut from 5 ranks to 3. `Burning Soul` went from 2 ranks to 3 but is weaker per rank.
 - **Whether Mage area spells keep a target cap or falloff in Forever is unconfirmed.** None of the three tracked sources states it either way — don't build a farming plan on an assumption in either direction.
 ## At level 60
-Unknown, and it bites Fire hardest. Every source ties the spec to a critical strike rate *"you only gain… through gear at or near the Level 60 content"*, which nobody has yet.
+Unknown. Icy Veins ties the spec to a critical strike rate *"you only gain… through gear at or near the Level 60 content"*, which nobody has yet.

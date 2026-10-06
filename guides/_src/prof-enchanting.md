@@ -7,8 +7,8 @@ Permanent bonuses on gear, paid for by destroying other gear. **Forever gave enc
 Recipes, reagents and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta.** One of the sources below has no Forever Enchanting page at all, so this profession is more thinly covered than the others.
 :::
 ## Is Enchanting worth taking?
-**Yes if you are a caster also taking Tailoring, or if you want the most durable gold engine in the game.** It earns **Legacy Points** at 150, 225 and 300.
-It is not a levelling-power profession. You pour money in and sell enchants at 60. But **Forever gave it an argument it never had**: **[[Malleable Essence of Nature]], the gating reagent for every crafted tier piece in Blacksmithing, Leatherworking and Tailoring, is only obtained by disenchanting items from the two new raids.**
+It earns **Legacy Points** at 150, 225 and 300. It is worth taking if you are a caster also taking Tailoring, or if you want the most durable gold engine in the game *(ours, not a source's)*.
+It is not a levelling-power profession: you pour money in and sell enchants at 60 *(ours, not a source's)*, and the relic figures below cut against that. But **Forever gave it an argument it never had**: **[[Malleable Essence of Nature]], the gating reagent for every crafted tier piece in Blacksmithing, Leatherworking and Tailoring, is only obtained by disenchanting items from the two new raids.**
 At the beta cap its three new **class relics are best in slot**. One source calls each *"the best relic at level 20 in my gear lists."* **That figure is level 20**, which was the beta cap when it was written; the cap rose to 30 on October 1 and it has not been re-checked.
 ## What it pairs with
 **Tailoring**, and for the vanilla reason, unchanged: *"Enchanting doesn't rely on a particular gathering profession, so Enchanters occasionally pursue Tailoring to allow them to quickly create magic items to disenchant."*

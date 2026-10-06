@@ -1,16 +1,16 @@
 updated: October 5, 2026
 build: 1.60.1.70124
 
-Potions, elixirs, flasks and transmutes. **The most substantially rewritten profession in Forever** — 70 of its 179 recipes are new, including three whole consumable ladders and **four new raid flasks.**
+Potions, elixirs, flasks and transmutes. **70 of its 179 recipes are new**, including three whole consumable ladders and **four new raid flasks.**
 :::scope
 Recipes, skill levels and reagents are come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta**, so nothing above that has been crafted by anyone. The levelling route below is **computed from recipe skill-colours, not tested**. The source publishing it says so. Where the new herbs come from is unpublished.
 :::
 ## Is Alchemy worth taking?
-**Yes, and of the crafting professions it has the strongest case.** It is a money profession *and* a raid-utility profession. It also earns **Legacy Points** at skill 150, 225 and 300, and grants a title.
-It suits **every class**: the new consumable ladders cover spell healing, spell damage and attack power at every tier. Healers and casters get the most, since the Mender's, Cleric's and Mageblood lines are all new.
+It is a money profession *and* a raid-utility profession. It earns **Legacy Points** at skill 150, 225 and 300, and grants a title. Of the crafting professions it has the strongest case *(ours, not a source's)*.
+It suits **every class**: the new consumable ladders cover spell healing, spell damage and attack power at every tier, and healers and casters get the most, since the Mender's, Cleric's and Mageblood lines are all new *(ours, not a source's)*.
 ## What it pairs with
-**Alchemy with Herbalism.** Unchanged, and Alchemy has no other feed.
-**The Herbalism half is more optional than it was.** [Merchant's Favor](/guides/wow-forever/professions/merchants-favor/) buys recipes, and the crates that earn it can be bought at the auction house.
+**Alchemy eats herbs, and Herbalism is the only profession that gathers them.** Unchanged, and Alchemy has no other feed.
+Our own reading, which no source publishes: the Herbalism half is more optional than it was, because [Merchant's Favor](/guides/wow-forever/professions/merchants-favor/) buys recipes and the crates that earn it are tradeable, so they can be bought at the auction house.
 ## What Forever added
 **Three new consumable ladders**, spanning the whole level range:
 | Ladder | What it gives | Skill range |
@@ -19,14 +19,14 @@ It suits **every class**: the new consumable ladders cover spell healing, spell 
 | **[[Spellblasting Potion]]** | Spell damage, +7 up to +47 | 35 → 285 |
 | **[[Frenzy Potion]]** | Attack power, +12 up to +80 | 40 → 290 |
 Plus new **Mageblood** (mana per 5 seconds) and **Cleric's** (healing done) elixir ladders, and new Spirit and Intellect tiers.
-**Four new raid flasks, the biggest change in the profession.** Each sits at skill 300, lasts 2 hours and gives **+60 Stamina**. All four carry a clause vanilla never had:
+**Four new raid flasks.** Each sits at skill 300, lasts 2 hours and gives **+60 Stamina**. All four carry a clause vanilla never had:
 | Flask | Extra effect, **in Mount Hyjal, Hyjal Summit and the Barrow Deeps only** |
 | --- | --- |
 | [[Flask of Natural Accuracy]] | **5% hit chance** |
 | [[Flask of Natural Aggression]] | **4% critical strike** |
 | [[Flask of Natural Precision]] | **5% reduced chance to be dodged or parried** |
 | [[Flask of Natural Swiftness]] | **5% haste** |
-**These are zone-scoped.** Vanilla has no design pattern like it, and it is a strong hint about where Forever's first raid tier sits. Their reagents are the new herbs: Death Lotus, Demonsage and Marefoil, **none of which has a published gathering node.**
+**These are zone-scoped.** Vanilla has no design pattern like it. Their reagents are the new herbs: Death Lotus, Demonsage and Marefoil, **none of which has a published gathering node.**
 **The five vanilla flasks are all present and unchanged.**
 ## Changes that will catch out a veteran
 - **Six oils now yield 2 per craft instead of 1**: Fire Oil, Shadow Oil, Frost Oil, Goblin Rocket Fuel, Ghost Dye and **Stonescale Oil**. If you are budgeting Stonescale for flasks off vanilla memory, **you are buying twice what you need.**

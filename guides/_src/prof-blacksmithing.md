@@ -7,11 +7,11 @@ Plate, mail, weapons and stones. In vanilla it was the money profession. **In Fo
 Recipes, reagents and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta.** **Blizzard is deliberately hiding item stats until they drop**, so 70 Blacksmithing recipes make something the client will not describe. Every "best in slot" figure below is **level 20**, which was the beta cap when it was written; the cap rose to 30 on October 1 and these have not been re-checked against it. Nobody knows the level-60 answers.
 :::
 ## Is Blacksmithing worth taking?
-**Yes, if you wear plate or mail.** Warriors and Paladins first. It earns **Legacy Points** at skill 150, 225 and 300, and it makes gear that is genuinely competitive rather than a stopgap.
+Blacksmithing makes plate and mail, so Warriors and Paladins are its wearers. It earns **Legacy Points** at skill 150, 225 and 300. By the best-in-slot counts below, it is worth taking, and its gear is genuinely competitive rather than a stopgap *(ours, not a source's)*.
 At the current cap, **17 of the 22 Blacksmithing items in level-20 best-in-slot lists are new Forever items**, and [[Guard's Silvered Chain Helm]] at skill 95 is best in slot for six Warrior and Paladin specs.
 The advice that comes with it: *"Use Blacksmithing to fill useful gaps in your equipment rather than slowing down your leveling route to craft every available recipe."*
 ## What it pairs with
-**Mining.** Unchanged. Blacksmithing eats ore and has no other feed.
+**Blacksmithing eats ore, and Mining is the only profession that gathers it.** Unchanged, and Blacksmithing has no other feed.
 ## What Forever changed
 - **A whole new armour economy at the trade camp.** 60 plans bought with [Merchant's Favor](/guides/wow-forever/professions/merchants-favor/), in role-templated families: five mail lines at skill 45–125, then five plate lines at 175–250. One piece per stat profile per slot: the tank version carries Defense Rating, the healer version Spell Damage and Healing. **These are Bind on Pickup, so taking the profession is the only way to get them.**
 - **New blacksmith-only weapons that double as your tool.** [[Mithril Blacksmith Hammer]] at skill 195 and [[Arcanite Blacksmith Hammer]] at 270 both *"serve as a Blacksmith Hammer"* and are real weapons. No vanilla equivalent.

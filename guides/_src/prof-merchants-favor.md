@@ -30,7 +30,7 @@ A reputation-free currency you earn by handing in **Waylaid Crates**, and spend 
 | Engineering | 29 |
 | Cooking | 6 |
 **Gathering professions buy no recipes.** They feed the crates instead.
-**This is where most of the good level-20 gear lives.** The role-templated armour families in Blacksmithing, Leatherworking and Tailoring are all Merchant's Favor recipes, and they are **Bind on Pickup**, so nobody can sell you the finished piece. You buy the recipe and make it yourself.
+By the best-in-slot counts on those three pages, **this is where most of the good level-20 gear lives** *(ours, not a source's)*. The role-templated armour families in Blacksmithing, Leatherworking and Tailoring are all Merchant's Favor recipes, and they are **Bind on Pickup**, so nobody can sell you the finished piece. You buy the recipe and make it yourself.
 ## Certifications and titles
 These come only from this system. At **skill 300**, **1,000 Merchant's Favor** buys a Certification that unlocks an **account-wide title**: *the Alchemist*, *the Blacksmith*, *the Enchanter*, *the Engineer*, *the Leatherworker*, *the Tailor*.
 **Six crafting professions only.** There is no gathering title and no Cooking title. **The title is account-wide, but only a character with 300 skill in that profession can display it.**

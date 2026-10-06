@@ -2,38 +2,38 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Beta Known Issues, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-known-issues-october-1/2352687 ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap ;; foreverchanges.pro — beta client data|https://foreverchanges.pro ;; Wowhead — Level 20 Beast Mastery Hunter|https://www.wowhead.com/forever/guide/classes/hunter/beast-mastery/level-20-dps-overview ;; Wowhead — Level 20 Marksmanship Hunter|https://www.wowhead.com/forever/guide/classes/hunter/marksmanship/level-20-dps-overview ;; Wowhead — Level 20 Survival Hunter|https://www.wowhead.com/forever/guide/classes/hunter/survival/level-20-dps-overview ;; Icy Veins — Hunter Class Guide|https://www.icy-veins.com/wow-forever/hunter-class-overview ;; ClassicWoW.gg — Hunter Overview & Changes|https://classicwow.gg/forever/guides/hunter
 
-Hunter is the easiest class in the game to level alone and one of the hardest to play well in a group. Your pet tanks while you shoot, and Forever made pets scale with your own gear.
+Your pet tanks while you shoot, and Forever made pets scale with your own gear.
 :::scope
 Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so **no level-60 Hunter build has been tested.** Ability training levels below come from foreverchanges.pro's reading of the beta client and are reliable. The beta also runs a **Legacy system**, bonus talent points on top of the normal one-per-level rate, so a beta character can reach deep talents earlier than levelling alone would get them: Wowhead's own level 20 Beast Mastery build reaches `Summon Hawk`, which needs 16 points spent in the Beast Mastery tree, at level 20 with Legacy active and level 25 without it. **Blizzard's own caveat applies to everything on this page:** *"class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."*
 :::
 ## Which spec?
 | Spec | Role | Levelling | In one line |
 | --- | --- | --- | --- |
-| **[Beast Mastery](/guides/wow-forever/hunter/beast-mastery/)** | Ranged DPS | **Best in the game** | `Deadly Aspects` procs +30% ranged attack speed while [[Aspect of the Hawk]] is up, and your pet does a real share of the work |
-| **[Marksmanship](/guides/wow-forever/hunter/marksmanship/)** | Ranged DPS | Slower **solo**, strong in dungeons | `Lone Wolf` at exactly 20 for +20% damage with **all** attacks, but only while you have **no pet out** |
-| **[Survival](/guides/wow-forever/hunter/survival/)** | Melee DPS | Slowest **solo**; fine in groups | Parry, [[Deterrence]] and nastier traps. A PvP spec right now |
-**Beast Mastery if you are soloing.** Taming a pet at level 10 is described as *"the single greatest leveling tool that any class gets without exception"*, and Beast Mastery's early talents, haste and movement speed, are what solo questing wants.
-**But keep the gap in proportion.** At eleven points the **rotation is identical across all three specs**, and the difference is four flexible talent points. Hunter has a long reputation for *"best spec, nothing else acceptable"* thinking imported from raiding; **at levelling cap that framing does not survive contact with the talent trees.** Marksmanship is the dungeon cleave build and Survival is the duelling build, and neither is a mistake.
-Respec when your goal changes: Marksmanship for dungeon pulls, Survival for duels.
+| **[Beast Mastery](/guides/wow-forever/hunter/beast-mastery/)** | Ranged DPS | Published: the strongest levelling tool in the game | `Deadly Aspects` procs +30% ranged attack speed while [[Aspect of the Hawk]] is up, and your pet does a real share of the work |
+| **[Marksmanship](/guides/wow-forever/hunter/marksmanship/)** | Ranged DPS | Slower **solo**; published as the dungeon build | `Lone Wolf` at exactly 20 for +20% damage with **all** attacks, but only while you have **no pet out** |
+| **[Survival](/guides/wow-forever/hunter/survival/)** | Melee DPS | Published: not for levelling quickly | Parry, [[Deterrence]] and nastier traps. A PvP spec right now |
+**Beast Mastery if you are soloing, and that is the sources' recommendation rather than ours.** Wowhead: *"a pet will currently do more damage than the bonus you would get from Lone Wolf, so taking a couple of points in the BM tree is strongly advised."* A second published verdict calls the eleven-point Marksmanship build *"not a good general play build"* and says to *"use the Beast Mastery build at this level instead."* The talent that build is designed around, `Deadly Aspects`, is called *"one of the best 5 point talents you can take."*
+**But keep the gap in proportion.** At eleven points the **rotation is identical across all three specs**, and the difference is four flexible talent points. Where the published advice puts the other two is narrower than "worse": going deep into Marksmanship is recommended *"for Dungeons, specifically to maximize your AoE damage"*, and Icy Veins calls Survival's `Deflection` plus [[Deterrence]] *"extremely strong in PvP against other melee"* — a verdict written against the pre-October 1 parry number (see the Survival guide). **Our own reading, which no source states: at levelling cap neither is a wrong pick.**
+Respec when your goal changes, on those two published use-cases: Marksmanship for dungeon pulls, Survival for duels.
 **Blizzard frames the three trees as a spectrum, not a rung ladder:** a Hunter can *"double down on ... ranged combat and their pets, choose not to have a pet at all, or ... dance back and forth between ranged and melee combat."* **That spectrum is reachable inside the current cap, not a promise about level 60** — Survival's melee payoff is the 21-point talent `Strider Kick` and Marksmanship's is the 21-point `Trueshot Aura`, and 21 points fit inside the level-30 budget (see the Survival guide). What is untested is everything above 30.
 ## Is Hunter for you?
-Play Hunter if you want to kill things above your own level from the first hour, and you do not mind managing ammunition, a quiver and a pet.
+Play Hunter if you want the pet, not you, holding the enemy, and you do not mind managing ammunition, a quiver and pet food.
 **Blizzard's own framing of the class:** Hunters have *"an amazing toolkit of problem-solving Aspects and attacks but cannot Stun or Interrupt,"* and in solo or small-group play the pet, not you, does the tanking.
 :::strengths
-- The strongest solo levelling class in the game
+- Blizzard credits the class with *"an amazing toolkit of problem-solving Aspects and attacks"*
 - Your pet holds the enemy, so you take very little damage
-- Very low downtime, you rarely stop to recover
+- The published mana rule is to keep going, not to sit: *"it will always be more efficient to just attack the next target"*
 :::
 :::weaknesses
 - Ammunition, a quiver and pet food all cost bag space and money
 - An 8-yard minimum range you cannot shoot inside, which Forever did not remove
-- The pet covers your mistakes solo, then stops covering them in a group
+- No Stun and no Interrupt, which Blizzard states as a limit of the class
 :::
 :::new
-**Is the rotation simple?** Yes, mark, send the pet, sting, shoot.
-**Is it forgiving?** Extremely, while solo. Much less so in a dungeon, where the pet is not the tank.
-**Does it level well?** Better than any other class.
-**Does it need a group?** No. Hunter is the class to pick if you mostly play alone.
+**Is the rotation simple?** Yes, and all three spec pages print the same one: mark, send the pet, sting, shoot.
+**Is it forgiving?** Solo, your pet holds the target. In a dungeon the pet is not the tank, so that cover is gone.
+**Does it level well?** Wowhead advises keeping a pet over `Lone Wolf` at this level; the published verdict on the level-10 pet is in the table above.
+**Does it need a group?** No, solo the pet does the tanking.
 :::
 ## Levelling milestones
 | Level | What you get |
@@ -55,7 +55,7 @@ Play Hunter if you want to kill things above your own level from the first hour,
 **Survival's melee payoff is bought with talent points, not trained.** `Strider Kick` is the 21-point gold medal talent and `Expose Prey` is a row talent, so neither arrives at a level; Wowhead's spell data attaches level 32 to both, which is the client's number and not a training level (see the Survival guide).
 **[[Misdirection]] is not in Forever.** Two published guides mention it; it is a Burning Crusade ability and it is absent from the client. **[[Wyvern Sting]] is gone, but it was not left without a replacement** — Blizzard confirms it was folded, together with Killer Instinct and Improved Feign Death, into a new Survival talent, `Resourcefulness` (see the Survival guide). ClassicWoW.gg's "no stand-in named for it" does not hold against the primary source.
 ## Which race
-**Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling.** Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
+**Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling** *(ours, not a source's)*. Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Horde — Tauren**, and it is called the single strongest Hunter race across both factions. **`Plainsrunning` ramps to +30% movement speed**, which lets you stutter-step and shoot from level 1 while keeping [[Aspect of the Hawk]] up instead of swapping to Cheetah. `Endurance` also now gives **+1% hit**.
 **Alliance — Human, which is new to Hunter in Forever.** `Sword Specialization` is **+2% crit**, the largest weapon racial, and it is general crit, so it applies to your shots off a sword carried purely as a stat stick.
 **Forever changed the answer.** Tauren Hunter was the weak vanilla pick and is now the strongest. **Dwarf's new racial is `Mace Specialization`**, and maces are not a Hunter weapon option, so it is a racial you cannot use (Icy Veins, ClassicWoW.gg).
@@ -98,7 +98,7 @@ Play Hunter if you want to kill things above your own level from the first hour,
 | **[[Disengage]]'s threat reduction is doubled** | Blizzard confirms the leap-and-drop-threat tool is stronger than it was |
 | **[[Aspect of the Beast]] now also grants melee Attack Power** | Worth holding up over Hawk once you're fighting in melee |
 | [[Misdirection]] absent | There is no threat-transfer tool in Forever, for anyone |
-| Survival became a melee specialisation | It is not a levelling spec |
+| Survival became a melee specialisation | The published advice is *"you should not go Survival if all you care about is damage or leveling quickly"* |
 | The 8-yard dead zone remains | Forever did not fix it, despite heavy feedback |
 | **Summon Hawk**, new Beast Mastery talent | Deals an initial hit then attacks on its own for 18 seconds; shares its cooldown with [[Arcane Shot]], and only two hawks can be up at once |
 **Shot-weaving is gone.** Icy Veins states it plainly as a Forever quality-of-life change: *"your abilities will not clip your auto shots; you do not need to time your rotation around your auto shots."* Neither Wowhead nor ClassicWoW.gg contradicts this, so there is no live disagreement to track here.

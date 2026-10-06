@@ -9,28 +9,28 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of t
 ## Which spec?
 | Spec | Role | Levelling | In one line |
 | --- | --- | --- | --- |
-| **[Holy](/guides/wow-forever/paladin/holy/)** | Healer | Viable, slow | Plate healer with the best buffs in the game, and now an area-heal capstone |
-| **[Protection](/guides/wow-forever/paladin/protection/)** | Tank | Slower solo | The only tank that gears for **Spell Power**, because its threat is Holy damage |
-| **[Retribution](/guides/wow-forever/paladin/retribution/)** | Melee DPS | **Best of the three** | Two-hander plus Holy, and [[Holy Strike]] arrives at level 6 |
-**Retribution is the levelling answer and it is not close.** Forever improved it more than any other spec by giving every Paladin [[Holy Strike]] at level 6, twenty levels earlier than Classic gave you a button. Protection used to have dungeon levelling as its escape hatch; **Forever cut dungeon experience hard, and the October 1 build cut dungeon *quest* experience too** — dungeon quests now reward 50% less extra experience beyond normal quest values, which Blizzard framed as a deliberate reduction in levelling speed — so that route is largely gone.
+| **[Holy](/guides/wow-forever/paladin/holy/)** | Healer | Slow solo *(ours, not a source's)* | Plate healer whose Blessings and auras cover the whole party, and now an area-heal capstone |
+| **[Protection](/guides/wow-forever/paladin/protection/)** | Tank | Slower solo *(ours, not a source's)*; dungeon-XP cut hurts it most | The only tank that gears for **Spell Power**, because its threat is Holy damage |
+| **[Retribution](/guides/wow-forever/paladin/retribution/)** | Melee DPS | **Wowhead: testers call it the most overtuned spec at 20** | Two-hander plus Holy, and [[Holy Strike]] arrives at level 6 |
+**Retribution is the spec the sourced material points to, and only one source speaks to it directly:** Wowhead reports that beta testers and class discords currently consider Retribution the single most overtuned spec in the level-20 bracket, with changes expected. Mechanically, every Paladin now gets [[Holy Strike]] at level 6, twenty levels earlier than Classic gave you a button. Protection used to have dungeon levelling as its escape hatch; **Forever cut dungeon experience hard, and the October 1 build cut dungeon *quest* experience too** — dungeon quests now reward 50% less extra experience beyond normal quest values, which Blizzard framed as a deliberate reduction in levelling speed — so that route is largely gone.
 **The two cases are not alike.** `Improved Holy Strike` was folded into the class — [[Holy Strike]]'s cooldown is now 10 seconds for every Paladin, and Blizzard's September 24 notes say so. `Crusade` simply vanished from the Retribution tree with no mention at all.
 ## Is Paladin for you?
-Play Paladin if you want to be very hard to kill, to fill whichever role a group is short of, and you do not mind killing things slowly to get it.
+Play Paladin if you want a melee class that carries its own heals, wears mail from level 1 and plate from 40, and can train for whichever of the three roles a group is short of.
 :::strengths
-- Extremely durable, mistakes that kill other classes usually only cost you time
-- Can tank, heal or deal damage, so you are never short of a group
-- Strong buffs and auras that improve everyone near you
+- Heals itself in every spec: [[Holy Light]] from level 1, [[Lay on Hands]] from 10, [[Divine Shield]] from 34
+- Covers all three group roles — [[Seal of Fury]] taunts from 10, and the heals need no talent points
+- Blessings and auras apply to the whole party, and Blessings now last a full hour
 :::
 :::weaknesses
-- Kills slowly, particularly before level 20
-- Mana-hungry in a way that surprises people who expect a melee class
+- Holy and Protection spend their talent points on healing and threat rather than damage
+- Runs on mana: [[Holy Strike]], [[Judgement]] and [[Consecration]] all draw on the same bar
 - No area damage at all until [[Consecration]] at 20
 :::
 :::new
-**Is the rotation simple?** Yes. Keep a seal up, judge it, strike on cooldown.
-**Is it forgiving?** The most forgiving class in the game. You will die rarely.
-**Does it level well?** Steadily rather than quickly. Fights are longer than a Warrior's or a Rogue's.
-**Does it need a group?** No, it solos comfortably, and groups will take you instantly in any role.
+**Is the rotation simple?** Three buttons: keep a seal up, judge it, strike on cooldown.
+**Is it forgiving?** You heal yourself, wear mail from level 1 and plate from 40, and get [[Divine Shield]] at 34.
+**Does it level well?** Retribution is the spec to do it in: Wowhead reports testers call it the most overtuned spec in the level-20 bracket.
+**Does it need a group?** No. Every spec trains heals and a taunt, so you can fill whatever a group lacks.
 :::
 ## Levelling milestones
 | Level | What you get |
@@ -50,7 +50,7 @@ Play Paladin if you want to be very hard to kill, to fill whichever role a group
 | 52–60 | Greater Blessings, now **1 hour**, so timers stop desyncing |
 **[[Blessing of Sanctuary]] is not in Forever**, in either form.
 ## Which race
-**Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling.** Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
+**Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling** *(ours, not a source's)*. Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Alliance — Human or Dwarf.** Human's `Sword Specialization` is **+2% crit to spells and abilities** off a sword used purely as a stat stick, which is the largest weapon racial and feeds both gearing paths. Dwarf's `Stoneform` is a real solo cooldown.
 **Horde — Undead, and it is forced**, being the only Horde Paladin. It is good anyway: **`Cannibalize` now restores 35% health *and* mana**, which on a mana-using melee class is close to a free recovery on every corpse.
 **Forever changed the answer outright — "Paladin is Alliance" is dead.** Undead Paladins get their own hub at **Bandarion Keep** in the previously inaccessible Whispering Wood, Tirisfal Glades, and their own level 40 and 60 mount quests.

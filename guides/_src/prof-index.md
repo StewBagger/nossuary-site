@@ -8,14 +8,14 @@ Recipe counts, skill levels, trainer ranks and buff values below are come from f
 :::
 Looking for a class instead? **[The class guides are here](/guides/wow-forever/)**, all nine, one page per specialisation.
 ## Start here: the three things that matter most
-1. **Take Cooking at level 1.** 103 of its 123 dishes give **+5% experience from kills** while you are well fed, and the first one is available at Cooking skill 1 on a level-1 character. It costs you no primary slot. Nothing else in the profession system comes close for a levelling player.
+1. **Take Cooking at level 1.** 103 of its 123 dishes give **+5% experience from kills** while you are well fed, and the first one is available at Cooking skill 1 on a level-1 character. It costs you no primary slot, and nothing else in the profession system comes close for a levelling player *(ours, not a source's)*.
 2. **Only six professions earn Legacy Points**: Alchemy, Blacksmithing, Enchanting, Engineering, Leatherworking and Tailoring, at skill 150, 225 and 300. **Gathering professions and secondary skills earn none.** If you care about account-wide perks, that is your list.
-3. **Camping is new and it is not optional flavour.** Every profession gets three camp objects, and the buffs last an hour.
+3. **Camping is new.** Every profession gets three camp objects, and the buffs last an hour.
 :::new
 **How many can I have?** Two primary professions, plus all three secondary skills — Cooking, First Aid and Fishing, which cost you nothing.
 **Can I change later?** You can unlearn a primary and take another, but you lose the skill. Nothing published says Forever changed that.
-**Do I need one to play?** No. Take Cooking and First Aid regardless; they are free and both matter while levelling.
-**Which two primaries?** If you want money, a gathering pair. If you want the Legacy Points, a crafting pair. See below.
+**Do I need one to play?** No. Cooking and First Aid cost no primary slot and both land effects while you level, so our own advice is to take them regardless.
+**Which two primaries?** The Legacy Points come only from a crafting pair; that part is mechanical. Our own answer for money is a gathering pair — see below.
 :::
 ## Trainer ranks
 Unchanged from Classic, and confirmed in the client.
@@ -34,16 +34,16 @@ Unchanged from Classic, and confirmed in the client.
 | --- | --- | --- | --- |
 | **[Mining](/guides/wow-forever/professions/mining/)** | Gathering | **No** | Ore and stone. Feeds Blacksmithing and Engineering |
 | **[Herbalism](/guides/wow-forever/professions/herbalism/)** | Gathering | **No** | Herbs. Feeds Alchemy |
-| **[Skinning](/guides/wow-forever/professions/skinning/)** | Gathering | **No** | Leather off things you already killed, the cheapest to carry |
+| **[Skinning](/guides/wow-forever/professions/skinning/)** | Gathering | **No** | Leather off things you already killed |
 | **[Alchemy](/guides/wow-forever/professions/alchemy/)** | Crafting | Yes | Potions, elixirs, flasks. Raid consumables |
 | **[Blacksmithing](/guides/wow-forever/professions/blacksmithing/)** | Crafting | Yes | Plate and mail armour, and weapons |
 | **[Enchanting](/guides/wow-forever/professions/enchanting/)** | Crafting | Yes | Permanent bonuses on gear, funded by destroying gear |
 | **[Engineering](/guides/wow-forever/professions/engineering/)** | Crafting | Yes | Bombs, gadgets, goggles and trinkets. **No mount and no tier set** |
 | **[Leatherworking](/guides/wow-forever/professions/leatherworking/)** | Crafting | Yes | Leather and mail armour |
 | **[Tailoring](/guides/wow-forever/professions/tailoring/)** | Crafting | Yes | Cloth armour and bags |
-**The classic pairings still make sense**: Mining with Blacksmithing or Engineering, Herbalism with Alchemy, Skinning with Leatherworking, because a crafting profession that has to buy its own materials is expensive. Nothing published suggests Forever changed that logic.
-**Two gathering professions is still the money answer** if you want gold rather than gear, and it is the cheapest way to level.
-## The secondary skills are free. Take all three.
+**The classic pairings are unchanged**: Mining with Blacksmithing or Engineering, Herbalism with Alchemy, Skinning with Leatherworking, each crafting profession beside the only profession that gathers its feed. Nothing published suggests Forever changed that, and on our own reading they still make sense, because a crafting profession that has to buy its own materials is expensive.
+**Two gathering professions is still the money answer** if you want gold rather than gear, and it is the cheapest way to level *(ours, not a source's)*.
+## The secondary skills are free
 | Skill | Why |
 | --- | --- |
 | **[Cooking](/guides/wow-forever/professions/cooking/)** | **+5% experience from kills** while well fed, from skill 1. Also owns the campfire |
@@ -58,7 +58,7 @@ Unchanged from Classic, and confirmed in the client.
 - **The Legacy system** adds 11 profession-relevant perks across three trees, including `Working Overtime` (up to +20% chance of a skill-up), `Bountiful Harvest` (up to +100% scarce materials while gathering) and `Master Chef` (up to a 50% chance of an extra cooking result).
 - **No profession was added or removed.** Nine primary, three secondary, exactly as Classic. There is no Jewelcrafting and no Inscription.
 ## Three things vanilla never had
-**Crafted tier sets at skill 300.** Blacksmithing, Leatherworking and Tailoring all make level-60 sets with real set bonuses. Every one of them needs **[[Malleable Essence of Nature]]**, which comes only from **disenchanting drops in the two new raids**, so the whole crafted-gear economy runs through an enchanter. **Engineering has no tier set**, which tells you where Forever thinks raid power sits.
+**Crafted tier sets at skill 300.** Blacksmithing, Leatherworking and Tailoring all make level-60 sets with real set bonuses. Every one of them needs **[[Malleable Essence of Nature]]**, which comes only from **disenchanting drops in the two new raids**, so the whole crafted-gear economy runs through an enchanter. **Engineering has no tier set**, and no source states whether its raid value changed either way.
 **Certifications and titles.** At skill 300, **1,000 [Merchant's Favor](/guides/wow-forever/professions/merchants-favor/)** buys an account-wide title — *the Alchemist*, *the Blacksmith*, *the Enchanter*, *the Engineer*, *the Leatherworker*, *the Tailor*. Six crafting professions only; no gathering title, no Cooking title. Only a character with 300 skill can display it.
 **Self-only profession perks**, every one of them from a later expansion:
 | Profession | The perk |

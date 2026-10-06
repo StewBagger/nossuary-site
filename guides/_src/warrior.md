@@ -9,31 +9,31 @@ Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1
 ## Which spec?
 | Spec | Role | Levelling | In one line |
 | --- | --- | --- | --- |
-| **[Arms](/guides/wow-forever/warrior/arms/)** | Melee DPS | Viable, slower | Two-handed bleeds and burst, but its engine is level 30+ |
-| **[Fury](/guides/wow-forever/warrior/fury/)** | Melee DPS | Tied with Arms at 20 | Dual-wield rage dump, though you cannot dual wield until 20 |
-| **[Protection](/guides/wow-forever/warrior/protection/)** | Tank | Slower solo, best in dungeons | Shield tanking, and three of its talents now require a shield |
+| **[Arms](/guides/wow-forever/warrior/arms/)** | Melee DPS | Icy Veins: 2.0/5 | Two-handed bleeds and burst, but its engine is level 30+ |
+| **[Fury](/guides/wow-forever/warrior/fury/)** | Melee DPS | Icy Veins: 2.0/5 | Dual-wield rage dump, though you cannot dual wield until 20 |
+| **[Protection](/guides/wow-forever/warrior/protection/)** | Tank | Icy Veins: 2.5/5 | Shield tanking, and three of its talents now require a shield |
 **An honest note that saves you a respec: at level 20 all three published Warrior builds are nearly the same.** The Arms and Fury level-20 builds are *identical*, eleven points in the Fury tree, because nothing in Arms is worth reaching yet. Pick by what you want at 30 and beyond, not by what you can feel at 20 — and **Dual Specialization opens at level 40** (Blizzard), so the pick is not permanent.
-**No source names an outright best leveller among the three specs, and the one number available cuts against instinct.** Icy Veins scores each spec's Level 20 toolkit for Levelling out of 5: Arms and Fury tie at 2.0, and Protection actually rates higher at 2.5, because its survivability offsets slower kills on their scale.
+**No source names an outright best leveller among the three specs, and the one number available cuts against instinct.** Icy Veins is the only one of the three sources that scores them, and those are the numbers in the table above: it rates each spec's Level 20 toolkit for Levelling out of 5, Arms and Fury tie at 2.0, and Protection actually rates higher at 2.5, because its survivability offsets slower kills on their scale. Neither Wowhead nor ClassicWoW.gg publishes a levelling score.
 ## Is Warrior for you?
-Play Warrior if you want to watch the enemy rather than your own bars, and you do not mind a hard first thirty levels in exchange for being formidable later.
-Blizzard's own September 30 Class Deep Dive is worth weighing against the "hardest class to level" reputation above: the post opens by flagging **Rage-generation bugs still being tracked down in the beta**, separate from the intended design, and two of its changes target exactly the early-game Rage starvation reviewers describe — Rage from taking damage no longer shrinks for wearing Armor, and a critical hit is back to giving increased Rage, restored at 75% and raised to **100% increased Rage** in the October 2 build. None of that touches the other reasons Warrior levels slowly (no self-heal before 20, no ranged attack, full dependence on a current weapon), so the reputation holds, just for a narrower set of reasons than before.
+Play Warrior if you want to watch the enemy rather than your own bars. The trade to weigh is the one Icy Veins describes: one of the harder classes to level, one of the strongest once geared.
+Blizzard's own September 30 Class Deep Dive is worth weighing against the "hardest class to level" reputation above: the post opens by flagging **Rage-generation bugs still being tracked down in the beta**, separate from the intended design, and two of its changes target exactly the early-game Rage starvation reviewers describe — Rage from taking damage no longer shrinks for wearing Armor, and a critical hit is back to giving increased Rage, restored at 75% and raised to **100% increased Rage** in the October 2 build. None of that touches the other reasons Warrior levels slowly (no self-heal before 20, no ranged attack, full dependence on a current weapon), and **no source has re-rated the class since those changes landed** — that the reputation still holds, on a narrower set of reasons, is our own reading rather than a source's.
 Blizzard's closing assessment of the class, in its own words:
 > Warriors remain the masters of melee combat. They can both dish out melee damage and mitigate damage done to them. They have a unique strength in dealing sustained damage to multiple melee targets, found on no other melee class. They have a powerful toolkit to solve nearly any problem, but they lack the tools to easily recover from taking too much damage. And they have unique buffs and debuffs that only Warriors can supply.
 :::strengths
-- Among the game's strongest tanks once you have [[Defensive Stance]] and a shield
-- Enormous damage ceiling with a good weapon
+- Blizzard's own framing: Warriors *"can both dish out melee damage and mitigate damage done to them"*
+- Icy Veins rates it one of the strongest once geared, and weapon damage leads every published stat priority
 - No resource to manage before a fight starts, you begin at zero and build
 :::
 :::weaknesses
 - Icy Veins rates it one of the harder classes to level; Blizzard's Rage fixes (Armor no longer shrinks it, crits restored) target this but do not erase it
 - No self-heal until [[Victory Rush]] at level 20, and no ranged attack worth the name
-- Utterly dependent on keeping your weapon current
+- Dependent on keeping your weapon current — Icy Veins' difficulty rating is *"especially when gear falls behind"*
 :::
 :::new
-**Is the rotation simple?** Yes, four or five buttons while levelling, and you react rather than follow a sequence.
-**Is it forgiving?** No. Pulling two enemies alone will often kill you, and you have no escape.
+**Is the rotation simple?** Four or five buttons while levelling, and you react rather than follow a sequence.
+**Is it forgiving?** No self-heal before 20 and no escape, so a second enemy on you is a real risk.
 **Does it level well?** Icy Veins calls it one of the harder classes; Wowhead calls Forever's changes a big improvement on Classic. Expect to sit and eat often before level 20.
-**Does it need a group?** It benefits more than any other class. A Warrior with a healer is transformed.
+**Does it need a group?** Rage from damage taken only pays off when a healer lets you pull two.
 :::
 ## Levelling milestones
 | Level | What you get |
@@ -54,7 +54,7 @@ Blizzard's closing assessment of the class, in its own words:
 **Talent points are your level minus nine**, one at 10, eleven at 20, twenty-one at 30, fifty-one at 60. Tiers open at levels 10, 15, 20, 25, 30, 35 and 40, and the one-point milestone talents sit at 11, 21 and 31 points, **now joined by a new 16-point tier** (Blizzard). The Legacy perk **Talented** moves your first point earlier, down to level 5 at full rank, which is **26 points at level 30 rather than 21.**
 **[[Devastate]] is not in Forever, and it was not in Classic either.** It is a Burning Crusade ability, so lists that expect it are reading forward, not back. [[Sunder Armor]] is the ability, and it gained Attack Power scaling on September 24.
 ## Which race
-**Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling.** Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
+**Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling** *(ours, not a source's)*. Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Alliance — Night Elf.** `Elune's Light` gives +10% crit for 15 seconds and lines up with your cooldowns, `Shadowmeld` drops threat, and `Wisp Spirit` speeds corpse runs.
 **Horde — Orc.** `Blood Fury` is +10% attack power and `Axe Specialization` gives +1% crit, which makes axes worth seeking out.
 **Forever changed the answer.** Vanilla's Human and Orc weapon-skill picks are gone, all three weapon racials became critical-strike racials, and Night Elf gained an offensive cooldown it never had.

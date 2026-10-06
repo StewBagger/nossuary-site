@@ -2,20 +2,20 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
-Bombs, trinkets, goggles and gadgets. **Forever did not fold it into the new crafted-gear economy**: no tier set, fewest trade-camp recipes, and still the most expensive thing in the game to level.
+Bombs, trinkets, goggles and gadgets. **Forever did not fold it into the new crafted-gear economy**: no tier set, and the fewest trade-camp recipes of any profession. It is still the most expensive thing in the game to level *(ours, not a source's)*; there are no prices before launch.
 :::scope
 Recipes and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta**, and **33 Engineering recipes make something the client will not describe.** Whether Engineering's raid value went up or down is genuinely unpublished. Nobody has said.
 :::
 ## Is Engineering worth taking?
-**Take it for utility and fun.** It earns **Legacy Points** like the other crafting professions, but it got no tier set, only 29 trade-camp recipes (the fewest of any profession), and it is the most expensive to buy out.
-**Three good reasons to take it anyway:**
+It earns **Legacy Points** like the other crafting professions, but it got no tier set and only 29 trade-camp recipes, the fewest of any profession. Take it for utility and fun; it is also the most expensive to buy out *(ours, not a source's)*.
+**Three reasons to take it anyway, two of them published:**
 1. **You are a Gnome.** The racial was rewritten for Forever (see below)
 2. **PvP.** The published Hunter advice is *"Engineering for valuable PvP items"*
 3. **As a second profession at 60**, once Blacksmithing has given you the gear: *"After Blacksmithing has provided the gear you need, you can replace it with Engineering."*
 One item carries the hard evidence at the beta cap. [[Minor Recombobulator]] at Engineering 140 appears in **32 of the level-20 best-in-slot lists**, effectively every class and spec in the game. **That figure is level 20**, which was the beta cap when it was written; the cap rose to 30 on October 1 and it has not been re-checked.
 The Mage guide adds a warning: *"without a Herbalism or Mining alt, these will be difficult or expensive to level."*
 ## What it pairs with
-**Mining.** Unchanged.
+**Engineering eats ore and stone, and Mining is the only profession that gathers them.** Unchanged.
 ## What Forever changed
 - **The Gnome racial was rewritten.** Vanilla gave *"Engineering skill increased by 15."* Forever gives *"Your gnomish ingenuity reduces the rate of engineering devices failing or backfiring when you use them by 20%."*
 - **Engineering-only gating is fully intact, and is being applied to brand-new items.** 98 items carry a *"Requires Engineering"* line, **20 of them new**. The vanilla ones are untouched: Gnomish Rocket Boots, Parachute Cloak, Arcanite Dragonling, Force Reactive Disk, Goblin Jumper Cables XL, Master Engineer's Goggles, Bloodvine Goggles.

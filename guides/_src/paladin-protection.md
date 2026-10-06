@@ -8,7 +8,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1
 :::
 ## Is Protection worth levelling?
 **Slower solo, and Forever specifically nerfed the thing it used to be good at.** Protection Paladin was historically one of the best dungeon-levelling specs in the game because of [[Consecration]]. Forever **cut dungeon experience hard**, which one published guide calls out directly as hurting this spec more than any other — and the October 1 build went further, cutting the extra experience on dungeon quests by 50% as a deliberate reduction in levelling speed.
-You can still safely pull several enemies and grind them down, but you will struggle to kill bosses and high-health single targets quickly, and **mana is the real limiter**.
+You can still safely pull several enemies and grind them down, but you will struggle to kill bosses and high-health single targets quickly, and **mana is the real limiter**. That pace judgement, and the slower-solo line above, are our own reading rather than a published rating; what is published is the experience cut and the guide calling it out.
 ## Your talent points
 **Level 20: 0/11/0.** Two published builds agree on the first ten points.
 1. `Redoubt`, 5 points — the October 1 build cut its granted Block chance to **4/8/12/16/20% per rank** (20% at the 5 points this build spends, was 30%), a real nerf. It is still the first pick: no alternative tier-1 Protection talent is published, and the Block chance it grants still feeds `Holy Shield` (also changed this build, now a **30%** base chance to Block, up from 20%) and `Reckoning`'s block-triggered proc. **Our build advice stands.**

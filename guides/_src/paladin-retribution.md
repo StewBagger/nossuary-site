@@ -2,13 +2,13 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Retribution Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-20-dps-overview ;; Icy Veins — Retribution Paladin Melee DPS Guide|https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide ;; ClassicWoW.gg — Ret Paladin|https://classicwow.gg/forever/guides/paladin/retribution
 
-Two-handed melee with Holy magic layered on top. **This is the Paladin levelling spec**, and Forever improved it more than any other — [[Holy Strike]] at level 6 turns it from auto-attack-and-wait into something you actually play.
+Two-handed melee with Holy magic layered on top. **[[Holy Strike]] at level 6** — twenty levels earlier than Classic gave a Paladin a button — turns it from auto-attack-and-wait into something you actually play.
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Retribution build has been tested. **A specific warning for this spec:** a widely-published level-30 Retribution build spends two points on `Crusade`, **a talent that does not exist in the beta client**, it vanished from the Retribution tree in the September 24 build (1.60.1.70009), the beta's first balance pass, with no mention in Blizzard's notes. That build cannot be entered as printed, and no source publishes a legal replacement. **Separately, Wowhead reports that beta testers and class discords currently consider Retribution the single most overtuned spec in the level-20 bracket**, with changes expected — the level-30 cap opened on October 1, and that same build cut `Champion of the Light` — so treat the talent and gearing advice below as a snapshot, not a settled answer.
 :::
 ## Is Retribution worth levelling?
-**Yes, and it is the clear answer for Paladin.** [[Holy Strike]] from level 6 gives you a real button twenty levels before Classic gave you one. Rated good at everything except area damage.
-Two honest caveats. **You have no area damage whatsoever until [[Consecration]] at 20**, so do not pull more than you can kill one at a time. And Paladin has no movement tools at all, it is described, fairly, as *"slow, very slow."*
+**Yes, and the one source that speaks to it directly is emphatic: Wowhead reports that beta testers and class discords currently consider Retribution the single most overtuned spec in the level-20 bracket**, with changes expected. [[Holy Strike]] from level 6 gives you a real button twenty levels before Classic gave you one.
+Two honest caveats. **You have no area damage whatsoever until [[Consecration]] at 20**, so do not pull more than you can kill one at a time. And Paladin has no movement tools at all, it is described as *"slow, very slow."*
 One tip that generalises: **treat mana as an extension of your health bar.** Topping yourself up with [[Holy Light]] and killing the next thing at low mana usually beats sitting down to drink.
 ## Your talent points
 **Level 20: 0/0/11.**

@@ -2,17 +2,17 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
-Cloth armour, bags and cloaks, from drops rather than a gathering profession. **For cloth wearers it is the strongest profession at the levelling cap**: [[Pristine Circlet]] is best in slot for 16 specs.
+Cloth armour, bags and cloaks, from drops rather than a gathering profession. **[[Pristine Circlet]] is best in slot for 16 specs.**
 :::scope
 Recipes, reagents and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta**, and **57 Tailoring recipes make something the client will not describe.** Best-in-slot figures are level 20, which was the beta cap when they were written; the cap rose to 30 on October 1 and they have not been re-checked.
 :::
 ## Is Tailoring worth taking?
-**Yes, if you wear cloth.** It earns **Legacy Points**, and the published verdict for Warlocks is blunt: *"Almost all of the Best in Slot for Warlocks right now come from Tailoring, making it highly suggested."*
+It earns **Legacy Points**, and the published verdict for Warlocks is blunt: *"Almost all of the Best in Slot for Warlocks right now come from Tailoring, making it highly suggested."*
 For Mages: *"Tailoring now lets you craft your own Bind-on-Pickup Rare gear, and is some of the best leveling gear available for how easy it is to access. Starting as low as level 10."*
 The catch is in that phrase: *"You will only be able to craft these pieces for yourself since they are mostly all Bind on Pickup."* You cannot buy this power and you cannot make it for a friend.
 **37 Tailoring items appear in level-20 best-in-slot lists, 30 of them new.**
 ## What it pairs with
-**Enchanting**, and Forever strengthened the case: the Bind-on-Pickup gear you make while levelling is exactly the feedstock you disenchant.
+**Enchanting.** The Bind-on-Pickup gear you make while levelling is feedstock you can disenchant, and the published reason for the pair is quoted on the [Enchanting](/guides/wow-forever/professions/enchanting/) page: *"Enchanting doesn't rely on a particular gathering profession, so Enchanters occasionally pursue Tailoring to allow them to quickly create magic items to disenchant."*
 **Yes, the cloth-drop economy is unchanged**: *"Tailoring uses cloth looted from humanoids, so it does not need a specific gathering profession."* The Forever levelling route does pull in 48 Vision Dust and 88 Rugged Leather above 225, so it is marginally less cloth-pure than vanilla.
 ## What Forever changed
 - **Cloth gear is now tuned per damage school**, which vanilla never did at low level. Six Merchant's Favor lines at skill 60–125, named by school: **Shining** (Holy), **Shadow**, **Pristine** (healing), **Pearly** (Arcane), **Flame** (Fire), **Silky** (Frost), each in six slots. Flame Sash gives Fire spell damage; Shadow Sash gives Shadow. **67 recipes in all, Bind on Pickup.**
@@ -34,6 +34,6 @@ The catch is in that phrase: *"You will only be able to craft these pieces for y
 7. **225 → 300**: Runecloth Cloak → Runecloth Gloves → **Runecloth Cuffs ×53** → Mooncloth Robe
 **Shopping list to 225:** 795 Wool Cloth, 770 Mageweave Cloth, 596 Silk Cloth, 110 Linen Cloth, 257 Fine Thread, 84 Long Elegant Feather, 74 Heavy Silken Thread, 66 Blue Dye, 48 Vision Dust, 30 Elixir of Wisdom.
 **225 → 300:** 2,315 Runecloth, 463 Bolt of Runecloth, 110 Rune Thread, 88 Rugged Leather, 60 Mooncloth, 58 Ironweb Spider Silk, 30 Golden Pearl.
-**The bottleneck is Mageweave, 174 to 213.** That stretch runs entirely on vendor-bought shirt patterns, so it costs gold rather than farming. Above the cap, **2,315 Runecloth** and the Mooncloth cooldown are the real wall. **It is the cheapest crafting profession to start and one of the most expensive to finish.**
+**The bottleneck is Mageweave, 174 to 213.** That stretch runs entirely on vendor-bought shirt patterns, so it costs gold rather than farming. Above the cap, **2,315 Runecloth** and the Mooncloth cooldown are the real wall. It is the cheapest crafting profession to start and one of the most expensive to finish *(ours, not a source's)*; there are no prices before launch.
 ## What is not known
 `Cloth Scavenging`'s rate and skill requirement. Cloak embroidery values. What 57 of its recipes make. Whether any vanilla pattern was removed.

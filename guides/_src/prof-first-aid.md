@@ -6,9 +6,9 @@ build: 1.60.1.70124
 Recipe names and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **One open question with real consequences:** it is not published whether Alchemy keeps its own healing potions now that First Aid makes them. Trainer rank thresholds are unpublished.
 :::
 ## Is First Aid worth it?
-**Yes, and materially more than in Classic.** It costs no primary slot, and Forever turned it from "bandages for classes with no heal" into a genuine utility skill.
+It costs no primary slot, and Forever added cures for poison, disease and bleeds plus craftable healing potions to what was a bandage skill, which makes it worth taking, and materially more so than in Classic *(ours, not a source's)*.
 If your class has no dispel, you can now buy your way out of poison, disease and bleed effects off a free secondary skill. That was not possible in vanilla.
-**For several classes this is still your only self-heal for a long time**: Warrior and Rogue especially. Take it at level 1 and keep it current.
+**For a Warrior or a Rogue it is still the only self-heal for a long time**, because neither class has one. Take it at level 1 and keep it current *(ours, not a source's)*.
 ## What it makes
 **Bandages**, as in Classic, topping out at the new [[Crystal Infused Bandage]] at skill 285, which heals **2500 over 10 seconds**.
 **Cures, the new category and the reason to care:**

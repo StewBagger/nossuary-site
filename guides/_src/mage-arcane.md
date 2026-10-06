@@ -2,12 +2,12 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Arcane Mage|https://www.wowhead.com/forever/guide/classes/mage/arcane/level-20-dps-overview ;; Icy Veins — Arcane Mage|https://www.icy-veins.com/wow-forever/arcane-mage-ranged-dps-pve-guide ;; ClassicWoW.gg — Arcane Mage|https://classicwow.gg/forever/guides/mage/arcane
 
-Burst damage on a mana curve you have to manage. **Arcane is genuinely new in Forever**. Its Classic tree had nothing worth spending points on. Now it is a levelling spec.
+Burst damage on a mana curve you have to manage. **Arcane is genuinely new in Forever**: [[Arcane Blast]] and `Missile Barrage` are both new spells, and `Arcane Meditation` went from Classic's 15% to **50%** mana regeneration while casting. Icy Veins heads its levelling section *"A Solid Leveling Spec"*.
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Arcane build has been tested. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Arcane worth levelling?
-**Yes, and it is the biggest change to the class.** Icy Veins' heading is literally *"A Solid Leveling Spec"*: *"Arcane Mages in Forever level up very well… The `Arcane Meditation` talent significantly reduces downtime between fights… and `Missile Barrage` reduces the mana cost of Arcane Missiles by 100%."*
+**Icy Veins rates it 4/5 for levelling, the highest of its three Mage scores (Frost 3.5/5, Fire 2.5/5); Wowhead and ClassicWoW.gg publish no levelling score.** Its heading is literally *"A Solid Leveling Spec"*: *"Arcane Mages in Forever level up very well… The `Arcane Meditation` talent significantly reduces downtime between fights… and `Missile Barrage` reduces the mana cost of Arcane Missiles by 100%."*
 [[Arcane Blast]] and `Missile Barrage` are both new — in Classic, Arcane Power raid builds spent their damage casts on Frostbolt instead of the Arcane tree's own spells; ClassicWoW.gg puts it plainly: *"Forever gives you Arcane Blast and Missile Barrage to build around Arcane-school damage itself."*
 **The dungeon caveat:** *"if the tank is not good enough, you will pull aggro… the Arcane Mage cannot slow enemies as effectively as a Frost Mage (but still sufficient)."*
 ## Your talent points
@@ -44,7 +44,7 @@ Icy Veins is the only one of the three tracked sources that ranks Arcane's stats
 | **`Arcane Meditation` 3/3** | 27 | **50% of mana regeneration continues while casting**, up from Classic's 15% (ClassicWoW.gg gives the per-rank curve: 17% at rank 1, 33% at rank 2, 50% at rank 3) |
 ## What Forever changed for Arcane
 - **[[Arcane Blast]] and `Missile Barrage` are both new.** Together they give the spec a main damage spell and a free follow-up it never had in Classic.
-- **`Arcane Meditation` went from 15% to 50%.** This is what makes Arcane a levelling spec.
+- **`Arcane Meditation` went from 15% to 50%.** Icy Veins names it as the reason for the 4/5: the talent *"significantly reduces downtime between fights"*.
 - **`Arcane Mind` was rewritten**: now +10% Intellect at 5/5 **and +100% Arcane critical damage**, where Classic gave flat maximum mana.
 - `Arcane Impact` (renamed from `Improved Arcane Explosion`) now buffs **all** Arcane spells' crit. `Improved Channeling` (renamed from `Improved Arcane Missiles`) now protects [[Arcane Blast]] too, 70% at 5/5.
 - `Wand Specialization` moved to tier 1. `Arcane Focus` was rewritten from resistance reduction to plain Arcane hit. `Magic Absorption` went from 5 ranks to 2. **[[Improved Counterspell]] no longer rolls a chance.** Rank 1 always silences for 2 seconds and rank 2 for 4, where Classic gave a 50% chance at rank 1. At 2/2 it is unchanged.

@@ -7,10 +7,10 @@ Ranged physical damage without leaning on the pet, and in Forever, **the dungeon
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Marksmanship build has been tested. **Blizzard's own caveat applies to everything on this page:** *"class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."*
 :::
 ## Is Marksmanship worth levelling?
-**Fine to level, and a poor *soloing* build, which is a narrower complaint than it sounds.** Going 11 points deep to reach `Lone Wolf` is described as *"not a good general play build"*, with the recommendation to *"use the Beast Mastery build at this level instead."* Wowhead agrees from the other direction: *"a pet will currently do more damage than the bonus you would get from Lone Wolf, so taking a couple of points in the BM tree is strongly advised."*
+**Two published verdicts say the same thing about soloing it, and they are the reason this page says it.** Going 11 points deep to reach `Lone Wolf` is described as *"not a good general play build"*, with the recommendation to *"use the Beast Mastery build at this level instead."* Wowhead agrees from the other direction: *"a pet will currently do more damage than the bonus you would get from Lone Wolf, so taking a couple of points in the BM tree is strongly advised."*
 **Read that in proportion.** At level 20 you have eleven points, the Hunter rotation is **identical across all three specs**, and most of the difference is four flexible talent points. Nobody is stuck.
 **What it is for is dungeons.** *"If you want to go deep into Marksmanship, the best use-case for it is for Dungeons, specifically to maximize your AoE damage."* An extra 20% damage on [[Multi-Shot]] is a lot in a pull.
-So: **Beast Mastery if you mostly quest alone, Marksmanship if you mostly run dungeons.** That is the whole decision, and neither choice is a mistake.
+So: **Beast Mastery if you mostly quest alone, Marksmanship if you mostly run dungeons** — that is the split the two quotes above draw. **Our own reading, which no source states: neither choice is a mistake.**
 ## Your talent points
 **Level 20: 0/11/0**, to reach `Lone Wolf`.
 The sequence is eleven points into Marksmanship. What you are buying is the tier-3 talent at the end of it, so the intermediate points follow the tree rather than a preference.
@@ -33,7 +33,7 @@ Below level 10, walk backwards between shots to stay out of the dead zone.
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
 | **`Lone Wolf`** | **exactly 20** | +20% damage with **all** attacks — **and only while you have no pet active.** That trade, the tree's damage against your pet's damage and its ability to hold a target, is why it is a cleave pick and not a general one |
-| **`Lethal Attacks`** | 10 | The second-best early damage talent in the class, behind `Focused Fire`. Forever widened it from ranged-weapon crit to crit with **all** attacks |
+| **`Lethal Attacks`** | 10 | The published ranking puts it *"a close second"* to Beast Mastery's `Focused Fire`, *"the strongest DPS talent available at this point"*. Forever widened it from ranged-weapon crit to crit with **all** attacks |
 | **`Hawk Eye`** | 10 | Extra range, kiting, and PvP |
 ## Marksmanship talent changes, Classic to Forever
 Beyond the level-20 build above, Blizzard's own changelog for the tree:

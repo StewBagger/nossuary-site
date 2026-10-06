@@ -2,15 +2,15 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Beta Known Issues, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-known-issues-october-1/2352687 ;; Wowhead — Level 20 Survival Hunter|https://www.wowhead.com/forever/guide/classes/hunter/survival/level-20-dps-overview ;; Icy Veins — Survival Hunter Melee DPS PvE Guide|https://www.icy-veins.com/wow-forever/survival-hunter-melee-dps-pve-guide ;; ClassicWoW.gg — Survival Hunter Overview & Changes|https://classicwow.gg/forever/guides/hunter/survival
 
-The durable Hunter, parry, a defensive cooldown, and traps that are genuinely hard to play against. **It is not the damage spec and not the levelling spec.**
+The durable Hunter, parry, a defensive cooldown, and traps that are genuinely hard to play against. **The published advice is not to level it if damage or speed is what you want** (see below).
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Survival build has been tested. Survival's melee payoff is `Strider Kick`, the 21-point gold medal talent, and 21 points fit inside the level-30 budget, so it is in-beta content rather than something out of reach. The sources still disagree about when it starts to matter: Wowhead's spell data attaches **level 32** to `Strider Kick` and `Expose Prey`, and Icy Veins says only that you will "need to play as a ranged DPS for at least the first 40 levels if not more." **Blizzard's own caveat applies to everything on this page:** *"class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."*
 :::
 ## Is Survival worth levelling?
-**Slowest of the three if you are soloing, and note the condition the source attaches.** Its advice is *"you should not go Survival **if all you care about is damage or leveling quickly**"*, and Beast Mastery or Marksmanship *"both offer far better damage talents at low levels."*
-**That is a statement about solo kill speed, not about whether the spec works.** In a group, where something else is holding the target, Survival's durability costs you very little.
-**What Survival is actually good at right now is PvP.** `Deflection` plus [[Deterrence]] gives you 5% base parry and an on-use defensive cooldown. Icy Veins calls that *"extremely strong in PvP against other melee"*, the matchup a Hunter normally fears most, but the October 1 build halved Deflection's parry (was 10%), so read that verdict as written against the stronger, pre-patch number. Add `Entrapment` and your traps become, in the source's words, *"exceptionally more annoying to deal with."*
-If solo speed is what you care about, level Beast Mastery and respec to Survival when you want to duel. If you are levelling in groups, play whichever you enjoy, the gap is small.
+**The published verdict comes with a condition attached, and the condition matters.** Its advice is *"you should not go Survival **if all you care about is damage or leveling quickly**"*, and Beast Mastery or Marksmanship *"both offer far better damage talents at low levels."*
+**Our own reading, which no source states:** that is a statement about solo kill speed, not about whether the spec works — in a group, where something else is holding the target, the durability costs you very little.
+**Where the sources place it right now is PvP.** `Deflection` plus [[Deterrence]] gives you 5% base parry and an on-use defensive cooldown. Icy Veins calls that *"extremely strong in PvP against other melee"*, the matchup a Hunter normally fears most, but the October 1 build halved Deflection's parry (was 10%), so read that verdict as written against the stronger, pre-patch number. Add `Entrapment` and your traps become, in the source's words, *"exceptionally more annoying to deal with."*
+If solo speed is what you care about, the published advice above points to Beast Mastery, with a respec to Survival when you want to duel. **Our own reading, not a source's: if you level in groups, play whichever you enjoy — the gap is small.**
 ## Your talent points
 **Level 20: 0/0/11**, a durability build rather than a damage one.
 1. **`Deflection`, 5 points**: +5% base parry (1% per rank, was 2% per rank)
@@ -18,7 +18,7 @@ If solo speed is what you care about, level Beast Mastery and respec to Survival
 3. **[[Deterrence]]**, and the remaining points toward it
 There is no published level-20 Survival damage build, because no source recommends one.
 ## Rotation
-**Ranged is correct at level 20 regardless of your talents.** Say that first, because Survival's melee reputation misleads people.
+**Ranged is correct at level 20 regardless of your talents** — Icy Veins says you will *"need to play as a ranged DPS for at least the first 40 levels if not more."*
 1. **[[Aspect of the Hawk]]** up; [[Aspect of the Cheetah]] when kiting
 2. **[[Hunter's Mark]]** before the pull
 3. **Send the pet in first**, abilities on auto-cast

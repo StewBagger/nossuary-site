@@ -2,7 +2,7 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
-**New in Forever, and not optional flavour.** A cook lights a fire, everyone drops one crafted object beside it, and the whole group carries the buffs for an hour, including buffs that normally need a specific class.
+**New in Forever.** A cook lights a fire, everyone drops one crafted object beside it, and the whole group carries the buffs for an hour, including buffs that normally need a specific class.
 :::scope
 Camp objects, skill levels and buff values are come from foreverchanges.pro's reading of the beta client and are solid. **Several mechanics are genuinely unsettled**, including whether camps work in cities and instances, whether you must be grouped to receive someone else's buff, and where each Blueprint drops. Blizzard's own panel and the beta client also disagree on two numbers, flagged below.
 :::

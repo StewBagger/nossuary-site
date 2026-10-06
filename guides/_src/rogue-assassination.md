@@ -10,7 +10,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1
 **Sources genuinely disagree, and we are not going to pretend otherwise.**
 **For:** Icy Veins rates its levelling **4 out of 5** (tied with Combat's 4 out of 5; both sit at 3.0 Overall), and says *"Assassination is likely to be very strong especially in this level bracket due to the potency of talents like `Remorseless Attacks`."*
 **Against:** Wowhead, updated 2026/09/29, says *"Assassination is wholly underwhelming at this level bracket. We don't have any of our essential kit, such as [[Mutilate]], `Venom`, and `Seal Fate`. It will ultimately play the same as the Combat Rogue for now until we can gain access to some more impactful abilities."*
-**Both agree on why 21 points matters: that is what [[Mutilate]] costs in the tree** (ClassicWoW.gg), and reaching it needs roughly character level 30. Below that, Assassination leans on `Malice`, `Remorseless Attacks` and `Lethality` — good passive numbers with no signature button. If you want a decision: **Combat is lower-risk, and this spec pays off once `Mutilate` is reachable.**
+**Both agree on why 21 points matters: that is what [[Mutilate]] costs in the tree** (ClassicWoW.gg), and reaching it needs roughly character level 30. Below that, Assassination leans on `Malice`, `Remorseless Attacks` and `Lethality` — good passive numbers with no signature button. If you want a decision, it is ours and not a source's: **our own reading is that Combat is the lower-risk levelling pick and that Assassination pays off once [[Mutilate]] is reachable.**
 ## Your talent points
 **Icy Veins' level 20 build — 11/0/0**, with the click order published:
 1. `Remorseless Attacks`, 2 points
@@ -22,7 +22,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1
 **Wowhead publishes two different level 20 builds**, and neither is this one. Its **Backstab Build** puts 3 points into `Puncturing Wounds` for **+30% Backstab crit and a 45% chance of a bonus combo point**, plus `Improved Sinister Strike` "solely for when you inevitably pull aggro." Its **Relentless Strikes Build** spends those points on `Relentless Strikes` and `Ruthlessness` for Energy economy instead, on either a dagger or a slow one-hander. Wowhead's own framing explains the overlap with Combat: at 20 it says Assassination "will ultimately play the same as the Combat Rogue for now."
 **Level 30: 21/0/0 — our own extension, not a published build.** No source has posted one; the cap only reached 30 on October 1. Extending the level 20 build on the tree's own point costs: `Malice` 5 → `Remorseless Attacks` 2 → `Ruthlessness` 3 → `Relentless Strikes` 1 → `Lethality` 5 → `Vile Poisons` 4 → **[[Mutilate]]** at 30. What is confirmed: [[Mutilate]] costs 21 Assassination points (ClassicWoW.gg), `Venom` is a 31-point capstone, so unreachable at either beta cap, and `Cold Blood` — a guaranteed-crit cooldown on your next finisher — "was moved higher in the talent tree" for Forever (Icy Veins), reachable well before Classic's tree allowed.
 ## Rotation
-**At level 20 all three Rogue specs play identically.**
+**At level 20 all three Rogue specs play the same.** Icy Veins says so on its own Assassination guide, and Wowhead's three level-20 guides confirm it by being largely interchangeable: *"During the early stages of Rogue leveling, it is difficult to really differentiate the specializations."*
 1. **From 20, [[Instant Poison]] on both weapons**
 2. **Open from [[Stealth]] with [[Ambush]]**
 3. **[[Backstab]] behind the target, otherwise [[Sinister Strike]]**
@@ -32,7 +32,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1
 **Multi-target: no source publishes an Assassination area rotation.** The only relevant note is that `Remorseless Attacks` *"heavily incentivizes pulling multiple mobs"*, it rewards chain-killing, which is not the same as cleaving.
 ## Stat priority
 Weapon damage, then Hit and Expertise, Agility, critical strike, Strength, Stamina.
-**Slow main hand, fast off hand.** *"Intellect and Spirit are wasted on a rogue."*
+Published gear advice adds: **slow main hand, fast off hand**, and *"Intellect and Spirit are wasted on a rogue."*
 ## What defines Assassination
 | Talent | Earliest level | What it does |
 | --- | --- | --- |

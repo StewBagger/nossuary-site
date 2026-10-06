@@ -2,7 +2,7 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Elemental Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/elemental/level-20-dps-overview ;; Icy Veins — Elemental Shaman PvE Guide|https://www.icy-veins.com/wow-forever/elemental-shaman-ranged-dps-pve-guide ;; ClassicWoW.gg — Elemental Shaman|https://classicwow.gg/forever/guides/shaman/elemental
 
-Ranged caster mixing hard lightning casts with Shocks, interrupts and totems. **Its two best talents are level 30 and 40**, which is the whole story of this spec in the beta.
+Ranged caster mixing hard lightning casts with Shocks, interrupts and totems. **Its two new talents sit at level 30 and 40** — `Lightning Overload` and [[Lava Burst]] — which is the whole story of this spec in the beta.
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Elemental build has been tested. **A specific warning for this spec:** a widely-published level-30 Elemental build **is not legal on the current client.** It spends 5 points on `Elemental Fury`, which Blizzard **moved down to row 6 on September 24**, so it now needs 26 points, not 21. That site's data predates the change, and its prose and its own screenshot disagree besides. **Treat no level-30 Elemental build as published.**
 :::
@@ -32,7 +32,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1
 ## Stat priority
 Spell Power, then Hit, Haste, critical strike, Intellect, MP5, Spirit, Stamina.
 **Nature damage and plain spell power lead equally**, then *"Intellect, which is how many bolts you get before you have to sit down."* Take **leather over cloth** where the stats are otherwise equal.
-Given that Forever moved caster power from base spells onto gear, **item level is worth more to this spec than to most.** Replace pieces aggressively.
+Given that Forever moved caster power from base spells onto gear, the published advice is to *"constantly upgrade"* — replace pieces aggressively.
 ## What defines Elemental
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
@@ -41,7 +41,7 @@ Given that Forever moved caster power from base spells onto gear, **item level i
 | **[[Lava Burst]]** | **40** | New, the row-7 capstone. 2.5-second cast, 10-second cooldown, **+20% with your own [[Flame Shock]] up**. Unreachable at either beta cap |
 ## What Forever changed for Elemental
 - **New:** [[Lava Burst]], `Lightning Overload`, `Earthbound`. **Removed:** `Elemental Mastery`, `Totemic Mastery`.
-- **[[Fire Nova Totem]] became [[Fire Nova]]**: an instant **10-yard** explosion cast **from your active Fire totem**, rather than a totem you drop and wait on. (The 30 yards is a different number: how far away you may now *place* a totem, up from 20.) `Improved Fire Nova` replaces `Improved Fire Totems`. A real improvement, and it changes how you open a pull.
+- **[[Fire Nova Totem]] became [[Fire Nova]]**: an instant **10-yard** explosion cast **from your active Fire totem**, rather than a totem you drop and wait on. (The 30 yards is a different number: how far away you may now *place* a totem, up from 20.) `Improved Fire Nova` replaces `Improved Fire Totems`. It changes how you open a pull.
 - **[[Lightning Bolt]] casts in 2.5 seconds instead of 3.0 from rank 4 (level 20) upward, so the buff is live well inside the level-30 cap. [[Chain Lightning]] casts in 2.0 instead of 2.5 at every rank.**
 - **Base spell damage was cut across the board**, with the power moved onto gear's spell power.
 - **`Elemental Alacrity`** (renamed from `Lightning Mastery`) **moved up to row 3, and `Elemental Fury` moved down to row 6** on September 24. Elemental Fury now requires `Call of Thunder`, which itself is now 1 rank at 3%. **This is the change that invalidated the published level-30 build.**

@@ -2,13 +2,13 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Holy Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/holy/level-20-healer-overview ;; Icy Veins — Holy Paladin Healer Guide|https://www.icy-veins.com/wow-forever/holy-paladin-healer-pve-guide ;; ClassicWoW.gg — Holy Paladin|https://classicwow.gg/forever/guides/paladin/holy
 
-Plate-wearing single-target healer with the best buff kit in the game, and Forever finally gives it an area-healing answer through the new `Light's Vigil` capstone.
+Plate-wearing single-target healer with party-wide Blessings and auras, and Forever finally gives it an area-healing answer through the new `Light's Vigil` capstone.
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Holy build has been tested. **One warning:** a published level-20 "Holy damage" build spends two points on `Improved Holy Strike`, **a talent that does not exist in the beta client**, its effect was made baseline for every Paladin in the September 24 build, which dropped [[Holy Strike]]'s cooldown to 10 seconds for everyone. That build cannot be entered as printed. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
 ## Is Holy worth levelling?
-**Viable but slow, and its usual escape hatch is closed.** You will be nearly unkillable and you will kill nothing quickly. Worse for this spec specifically: **Forever cut dungeon experience hard, and the October 1 build halved the extra experience on dungeon *quests* as well**, so "just level in dungeons" is largely gone.
-Blunt version: solo-questing Holy from 1 to 30 is a poor choice. It makes sense if you intend to group, and only then.
+**Viable but slow, and its usual escape hatch is closed — the pace half of that is our own reading, not a published rating.** You will be nearly unkillable and you will kill nothing quickly. What *is* published is the escape hatch closing, and it hurts this spec specifically: **Forever cut dungeon experience hard, and the October 1 build halved the extra experience on dungeon *quests* as well**, so "just level in dungeons" is largely gone.
+**Our own recommendation, not a sourced one:** solo-questing Holy from 1 to 30 is a poor choice. It makes sense if you intend to group, and only then.
 ## Your talent points
 **Level 20: 11/0/0.** Icy Veins and Wowhead agree on the shape, but not on the third talent.
 1. `Divine Intellect`, 5 points

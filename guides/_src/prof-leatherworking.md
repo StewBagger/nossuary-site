@@ -2,16 +2,16 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
 
-Leather and mail armour, cloaks, armour kits and quivers. **The biggest profession in the game at 512 recipes, 271 of them new**, and the one whose vanilla knowledge is most wrong.
+Leather and mail armour, cloaks, armour kits and quivers. **The biggest profession in the game at 512 recipes, 271 of them new.**
 :::scope
 Recipes, reagents and skill levels are come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta.** **80 Leatherworking recipes make something the client will not describe**, because Blizzard is hiding item stats until they drop. Best-in-slot figures are level 20, which was the beta cap when they were written; the cap rose to 30 on October 1 and they have not been re-checked.
 :::
 ## Is Leatherworking worth taking?
-**Yes, and for leather and mail wearers it is close to mandatory.** It earns **Legacy Points**, it owns **four crafted tier sets**, and it received more new content than any other profession.
+It earns **Legacy Points**, it owns **four crafted tier sets**, and it received more new content than any other profession. For leather and mail wearers it is close to mandatory *(ours, not a source's)* — the published verdicts below are consistently in its favour, but none of them goes that far.
 The published verdicts are unusually consistent. For Hunters: *"one of the strongest and most natural combinations early on… including some of the strongest entry end-game pieces."* For Rogues: *"the two ideal picks, especially at this point, being Skinning and Leatherworking."* Enhancement Shaman and Restoration Druid guides say the same.
 **32 Leatherworking items appear in level-20 best-in-slot lists, 24 of them new.** [[Defender's Leather Hood]] at skill 100 is best in slot for 13 specs.
 ## What it pairs with
-**Skinning.** Unchanged.
+**Leatherworking eats leather, and Skinning is the only profession that gathers it.** Unchanged.
 ## The one thing every veteran will get wrong
 **Leatherworking's best recipes no longer need a miner.** In vanilla the top pieces cost bars. [[Invulnerable Mail]] wanted 30 Arcanite Bar and 30 Enchanted Thorium Bar. **In Forever every one of those bar requirements has been replaced with leather.**
 | Recipe | Forever | Vanilla |
@@ -38,6 +38,6 @@ The route to 225 ends on the wall: **59 crafts of [[Turtle Scale Breastplate]]**
 Above the cap: Thick Leather Ammo Pouch → Wicked Leather Gauntlets → Frostsaber Boots → Heavy Scorpid Helm.
 **Shopping list to 225:** 724 Turtle Scale, 511 Thick Leather, 450 Medium Leather, 449 Light Leather, 394 Heavy Leather, 257 Salt, 208 Fine Thread, 138 Ruined Leather Scraps, 104 Coarse Thread, 65 Heavy Hide.
 **225 → 300:** 488 Rugged Leather, 288 Heavy Scorpid Scale, 210 Thick Leather, 156 Frostsaber Leather, 126 Silken Thread, 74 Rune Thread.
-**724 Turtle Scale is a farm, and it is where most people stop.** Heavy Scorpid Scale and Frostsaber Leather at the top end are both zone-locked farms too. **Cheapest of the crafting professions if you also take Skinning; brutal if you do not.**
+**724 Turtle Scale is a farm.** Heavy Scorpid Scale and Frostsaber Leather at the top end are both zone-locked farms too. This is where most people stop, and Leatherworking is the cheapest of the crafting professions if you also take Skinning, brutal if you do not *(ours, not a source's)*.
 ## What is not known
 All three specialisation parameters. Bracer kit and saddle details. What 80 of its recipes make. Where the new Dragonscale and tier-set patterns drop.

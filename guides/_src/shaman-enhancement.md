@@ -2,7 +2,7 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Enhancement Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-20-dps-overview ;; Icy Veins — Enhancement Shaman PvE Guide|https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide ;; ClassicWoW.gg — Enhancement Shaman|https://classicwow.gg/forever/guides/shaman/enhancement
 
-Melee weapon damage that feeds your spellcasting: [[Stormstrike]] and `Maelstrom Weapon` turn swings into [[Lightning Bolt]]s. **The Shaman levelling spec**, and the one build two independent sources publish identically.
+Melee weapon damage that feeds your spellcasting: [[Stormstrike]] and `Maelstrom Weapon` turn swings into [[Lightning Bolt]]s. **The spec the sources agree on for levelling**, and the one build two independent sources publish identically.
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Enhancement build has been tested. Talent rows unlock at levels 10, 15, 20, 25, 30, 35 and 40. **Every tree now carries a new single-point milestone talent at 16 points**, alongside the familiar ones at 11, 21 and 31; which row it sits in varies by tree. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
@@ -17,7 +17,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1
 3. `Improved Ghost Wolf`, 2 points
 4. **`Shamanistic Focus`** at 20
 **Take `Improved Ghost Wolf` last on that row:** *"Put points in this last on the row, since [[Ghost Wolf]] only unlocks at Level 20."* Points in it before then do nothing.
-**A third source disagrees on those two points** and spends them on `Improved Lightning Shield` instead, which is reasonable for a dungeon build where travel form is worthless. Its PvP list takes `Improved Ghost Wolf` 2 plus `Earth's Grasp` 2 and only `Thundering Strikes` 3.
+**A third source disagrees on those two points** and spends them on `Improved Lightning Shield` instead. Its PvP list takes `Improved Ghost Wolf` 2 plus `Earth's Grasp` 2 and only `Thundering Strikes` 3.
 **A published mana alternative, with a warning attached:** *"Due to the Mana concerns at Level 20, there is an alternative build that goes into Restoration to reach both `Mindfulness` & [[Water Shield]]… once the cap increases this path will prevent you from reaching deeper into the Enhancement tree without a costly respec."*
 **Level 30: 0/21/0 — our own extension, not a published build**, in order: `Thundering Strikes` 5 → `Mental Dexterity` 3 → `Improved Ghost Wolf` 2 → `Shamanistic Focus` 1 → `Elemental Weapons` 3 → `Ancestral Knowledge` 1 → **[[Stormstrike]]** → `Flurry` 4 → `Improved Stormstrike` 1.
 ## Rotation
@@ -32,7 +32,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1
 **Multi-target: [[Fire Nova]], and it is *"extremely Mana hungry."*** Take that literally: *"especially early, Enhancement really needs to be engaging things one at a time."*
 ## Stat priority
 Weapon DPS on a **slow two-hander**, then Hit and Expertise, critical strike, Strength, Intellect, Agility, Spell Power, Spirit, Stamina.
-**Intellect ranks higher than you would expect, and a talent is why:** *"`Mental Dexterity` 3/3 turns a point of Intellect into 1 attack power with its mana beside it."* So Intellect is damage *and* uptime here. One published list puts Strength and Intellect the other way round and is internally inconsistent about it; take the talent as the tiebreaker.
+**Intellect ranks higher than you would expect, and a talent is why:** *"`Mental Dexterity` 3/3 turns a point of Intellect into 1 attack power with its mana beside it."* So Intellect is damage *and* uptime here. One published list puts Strength and Intellect the other way round and is internally inconsistent about it; **no source resolves the order, so taking the talent as the tiebreaker is our own reading.**
 ## What defines Enhancement
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
@@ -41,7 +41,7 @@ Weapon DPS on a **slow two-hander**, then Hit and Expertise, critical strike, St
 | **`Maelstrom Weapon`** | 35 | New. At rank 5, five stacks make a [[Lightning Bolt]] **instant and free**. At rank 1 it is only 20% of that, so it is all-or-nothing |
 | **`Rage of the Far Seer`** | **40** | The 31-point capstone. *"Shamans don't get [[Bloodlust]] in Forever… Rage of the Farseer acts as the next best thing"* |
 ## What Forever changed for Enhancement
-- **Weapon imbues last 60 minutes instead of 5. Totems last 5 minutes instead of 2 and reach 30 yards instead of 20.** Unglamorous, and it affects how you play more than any single talent.
+- **Weapon imbues last 60 minutes instead of 5. Totems last 5 minutes instead of 2 and reach 30 yards instead of 20.** Unglamorous, and it removes the per-pull refresh habit entirely.
 - **New:** `Mental Dexterity`, `Shamanistic Focus` (−45% mana on Shocks and [[Lightning Shield]]), `Mental Quickness`, `Improved Stormstrike`, `Maelstrom Weapon`, `Rage of the Far Seer`, and **`Spirit Weapons`**. **Removed:** `Two-Handed Axes and Maces` (now known without a talent), **`Parry`** (whose slot `Spirit Weapons` took), `Shield Specialization`, `Weapon Mastery`, `Enhancing Totems`, `Improved Weapon Totems`.
 - **`Improved Ghost Wolf` now does two things:** 3.0 seconds off the cast at 2/2, making [[Ghost Wolf]] **instant**, and indoor use. **The spell itself is unchanged from Classic**; both halves live in the talent.
 - **`Rage of the Far Seer` no longer increases casting speed**, and Blizzard says so itself in the September 24 notes: the talent *"no longer increases the Shaman's Spell Casting Speed"*, because that speed *"was not necessary to include for the core functionality of this ability."* ClassicWoW.gg's talent tooltip and FAQ still say it boosts casting speed; that data is stale.

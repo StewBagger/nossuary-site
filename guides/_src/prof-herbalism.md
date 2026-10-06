@@ -7,12 +7,12 @@ Herbs, and the only feed for Alchemy. **The herb table is unchanged from Classic
 Herb list, skill thresholds and camp objects are come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta.** The zones below are **Classic spawn data**; Forever's new zones are not counted. Node locations, respawns and required skill are explicitly unconfirmed by the source publishing the client data.
 :::
 ## Is Herbalism worth taking?
-**Yes, and it is the strongest of the three gathering professions right now.** Alchemy gained 70 new recipes and four new raid flasks, and all of that demand lands on herbs.
+Alchemy gained 70 new recipes and four new raid flasks, and all of that demand lands on herbs, which makes Herbalism the strongest of the three gathering professions right now *(ours, not a source's)*.
 **It earns no Legacy Points.** Only the six crafting professions do.
 The camp object is [[Incense Candle]] at skill 20: **25 Intellect** to everyone sitting nearby, and it does not stack with [[Arcane Intellect]] — **that is foreverchanges.pro's reading of the client; Blizzard publishes no camp-object value and no equivalence to a class buff.** It is redundant if you have a Mage.
 ## What it pairs with
-**Herbalism with Alchemy.** Unchanged, and Alchemy has no other feed.
-For a veteran: with [Merchant's Favor](/guides/wow-forever/professions/merchants-favor/) able to buy recipes, and crates purchasable from the auction house, the Herbalism half of that pair is **more optional than it used to be.**
+**Alchemy eats herbs, and Herbalism is the only profession that gathers them.** Unchanged, and Alchemy has no other feed.
+For a veteran, and this is our own reading rather than a published one: [Merchant's Favor](/guides/wow-forever/professions/merchants-favor/) buys recipes, and the crates are purchasable from the auction house, so the Herbalism half of that pair is more optional than it used to be.
 ## Levelling it
 1. **1 → 50**: Peacebloom, Silverleaf, Earthroot. Barrens, Durotar, Tirisfal, Elwynn
 2. **50 → 100**: Mageroyal, Briarthorn. Barrens, Ashenvale, Darkshore, Westfall
@@ -22,7 +22,7 @@ For a veteran: with [Merchant's Favor](/guides/wow-forever/professions/merchants
 6. **230 → 270**: Sungrass, Blindweed, Ghost Mushroom, Gromsblood, Golden Sansam
 7. **270 → 300**: Dreamfoil, Mountain Silversage, Plaguebloom, Icecap
 **The skill-up curve is published:** a herb gives a point every time for its **first 25 points**, then less and less, until it turns grey **100 points past** its requirement.
-This is the cheapest profession in the game to level. The only cost is travel.
+This is the cheapest profession in the game to level, and the only cost is travel *(ours, not a source's)*.
 ## What Forever changed
 - **All 28 herbs are unchanged** and sit at their Classic thresholds. **None is flagged as new.**
 - **Six new herbs exist with no published node:** `Demonsage`, `Death Lotus`, `Marefoil`, `Stranglevine`, `Rosecap` and `Frilled Lichen`. All are typed as herbs, and **Death Lotus is a reagent in all four of Alchemy's new raid flasks.** None appears in the gathering table. These are probably the "Scarce materials" that `Bountiful Harvest` boosts, but that is not confirmed.
