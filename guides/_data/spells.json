@@ -1,15 +1,27 @@
 {
  "build": "1.60.1.70245",
  "product": "wow_cn_beta",
- "generated": "2026-10-07T10:04:37+00:00",
- "stamp": "03bf7a67da40",
- "inputs": "75042d3fbc6f",
+ "generated": "2026-10-07T10:30:42+00:00",
+ "stamp": "cb0c0a58ef41",
+ "inputs": "cd30956a2ca4",
  "entries": {
   "Adrenaline Rush": {
    "kind": "spell",
    "id": 13750,
    "level": null,
    "icon": 136206
+  },
+  "Aftermath": {
+   "kind": "talent",
+   "id": 18119,
+   "level": null,
+   "icon": 135805
+  },
+  "Agonizing Flames": {
+   "kind": "talent",
+   "id": 17927,
+   "level": null,
+   "icon": 135827
   },
   "Aimed Shot": {
    "kind": "spell",
@@ -35,11 +47,41 @@
    "level": 18,
    "icon": 132282
   },
+  "Amplify Curse": {
+   "kind": "talent",
+   "id": 18288,
+   "level": null,
+   "icon": 136132
+  },
+  "Ancestral Healing": {
+   "kind": "talent",
+   "id": 16176,
+   "level": null,
+   "icon": 136109
+  },
+  "Ancestral Knowledge": {
+   "kind": "talent",
+   "id": 17485,
+   "level": null,
+   "icon": 136162
+  },
+  "Anger Management": {
+   "kind": "talent",
+   "id": 12296,
+   "level": 1,
+   "icon": 135881
+  },
   "Anti-Venom": {
    "kind": "item",
    "id": 6452,
    "level": null,
    "icon": 134437
+  },
+  "Anticipation": {
+   "kind": "talent",
+   "id": 12297,
+   "level": 1,
+   "icon": 136056
   },
   "Aquatic Form": {
    "kind": "spell",
@@ -53,10 +95,34 @@
    "level": 20,
    "icon": 135735
   },
+  "Arcane Channeling": {
+   "kind": "talent",
+   "id": 23017,
+   "level": null,
+   "icon": 135743
+  },
+  "Arcane Concentration": {
+   "kind": "talent",
+   "id": 11213,
+   "level": 1,
+   "icon": 136170
+  },
   "Arcane Explosion": {
    "kind": "spell",
    "id": 1449,
    "level": 14,
+   "icon": 136116
+  },
+  "Arcane Focus": {
+   "kind": "talent",
+   "id": 11222,
+   "level": 1,
+   "icon": 135892
+  },
+  "Arcane Impact": {
+   "kind": "talent",
+   "id": 11242,
+   "level": 1,
    "icon": 136116
   },
   "Arcane Intellect": {
@@ -64,6 +130,18 @@
    "id": 1459,
    "level": 1,
    "icon": 135932
+  },
+  "Arcane Meditation": {
+   "kind": "talent",
+   "id": 18462,
+   "level": null,
+   "icon": 136208
+  },
+  "Arcane Mind": {
+   "kind": "talent",
+   "id": 11232,
+   "level": 1,
+   "icon": 136129
   },
   "Arcane Missiles": {
    "kind": "spell",
@@ -83,11 +161,23 @@
    "level": 6,
    "icon": 132218
   },
+  "Arcane Subtlety": {
+   "kind": "talent",
+   "id": 11210,
+   "level": 1,
+   "icon": 135894
+  },
   "Arcanite Blacksmith Hammer": {
    "kind": "item",
    "id": 285281,
    "level": null,
    "icon": 133057
+  },
+  "Armorsmith": {
+   "kind": "talent",
+   "id": 9788,
+   "level": null,
+   "icon": 132739
   },
   "Aspect of the Beast": {
    "kind": "spell",
@@ -106,6 +196,12 @@
    "id": 13165,
    "level": 10,
    "icon": 136076
+  },
+  "Aspect of the Monkey": {
+   "kind": "talent",
+   "id": 13163,
+   "level": null,
+   "icon": 132159
   },
   "Aspect of the Pack": {
    "kind": "spell",
@@ -131,6 +227,12 @@
    "level": 1,
    "icon": 132369
   },
+  "Axe Specialization": {
+   "kind": "talent",
+   "id": 4334,
+   "level": null,
+   "icon": 132316
+  },
   "Azerothium Bar": {
    "kind": "item",
    "id": 249726,
@@ -148,6 +250,12 @@
    "id": 1278067,
    "level": null,
    "icon": 466035
+  },
+  "Bane": {
+   "kind": "talent",
+   "id": 17788,
+   "level": null,
+   "icon": 136146
   },
   "Bane of Agony": {
    "kind": "spell",
@@ -179,6 +287,12 @@
    "level": 44,
    "icon": 136097
   },
+  "Barrage": {
+   "kind": "talent",
+   "id": 19461,
+   "level": null,
+   "icon": 132330
+  },
   "Bash": {
    "kind": "spell",
    "id": 5211,
@@ -190,6 +304,12 @@
    "id": 279981,
    "level": null,
    "icon": 7808148
+  },
+  "Bastion": {
+   "kind": "talent",
+   "id": 16538,
+   "level": 1,
+   "icon": 134950
   },
   "Battle Shout": {
    "kind": "spell",
@@ -209,17 +329,53 @@
    "level": null,
    "icon": 132520
   },
+  "Benediction": {
+   "kind": "talent",
+   "id": 20101,
+   "level": null,
+   "icon": 135863
+  },
   "Berserk": {
    "kind": "spell",
    "id": 23397,
    "level": null,
    "icon": 136129
   },
+  "Berserker Rage": {
+   "kind": "talent",
+   "id": 18499,
+   "level": null,
+   "icon": 136009
+  },
   "Berserker Stance": {
    "kind": "spell",
    "id": 2458,
    "level": 30,
    "icon": 132275
+  },
+  "Berserking": {
+   "kind": "talent",
+   "id": 20554,
+   "level": null,
+   "icon": 135727
+  },
+  "Bestial Discipline": {
+   "kind": "talent",
+   "id": 19590,
+   "level": null,
+   "icon": 136006
+  },
+  "Bestial Swiftness": {
+   "kind": "talent",
+   "id": 19596,
+   "level": null,
+   "icon": 132120
+  },
+  "Binding Heal": {
+   "kind": "talent",
+   "id": 401937,
+   "level": null,
+   "icon": 135883
   },
   "Bite": {
    "kind": "spell",
@@ -233,6 +389,12 @@
    "level": null,
    "icon": 132799
   },
+  "Blackout": {
+   "kind": "talent",
+   "id": 15268,
+   "level": null,
+   "icon": 136160
+  },
   "Blade Flurry": {
    "kind": "spell",
    "id": 13877,
@@ -244,6 +406,12 @@
    "id": 11113,
    "level": 30,
    "icon": 135903
+  },
+  "Blessed Recovery": {
+   "kind": "talent",
+   "id": 27811,
+   "level": null,
+   "icon": 135877
   },
   "Blessing of Kings": {
    "kind": "spell",
@@ -287,6 +455,24 @@
    "level": 20,
    "icon": 135857
   },
+  "Blood Craze": {
+   "kind": "talent",
+   "id": 16487,
+   "level": null,
+   "icon": 136218
+  },
+  "Blood Frenzy": {
+   "kind": "talent",
+   "id": 16958,
+   "level": null,
+   "icon": 132152
+  },
+  "Blood Fury": {
+   "kind": "talent",
+   "id": 20572,
+   "level": null,
+   "icon": 135726
+  },
   "Bloodlust": {
    "kind": "spell",
    "id": 6742,
@@ -305,6 +491,18 @@
    "level": 40,
    "icon": 136012
   },
+  "Bloodthrill": {
+   "kind": "talent",
+   "id": 1289681,
+   "level": null,
+   "icon": 135271
+  },
+  "Booming Voice": {
+   "kind": "talent",
+   "id": 12321,
+   "level": 1,
+   "icon": 136075
+  },
   "Boosted Rest": {
    "kind": "spell",
    "id": 1229451,
@@ -316,6 +514,18 @@
    "id": 14156,
    "level": null,
    "icon": 133646
+  },
+  "Boundless Rage": {
+   "kind": "talent",
+   "id": 1310236,
+   "level": null,
+   "icon": 236310
+  },
+  "Bountiful Harvest": {
+   "kind": "talent",
+   "id": 1225435,
+   "level": null,
+   "icon": 133651
   },
   "Brilliant Smallfish": {
    "kind": "item",
@@ -329,11 +539,41 @@
    "level": null,
    "icon": 133916
   },
+  "Brutal Impact": {
+   "kind": "talent",
+   "id": 16940,
+   "level": null,
+   "icon": 132114
+  },
+  "Burning Soul": {
+   "kind": "talent",
+   "id": 11083,
+   "level": 1,
+   "icon": 135805
+  },
+  "Call of Flame": {
+   "kind": "talent",
+   "id": 16038,
+   "level": null,
+   "icon": 135817
+  },
+  "Call of Thunder": {
+   "kind": "talent",
+   "id": 16120,
+   "level": null,
+   "icon": 136014
+  },
   "Call of the Elements": {
    "kind": "spell",
    "id": 66842,
    "level": 20,
    "icon": 310730
+  },
+  "Camouflage": {
+   "kind": "talent",
+   "id": 13975,
+   "level": null,
+   "icon": 132320
   },
   "Camp Chair": {
    "kind": "item",
@@ -346,6 +586,24 @@
    "id": 279978,
    "level": null,
    "icon": 134250
+  },
+  "Cannibalize": {
+   "kind": "talent",
+   "id": 20577,
+   "level": null,
+   "icon": 132278
+  },
+  "Careful Aim": {
+   "kind": "talent",
+   "id": 1223984,
+   "level": null,
+   "icon": 132217
+  },
+  "Cataclysm": {
+   "kind": "talent",
+   "id": 17778,
+   "level": null,
+   "icon": 135831
   },
   "Chain Heal": {
    "kind": "spell",
@@ -365,11 +623,23 @@
    "level": 28,
    "icon": 132117
   },
+  "Champion of the Light": {
+   "kind": "talent",
+   "id": 1311084,
+   "level": null,
+   "icon": 236251
+  },
   "Charge": {
    "kind": "spell",
    "id": 7371,
    "level": 1,
    "icon": 132184
+  },
+  "Chastise": {
+   "kind": "talent",
+   "id": 19337,
+   "level": null,
+   "icon": 135886
   },
   "Cheap Shot": {
    "kind": "spell",
@@ -389,6 +659,18 @@
    "level": 20,
    "icon": 132338
   },
+  "Cold Blood": {
+   "kind": "talent",
+   "id": 14177,
+   "level": null,
+   "icon": 135988
+  },
+  "Cold Snap": {
+   "kind": "talent",
+   "id": 12472,
+   "level": 1,
+   "icon": 135865
+  },
   "Combustion": {
    "kind": "spell",
    "id": 11129,
@@ -406,6 +688,12 @@
    "id": 1296017,
    "level": null,
    "icon": 8188276
+  },
+  "Concussion": {
+   "kind": "talent",
+   "id": 16035,
+   "level": null,
+   "icon": 136026
   },
   "Concussion Blow": {
    "kind": "spell",
@@ -431,6 +719,12 @@
    "level": 25,
    "icon": 135807
   },
+  "Confounding Flash": {
+   "kind": "talent",
+   "id": 1277455,
+   "level": null,
+   "icon": 571554
+  },
   "Conjure Food": {
    "kind": "spell",
    "id": 587,
@@ -455,6 +749,24 @@
    "level": 20,
    "icon": 135926
   },
+  "Contingency Plan": {
+   "kind": "talent",
+   "id": 1277456,
+   "level": null,
+   "icon": 458722
+  },
+  "Convection": {
+   "kind": "talent",
+   "id": 16039,
+   "level": null,
+   "icon": 136116
+  },
+  "Conviction": {
+   "kind": "talent",
+   "id": 20117,
+   "level": 1,
+   "icon": 135957
+  },
   "Cookie's Feast": {
    "kind": "item",
    "id": 279957,
@@ -466,6 +778,12 @@
    "id": 172,
    "level": 4,
    "icon": 136118
+  },
+  "Counterattack": {
+   "kind": "talent",
+   "id": 19306,
+   "level": 30,
+   "icon": 132336
   },
   "Counterspell": {
    "kind": "spell",
@@ -509,11 +827,35 @@
    "level": null,
    "icon": 134002
   },
+  "Critical Mass": {
+   "kind": "talent",
+   "id": 11115,
+   "level": 1,
+   "icon": 136115
+  },
+  "Cruelty": {
+   "kind": "talent",
+   "id": 12320,
+   "level": 1,
+   "icon": 132292
+  },
+  "Crusade": {
+   "kind": "talent",
+   "id": 1311083,
+   "level": null,
+   "icon": 135889
+  },
   "Crystal Infused Bandage": {
    "kind": "item",
    "id": 23684,
    "level": null,
    "icon": 133686
+  },
+  "Cultivation": {
+   "kind": "talent",
+   "id": 20552,
+   "level": null,
+   "icon": 133938
   },
   "Cure Poison": {
    "kind": "spell",
@@ -545,17 +887,59 @@
    "level": 20,
    "icon": 615099
   },
+  "Cutthroat": {
+   "kind": "talent",
+   "id": 424980,
+   "level": null,
+   "icon": 236281
+  },
+  "Dark Sacrifice": {
+   "kind": "talent",
+   "id": 2946,
+   "level": null,
+   "icon": 5852175
+  },
   "Dash": {
    "kind": "spell",
    "id": 1850,
    "level": null,
    "icon": 132120
   },
+  "Deadliness": {
+   "kind": "talent",
+   "id": 30902,
+   "level": null,
+   "icon": 135540
+  },
+  "Deadly Aspects": {
+   "kind": "talent",
+   "id": 19552,
+   "level": null,
+   "icon": 136076
+  },
   "Deadly Poison": {
    "kind": "item",
    "id": 2892,
    "level": null,
    "icon": 132290
+  },
+  "Death Wish": {
+   "kind": "talent",
+   "id": 12328,
+   "level": 1,
+   "icon": 136146
+  },
+  "Decimation": {
+   "kind": "talent",
+   "id": 440870,
+   "level": null,
+   "icon": 135808
+  },
+  "Deep Wounds": {
+   "kind": "talent",
+   "id": 12834,
+   "level": 1,
+   "icon": 132090
   },
   "Defender's Leather Hood": {
    "kind": "item",
@@ -569,11 +953,59 @@
    "level": 10,
    "icon": 132341
   },
+  "Defiance": {
+   "kind": "talent",
+   "id": 12792,
+   "level": null,
+   "icon": 132347
+  },
+  "Deflection": {
+   "kind": "talent",
+   "id": 16462,
+   "level": null,
+   "icon": 132269
+  },
   "Demon Skin": {
    "kind": "spell",
    "id": 687,
    "level": 1,
    "icon": 136185
+  },
+  "Demonic Aegis": {
+   "kind": "talent",
+   "id": 470279,
+   "level": null,
+   "icon": 132221
+  },
+  "Demonic Brand": {
+   "kind": "talent",
+   "id": 1293695,
+   "level": null,
+   "icon": 4226151
+  },
+  "Demonic Embrace": {
+   "kind": "talent",
+   "id": 18697,
+   "level": null,
+   "icon": 136172
+  },
+  "Demonic Energies": {
+   "kind": "talent",
+   "id": 1225214,
+   "level": null,
+   "icon": 237564
+  },
+  "Demonic Knowledge": {
+   "kind": "talent",
+   "id": 412732,
+   "level": null,
+   "icon": 136165
+  },
+  "Demonic Pact": {
+   "kind": "talent",
+   "id": 425464,
+   "level": null,
+   "icon": 5927650
   },
   "Demonic Sacrifice": {
    "kind": "spell",
@@ -581,11 +1013,23 @@
    "level": null,
    "icon": 136184
   },
+  "Demonsage": {
+   "kind": "talent",
+   "id": 1272739,
+   "level": null,
+   "icon": 133939
+  },
   "Demoralizing Roar": {
    "kind": "spell",
    "id": 99,
    "level": 10,
    "icon": 132121
+  },
+  "Demoralizing Screech": {
+   "kind": "talent",
+   "id": 24423,
+   "level": null,
+   "icon": 132200
   },
   "Demoralizing Shout": {
    "kind": "spell",
@@ -599,6 +1043,12 @@
    "level": 10,
    "icon": 135954
   },
+  "Destructive Reach": {
+   "kind": "talent",
+   "id": 17917,
+   "level": null,
+   "icon": 136133
+  },
   "Deterrence": {
    "kind": "spell",
    "id": 19263,
@@ -608,14 +1058,26 @@
   "Devastate": {
    "kind": "spell",
    "id": 20243,
-   "level": null,
+   "level": 50,
    "icon": 135291
+  },
+  "Devastation": {
+   "kind": "talent",
+   "id": 18130,
+   "level": null,
+   "icon": 135813
   },
   "Devotion Aura": {
    "kind": "spell",
    "id": 465,
    "level": 1,
    "icon": 135893
+  },
+  "Devouring Contagion": {
+   "kind": "talent",
+   "id": 1309950,
+   "level": null,
+   "icon": 252996
   },
   "Devouring Plague": {
    "kind": "spell",
@@ -635,6 +1097,12 @@
    "level": null,
    "icon": 134021
   },
+  "Dirty Tricks": {
+   "kind": "talent",
+   "id": 1224782,
+   "level": null,
+   "icon": 132310
+  },
   "Disarm": {
    "kind": "spell",
    "id": 676,
@@ -653,6 +1121,12 @@
    "level": 20,
    "icon": 132294
   },
+  "Dismember": {
+   "kind": "talent",
+   "id": 96,
+   "level": null,
+   "icon": 132090
+  },
   "Distract": {
    "kind": "spell",
    "id": 1725,
@@ -665,11 +1139,47 @@
    "level": null,
    "icon": 136126
   },
+  "Divine Aegis": {
+   "kind": "talent",
+   "id": 431622,
+   "level": null,
+   "icon": 237539
+  },
+  "Divine Favor": {
+   "kind": "talent",
+   "id": 20216,
+   "level": null,
+   "icon": 135915
+  },
+  "Divine Fury": {
+   "kind": "talent",
+   "id": 18530,
+   "level": null,
+   "icon": 135971
+  },
+  "Divine Grace": {
+   "kind": "talent",
+   "id": 1277370,
+   "level": null,
+   "icon": 1022949
+  },
+  "Divine Intellect": {
+   "kind": "talent",
+   "id": 20257,
+   "level": null,
+   "icon": 136090
+  },
   "Divine Intervention": {
    "kind": "spell",
    "id": 19752,
    "level": 30,
    "icon": 136106
+  },
+  "Divine Precision": {
+   "kind": "talent",
+   "id": 1310904,
+   "level": null,
+   "icon": 135918
   },
   "Divine Shield": {
    "kind": "spell",
@@ -707,6 +1217,18 @@
    "level": null,
    "icon": 134833
   },
+  "Dual Wield Specialization": {
+   "kind": "talent",
+   "id": 13715,
+   "level": null,
+   "icon": 132147
+  },
+  "Dust Cloud": {
+   "kind": "talent",
+   "id": 7272,
+   "level": null,
+   "icon": 132156
+  },
   "EZ-Thro Dark Bomb": {
    "kind": "spell",
    "id": 1266930,
@@ -719,17 +1241,89 @@
    "level": 1,
    "icon": 136235
   },
+  "Early Demise": {
+   "kind": "talent",
+   "id": 1310076,
+   "level": null,
+   "icon": 136149
+  },
   "Earth Shock": {
    "kind": "spell",
    "id": 8042,
    "level": 4,
    "icon": 136026
   },
+  "Earth's Grasp": {
+   "kind": "talent",
+   "id": 16043,
+   "level": null,
+   "icon": 136097
+  },
+  "Earthbound": {
+   "kind": "talent",
+   "id": 1222988,
+   "level": null,
+   "icon": 136100
+  },
+  "Eclipse": {
+   "kind": "talent",
+   "id": 408248,
+   "level": null,
+   "icon": 236151
+  },
+  "Efficiency": {
+   "kind": "talent",
+   "id": 19416,
+   "level": null,
+   "icon": 135865
+  },
   "Egg Nog": {
    "kind": "item",
    "id": 17198,
    "level": null,
    "icon": 132791
+  },
+  "Elemental Alacrity": {
+   "kind": "talent",
+   "id": 16578,
+   "level": null,
+   "icon": 135990
+  },
+  "Elemental Focus": {
+   "kind": "talent",
+   "id": 16164,
+   "level": 1,
+   "icon": 136170
+  },
+  "Elemental Fury": {
+   "kind": "talent",
+   "id": 16089,
+   "level": null,
+   "icon": 135830
+  },
+  "Elemental Insight": {
+   "kind": "talent",
+   "id": 1259707,
+   "level": null,
+   "icon": 4630367
+  },
+  "Elemental Precision": {
+   "kind": "talent",
+   "id": 29438,
+   "level": 1,
+   "icon": 135989
+  },
+  "Elemental Warding": {
+   "kind": "talent",
+   "id": 28996,
+   "level": null,
+   "icon": 136094
+  },
+  "Elemental Weapons": {
+   "kind": "talent",
+   "id": 16266,
+   "level": null,
+   "icon": 135814
   },
   "Elixir of Fire Power": {
    "kind": "item",
@@ -755,11 +1349,47 @@
    "level": null,
    "icon": 134717
   },
+  "Elune's Grace": {
+   "kind": "talent",
+   "id": 2651,
+   "level": null,
+   "icon": 135900
+  },
+  "Elune's Light": {
+   "kind": "talent",
+   "id": 1259799,
+   "level": null,
+   "icon": 136057
+  },
+  "Emberstorm": {
+   "kind": "talent",
+   "id": 17954,
+   "level": null,
+   "icon": 135826
+  },
   "Enchanted Lute": {
    "kind": "item",
    "id": 279976,
    "level": null,
    "icon": 4631367
+  },
+  "Endurance": {
+   "kind": "talent",
+   "id": 13742,
+   "level": null,
+   "icon": 136205
+  },
+  "Endurance Training": {
+   "kind": "talent",
+   "id": 19583,
+   "level": null,
+   "icon": 136080
+  },
+  "Enhancing Totems": {
+   "kind": "talent",
+   "id": 16259,
+   "level": null,
+   "icon": 136023
   },
   "Enrage": {
    "kind": "spell",
@@ -772,6 +1402,24 @@
    "id": 339,
    "level": 8,
    "icon": 136100
+  },
+  "Entrapment": {
+   "kind": "talent",
+   "id": 19184,
+   "level": null,
+   "icon": 136100
+  },
+  "Escape Artist": {
+   "kind": "talent",
+   "id": 20589,
+   "level": null,
+   "icon": 132309
+  },
+  "Eureka!": {
+   "kind": "talent",
+   "id": 1259812,
+   "level": null,
+   "icon": 4226119
   },
   "Evasion": {
    "kind": "spell",
@@ -803,6 +1451,12 @@
    "level": 20,
    "icon": 135903
   },
+  "Expansive Mind": {
+   "kind": "talent",
+   "id": 20591,
+   "level": null,
+   "icon": 132864
+  },
   "Expert Campfire Kit": {
    "kind": "item",
    "id": 279974,
@@ -820,6 +1474,18 @@
    "id": 8647,
    "level": 14,
    "icon": 132354
+  },
+  "Expose Prey": {
+   "kind": "talent",
+   "id": 1310532,
+   "level": null,
+   "icon": 132215
+  },
+  "Eye for an Eye": {
+   "kind": "talent",
+   "id": 9799,
+   "level": null,
+   "icon": 135904
   },
   "Faction Banner": {
    "kind": "item",
@@ -851,6 +1517,12 @@
    "level": 20,
    "icon": 135902
   },
+  "Feedback": {
+   "kind": "talent",
+   "id": 6347,
+   "level": null,
+   "icon": 136189
+  },
   "Feign Death": {
    "kind": "spell",
    "id": 5384,
@@ -863,17 +1535,53 @@
    "level": 16,
    "icon": 132294
   },
+  "Fel Concentration": {
+   "kind": "talent",
+   "id": 17783,
+   "level": null,
+   "icon": 136157
+  },
   "Fel Domination": {
    "kind": "spell",
    "id": 18708,
    "level": null,
    "icon": 136082
   },
+  "Fel Stamina": {
+   "kind": "talent",
+   "id": 18790,
+   "level": null,
+   "icon": 136184
+  },
+  "Fel Vitality": {
+   "kind": "talent",
+   "id": 18731,
+   "level": null,
+   "icon": 136150
+  },
+  "Feline Swiftness": {
+   "kind": "talent",
+   "id": 436892,
+   "level": null,
+   "icon": 136095
+  },
   "Feral Charge": {
    "kind": "spell",
    "id": 1238122,
    "level": 20,
    "icon": 132183
+  },
+  "Feral Instinct": {
+   "kind": "talent",
+   "id": 16947,
+   "level": null,
+   "icon": 132089
+  },
+  "Feral Swiftness": {
+   "kind": "talent",
+   "id": 17002,
+   "level": null,
+   "icon": 136095
   },
   "Fermenter": {
    "kind": "item",
@@ -887,11 +1595,23 @@
    "level": 32,
    "icon": 132127
   },
+  "Ferocity": {
+   "kind": "talent",
+   "id": 16934,
+   "level": null,
+   "icon": 132190
+  },
   "Field Guide": {
    "kind": "item",
    "id": 213563,
    "level": null,
    "icon": 133741
+  },
+  "Field Medicine": {
+   "kind": "talent",
+   "id": 1225475,
+   "level": null,
+   "icon": 133675
   },
   "Filet of Redgill": {
    "kind": "item",
@@ -904,6 +1624,12 @@
    "id": 43308,
    "level": null,
    "icon": 133888
+  },
+  "Fingers of Frost": {
+   "kind": "talent",
+   "id": 400647,
+   "level": null,
+   "icon": 236227
   },
   "Fire Blast": {
    "kind": "spell",
@@ -928,6 +1654,12 @@
    "id": 6371,
    "level": null,
    "icon": 134818
+  },
+  "Fire and Brimstone": {
+   "kind": "talent",
+   "id": 412751,
+   "level": null,
+   "icon": 135821
   },
   "Fireball": {
    "kind": "spell",
@@ -1013,6 +1745,36 @@
    "level": null,
    "icon": 463901
   },
+  "Flawless Execution": {
+   "kind": "talent",
+   "id": 1310711,
+   "level": null,
+   "icon": 135345
+  },
+  "Flurry": {
+   "kind": "talent",
+   "id": 12319,
+   "level": 1,
+   "icon": 132152
+  },
+  "Focused Fire": {
+   "kind": "talent",
+   "id": 1223755,
+   "level": null,
+   "icon": 135539
+  },
+  "Focused Rage": {
+   "kind": "talent",
+   "id": 29787,
+   "level": null,
+   "icon": 132345
+  },
+  "Force of Will": {
+   "kind": "talent",
+   "id": 18544,
+   "level": null,
+   "icon": 136092
+  },
   "Freezing Trap": {
    "kind": "spell",
    "id": 1499,
@@ -1037,6 +1799,12 @@
    "level": 1,
    "icon": 135843
   },
+  "Frost Channeling": {
+   "kind": "talent",
+   "id": 11160,
+   "level": 1,
+   "icon": 135860
+  },
   "Frost Nova": {
    "kind": "spell",
    "id": 122,
@@ -1055,6 +1823,12 @@
    "level": 28,
    "icon": 135840
   },
+  "Frostbite": {
+   "kind": "talent",
+   "id": 11071,
+   "level": 1,
+   "icon": 135842
+  },
   "Frostbolt": {
    "kind": "spell",
    "id": 116,
@@ -1067,17 +1841,53 @@
    "level": 40,
    "icon": 236217
   },
+  "Furious Howl": {
+   "kind": "talent",
+   "id": 3149,
+   "level": null,
+   "icon": 136101
+  },
+  "Furor": {
+   "kind": "talent",
+   "id": 17056,
+   "level": null,
+   "icon": 135881
+  },
   "Garrote": {
    "kind": "spell",
    "id": 703,
    "level": 14,
    "icon": 132297
   },
+  "Genesis": {
+   "kind": "talent",
+   "id": 1213163,
+   "level": null,
+   "icon": 132125
+  },
   "Ghost Wolf": {
    "kind": "spell",
    "id": 2645,
    "level": 20,
    "icon": 136095
+  },
+  "Ghostly Strike": {
+   "kind": "talent",
+   "id": 14278,
+   "level": null,
+   "icon": 136136
+  },
+  "Gift of Nature": {
+   "kind": "talent",
+   "id": 17104,
+   "level": null,
+   "icon": 136074
+  },
+  "Gift of the Earthmother": {
+   "kind": "talent",
+   "id": 414673,
+   "level": null,
+   "icon": 136094
   },
   "Gift of the Wild": {
    "kind": "spell",
@@ -1109,6 +1919,12 @@
    "level": 6,
    "icon": 132155
   },
+  "Gourmand": {
+   "kind": "talent",
+   "id": 1225499,
+   "level": null,
+   "icon": 134020
+  },
   "Grace of Air Totem": {
    "kind": "spell",
    "id": 8835,
@@ -1139,6 +1955,12 @@
    "level": null,
    "icon": 134188
   },
+  "Grim Reach": {
+   "kind": "talent",
+   "id": 18218,
+   "level": null,
+   "icon": 136127
+  },
   "Growl": {
    "kind": "spell",
    "id": 2649,
@@ -1150,6 +1972,12 @@
    "id": 250529,
    "level": null,
    "icon": null
+  },
+  "Hack and Slash": {
+   "kind": "talent",
+   "id": 13706,
+   "level": 1,
+   "icon": 135641
   },
   "Hammer of Justice": {
    "kind": "spell",
@@ -1163,11 +1991,29 @@
    "level": 40,
    "icon": 236253
   },
+  "Hawk Eye": {
+   "kind": "talent",
+   "id": 19498,
+   "level": null,
+   "icon": 132327
+  },
   "Heal": {
    "kind": "spell",
    "id": 2054,
    "level": 16,
    "icon": 135915
+  },
+  "Healing Focus": {
+   "kind": "talent",
+   "id": 16181,
+   "level": null,
+   "icon": 136043
+  },
+  "Healing Light": {
+   "kind": "talent",
+   "id": 20237,
+   "level": null,
+   "icon": 135920
   },
   "Healing Stream Totem": {
    "kind": "spell",
@@ -1186,6 +2032,24 @@
    "id": 331,
    "level": 1,
    "icon": 136052
+  },
+  "Healing Way": {
+   "kind": "talent",
+   "id": 29206,
+   "level": null,
+   "icon": 136044
+  },
+  "Heart of the Wild": {
+   "kind": "talent",
+   "id": 17003,
+   "level": null,
+   "icon": 135879
+  },
+  "Heating Up": {
+   "kind": "talent",
+   "id": 400624,
+   "level": null,
+   "icon": 135809
   },
   "Heavy Thorium Bar": {
    "kind": "item",
@@ -1235,6 +2099,18 @@
    "level": 1,
    "icon": 132282
   },
+  "Hex of Weakness": {
+   "kind": "talent",
+   "id": 9035,
+   "level": null,
+   "icon": 136157
+  },
+  "Holy Conduit": {
+   "kind": "talent",
+   "id": 1237268,
+   "level": null,
+   "icon": 237539
+  },
   "Holy Fire": {
    "kind": "spell",
    "id": 14914,
@@ -1253,11 +2129,29 @@
    "level": 20,
    "icon": 135922
   },
+  "Holy Precision": {
+   "kind": "talent",
+   "id": 1309957,
+   "level": null,
+   "icon": 135895
+  },
+  "Holy Shield": {
+   "kind": "talent",
+   "id": 20925,
+   "level": 40,
+   "icon": 135880
+  },
   "Holy Shock": {
    "kind": "spell",
    "id": 1311606,
    "level": 30,
    "icon": 135972
+  },
+  "Holy Specialization": {
+   "kind": "talent",
+   "id": 14889,
+   "level": null,
+   "icon": 135967
   },
   "Holy Strike": {
    "kind": "spell",
@@ -1271,6 +2165,12 @@
    "level": 50,
    "icon": 135902
   },
+  "Hot Streak": {
+   "kind": "talent",
+   "id": 48108,
+   "level": null,
+   "icon": 236218
+  },
   "Howl of Terror": {
    "kind": "spell",
    "id": 5484,
@@ -1282,6 +2182,12 @@
    "id": 12775,
    "level": null,
    "icon": 135581
+  },
+  "Humanoid Slaying": {
+   "kind": "talent",
+   "id": 19151,
+   "level": null,
+   "icon": 135942
   },
   "Hunter's Mark": {
    "kind": "spell",
@@ -1325,6 +2231,24 @@
    "level": 20,
    "icon": 135844
   },
+  "Ice Shards": {
+   "kind": "talent",
+   "id": 11207,
+   "level": 1,
+   "icon": 135855
+  },
+  "Ignite": {
+   "kind": "talent",
+   "id": 11119,
+   "level": 1,
+   "icon": 135818
+  },
+  "Illumination": {
+   "kind": "talent",
+   "id": 20210,
+   "level": null,
+   "icon": 135913
+  },
   "Immolate": {
    "kind": "spell",
    "id": 348,
@@ -1337,17 +2261,647 @@
    "level": 16,
    "icon": 135813
   },
+  "Impact": {
+   "kind": "talent",
+   "id": 11103,
+   "level": 1,
+   "icon": 135821
+  },
+  "Impale": {
+   "kind": "talent",
+   "id": 16493,
+   "level": null,
+   "icon": 132312
+  },
+  "Improved Ambush": {
+   "kind": "talent",
+   "id": 14079,
+   "level": null,
+   "icon": 132282
+  },
+  "Improved Arcane Shot": {
+   "kind": "talent",
+   "id": 19454,
+   "level": null,
+   "icon": 132218
+  },
+  "Improved Aspect of the Hawk": {
+   "kind": "talent",
+   "id": 23559,
+   "level": null,
+   "icon": 136235
+  },
+  "Improved Backstab": {
+   "kind": "talent",
+   "id": 1310710,
+   "level": null,
+   "icon": 136235
+  },
+  "Improved Bane of Agony": {
+   "kind": "talent",
+   "id": 18827,
+   "level": null,
+   "icon": 136139
+  },
+  "Improved Battle Shout": {
+   "kind": "talent",
+   "id": 12318,
+   "level": 1,
+   "icon": 132333
+  },
+  "Improved Berserker Rage": {
+   "kind": "talent",
+   "id": 20500,
+   "level": null,
+   "icon": 136009
+  },
+  "Improved Blessing of Might": {
+   "kind": "talent",
+   "id": 20042,
+   "level": null,
+   "icon": 135906
+  },
+  "Improved Blessing of Wisdom": {
+   "kind": "talent",
+   "id": 20244,
+   "level": null,
+   "icon": 135970
+  },
+  "Improved Blizzard": {
+   "kind": "talent",
+   "id": 11185,
+   "level": 1,
+   "icon": 135857
+  },
+  "Improved Bloodrage": {
+   "kind": "talent",
+   "id": 12301,
+   "level": 1,
+   "icon": 132277
+  },
+  "Improved Channeling": {
+   "kind": "talent",
+   "id": 11237,
+   "level": 1,
+   "icon": 136096
+  },
+  "Improved Charge": {
+   "kind": "talent",
+   "id": 12285,
+   "level": 1,
+   "icon": 132337
+  },
+  "Improved Cleave": {
+   "kind": "talent",
+   "id": 12329,
+   "level": 1,
+   "icon": 132338
+  },
+  "Improved Concentration Aura": {
+   "kind": "talent",
+   "id": 20254,
+   "level": null,
+   "icon": 135933
+  },
+  "Improved Corruption": {
+   "kind": "talent",
+   "id": 17810,
+   "level": null,
+   "icon": 136118
+  },
   "Improved Counterspell": {
    "kind": "spell",
    "id": 11255,
    "level": 1,
    "icon": 135856
   },
+  "Improved Curse of Exhaustion": {
+   "kind": "talent",
+   "id": 18310,
+   "level": null,
+   "icon": 136162
+  },
+  "Improved Curse of Weakness": {
+   "kind": "talent",
+   "id": 18179,
+   "level": null,
+   "icon": 136138
+  },
+  "Improved Demoralizing Shout": {
+   "kind": "talent",
+   "id": 12324,
+   "level": 1,
+   "icon": 132366
+  },
+  "Improved Devotion Aura": {
+   "kind": "talent",
+   "id": 20138,
+   "level": null,
+   "icon": 135893
+  },
+  "Improved Disarm": {
+   "kind": "talent",
+   "id": 12313,
+   "level": 1,
+   "icon": 132343
+  },
+  "Improved Distract": {
+   "kind": "talent",
+   "id": 14084,
+   "level": null,
+   "icon": 132289
+  },
+  "Improved Drains": {
+   "kind": "talent",
+   "id": 403511,
+   "level": null,
+   "icon": 136163
+  },
+  "Improved Enrage": {
+   "kind": "talent",
+   "id": 17079,
+   "level": null,
+   "icon": 132126
+  },
+  "Improved Entangling Roots": {
+   "kind": "talent",
+   "id": 16918,
+   "level": null,
+   "icon": 136100
+  },
+  "Improved Eviscerate": {
+   "kind": "talent",
+   "id": 14162,
+   "level": null,
+   "icon": 132292
+  },
+  "Improved Expose Armor": {
+   "kind": "talent",
+   "id": 14168,
+   "level": null,
+   "icon": 132354
+  },
+  "Improved Eyes of the Beast": {
+   "kind": "talent",
+   "id": 19557,
+   "level": null,
+   "icon": 132150
+  },
+  "Improved Feign Death": {
+   "kind": "talent",
+   "id": 19286,
+   "level": null,
+   "icon": 132293
+  },
+  "Improved Felhunter": {
+   "kind": "talent",
+   "id": 1225217,
+   "level": null,
+   "icon": 136217
+  },
+  "Improved Fire Nova": {
+   "kind": "talent",
+   "id": 16086,
+   "level": null,
+   "icon": 135824
+  },
+  "Improved Fireball": {
+   "kind": "talent",
+   "id": 11069,
+   "level": 1,
+   "icon": 135812
+  },
+  "Improved Firebolt": {
+   "kind": "talent",
+   "id": 18126,
+   "level": null,
+   "icon": 135809
+  },
+  "Improved Firestone": {
+   "kind": "talent",
+   "id": 18767,
+   "level": null,
+   "icon": 132386
+  },
+  "Improved Frostbolt": {
+   "kind": "talent",
+   "id": 11070,
+   "level": 1,
+   "icon": 135846
+  },
   "Improved Ghost Wolf": {
    "kind": "spell",
    "id": 16262,
    "level": null,
    "icon": 136095
+  },
+  "Improved Gouge": {
+   "kind": "talent",
+   "id": 13741,
+   "level": null,
+   "icon": 132155
+  },
+  "Improved Healing": {
+   "kind": "talent",
+   "id": 14912,
+   "level": null,
+   "icon": 135916
+  },
+  "Improved Healing Wave": {
+   "kind": "talent",
+   "id": 16182,
+   "level": null,
+   "icon": 136052
+  },
+  "Improved Health Funnel": {
+   "kind": "talent",
+   "id": 18703,
+   "level": null,
+   "icon": 136168
+  },
+  "Improved Healthstone": {
+   "kind": "talent",
+   "id": 18692,
+   "level": null,
+   "icon": 135230
+  },
+  "Improved Heroic Strike": {
+   "kind": "talent",
+   "id": 12282,
+   "level": 1,
+   "icon": 132282
+  },
+  "Improved Holy Strike": {
+   "kind": "talent",
+   "id": 1310902,
+   "level": null,
+   "icon": 626003
+  },
+  "Improved Hunter's Mark": {
+   "kind": "talent",
+   "id": 19421,
+   "level": null,
+   "icon": 132212
+  },
+  "Improved Immolate": {
+   "kind": "talent",
+   "id": 17815,
+   "level": null,
+   "icon": 135817
+  },
+  "Improved Inner Fire": {
+   "kind": "talent",
+   "id": 14747,
+   "level": null,
+   "icon": 135926
+  },
+  "Improved Judgement": {
+   "kind": "talent",
+   "id": 25956,
+   "level": null,
+   "icon": 135959
+  },
+  "Improved Lash of Pain": {
+   "kind": "talent",
+   "id": 18128,
+   "level": null,
+   "icon": 136136
+  },
+  "Improved Life Tap": {
+   "kind": "talent",
+   "id": 18182,
+   "level": null,
+   "icon": 136126
+  },
+  "Improved Lightning Shield": {
+   "kind": "talent",
+   "id": 16261,
+   "level": null,
+   "icon": 136051
+  },
+  "Improved Mana Burn": {
+   "kind": "talent",
+   "id": 14750,
+   "level": null,
+   "icon": 136170
+  },
+  "Improved Mark of the Wild": {
+   "kind": "talent",
+   "id": 17050,
+   "level": null,
+   "icon": 136078
+  },
+  "Improved Mend Pet": {
+   "kind": "talent",
+   "id": 19572,
+   "level": null,
+   "icon": 132179
+  },
+  "Improved Mind Blast": {
+   "kind": "talent",
+   "id": 15273,
+   "level": null,
+   "icon": 136224
+  },
+  "Improved Mind Flay": {
+   "kind": "talent",
+   "id": 1225139,
+   "level": null,
+   "icon": 136213
+  },
+  "Improved Moonfire": {
+   "kind": "talent",
+   "id": 16821,
+   "level": null,
+   "icon": 136096
+  },
+  "Improved Overpower": {
+   "kind": "talent",
+   "id": 12290,
+   "level": 1,
+   "icon": 135275
+  },
+  "Improved Power Word: Fortitude": {
+   "kind": "talent",
+   "id": 14749,
+   "level": null,
+   "icon": 135987
+  },
+  "Improved Power Word: Shield": {
+   "kind": "talent",
+   "id": 14748,
+   "level": null,
+   "icon": 135940
+  },
+  "Improved Prayer of Healing": {
+   "kind": "talent",
+   "id": 21339,
+   "level": null,
+   "icon": 136235
+  },
+  "Improved Psychic Scream": {
+   "kind": "talent",
+   "id": 15392,
+   "level": null,
+   "icon": 136184
+  },
+  "Improved Regrowth": {
+   "kind": "talent",
+   "id": 17074,
+   "level": null,
+   "icon": 136085
+  },
+  "Improved Reincarnation": {
+   "kind": "talent",
+   "id": 16184,
+   "level": null,
+   "icon": 136080
+  },
+  "Improved Rejuvenation": {
+   "kind": "talent",
+   "id": 17111,
+   "level": null,
+   "icon": 136081
+  },
+  "Improved Rend": {
+   "kind": "talent",
+   "id": 12286,
+   "level": 1,
+   "icon": 132155
+  },
+  "Improved Renew": {
+   "kind": "talent",
+   "id": 14908,
+   "level": null,
+   "icon": 135953
+  },
+  "Improved Retribution Aura": {
+   "kind": "talent",
+   "id": 20091,
+   "level": null,
+   "icon": 135873
+  },
+  "Improved Revenge": {
+   "kind": "talent",
+   "id": 12797,
+   "level": 1,
+   "icon": 132353
+  },
+  "Improved Revive Pet": {
+   "kind": "talent",
+   "id": 24443,
+   "level": null,
+   "icon": 132163
+  },
+  "Improved Righteous Fury": {
+   "kind": "talent",
+   "id": 20468,
+   "level": null,
+   "icon": 135962
+  },
+  "Improved Sap": {
+   "kind": "talent",
+   "id": 14076,
+   "level": null,
+   "icon": 132310
+  },
+  "Improved Sayaad": {
+   "kind": "talent",
+   "id": 18754,
+   "level": null,
+   "icon": 4352493
+  },
+  "Improved Scorch": {
+   "kind": "talent",
+   "id": 11095,
+   "level": null,
+   "icon": 135831
+  },
+  "Improved Seal of Fury": {
+   "kind": "talent",
+   "id": 1314103,
+   "level": null,
+   "icon": 135960
+  },
+  "Improved Seal of the Crusader": {
+   "kind": "talent",
+   "id": 20335,
+   "level": null,
+   "icon": 135924
+  },
+  "Improved Seals": {
+   "kind": "talent",
+   "id": 20224,
+   "level": null,
+   "icon": 132325
+  },
+  "Improved Serpent Sting": {
+   "kind": "talent",
+   "id": 19464,
+   "level": null,
+   "icon": 132204
+  },
+  "Improved Shadow Bolt": {
+   "kind": "talent",
+   "id": 17793,
+   "level": null,
+   "icon": 136197
+  },
+  "Improved Shadow Word: Pain": {
+   "kind": "talent",
+   "id": 15275,
+   "level": null,
+   "icon": 136207
+  },
+  "Improved Shield Bash": {
+   "kind": "talent",
+   "id": 12311,
+   "level": 1,
+   "icon": 132357
+  },
+  "Improved Shield Block": {
+   "kind": "talent",
+   "id": 12945,
+   "level": 1,
+   "icon": 132110
+  },
+  "Improved Shield Wall": {
+   "kind": "talent",
+   "id": 12312,
+   "level": 1,
+   "icon": 132362
+  },
+  "Improved Shifting Power": {
+   "kind": "talent",
+   "id": 1322670,
+   "level": null,
+   "icon": 236172
+  },
+  "Improved Sinister Strike": {
+   "kind": "talent",
+   "id": 13732,
+   "level": null,
+   "icon": 136189
+  },
+  "Improved Slam": {
+   "kind": "talent",
+   "id": 12862,
+   "level": 1,
+   "icon": 132340
+  },
+  "Improved Slice and Dice": {
+   "kind": "talent",
+   "id": 14165,
+   "level": null,
+   "icon": 132306
+  },
+  "Improved Spellstone": {
+   "kind": "talent",
+   "id": 18774,
+   "level": null,
+   "icon": 134131
+  },
+  "Improved Sprint": {
+   "kind": "talent",
+   "id": 13743,
+   "level": null,
+   "icon": 132307
+  },
+  "Improved Starfire": {
+   "kind": "talent",
+   "id": 16850,
+   "level": null,
+   "icon": 135753
+  },
+  "Improved Stings": {
+   "kind": "talent",
+   "id": 1310661,
+   "level": null,
+   "icon": 132204
+  },
+  "Improved Stormstrike": {
+   "kind": "talent",
+   "id": 1223031,
+   "level": null,
+   "icon": 237581
+  },
+  "Improved Subjugate Demon": {
+   "kind": "talent",
+   "id": 18821,
+   "level": null,
+   "icon": 136154
+  },
+  "Improved Sunder Armor": {
+   "kind": "talent",
+   "id": 12308,
+   "level": 1,
+   "icon": 132363
+  },
+  "Improved Tactical Mastery": {
+   "kind": "talent",
+   "id": 12295,
+   "level": 1,
+   "icon": 136031
+  },
+  "Improved Taunt": {
+   "kind": "talent",
+   "id": 12302,
+   "level": 1,
+   "icon": 136080
+  },
+  "Improved Thorns": {
+   "kind": "talent",
+   "id": 16836,
+   "level": null,
+   "icon": 136104
+  },
+  "Improved Thunder Clap": {
+   "kind": "talent",
+   "id": 12287,
+   "level": 1,
+   "icon": 132326
+  },
+  "Improved Tracking": {
+   "kind": "talent",
+   "id": 24293,
+   "level": null,
+   "icon": 134154
+  },
+  "Improved Tranquility": {
+   "kind": "talent",
+   "id": 17123,
+   "level": null,
+   "icon": 136107
+  },
+  "Improved Vampiric Embrace": {
+   "kind": "talent",
+   "id": 27839,
+   "level": null,
+   "icon": 136165
+  },
+  "Improved Voidwalker": {
+   "kind": "talent",
+   "id": 18705,
+   "level": null,
+   "icon": 136221
+  },
+  "Improved Weapon Totems": {
+   "kind": "talent",
+   "id": 29192,
+   "level": null,
+   "icon": 135792
+  },
+  "Improved Wing Clip": {
+   "kind": "talent",
+   "id": 19228,
+   "level": null,
+   "icon": 132309
+  },
+  "Improved Wrath": {
+   "kind": "talent",
+   "id": 16814,
+   "level": null,
+   "icon": 136006
   },
   "Incense Candle": {
    "kind": "item",
@@ -1360,6 +2914,24 @@
    "id": 412758,
    "level": 40,
    "icon": 135789
+  },
+  "Incineration": {
+   "kind": "talent",
+   "id": 18459,
+   "level": null,
+   "icon": 135813
+  },
+  "Infusion of Light": {
+   "kind": "talent",
+   "id": 53672,
+   "level": null,
+   "icon": 236254
+  },
+  "Initiative": {
+   "kind": "talent",
+   "id": 13976,
+   "level": null,
+   "icon": 136159
   },
   "Inner Fire": {
    "kind": "spell",
@@ -1379,11 +2951,23 @@
    "level": 20,
    "icon": 136045
   },
+  "Inspiration": {
+   "kind": "talent",
+   "id": 14892,
+   "level": null,
+   "icon": 135928
+  },
   "Instant Poison": {
    "kind": "item",
    "id": 6947,
    "level": null,
    "icon": 132273
+  },
+  "Instrument of Law": {
+   "kind": "talent",
+   "id": 1311085,
+   "level": null,
+   "icon": 135897
   },
   "Intercept": {
    "kind": "spell",
@@ -1391,17 +2975,35 @@
    "level": 30,
    "icon": 132307
   },
+  "Intimidation": {
+   "kind": "talent",
+   "id": 19577,
+   "level": 30,
+   "icon": 132111
+  },
   "Invulnerable Mail": {
    "kind": "item",
    "id": 12641,
    "level": null,
    "icon": 132629
   },
+  "Iron Creed": {
+   "kind": "talent",
+   "id": 1311033,
+   "level": null,
+   "icon": 135925
+  },
   "Iron Oven": {
    "kind": "item",
    "id": 279982,
    "level": null,
    "icon": 629055
+  },
+  "Iron Will": {
+   "kind": "talent",
+   "id": 12962,
+   "level": null,
+   "icon": 135995
   },
   "Journeyman Campfire Kit": {
    "kind": "item",
@@ -1433,11 +3035,41 @@
    "level": 30,
    "icon": 132298
   },
+  "Killer Instinct": {
+   "kind": "talent",
+   "id": 19370,
+   "level": null,
+   "icon": 135881
+  },
+  "King of the Jungle": {
+   "kind": "talent",
+   "id": 417046,
+   "level": null,
+   "icon": 236159
+  },
   "Lacerate": {
    "kind": "spell",
    "id": 414647,
    "level": 1,
    "icon": 132131
+  },
+  "Lacerating Strikes": {
+   "kind": "talent",
+   "id": 1310533,
+   "level": null,
+   "icon": 132155
+  },
+  "Last Stand": {
+   "kind": "talent",
+   "id": 12975,
+   "level": 1,
+   "icon": 135871
+  },
+  "Lasting Judgement": {
+   "kind": "talent",
+   "id": 20359,
+   "level": null,
+   "icon": 135917
   },
   "Lava Burst": {
    "kind": "spell",
@@ -1475,17 +3107,65 @@
    "level": 20,
    "icon": 136043
   },
+  "Lethal Attacks": {
+   "kind": "talent",
+   "id": 19426,
+   "level": null,
+   "icon": 132312
+  },
+  "Lethal Shots": {
+   "kind": "talent",
+   "id": 450403,
+   "level": null,
+   "icon": 132312
+  },
+  "Lethality": {
+   "kind": "talent",
+   "id": 14128,
+   "level": null,
+   "icon": 132109
+  },
   "Life Tap": {
    "kind": "spell",
    "id": 1454,
    "level": 6,
    "icon": 136126
   },
+  "Light's Vigil": {
+   "kind": "talent",
+   "id": 1310909,
+   "level": null,
+   "icon": 236256
+  },
   "Lightning Bolt": {
    "kind": "spell",
    "id": 403,
    "level": 1,
    "icon": 136048
+  },
+  "Lightning Breath": {
+   "kind": "talent",
+   "id": 15797,
+   "level": null,
+   "icon": 136048
+  },
+  "Lightning Mastery": {
+   "kind": "talent",
+   "id": 16579,
+   "level": null,
+   "icon": 135990
+  },
+  "Lightning Overload": {
+   "kind": "talent",
+   "id": 408438,
+   "level": null,
+   "icon": 136050
+  },
+  "Lightning Reflexes": {
+   "kind": "talent",
+   "id": 13712,
+   "level": null,
+   "icon": 136047
   },
   "Lightning Shield": {
    "kind": "spell",
@@ -1499,11 +3179,29 @@
    "level": 40,
    "icon": 135980
   },
+  "Litany of Light": {
+   "kind": "talent",
+   "id": 1317006,
+   "level": null,
+   "icon": 134943
+  },
+  "Living Spirit": {
+   "kind": "talent",
+   "id": 1309631,
+   "level": null,
+   "icon": 136037
+  },
   "Lodestone": {
    "kind": "item",
    "id": 279960,
    "level": null,
    "icon": 134419
+  },
+  "Lone Wolf": {
+   "kind": "talent",
+   "id": 409979,
+   "level": null,
+   "icon": 132266
   },
   "Longjaw Mud Snapper": {
    "kind": "item",
@@ -1517,11 +3215,35 @@
    "level": null,
    "icon": 136243
   },
+  "Luremaster": {
+   "kind": "talent",
+   "id": 1225455,
+   "level": null,
+   "icon": 237270
+  },
+  "Mace Specialization": {
+   "kind": "talent",
+   "id": 4366,
+   "level": null,
+   "icon": 132325
+  },
+  "Maelstrom Weapon": {
+   "kind": "talent",
+   "id": 408498,
+   "level": null,
+   "icon": 237584
+  },
   "Mage Armor": {
    "kind": "spell",
    "id": 6117,
    "level": 34,
    "icon": 135991
+  },
+  "Magic Absorption": {
+   "kind": "talent",
+   "id": 29441,
+   "level": 1,
+   "icon": 136011
   },
   "Major Healing Potion": {
    "kind": "item",
@@ -1534,6 +3256,24 @@
    "id": 13444,
    "level": null,
    "icon": 134856
+  },
+  "Malediction": {
+   "kind": "talent",
+   "id": 1225177,
+   "level": null,
+   "icon": 136137
+  },
+  "Malevolence": {
+   "kind": "talent",
+   "id": 449919,
+   "level": null,
+   "icon": 136235
+  },
+  "Malice": {
+   "kind": "talent",
+   "id": 14138,
+   "level": null,
+   "icon": 132277
   },
   "Malleable Essence of Nature": {
    "kind": "item",
@@ -1559,17 +3299,65 @@
    "level": null,
    "icon": 135738
   },
+  "Mangle": {
+   "kind": "talent",
+   "id": 19820,
+   "level": null,
+   "icon": 132122
+  },
+  "Marefoil": {
+   "kind": "talent",
+   "id": 1272737,
+   "level": null,
+   "icon": 133939
+  },
   "Mark of the Wild": {
    "kind": "spell",
    "id": 1126,
    "level": 1,
    "icon": 136078
   },
+  "Martyrdom": {
+   "kind": "talent",
+   "id": 14531,
+   "level": null,
+   "icon": 136107
+  },
+  "Master Chef": {
+   "kind": "talent",
+   "id": 1225457,
+   "level": null,
+   "icon": 236571
+  },
+  "Master Demonologist": {
+   "kind": "talent",
+   "id": 23785,
+   "level": null,
+   "icon": 136203
+  },
+  "Master Summoner": {
+   "kind": "talent",
+   "id": 18709,
+   "level": null,
+   "icon": 136164
+  },
+  "Master of Defense": {
+   "kind": "talent",
+   "id": 23602,
+   "level": null,
+   "icon": 132359
+  },
   "Maul": {
    "kind": "spell",
    "id": 6807,
    "level": 10,
    "icon": 132136
+  },
+  "Meditation": {
+   "kind": "talent",
+   "id": 14521,
+   "level": null,
+   "icon": 136090
   },
   "Mend Pet": {
    "kind": "spell",
@@ -1583,6 +3371,30 @@
    "level": null,
    "icon": 463925
   },
+  "Mental Agility": {
+   "kind": "talent",
+   "id": 14520,
+   "level": null,
+   "icon": 132156
+  },
+  "Mental Dexterity": {
+   "kind": "talent",
+   "id": 415140,
+   "level": null,
+   "icon": 136055
+  },
+  "Mental Quickness": {
+   "kind": "talent",
+   "id": 30812,
+   "level": null,
+   "icon": 136090
+  },
+  "Mental Strength": {
+   "kind": "talent",
+   "id": 18551,
+   "level": null,
+   "icon": 136031
+  },
   "Mind Blast": {
    "kind": "spell",
    "id": 8092,
@@ -1594,6 +3406,18 @@
    "id": 15407,
    "level": 20,
    "icon": 136208
+  },
+  "Mindfulness": {
+   "kind": "talent",
+   "id": 1223033,
+   "level": null,
+   "icon": 136090
+  },
+  "Mine!": {
+   "kind": "talent",
+   "id": 1265054,
+   "level": null,
+   "icon": 136063
   },
   "Minor Healing Potion": {
    "kind": "item",
@@ -1612,6 +3436,12 @@
    "id": 4381,
    "level": null,
    "icon": 133001
+  },
+  "Missile Barrage": {
+   "kind": "talent",
+   "id": 400588,
+   "level": null,
+   "icon": 236221
   },
   "Mithril Blacksmith Hammer": {
    "kind": "item",
@@ -1643,11 +3473,23 @@
    "level": null,
    "icon": 5931157
   },
+  "Molten Skin": {
+   "kind": "talent",
+   "id": 1225220,
+   "level": null,
+   "icon": 132221
+  },
   "Mongoose Bite": {
    "kind": "spell",
    "id": 1495,
    "level": 16,
    "icon": 132215
+  },
+  "Monster Slaying": {
+   "kind": "talent",
+   "id": 24294,
+   "level": null,
+   "icon": 134154
   },
   "Moonfire": {
    "kind": "spell",
@@ -1655,11 +3497,29 @@
    "level": 4,
    "icon": 136096
   },
+  "Moonfury": {
+   "kind": "talent",
+   "id": 16896,
+   "level": null,
+   "icon": 136057
+  },
+  "Moonglow": {
+   "kind": "talent",
+   "id": 16845,
+   "level": null,
+   "icon": 136087
+  },
   "Moonkin Form": {
    "kind": "spell",
    "id": 24858,
    "level": 40,
    "icon": 136036
+  },
+  "Mortal Shots": {
+   "kind": "talent",
+   "id": 19485,
+   "level": null,
+   "icon": 132271
   },
   "Mortal Strike": {
    "kind": "spell",
@@ -1679,11 +3539,53 @@
    "level": 30,
    "icon": 236270
   },
+  "Natural Grace": {
+   "kind": "talent",
+   "id": 29187,
+   "level": null,
+   "icon": 136041
+  },
+  "Natural Reaction": {
+   "kind": "talent",
+   "id": 417051,
+   "level": null,
+   "icon": 132091
+  },
+  "Natural Shapeshifter": {
+   "kind": "talent",
+   "id": 16833,
+   "level": null,
+   "icon": 136116
+  },
+  "Natural Weapons": {
+   "kind": "talent",
+   "id": 16902,
+   "level": null,
+   "icon": 135138
+  },
+  "Naturalist": {
+   "kind": "talent",
+   "id": 17069,
+   "level": null,
+   "icon": 136041
+  },
   "Nature Protection Potion": {
    "kind": "item",
    "id": 6052,
    "level": null,
    "icon": 134717
+  },
+  "Nature's Focus": {
+   "kind": "talent",
+   "id": 17063,
+   "level": null,
+   "icon": 136042
+  },
+  "Nature's Grace": {
+   "kind": "talent",
+   "id": 16880,
+   "level": null,
+   "icon": 136062
   },
   "Nature's Grasp": {
    "kind": "spell",
@@ -1691,11 +3593,65 @@
    "level": 10,
    "icon": 136063
   },
+  "Nature's Guidance": {
+   "kind": "talent",
+   "id": 16180,
+   "level": null,
+   "icon": 135860
+  },
+  "Nature's Majesty": {
+   "kind": "talent",
+   "id": 1223082,
+   "level": null,
+   "icon": 135138
+  },
+  "Nature's Reach": {
+   "kind": "talent",
+   "id": 16819,
+   "level": null,
+   "icon": 136065
+  },
+  "Nature's Splendor": {
+   "kind": "talent",
+   "id": 1223083,
+   "level": null,
+   "icon": 136061
+  },
+  "Nature's Swiftness": {
+   "kind": "talent",
+   "id": 16188,
+   "level": 1,
+   "icon": 136076
+  },
+  "Nightfall": {
+   "kind": "talent",
+   "id": 18094,
+   "level": 1,
+   "icon": 136223
+  },
   "Omen of Clarity": {
    "kind": "spell",
    "id": 16864,
    "level": 20,
    "icon": 136017
+  },
+  "One-Handed Weapon Specialization": {
+   "kind": "talent",
+   "id": 20196,
+   "level": 1,
+   "icon": 135321
+  },
+  "Opportunity": {
+   "kind": "talent",
+   "id": 14057,
+   "level": null,
+   "icon": 132366
+  },
+  "Overgrowth": {
+   "kind": "talent",
+   "id": 17245,
+   "level": null,
+   "icon": 134196
   },
   "Overpower": {
    "kind": "spell",
@@ -1703,11 +3659,47 @@
    "level": 12,
    "icon": 132223
   },
+  "Pandemic": {
+   "kind": "talent",
+   "id": 427712,
+   "level": null,
+   "icon": 136227
+  },
+  "Parry": {
+   "kind": "talent",
+   "id": 3124,
+   "level": null,
+   "icon": 132269
+  },
+  "Pathfinding": {
+   "kind": "talent",
+   "id": 19559,
+   "level": null,
+   "icon": 132242
+  },
   "Penance": {
    "kind": "spell",
    "id": 402174,
    "level": 30,
    "icon": 237545
+  },
+  "Performance Bonus": {
+   "kind": "talent",
+   "id": 1225456,
+   "level": null,
+   "icon": 135725
+  },
+  "Permafrost": {
+   "kind": "talent",
+   "id": 11175,
+   "level": 1,
+   "icon": 135864
+  },
+  "Permanence": {
+   "kind": "talent",
+   "id": 1225502,
+   "level": null,
+   "icon": 237554
   },
   "Pick Lock": {
    "kind": "spell",
@@ -1721,11 +3713,35 @@
    "level": 4,
    "icon": 133644
   },
+  "Piercing Howl": {
+   "kind": "talent",
+   "id": 12323,
+   "level": 20,
+   "icon": 136147
+  },
+  "Piercing Ice": {
+   "kind": "talent",
+   "id": 11151,
+   "level": 1,
+   "icon": 135845
+  },
+  "Pinch": {
+   "kind": "talent",
+   "id": 1264735,
+   "level": null,
+   "icon": 132186
+  },
   "Plague Doctor's Laboratory": {
    "kind": "item",
    "id": 279951,
    "level": null,
    "icon": 4626285
+  },
+  "Plainsrunning": {
+   "kind": "talent",
+   "id": 12566,
+   "level": null,
+   "icon": 132091
   },
   "Plated Armorfish": {
    "kind": "item",
@@ -1738,6 +3754,12 @@
    "id": 13932,
    "level": null,
    "icon": 133905
+  },
+  "Poison": {
+   "kind": "talent",
+   "id": 744,
+   "level": null,
+   "icon": 136016
   },
   "Polymorph": {
    "kind": "spell",
@@ -1769,6 +3791,12 @@
    "level": 6,
    "icon": 135940
   },
+  "Power in Light": {
+   "kind": "talent",
+   "id": 1309969,
+   "level": null,
+   "icon": 135972
+  },
   "Powerful Poultice": {
    "kind": "item",
    "id": 255719,
@@ -1786,6 +3814,36 @@
    "id": 401859,
    "level": 40,
    "icon": 135944
+  },
+  "Precision": {
+   "kind": "talent",
+   "id": 13705,
+   "level": null,
+   "icon": 132222
+  },
+  "Predator's Edge": {
+   "kind": "talent",
+   "id": 1310627,
+   "level": null,
+   "icon": 132147
+  },
+  "Predatory Strikes": {
+   "kind": "talent",
+   "id": 16972,
+   "level": null,
+   "icon": 132185
+  },
+  "Premeditation": {
+   "kind": "talent",
+   "id": 14183,
+   "level": 20,
+   "icon": 136183
+  },
+  "Preparation": {
+   "kind": "talent",
+   "id": 14185,
+   "level": null,
+   "icon": 136121
   },
   "Presence of Mind": {
    "kind": "spell",
@@ -1823,11 +3881,41 @@
    "level": 38,
    "icon": 132938
   },
+  "Puncturing Wounds": {
+   "kind": "talent",
+   "id": 1224716,
+   "level": null,
+   "icon": 132090
+  },
+  "Purifying Power": {
+   "kind": "talent",
+   "id": 429144,
+   "level": null,
+   "icon": 135950
+  },
+  "Pursuit of Justice": {
+   "kind": "talent",
+   "id": 26022,
+   "level": null,
+   "icon": 135937
+  },
   "Pyroblast": {
    "kind": "spell",
    "id": 11366,
    "level": 20,
    "icon": 135808
+  },
+  "Quietus": {
+   "kind": "talent",
+   "id": 1231651,
+   "level": null,
+   "icon": 237531
+  },
+  "Raging Blows": {
+   "kind": "talent",
+   "id": 1310315,
+   "level": null,
+   "icon": 132369
   },
   "Rain of Fire": {
    "kind": "spell",
@@ -1846,6 +3934,18 @@
    "id": 3045,
    "level": 26,
    "icon": 132208
+  },
+  "Rapid Killing": {
+   "kind": "talent",
+   "id": 415405,
+   "level": null,
+   "icon": 132205
+  },
+  "Rapid Recuperation": {
+   "kind": "talent",
+   "id": 1223987,
+   "level": null,
+   "icon": 236201
   },
   "Raptor Strike": {
    "kind": "spell",
@@ -1877,6 +3977,24 @@
    "level": 50,
    "icon": 132109
   },
+  "Reckoning": {
+   "kind": "talent",
+   "id": 20177,
+   "level": null,
+   "icon": 135882
+  },
+  "Redoubt": {
+   "kind": "talent",
+   "id": 20127,
+   "level": null,
+   "icon": 132110
+  },
+  "Reflection": {
+   "kind": "talent",
+   "id": 17106,
+   "level": null,
+   "icon": 135863
+  },
   "Regrowth": {
    "kind": "spell",
    "id": 8936,
@@ -1895,11 +4013,29 @@
    "level": 4,
    "icon": 136081
   },
+  "Relentless Strikes": {
+   "kind": "talent",
+   "id": 14179,
+   "level": null,
+   "icon": 132340
+  },
+  "Remorseless Attacks": {
+   "kind": "talent",
+   "id": 14144,
+   "level": null,
+   "icon": 132151
+  },
   "Rend": {
    "kind": "spell",
    "id": 772,
    "level": 4,
    "icon": 132155
+  },
+  "Rend and Tear": {
+   "kind": "talent",
+   "id": 1223246,
+   "level": null,
+   "icon": 236164
   },
   "Renew": {
    "kind": "spell",
@@ -1907,11 +4043,41 @@
    "level": 8,
    "icon": 135953
   },
+  "Renewed Hope": {
+   "kind": "talent",
+   "id": 425280,
+   "level": null,
+   "icon": 135923
+  },
   "Repair Bot": {
    "kind": "item",
    "id": 279949,
    "level": null,
    "icon": 1336885
+  },
+  "Repentance": {
+   "kind": "talent",
+   "id": 20066,
+   "level": 20,
+   "icon": 135942
+  },
+  "Resourcefulness": {
+   "kind": "talent",
+   "id": 440529,
+   "level": null,
+   "icon": 132207
+  },
+  "Restless Blades": {
+   "kind": "talent",
+   "id": 1241797,
+   "level": null,
+   "icon": 458731
+  },
+  "Restorative Totems": {
+   "kind": "talent",
+   "id": 16187,
+   "level": null,
+   "icon": 136053
   },
   "Resurrection": {
    "kind": "spell",
@@ -1937,6 +4103,18 @@
    "level": 14,
    "icon": 132353
   },
+  "Reverberation": {
+   "kind": "talent",
+   "id": 16040,
+   "level": null,
+   "icon": 135850
+  },
+  "Reverence": {
+   "kind": "talent",
+   "id": 1310899,
+   "level": null,
+   "icon": 135895
+  },
   "Revive": {
    "kind": "spell",
    "id": 437138,
@@ -1954,6 +4132,12 @@
    "id": 1079,
    "level": 20,
    "icon": 132152
+  },
+  "Riposte": {
+   "kind": "talent",
+   "id": 14251,
+   "level": null,
+   "icon": 132336
   },
   "Riptide": {
    "kind": "spell",
@@ -1997,11 +4181,23 @@
    "level": null,
    "icon": 136086
   },
+  "Ruin": {
+   "kind": "talent",
+   "id": 17959,
+   "level": null,
+   "icon": 136207
+  },
   "Rupture": {
    "kind": "spell",
    "id": 1943,
    "level": 20,
    "icon": 132302
+  },
+  "Ruthlessness": {
+   "kind": "talent",
+   "id": 14156,
+   "level": null,
+   "icon": 132122
   },
   "SAF-T Ultra Precision Scope": {
    "kind": "item",
@@ -2009,17 +4205,59 @@
    "level": null,
    "icon": 3610512
   },
+  "Sacred Arbiter": {
+   "kind": "talent",
+   "id": 1311087,
+   "level": null,
+   "icon": 135278
+  },
+  "Sacred Duty": {
+   "kind": "talent",
+   "id": 1224697,
+   "level": null,
+   "icon": 135896
+  },
   "Safe Fall": {
    "kind": "spell",
    "id": 1860,
    "level": null,
    "icon": 132914
   },
+  "Sanctified Judgement": {
+   "kind": "talent",
+   "id": 1311074,
+   "level": null,
+   "icon": 236255
+  },
+  "Sanctity Aura": {
+   "kind": "talent",
+   "id": 20218,
+   "level": 30,
+   "icon": 135934
+  },
   "Sap": {
    "kind": "spell",
    "id": 6770,
    "level": 10,
    "icon": 132310
+  },
+  "Savage Fury": {
+   "kind": "talent",
+   "id": 16998,
+   "level": null,
+   "icon": 132141
+  },
+  "Savage Rend": {
+   "kind": "talent",
+   "id": 1265065,
+   "level": null,
+   "icon": 132193
+  },
+  "Savage Strikes": {
+   "kind": "talent",
+   "id": 19159,
+   "level": null,
+   "icon": 132277
   },
   "Scorch": {
    "kind": "spell",
@@ -2032,6 +4270,12 @@
    "id": 3043,
    "level": 22,
    "icon": 132169
+  },
+  "Seal Fate": {
+   "kind": "talent",
+   "id": 14186,
+   "level": 1,
+   "icon": 136130
   },
   "Seal of Command": {
    "kind": "spell",
@@ -2057,6 +4301,12 @@
    "level": 6,
    "icon": 135924
   },
+  "Searing Light": {
+   "kind": "talent",
+   "id": 14909,
+   "level": null,
+   "icon": 135973
+  },
   "Searing Pain": {
    "kind": "spell",
    "id": 5676,
@@ -2081,11 +4331,47 @@
    "level": 4,
    "icon": 132204
   },
+  "Serrated Blades": {
+   "kind": "talent",
+   "id": 14171,
+   "level": null,
+   "icon": 135315
+  },
+  "Setup": {
+   "kind": "talent",
+   "id": 13983,
+   "level": null,
+   "icon": 136056
+  },
+  "Shadow Affinity": {
+   "kind": "talent",
+   "id": 15318,
+   "level": null,
+   "icon": 136205
+  },
   "Shadow Bolt": {
    "kind": "spell",
    "id": 686,
    "level": 1,
    "icon": 136197
+  },
+  "Shadow Focus": {
+   "kind": "talent",
+   "id": 15260,
+   "level": null,
+   "icon": 136126
+  },
+  "Shadow Reach": {
+   "kind": "talent",
+   "id": 17322,
+   "level": null,
+   "icon": 136130
+  },
+  "Shadow Weaving": {
+   "kind": "talent",
+   "id": 15257,
+   "level": null,
+   "icon": 136123
   },
   "Shadow Word: Death": {
    "kind": "spell",
@@ -2099,6 +4385,12 @@
    "level": 4,
    "icon": 136207
   },
+  "Shadow and Flame": {
+   "kind": "talent",
+   "id": 426316,
+   "level": null,
+   "icon": 135823
+  },
   "Shadowburn": {
    "kind": "spell",
    "id": 17877,
@@ -2111,17 +4403,53 @@
    "level": null,
    "icon": 136200
   },
+  "Shadowguard": {
+   "kind": "talent",
+   "id": 18137,
+   "level": null,
+   "icon": 136051
+  },
   "Shadowmeld": {
    "kind": "spell",
    "id": 20580,
    "level": null,
    "icon": 132089
   },
+  "Shamanistic Focus": {
+   "kind": "talent",
+   "id": 1223030,
+   "level": null,
+   "icon": 136027
+  },
+  "Sharpened Claws": {
+   "kind": "talent",
+   "id": 16942,
+   "level": null,
+   "icon": 134297
+  },
   "Sharpening Wheel": {
    "kind": "item",
    "id": 279944,
    "level": null,
    "icon": 135243
+  },
+  "Shatter": {
+   "kind": "talent",
+   "id": 11170,
+   "level": 1,
+   "icon": 135849
+  },
+  "Shatter Curse": {
+   "kind": "talent",
+   "id": 1299026,
+   "level": null,
+   "icon": 136082
+  },
+  "Shell Shield": {
+   "kind": "talent",
+   "id": 26064,
+   "level": null,
+   "icon": 132199
   },
   "Shield Bash": {
    "kind": "spell",
@@ -2135,11 +4463,29 @@
    "level": 16,
    "icon": 132110
   },
+  "Shield Slam": {
+   "kind": "talent",
+   "id": 23922,
+   "level": 40,
+   "icon": 134951
+  },
+  "Shield Specialization": {
+   "kind": "talent",
+   "id": 16253,
+   "level": null,
+   "icon": 134952
+  },
   "Shield Wall": {
    "kind": "spell",
    "id": 871,
    "level": 28,
    "icon": 132362
+  },
+  "Shifting Power": {
+   "kind": "talent",
+   "id": 1322605,
+   "level": null,
+   "icon": 538514
   },
   "Shred": {
    "kind": "spell",
@@ -2147,11 +4493,23 @@
    "level": 22,
    "icon": 136231
   },
+  "Shredding Attacks": {
+   "kind": "talent",
+   "id": 16966,
+   "level": null,
+   "icon": 136231
+  },
   "Silence": {
    "kind": "spell",
    "id": 6726,
    "level": null,
    "icon": 135975
+  },
+  "Silent Resolve": {
+   "kind": "talent",
+   "id": 14523,
+   "level": null,
+   "icon": 136053
   },
   "Simple Poultice": {
    "kind": "item",
@@ -2171,11 +4529,23 @@
    "level": 30,
    "icon": 136188
   },
+  "Skysight": {
+   "kind": "talent",
+   "id": 1259686,
+   "level": null,
+   "icon": 1029587
+  },
   "Slam": {
    "kind": "spell",
    "id": 1240193,
    "level": 20,
    "icon": 132340
+  },
+  "Sleight of Hand": {
+   "kind": "talent",
+   "id": 30892,
+   "level": null,
+   "icon": 132294
   },
   "Slice and Dice": {
    "kind": "spell",
@@ -2207,11 +4577,23 @@
    "level": 40,
    "icon": 1412205
   },
+  "Sonic Blast": {
+   "kind": "talent",
+   "id": 1264478,
+   "level": null,
+   "icon": 252188
+  },
   "Soul Fire": {
    "kind": "spell",
    "id": 6353,
    "level": 48,
    "icon": 135808
+  },
+  "Soul Harvest": {
+   "kind": "talent",
+   "id": 437032,
+   "level": null,
+   "icon": 132851
   },
   "Soul Link": {
    "kind": "spell",
@@ -2219,17 +4601,65 @@
    "level": 40,
    "icon": 136160
   },
+  "Soul Siphon": {
+   "kind": "talent",
+   "id": 17804,
+   "level": null,
+   "icon": 136169
+  },
+  "Soul Warding": {
+   "kind": "talent",
+   "id": 402000,
+   "level": null,
+   "icon": 135948
+  },
+  "Spearing Strike": {
+   "kind": "talent",
+   "id": 1310222,
+   "level": null,
+   "icon": 135124
+  },
   "Spellblasting Potion": {
    "kind": "item",
    "id": 250934,
    "level": null,
    "icon": 463921
   },
+  "Spirit Tap": {
+   "kind": "talent",
+   "id": 15270,
+   "level": null,
+   "icon": 136188
+  },
+  "Spirit Weapons": {
+   "kind": "talent",
+   "id": 16268,
+   "level": 1,
+   "icon": 132269
+  },
   "Spirit of Redemption": {
    "kind": "spell",
    "id": 20711,
    "level": null,
    "icon": 132864
+  },
+  "Spiritual Focus": {
+   "kind": "talent",
+   "id": 20205,
+   "level": null,
+   "icon": 135736
+  },
+  "Spiritual Guidance": {
+   "kind": "talent",
+   "id": 14901,
+   "level": null,
+   "icon": 135977
+  },
+  "Spiritual Healing": {
+   "kind": "talent",
+   "id": 14898,
+   "level": null,
+   "icon": 136057
   },
   "Sprint": {
    "kind": "spell",
@@ -2243,6 +4673,12 @@
    "level": 20,
    "icon": 135753
   },
+  "Starshards": {
+   "kind": "talent",
+   "id": 10797,
+   "level": null,
+   "icon": 135753
+  },
   "Stealth": {
    "kind": "spell",
    "id": 1784,
@@ -2254,6 +4690,12 @@
    "id": 5730,
    "level": 8,
    "icon": 136097
+  },
+  "Stoneform": {
+   "kind": "talent",
+   "id": 7020,
+   "level": null,
+   "icon": 132275
   },
   "Stonescale Oil": {
    "kind": "item",
@@ -2285,6 +4727,18 @@
    "level": 10,
    "icon": 136023
   },
+  "Strider Kick": {
+   "kind": "talent",
+   "id": 1317257,
+   "level": null,
+   "icon": 132198
+  },
+  "Subtlety": {
+   "kind": "talent",
+   "id": 17118,
+   "level": null,
+   "icon": 132150
+  },
   "Summon Dreadsteed": {
    "kind": "spell",
    "id": 23161,
@@ -2296,6 +4750,12 @@
    "id": 5784,
    "level": null,
    "icon": 136103
+  },
+  "Summon Hawk": {
+   "kind": "talent",
+   "id": 1293241,
+   "level": null,
+   "icon": 132158
   },
   "Summon Incubus": {
    "kind": "spell",
@@ -2321,17 +4781,65 @@
    "level": 10,
    "icon": 132363
   },
+  "Suppression": {
+   "kind": "talent",
+   "id": 18174,
+   "level": null,
+   "icon": 136230
+  },
+  "Surefooted": {
+   "kind": "talent",
+   "id": 19290,
+   "level": null,
+   "icon": 132219
+  },
   "Surgical Tourniquet": {
    "kind": "item",
    "id": 255722,
    "level": null,
    "icon": 133679
   },
+  "Survival Tactics": {
+   "kind": "talent",
+   "id": 19376,
+   "level": null,
+   "icon": 132149
+  },
+  "Survivalist": {
+   "kind": "talent",
+   "id": 19255,
+   "level": null,
+   "icon": 136223
+  },
+  "Survivalist's Discipline": {
+   "kind": "talent",
+   "id": 1310496,
+   "level": null,
+   "icon": 132178
+  },
+  "Sweeping Strikes": {
+   "kind": "talent",
+   "id": 12292,
+   "level": 30,
+   "icon": 132306
+  },
   "Sweetpaw Jam": {
    "kind": "item",
    "id": 267341,
    "level": null,
    "icon": 133748
+  },
+  "Swift Judgement": {
+   "kind": "talent",
+   "id": 467530,
+   "level": null,
+   "icon": 252270
+  },
+  "Swiftmend": {
+   "kind": "talent",
+   "id": 18562,
+   "level": 1,
+   "icon": 134914
   },
   "Swim Speed Potion": {
    "kind": "item",
@@ -2345,11 +4853,23 @@
    "level": 12,
    "icon": 134296
   },
+  "Sword Specialization": {
+   "kind": "talent",
+   "id": 4350,
+   "level": null,
+   "icon": 132223
+  },
   "Tactical Mastery": {
    "kind": "spell",
    "id": 1310185,
    "level": 14,
    "icon": 136031
+  },
+  "Talented": {
+   "kind": "talent",
+   "id": 1225474,
+   "level": null,
+   "icon": 132222
   },
   "Tame Beast": {
    "kind": "spell",
@@ -2375,11 +4895,41 @@
    "level": 10,
    "icon": 135758
   },
+  "Templar's Bulwark": {
+   "kind": "talent",
+   "id": 1311015,
+   "level": null,
+   "icon": 236264
+  },
+  "Tendon Rip": {
+   "kind": "talent",
+   "id": 3604,
+   "level": null,
+   "icon": 132109
+  },
+  "The Human Spirit": {
+   "kind": "talent",
+   "id": 20598,
+   "level": null,
+   "icon": 132874
+  },
+  "Thick Hide": {
+   "kind": "talent",
+   "id": 16929,
+   "level": null,
+   "icon": 134355
+  },
   "Thorns": {
    "kind": "spell",
    "id": 467,
    "level": 6,
    "icon": 136104
+  },
+  "Thousand Cuts": {
+   "kind": "talent",
+   "id": 1310721,
+   "level": null,
+   "icon": 132302
   },
   "Thunder Clap": {
    "kind": "spell",
@@ -2387,11 +4937,47 @@
    "level": 6,
    "icon": 136105
   },
+  "Thundering Strikes": {
+   "kind": "talent",
+   "id": 16255,
+   "level": 1,
+   "icon": 132325
+  },
+  "Thunderstomp": {
+   "kind": "talent",
+   "id": 26090,
+   "level": null,
+   "icon": 132189
+  },
+  "Tidal Focus": {
+   "kind": "talent",
+   "id": 16179,
+   "level": null,
+   "icon": 135859
+  },
   "Tiger's Fury": {
    "kind": "spell",
    "id": 417045,
    "level": 1,
    "icon": 132242
+  },
+  "Torment": {
+   "kind": "talent",
+   "id": 3716,
+   "level": null,
+   "icon": 136160
+  },
+  "Totemic Focus": {
+   "kind": "talent",
+   "id": 16173,
+   "level": null,
+   "icon": 136057
+  },
+  "Totemic Mastery": {
+   "kind": "talent",
+   "id": 16189,
+   "level": 1,
+   "icon": 136069
   },
   "Totemic Projection": {
    "kind": "spell",
@@ -2404,6 +4990,24 @@
    "id": 36936,
    "level": 20,
    "icon": 310733
+  },
+  "Touch of Weakness": {
+   "kind": "talent",
+   "id": 2652,
+   "level": null,
+   "icon": 136143
+  },
+  "Touch of the Grave": {
+   "kind": "talent",
+   "id": 1260189,
+   "level": null,
+   "icon": 136157
+  },
+  "Toughness": {
+   "kind": "talent",
+   "id": 12299,
+   "level": 1,
+   "icon": 135892
   },
   "Toxin Study": {
    "kind": "item",
@@ -2441,11 +5045,23 @@
    "level": null,
    "icon": 132145
   },
+  "Trickster's Dance": {
+   "kind": "talent",
+   "id": 1310612,
+   "level": null,
+   "icon": 458223
+  },
   "Truefaith Vestments": {
    "kind": "item",
    "id": 14154,
    "level": null,
    "icon": 132672
+  },
+  "Trueshot Aura": {
+   "kind": "talent",
+   "id": 19506,
+   "level": 40,
+   "icon": 132329
   },
   "Turtle Scale Breastplate": {
    "kind": "item",
@@ -2453,11 +5069,71 @@
    "level": null,
    "icon": 132634
   },
+  "Twilight Focus": {
+   "kind": "talent",
+   "id": 14913,
+   "level": null,
+   "icon": 135918
+  },
+  "Twin Disciplines": {
+   "kind": "talent",
+   "id": 1225132,
+   "level": null,
+   "icon": 135969
+  },
+  "Twist of Light": {
+   "kind": "talent",
+   "id": 1310735,
+   "level": null,
+   "icon": 135878
+  },
+  "Two-Handed Axes and Maces": {
+   "kind": "talent",
+   "id": 16269,
+   "level": null,
+   "icon": 132401
+  },
+  "Two-Handed Weapon Specialization": {
+   "kind": "talent",
+   "id": 12163,
+   "level": 1,
+   "icon": 132400
+  },
+  "Unbreakable Will": {
+   "kind": "talent",
+   "id": 14522,
+   "level": null,
+   "icon": 135995
+  },
+  "Unbridled Wrath": {
+   "kind": "talent",
+   "id": 12322,
+   "level": 1,
+   "icon": 136097
+  },
+  "Unholy Power": {
+   "kind": "talent",
+   "id": 18769,
+   "level": null,
+   "icon": 136206
+  },
+  "Unleashed Fury": {
+   "kind": "talent",
+   "id": 19616,
+   "level": null,
+   "icon": 132091
+  },
   "Vampiric Embrace": {
    "kind": "spell",
    "id": 15286,
    "level": 30,
    "icon": 136230
+  },
+  "Vanguard": {
+   "kind": "talent",
+   "id": 1310317,
+   "level": null,
+   "icon": 4667427
   },
   "Vanish": {
    "kind": "spell",
@@ -2465,17 +5141,47 @@
    "level": 22,
    "icon": 132331
   },
+  "Vengeance": {
+   "kind": "talent",
+   "id": 16909,
+   "level": null,
+   "icon": 136075
+  },
+  "Venom": {
+   "kind": "talent",
+   "id": 1310703,
+   "level": null,
+   "icon": 135341
+  },
   "Victory Rush": {
    "kind": "spell",
    "id": 402927,
    "level": 20,
    "icon": 132342
   },
+  "Vile Poisons": {
+   "kind": "talent",
+   "id": 16513,
+   "level": null,
+   "icon": 132293
+  },
+  "Vindication": {
+   "kind": "talent",
+   "id": 9452,
+   "level": null,
+   "icon": 135985
+  },
   "Viper Sting": {
    "kind": "spell",
    "id": 3034,
    "level": 36,
    "icon": 132157
+  },
+  "Voice of Truth": {
+   "kind": "talent",
+   "id": 1310897,
+   "level": null,
+   "icon": 134229
   },
   "Voidwalker": {
    "kind": "spell",
@@ -2489,11 +5195,65 @@
    "level": 40,
    "icon": 132222
   },
+  "Wake of Fire": {
+   "kind": "talent",
+   "id": 11078,
+   "level": 1,
+   "icon": 135819
+  },
+  "Wand Specialization": {
+   "kind": "talent",
+   "id": 6057,
+   "level": null,
+   "icon": 135463
+  },
+  "War Stomp": {
+   "kind": "talent",
+   "id": 45,
+   "level": null,
+   "icon": 132091
+  },
   "Water Shield": {
    "kind": "spell",
    "id": 408510,
    "level": 20,
    "icon": 132315
+  },
+  "Weapon Expertise": {
+   "kind": "talent",
+   "id": 30919,
+   "level": null,
+   "icon": 135882
+  },
+  "Weapon Mastery": {
+   "kind": "talent",
+   "id": 29082,
+   "level": null,
+   "icon": 132215
+  },
+  "Weaponmaster": {
+   "kind": "talent",
+   "id": 12281,
+   "level": 1,
+   "icon": 135328
+  },
+  "Weaponsmith": {
+   "kind": "talent",
+   "id": 9787,
+   "level": null,
+   "icon": 135326
+  },
+  "Web": {
+   "kind": "talent",
+   "id": 745,
+   "level": null,
+   "icon": 132149
+  },
+  "Well Rested": {
+   "kind": "talent",
+   "id": 1225478,
+   "level": null,
+   "icon": 136090
   },
   "Whirlwind": {
    "kind": "spell",
@@ -2519,6 +5279,24 @@
    "level": null,
    "icon": 132634
   },
+  "Will of the Forsaken": {
+   "kind": "talent",
+   "id": 7744,
+   "level": null,
+   "icon": 136187
+  },
+  "Will to Survive": {
+   "kind": "talent",
+   "id": 1259718,
+   "level": null,
+   "icon": 136129
+  },
+  "Wind Blessed": {
+   "kind": "talent",
+   "id": 1259710,
+   "level": null,
+   "icon": 463565
+  },
   "Windfury Totem": {
    "kind": "spell",
    "id": 8512,
@@ -2537,11 +5315,35 @@
    "level": 12,
    "icon": 132309
   },
+  "Winter's Chill": {
+   "kind": "talent",
+   "id": 11180,
+   "level": 1,
+   "icon": 135836
+  },
+  "Wisp Spirit": {
+   "kind": "talent",
+   "id": 20585,
+   "level": null,
+   "icon": 136116
+  },
   "Woolen Tourniquet": {
    "kind": "item",
    "id": 255720,
    "level": null,
    "icon": 133675
+  },
+  "Working Overtime": {
+   "kind": "talent",
+   "id": 1225451,
+   "level": null,
+   "icon": 134378
+  },
+  "Wrack": {
+   "kind": "talent",
+   "id": 1316697,
+   "level": null,
+   "icon": 460687
   },
   "Wrath": {
    "kind": "spell",

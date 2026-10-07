@@ -61,6 +61,7 @@ TABLES = ("SpellName", "SpellMisc", "SpellLevels", "SkillLineAbility", "ItemSpar
 VERIFY = {"Holy Strike": 6, "Consecration": 20, "Ice Lance": 20, "Shadow Bolt": 1}
 
 CHIP_RE = re.compile(r"\[\[([^\]]+)\]\]")
+TICK_RE = re.compile(r"`([^`]+)`")
 csv.field_size_limit(10_000_000)
 
 
@@ -92,21 +93,42 @@ def norm(s: str) -> str:
     return re.sub(r"\s+", " ", s.strip().lower())
 
 
-def chips() -> dict[str, int]:
-    """Every distinct [[chip]] in the guide sources, with how often it is used."""
+def chips() -> tuple[dict[str, int], set[str]]:
+    """Every name the guides mark up, with how often, and which are written as talents.
+
+    The sources mark two populations and mean different things by them: `[[Holy Strike]]`
+    is an ability, `` `Reverence` `` is a talent. They are comparable in size -- 433 chips
+    against 530 backtick terms -- and the distinction is deliberate, so it is carried
+    through to the label rather than flattened. The client cannot make it for us: a talent
+    IS a spell in SpellName, so asking the client would call every talent a spell.
+
+    A name used both ways is treated as an ability; the chip form is the stronger signal.
+    """
     counts: dict[str, int] = defaultdict(int)
+    chip_names: set[str] = set()
+    tick_names: set[str] = set()
     for md in sorted(SRC.glob("*.md")):
-        for m in CHIP_RE.finditer(md.read_text(encoding="utf-8")):
-            counts[m.group(1).strip()] += 1
-    return dict(counts)
+        text = md.read_text(encoding="utf-8")
+        for m in CHIP_RE.finditer(text):
+            name = m.group(1).strip()
+            counts[name] += 1
+            chip_names.add(name)
+        for m in TICK_RE.finditer(text):
+            name = m.group(1).strip()
+            counts[name] += 1
+            tick_names.add(name)
+    return dict(counts), tick_names - chip_names
 
 
-def resolve(names: dict[str, int], build: str) -> tuple[dict, dict]:
-    """Map each chip name to one client record. Returns (entries, report)."""
+def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict, dict]:
+    """Map each marked-up name to one client record. Returns (entries, report)."""
     spell_ids: dict[str, list[int]] = defaultdict(list)
+    spell_name_of: dict[int, str] = {}
     for r in table("SpellName", build):
         if r.get("Name_lang"):
-            spell_ids[norm(r["Name_lang"])].append(int(r["ID"]))
+            sid = int(r["ID"])
+            spell_ids[norm(r["Name_lang"])].append(sid)
+            spell_name_of[sid] = r["Name_lang"]
 
     item_ids: dict[str, list[int]] = defaultdict(list)
     for r in table("ItemSparse", build):
@@ -155,6 +177,21 @@ def resolve(names: dict[str, int], build: str) -> tuple[dict, dict]:
         if fid:
             item_icon.setdefault(iid, fid)
 
+    # Talent.db2 gives a talent's rank-1 spell directly, which beats guessing at the
+    # lowest id. It is NOT authoritative on its own -- it holds 433 rows and misses
+    # Forever's new talents entirely (Reverence, Lone Wolf, Bloodthrill are all absent),
+    # which is why SpellName stays the source and this is only a tie-breaker.
+    talent_rank1: dict[str, int] = {}
+    for r in table("Talent", build):
+        ranks = [r.get(f"SpellRank_{i}") for i in range(9)]
+        first = next((int(x) for x in ranks if x and x.isdigit() and int(x) > 0), 0)
+        try:
+            sid = int(r.get("SpellID") or 0) or first
+        except (ValueError, TypeError):
+            sid = first
+        if sid and sid in spell_name_of:
+            talent_rank1.setdefault(norm(spell_name_of[sid]), sid)
+
     entries: dict[str, dict] = {}
     unmatched: list[str] = []
     for name, uses in sorted(names.items()):
@@ -164,18 +201,27 @@ def resolve(names: dict[str, int], build: str) -> tuple[dict, dict]:
         # Prefer the spell when it is one a player actually learns; a consumable whose
         # name also exists as a spell (its on-use effect) has no trainable rank and
         # should resolve to the item instead.
+        # A talent is not trained, so the rank rule that works for abilities does not
+        # apply to it: prefer Talent.db2's own rank-1 spell, then fall through.
+        if name in talents and key in talent_rank1:
+            sid = talent_rank1[key]
+            entries[name] = {"kind": "talent", "id": sid, "level": level.get(sid),
+                             "icon": icon.get(sid), "uses": uses}
+            continue
+
         trainable = sorted((level[i], i) for i in sids if i in level and i in learnable)
-        if trainable:
+        if trainable and name not in talents:
             lv, sid = trainable[0]
             entries[name] = {"kind": "spell", "id": sid, "level": lv,
                              "icon": icon.get(sid), "uses": uses}
-        elif iids:
+        elif iids and name not in talents:
             iid = min(iids)
             entries[name] = {"kind": "item", "id": iid, "level": None,
                              "icon": item_icon.get(iid), "uses": uses}
         elif sids:
             sid = min(sids)
-            entries[name] = {"kind": "spell", "id": sid, "level": None,
+            entries[name] = {"kind": "talent" if name in talents else "spell",
+                             "id": sid, "level": level.get(sid) if name not in talents else None,
                              "icon": icon.get(sid), "uses": uses}
         else:
             unmatched.append(name)
@@ -186,6 +232,7 @@ def resolve(names: dict[str, int], build: str) -> tuple[dict, dict]:
         "unmatched": unmatched,
         "spells": sum(1 for e in entries.values() if e["kind"] == "spell"),
         "items": sum(1 for e in entries.values() if e["kind"] == "item"),
+        "talents": sum(1 for e in entries.values() if e["kind"] == "talent"),
         "levelled": sum(1 for e in entries.values() if e["level"]),
         "icons": {e["icon"] for e in entries.values() if e["icon"]},
     }
@@ -255,10 +302,11 @@ def main() -> None:
         except json.JSONDecodeError:
             prior = {}
 
-    names = chips()
+    names, talents = chips()
     print(f"product: {PRODUCT}")
     print(f"build:   {build}" + ("" if build != prior.get("build") else "  (unchanged)"))
-    print(f"chips:   {len(names)} distinct in guides/_src")
+    print(f"names:   {len(names)} distinct in guides/_src "
+          f"({len(names) - len(talents)} abilities, {len(talents)} talents)")
 
     fresh = input_stamp(build, names)
     current = prior.get("inputs") == fresh
@@ -274,7 +322,7 @@ def main() -> None:
         verdict(f"OK -- already current at build {build}, {len(prior.get('entries', {}))} entries")
 
     try:
-        entries, rep = resolve(names, build)
+        entries, rep = resolve(names, talents, build)
     except (urllib.error.URLError, ValueError, KeyError) as e:
         verdict(f"FAIL -- rebuild failed, previous index still in place: {e}")
 
@@ -299,7 +347,8 @@ def main() -> None:
 
     pct = 100 * rep["matched"] / rep["total"]
     print(f"matched: {rep['matched']}/{rep['total']} ({pct:.1f}%) -- "
-          f"{rep['spells']} spell, {rep['items']} item, {rep['levelled']} with a level")
+          f"{rep['spells']} spell, {rep['talents']} talent, {rep['items']} item, "
+          f"{rep['levelled']} with a level")
     if rep["unmatched"]:
         print(f"unmatched ({len(rep['unmatched'])}): {', '.join(rep['unmatched'])}")
     if failed:

@@ -29,6 +29,12 @@ actually build a class page:
                         ability with its icon and a CSS-only tooltip. Not named there: the
                         plain styled chip it has always been, so a removed ability or a
                         pet name never becomes a dead link.
+    `Talent`            a talent. Linked from the same index and given the same tooltip,
+                        but it keeps its <code> look and takes no icon -- the guides draw
+                        a real line between an ability and a talent, and flattening the
+                        two into one appearance would erase it. Unknown terms (a stat
+                        string, a macro) stay plain <code>, which is why the index is
+                        allowed to not know things.
 
 Everything a player executes -- rotation, stat priority, talent order -- must be a
 numbered list with one action per line, never a paragraph. That is the single most common
@@ -45,7 +51,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "guides" / "_src"
 OUT = ROOT / "guides" / "wow-forever"
 DATA = ROOT / "guides" / "_data"
-STAMP = "20261007-1"
+STAMP = "20261007-2"
 
 # ---- ability chips: where a chip points, and where its icon comes from ----------
 # The exact Wowhead Forever URL shape is UNCONFIRMED. These two templates are the only
@@ -64,7 +70,8 @@ KIND_LABEL = {"spell": "Spell", "item": "Item", "talent": "Talent"}
 # a supported state and the only one there was before 2026-10-07: every chip falls back
 # to the plain styled span.
 SPELLS = {}
-CHIP_STATS = {"linked": 0, "plain": 0, "noicon": 0, "lost_icon": set(), "unknown": set()}
+CHIP_STATS = {"linked": 0, "plain": 0, "noicon": 0, "code_linked": 0, "code_plain": 0,
+              "lost_icon": set(), "unknown": set()}
 
 # slug -> (display name, accent hex, roles, one-line hook for the hub cards)
 CLASSES = [
@@ -176,6 +183,39 @@ def load_spells():
         return
 
 
+def talent(m):
+    """A `backtick` term, linked when the index knows it.
+
+    Talents keep their <code> styling rather than becoming chips: the guides draw a
+    deliberate line between an ability and a talent, and collapsing the two into one
+    look would erase information the prose is relying on. So the anchor goes INSIDE
+    the <code>, and carries no icon.
+    """
+    raw = html.unescape(m.group(1))
+    name = html.escape(raw, quote=False)
+    entry = SPELLS.get(raw)
+    ident = entry.get("id") if entry else None
+    if not entry or not isinstance(ident, int):
+        CHIP_STATS["code_plain"] += 1
+        return f"<code>{name}</code>"
+
+    kind = str(entry.get("kind") or "talent").lower()
+    template = ITEM_URL if kind == "item" else SPELL_URL
+    if not template:
+        CHIP_STATS["code_plain"] += 1
+        return f"<code>{name}</code>"
+
+    tip = [raw]
+    if isinstance(entry.get("level"), int):
+        tip.append(f"Level {entry['level']}")
+    tip.append(KIND_LABEL.get(kind, kind.title()))
+    tip = html.escape(" \u00b7 ".join(tip), quote=True)
+    href = html.escape(template.format(id=ident), quote=True)
+    CHIP_STATS["code_linked"] += 1
+    return (f'<code><a class="tl" href="{href}" target="_blank" rel="noopener"'
+            f' data-tip="{tip}">{name}</a></code>')
+
+
 def chip(m):
     """Render one [[Ability]] chip.
 
@@ -234,7 +274,7 @@ INLINE = [
     (re.compile(r"\[([^\]]+)\]\(([^)]+)\)"), r'<a href="\2" rel="noopener">\1</a>'),
     (re.compile(r"\*\*(.+?)\*\*"), r"<strong>\1</strong>"),
     (re.compile(r"(?<![*\w])\*([^*]+)\*(?!\*)"), r"<em>\1</em>"),
-    (re.compile(r"`([^`]+)`"), r"<code>\1</code>"),
+    (re.compile(r"`([^`]+)`"), talent),
 ]
 
 
@@ -765,6 +805,8 @@ def main():
     # land in a separate commit from the index that names them.
     print(f"chips: {CHIP_STATS['linked']} linked, {CHIP_STATS['plain']} plain"
           f", {CHIP_STATS['noicon']} linked without an icon")
+    print(f"talents: {CHIP_STATS['code_linked']} linked, {CHIP_STATS['code_plain']} plain"
+          " (a stat string or a macro is supposed to stay plain)")
     for key, label in (("unknown", "chip name(s) with no entry in the index"),
                        ("lost_icon", "icon id(s) the index names but assets/spell-icons/"
                                      " has not got")):

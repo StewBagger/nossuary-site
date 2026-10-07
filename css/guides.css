@@ -229,15 +229,19 @@ a.ab:hover, a.ab:focus-visible {
    the Chamberlain's brain index chunks the generated HTML of these pages and tooltip
    text that was DOM text would be duplicated into the retrieval corpus on every one of
    the 1530 chips. Pseudo-element content is not text content. */
-.ab[data-tip] { position: relative; }
-.ab[data-tip]::after,
-.ab[data-tip]::before {
+[data-tip] { position: relative; }
+/* A talent keeps the <code> look; only the colour and the tooltip are added. */
+code .tl { color: inherit; text-decoration: none; }
+code .tl:hover, code .tl:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+code:has(.tl) { cursor: pointer; }
+[data-tip]::after,
+[data-tip]::before {
   content: ""; position: absolute; left: 0; bottom: calc(100% + 7px);
   opacity: 0; visibility: hidden;        /* not a hit target and not reachable when shut */
   pointer-events: none; z-index: 60;     /* over the sticky nav (z-index 50) */
   transition: opacity .12s ease;
 }
-.ab[data-tip]::after {
+[data-tip]::after {
   content: attr(data-tip);
   width: max-content; max-width: min(34ch, calc(100vw - 32px));
   padding: 5px 9px; border-radius: 7px;
@@ -248,18 +252,18 @@ a.ab:hover, a.ab:focus-visible {
 }
 /* The caret. Sits in the 7px gap, so it is drawn as a square rotated 45deg with two
    borders -- the panel's own border carries round to it. */
-.ab[data-tip]::before {
+[data-tip]::before {
   width: 8px; height: 8px; left: 12px; bottom: calc(100% + 3.5px);
   background: #060807;
   border-right: 1px solid var(--line); border-bottom: 1px solid var(--line);
   transform: rotate(45deg);
 }
-.ab[data-tip]:hover::after, .ab[data-tip]:hover::before,
-.ab[data-tip]:focus-visible::after, .ab[data-tip]:focus-visible::before {
+[data-tip]:hover::after, [data-tip]:hover::before,
+[data-tip]:focus-visible::after, [data-tip]:focus-visible::before {
   opacity: 1; visibility: visible;
 }
 @media (prefers-reduced-motion: reduce) {
-  .ab[data-tip]::after, .ab[data-tip]::before { transition: none; }
+  [data-tip]::after, [data-tip]::before { transition: none; }
 }
 
 /* --- Per-class accents --------------------------------------------------- */
