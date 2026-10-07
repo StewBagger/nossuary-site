@@ -1,8 +1,8 @@
 {
  "build": "1.60.1.70245",
  "product": "wow_cn_beta",
- "generated": "2026-10-07T10:41:26+00:00",
- "stamp": "d12c5b1cdced",
+ "generated": "2026-10-07T11:05:50+00:00",
+ "stamp": "430a4f834f9c",
  "inputs": "cd30956a2ca4",
  "entries": {
   "Adrenaline Rush": {
@@ -120,7 +120,7 @@
    "level": 16,
    "icon": 132112,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Physical",
    "desc": "Shapeshift into Aquatic Form, increasing swim speed by 50% and allowing the druid to breathe underwater. Also protects the caster from Polymorph effects. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
   },
@@ -139,7 +139,7 @@
    "level": null,
    "icon": 135743,
    "cast": "Instant",
-   "duration": "-0.001 sec"
+   "duration": "Until cancelled"
   },
   "Arcane Concentration": {
    "kind": "talent",
@@ -259,7 +259,7 @@
    "level": null,
    "icon": 132252,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Nature",
    "cost": "50 Mana",
    "desc": "The hunter takes on the aspects of a beast, becoming untrackable and increasing Melee Attack Power by 50. Only one Aspect can be active at a time."
@@ -270,7 +270,7 @@
    "level": 20,
    "icon": 132242,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Nature",
    "cost": "40 Mana"
   },
@@ -280,7 +280,7 @@
    "level": 10,
    "icon": 136076,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Nature",
    "cost": "20 Mana",
    "desc": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 20. Only one Aspect can be active at a time."
@@ -292,7 +292,7 @@
    "icon": 132159,
    "cast": "Instant",
    "range": "100 yd range",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "cost": "20 Mana",
    "desc": "The hunter takes on the aspects of a monkey, increasing chance to dodge by 8%. Only one Aspect can be active at a time."
   },
@@ -302,7 +302,7 @@
    "level": 40,
    "icon": 132267,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Nature",
    "cost": "100 Mana"
   },
@@ -312,7 +312,7 @@
    "level": 46,
    "icon": 136074,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Nature",
    "cost": "90 Mana"
   },
@@ -342,7 +342,7 @@
    "level": null,
    "icon": 132316,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "desc": "Increases your damage with One-Handed Axes by 1."
   },
   "Azerothium Bar": {
@@ -486,7 +486,7 @@
    "level": 1,
    "icon": 132349,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Physical",
    "cooldown": "1 sec cooldown",
    "desc": "A balanced combat stance."
@@ -530,7 +530,7 @@
    "level": 30,
    "icon": 132275,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Physical",
    "cooldown": "1 sec cooldown",
    "desc": "An aggressive stance. Critical strike chance increased by 3% and all damage taken is increased by 10%."
@@ -1006,7 +1006,7 @@
    "level": null,
    "icon": 135988,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "cooldown": "180 sec cooldown",
    "desc": "When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%."
   },
@@ -1025,7 +1025,7 @@
    "level": 40,
    "icon": 135824,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Fire",
    "cooldown": "180 sec cooldown"
   },
@@ -1451,7 +1451,7 @@
    "level": 10,
    "icon": 132341,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Physical",
    "cooldown": "1 sec cooldown"
   },
@@ -1634,7 +1634,7 @@
    "level": 1,
    "icon": 135893,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Holy"
   },
   "Devouring Contagion": {
@@ -1663,7 +1663,7 @@
    "level": 40,
    "icon": 132276,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Physical",
    "desc": "Shapeshift into Dire Bear Form, increasing Attack Power by 120, Armor contribution from items by 360%, and Health by 600. Also protects the caster from Polymorph effects and allows the use of various bear abilities. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
   },
@@ -1762,7 +1762,7 @@
    "level": null,
    "icon": 135915,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "cooldown": "120 sec cooldown",
    "desc": "When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance."
   },
@@ -2369,7 +2369,7 @@
    "level": null,
    "icon": 136095,
    "cast": "Instant",
-   "duration": "-0.001 sec"
+   "duration": "Until cancelled"
   },
   "Feral Charge": {
    "kind": "spell",
@@ -2445,7 +2445,7 @@
    "level": null,
    "icon": 133888,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Physical",
    "cooldown": "1.5 sec cooldown",
    "desc": "Nearby fishing nodes appear on the minimap."
@@ -2808,7 +2808,7 @@
    "level": 20,
    "icon": 136095,
    "cast": "3 sec cast",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Nature",
    "cost": "100 Mana",
    "desc": "Turns the Shaman into a Ghost Wolf, increasing speed by 40%. Only useable outdoors."
@@ -2960,7 +2960,7 @@
    "level": null,
    "icon": 135641,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "desc": "Increases your chance to get a critical strike with Daggers and Fist Weapons by 5%."
   },
   "Hammer of Justice": {
@@ -3280,7 +3280,7 @@
    "level": null,
    "icon": 135942,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "desc": "Increases all damage caused against Humanoid targets by 1% and increases critical damage caused against Humanoid targets by an additional 1%."
   },
   "Hunter's Mark": {
@@ -3438,7 +3438,7 @@
    "level": null,
    "icon": 136235,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "desc": "Increases the Ranged Attack Power bonus of your Aspect of the Hawk by 20%."
   },
   "Improved Backstab": {
@@ -3879,7 +3879,7 @@
    "level": null,
    "icon": 136235,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "desc": "Reduces the casting time of your Prayer of Healing by 0 sec."
   },
   "Improved Psychic Scream": {
@@ -4271,7 +4271,7 @@
    "level": null,
    "icon": 135863,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Physical",
    "cooldown": "180 sec cooldown",
    "desc": "When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is a non-periodic spell and capable of a critical effect."
@@ -4674,7 +4674,7 @@
    "level": null,
    "icon": 132325,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "desc": "Increases your damage with One-Handed Maces by 1."
   },
   "Maelstrom Weapon": {
@@ -5045,7 +5045,7 @@
    "level": null,
    "icon": 134154,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "desc": "Increases all damage caused against Beasts, Giants and Dragonkin targets by 2% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional 2%."
   },
   "Moonfire": {
@@ -5081,7 +5081,7 @@
    "level": 40,
    "icon": 136036,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Physical"
   },
   "Mortal Shots": {
@@ -5230,7 +5230,7 @@
    "level": null,
    "icon": 136076,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "cooldown": "180 sec cooldown",
    "desc": "When activated, your next Nature spell with a casting time less than 10 sec. becomes an instant cast spell."
   },
@@ -5408,7 +5408,7 @@
    "level": null,
    "icon": 132091,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "desc": "Increases your running speed. The longer you run the faster you go up to a maximum speed. You cannot use plainsrunning in combat, underwater, or Indoors."
   },
   "Plated Armorfish": {
@@ -5576,7 +5576,7 @@
    "level": 1,
    "icon": 136031,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Physical",
    "cooldown": "180 sec cooldown",
    "desc": "When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell."
@@ -5605,7 +5605,7 @@
    "level": 20,
    "icon": 132089,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Physical",
    "cooldown": "10 sec cooldown",
    "desc": "Allows the Druid to prowl around, but reduces your movement speed by 40%. Lasts until cancelled."
@@ -5955,7 +5955,7 @@
    "level": 16,
    "icon": 135873,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Holy"
   },
   "Revenge": {
@@ -6138,7 +6138,7 @@
    "level": null,
    "icon": 132914,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Physical",
    "desc": "Reduces damage from falling."
   },
@@ -6156,7 +6156,7 @@
    "level": null,
    "icon": 135934,
    "cast": "Instant",
-   "duration": "-0.001 sec"
+   "duration": "Until cancelled"
   },
   "Sap": {
    "kind": "spell",
@@ -6420,7 +6420,7 @@
    "level": null,
    "icon": 136200,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Shadow",
    "cooldown": "1.5 sec cooldown",
    "desc": "Assume Shadowform, increasing your Shadow damage by 10%, reducing the Mana cost of all Shadow spells by 50%, increasing the critical strike damage bonus of your Shadow spells by 100%, and reducing Physical damage taken by you by 15%. However, you may not cast healing spells while in this form."
@@ -6440,7 +6440,7 @@
    "level": null,
    "icon": 132089,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Physical",
    "cooldown": "10 sec cooldown",
    "desc": "Activate to slip into the shadows, reducing the chance for enemies to detect your presence. Lasts until cancelled or upon moving. Using this ability in combat discourages enemies from attacking you, but increases the cooldown to 2 min."
@@ -6537,7 +6537,7 @@
    "level": null,
    "icon": 134952,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "desc": "Increases your chance to block attacks with a shield by 1% and increases the amount blocked by 5%."
   },
   "Shield Wall": {
@@ -6859,7 +6859,7 @@
    "level": 1,
    "icon": 132320,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Physical",
    "cooldown": "10 sec cooldown",
    "desc": "Allows the rogue to sneak around, but reduces your speed by 50%. Lasts until cancelled."
@@ -6956,7 +6956,7 @@
    "icon": 132238,
    "cast": "3 sec cast",
    "range": "10 yd range",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Shadow",
    "cost": "150 Mana",
    "desc": "Summons a Dreadsteed, which serves as a mount for the caster."
@@ -6967,7 +6967,7 @@
    "level": null,
    "icon": 136103,
    "cast": "3 sec cast",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Shadow",
    "cost": "100 Mana",
    "desc": "Summons a Felsteed, which serves as a mount for the caster."
@@ -6988,7 +6988,7 @@
    "level": 20,
    "icon": 4352492,
    "cast": "10 sec cast",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Shadow",
    "desc": "Summons an Incubus under the command of the Warlock."
   },
@@ -6998,7 +6998,7 @@
    "level": 20,
    "icon": 136220,
    "cast": "10 sec cast",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Shadow",
    "desc": "Summons a Succubus under the command of the Warlock."
   },
@@ -7008,7 +7008,7 @@
    "level": null,
    "icon": 136103,
    "cast": "3 sec cast",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Holy",
    "cost": "100 Mana",
    "desc": "Summons a warhorse, which serves as a mount."
@@ -7128,7 +7128,7 @@
    "level": null,
    "icon": 132223,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "desc": "Increases your damage with One-Handed Swords by 1."
   },
   "Tactical Mastery": {
@@ -7374,7 +7374,7 @@
    "level": 1,
    "icon": 132328,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Physical",
    "desc": "Shows the location of all nearby beasts on the minimap. Only one form of tracking can be active at a time."
   },
@@ -7401,7 +7401,7 @@
    "level": 30,
    "icon": 132144,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Physical",
    "desc": "Shapeshift into Travel Form, increasing movement speed by 40%. Also protects the caster from Polymorph effects. Only useable outdoors. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
   },
@@ -7411,7 +7411,7 @@
    "level": null,
    "icon": 132145,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "school": "Physical"
   },
   "Trickster's Dance": {
@@ -7682,7 +7682,7 @@
    "level": null,
    "icon": 132215,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "desc": "Increases the damage you deal with all weapons by 2%."
   },
   "Weaponmaster": {
@@ -7691,7 +7691,7 @@
    "level": null,
    "icon": 135328,
    "cast": "Instant",
-   "duration": "-0.001 sec",
+   "duration": "Until cancelled",
    "desc": "Gives you a 0% chance to get an extra attack on the same target after dealing damage with your Sword."
   },
   "Weaponsmith": {

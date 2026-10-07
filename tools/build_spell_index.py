@@ -262,8 +262,13 @@ def present(sid: int, d: dict) -> dict:
         if m.get("rng"):
             r = m["rng"]
             out["range"] = "Melee" if r <= 5 else f"{r:g} yd range"
-        if m.get("dur"):
-            out["duration"] = f"{secs(m['dur'])} sec"
+        dur = m.get("dur", 0.0)
+        if dur < 0:
+            # The client stores -1 for "lasts until you cancel it" -- every aura, form
+            # and aspect. Dividing that by 1000 published "-0.001 sec" on 50 entries.
+            out["duration"] = "Until cancelled"
+        elif dur > 0:
+            out["duration"] = f"{secs(dur)} sec"
         school = SCHOOLS.get(m.get("school", 0))
         if school:
             out["school"] = school
