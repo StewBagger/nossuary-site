@@ -9,9 +9,9 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of t
 ## Which spec?
 | Spec | Role | Its strongest point | In one line |
 | --- | --- | --- | --- |
-| **[Affliction](/guides/wow-forever/warlock/affliction/)** | Ranged DPS | [[Drain Life]] returns your damage as health; `Suppression` 5/5 cuts your threat 20% | Instant [[Corruption]] from level 14, and DoTs can now crit |
-| **[Demonology](/guides/wow-forever/warlock/demonology/)** | Ranged DPS | `Unholy Power` from 14 raises *all* your demon's damage, not just its melee | `Demonic Energies` turns your damage into pet healing and your Life Tap into pet mana |
-| **[Destruction](/guides/wow-forever/warlock/destruction/)** | Ranged DPS | `Bane` 5/5 from 14: half a second off [[Shadow Bolt]], two off [[Soul Fire]] | Hard-cast direct damage, and a wand currently competes with [[Shadow Bolt]] |
+| **[Affliction](/guides/wow-forever/warlock/affliction/)** | Ranged DPS | Instant [[Corruption]] from 14, and `Pandemic` from 22 doubles the critical damage it deals | [[Drain Life]] returns your damage as health, and short fights waste a DoT build |
+| **[Demonology](/guides/wow-forever/warlock/demonology/)** | Ranged DPS | `Demonic Energies` at 16: 15% of your damage heals the demon, your [[Life Tap]] feeds its mana | `Unholy Power` from 14 raises *all* your demon's damage, not just its melee |
+| **[Destruction](/guides/wow-forever/warlock/destruction/)** | Ranged DPS | [[Shadowburn]] at 20 costs a Soul Shard and refunds it if the target dies inside 8 seconds | Hard-cast direct damage, and a wand currently competes with [[Shadow Bolt]] |
 **Wowhead's Level 20 overview makes the same wand argument for all three specs:** *"you'll use your wand more for damage because it deals more DPS than Shadow Bolt, and it's also mana-free."* Destruction is the exception: Wowhead calls wanding *"an equally good option but not really Destruction-oriented"* once `Bane` has cut [[Shadow Bolt]]'s cast time, where the other two specs keep wanding.
 **Your demon matters more than in Classic, in every spec**, because **demons now scale with your gear**, asserted from hands-on testing by two guides and implied by Blizzard's own known-issues list, though **nothing published quantifies it.** [[Voidwalker]] at 10 is the levelling pet; [[Succubus]] at 20 is the damage pet; **Forever trains the [[Felhunter]] at 30**, where Classic gated it behind a quest and withheld Spell Lock until 36.
 ## Is Warlock for you?

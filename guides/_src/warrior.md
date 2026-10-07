@@ -9,9 +9,9 @@ Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1
 ## Which spec?
 | Spec | Role | Its strongest point | In one line |
 | --- | --- | --- | --- |
-| **[Arms](/guides/wow-forever/warrior/arms/)** | Melee DPS | `Bloodthrill` procs [[Overpower]] off melee hits on your own [[Rend]] target, with no dodge needed | Two-handed bleeds and burst, but its engine is level 30+ |
-| **[Fury](/guides/wow-forever/warrior/fury/)** | Melee DPS | `Death Wish` at 30: +20% physical damage and Fear immunity for 30 seconds | Dual-wield rage dump, though you cannot dual wield until 20 |
-| **[Protection](/guides/wow-forever/warrior/protection/)** | Tank | [[Revenge]] on every block, dodge or parry — very cheap, and a large amount of threat | Shield tanking, and three of its talents now require a shield |
+| **[Arms](/guides/wow-forever/warrior/arms/)** | Melee DPS | [[Rend]] into `Bloodthrill` into [[Overpower]] at 30: hits on your own bleed proc it, no dodge needed | Two-handed bleeds plus a 50% healing debuff, and eleven points that go to Fury at 20 |
+| **[Fury](/guides/wow-forever/warrior/fury/)** | Melee DPS | Dual-wielding from 20 swings more often, and `Unbridled Wrath` gives ~60% of those hits +1 Rage | A rage dump that waits on its own kit: dual wield at 20, [[Whirlwind]] at 36 |
+| **[Protection](/guides/wow-forever/warrior/protection/)** | Tank | `Shield Specialization` 5/5 returns 5 Rage per block, where Classic gave 1, and that funds [[Revenge]] | Shield tanking, and three of its talents now require a shield |
 **An honest note that saves you a respec: at level 20 all three published Warrior builds are nearly the same.** The Arms and Fury level-20 builds are *identical*, eleven points in the Fury tree, because nothing in Arms is worth reaching yet. Pick by what you want at 30 and beyond, not by what you can feel at 20 — and **Dual Specialization opens at level 40** (Blizzard), so the pick is not permanent.
 ## Is Warrior for you?
 Play Warrior if you want to watch the enemy rather than your own bars. The trade to weigh is the one Icy Veins describes: one of the harder classes to level, one of the strongest once geared. **Wowhead takes the opposite tone on the levelling itself** — Forever's changes make Arms "feel phenomenal," a deliberate contrast with Vanilla's reputation.

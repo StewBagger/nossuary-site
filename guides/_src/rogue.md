@@ -9,9 +9,9 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of t
 ## Which spec?
 | Spec | Role | Its strongest point | In one line |
 | --- | --- | --- | --- |
-| **[Assassination](/guides/wow-forever/rogue/assassination/)** | Melee DPS | [[Mutilate]] at 21 Assassination points: one strike with **both weapons**, **+20% against a poisoned target** | Poisons and daggers, built around [[Ambush]] and bleed damage |
-| **[Combat](/guides/wow-forever/rogue/combat/)** | Melee DPS | [[Blade Flurry]] at 30: 25 energy for +20% melee speed and **one extra nearby target** for 15 seconds | Swords and maces, `Riposte`, and Wowhead's *"most 'complete'"* Rogue spec at 20 |
-| **[Subtlety](/guides/wow-forever/rogue/subtlety/)** | Melee DPS | `Camouflage`: a shorter [[Stealth]] cooldown and more move speed, plus `Improved Ambush` on talent row 2 | `Ghostly Strike`, openers from stealth, and **no area damage of any kind** |
+| **[Assassination](/guides/wow-forever/rogue/assassination/)** | Melee DPS | Poison the target first: [[Mutilate]] at 21 points hits with **both weapons**, **+20% against poison** | Daggers, [[Ambush]] openers, and bleed damage |
+| **[Combat](/guides/wow-forever/rogue/combat/)** | Melee DPS | Every level-20 point improves the two buttons you press, [[Sinister Strike]] and [[Eviscerate]] | Swords and maces, `Riposte`, and Wowhead's *"most 'complete'"* Rogue spec at 20 |
+| **[Subtlety](/guides/wow-forever/rogue/subtlety/)** | Melee DPS | `Ghostly Strike` at 20 is non-positional, so you build combo points without getting behind the target | Stealth openers and a [[Rupture]] bleed cycle, with **no area damage of any kind** |
 **All three are melee damage, so pick on how you want to play rather than on role.** The spec pages carry each source's ratings and quotes in full.
 ## Is Rogue for you?
 Play Rogue if you like deciding when a fight starts, and you are willing to level a class wearing leather with no self-heal.

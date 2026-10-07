@@ -9,9 +9,9 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of t
 ## Which spec?
 | Spec | Role | Its strongest point | In one line |
 | --- | --- | --- | --- |
-| **[Holy](/guides/wow-forever/paladin/holy/)** | Healer | `Reverence` keeps a share of your mana regeneration running while you cast | Plate healer whose Blessings and auras cover the whole party, and now an area-heal capstone |
-| **[Protection](/guides/wow-forever/paladin/protection/)** | Tank | Judging [[Seal of Fury]] taunts from level 10, baseline, with no talent points spent | The only tank that gears for **Spell Power**, because its threat is Holy damage |
-| **[Retribution](/guides/wow-forever/paladin/retribution/)** | Melee DPS | [[Seal of Command]]'s Judgement hits harder into a stunned target, so [[Hammer of Justice]] sets it up | Two-hander plus Holy, and [[Holy Strike]] arrives at level 6 |
+| **[Holy](/guides/wow-forever/paladin/holy/)** | Healer | `Reverence` keeps 30% of your mana regeneration running while you cast, and gates `Illumination` | Plate healer whose Blessings and auras cover the whole party, and now an area-heal capstone |
+| **[Protection](/guides/wow-forever/paladin/protection/)** | Tank | Blocks and spent [[Seal of Fury]] absorbs both return mana, which funds [[Consecration]] | The only tank that gears for **Spell Power**, because its threat is Holy damage |
+| **[Retribution](/guides/wow-forever/paladin/retribution/)** | Melee DPS | [[Seal of Command]] at 20 procs Holy off each swing, and a stun amplifies its Judgement | Two-hander plus Holy, and [[Holy Strike]] arrives at level 6 |
 **Every Paladin now gets [[Holy Strike]] at level 6**, twenty levels earlier than Classic gave you a button, and [[Consecration]] and [[Blessing of Kings]] are trained at 20 in every spec, so the three share more of their kit than they did in Classic. Protection used to have dungeon levelling as its escape hatch; **Forever cut dungeon experience hard, and the October 1 build cut dungeon *quest* experience too** — dungeon quests now reward 50% less extra experience beyond normal quest values, which Blizzard framed as a deliberate reduction in levelling speed — so that route is largely gone.
 **The two cases are not alike.** `Improved Holy Strike` was folded into the class — [[Holy Strike]]'s cooldown is now 10 seconds for every Paladin, and Blizzard's September 24 notes say so. `Crusade` simply vanished from the Retribution tree with no mention at all.
 ## Is Paladin for you?

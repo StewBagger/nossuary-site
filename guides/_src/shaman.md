@@ -9,9 +9,9 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of t
 ## Which spec?
 | Spec | Role | Its strongest point | In one line |
 | --- | --- | --- | --- |
-| **[Elemental](/guides/wow-forever/shaman/elemental/)** | Ranged DPS | `Lightning Overload` at 30: a chance at a free, half-damage, no-threat duplicate of your Bolt | [[Lightning Bolt]] and [[Chain Lightning]], which is level 32 and outside the beta cap |
-| **[Enhancement](/guides/wow-forever/shaman/enhancement/)** | Melee DPS | `Improved Ghost Wolf` makes [[Ghost Wolf]] instant and usable indoors | Weapon imbues and melee, and the tree two sources agree on exactly |
-| **[Restoration](/guides/wow-forever/shaman/restoration/)** | Healer | [[Mana Tide Totem]] at 25, moved to row 4, refills the group's mana | [[Chain Heal]] and `Nature's Swiftness` |
+| **[Elemental](/guides/wow-forever/shaman/elemental/)** | Ranged DPS | `Elemental Focus` at 20 gives every Fire, Frost or Nature spell a 10% Clearcasting chance | [[Lightning Bolt]] and [[Chain Lightning]], which is level 32 and outside the beta cap |
+| **[Enhancement](/guides/wow-forever/shaman/enhancement/)** | Melee DPS | Weapon imbues last 60 minutes instead of 5, so one [[Rockbiter Weapon]] covers a session | One two-hander and no dual wield, on the one build two sources publish identically |
+| **[Restoration](/guides/wow-forever/shaman/restoration/)** | Healer | [[Water Shield]] at 20 returns 2% of your maximum mana each time you are hit or crit a heal | [[Chain Heal]] and `Nature's Swiftness` |
 **Two facts that will save you a mistake.** **Shamans cannot dual wield in Forever**, if you have played a later expansion, unlearn that. And a widely-published level-30 Elemental build **is not legal on the current client**: it spends 5 points on `Elemental Fury`, which Blizzard moved to row 6 on September 24, putting it out of reach at 21 points. That build predates the change.
 **A note on Enhancement tanking.** You will see it discussed, usually pointing at `Spirit Weapons`. There is no Blizzard statement either way, no published tanking build, and the three positions in circulation disagree. Three tanks — Protection Warrior, Protection Paladin and Feral Druid — is the common assumption, **not a Blizzard taxonomy**: its Druid deep dive credits Druids with the *"ability to serve any combat role"*, and its Hunter deep dive has pets tanking *"in solo and small group play."* Treat Shaman tanking as an experiment, not a plan.
 ## Is Shaman for you?
