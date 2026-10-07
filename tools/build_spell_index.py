@@ -54,7 +54,8 @@ PRODUCT = "wow_cn_beta"  # Forever. See module docstring -- not a wow_classic* l
 API = "https://wago.tools"
 TABLES = ("SpellName", "SpellMisc", "SpellLevels", "SkillLineAbility", "ItemSparse",
           "Item", "Talent", "Spell", "SpellEffect", "SpellCastTimes", "SpellPower",
-          "SpellRange", "SpellCooldowns", "SpellDuration")
+          "SpellRange", "SpellCooldowns", "SpellDuration", "SpellRadius",
+          "SpellAuraOptions", "SpellTargetRestrictions")
 
 # Spot-checks against the guides' own prose. A rank rule that breaks these is wrong.
 # These are not decoration: the first rule tried here (lowest non-zero BaseLevel) put
@@ -66,15 +67,87 @@ VERIFY = {"Holy Strike": 6, "Consecration": 20, "Ice Lance": 20, "Shadow Bolt": 
 # wrong number is worse than one that prints nothing, so a resolved description has to
 # reproduce a figure the guides already state in prose. Holy Strike is "25% of weapon
 # damage at the rank you train at 6" on paladin-retribution.md.
-VERIFY_DESC = {"Holy Strike": "25"}
+#
+# One entry per token form the resolver understands, each naming a spell where the
+# rendered sentence can be checked against something outside the client: a figure the
+# guides state in prose, or a value the sentence makes self-evident. There is no
+# authoritative documentation for this templating language -- every reading below is an
+# inference from data, and these are what catch a wrong inference before it ships.
+VERIFY_DESC = {
+    "Holy Strike": "25",                       # $mN   paladin-retribution.md: 25% weapon damage
+    "Shadow Word: Pain": "over 18 sec",        # $oN   30 damage over 18 sec, rank 1 to the letter
+    "Fireball": "2 Fire damage over 4 sec",    # $oN   rank 1's own "additional 2 over 4 sec"
+    "Bloodrage": "10 rage",                    # $/N;  rage is stored x10: 100 -> 10
+    "Battle Shout": "20 yards",                # $aN   radius index 9 is 20.0 yd
+    "Drain Life": "every 1 second",            # $tN   the template's own singular "second"
+    "Blessing of Wisdom": "every 5 seconds",   # $tN   5000 ms period
+    "Multi-Shot": "3 targets",                 # $xN   EffectChainTargets 3
+    "Rebirth": "700",                          # $qN   400 health / 700 mana, rank 1 to the letter
+    "Holy Shield": "4 charges",                # $n    ProcCharges 4, and 4 blocks is rank 1
+    "Blackout": "2%",                          # $h    ProcChance ladder 2/4/6/8 across the ranks
+    "Thunder Clap": "up to 4 targets",         # $i    MaxTargets 4
+    "Frostbite": "Freeze the target for 5 sec",  # $<id>d  the freeze aura's own 5000 ms
+    "Improved Counterspell": "4 sec",          # ${}   mage-arcane.md: "rank 2 for 4" seconds
+    "Soul Siphon": "36",                       # ${}   warlock-affliction.md: "up to 36%"
+    "Distract": "1 level lower",               # $l..; singular, because the number is 1
+    "Improved Distract": "2 levels",           # $l..; plural, because the number is 2
+}
+
+# Two spells whose template resolves to a figure the guides directly contradict. Both
+# read $sN/$mN off an effect whose aura is the engine's dummy (4) and whose base points
+# are a flag rather than a measurement -- Flurry's rank row carries 1 where the buff it
+# applies carries 30, and Forever's own Flurry row 15088 proves it by shipping a
+# hardcoded "by 30%" against the same base points of 1. A general rule for this does not
+# exist: Anger Management ("Generates 1 Rage every 3 sec", warrior-arms.md) and Magic
+# Absorption ("restore 1% of your total mana") read the same shape and are correct. So
+# these are named, with their evidence, rather than guessed at by a heuristic.
+DESC_WRONG = {
+    "Flurry": "warrior-fury.md: 25% total attack speed (30% before the nerf), not 1%",
+    "Shatter": "mage-frost.md: 50% crit at 3/3, so rank 1 is ~17%, not 1%",
+    # The other direction of the same defect: base points of 100 where the sentence makes
+    # 100 absurd on its own terms. Forever ships ONE spell row per talent and the ranks
+    # the guides list (mage-arcane.md walks Arcane Concentration 1 to 5) are nowhere in
+    # it, so the figure is a placeholder, not rank 5's reading. 100 is a real percentage
+    # elsewhere -- Moonkin Form "doubles your Omen of Clarity proc rate" (druid.md) is
+    # base points of 100 and correct -- which is why these are named, not filtered.
+    "Arcane Concentration": "a 100% chance of Clearcasting would make every mage spell free",
+    "Naturalist": "its own rank-1 cast-time cut of 0.1 sec against +100% to all damage",
+}
 
 SCHOOLS = {1: "Physical", 2: "Holy", 4: "Fire", 8: "Nature",
            16: "Frost", 32: "Shadow", 64: "Arcane"}
 
-# Blizzard's tooltip templating. $s1/$m1 are effect values, $d a duration, $<id>s1 another
-# spell's effect, ${...} arithmetic. Anything still carrying a $ after a pass is NOT shown:
-# a half-resolved string on a public page is the failure this guards against.
-TOKEN_RE = re.compile(r"\$(?:\{[^}]*\}|<[^>]*>|[0-9]*[a-zA-Z]+[0-9]*)")
+# Blizzard's tooltip templating, as far as this file reads it. An optional spell id in
+# front of the letter means "that spell's", not this one's, and an omitted trailing index
+# means effect 1. Anything still carrying a $ after the passes below is NOT shown: a
+# half-resolved string on a public page is the failure this guards against.
+#
+#   per effect     $sN $mN $MN $SN base points   $oN total over the duration
+#                  $aN radius      $tN tick period   $xN chain targets   $qN misc value
+#   per spell      $d duration  $n proc charges  $h proc chance  $i max targets
+#   directives     ${...} arithmetic   $/N;<ref> divide   $lone:many;   $gmale:female;
+#                  ${...}.N -- print the expression to N decimal places
+#
+# Left deliberately unresolved, each for a reason in resolve_desc: $?...[a][b] (runtime
+# state), $@spelldesc<id> (another tooltip), $<mult> and friends (named client variables),
+# $b $bh $bc $rap $AP (spell-power and attack-power scaling), $u $e $z $c $r $p (one or
+# two spells each, and no value to check them against).
+EFFECT_TOKENS = "smMSoatxq"   # $<letter>N -- indexed on one of the spell's effects
+SPELL_TOKENS = "dnhi"         # $<letter>  -- a property of the whole spell, never indexed
+DUMMY_AURA = 4               # the engine's scripted-talent aura; its base points are a flag
+
+TOKEN_RE = re.compile(r"""\$(?:
+      \{[^{}]*\}(?:\.\d)?          # ${ $m1*3 } -- arithmetic, optionally to N decimals
+    | /\d+;\d*[a-zA-Z]\d*          # $/1000;S1 -- divide the reference that follows
+    | [lL][^:;$\s]*:[^;$]*;        # $lpoint:points; -- singular:plural
+    | g[^:;$\s]*:[^;$]*;           # $ghis:her; -- male:female
+    | <[^>]*>                      # $<mult> -- a named client variable
+    | \d*[a-zA-Z]\d*               # $s1  $m2  $12536s1  $d  $n
+)""", re.X)
+
+# $lone:many; is settled after the numbers are in, because which form is right depends on
+# the number that ends up in front of it.
+PLURAL_RE = re.compile(r"\$[lL]([^:;$\s]*):([^;$]*);")
 
 CHIP_RE = re.compile(r"\[\[([^\]]+)\]\]")
 TICK_RE = re.compile(r"`([^`]+)`")
@@ -109,6 +182,14 @@ def norm(s: str) -> str:
     return re.sub(r"\s+", " ", s.strip().lower())
 
 
+def number(row: dict, field: str) -> float:
+    """One DB2 column as a float. A missing or unparseable column reads as 0."""
+    try:
+        return float(row.get(field) or 0)
+    except (ValueError, TypeError):
+        return 0.0
+
+
 def chips() -> tuple[dict[str, int], set[str]]:
     """Every name the guides mark up, with how often, and which are written as talents.
 
@@ -138,13 +219,52 @@ def chips() -> tuple[dict[str, int], set[str]]:
 
 def load_details(build: str) -> dict:
     """Everything a tooltip shows beyond name and icon, keyed for lookup by spell id."""
-    effects: dict[int, dict[int, float]] = defaultdict(dict)
+    # Radii are indirected the same way durations and cast times are: the effect holds an
+    # index into SpellRadius, not a number of yards.
+    radius_of: dict[int, float] = {}
+    for r in table("SpellRadius", build):
+        try:
+            radius_of[int(r["ID"])] = float(r["Radius"] or 0)
+        except (ValueError, TypeError, KeyError):
+            continue
+
+    # Per effect, every field a $ token can read. Base points alone were enough while the
+    # resolver only understood $sN; $oN needs the tick period, $aN the radius.
+    effects: dict[int, dict[int, dict]] = defaultdict(dict)
     for r in table("SpellEffect", build):
         try:
             sid, idx = int(r["SpellID"]), int(r["EffectIndex"])
-            effects[sid][idx] = float(r["EffectBasePointsF"] or 0)
         except (ValueError, TypeError, KeyError):
             continue
+
+        effects[sid][idx] = {
+            "base": number(r, "EffectBasePointsF"),
+            "aura": int(number(r, "EffectAura")),
+            "period": number(r, "EffectAuraPeriod"),
+            "radius": radius_of.get(int(number(r, "EffectRadiusIndex_0")), 0.0),
+            "chain": int(number(r, "EffectChainTargets")),
+            "misc": int(number(r, "EffectMiscValue_0")),
+        }
+
+    # Charges and proc chance are per spell, not per effect, and live on their own table.
+    charges: dict[int, int] = {}
+    chance: dict[int, int] = {}
+    for r in table("SpellAuraOptions", build):
+        try:
+            sid = int(r["SpellID"])
+        except (ValueError, TypeError, KeyError):
+            continue
+        if sid not in charges:
+            charges[sid] = int(number(r, "ProcCharges"))
+            chance[sid] = int(number(r, "ProcChance"))
+
+    targets: dict[int, int] = {}
+    for r in table("SpellTargetRestrictions", build):
+        try:
+            sid = int(r["SpellID"])
+        except (ValueError, TypeError, KeyError):
+            continue
+        targets.setdefault(sid, int(number(r, "MaxTargets")))
 
     desc: dict[int, str] = {}
     for r in table("Spell", build):
@@ -202,51 +322,241 @@ def load_details(build: str) -> dict:
             "school": int(r.get("SchoolMask") or 0),
         })
 
-    return {"effects": effects, "desc": desc, "cost": cost, "cd": cd, "misc": misc}
+    return {"effects": effects, "desc": desc, "cost": cost, "cd": cd, "misc": misc,
+            "charges": charges, "chance": chance, "targets": targets}
 
 
 def secs(ms: float) -> str:
     return f"{ms / 1000:g}"
 
 
+def figure(v: float) -> str:
+    """One resolved number as a tooltip prints it, with -0.0 normalised away."""
+    v = round(v, 4)
+    return f"{v if v else 0.0:g}"
+
+
+def arithmetic(expr: str) -> float | None:
+    """Compute a fully-substituted ${...} body, or None if it is not pure arithmetic.
+
+    Parsed and computed, never eval()'d: the body is client data, and nothing here is
+    worth handing an expression evaluator the whole interpreter for.
+    """
+    toks = [t for t in re.findall(r"\d+\.\d+|\d+|[-+*/()]|.", expr) if not t.isspace()]
+    if not toks or any(not (re.fullmatch(r"\d+(?:\.\d+)?", t) or t in "+-*/()")
+                       for t in toks):
+        return None
+    at = 0
+
+    def peek() -> str | None:
+        return toks[at] if at < len(toks) else None
+
+    def expression() -> float | None:
+        nonlocal at
+        v = term()
+        while v is not None and peek() in ("+", "-"):
+            op = toks[at]
+            at += 1
+            r = term()
+            if r is None:
+                return None
+            v = v + r if op == "+" else v - r
+        return v
+
+    def term() -> float | None:
+        nonlocal at
+        v = unary()
+        while v is not None and peek() in ("*", "/"):
+            op = toks[at]
+            at += 1
+            r = unary()
+            if r is None or (op == "/" and r == 0):
+                return None
+            v = v * r if op == "*" else v / r
+        return v
+
+    def unary() -> float | None:
+        nonlocal at
+        if peek() in ("+", "-"):
+            neg = toks[at] == "-"
+            at += 1
+            v = unary()
+            return None if v is None else (-v if neg else v)
+        if peek() == "(":
+            at += 1
+            v = expression()
+            if v is None or peek() != ")":
+                return None
+            at += 1
+            return v
+        if peek() is not None and re.fullmatch(r"\d+(?:\.\d+)?", toks[at]):
+            at += 1
+            return float(toks[at - 1])
+        return None
+
+    v = expression()
+    return None if v is None or at != len(toks) else v
+
+
 def resolve_desc(sid: int, d: dict) -> str | None:
     """Render one spell's description, or None if any token is left unresolved.
 
     Blizzard's tooltip strings are templates: `$m2% weapon damage plus $s1 as Holy damage`.
-    $sN and $mN are effect N's value, $d the duration, $<id>sN another spell's effect, and
-    ${...} arithmetic over those. This resolves the forms that actually occur and REFUSES
-    the rest -- a tooltip reading "deals $s1 damage" on a live page is worse than a tooltip
-    with no description, so a string that still contains a $ after substitution is dropped.
+    TOKEN_RE above lists the forms this reads and the forms it declines. It resolves what
+    it can check and REFUSES the rest -- a tooltip reading "deals $s1 damage" on a live
+    page is worse than a tooltip with no description, so a string that still contains a $
+    after substitution is dropped, and so is one whose numbers would have to be guessed.
+
+    Durations render in seconds, matching the duration row present() builds from the same
+    field, so a tooltip never states a length two ways.
     """
     text = d["desc"].get(sid)
     if not text:
         return None
 
-    def value(spell: int, which: str, n: int) -> float | None:
-        eff = d["effects"].get(spell, {})
-        v = eff.get(n - 1)
-        return None if v is None else v
+    def duration(spell: int) -> float | None:
+        """A spell's duration in ms, or None when the field is not a length.
+
+        -1 is the client's "lasts until cancelled" and 0 is "no duration row". Dividing
+        the first by 1000 is how "-0.001 sec" reached 50 entries of the stat block
+        (see present()); in prose it has no sensible rendering at all, so a $d on such a
+        spell takes the whole description down with it rather than inventing wording.
+        """
+        ms = d["misc"].get(spell, {}).get("dur", 0.0)
+        return None if ms <= 0 else ms
+
+    def effect_value(spell: int, letter: str, n: int, signed: bool) -> float | None:
+        e = d["effects"].get(spell, {}).get(n - 1)
+        if e is None:
+            return None
+        if letter in "smMS":
+            # 0 and "no such field" are the same byte in the CSV, and every description
+            # that resolved a 0 here read as nonsense -- "a 0% chance to gain an extra
+            # attack" (Reckoning), "Increases your dodge chance by 0%" (Natural Reaction).
+            # Eight of those were live before this guard.
+            if not e["base"]:
+                return None
+            return e["base"] if signed else abs(e["base"])
+        if letter == "o":
+            # The total a periodic effect deals over its whole duration: one tick's base
+            # points times however many ticks fit. Bloodrage checks it exactly -- base 10
+            # on a 1000 ms period over 10000 ms is 100, which its $/10; prefix prints as
+            # the 10 rage it has always generated.
+            ms = duration(spell)
+            if not e["base"] or not e["period"] or ms is None:
+                return None
+            return abs(e["base"]) * (ms / e["period"])
+        if letter == "a":
+            return e["radius"] or None
+        if letter == "t":
+            return e["period"] / 1000.0 if e["period"] else None
+        if letter == "x":
+            return e["chain"] or None
+        if letter == "q":
+            return e["misc"] or None
+        return None
+
+    def spell_value(spell: int, letter: str) -> float | None:
+        if letter == "d":
+            ms = duration(spell)
+            return None if ms is None else ms / 1000.0
+        if letter == "n":
+            return d["charges"].get(spell) or None
+        if letter == "h":
+            # 100 is the table's default, carried by every spell that has no chance of its
+            # own, so it is not a readable percentage. The real ladders are small and
+            # explicit: Blackout's ranks hold 2/4/6/8 and its fifth rank switches to $m1
+            # with base points of 10, which is where this reading was confirmed.
+            v = d["chance"].get(spell, 0)
+            return v if 0 < v < 100 else None
+        if letter == "i":
+            return d["targets"].get(spell) or None
+        return None
+
+    def reference(tok: str, signed: bool = False) -> float | None:
+        """The number behind one $[<id>]<letter>[N] token, or None if it is not readable."""
+        m = re.fullmatch(r"\$(\d*)([a-zA-Z])(\d*)", tok)
+        if not m:
+            return None
+        spell = int(m.group(1)) if m.group(1) else sid
+        letter, idx = m.group(2), m.group(3)
+        if letter in EFFECT_TOKENS:
+            return effect_value(spell, letter, int(idx) if idx else 1, signed)
+        if letter in SPELL_TOKENS and not idx:
+            return spell_value(spell, letter)
+        return None
 
     def one(m: re.Match) -> str:
         tok = m.group(0)
-        # $<other spell id>s1 -- that spell's effect, not this one's
-        cross = re.fullmatch(r"\$(\d+)([smM])(\d+)", tok)
-        if cross:
-            v = value(int(cross.group(1)), cross.group(2), int(cross.group(3)))
-            return f"{abs(v):g}" if v is not None else tok
-        own = re.fullmatch(r"\$([smM])(\d+)", tok)
-        if own:
-            v = value(sid, own.group(1), int(own.group(2)))
-            return f"{abs(v):g}" if v is not None else tok
-        if tok == "$d":
-            ms = d["misc"].get(sid, {}).get("dur", 0.0)
-            return f"{secs(ms)} sec" if ms else tok
-        return tok
+
+        expr = re.fullmatch(r"\$\{([^{}]*)\}(?:\.(\d))?", tok)
+        if expr:
+            # Signed values inside the braces: the template writes the sign into the
+            # expression, so ${$m2/-1000} over base points of -30000 is the 30 second
+            # cooldown cut Brutal Impact states, and abs() first would print -30.
+            inner = TOKEN_RE.sub(one_signed, expr.group(1))
+            if "$" in inner:
+                return tok
+            v = arithmetic(inner)
+            # A negative result means the sign convention is not the one assumed here.
+            # That is a guess rather than a reading, so it is left to drop the string.
+            if v is None or v < 0:
+                return tok
+            # A trailing .N is a precision directive, not text. Printing it literally is
+            # how seventeen templates read "0.1.1 sec"; Improved Healing Wave's -100 base
+            # points over /-1000 is the 0.1 sec it has always cut, and Infusion of Light's
+            # -750 is 0.75 -- one tagged .1 and the other .2, which is the whole proof.
+            dp = expr.group(2)
+            return f"{v:.{int(dp)}f}" if dp else figure(v)
+
+        div = re.fullmatch(r"\$/(\d+);(\d*[a-zA-Z]\d*)", tok)
+        if div:
+            # $/1000;S1 -- the client stores milliseconds, tenths of rage and tenths of a
+            # percent, and divides on the way out. Bane's -500 is the 0.5 sec it states.
+            n, v = int(div.group(1)), reference("$" + div.group(2))
+            return tok if not n or v is None else figure(abs(v) / n)
+
+        gender = re.fullmatch(r"\$g([^:;$\s]*):([^;$]*);", tok)
+        if gender:
+            # The reader's own character decides this at runtime and a build cannot know
+            # it. The first form -- he/his/himself -- is taken, uniformly.
+            return gender.group(1)
+
+        if PLURAL_RE.fullmatch(tok):
+            return tok  # settled below, once the number in front of it is known
+
+        v = reference(tok)
+        if v is None:
+            return tok
+        if re.fullmatch(r"\$\d*d", tok):
+            return f"{secs(v * 1000)} sec"
+        return figure(v)
+
+    def one_signed(m: re.Match) -> str:
+        tok = m.group(0)
+        if TOKEN_RE.fullmatch(tok) and re.fullmatch(r"\$\d*[a-zA-Z]\d*", tok):
+            v = reference(tok, signed=True)
+            return tok if v is None else figure(v)
+        return one(m)
 
     out = TOKEN_RE.sub(one, text)
     # One more pass: ${$1280345m1*8} style arithmetic resolves only once its inner
     # references have. Anything still holding a $ is abandoned rather than guessed at.
     out = TOKEN_RE.sub(one, out)
+
+    def plural(m: re.Match) -> str:
+        """Pick the form the number in front of the directive calls for.
+
+        Checked on a matched pair: Distract reduces detection "as if they were 1 level
+        lower" and Improved Distract by "an additional 2 levels lower", from the same
+        ${$m2/-5} over base points of -5 and -10.
+        """
+        before = re.search(r"(\d+(?:\.\d+)?)\s*$", m.string[:m.start()])
+        if before is None:
+            return m.group(0)  # nothing to agree with; let the $ drop the description
+        return m.group(1) if float(before.group(1)) == 1 else m.group(2)
+
+    out = PLURAL_RE.sub(plural, out)
     if "$" in out:
         return None
     return " ".join(out.split())
@@ -391,10 +701,12 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
     # Enrich every spell and talent with what a tooltip shows. Items are skipped: their
     # facts live on different tables and the chip for one is a link, not a stat block.
     detail = load_details(build)
-    for e in entries.values():
+    for name, e in entries.items():
         if e["kind"] not in ("spell", "talent"):
             continue
         e.update(present(e["id"], detail))
+        if name in DESC_WRONG:
+            e.pop("desc", None)  # see DESC_WRONG: the client figure contradicts the guides
         if e["kind"] == "talent":
             # A talent is not trained at a level and its school is the engine's default
             # rather than a fact about the talent. Both read as noise in a tooltip, and

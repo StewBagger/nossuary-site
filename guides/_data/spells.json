@@ -1,8 +1,8 @@
 {
  "build": "1.60.1.70245",
  "product": "wow_cn_beta",
- "generated": "2026-10-07T11:05:50+00:00",
- "stamp": "430a4f834f9c",
+ "generated": "2026-10-07T11:49:43+00:00",
+ "stamp": "2b55a8411b27",
  "inputs": "cd30956a2ca4",
  "entries": {
   "Adrenaline Rush": {
@@ -21,7 +21,8 @@
    "id": 18119,
    "level": null,
    "icon": 135805,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases the initial damage of your Immolate spell by 50% and your Conflagrate spell has a 100% chance to Daze the target, reducing the target's movement speed by 50% for 5 sec."
   },
   "Agonizing Flames": {
    "kind": "talent",
@@ -272,7 +273,8 @@
    "cast": "Instant",
    "duration": "Until cancelled",
    "school": "Nature",
-   "cost": "40 Mana"
+   "cost": "40 Mana",
+   "desc": "The hunter takes on the aspects of a cheetah, increasing movement speed by 30%. If the hunter takes damage, he will be dazed for 4 sec. Only one Aspect can be active at a time."
   },
   "Aspect of the Hawk": {
    "kind": "spell",
@@ -304,7 +306,8 @@
    "cast": "Instant",
    "duration": "Until cancelled",
    "school": "Nature",
-   "cost": "100 Mana"
+   "cost": "100 Mana",
+   "desc": "The hunter and group members within 30 yards take on the aspects of a pack of cheetahs, increasing movement speed by 30%. If a pack member takes damage, they will be dazed for 4 sec. Only one Aspect can be active at a time."
   },
   "Aspect of the Wild": {
    "kind": "spell",
@@ -314,7 +317,8 @@
    "cast": "Instant",
    "duration": "Until cancelled",
    "school": "Nature",
-   "cost": "90 Mana"
+   "cost": "90 Mana",
+   "desc": "The hunter and all party and raid members within 30 yards take on the aspect of the wild, increasing Nature resistance by 45. Only one Aspect can be active at a time."
   },
   "Astral Recall": {
    "kind": "spell",
@@ -375,7 +379,8 @@
    "id": 17788,
    "level": null,
    "icon": 136146,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by 0.5 sec and your Soul Fire spell by 2 sec."
   },
   "Bane of Agony": {
    "kind": "spell",
@@ -386,7 +391,8 @@
    "range": "30 yd range",
    "duration": "24 sec",
    "school": "Shadow",
-   "cost": "25 Mana"
+   "cost": "25 Mana",
+   "desc": "Afflicts the target with agony, causing 72 Shadow damage over 24 sec. This damage is dealt slowly at first, and builds up as the Bane reaches its full duration. Only one Bane per Warlock can be active on any one target."
   },
   "Bane of Doom": {
    "kind": "spell",
@@ -478,7 +484,8 @@
    "cast": "Instant",
    "duration": "180 sec",
    "school": "Physical",
-   "cost": "100 Mana"
+   "cost": "100 Mana",
+   "desc": "The warrior shouts, increasing the melee attack power of all party members within 20 yards by 9. Lasts 180 sec."
   },
   "Battle Stance": {
    "kind": "spell",
@@ -593,7 +600,8 @@
    "id": 15268,
    "level": null,
    "icon": 136160,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Gives your Shadow damage spells a 2% chance to stun the target for 3 sec."
   },
   "Blade Flurry": {
    "kind": "spell",
@@ -624,7 +632,8 @@
    "id": 27811,
    "level": null,
    "icon": 135877,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "After being struck by a melee or ranged critical hit, or suffering more than 30% of your maximum Health from a single attack, heal 8% of the damage taken over 6 sec. Refreshing this effect carries over any remaining healing."
   },
   "Blessing of Kings": {
    "kind": "spell",
@@ -669,7 +678,8 @@
    "range": "30 yd range",
    "duration": "3600 sec",
    "school": "Holy",
-   "cost": "30 Mana"
+   "cost": "30 Mana",
+   "desc": "Places a Blessing on the friendly target, restoring 12 mana every 5 seconds for 3600 sec. Players may only have one Blessing on them per Paladin at any one time."
   },
   "Blind": {
    "kind": "spell",
@@ -711,7 +721,8 @@
    "id": 16487,
    "level": null,
    "icon": 136218,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Regenerates 3% of your total Health over 6 sec after being the victim of a critical strike, dealing damage with Bloodthirst, or suffering more than 20% of your maximum Health from a single attack."
   },
   "Blood Frenzy": {
    "kind": "talent",
@@ -749,7 +760,8 @@
    "icon": 132277,
    "cast": "Instant",
    "school": "Physical",
-   "cooldown": "60 sec cooldown"
+   "cooldown": "60 sec cooldown",
+   "desc": "Generates 10 rage at the cost of health, and then generates an additional 10 rage over 10 sec."
   },
   "Bloodthirst": {
    "kind": "spell",
@@ -801,7 +813,8 @@
    "id": 1310236,
    "level": null,
    "icon": 236310,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases your maximum Rage by 30."
   },
   "Bountiful Harvest": {
    "kind": "talent",
@@ -828,7 +841,8 @@
    "id": 16940,
    "level": null,
    "icon": 132114,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases the stun duration of your Bash and Pounce abilities by 0.5 sec and reduces the cooldown of Bash by 30 sec."
   },
   "Burning Soul": {
    "kind": "talent",
@@ -867,7 +881,8 @@
    "id": 13975,
    "level": null,
    "icon": 132320,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces your speed penalty from your Stealth ability by 15% and reduces its cooldown by 6 sec."
   },
   "Camp Chair": {
    "kind": "item",
@@ -888,7 +903,8 @@
    "icon": 132278,
    "cast": "Instant",
    "range": "Melee",
-   "cooldown": "120 sec cooldown"
+   "cooldown": "120 sec cooldown",
+   "desc": "When activated, regenerates 7% of total Health and 7% of total Mana every 2 sec for 10 sec. Only works on Humanoid or Undead corpses within 5 yds. Any movement, action, or damage taken while Cannibalizing will cancel the effect."
   },
   "Careful Aim": {
    "kind": "talent",
@@ -957,7 +973,8 @@
    "duration": "4 sec",
    "school": "Physical",
    "cost": "35 Mana",
-   "cooldown": "25 sec cooldown"
+   "cooldown": "25 sec cooldown",
+   "desc": "Charges an enemy, immobilizes it for 1 sec, and adds 44 melee attack power to the boar's next attack."
   },
   "Chastise": {
    "kind": "talent",
@@ -1027,7 +1044,8 @@
    "cast": "Instant",
    "duration": "Until cancelled",
    "school": "Fire",
-   "cooldown": "180 sec cooldown"
+   "cooldown": "180 sec cooldown",
+   "desc": "When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells."
   },
   "Compact Critter Carrier": {
    "kind": "spell",
@@ -1119,7 +1137,8 @@
    "icon": 133952,
    "cast": "3 sec cast",
    "school": "Arcane",
-   "cost": "60 Mana"
+   "cost": "60 Mana",
+   "desc": "Conjures 2 muffins, providing the mage and his allies with something to eat. Conjured items disappear if logged out for more than 15 minutes."
   },
   "Conjure Mana Agate": {
    "kind": "spell",
@@ -1138,7 +1157,8 @@
    "icon": 132793,
    "cast": "3 sec cast",
    "school": "Arcane",
-   "cost": "60 Mana"
+   "cost": "60 Mana",
+   "desc": "Conjures 2 bottles of water, providing the mage and his allies with something to drink. Conjured items disappear if logged out for more than 15 minutes."
   },
   "Consecration": {
    "kind": "spell",
@@ -1149,7 +1169,8 @@
    "duration": "8 sec",
    "school": "Holy",
    "cost": "135 Mana",
-   "cooldown": "8 sec cooldown"
+   "cooldown": "8 sec cooldown",
+   "desc": "Consecrates the land beneath the Paladin, doing 16 Holy damage over 8 sec to enemies who enter the area. The first 4 enemies who enter the area will take an additional 32 damage over 8 sec."
   },
   "Contingency Plan": {
    "kind": "talent",
@@ -1191,7 +1212,8 @@
    "range": "30 yd range",
    "duration": "12 sec",
    "school": "Shadow",
-   "cost": "35 Mana"
+   "cost": "35 Mana",
+   "desc": "Corrupts the target, causing 40 Shadow damage over 12 sec."
   },
   "Counterattack": {
    "kind": "talent",
@@ -1406,7 +1428,8 @@
    "id": 19552,
    "level": null,
    "icon": 136076,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec."
   },
   "Deadly Poison": {
    "kind": "item",
@@ -1536,7 +1559,8 @@
    "icon": 136184,
    "cast": "Instant",
    "range": "100 yd range",
-   "school": "Shadow"
+   "school": "Shadow",
+   "desc": "When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 7200 sec. The effect is canceled if any Demon is summoned. Imp: Increases your Shadow damage by 15%. Voidwalker: Restores 2% of your total Mana every 4 sec. Succubus/Incubus: Increases your Fire damage by 15%. Felhunter: Restores 3% of your total Health every 4 sec."
   },
   "Demonsage": {
    "kind": "talent",
@@ -1635,7 +1659,8 @@
    "icon": 135893,
    "cast": "Instant",
    "duration": "Until cancelled",
-   "school": "Holy"
+   "school": "Holy",
+   "desc": "Gives 55 additional armor to party members within 30 yards. Players may only have one Aura on them per Paladin at any one time."
   },
   "Devouring Contagion": {
    "kind": "talent",
@@ -1655,7 +1680,8 @@
    "duration": "24 sec",
    "school": "Shadow",
    "cost": "215 Mana",
-   "cooldown": "60 sec cooldown"
+   "cooldown": "60 sec cooldown",
+   "desc": "Afflicts the target with a disease that causes 128 Shadow damage over 24 sec. Damage caused by the Devouring Plague heals the caster."
   },
   "Dire Bear Form": {
    "kind": "spell",
@@ -1735,7 +1761,8 @@
    "duration": "10 sec",
    "school": "Physical",
    "cost": "30 Mana",
-   "cooldown": "30 sec cooldown"
+   "cooldown": "30 sec cooldown",
+   "desc": "Throws a distraction, attracting the attention of all nearby enemies and reducing their Stealth detection as if they were 1 level lower for 10 seconds. Does not break stealth."
   },
   "Dive": {
    "kind": "spell",
@@ -1754,7 +1781,8 @@
    "id": 431622,
    "level": null,
    "icon": 237539,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Your critical heals create a protective shield on the target, absorbing 15% of the amount healed. Lasts 12 sec."
   },
   "Divine Favor": {
    "kind": "talent",
@@ -1771,7 +1799,8 @@
    "id": 18530,
    "level": null,
    "icon": 135971,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the casting time of your Smite, Holy Fire, Heal, and Greater Heal spells by 0.5 sec."
   },
   "Divine Grace": {
    "kind": "talent",
@@ -1799,7 +1828,8 @@
    "cast": "Instant",
    "range": "40 yd range",
    "school": "Holy",
-   "cooldown": "3600 sec cooldown"
+   "cooldown": "3600 sec cooldown",
+   "desc": "The paladin sacrifices himself to remove the targeted party member from harms way. Enemies will stop attacking the protected party member, who will be immune to all harmful attacks but cannot take any action for 180 sec."
   },
   "Divine Precision": {
    "kind": "talent",
@@ -1818,7 +1848,8 @@
    "duration": "10 sec",
    "school": "Holy",
    "cost": "75 Mana",
-   "cooldown": "300 sec cooldown"
+   "cooldown": "300 sec cooldown",
+   "desc": "Protects the paladin from all damage and spells for 10 sec, but reduces all damage you deal by 50%. Applies Forbearance for 60 sec. Cannot be cast while Forbearance is active."
   },
   "Divine Spirit": {
    "kind": "spell",
@@ -1841,7 +1872,8 @@
    "range": "20 yd range",
    "duration": "5 sec",
    "school": "Shadow",
-   "cost": "55 Mana"
+   "cost": "55 Mana",
+   "desc": "Transfers 10 health every 1 second from the target to the caster. Lasts 5 sec."
   },
   "Drain Soul": {
    "kind": "spell",
@@ -1852,7 +1884,8 @@
    "range": "30 yd range",
    "duration": "15 sec",
    "school": "Shadow",
-   "cost": "55 Mana"
+   "cost": "55 Mana",
+   "desc": "Drains the soul of the target, causing 85 Shadow damage over 15 sec. Non-trivial targets damaged by Drain Soul have a chance to grant you a Soul Shard. Non-trivial targets killed by Drain Soul will always grant you a Soul shard. Soul Shards are required for other spells."
   },
   "Draught of Detect Demon": {
    "kind": "item",
@@ -1933,7 +1966,8 @@
    "id": 1222988,
    "level": null,
    "icon": 136100,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Your Earthbind Totem Immobilizes nearby targets for 5 sec when cast."
   },
   "Eclipse": {
    "kind": "talent",
@@ -1961,14 +1995,16 @@
    "id": 16578,
    "level": null,
    "icon": 135990,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.20 sec."
   },
   "Elemental Focus": {
    "kind": "talent",
    "id": 16164,
    "level": null,
    "icon": 136170,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%."
   },
   "Elemental Fury": {
    "kind": "talent",
@@ -2041,7 +2077,8 @@
    "icon": 135900,
    "cast": "Instant",
    "duration": "15 sec",
-   "cooldown": "300 sec cooldown"
+   "cooldown": "300 sec cooldown",
+   "desc": "Reduces the chance you'll be hit by melee and ranged attacks by 50% for 15 sec or until you are missed 3 times."
   },
   "Elune's Light": {
    "kind": "talent",
@@ -2058,7 +2095,8 @@
    "id": 17954,
    "level": null,
    "icon": 135826,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases the damage done by your Fire spells by 10% and reduces the cast time of your Searing Pain spell by 0.5 sec."
   },
   "Enchanted Lute": {
    "kind": "item",
@@ -2098,7 +2136,8 @@
    "cast": "Instant",
    "duration": "10 sec",
    "school": "Physical",
-   "cooldown": "60 sec cooldown"
+   "cooldown": "60 sec cooldown",
+   "desc": "Instantly generates 10 Rage and another 20 Rage over 10 sec, but reduces base armor by 27% in Bear Form and 16% in Dire Bear Form. The druid is considered in combat for the duration."
   },
   "Entangling Roots": {
    "kind": "spell",
@@ -2116,7 +2155,8 @@
    "id": 19184,
    "level": null,
    "icon": 136100,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "When your traps are triggered, all affected targets are Entrapped, preventing them from moving for 5 sec."
   },
   "Escape Artist": {
    "kind": "talent",
@@ -2135,7 +2175,8 @@
    "icon": 4226119,
    "cast": "Instant",
    "duration": "15 sec",
-   "cooldown": "120 sec cooldown"
+   "cooldown": "120 sec cooldown",
+   "desc": "Your next 3 non-periodic damaging abilities have their Energy cost reduced by 10% and deal 10% more damage."
   },
   "Evasion": {
    "kind": "spell",
@@ -2232,7 +2273,8 @@
    "id": 1310532,
    "level": null,
    "icon": 132215,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 5 sec."
   },
   "Eye for an Eye": {
    "kind": "talent",
@@ -2344,7 +2386,8 @@
    "cast": "Instant",
    "duration": "15 sec",
    "school": "Shadow",
-   "cooldown": "300 sec cooldown"
+   "cooldown": "300 sec cooldown",
+   "desc": "Your next Imp, Voidwalker, Succubus, Incubus, or Felhunter Summon spell has its casting time reduced by 5.5 sec and its Mana cost reduced by 50%."
   },
   "Fel Stamina": {
    "kind": "talent",
@@ -2387,7 +2430,8 @@
    "id": 16947,
    "level": null,
    "icon": 132089,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases damage done by your Swipe ability by 3% and reduces the chance enemies have to detect you while Prowling as if you were 0.6 levels higher."
   },
   "Feral Swiftness": {
    "kind": "talent",
@@ -2411,14 +2455,16 @@
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
-   "cost": "35 Mana"
+   "cost": "35 Mana",
+   "desc": "Finishing move that causes damage per combo point and converts each extra point of energy into 1.0 additional damage. Damage is increased by your Attack Power. 1 point : 50-66 damage 2 points: 86-102 damage 3 points: 122-138 damage 4 points: 158-174 damage 5 points: 194-210 damage"
   },
   "Ferocity": {
    "kind": "talent",
    "id": 16934,
    "level": null,
    "icon": 132190,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 1 Rage or Energy."
   },
   "Field Guide": {
    "kind": "item",
@@ -2431,7 +2477,8 @@
    "id": 1225475,
    "level": null,
    "icon": 133675,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the duration of the Recently Bandaged effect by 10 sec when you use a bandage. Ineffective in dungeons, raids, and battlegrounds."
   },
   "Filet of Redgill": {
    "kind": "item",
@@ -2455,7 +2502,8 @@
    "id": 400647,
    "level": null,
    "icon": 236227,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec."
   },
   "Fire Blast": {
    "kind": "spell",
@@ -2514,7 +2562,8 @@
    "range": "35 yd range",
    "duration": "4 sec",
    "school": "Fire",
-   "cost": "30 Mana"
+   "cost": "30 Mana",
+   "desc": "Hurls a fiery ball that causes 18 Fire damage and an additional 2 Fire damage over 4 sec."
   },
   "First Aid Kit": {
    "kind": "item",
@@ -2550,7 +2599,8 @@
    "duration": "12 sec",
    "school": "Fire",
    "cost": "55 Mana",
-   "cooldown": "6 sec cooldown"
+   "cooldown": "6 sec cooldown",
+   "desc": "Instantly sears the target with fire, causing 20 Fire damage immediately and 28 Fire damage over 12 sec."
   },
   "Flamestrike": {
    "kind": "spell",
@@ -2561,7 +2611,8 @@
    "range": "30 yd range",
    "duration": "8 sec",
    "school": "Fire",
-   "cost": "195 Mana"
+   "cost": "195 Mana",
+   "desc": "Calls down a pillar of fire, burning all enemies within the area for 60 Fire damage and an additional 44 Fire damage over 8 sec. Only one Flamestrike can be active per Mage at a time."
   },
   "Flametongue Weapon": {
    "kind": "spell",
@@ -2646,7 +2697,8 @@
    "id": 29787,
    "level": null,
    "icon": 132345,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the Rage cost of your offensive abilities by 3."
   },
   "Force of Will": {
    "kind": "talent",
@@ -2665,7 +2717,8 @@
    "duration": "60 sec",
    "school": "Frost",
    "cost": "50 Mana",
-   "cooldown": "30 sec cooldown"
+   "cooldown": "30 sec cooldown",
+   "desc": "Place a Frost trap that freezes the first enemy that approaches, preventing all action for up to 10 sec. Any damage caused will break the ice. Trap will exist for 60 sec. Only one Frost trap can be active at a time."
   },
   "Frenzied Regeneration": {
    "kind": "spell",
@@ -2692,7 +2745,8 @@
    "cast": "Instant",
    "duration": "1800 sec",
    "school": "Frost",
-   "cost": "60 Mana"
+   "cost": "60 Mana",
+   "desc": "Increases Armor by 30. If an enemy strikes the caster, they may have their movement slowed by 30% and the time between their attacks increased by 25% for 5 sec. Only one type of Armor spell can be active on the Mage at any time. Lasts 1800 sec."
   },
   "Frost Channeling": {
    "kind": "talent",
@@ -2735,14 +2789,16 @@
    "duration": "60 sec",
    "school": "Frost",
    "cost": "60 Mana",
-   "cooldown": "30 sec cooldown"
+   "cooldown": "30 sec cooldown",
+   "desc": "Place a Frost trap that creates an ice slick around itself for 30 sec when the first enemy approaches it. All enemies within 10 yards will be slowed by 60% while in the area of effect. Trap will exist for 60 sec. Only one Frost trap can be active at a time."
   },
   "Frostbite": {
    "kind": "talent",
    "id": 11071,
    "level": null,
    "icon": 135842,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Gives your Chill effects a 15% chance to Freeze the target for 5 sec."
   },
   "Frostbolt": {
    "kind": "spell",
@@ -2763,7 +2819,8 @@
    "cast": "3 sec cast",
    "range": "35 yd range",
    "duration": "9 sec",
-   "cost": "205 Mana"
+   "cost": "205 Mana",
+   "desc": "Launches a bolt of frostfire at the enemy, causing 100 Frostfire damage, slowing movement speed by 40% and causing an additional 27 Frostfire damage over 9 sec. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage."
   },
   "Furious Howl": {
    "kind": "talent",
@@ -2781,7 +2838,8 @@
    "id": 17056,
    "level": null,
    "icon": 135881,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Gives you a 20% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 20% of the Energy you had when you were last in Cat Form, plus 2 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 20 Energy."
   },
   "Garrote": {
    "kind": "spell",
@@ -2837,7 +2895,8 @@
    "id": 414673,
    "level": null,
    "icon": 136094,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the global cooldown by 0.5 seconds on your Rejuvenation, Swiftmend, and Wild Growth spells."
   },
   "Gift of the Wild": {
    "kind": "spell",
@@ -2897,7 +2956,8 @@
    "cast": "Instant",
    "duration": "300 sec",
    "school": "Nature",
-   "cost": "155 Mana"
+   "cost": "155 Mana",
+   "desc": "Summons a Grace of Air Totem with 5 health at the feet of the caster. The totem increases the agility of party members within 30 yards by 49. Lasts 300 sec."
   },
   "Great Rage Potion": {
    "kind": "item",
@@ -2984,7 +3044,8 @@
    "cast": "Instant",
    "range": "Melee",
    "school": "Holy",
-   "cooldown": "6 sec cooldown"
+   "cooldown": "6 sec cooldown",
+   "desc": "Hammer the current target and up to 3 additional nearby targets, causing Holy damage to each equal to 3 times the damage per second of your main hand weapon. Cooldown shared with Crusader Strike."
   },
   "Hawk Eye": {
    "kind": "talent",
@@ -3029,7 +3090,8 @@
    "cast": "Instant",
    "duration": "300 sec",
    "school": "Frost",
-   "cost": "40 Mana"
+   "cost": "40 Mana",
+   "desc": "Summons a Healing Stream Totem with 5 health at the feet of the caster for 300 sec that heals group members within 30 yards for 5 every 2 seconds."
   },
   "Healing Touch": {
    "kind": "spell",
@@ -3074,7 +3136,8 @@
    "id": 400624,
    "level": null,
    "icon": 135809,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times."
   },
   "Heavy Thorium Bar": {
    "kind": "item",
@@ -3102,7 +3165,8 @@
    "cast": "Instant",
    "duration": "15 sec",
    "school": "Fire",
-   "cost": "645 Mana"
+   "cost": "645 Mana",
+   "desc": "Ignites the area surrounding the caster, causing 82 Fire damage to himself and 82 Fire damage to all nearby enemies every 1 sec. Lasts 15 sec."
   },
   "Helm of the Great Chief": {
    "kind": "item",
@@ -3166,7 +3230,8 @@
    "range": "30 yd range",
    "duration": "10 sec",
    "school": "Holy",
-   "cost": "85 Mana"
+   "cost": "85 Mana",
+   "desc": "Consumes the enemy in holy flames that cause 58 Holy damage and an additional 20 Holy damage over 10 sec."
   },
   "Holy Light": {
    "kind": "spell",
@@ -3204,7 +3269,8 @@
    "cast": "Instant",
    "duration": "10 sec",
    "cost": "150 Mana",
-   "cooldown": "10 sec cooldown"
+   "cooldown": "10 sec cooldown",
+   "desc": "Increases chance to block by 30% for 10 sec, and deals 110 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges."
   },
   "Holy Shock": {
    "kind": "spell",
@@ -3304,7 +3370,8 @@
    "range": "30 yd range",
    "duration": "10 sec",
    "school": "Nature",
-   "cost": "880 Mana"
+   "cost": "880 Mana",
+   "desc": "Creates a violent storm in the target area causing 68 Nature damage to enemies every 1 sec, and increasing the time between attacks of enemies by 20%. Lasts 10 sec. Druid must channel to maintain the spell."
   },
   "Ice Armor": {
    "kind": "spell",
@@ -3314,7 +3381,8 @@
    "cast": "Instant",
    "duration": "1800 sec",
    "school": "Frost",
-   "cost": "240 Mana"
+   "cost": "240 Mana",
+   "desc": "Increases Armor by 290 and frost resistance by 6. If an enemy strikes the caster, they may have their movement slowed by 30% and the time between their attacks increased by 25% for 5 sec. Only one type of Armor spell can be active on the Mage at any time. Lasts 1800 sec."
   },
   "Ice Barrier": {
    "kind": "spell",
@@ -3370,15 +3438,15 @@
    "id": 11119,
    "level": null,
    "icon": 135818,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec."
   },
   "Illumination": {
    "kind": "talent",
    "id": 20210,
    "level": null,
    "icon": 135913,
-   "cast": "Instant",
-   "desc": "After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a 0% chance to gain Mana equal to 50% of the base cost of the spell."
+   "cast": "Instant"
   },
   "Immolate": {
    "kind": "spell",
@@ -3400,14 +3468,16 @@
    "duration": "60 sec",
    "school": "Fire",
    "cost": "50 Mana",
-   "cooldown": "30 sec cooldown"
+   "cooldown": "30 sec cooldown",
+   "desc": "Place a Fire trap that will burn the first enemy to approach for 105 Fire damage over 15 sec. Trap will exist for 60 sec. Only one Fire trap can be active at a time."
   },
   "Impact": {
    "kind": "talent",
    "id": 11103,
    "level": null,
    "icon": 135821,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Gives your Fire spells a 10% chance to stun the target for 2 sec."
   },
   "Impale": {
    "kind": "talent",
@@ -3430,7 +3500,8 @@
    "id": 19454,
    "level": null,
    "icon": 132218,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cooldown of your Arcane Shot by 1.5 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot."
   },
   "Improved Aspect of the Hawk": {
    "kind": "talent",
@@ -3470,7 +3541,8 @@
    "id": 20500,
    "level": null,
    "icon": 136009,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Your Berserker Rage ability will instantly generate 10 Rage and has a 100% chance to remove all movement impairing effects when activated."
   },
   "Improved Blessing of Might": {
    "kind": "talent",
@@ -3493,7 +3565,8 @@
    "id": 11185,
    "level": null,
    "icon": 135857,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by 40% for 1.5 sec."
   },
   "Improved Bloodrage": {
    "kind": "talent",
@@ -3516,14 +3589,16 @@
    "id": 12285,
    "level": null,
    "icon": 132337,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases the Rage generated by your Charge ability by 3."
   },
   "Improved Cleave": {
    "kind": "talent",
    "id": 12329,
    "level": null,
    "icon": 132338,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the Rage cost of your Cleave ability by 3."
   },
   "Improved Concentration Aura": {
    "kind": "talent",
@@ -3538,7 +3613,8 @@
    "id": 17810,
    "level": null,
    "icon": 136118,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the casting time of your Corruption spell by 2 sec and increases the damage it deals by 10%."
   },
   "Improved Counterspell": {
    "kind": "spell",
@@ -3546,7 +3622,8 @@
    "level": 1,
    "icon": 135856,
    "cast": "Instant",
-   "school": "Physical"
+   "school": "Physical",
+   "desc": "Your Counterspell also Silences the target for 4 sec."
   },
   "Improved Curse of Exhaustion": {
    "kind": "talent",
@@ -3585,14 +3662,16 @@
    "id": 12313,
    "level": null,
    "icon": 132343,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cooldown of your Disarm ability by 20 secs."
   },
   "Improved Distract": {
    "kind": "talent",
    "id": 14084,
    "level": null,
    "icon": 132289,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases the radius of your Distract ability by 5 yds, and further reduces the Stealth detection of distracted enemies as though they were an additional 2 levels lower."
   },
   "Improved Drains": {
    "kind": "talent",
@@ -3637,7 +3716,8 @@
    "id": 19557,
    "level": null,
    "icon": 132150,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases the duration of your Eyes of the Beast by 30 sec."
   },
   "Improved Feign Death": {
    "kind": "talent",
@@ -3652,28 +3732,32 @@
    "id": 1225217,
    "level": null,
    "icon": 136217,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases the Attack Power reduction of your Felhunter's Tainted Blood, the healing of its Devour Magic, and the detection level of its Paranoia by 30%, and reduces the cooldown of its Spell Lock by 6 sec."
   },
   "Improved Fire Nova": {
    "kind": "talent",
    "id": 16086,
    "level": null,
    "icon": 135824,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases the damage done by your Fire Nova spell by 20% and reduces its cooldown by 2 sec."
   },
   "Improved Fireball": {
    "kind": "talent",
    "id": 11069,
    "level": null,
    "icon": 135812,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the casting time of your Fireball and Frostfire Bolt spells by 0.5 sec."
   },
   "Improved Firebolt": {
    "kind": "talent",
    "id": 18126,
    "level": null,
    "icon": 135809,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the casting time of your Imp's Firebolt spell by 0.5 sec."
   },
   "Improved Firestone": {
    "kind": "talent",
@@ -3688,7 +3772,8 @@
    "id": 11070,
    "level": null,
    "icon": 135846,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the casting time of your Frostbolt spell by 0.1 sec."
   },
   "Improved Ghost Wolf": {
    "kind": "spell",
@@ -3696,14 +3781,16 @@
    "level": null,
    "icon": 136095,
    "cast": "Instant",
-   "school": "Physical"
+   "school": "Physical",
+   "desc": "Reduces the cast time of your Ghost Wolf spell by 3.0 sec, and Ghost Wolf may be used indoors."
   },
   "Improved Gouge": {
    "kind": "talent",
    "id": 13741,
    "level": null,
    "icon": 132155,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases the duration of your Gouge ability by 1.5 sec."
   },
   "Improved Healing": {
    "kind": "talent",
@@ -3718,7 +3805,8 @@
    "id": 16182,
    "level": null,
    "icon": 136052,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the casting time of your Healing Wave spell by 0.1 sec."
   },
   "Improved Health Funnel": {
    "kind": "talent",
@@ -3741,14 +3829,16 @@
    "id": 12282,
    "level": null,
    "icon": 132282,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cost of your Heroic Strike ability by 1 Rage."
   },
   "Improved Holy Strike": {
    "kind": "talent",
    "id": 1310902,
    "level": null,
    "icon": 626003,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cooldown of your Holy Strike ability by 2 sec."
   },
   "Improved Hunter's Mark": {
    "kind": "talent",
@@ -3779,22 +3869,23 @@
    "id": 25956,
    "level": null,
    "icon": 135959,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Decreases the cooldown of your Judgement ability by 1 sec."
   },
   "Improved Lash of Pain": {
    "kind": "talent",
    "id": 18128,
    "level": null,
    "icon": 136136,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cooldown of your Succubus' and Incubus' Lash of Pain spell by 3 sec."
   },
   "Improved Life Tap": {
    "kind": "talent",
    "id": 18182,
    "level": null,
    "icon": 136126,
-   "cast": "Instant",
-   "desc": "Increases the amount of Mana awarded by your Life Tap spell by 0%."
+   "cast": "Instant"
   },
   "Improved Lightning Shield": {
    "kind": "talent",
@@ -3809,7 +3900,8 @@
    "id": 14750,
    "level": null,
    "icon": 136170,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the casting time of your Mana Burn spell by 1.0 sec."
   },
   "Improved Mark of the Wild": {
    "kind": "talent",
@@ -3832,14 +3924,16 @@
    "id": 15273,
    "level": null,
    "icon": 136224,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cooldown of your Mind Blast spell by 2.5 sec."
   },
   "Improved Mind Flay": {
    "kind": "talent",
    "id": 1225139,
    "level": null,
    "icon": 136213,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Your Mind Flay now deals 20% more damage, gains 10 yards increased range, but slows the target's movement speed by 80%."
   },
   "Improved Moonfire": {
    "kind": "talent",
@@ -3879,15 +3973,15 @@
    "level": null,
    "icon": 136235,
    "cast": "Instant",
-   "duration": "Until cancelled",
-   "desc": "Reduces the casting time of your Prayer of Healing by 0 sec."
+   "duration": "Until cancelled"
   },
   "Improved Psychic Scream": {
    "kind": "talent",
    "id": 15392,
    "level": null,
    "icon": 136184,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cooldown of your Psychic Scream spell by 4 sec."
   },
   "Improved Regrowth": {
    "kind": "talent",
@@ -3902,7 +3996,8 @@
    "id": 16184,
    "level": null,
    "icon": 136080,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cooldown of your Reincarnation spell by 10 min, increases your maximum health by 4%, and increases the amount of health and Mana you reincarnate with by an additional 10%."
   },
   "Improved Rejuvenation": {
    "kind": "talent",
@@ -3949,7 +4044,8 @@
    "id": 24443,
    "level": null,
    "icon": 132163,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%."
   },
   "Improved Righteous Fury": {
    "kind": "talent",
@@ -4025,28 +4121,32 @@
    "id": 15275,
    "level": null,
    "icon": 136207,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases the duration of your Shadow Word: Pain spell by 6 sec."
   },
   "Improved Shield Bash": {
    "kind": "talent",
    "id": 12311,
    "level": null,
    "icon": 132357,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Gives your Shield Bash ability a 100% chance to Silence the target for 3 sec."
   },
   "Improved Shield Block": {
    "kind": "talent",
    "id": 12945,
    "level": null,
    "icon": 132110,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Allows your Shield Block ability to block an additional attack and increases the duration by 0.5 second."
   },
   "Improved Shield Wall": {
    "kind": "talent",
    "id": 12312,
    "level": null,
    "icon": 132362,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cooldown of your Shield Wall ability by 11.0 min."
   },
   "Improved Shifting Power": {
    "kind": "talent",
@@ -4068,7 +4168,8 @@
    "id": 12862,
    "level": null,
    "icon": 132340,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec."
   },
   "Improved Slice and Dice": {
    "kind": "talent",
@@ -4099,21 +4200,24 @@
    "id": 16850,
    "level": null,
    "icon": 135753,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cast time of Starfire by 0.5 sec and Starfire has a 15% chance to stun its target for 3 sec."
   },
   "Improved Stings": {
    "kind": "talent",
    "id": 1310661,
    "level": null,
    "icon": 132204,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec."
   },
   "Improved Stormstrike": {
    "kind": "talent",
    "id": 1223031,
    "level": null,
    "icon": 237581,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "When you Stormstrike, you have a 20% chance to gain 50% mana regeneration while casting spells for 15 sec, and Stormstrike's cooldown has a 20% chance to reset each time you Dodge or Parry."
   },
   "Improved Subjugate Demon": {
    "kind": "talent",
@@ -4128,7 +4232,8 @@
    "id": 12308,
    "level": null,
    "icon": 132363,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the Rage cost of your Sunder Armor ability by 3."
   },
   "Improved Tactical Mastery": {
    "kind": "talent",
@@ -4143,7 +4248,8 @@
    "id": 12302,
    "level": null,
    "icon": 136080,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cooldown of your Taunt ability by 1 sec."
   },
   "Improved Thorns": {
    "kind": "talent",
@@ -4158,7 +4264,8 @@
    "id": 12287,
    "level": null,
    "icon": 132326,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the Rage cost of your Thunder Clap ability by 6."
   },
   "Improved Tracking": {
    "kind": "talent",
@@ -4205,14 +4312,16 @@
    "id": 19228,
    "level": null,
    "icon": 132309,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Gives your Wing Clip ability a 20% chance to immobilize the target for 5 sec."
   },
   "Improved Wrath": {
    "kind": "talent",
    "id": 16814,
    "level": null,
    "icon": 136006,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cast time of your Wrath spell by 0.1 sec and its Mana cost by 50%."
   },
   "Incense Candle": {
    "kind": "item",
@@ -4245,7 +4354,8 @@
    "level": null,
    "icon": 236254,
    "cast": "Instant",
-   "duration": "15 sec"
+   "duration": "15 sec",
+   "desc": "Your Holy Shock critical hits reduce the cast time of your next Flash of Light by 0.75 sec or increase the critical chance of your next Holy Light by 10%."
   },
   "Initiative": {
    "kind": "talent",
@@ -4263,7 +4373,8 @@
    "cast": "Instant",
    "duration": "600 sec",
    "school": "Holy",
-   "cost": "30 Mana"
+   "cost": "30 Mana",
+   "desc": "A burst of Holy energy fills the caster, increasing armor by 315. Each melee or ranged damage hit against the priest will remove one charge. Lasts 600 sec or until 20 charges are used."
   },
   "Inner Focus": {
    "kind": "spell",
@@ -4285,7 +4396,8 @@
    "range": "30 yd range",
    "duration": "12 sec",
    "school": "Nature",
-   "cost": "45 Mana"
+   "cost": "45 Mana",
+   "desc": "The enemy target is swarmed by insects, decreasing their chance to hit with attacks by 2% and causing 48 Nature damage over 12 sec."
   },
   "Inspiration": {
    "kind": "talent",
@@ -4305,7 +4417,8 @@
    "id": 1311085,
    "level": null,
    "icon": 135897,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cast time of your Hammer of Wrath by 1.0 sec, and reduces all threat you generate by 20% while Righteous Fury is not active."
   },
   "Intercept": {
    "kind": "spell",
@@ -4316,7 +4429,8 @@
    "range": "25 yd range",
    "school": "Physical",
    "cost": "100 Mana",
-   "cooldown": "30 sec cooldown"
+   "cooldown": "30 sec cooldown",
+   "desc": "Charge an enemy, causing 25 damage and stunning it for 3 sec."
   },
   "Intimidation": {
    "kind": "talent",
@@ -4326,7 +4440,8 @@
    "cast": "Instant",
    "range": "100 yd range",
    "duration": "15 sec",
-   "cooldown": "60 sec cooldown"
+   "cooldown": "60 sec cooldown",
+   "desc": "Command your pet to Stun the target for 3 sec on its next successful attack, which also gains 100% increased critical strike chance. Generates high threat."
   },
   "Invulnerable Mail": {
    "kind": "item",
@@ -4340,8 +4455,7 @@
    "level": null,
    "icon": 135925,
    "cast": "Instant",
-   "duration": "6 sec",
-   "desc": "Reduces the damage taken from all attacks by 0% for 6 sec."
+   "duration": "6 sec"
   },
   "Iron Oven": {
    "kind": "item",
@@ -4435,7 +4549,8 @@
    "id": 1310533,
    "level": null,
    "icon": 132155,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Your Mongoose Bite also causes the target to Bleed for damage equal to 40% of the damage done by Mongoose Bite over 21 sec"
   },
   "Last Stand": {
    "kind": "talent",
@@ -4443,14 +4558,16 @@
    "level": null,
    "icon": 135871,
    "cast": "Instant",
-   "cooldown": "180 sec cooldown"
+   "cooldown": "180 sec cooldown",
+   "desc": "When activated, this ability temporarily grants you 30% of your maximum health for 20 sec. After the effect expires, the health is lost."
   },
   "Lasting Judgement": {
    "kind": "talent",
    "id": 20359,
    "level": null,
    "icon": 135917,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases the duration of your Judgement of Light and Judgement of Wisdom by 10 sec."
   },
   "Lava Burst": {
    "kind": "spell",
@@ -4481,7 +4598,8 @@
    "level": null,
    "icon": 136112,
    "cast": "Instant",
-   "school": "Physical"
+   "school": "Physical",
+   "desc": "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3%, exclusive with Moonkin Aura."
   },
   "Lean Wolf Steak": {
    "kind": "item",
@@ -4578,7 +4696,8 @@
    "id": 16579,
    "level": null,
    "icon": 135990,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.4 sec."
   },
   "Lightning Overload": {
    "kind": "talent",
@@ -4604,7 +4723,8 @@
    "cast": "Instant",
    "duration": "600 sec",
    "school": "Nature",
-   "cost": "45 Mana"
+   "cost": "45 Mana",
+   "desc": "The caster is surrounded by 3 balls of lightning. When a spell, melee or ranged attack hits the caster, the attacker will be struck for 13 Nature damage. This expends one lightning ball. Only one ball will fire every few seconds. Lasts 600 sec."
   },
   "Lightwell": {
    "kind": "spell",
@@ -4615,7 +4735,8 @@
    "duration": "180 sec",
    "school": "Holy",
    "cost": "225 Mana",
-   "cooldown": "600 sec cooldown"
+   "cooldown": "600 sec cooldown",
+   "desc": "Creates a holy Lightwell near the priest. Members of your raid or party can click the Lightwell to restore 800 health over 10 sec. Being attacked cancels the effect. Lightwell lasts for 180 sec or 5 charges."
   },
   "Litany of Light": {
    "kind": "talent",
@@ -4682,7 +4803,8 @@
    "id": 408498,
    "level": null,
    "icon": 237584,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec."
   },
   "Mage Armor": {
    "kind": "spell",
@@ -4764,7 +4886,8 @@
    "duration": "13 sec",
    "school": "Frost",
    "cost": "10 Mana",
-   "cooldown": "300 sec cooldown"
+   "cooldown": "300 sec cooldown",
+   "desc": "Summons a Mana Tide Totem with 5 health at the feet of the caster for 12 sec that restores 88 mana every 3 seconds to group members within 30 yards."
   },
   "Mana Well": {
    "kind": "item",
@@ -4779,7 +4902,8 @@
    "icon": 132122,
    "cast": "Instant",
    "range": "10 yd range",
-   "duration": "20 sec"
+   "duration": "20 sec",
+   "desc": "Inflicts 300 damage to an enemy every 2 sec. and slows its movement by 50% for 20 sec."
   },
   "Marefoil": {
    "kind": "talent",
@@ -4831,14 +4955,16 @@
    "id": 18709,
    "level": null,
    "icon": 136164,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the casting time of your Imp, Voidwalker, Succubus, Incubus, and Felhunter Summoning spells by 4 sec and the Mana cost by 40%."
   },
   "Master of Defense": {
    "kind": "talent",
    "id": 23602,
    "level": null,
    "icon": 132359,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Generate 5 Rage when you Dodge or Parry while you have a shield equipped."
   },
   "Maul": {
    "kind": "spell",
@@ -4930,7 +5056,8 @@
    "range": "20 yd range",
    "duration": "3 sec",
    "school": "Shadow",
-   "cost": "45 Mana"
+   "cost": "45 Mana",
+   "desc": "Assault the target's mind with Shadow energy, causing 63 Shadow damage over 3 sec and slowing their movement speed by 50%."
   },
   "Mindfulness": {
    "kind": "talent",
@@ -4975,7 +5102,8 @@
    "id": 400588,
    "level": null,
    "icon": 236221,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Gives your Arcane Blast spell a 40% chance, and your Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec."
   },
   "Mithril Blacksmith Hammer": {
    "kind": "item",
@@ -5057,7 +5185,8 @@
    "range": "30 yd range",
    "duration": "9 sec",
    "school": "Arcane",
-   "cost": "25 Mana"
+   "cost": "25 Mana",
+   "desc": "Burns the enemy for 8 Arcane damage and then an additional 12 Arcane damage over 9 sec."
   },
   "Moonfury": {
    "kind": "talent",
@@ -5082,7 +5211,8 @@
    "icon": 136036,
    "cast": "Instant",
    "duration": "Until cancelled",
-   "school": "Physical"
+   "school": "Physical",
+   "desc": "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party members within 45 yards have their Critical Strike chance increased by 3%, exclusive with Leader of the Pack. Also protects the caster from Polymorph effects and prevents the use of healing spells. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
   },
   "Mortal Shots": {
    "kind": "talent",
@@ -5113,7 +5243,8 @@
    "cast": "0.5 sec cast",
    "range": "35 yd range",
    "school": "Physical",
-   "cooldown": "6 sec cooldown"
+   "cooldown": "6 sec cooldown",
+   "desc": "Fires several missiles, hitting 3 targets. Multi-Shot shares its cooldown with Aimed Shot."
   },
   "Mutilate": {
    "kind": "spell",
@@ -5180,7 +5311,8 @@
    "id": 16880,
    "level": null,
    "icon": 136062,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "All non-periodic spell criticals grace you with a blessing of nature, increasing your spellcasting speed and reducing your global cooldown by 10% for 3 sec."
   },
   "Nature's Grasp": {
    "kind": "spell",
@@ -5222,7 +5354,8 @@
    "id": 1223083,
    "level": null,
    "icon": 136061,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases the duration of your Moonfire and Rejuvenation spells by 3 sec, your Regrowth spell by 6 sec, and your Insect Swarm spell by 2 sec."
   },
   "Nature's Swiftness": {
    "kind": "talent",
@@ -5320,7 +5453,8 @@
    "range": "40 yd range",
    "school": "Holy",
    "cost": "100 Mana",
-   "cooldown": "12 sec cooldown"
+   "cooldown": "12 sec cooldown",
+   "desc": "Launches a volley of holy light at the target, causing 81 Holy damage to an enemy, or 184 healing to an ally, instantly and every 1 sec for 2 sec."
   },
   "Performance Bonus": {
    "kind": "talent",
@@ -5430,7 +5564,8 @@
    "icon": 136016,
    "cast": "Instant",
    "range": "Melee",
-   "duration": "30 sec"
+   "duration": "30 sec",
+   "desc": "Inflicts Nature damage to an enemy every 3 sec. for 30 sec."
   },
   "Polymorph": {
    "kind": "spell",
@@ -5667,7 +5802,8 @@
    "range": "35 yd range",
    "duration": "12 sec",
    "school": "Fire",
-   "cost": "125 Mana"
+   "cost": "125 Mana",
+   "desc": "Hurls an immense fiery boulder that causes 110 Fire damage and an additional 44 Fire damage over 12 sec."
   },
   "Quietus": {
    "kind": "talent",
@@ -5684,7 +5820,8 @@
    "id": 1310315,
    "level": null,
    "icon": 132369,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Causes your Whirlwind to also strike with your Off Hand weapon, and reduces the Rage cost of your Cleave ability by 2."
   },
   "Rain of Fire": {
    "kind": "spell",
@@ -5695,7 +5832,8 @@
    "range": "30 yd range",
    "duration": "8 sec",
    "school": "Fire",
-   "cost": "295 Mana"
+   "cost": "295 Mana",
+   "desc": "Calls down a fiery rain to burn enemies in the area of effect for 160 Fire damage over 8 sec."
   },
   "Rake": {
    "kind": "spell",
@@ -5725,14 +5863,16 @@
    "id": 415405,
    "level": null,
    "icon": 132205,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 20%."
   },
   "Rapid Recuperation": {
    "kind": "talent",
    "id": 1223987,
    "level": null,
    "icon": 236201,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Hitting a target with your Serpent Sting ability grants you 50% and consuming Rapid Killing grants you 100% of your Mana regeneration while casting for the next 15 sec."
   },
   "Raptor Strike": {
    "kind": "spell",
@@ -5770,7 +5910,8 @@
    "cast": "2 sec cast",
    "range": "30 yd range",
    "school": "Nature",
-   "cooldown": "1800 sec cooldown"
+   "cooldown": "1800 sec cooldown",
+   "desc": "Returns the spirit to the body, restoring a dead target to life with 400 health and 700 mana."
   },
   "Recklessness": {
    "kind": "spell",
@@ -5814,7 +5955,8 @@
    "range": "40 yd range",
    "duration": "21 sec",
    "school": "Nature",
-   "cost": "70 Mana"
+   "cost": "70 Mana",
+   "desc": "Heals a friendly target for 87 and another 91 over 21 sec."
   },
   "Reincarnation": {
    "kind": "spell",
@@ -5835,15 +5977,15 @@
    "range": "40 yd range",
    "duration": "12 sec",
    "school": "Nature",
-   "cost": "25 Mana"
+   "cost": "25 Mana",
+   "desc": "Heals the target for 32 over 12 sec."
   },
   "Relentless Strikes": {
    "kind": "talent",
    "id": 14179,
    "level": null,
    "icon": 132340,
-   "cast": "Instant",
-   "desc": "Your finishing moves have a 0% chance per Combo Point to restore 25 Energy."
+   "cast": "Instant"
   },
   "Remorseless Attacks": {
    "kind": "talent",
@@ -5861,7 +6003,8 @@
    "range": "Melee",
    "duration": "9 sec",
    "school": "Physical",
-   "cost": "100 Mana"
+   "cost": "100 Mana",
+   "desc": "Wounds the target causing them to bleed for 15 damage over 9 sec."
   },
   "Rend and Tear": {
    "kind": "talent",
@@ -5880,14 +6023,16 @@
    "range": "40 yd range",
    "duration": "15 sec",
    "school": "Holy",
-   "cost": "30 Mana"
+   "cost": "30 Mana",
+   "desc": "Heals the target of 45 damage over 15 sec."
   },
   "Renewed Hope": {
    "kind": "talent",
    "id": 425280,
    "level": null,
    "icon": 135923,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater Heal, and Penance gain 10% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by 5 sec."
   },
   "Repair Bot": {
    "kind": "item",
@@ -5937,7 +6082,8 @@
    "icon": 135955,
    "cast": "10 sec cast",
    "range": "30 yd range",
-   "school": "Holy"
+   "school": "Holy",
+   "desc": "Brings a dead player back to life with 70 health and 135 mana. Cannot be cast when in combat."
   },
   "Retaliation": {
    "kind": "spell",
@@ -5947,7 +6093,8 @@
    "cast": "Instant",
    "duration": "15 sec",
    "school": "Physical",
-   "cooldown": "900 sec cooldown"
+   "cooldown": "900 sec cooldown",
+   "desc": "Instantly counterattack any enemy that strikes you in melee for 15 sec. Melee attacks made from behind cannot be counterattacked. A maximum of 30 attacks will cause retaliation."
   },
   "Retribution Aura": {
    "kind": "spell",
@@ -5956,7 +6103,8 @@
    "icon": 135873,
    "cast": "Instant",
    "duration": "Until cancelled",
-   "school": "Holy"
+   "school": "Holy",
+   "desc": "Causes 7 Holy damage to any creature that strikes a party member within 30 yards. Players may only have one Aura on them per Paladin at any one time."
   },
   "Revenge": {
    "kind": "spell",
@@ -5975,7 +6123,8 @@
    "id": 16040,
    "level": null,
    "icon": 135850,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cooldown of your Shock spells by 0.2 sec."
   },
   "Reverence": {
    "kind": "talent",
@@ -5992,7 +6141,8 @@
    "icon": 132132,
    "cast": "10 sec cast",
    "range": "30 yd range",
-   "school": "Physical"
+   "school": "Physical",
+   "desc": "Brings a dead player back to life with 70 health and 135 mana. Cannot be cast when in combat."
   },
   "Righteous Fury": {
    "kind": "spell",
@@ -6036,7 +6186,8 @@
    "duration": "15 sec",
    "school": "Nature",
    "cost": "245 Mana",
-   "cooldown": "6 sec cooldown"
+   "cooldown": "6 sec cooldown",
+   "desc": "Heals a friendly target for 480, an additional 445 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%."
   },
   "Ritual of Summoning": {
    "kind": "spell",
@@ -6130,7 +6281,8 @@
    "id": 1224697,
    "level": null,
    "icon": 135896,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases your total Stamina by 4% and reduces the cooldown of your Divine Shield, Divine Protection, and Templar's Bulwark spells by 60 sec."
   },
   "Safe Fall": {
    "kind": "spell",
@@ -6156,7 +6308,8 @@
    "level": null,
    "icon": 135934,
    "cast": "Instant",
-   "duration": "Until cancelled"
+   "duration": "Until cancelled",
+   "desc": "Increases Holy damage done by party members within 30 yards by 10%. Players may only have one Aura on them per Paladin at any one time."
   },
   "Sap": {
    "kind": "spell",
@@ -6187,7 +6340,8 @@
    "range": "Melee",
    "duration": "18 sec",
    "cost": "50 Mana",
-   "cooldown": "60 sec cooldown"
+   "cooldown": "60 sec cooldown",
+   "desc": "Slash an enemy with razor talons, causing the target to Bleed for 30 damage over 18 sec."
   },
   "Savage Strikes": {
    "kind": "talent",
@@ -6224,8 +6378,7 @@
    "id": 14186,
    "level": null,
    "icon": 136130,
-   "cast": "Instant",
-   "desc": "Your critical strikes from abilities that add Combo Points have a 0% chance to add an additional Combo Point."
+   "cast": "Instant"
   },
   "Seal of Command": {
    "kind": "spell",
@@ -6235,7 +6388,8 @@
    "cast": "Instant",
    "duration": "30 sec",
    "school": "Holy",
-   "cost": "65 Mana"
+   "cost": "65 Mana",
+   "desc": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec. Unleashing this Seal's energy will judge an enemy, instantly causing 48.5 Holy damage, 97 if the target is stunned or incapacitated."
   },
   "Seal of Fury": {
    "kind": "spell",
@@ -6245,7 +6399,8 @@
    "cast": "Instant",
    "duration": "30 sec",
    "school": "Holy",
-   "cost": "40 Mana"
+   "cost": "40 Mana",
+   "desc": "Fills you with divine fury for 30 sec, causing melee attacks to deal an additional 6 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy inflicts23 Holy damage to an enemy and taunts the target to attack you for 4 sec."
   },
   "Seal of Righteousness": {
    "kind": "spell",
@@ -6255,7 +6410,8 @@
    "cast": "Instant",
    "duration": "30 sec",
    "school": "Holy",
-   "cost": "20 Mana"
+   "cost": "20 Mana",
+   "desc": "Fills the Paladin with holy spirit for 30 sec, granting each melee attack an additional 1.2414 to 4.32 Holy damage. Slower weapons cause more Holy damage per swing. Only one Seal can be active on the Paladin at any one time."
   },
   "Seal of the Crusader": {
    "kind": "spell",
@@ -6265,7 +6421,8 @@
    "cast": "Instant",
    "duration": "30 sec",
    "school": "Holy",
-   "cost": "25 Mana"
+   "cost": "25 Mana",
+   "desc": "Fills the Paladin with the spirit of a crusader for 30 sec, granting 31 melee attack power. The Paladin also attacks 40% faster, but deals less damage with each attack. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy will judge an enemy for 40 sec, increasing Holy damage taken by up to 23. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time."
   },
   "Searing Light": {
    "kind": "talent",
@@ -6311,7 +6468,8 @@
    "range": "35 yd range",
    "duration": "15 sec",
    "school": "Nature",
-   "cost": "15 Mana"
+   "cost": "15 Mana",
+   "desc": "Stings the target, causing 10 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target."
   },
   "Serrated Blades": {
    "kind": "talent",
@@ -6326,8 +6484,7 @@
    "id": 13983,
    "level": null,
    "icon": 136056,
-   "cast": "Instant",
-   "desc": "Gives you a 0% chance to add a Combo Point to your target after Dodging one of their attacks or fully resisting one of their spells."
+   "cast": "Instant"
   },
   "Shadow Affinity": {
    "kind": "talent",
@@ -6392,14 +6549,16 @@
    "range": "30 yd range",
    "duration": "18 sec",
    "school": "Shadow",
-   "cost": "25 Mana"
+   "cost": "25 Mana",
+   "desc": "A word of darkness that causes 30 Shadow damage over 18 sec."
   },
   "Shadow and Flame": {
    "kind": "talent",
    "id": 426316,
    "level": null,
    "icon": 135823,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Hitting an enemy with Conflagrate increases all Shadow damage you deal by 10% for 20 sec, and hitting an enemy with Shadowburn increases all Fire damage you deal by 10% for 20 sec. In addition, Conflagrate has a 100% chance not to consume Immolate, and Shadowburn has a 100% chance to instantly refund a Soul Shard."
   },
   "Shadowburn": {
    "kind": "spell",
@@ -6432,7 +6591,8 @@
    "icon": 136051,
    "cast": "Instant",
    "duration": "600 sec",
-   "cost": "50 Mana"
+   "cost": "50 Mana",
+   "desc": "The caster is surrounded by shadows. When a spell, melee or ranged attack hits the caster, the attacker will be struck for 13 Shadow damage. Attackers can only be damaged once every few seconds. This damage causes no threat. 3 charges. Lasts 600 sec."
   },
   "Shadowmeld": {
    "kind": "spell",
@@ -6472,8 +6632,7 @@
    "id": 11170,
    "level": null,
    "icon": 135849,
-   "cast": "Instant",
-   "desc": "Increases the critical strike chance of all your spells against Frozen targets by 1%."
+   "cast": "Instant"
   },
   "Shatter Curse": {
    "kind": "talent",
@@ -6518,7 +6677,8 @@
    "duration": "7 sec",
    "school": "Physical",
    "cost": "100 Mana",
-   "cooldown": "5 sec cooldown"
+   "cooldown": "5 sec cooldown",
+   "desc": "Increases chance to block by 75% for 7 sec, but will only block 2 attacks."
   },
   "Shield Slam": {
    "kind": "talent",
@@ -6574,7 +6734,8 @@
    "id": 16966,
    "level": null,
    "icon": 136231,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the Energy cost of your Shred ability by 6 and reduces the Rage cost of your Lacerate ability by 6."
   },
   "Silence": {
    "kind": "spell",
@@ -6621,7 +6782,8 @@
    "range": "30 yd range",
    "duration": "30 sec",
    "school": "Shadow",
-   "cost": "150 Mana"
+   "cost": "150 Mana",
+   "desc": "Transfers 11 health from the target to the caster every 3 sec. Lasts 30 sec."
   },
   "Skysight": {
    "kind": "talent",
@@ -6629,7 +6791,8 @@
    "level": null,
    "icon": 1029587,
    "cast": "0.5 sec cast",
-   "cooldown": "120 sec cooldown"
+   "cooldown": "120 sec cooldown",
+   "desc": "Attempt to draw power from a convergence of elements and receive its blessing, increasing your movement and mounted movement speeds by 10%. Lasts 30 sec if no elemental convergence is nearby, and 900 sec if one is found."
   },
   "Slam": {
    "kind": "spell",
@@ -6700,7 +6863,8 @@
    "duration": "10 sec",
    "school": "Physical",
    "cost": "365 Mana",
-   "cooldown": "15 sec cooldown"
+   "cooldown": "15 sec cooldown",
+   "desc": "A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec."
   },
   "Sonic Blast": {
    "kind": "talent",
@@ -6731,7 +6895,8 @@
    "id": 437032,
    "level": null,
    "icon": 132851,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Killing a non-trivial target afflicted by your Drain Soul increases your Mana regeneration by 100% for 10 sec and allows 100% of normal Mana regeneration to continue while casting."
   },
   "Soul Link": {
    "kind": "spell",
@@ -6748,14 +6913,16 @@
    "id": 17804,
    "level": null,
    "icon": 136169,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 12% per each of your other Affliction effects active on the target, up to a maximum increase of 36%."
   },
   "Soul Warding": {
    "kind": "talent",
    "id": 402000,
    "level": null,
    "icon": 135948,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cooldown on your Power Word: Shield spell by 4 sec and reduces its mana cost by 15%."
   },
   "Spearing Strike": {
    "kind": "talent",
@@ -6765,7 +6932,8 @@
    "cast": "Instant",
    "range": "Melee",
    "cost": "150 Mana",
-   "cooldown": "20 sec cooldown"
+   "cooldown": "20 sec cooldown",
+   "desc": "A brutal attack that deals 40% weapon damage, plus an additional 80% weapon damage against Giants, Dragonkin, and mounted targets."
   },
   "Spellblasting Potion": {
    "kind": "item",
@@ -6794,7 +6962,8 @@
    "level": null,
    "icon": 132864,
    "cast": "Instant",
-   "school": "Physical"
+   "school": "Physical",
+   "desc": "Upon death, the priest becomes the Spirit of Redemption for 15 sec. The Spirit of Redemption cannot move, attack, be attacked or targeted by any spells or effects. While in this form the priest can cast any healing spell free of cost. When the effect ends, the priest dies."
   },
   "Spiritual Focus": {
    "kind": "talent",
@@ -6851,7 +7020,8 @@
    "range": "30 yd range",
    "duration": "6 sec",
    "cost": "50 Mana",
-   "cooldown": "30 sec cooldown"
+   "cooldown": "30 sec cooldown",
+   "desc": "Rains starshards down on the enemy target's head, causing 162 Arcane damage over 6 sec."
   },
   "Stealth": {
    "kind": "spell",
@@ -6899,7 +7069,8 @@
    "cast": "Instant",
    "duration": "300 sec",
    "school": "Nature",
-   "cost": "30 Mana"
+   "cost": "30 Mana",
+   "desc": "Summons a Stoneskin Totem with 5 health at the feet of the caster. The totem protects party members within 30 yards, reducing Physical damage taken by 4. Lasts 300 sec."
   },
   "Storm Gauntlets": {
    "kind": "item",
@@ -6928,7 +7099,8 @@
    "cast": "Instant",
    "duration": "300 sec",
    "school": "Nature",
-   "cost": "25 Mana"
+   "cost": "25 Mana",
+   "desc": "Summons a Strength of Earth Totem with 5 health at the feet of the caster. The totem increases the strength of party members within 30 yards by 7. Lasts 300 sec."
   },
   "Strider Kick": {
    "kind": "talent",
@@ -7079,7 +7251,8 @@
    "cast": "Instant",
    "duration": "20 sec",
    "cost": "300 Mana",
-   "cooldown": "30 sec cooldown"
+   "cooldown": "30 sec cooldown",
+   "desc": "Your next 5 melee attacks strike an additional nearby opponent."
   },
   "Sweetpaw Jam": {
    "kind": "item",
@@ -7120,7 +7293,8 @@
    "range": "Melee",
    "school": "Physical",
    "cost": "20 Mana",
-   "cooldown": "5 sec cooldown"
+   "cooldown": "5 sec cooldown",
+   "desc": "Swipe 3 nearby enemies, inflicting 4 damage."
   },
   "Sword Specialization": {
    "kind": "talent",
@@ -7198,7 +7372,8 @@
    "cast": "Instant",
    "duration": "8 sec",
    "cost": "110 Mana",
-   "cooldown": "300 sec cooldown"
+   "cooldown": "300 sec cooldown",
+   "desc": "When activated, this ability grants you an absorb shield equal to 100% of your maximum health for 8 sec. Applies Forbearance for 60 sec. Cannot be cast while Forbearance is active."
   },
   "Tendon Rip": {
    "kind": "talent",
@@ -7224,7 +7399,8 @@
    "id": 16929,
    "level": null,
    "icon": 134355,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 3 additional base Armor per level and another 1.00 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms."
   },
   "Thorns": {
    "kind": "spell",
@@ -7254,7 +7430,8 @@
    "duration": "10 sec",
    "school": "Physical",
    "cost": "200 Mana",
-   "cooldown": "6 sec cooldown"
+   "cooldown": "6 sec cooldown",
+   "desc": "Blasts nearby enemies, increasing the time between their attacks by 20% for 10 sec and doing 10 damage to them. Will affect up to 4 targets."
   },
   "Thundering Strikes": {
    "kind": "talent",
@@ -7345,14 +7522,16 @@
    "icon": 136143,
    "cast": "Instant",
    "duration": "600 sec",
-   "cost": "25 Mana"
+   "cost": "25 Mana",
+   "desc": "The next melee attack against the caster will cause 8 Shadow damage and reduce the attacker's melee attack power by 43 for 120 sec."
   },
   "Touch of the Grave": {
    "kind": "talent",
    "id": 1260189,
    "level": null,
    "icon": 136157,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Your spells and attacks have a 5% chance to drain Health from the target, up to 5% of your maximum Health."
   },
   "Toughness": {
    "kind": "talent",
@@ -7412,7 +7591,8 @@
    "icon": 132145,
    "cast": "Instant",
    "duration": "Until cancelled",
-   "school": "Physical"
+   "school": "Physical",
+   "desc": "Shapeshift into the Tree of Life. While in this form you increase healing received by 10% for all party members within 45 yards, Wild Growth healing is increased by 60%, your heal over time spells cost 20% less, you gain 25% increased Spirit, you gain 200% increased armor, and you cannot cast harmful spells. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
   },
   "Trickster's Dance": {
    "kind": "talent",
@@ -7438,7 +7618,8 @@
    "icon": 132329,
    "cast": "Instant",
    "duration": "1800 sec",
-   "cost": "325 Mana"
+   "cost": "325 Mana",
+   "desc": "Increases the Ranged Attack Power of party members within 45 yards by 50. Lasts 1800 sec."
   },
   "Turtle Scale Breastplate": {
    "kind": "item",
@@ -7545,7 +7726,8 @@
    "icon": 132331,
    "cast": "Instant",
    "school": "Physical",
-   "cooldown": "300 sec cooldown"
+   "cooldown": "300 sec cooldown",
+   "desc": "Allows the rogue to vanish from sight, entering an improved stealth mode for 10 sec. Also breaks movement impairing effects."
   },
   "Vengeance": {
    "kind": "talent",
@@ -7601,7 +7783,8 @@
    "duration": "8 sec",
    "school": "Nature",
    "cost": "135 Mana",
-   "cooldown": "15 sec cooldown"
+   "cooldown": "15 sec cooldown",
+   "desc": "Stings the target, draining 616 mana over 8 sec. Only one Sting per Hunter can be active on any one target."
   },
   "Voice of Truth": {
    "kind": "talent",
@@ -7622,7 +7805,8 @@
    "duration": "180 sec",
    "school": "Shadow",
    "cost": "32 Mana",
-   "cooldown": "20 sec cooldown"
+   "cooldown": "20 sec cooldown",
+   "desc": "Summons 1 Voidwalker to aid the caster in battle for 180 sec."
   },
   "Volley": {
    "kind": "spell",
@@ -7633,14 +7817,16 @@
    "range": "35 yd range",
    "duration": "6 sec",
    "school": "Arcane",
-   "cost": "350 Mana"
+   "cost": "350 Mana",
+   "desc": "Continuously fires a volley of ammo at the target area, causing 70 Arcane damage to enemy targets within 8 yards every 1 sec for 6 sec."
   },
   "Wake of Fire": {
    "kind": "talent",
    "id": 11078,
    "level": null,
    "icon": 135819,
-   "cast": "Instant"
+   "cast": "Instant",
+   "desc": "Reduces the cooldown of your Fire Blast spell by 2 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within 30 sec by 50%."
   },
   "Wand Specialization": {
    "kind": "talent",
@@ -7666,7 +7852,8 @@
    "cast": "Instant",
    "duration": "600 sec",
    "school": "Nature",
-   "cooldown": "15 sec cooldown"
+   "cooldown": "15 sec cooldown",
+   "desc": "The caster is surrounded by 3 globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's healing spells gets a critical result, 2% of maximum mana is restored to the caster, expending one water globe. Only one globe will activate every few seconds. Lasts 600 sec. Only one Elemental Shield can be active on the Shaman at any one time."
   },
   "Weapon Expertise": {
    "kind": "talent",
@@ -7691,8 +7878,7 @@
    "level": null,
    "icon": 135328,
    "cast": "Instant",
-   "duration": "Until cancelled",
-   "desc": "Gives you a 0% chance to get an extra attack on the same target after dealing damage with your Sword."
+   "duration": "Until cancelled"
   },
   "Weaponsmith": {
    "kind": "talent",
@@ -7848,7 +8034,8 @@
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "6 sec",
-   "cost": "200 Mana"
+   "cost": "200 Mana",
+   "desc": "Tears the target apart from within, inflicting 36 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over time effects by 10% for 6 sec."
   },
   "Wrath": {
    "kind": "spell",
@@ -7870,7 +8057,8 @@
    "range": "35 yd range",
    "duration": "12 sec",
    "school": "Nature",
-   "cost": "205 Mana"
+   "cost": "205 Mana",
+   "desc": "A stinging shot that puts the target to sleep for 12 sec. Any damage will cancel the effect. When the target wakes up, the Sting causes 1500 Nature damage over 12 sec."
   }
  }
 }
