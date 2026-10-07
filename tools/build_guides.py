@@ -30,9 +30,9 @@ actually build a class page:
                         plain styled chip it has always been, so a removed ability or a
                         pet name never becomes a dead link.
     `Talent`            a talent. Linked from the same index and given the same tooltip,
-                        but it keeps its <code> look and takes no icon -- the guides draw
-                        a real line between an ability and a talent, and flattening the
-                        two into one appearance would erase it. Unknown terms (a stat
+                        and its icon, but it keeps its <code> look: the boxed
+                        monospace already separates a talent from an ability, so the
+                        icon costs nothing the distinction was relying on. Unknown terms (a stat
                         string, a macro) stay plain <code>, which is why the index is
                         allowed to not know things.
 
@@ -51,7 +51,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "guides" / "_src"
 OUT = ROOT / "guides" / "wow-forever"
 DATA = ROOT / "guides" / "_data"
-STAMP = "20261007-2"
+STAMP = "20261007-3"
 
 # ---- ability chips: where a chip points, and where its icon comes from ----------
 # The exact Wowhead Forever URL shape is UNCONFIRMED. These two templates are the only
@@ -188,8 +188,10 @@ def talent(m):
 
     Talents keep their <code> styling rather than becoming chips: the guides draw a
     deliberate line between an ability and a talent, and collapsing the two into one
-    look would erase information the prose is relying on. So the anchor goes INSIDE
-    the <code>, and carries no icon.
+    look would erase information the prose is relying on. The boxed monospace is what
+    carries that line -- against the chip's sans-serif accent it is unmistakable -- so
+    the icon rides along without blurring anything. The anchor goes INSIDE the <code>
+    to keep the box around both.
     """
     raw = html.unescape(m.group(1))
     name = html.escape(raw, quote=False)
@@ -211,9 +213,17 @@ def talent(m):
     tip.append(KIND_LABEL.get(kind, kind.title()))
     tip = html.escape(" \u00b7 ".join(tip), quote=True)
     href = html.escape(template.format(id=ident), quote=True)
+
+    icon, img = entry.get("icon"), ""
+    if isinstance(icon, int):
+        if not (ICON_DIR / f"{icon}.webp").exists():
+            CHIP_STATS["lost_icon"].add(icon)
+        img = (f'<img class="tl-icon" src="{ICON_URL.format(icon=icon)}"'
+               ' alt="" width="16" height="16" loading="lazy" decoding="async">')
+
     CHIP_STATS["code_linked"] += 1
     return (f'<code><a class="tl" href="{href}" target="_blank" rel="noopener"'
-            f' data-tip="{tip}">{name}</a></code>')
+            f' data-tip="{tip}">{img}{name}</a></code>')
 
 
 def chip(m):
