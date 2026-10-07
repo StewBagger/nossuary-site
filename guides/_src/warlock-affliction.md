@@ -2,12 +2,13 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Affliction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-20-dps-overview ;; Icy Veins — Affliction Warlock|https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-guide ;; ClassicWoW.gg — Aff Warlock|https://classicwow.gg/forever/guides/warlock/affliction
 
-Stacked shadow damage-over-time spells plus channelled drains, *"for players who enjoy watching their enemies slowly rot away."* **Icy Veins rates it 5 out of 5 for levelling**, joint best in the class.
+Stacked shadow damage-over-time spells plus channelled drains, *"for players who enjoy watching their enemies slowly rot away."*
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Affliction build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
-## Is Affliction worth levelling?
-**Yes — Icy Veins rates its levelling 5 out of 5, joint best in the class.** *"Affliction Warlocks have always been excellent levelers, and that strength shows up early in WoW Forever… Learning how to balance those tools lets you move through enemies with very little downtime."*
+## What Affliction is for
+**Timed damage that keeps paying out while you do something else.** `Improved Corruption` 5/5 makes [[Corruption]] instant from level 14, and in Forever those ticks can critically strike — `Pandemic` from 22 doubles the critical damage of [[Corruption]], both Banes, [[Siphon Life]] and both Drains — so your damage keeps landing while you move, wand or [[Life Tap]].
+*"Affliction Warlocks have always been excellent levelers, and that strength shows up early in WoW Forever… Learning how to balance those tools lets you move through enemies with very little downtime."* **Icy Veins rates its levelling 5 out of 5, joint best in the class.**
 **Its weakness is short fights, and two sources say so:** *"Affliction performs best when enemies live long enough for your DoTs to ramp up. Fast dungeon pulls can end before that setup has time to pay off."* Put more bluntly by another source: *"On a target that dies in ten seconds, you paid full mana and cast time for half a spell's worth of damage."*
 Icy Veins scores it 5.0 for levelling and 4.0 for dungeons. Learn to stop casting when your existing damage-over-time effects will finish the job.
 ## Your talent points

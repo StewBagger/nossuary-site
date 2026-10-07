@@ -6,8 +6,9 @@ Melee weapon damage that feeds your spellcasting: [[Stormstrike]] and `Maelstrom
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Enhancement build has been tested. Talent rows unlock at levels 10, 15, 20, 25, 30, 35 and 40. **Every tree now carries a new single-point milestone talent at 16 points**, alongside the familiar ones at 11, 21 and 31; which row it sits in varies by tree. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
-## Is Enhancement worth levelling?
-**Yes, and the published agreement is unusually clear:** *"Due to its added mobility, Enhancement will remain the preferred open world leveling spec."*
+## What Enhancement is for
+**Weapon imbues that now last an hour instead of five minutes.** One [[Rockbiter Weapon]] solo, or [[Flametongue Weapon]] in a group, covers a whole levelling session rather than a pull. [[Stormstrike]] arrives at 25 on an 8-second cooldown for +20% on your next Bolt or [[Earth Shock]], `Mental Dexterity` turns Intellect into attack power, and `Improved Ghost Wolf` makes [[Ghost Wolf]] instant and usable indoors.
+**On levelling the published agreement is unusually clear:** *"Due to its added mobility, Enhancement will remain the preferred open world leveling spec."* It is also the one build where two independent sources publish the same eleven points in the same order.
 **Mana is the limiter.** *"Enhancement's solo damage is already solid once it starts picking up early tools with Shocks & Fire Nova, but its Mana is a limiting factor… eventually when more points are available, it will likely round itself out into a very strong leveling spec."* Ratings: Overall 3.5, Levelling 3.5, **Mobility 4.5**. It is the only Shaman spec rated highest on levelling, and all three score 4.5 for mobility.
 **Shamans cannot dual wield in Forever.** Buy one big two-hander. If you have played a later expansion, unlearn that.
 ## Your talent points

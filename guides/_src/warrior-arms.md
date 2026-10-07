@@ -6,8 +6,9 @@ Two-handed burst with bleeds and a 50% healing debuff. **At level 20 both publis
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Arms build has been tested by anyone. Talent tiers unlock at fixed levels: tier 1 at 10, then 15, 20, 25, 30, 35, and the capstone at **40**. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended. Blizzard's own caveat: "class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."
 :::
-## Is Arms worth levelling?
-The published level-20 Arms build spends **all eleven points in the Fury tree**, because there is nothing in Arms worth reaching yet. Arms' actual engine is Rend into `Bloodthrill` into [[Overpower]], which is tier 5 and therefore **level 30 at the earliest**, and [[Mortal Strike]] is **level 40**.
+## What Arms is for
+**Bleeds and burst out of one heavy weapon, plus a 50% healing debuff.** Its engine is Rend into `Bloodthrill` into [[Overpower]], which is tier 5 and therefore **level 30 at the earliest**, and [[Mortal Strike]] is **level 40**.
+Which is why **the published level-20 Arms build spends all eleven points in the Fury tree** — there is nothing in Arms worth reaching yet, and both published builds do the same thing.
 Warrior as a class is rated a poor leveller by Icy Veins, which calls it one of the more difficult classes to level, "especially when gear falls behind," and rates Arms 2.0/5 for Levelling on the Level 20 toolkit. Neither Wowhead nor ClassicWoW.gg publishes a levelling score for the spec.
 ## Your talent points
 **Level 20: 0/11/0, entirely in Fury.** This is not a typo, and it is what both published Arms builds do.

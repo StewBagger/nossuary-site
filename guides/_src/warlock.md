@@ -7,15 +7,15 @@ Warlock levels with a demon tanking for you. Forever split damage curses into Ba
 Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so **no level-60 Warlock build has been tested.** The longest anyone has played is a level-38 demo. Ability training levels below come from foreverchanges.pro's reading of the beta client.
 :::
 ## Which spec?
-| Spec | Role | Levelling (Icy Veins) | In one line |
+| Spec | Role | Its strongest point | In one line |
 | --- | --- | --- | --- |
-| **[Affliction](/guides/wow-forever/warlock/affliction/)** | Ranged DPS | **5/5, joint best** | Instant [[Corruption]] from level 14, and DoTs can now crit |
-| **[Demonology](/guides/wow-forever/warlock/demonology/)** | Ranged DPS | **5/5, joint best** | `Demonic Energies` turns your damage into pet healing and your Life Tap into pet mana |
-| **[Destruction](/guides/wow-forever/warlock/destruction/)** | Ranged DPS | 3.5/5, marked down | Hard-cast direct damage, and a wand currently competes with [[Shadow Bolt]] |
-**Icy Veins rates Affliction and Demonology identically — 5/5 for levelling — and Destruction the only Warlock spec marked down, at 3.5/5.** The published reasoning for the gap: Destruction has *"less passive sustain than Affliction and less pet support than Demonology"*, most of its damage requires standing still, and Forever cut its direct-damage numbers hard. Wowhead's own Level 20 overview goes further still, for all three specs: *"you'll use your wand more for damage because it deals more DPS than Shadow Bolt, and it's also mana-free."* Destruction is the exception: Wowhead calls wanding *"an equally good option but not really Destruction-oriented"* once `Bane` has cut [[Shadow Bolt]]'s cast time, where the other two specs keep wanding.
+| **[Affliction](/guides/wow-forever/warlock/affliction/)** | Ranged DPS | [[Drain Life]] returns your damage as health; `Suppression` 5/5 cuts your threat 20% | Instant [[Corruption]] from level 14, and DoTs can now crit |
+| **[Demonology](/guides/wow-forever/warlock/demonology/)** | Ranged DPS | `Unholy Power` from 14 raises *all* your demon's damage, not just its melee | `Demonic Energies` turns your damage into pet healing and your Life Tap into pet mana |
+| **[Destruction](/guides/wow-forever/warlock/destruction/)** | Ranged DPS | `Bane` 5/5 from 14: half a second off [[Shadow Bolt]], two off [[Soul Fire]] | Hard-cast direct damage, and a wand currently competes with [[Shadow Bolt]] |
+**Wowhead's Level 20 overview makes the same wand argument for all three specs:** *"you'll use your wand more for damage because it deals more DPS than Shadow Bolt, and it's also mana-free."* Destruction is the exception: Wowhead calls wanding *"an equally good option but not really Destruction-oriented"* once `Bane` has cut [[Shadow Bolt]]'s cast time, where the other two specs keep wanding.
 **Your demon matters more than in Classic, in every spec**, because **demons now scale with your gear**, asserted from hands-on testing by two guides and implied by Blizzard's own known-issues list, though **nothing published quantifies it.** [[Voidwalker]] at 10 is the levelling pet; [[Succubus]] at 20 is the damage pet; **Forever trains the [[Felhunter]] at 30**, where Classic gated it behind a quest and withheld Spell Lock until 36.
 ## Is Warlock for you?
-Play Warlock if you do not mind tracking a pet, a handful of timers and two resources at once. **Icy Veins rates Affliction and Demonology 5/5 for levelling**, joint best in the class, and Destruction 3.5/5.
+Play Warlock if you do not mind tracking a pet, a handful of timers and two resources at once.
 :::strengths
 - A permanent pet that tanks, from the Voidwalker class quest at 10, with its own threat spell `Torment`
 - [[Life Tap]] trades health for mana, scales with Spirit, and gives about double what it gave in Classic
@@ -23,14 +23,14 @@ Play Warlock if you do not mind tracking a pet, a handful of timers and two reso
 :::
 :::weaknesses
 - Five things to track at once: timers, pet, health, mana and shards
-- Mobility is Icy Veins' lowest score for every spec: 3.0, 3.0 and 2.0 out of 5
+- Demon abilities are trained from Grimoires, bought separately from your own spells, and every rank costs gold
 - Soul shards still do not stack
 :::
 :::new
 **Is the rotation simple?** Three timed effects, a Curse, then filler.
 **Is it forgiving?** The Voidwalker takes the hits, and [[Drain Life]] turns your damage back into health.
-**Does it level well?** Icy Veins scores levelling 5/5 for Affliction and Demonology, 3.5/5 for Destruction.
-**Does it need a group?** No. The demon covers the tank role, and Icy Veins scores all three specs 4.0 for dungeons.
+**What carries you while levelling?** A demon tanks for you from level 10, and [[Life Tap]] turns health into mana, so downtime is short.
+**Does it need a group?** No. The demon covers the tank role, and [[Create Healthstone]] at 10 gives you your own emergency heal.
 :::
 ## Levelling milestones
 | Level | What you get |

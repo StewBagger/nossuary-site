@@ -2,11 +2,12 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Frost Mage|https://www.wowhead.com/forever/guide/classes/mage/frost/level-20-dps-overview ;; Icy Veins — Frost Mage|https://www.icy-veins.com/wow-forever/frost-mage-ranged-dps-pve-guide ;; ClassicWoW.gg — Frost Mage|https://classicwow.gg/forever/guides/mage/frost
 
-Freeze the target, then hit it for **four times the damage** (the tooltip reads +300%). **Icy Veins rates it 3.5/5 for levelling** — *"Smooth and Steady, but Not Fast"* — and says that *"with `Frostbite`, melee enemies will often not even reach you before killing them."*
+Freeze the target, then hit it for **four times the damage** (the tooltip reads +300%). Icy Veins: *"with `Frostbite`, melee enemies will often not even reach you before killing them."*
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Frost build has been tested. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40, so a **tier-3 talent like [[Ice Lance]] arrives at exactly level 20**, the eleventh point. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
-## Is Frost worth levelling?
+## What Frost is for
+**A freeze you can rely on: `Frostbite` 3/3 gives every Chill effect you apply a 15% chance to freeze the target, and [[Ice Lance]] — instant, no cooldown — hits a frozen target for +300%.** `Shatter` 3/3 then adds **50% crit** against that frozen target for three points, where Classic needed five.
 **Icy Veins rates it 3.5/5, second of the three Mage specs behind Arcane's 4/5, under the heading *"Smooth and Steady, but Not Fast"*; Wowhead and ClassicWoW.gg publish no levelling score.** Its verdict: *"Frost Mages are going to have a comfortable time leveling… slowing and chilling everything they fight keeps them safe. With `Frostbite`, melee enemies will often not even reach you before killing them."*
 The drawback, in the same source's words, is *"the constant need to stop for mana."* You will drink often; that is the *"not Fast"* half of its own heading.
 On damage the published line is *"Frost Mage won't top the damage meters, but few specs are as safe or as consistent."* Read that against the only levelling scores any of the three publishes, which are Icy Veins' and which put Frost **above** Fire — 3.5/5 against 2.5/5.

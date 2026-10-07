@@ -6,7 +6,8 @@ Poison and bleed pressure on a single target, built around [[Mutilate]] — it n
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Assassination build has been tested. Talent rows unlock at levels 10, 15, 20, 25, 30, 35 and 40. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
-## Is Assassination worth levelling?
+## What Assassination is for
+**Poison and bleed pressure on one target, opened from [[Stealth]].** [[Ambush]] at level 18 is where the build starts to work, and at **21 Assassination points** [[Mutilate]] becomes the builder: 60 energy, **both weapons at once** for 75% weapon damage each, 2 combo points, and **+20% against a poisoned target**. `Cold Blood` sits earlier in the tree in Forever than it did in Classic (Icy Veins), and guarantees a crit on your next [[Sinister Strike]], [[Backstab]], [[Ambush]], [[Eviscerate]] or [[Mutilate]].
 **Sources genuinely disagree, and we are not going to pretend otherwise.**
 **For:** Icy Veins rates its levelling **4 out of 5** (tied with Combat's 4 out of 5; both sit at 3.0 Overall), and says *"Assassination is likely to be very strong especially in this level bracket due to the potency of talents like `Remorseless Attacks`."*
 **Against:** Wowhead, updated 2026/09/29, says *"Assassination is wholly underwhelming at this level bracket. We don't have any of our essential kit, such as [[Mutilate]], `Venom`, and `Seal Fate`. It will ultimately play the same as the Combat Rogue for now until we can gain access to some more impactful abilities."*

@@ -2,37 +2,36 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Class Deep Dives: Priest and Warrior|https://worldofwarcraft.blizzard.com/en-us/news/24301514 ;; Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Warrior Updates, October 2|https://us.forums.blizzard.com/en/wow/t/warrior-updates-in-todays-beta-build/2369360 ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap ;; foreverchanges.pro — beta client data|https://foreverchanges.pro ;; Wowhead — Level 20 Arms Warrior|https://www.wowhead.com/forever/guide/classes/warrior/arms/level-20-dps-overview ;; Wowhead — Level 20 Fury Warrior|https://www.wowhead.com/forever/guide/classes/warrior/fury/level-20-dps-overview ;; Wowhead — Level 20 Protection Warrior|https://www.wowhead.com/forever/guide/classes/warrior/protection/level-20-tank-overview ;; Icy Veins — Warrior Class Overview|https://www.icy-veins.com/wow-forever/warrior-class-overview ;; ClassicWoW.gg — Warrior|https://classicwow.gg/forever/guides/warrior
 
-Icy Veins rates Warrior one of the harder classes to level and one of the strongest once geared. Wowhead takes the opposite tone on the levelling itself — Forever's changes make Arms "feel phenomenal," a deliberate contrast with Vanilla's reputation. Rage from dealing damage is now fully normalized to weapon speed, and landing a critical strike generates **100% increased Rage**, raised from 75% in the October 2 build.
+Warrior builds its own resource by fighting, and spends it on three different jobs: two-handed damage, dual-wield damage, and shield tanking. You start every fight with an empty bar and fill it by swinging — Rage from dealing damage is now fully normalized to weapon speed, and landing a critical strike generates **100% increased Rage**, raised from 75% in the October 2 build.
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so **no level-60 Warrior build has been tested by anyone.** Talent trees and ability training levels below come from foreverchanges.pro's reading of the beta client and are solid; anything about endgame is not, and we have left it out rather than guessed. Blizzard's own caveat on its September 30 Class Deep Dive applies to everything on this page: "class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes." The crit-Rage bonus is the live example — it has already moved from 75% to 100% inside the beta, so treat the figure as tuning in progress.
 :::
 ## Which spec?
-| Spec | Role | Levelling | In one line |
+| Spec | Role | Its strongest point | In one line |
 | --- | --- | --- | --- |
-| **[Arms](/guides/wow-forever/warrior/arms/)** | Melee DPS | Icy Veins: 2.0/5 | Two-handed bleeds and burst, but its engine is level 30+ |
-| **[Fury](/guides/wow-forever/warrior/fury/)** | Melee DPS | Icy Veins: 2.0/5 | Dual-wield rage dump, though you cannot dual wield until 20 |
-| **[Protection](/guides/wow-forever/warrior/protection/)** | Tank | Icy Veins: 2.5/5 | Shield tanking, and three of its talents now require a shield |
+| **[Arms](/guides/wow-forever/warrior/arms/)** | Melee DPS | `Bloodthrill` procs [[Overpower]] off melee hits on your own [[Rend]] target, with no dodge needed | Two-handed bleeds and burst, but its engine is level 30+ |
+| **[Fury](/guides/wow-forever/warrior/fury/)** | Melee DPS | `Death Wish` at 30: +20% physical damage and Fear immunity for 30 seconds | Dual-wield rage dump, though you cannot dual wield until 20 |
+| **[Protection](/guides/wow-forever/warrior/protection/)** | Tank | [[Revenge]] on every block, dodge or parry — very cheap, and a large amount of threat | Shield tanking, and three of its talents now require a shield |
 **An honest note that saves you a respec: at level 20 all three published Warrior builds are nearly the same.** The Arms and Fury level-20 builds are *identical*, eleven points in the Fury tree, because nothing in Arms is worth reaching yet. Pick by what you want at 30 and beyond, not by what you can feel at 20 — and **Dual Specialization opens at level 40** (Blizzard), so the pick is not permanent.
-**No source names an outright best leveller among the three specs, and the one number available cuts against instinct.** Icy Veins is the only one of the three sources that scores them, and those are the numbers in the table above: it rates each spec's Level 20 toolkit for Levelling out of 5, Arms and Fury tie at 2.0, and Protection actually rates higher at 2.5, because its survivability offsets slower kills on their scale. Neither Wowhead nor ClassicWoW.gg publishes a levelling score.
 ## Is Warrior for you?
-Play Warrior if you want to watch the enemy rather than your own bars. The trade to weigh is the one Icy Veins describes: one of the harder classes to level, one of the strongest once geared.
+Play Warrior if you want to watch the enemy rather than your own bars. The trade to weigh is the one Icy Veins describes: one of the harder classes to level, one of the strongest once geared. **Wowhead takes the opposite tone on the levelling itself** — Forever's changes make Arms "feel phenomenal," a deliberate contrast with Vanilla's reputation.
 Blizzard's own September 30 Class Deep Dive is worth weighing against the "hardest class to level" reputation above: the post opens by flagging **Rage-generation bugs still being tracked down in the beta**, separate from the intended design, and two of its changes target exactly the early-game Rage starvation reviewers describe — Rage from taking damage no longer shrinks for wearing Armor, and a critical hit is back to giving increased Rage, restored at 75% and raised to **100% increased Rage** in the October 2 build. None of that touches the other reasons Warrior levels slowly (no self-heal before 20, no ranged attack, full dependence on a current weapon), and **no source has re-rated the class since those changes landed** — that the reputation still holds, on a narrower set of reasons, is our own reading rather than a source's.
 Blizzard's closing assessment of the class, in its own words:
 > Warriors remain the masters of melee combat. They can both dish out melee damage and mitigate damage done to them. They have a unique strength in dealing sustained damage to multiple melee targets, found on no other melee class. They have a powerful toolkit to solve nearly any problem, but they lack the tools to easily recover from taking too much damage. And they have unique buffs and debuffs that only Warriors can supply.
 :::strengths
 - Blizzard's own framing: Warriors *"can both dish out melee damage and mitigate damage done to them"*
-- Icy Veins rates it one of the strongest once geared, and weapon damage leads every published stat priority
+- Weapon damage leads every published stat priority, so an upgrade is felt immediately
 - No resource to manage before a fight starts, you begin at zero and build
 :::
 :::weaknesses
-- Icy Veins rates it one of the harder classes to level; Blizzard's Rage fixes (Armor no longer shrinks it, crits restored) target this but do not erase it
+- No self-heal before 20, no ranged attack, and full dependence on a current weapon
 - No self-heal until [[Victory Rush]] at level 20, and no ranged attack worth the name
 - Dependent on keeping your weapon current — Icy Veins' difficulty rating is *"especially when gear falls behind"*
 :::
 :::new
 **Is the rotation simple?** Four or five buttons while levelling, and you react rather than follow a sequence.
 **Is it forgiving?** No self-heal before 20 and no escape, so a second enemy on you is a real risk.
-**Does it level well?** Icy Veins calls it one of the harder classes; Wowhead calls Forever's changes a big improvement on Classic. Expect to sit and eat often before level 20.
+**What carries you while levelling?** Rage from being hit as well as hitting, and a critical strike now gives **100% increased Rage**. Expect to sit and eat often before level 20.
 **Does it need a group?** Rage from damage taken only pays off when a healer lets you pull two.
 :::
 ## Levelling milestones

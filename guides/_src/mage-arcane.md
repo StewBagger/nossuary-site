@@ -6,7 +6,8 @@ Burst damage on a mana curve you have to manage. **Arcane is genuinely new in Fo
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Arcane build has been tested. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
-## Is Arcane worth levelling?
+## What Arcane is for
+**Mana while you cast: `Arcane Meditation` 3/3 keeps 50% of your regeneration running through every cast, where Classic's version gave 15%** (ClassicWoW.gg gives the per-rank curve: 17% at rank 1, 33% at rank 2, 50% at rank 3). That is what pays for [[Arcane Blast]], whose mana cost climbs **+175% per cast**.
 **Icy Veins rates it 4/5 for levelling, the highest of its three Mage scores (Frost 3.5/5, Fire 2.5/5); Wowhead and ClassicWoW.gg publish no levelling score.** Its heading is literally *"A Solid Leveling Spec"*: *"Arcane Mages in Forever level up very well… The `Arcane Meditation` talent significantly reduces downtime between fights… and `Missile Barrage` reduces the mana cost of Arcane Missiles by 100%."*
 [[Arcane Blast]] and `Missile Barrage` are both new — in Classic, Arcane Power raid builds spent their damage casts on Frostbolt instead of the Arcane tree's own spells; ClassicWoW.gg puts it plainly: *"Forever gives you Arcane Blast and Missile Barrage to build around Arcane-school damage itself."*
 **The dungeon caveat:** *"if the tank is not good enough, you will pull aggro… the Arcane Mage cannot slow enemies as effectively as a Frost Mage (but still sufficient)."*

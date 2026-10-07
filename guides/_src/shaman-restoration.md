@@ -6,7 +6,8 @@ Triage healing — a big wave, a fast wave, or a chain heal across a cluster, no
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Restoration build has been tested. **[[Chain Heal]] is level 40**, so the spec's signature spell does not exist at any beta cap. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
-## Is Restoration worth levelling?
+## What Restoration is for
+**Group triage: [[Chain Heal]] across a cluster, and `Nature's Swiftness` at exactly 30 to make your next Nature spell instant** — in practice a [[Healing Wave]] you cannot be interrupted out of. [[Chain Heal]] is **level 40**, so until then the group-facing tools are [[Mana Tide Totem]] at 25 and [[Water Shield]] at exactly 20, which returns 2% of your maximum mana each time you are hit or crit a heal.
 **Slow to solo, strong in a group. The rating only measures the first.** The published heading is *"Healer Leveling"*: *"As a Healer specialization, Restoration lacks most of the damage talent support of other classes and has no area damage, making it more of a group leveling specialization."* Ratings: Overall 4.0, **Levelling 2.0.**
 Dungeons are what it is for: *"Restoration will make you a strong dungeon healer."*
 **One major source's own advice is to level Enhancement and respec when you want to heal** — its level-20 recommendation for every Shaman is the Enhancement build (see below) — or level in groups from the start. Soloing as Restoration means playing a worse Elemental Shaman: *"you will mostly use [[Lightning Bolt]] and [[Flame Shock]]… as if you were Elemental, with the downside of having no extra damage from talents."*

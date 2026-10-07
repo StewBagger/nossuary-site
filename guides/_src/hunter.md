@@ -7,14 +7,14 @@ Your pet tanks while you shoot, and Forever made pets scale with your own gear.
 Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so **no level-60 Hunter build has been tested.** Ability training levels below come from foreverchanges.pro's reading of the beta client and are reliable. The beta also runs a **Legacy system**, bonus talent points on top of the normal one-per-level rate, so a beta character can reach deep talents earlier than levelling alone would get them: Wowhead's own level 20 Beast Mastery build reaches `Summon Hawk`, which needs 16 points spent in the Beast Mastery tree, at level 20 with Legacy active and level 25 without it. **Blizzard's own caveat applies to everything on this page:** *"class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."*
 :::
 ## Which spec?
-| Spec | Role | Levelling | In one line |
+| Spec | Role | Its strongest point | In one line |
 | --- | --- | --- | --- |
-| **[Beast Mastery](/guides/wow-forever/hunter/beast-mastery/)** | Ranged DPS | Published: the strongest levelling tool in the game | `Deadly Aspects` procs +30% ranged attack speed while [[Aspect of the Hawk]] is up, and your pet does a real share of the work |
-| **[Marksmanship](/guides/wow-forever/hunter/marksmanship/)** | Ranged DPS | Slower **solo**; published as the dungeon build | `Lone Wolf` at exactly 20 for +20% damage with **all** attacks, but only while you have **no pet out** |
-| **[Survival](/guides/wow-forever/hunter/survival/)** | Melee DPS | Published: not for levelling quickly | Parry, [[Deterrence]] and nastier traps. A PvP spec right now |
-**Beast Mastery if you are soloing, and that is the sources' recommendation rather than ours.** Wowhead: *"a pet will currently do more damage than the bonus you would get from Lone Wolf, so taking a couple of points in the BM tree is strongly advised."* A second published verdict calls the eleven-point Marksmanship build *"not a good general play build"* and says to *"use the Beast Mastery build at this level instead."* The talent that build is designed around, `Deadly Aspects`, is called *"one of the best 5 point talents you can take."*
-**But keep the gap in proportion.** At eleven points the **rotation is identical across all three specs**, and the difference is four flexible talent points. Where the published advice puts the other two is narrower than "worse": going deep into Marksmanship is recommended *"for Dungeons, specifically to maximize your AoE damage"*, and Icy Veins calls Survival's `Deflection` plus [[Deterrence]] *"extremely strong in PvP against other melee"* — a verdict written against the pre-October 1 parry number (see the Survival guide). **Our own reading, which no source states: at levelling cap neither is a wrong pick.**
-Respec when your goal changes, on those two published use-cases: Marksmanship for dungeon pulls, Survival for duels.
+| **[Beast Mastery](/guides/wow-forever/hunter/beast-mastery/)** | Ranged DPS | `Summon Hawk`, 16 points in: 18 seconds of a hawk attacking on its own, two up at once | `Deadly Aspects` procs +30% ranged attack speed while [[Aspect of the Hawk]] is up, and your pet does a real share of the work |
+| **[Marksmanship](/guides/wow-forever/hunter/marksmanship/)** | Ranged DPS | `Careful Aim`: up to 100% of your Intellect added to **both** melee and ranged Attack Power | `Lone Wolf` at exactly 20 for +20% damage with **all** attacks, but only while you have **no pet out** |
+| **[Survival](/guides/wow-forever/hunter/survival/)** | Melee DPS | `Strider Kick` at 21 points: an instant attack that also grants +30% movement speed | Parry, [[Deterrence]] and nastier traps. A PvP spec right now |
+**What each tree actually buys you.** **Beast Mastery** spends its points on the pet and the aspects: `Deadly Aspects` off [[Aspect of the Hawk]], `Focused Fire` raising your damage and your pet's together, `Endurance Training` giving the pet Health and Armor in one talent. **Marksmanship** buys shot damage without the pet — `Lone Wolf`, eleven points deep and earliest at level 20, is +20% with all attacks while you keep **no pet out**, and it stacks onto [[Multi-Shot]] in a pull. **Survival** buys defences and control the other two trees do not have: parry, [[Deterrence]], and `Entrapment` making **every** trap root what it catches.
+**Keep the gap in proportion.** At eleven points the **rotation is identical across all three specs**, and the difference is four flexible talent points. Each spec page carries that spec's own sourced material in full.
+Respec when your goal changes: Marksmanship for dungeon pulls, Survival for duels.
 **Blizzard frames the three trees as a spectrum, not a rung ladder:** a Hunter can *"double down on ... ranged combat and their pets, choose not to have a pet at all, or ... dance back and forth between ranged and melee combat."* **That spectrum is reachable inside the current cap, not a promise about level 60** — Survival's melee payoff is the 21-point talent `Strider Kick` and Marksmanship's is the 21-point `Trueshot Aura`, and 21 points fit inside the level-30 budget (see the Survival guide). What is untested is everything above 30.
 ## Is Hunter for you?
 Play Hunter if you want the pet, not you, holding the enemy, and you do not mind managing ammunition, a quiver and pet food.
@@ -32,7 +32,7 @@ Play Hunter if you want the pet, not you, holding the enemy, and you do not mind
 :::new
 **Is the rotation simple?** Yes, and all three spec pages print the same one: mark, send the pet, sting, shoot.
 **Is it forgiving?** Solo, your pet holds the target. In a dungeon the pet is not the tank, so that cover is gone.
-**Does it level well?** Wowhead advises keeping a pet over `Lone Wolf` at this level; the published verdict on the level-10 pet is in the table above.
+**What carries you while levelling?** Your pet tanks for you from level 10, and at the level cap the three trees differ by four flexible talent points.
 **Does it need a group?** No, solo the pet does the tanking.
 :::
 ## Levelling milestones
@@ -98,7 +98,7 @@ Play Hunter if you want the pet, not you, holding the enemy, and you do not mind
 | **[[Disengage]]'s threat reduction is doubled** | Blizzard confirms the leap-and-drop-threat tool is stronger than it was |
 | **[[Aspect of the Beast]] now also grants melee Attack Power** | Worth holding up over Hawk once you're fighting in melee |
 | [[Misdirection]] absent | There is no threat-transfer tool in Forever, for anyone |
-| Survival became a melee specialisation | The published advice is *"you should not go Survival if all you care about is damage or leveling quickly"* |
+| Survival became a melee specialisation | Its melee payoff is talent-gated and deep: `Strider Kick` is the 21-point gold medal talent, so ranged shots remain the way you fight while levelling (see the Survival guide) |
 | The 8-yard dead zone remains | Forever did not fix it, despite heavy feedback |
 | **Summon Hawk**, new Beast Mastery talent | Deals an initial hit then attacks on its own for 18 seconds; shares its cooldown with [[Arcane Shot]], and only two hawks can be up at once |
 **Shot-weaving is gone.** Icy Veins states it plainly as a Forever quality-of-life change: *"your abilities will not clip your auto shots; you do not need to time your rotation around your auto shots."* Neither Wowhead nor ClassicWoW.gg contradicts this, so there is no live disagreement to track here.

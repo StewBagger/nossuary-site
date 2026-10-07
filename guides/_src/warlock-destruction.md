@@ -2,11 +2,12 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Destruction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/destruction/level-20-dps-overview ;; Icy Veins — Destruction Warlock|https://www.icy-veins.com/wow-forever/destruction-warlock-ranged-dps-pve-guide ;; ClassicWoW.gg — Destro Warlock|https://classicwow.gg/forever/guides/warlock/destruction
 
-Hard-cast direct damage instead of ramping damage over time. **The one Warlock spec Icy Veins marks down for levelling**: 3.5 out of 5, against 5 for the other two.
+Hard-cast direct damage instead of ramping damage over time.
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Destruction build has been tested. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
-## Is Destruction worth levelling?
+## What Destruction is for
+**Direct damage whose timing you control.** `Bane` 5/5 from level 14 takes half a second off [[Shadow Bolt]], [[Immolate]] and [[Incinerate]] and two seconds off [[Soul Fire]], and [[Shadowburn]] at 20 is an instant that hands back a Soul Shard when a non-trivial target dies within 8 seconds of being hit by it.
 **Icy Veins is the only one of the three sources to score it, and it marks this spec down where it gives the other two full marks.** Its ratings, out of 5:
 | Spec | Overall | Levelling | Dungeon | Mobility |
 | --- | --- | --- | --- | --- |

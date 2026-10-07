@@ -6,9 +6,10 @@ Pure damage and nothing else. Forever finally makes [[Pyroblast]] a spell you ca
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Fire build has been tested. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
-## Is Fire worth levelling?
+## What Fire is for
+**A [[Pyroblast]] you cast inside a fight: `Heating Up` cuts its cast time by 25% per non-periodic Fire crit, so 3 stacks turn 6 seconds into 1.5.** It arrives at 25; before that there is *"no reliable way to use Pyroblast other than a pre-pull cast."* `Wake of Fire` carries the levels below it, taking 2 seconds off [[Fire Blast]] and giving the next one after a kill **+50% crit**.
 **Icy Veins rates Fire 2.5/5 for levelling, the lowest of its three Mage scores (Arcane 4/5, Frost 3.5/5), under the heading *"Usable, But Better Options Are Available"*; Wowhead and ClassicWoW.gg publish no levelling score.**
-Before level 30 you have *"no reliable way to use Pyroblast other than a pre-pull cast."* And the payoff talents sit deep: *"at low levels, your Critical Strike chance is not very high… the bread-and-butter talents that make Fire work very well are deep down in the Fire and Frost talent trees."* Those tiers are levels 25 through 40.
+It names the reason: *"the Fire spec relies a lot on scoring Critical Strikes... at low levels, your Critical Strike chance is not very high and you only gain high levels of Critical Strike chance through gear at or near the Level 60 content."* The payoff talents sit deep as well: *"the bread-and-butter talents that make Fire work very well are deep down in the Fire and Frost talent trees."* Those tiers are levels 25 through 40.
 **Forever also nerfed Fire's baseline damage.** [[Fireball]] rank 12 hits for 425–541 where Classic gave 596–760; [[Scorch]] and [[Pyroblast]] were cut similarly. `Ruin`-style payoffs moved deeper.
 It is not written off: *"The AoE leveling potential of Fire is also respectable."* But one published guide does not publish a level-20 Fire build at all.
 ## Your talent points

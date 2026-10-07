@@ -7,12 +7,12 @@ Paladin is a plate-wearing melee fighter that runs on mana, and it is no longer 
 Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so **no level-60 Paladin build has been tested.** One specific warning: two talents that appear in published level-30 builds elsewhere — `Crusade` and `Improved Holy Strike` — **are absent from the current beta client**, so those builds cannot be entered as printed. Treat any level-30 Paladin build you find as a projection.
 :::
 ## Which spec?
-| Spec | Role | Levelling | In one line |
+| Spec | Role | Its strongest point | In one line |
 | --- | --- | --- | --- |
-| **[Holy](/guides/wow-forever/paladin/holy/)** | Healer | Slow solo *(ours, not a source's)* | Plate healer whose Blessings and auras cover the whole party, and now an area-heal capstone |
-| **[Protection](/guides/wow-forever/paladin/protection/)** | Tank | Slower solo *(ours, not a source's)*; dungeon-XP cut hurts it most | The only tank that gears for **Spell Power**, because its threat is Holy damage |
-| **[Retribution](/guides/wow-forever/paladin/retribution/)** | Melee DPS | **Wowhead: testers call it the most overtuned spec at 20** | Two-hander plus Holy, and [[Holy Strike]] arrives at level 6 |
-**Retribution is the spec the sourced material points to, and only one source speaks to it directly:** Wowhead reports that beta testers and class discords currently consider Retribution the single most overtuned spec in the level-20 bracket, with changes expected. Mechanically, every Paladin now gets [[Holy Strike]] at level 6, twenty levels earlier than Classic gave you a button. Protection used to have dungeon levelling as its escape hatch; **Forever cut dungeon experience hard, and the October 1 build cut dungeon *quest* experience too** — dungeon quests now reward 50% less extra experience beyond normal quest values, which Blizzard framed as a deliberate reduction in levelling speed — so that route is largely gone.
+| **[Holy](/guides/wow-forever/paladin/holy/)** | Healer | `Reverence` keeps a share of your mana regeneration running while you cast | Plate healer whose Blessings and auras cover the whole party, and now an area-heal capstone |
+| **[Protection](/guides/wow-forever/paladin/protection/)** | Tank | Judging [[Seal of Fury]] taunts from level 10, baseline, with no talent points spent | The only tank that gears for **Spell Power**, because its threat is Holy damage |
+| **[Retribution](/guides/wow-forever/paladin/retribution/)** | Melee DPS | [[Seal of Command]]'s Judgement hits harder into a stunned target, so [[Hammer of Justice]] sets it up | Two-hander plus Holy, and [[Holy Strike]] arrives at level 6 |
+**Every Paladin now gets [[Holy Strike]] at level 6**, twenty levels earlier than Classic gave you a button, and [[Consecration]] and [[Blessing of Kings]] are trained at 20 in every spec, so the three share more of their kit than they did in Classic. Protection used to have dungeon levelling as its escape hatch; **Forever cut dungeon experience hard, and the October 1 build cut dungeon *quest* experience too** — dungeon quests now reward 50% less extra experience beyond normal quest values, which Blizzard framed as a deliberate reduction in levelling speed — so that route is largely gone.
 **The two cases are not alike.** `Improved Holy Strike` was folded into the class — [[Holy Strike]]'s cooldown is now 10 seconds for every Paladin, and Blizzard's September 24 notes say so. `Crusade` simply vanished from the Retribution tree with no mention at all.
 ## Is Paladin for you?
 Play Paladin if you want a melee class that carries its own heals, wears mail from level 1 and plate from 40, and can train for whichever of the three roles a group is short of.
@@ -29,7 +29,7 @@ Play Paladin if you want a melee class that carries its own heals, wears mail fr
 :::new
 **Is the rotation simple?** Three buttons: keep a seal up, judge it, strike on cooldown.
 **Is it forgiving?** You heal yourself, wear mail from level 1 and plate from 40, and get [[Divine Shield]] at 34.
-**Does it level well?** Retribution is the spec to do it in: Wowhead reports testers call it the most overtuned spec in the level-20 bracket.
+**What carries you while levelling?** Retribution carries the damage: [[Holy Strike]] from level 6, a two-hander, and [[Consecration]] added at 20.
 **Does it need a group?** No. Every spec trains heals and a taunt, so you can fill whatever a group lacks.
 :::
 ## Levelling milestones

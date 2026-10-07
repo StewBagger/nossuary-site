@@ -6,9 +6,10 @@ Plate-wearing single-target healer with party-wide Blessings and auras, and Fore
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Holy build has been tested. **One warning:** a published level-20 "Holy damage" build spends two points on `Improved Holy Strike`, **a talent that does not exist in the beta client**, its effect was made baseline for every Paladin in the September 24 build, which dropped [[Holy Strike]]'s cooldown to 10 seconds for everyone. That build cannot be entered as printed. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
-## Is Holy worth levelling?
-**Viable but slow, and its usual escape hatch is closed — the pace half of that is our own reading, not a published rating.** You will be nearly unkillable and you will kill nothing quickly. What *is* published is the escape hatch closing, and it hurts this spec specifically: **Forever cut dungeon experience hard, and the October 1 build halved the extra experience on dungeon *quests* as well**, so "just level in dungeons" is largely gone.
-**Our own recommendation, not a sourced one:** solo-questing Holy from 1 to 30 is a poor choice. It makes sense if you intend to group, and only then.
+## What Holy is for
+**Keeping a party standing while in plate, with the mana tools to keep doing it.** `Reverence` keeps a share of your mana regeneration running while you cast, `Illumination` refunds 50% of a spell's base cost when it procs, and the new `Light's Vigil` capstone turns a [[Holy Shock]] on a marked ally into a heal for their whole party. Underneath that you are still a melee Paladin: keep a seal up and press [[Holy Strike]] and [[Judgement]] on cooldown.
+**What is published about levelling in it closes this spec's usual escape hatch specifically:** **Forever cut dungeon experience hard, and the October 1 build halved the extra experience on dungeon *quests* as well**, so "just level in dungeons" is largely gone. **No source publishes a levelling score for any Paladin spec** — and a score would rate solo kill speed anyway, not whether the spec works.
+**Our own reading, not a sourced one:** Holy's output lands on other people. The Blessings, auras and heals all apply to the party, and no talent point in the tree buys damage.
 ## Your talent points
 **Level 20: 11/0/0.** Icy Veins and Wowhead agree on the shape, but not on the third talent.
 1. `Divine Intellect`, 5 points

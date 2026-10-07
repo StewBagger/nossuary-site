@@ -7,32 +7,31 @@ Priest is a cloth-wearing caster with two healing specialisations and one ranged
 Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so **no level-60 Priest build has been tested.** On September 30, 2026 Blizzard published its own Priest Class Deep Dive — not a handful of small changes, but a wide pass across baseline abilities, every racial spell and all three talent trees. This page follows Blizzard's post over the three guide sites wherever they disagree. Ability training levels below are read from the client. Blizzard's own caveat: *"class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."*
 :::
 ## Which spec?
-| Spec | Role | Levelling | In one line |
+| Spec | Role | Its strongest point | In one line |
 | --- | --- | --- | --- |
-| **[Discipline](/guides/wow-forever/priest/discipline/)** | Healer | 2.5/5 **solo**, 5.0/5 in dungeons | Mana efficiency and prevention rather than repair |
-| **[Holy](/guides/wow-forever/priest/holy/)** | Healer | 2.0/5 **solo**, 4.0/5 in dungeons | Published as *"great all-rounders… very beginner-friendly"*, and the lowest solo rating of the three |
-| **[Shadow](/guides/wow-forever/priest/shadow/)** | Ranged DPS | **3.0/5 solo**, highest of the three; 2.5/5 in dungeons | [[Mind Flay]], which the client makes **talent-only** |
-**The published advice for soloing is to level with Shadow talents and respec to heal — the Discipline and Holy guides both say it in the same words:** *"it is a better idea to primarily use Shadow talents until you're able to get into group content."* The published ratings are blunt — Discipline **2.5 out of 5**, Holy **2.0** — for the reason above: no published build for either reaches [[Mind Flay]]. A Priest without it has [[Smite]] and a wand.
-**But those numbers rate solo kill speed and nothing else.** The same source rates Discipline **5.0 out of 5 for dungeons**, the best of any Priest spec, and Holy 4.0 — **against Shadow's own dungeon rating of only 2.5**, the lowest of the three. **Those dungeon scores invert the ranking if you intend to level in dungeons** — our own reading of the published numbers, not a published verdict — and Shadow is the one spec that does not benefit from it.
-**Discipline also has a solo pattern no source scores — our own reading:** [[Power Word: Shield]] absorbs the damage while your wand does the killing, at almost no mana cost. Slow, nearly unkillable, and how Discipline has soloed since vanilla.
+| **[Discipline](/guides/wow-forever/priest/discipline/)** | Healer | The shield-and-wand solo pattern: [[Power Word: Shield]] absorbs while your wand does the killing | Mana efficiency and prevention rather than repair |
+| **[Holy](/guides/wow-forever/priest/holy/)** | Healer | `Binding Heal` from 25 heals your target *and* you, on no cooldown | Published as *"great all-rounders… very beginner-friendly"* |
+| **[Shadow](/guides/wow-forever/priest/shadow/)** | Ranged DPS | [[Vampiric Embrace]] from 25: 30 seconds of your party healing for 20% of your Shadow damage | [[Mind Flay]], which the client makes **talent-only** |
+**The published advice for soloing is to level with Shadow talents and respec to heal — the Discipline and Holy guides both say it in the same words:** *"it is a better idea to primarily use Shadow talents until you're able to get into group content."* The reason is the [[Mind Flay]] gate above: no published build for either healing spec reaches it, so a Priest without it has [[Smite]], [[Mind Blast]] and a wand.
+**The published ratings sit on the three spec pages**, each one alongside the caveat that the levelling number measures solo kill speed and nothing else.
 This is not a permanent commitment. Respeccing to Holy or Discipline once you want to heal dungeons is the normal path, and **`Dual Specialization` becomes available at level 40**, so from there you carry both. Below 40 it is a trainer visit, and in the beta the price is **1 silver** if you have not changed talents recently; a second reset costs much more and drops back to 1 silver an hour later. Blizzard calls that price *"temporary for the Beta only."*
 ## Is Priest for you?
 Play Priest if you want to be the person keeping everyone alive, and you are happy watching health bars rather than the fight.
 :::strengths
-- The published dungeon ratings are the highest numbers on this page: Discipline 5.0, Holy 4.0
-- Shadow is the highest-rated Priest spec for solo levelling, 3.0 out of 5
-- A shield that prevents damage rather than repairing it
+- A shield that prevents damage rather than repairing it, and it can now overwrite itself on a target without Weakened Soul
+- [[Fear Ward]] is baseline for every race from level 20, so no race is locked out of it
+- `Dual Specialization` at level 40 carries a damage spec and a healing spec at once
 :::
 :::weaknesses
 - The published headings for both healing specs: *"Struggles To Solo Level"* and *"Zero AoE and Lackluster Damage"*
 - *"The main reason you'll die while playing as a Priest is running out of mana while still fighting against a healthy foe"*
-- Mobility is rated 1.0 out of 5 for both healing specs, the lowest score either carries
+- [[Desperate Prayer]] is Dwarf-only now, so most Priests have no instant self-heal at all
 :::
 :::new
 **Is the rotation simple?** Yes, a damage-over-time, a nuke, then your wand.
 **Is it forgiving?** Not solo. Cloth armour, and the published warning is running out of mana mid-fight.
-**Does it level well?** The published ratings split: 2.0 to 2.5 out of 5 solo, 4.0 to 5.0 in dungeons.
-**Does it need a group?** It does not require one. The published dungeon ratings are the highest numbers on this page, and the solo ones the lowest.
+**What carries you while levelling?** Not quickly on your own: [[Smite]], [[Mind Blast]] and a wand until [[Mind Flay]], which needs 10 points in Shadow. Each spec page carries the published ratings.
+**Does it need a group?** It does not require one, but the published advice for both healing specs is Shadow talents until you can heal in groups.
 :::
 ## Levelling milestones
 | Level | What you get |

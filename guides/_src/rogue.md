@@ -7,18 +7,18 @@ Rogue is a leather-wearing melee class with no self-heal that opens fights from 
 Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so **no level-60 Rogue build has been tested.** Rogue remains the class Blizzard has said least about — the October 1 notes give it two lines: the [[Expose Armor]] combo-point fix (below) and a Subtlety tweak to `Setup` (see the Subtlety guide). Ability training levels below are read from the client; almost nothing else about Rogue is officially documented.
 :::
 ## Which spec?
-| Spec | Role | Levelling (Icy Veins) | In one line |
+| Spec | Role | Its strongest point | In one line |
 | --- | --- | --- | --- |
-| **[Assassination](/guides/wow-forever/rogue/assassination/)** | Melee DPS | 4/5, 3.0 overall | Poisons and daggers, built around [[Ambush]] and bleed damage |
-| **[Combat](/guides/wow-forever/rogue/combat/)** | Melee DPS | 4/5, 3.0 overall | Swords and maces, `Riposte`, and Wowhead's *"most 'complete'"* Rogue spec at 20 |
-| **[Subtlety](/guides/wow-forever/rogue/subtlety/)** | Melee DPS | 4/5, 2.5 overall | `Ghostly Strike`, openers from stealth, and **no area damage of any kind** |
-**All three are melee damage, so pick on how you want to play rather than on role.** **Icy Veins is the only one of the three sources that scores the specs**, and it gives all three the same **4 out of 5** for levelling, separating them on its Overall score alone: 3.0 for Assassination and Combat, 2.5 for Subtlety. **Icy Veins and Wowhead agree about Combat** — Wowhead calls it *"probably the most 'complete' Rogue specialization at level 20,"* and Icy Veins *"an incredibly simple class to play and to optimize damage."* **About Assassination they genuinely disagree, and we are not going to pretend otherwise:** Icy Veins says it is *"likely to be very strong especially in this level bracket due to the potency of talents like `Remorseless Attacks`,"* while Wowhead calls the same level bracket *"wholly underwhelming"* and says Assassination *"will ultimately play the same as the Combat Rogue for now"* until [[Mutilate]] unlocks. **About Subtlety they agree again:** Icy Veins heads its section *"Weakest Among Rogue Specs"*, and Wowhead gives it the same *"wholly underwhelming"* verdict. **ClassicWoW.gg scores nothing**, and is cited on these pages for talent costs and mechanics only.
+| **[Assassination](/guides/wow-forever/rogue/assassination/)** | Melee DPS | [[Mutilate]] at 21 Assassination points: one strike with **both weapons**, **+20% against a poisoned target** | Poisons and daggers, built around [[Ambush]] and bleed damage |
+| **[Combat](/guides/wow-forever/rogue/combat/)** | Melee DPS | [[Blade Flurry]] at 30: 25 energy for +20% melee speed and **one extra nearby target** for 15 seconds | Swords and maces, `Riposte`, and Wowhead's *"most 'complete'"* Rogue spec at 20 |
+| **[Subtlety](/guides/wow-forever/rogue/subtlety/)** | Melee DPS | `Camouflage`: a shorter [[Stealth]] cooldown and more move speed, plus `Improved Ambush` on talent row 2 | `Ghostly Strike`, openers from stealth, and **no area damage of any kind** |
+**All three are melee damage, so pick on how you want to play rather than on role.** The spec pages carry each source's ratings and quotes in full.
 ## Is Rogue for you?
 Play Rogue if you like deciding when a fight starts, and you are willing to level a class wearing leather with no self-heal.
 :::strengths
 - You choose when every fight starts: [[Stealth]] from level 1, opening with [[Ambush]] from 18
 - [[Stealth]] and [[Sprint]] let you walk past a fight instead of winning it
-- **Icy Veins rates all three specs 4 out of 5 for levelling**
+- Lockpicking and Poisons are secondary skills now, so neither costs a talent point
 :::
 :::weaknesses
 - Leather armour, no healing, and no way to protect an ally
@@ -28,7 +28,7 @@ Play Rogue if you like deciding when a fight starts, and you are willing to leve
 :::new
 **Is the rotation simple?** Icy Veins calls Combat *"two buttons"* — build combo points, then spend them.
 **Is it forgiving?** No: no self-heal, and leather armour.
-**Does it level well?** Icy Veins rates all three specs 4 out of 5 for levelling.
+**What carries you while levelling?** [[Stealth]] from level 1, so you choose every fight, and [[Sap]] now needs no stealth and does not break it.
 **Does it need a group?** No. [[Stealth]] lets you walk past the fights you would lose.
 :::
 ## Levelling milestones

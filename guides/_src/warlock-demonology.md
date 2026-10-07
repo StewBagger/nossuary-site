@@ -2,12 +2,13 @@ updated: October 5, 2026
 build: 1.60.1.70124
 sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Demonology Warlock|https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-20-dps-overview ;; Icy Veins — Demonology Warlock|https://www.icy-veins.com/wow-forever/demonology-warlock-ranged-dps-pve-guide ;; ClassicWoW.gg — Demo Warlock|https://classicwow.gg/forever/guides/warlock/demonology
 
-Your demon fights alongside you and your own damage keeps it alive. **Icy Veins rates it 5 out of 5 for levelling, identical to Affliction.** In Forever, demons scale with your gear.
+Your demon fights alongside you and your own damage keeps it alive. In Forever, demons scale with your gear.
 :::scope
 Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, which Blizzard raised from 20 that day, so no level-60 Demonology build has been tested. No source has posted a level 30 build either — the cap only reached 30 on October 1 and none of the three has published one since — so the level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended.
 :::
-## Is Demonology worth levelling?
-**Yes — on Icy Veins' scores, joint best in the class.** *"Demonology is an excellent solo leveler because your demon can take a lot of pressure off you while you cast from range."*
+## What Demonology is for
+**`Demonic Energies`: your damage heals the demon, and [[Life Tap]] feeds its mana.** At 2/2, 15% of all your spell damage is mirrored to your pet as healing and 100% of the mana from a Life Tap goes to it as well, so the thing absorbing the hits is topped up by the casting and the resource management you were doing anyway.
+*"Demonology is an excellent solo leveler because your demon can take a lot of pressure off you while you cast from range."* **Icy Veins rates its levelling 5 out of 5, joint best in the class.**
 **One cost, in the source's own words:** *"Unlike Affliction, this build does not take `Improved Corruption`, so [[Corruption]] still has a cast time"*, which means *"setting up multiple enemies takes longer than it does for Affliction."*
 ## Your talent points
 **Level 20: 11/0/0, and Icy Veins and Wowhead disagree on whether `Improved Corruption` belongs in it at all.**
