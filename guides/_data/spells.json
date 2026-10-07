@@ -1,0 +1,2559 @@
+{
+ "build": "1.60.1.70245",
+ "product": "wow_cn_beta",
+ "generated": "2026-10-07T10:04:37+00:00",
+ "stamp": "03bf7a67da40",
+ "inputs": "75042d3fbc6f",
+ "entries": {
+  "Adrenaline Rush": {
+   "kind": "spell",
+   "id": 13750,
+   "level": null,
+   "icon": 136206
+  },
+  "Aimed Shot": {
+   "kind": "spell",
+   "id": 19434,
+   "level": 20,
+   "icon": 135130
+  },
+  "Alchemists' Stone": {
+   "kind": "spell",
+   "id": 21399,
+   "level": null,
+   "icon": 136235
+  },
+  "Alchemy Laboratory": {
+   "kind": "item",
+   "id": 279990,
+   "level": null,
+   "icon": 4777830
+  },
+  "Ambush": {
+   "kind": "spell",
+   "id": 8676,
+   "level": 18,
+   "icon": 132282
+  },
+  "Anti-Venom": {
+   "kind": "item",
+   "id": 6452,
+   "level": null,
+   "icon": 134437
+  },
+  "Aquatic Form": {
+   "kind": "spell",
+   "id": 1066,
+   "level": 16,
+   "icon": 132112
+  },
+  "Arcane Blast": {
+   "kind": "spell",
+   "id": 400574,
+   "level": 20,
+   "icon": 135735
+  },
+  "Arcane Explosion": {
+   "kind": "spell",
+   "id": 1449,
+   "level": 14,
+   "icon": 136116
+  },
+  "Arcane Intellect": {
+   "kind": "spell",
+   "id": 1459,
+   "level": 1,
+   "icon": 135932
+  },
+  "Arcane Missiles": {
+   "kind": "spell",
+   "id": 5143,
+   "level": 8,
+   "icon": 136096
+  },
+  "Arcane Salvager": {
+   "kind": "item",
+   "id": 279985,
+   "level": null,
+   "icon": 986482
+  },
+  "Arcane Shot": {
+   "kind": "spell",
+   "id": 3044,
+   "level": 6,
+   "icon": 132218
+  },
+  "Arcanite Blacksmith Hammer": {
+   "kind": "item",
+   "id": 285281,
+   "level": null,
+   "icon": 133057
+  },
+  "Aspect of the Beast": {
+   "kind": "spell",
+   "id": 13161,
+   "level": null,
+   "icon": 132252
+  },
+  "Aspect of the Cheetah": {
+   "kind": "spell",
+   "id": 5118,
+   "level": 20,
+   "icon": 132242
+  },
+  "Aspect of the Hawk": {
+   "kind": "spell",
+   "id": 13165,
+   "level": 10,
+   "icon": 136076
+  },
+  "Aspect of the Pack": {
+   "kind": "spell",
+   "id": 13159,
+   "level": 40,
+   "icon": 132267
+  },
+  "Aspect of the Wild": {
+   "kind": "spell",
+   "id": 20043,
+   "level": 46,
+   "icon": 136074
+  },
+  "Astral Recall": {
+   "kind": "spell",
+   "id": 556,
+   "level": null,
+   "icon": 136010
+  },
+  "Auto Shot": {
+   "kind": "spell",
+   "id": 75,
+   "level": 1,
+   "icon": 132369
+  },
+  "Azerothium Bar": {
+   "kind": "item",
+   "id": 249726,
+   "level": null,
+   "icon": 612100
+  },
+  "Backstab": {
+   "kind": "spell",
+   "id": 53,
+   "level": 4,
+   "icon": 132090
+  },
+  "Bait and Tackle": {
+   "kind": "spell",
+   "id": 1278067,
+   "level": null,
+   "icon": 466035
+  },
+  "Bane of Agony": {
+   "kind": "spell",
+   "id": 980,
+   "level": 8,
+   "icon": 136139
+  },
+  "Bane of Doom": {
+   "kind": "spell",
+   "id": 603,
+   "level": 60,
+   "icon": 136122
+  },
+  "Bane of Havoc": {
+   "kind": "spell",
+   "id": 1225228,
+   "level": 1,
+   "icon": 460695
+  },
+  "Banish": {
+   "kind": "spell",
+   "id": 710,
+   "level": 28,
+   "icon": 136135
+  },
+  "Barkskin": {
+   "kind": "spell",
+   "id": 22812,
+   "level": 44,
+   "icon": 136097
+  },
+  "Bash": {
+   "kind": "spell",
+   "id": 5211,
+   "level": 14,
+   "icon": 132114
+  },
+  "Basic Campfire Kit": {
+   "kind": "item",
+   "id": 279981,
+   "level": null,
+   "icon": 7808148
+  },
+  "Battle Shout": {
+   "kind": "spell",
+   "id": 6673,
+   "level": 1,
+   "icon": 132333
+  },
+  "Battle Stance": {
+   "kind": "spell",
+   "id": 2457,
+   "level": 1,
+   "icon": 132349
+  },
+  "Belt of the Archmage": {
+   "kind": "item",
+   "id": 18405,
+   "level": null,
+   "icon": 132520
+  },
+  "Berserk": {
+   "kind": "spell",
+   "id": 23397,
+   "level": null,
+   "icon": 136129
+  },
+  "Berserker Stance": {
+   "kind": "spell",
+   "id": 2458,
+   "level": 30,
+   "icon": 132275
+  },
+  "Bite": {
+   "kind": "spell",
+   "id": 17253,
+   "level": 1,
+   "icon": 132278
+  },
+  "Blackmouth Oil": {
+   "kind": "item",
+   "id": 6370,
+   "level": null,
+   "icon": 132799
+  },
+  "Blade Flurry": {
+   "kind": "spell",
+   "id": 13877,
+   "level": 1,
+   "icon": 132350
+  },
+  "Blast Wave": {
+   "kind": "spell",
+   "id": 11113,
+   "level": 30,
+   "icon": 135903
+  },
+  "Blessing of Kings": {
+   "kind": "spell",
+   "id": 20217,
+   "level": 20,
+   "icon": 135995
+  },
+  "Blessing of Might": {
+   "kind": "spell",
+   "id": 19740,
+   "level": 4,
+   "icon": 135906
+  },
+  "Blessing of Salvation": {
+   "kind": "spell",
+   "id": 1038,
+   "level": 26,
+   "icon": 135967
+  },
+  "Blessing of Wisdom": {
+   "kind": "spell",
+   "id": 19742,
+   "level": 14,
+   "icon": 135970
+  },
+  "Blind": {
+   "kind": "spell",
+   "id": 2094,
+   "level": 34,
+   "icon": 136175
+  },
+  "Blink": {
+   "kind": "spell",
+   "id": 1953,
+   "level": 20,
+   "icon": 135736
+  },
+  "Blizzard": {
+   "kind": "spell",
+   "id": 10,
+   "level": 20,
+   "icon": 135857
+  },
+  "Bloodlust": {
+   "kind": "spell",
+   "id": 6742,
+   "level": null,
+   "icon": 136012
+  },
+  "Bloodrage": {
+   "kind": "spell",
+   "id": 2687,
+   "level": 10,
+   "icon": 132277
+  },
+  "Bloodthirst": {
+   "kind": "spell",
+   "id": 23881,
+   "level": 40,
+   "icon": 136012
+  },
+  "Boosted Rest": {
+   "kind": "spell",
+   "id": 1229451,
+   "level": null,
+   "icon": 1001982
+  },
+  "Bottomless Bag": {
+   "kind": "item",
+   "id": 14156,
+   "level": null,
+   "icon": 133646
+  },
+  "Brilliant Smallfish": {
+   "kind": "item",
+   "id": 6290,
+   "level": null,
+   "icon": 133893
+  },
+  "Bristle Whisker Catfish": {
+   "kind": "item",
+   "id": 4593,
+   "level": null,
+   "icon": 133916
+  },
+  "Call of the Elements": {
+   "kind": "spell",
+   "id": 66842,
+   "level": 20,
+   "icon": 310730
+  },
+  "Camp Chair": {
+   "kind": "item",
+   "id": 279979,
+   "level": null,
+   "icon": 132761
+  },
+  "Camp Tent": {
+   "kind": "item",
+   "id": 279978,
+   "level": null,
+   "icon": 134250
+  },
+  "Chain Heal": {
+   "kind": "spell",
+   "id": 1064,
+   "level": 40,
+   "icon": 136042
+  },
+  "Chain Lightning": {
+   "kind": "spell",
+   "id": 421,
+   "level": 32,
+   "icon": 136015
+  },
+  "Challenging Roar": {
+   "kind": "spell",
+   "id": 5209,
+   "level": 28,
+   "icon": 132117
+  },
+  "Charge": {
+   "kind": "spell",
+   "id": 7371,
+   "level": 1,
+   "icon": 132184
+  },
+  "Cheap Shot": {
+   "kind": "spell",
+   "id": 1833,
+   "level": 26,
+   "icon": 132092
+  },
+  "Claw": {
+   "kind": "spell",
+   "id": 16827,
+   "level": 1,
+   "icon": 132140
+  },
+  "Cleave": {
+   "kind": "spell",
+   "id": 845,
+   "level": 20,
+   "icon": 132338
+  },
+  "Combustion": {
+   "kind": "spell",
+   "id": 11129,
+   "level": 40,
+   "icon": 135824
+  },
+  "Compact Critter Carrier": {
+   "kind": "spell",
+   "id": 1266920,
+   "level": 1,
+   "icon": 136235
+  },
+  "Comprehend Scroll": {
+   "kind": "spell",
+   "id": 1296017,
+   "level": null,
+   "icon": 8188276
+  },
+  "Concussion Blow": {
+   "kind": "spell",
+   "id": 12809,
+   "level": 30,
+   "icon": 132325
+  },
+  "Concussive Shot": {
+   "kind": "spell",
+   "id": 5116,
+   "level": 8,
+   "icon": 135860
+  },
+  "Cone of Cold": {
+   "kind": "spell",
+   "id": 120,
+   "level": 26,
+   "icon": 135852
+  },
+  "Conflagrate": {
+   "kind": "spell",
+   "id": 1293817,
+   "level": 25,
+   "icon": 135807
+  },
+  "Conjure Food": {
+   "kind": "spell",
+   "id": 587,
+   "level": 6,
+   "icon": 133952
+  },
+  "Conjure Mana Agate": {
+   "kind": "spell",
+   "id": 759,
+   "level": 28,
+   "icon": 134104
+  },
+  "Conjure Water": {
+   "kind": "spell",
+   "id": 5504,
+   "level": 4,
+   "icon": 132793
+  },
+  "Consecration": {
+   "kind": "spell",
+   "id": 26573,
+   "level": 20,
+   "icon": 135926
+  },
+  "Cookie's Feast": {
+   "kind": "item",
+   "id": 279957,
+   "level": null,
+   "icon": 2066011
+  },
+  "Corruption": {
+   "kind": "spell",
+   "id": 172,
+   "level": 4,
+   "icon": 136118
+  },
+  "Counterspell": {
+   "kind": "spell",
+   "id": 2139,
+   "level": 24,
+   "icon": 135856
+  },
+  "Cower": {
+   "kind": "spell",
+   "id": 8998,
+   "level": 28,
+   "icon": 132118
+  },
+  "Create Firestone": {
+   "kind": "spell",
+   "id": 6366,
+   "level": 28,
+   "icon": 134085
+  },
+  "Create Healthstone": {
+   "kind": "spell",
+   "id": 6201,
+   "level": 10,
+   "icon": 135230
+  },
+  "Create Spellstone": {
+   "kind": "spell",
+   "id": 2362,
+   "level": 36,
+   "icon": 134131
+  },
+  "Crippling Poison": {
+   "kind": "item",
+   "id": 3775,
+   "level": null,
+   "icon": 132274
+  },
+  "Crispy Bat Wing": {
+   "kind": "item",
+   "id": 12224,
+   "level": null,
+   "icon": 134002
+  },
+  "Crystal Infused Bandage": {
+   "kind": "item",
+   "id": 23684,
+   "level": null,
+   "icon": 133686
+  },
+  "Cure Poison": {
+   "kind": "spell",
+   "id": 8946,
+   "level": 14,
+   "icon": 136067
+  },
+  "Curse of Recklessness": {
+   "kind": "spell",
+   "id": 704,
+   "level": 14,
+   "icon": 136225
+  },
+  "Curse of Shadow": {
+   "kind": "spell",
+   "id": 402791,
+   "level": null,
+   "icon": 136137
+  },
+  "Curse of Weakness": {
+   "kind": "spell",
+   "id": 702,
+   "level": 4,
+   "icon": 136138
+  },
+  "Curse of the Elements": {
+   "kind": "spell",
+   "id": 440892,
+   "level": 20,
+   "icon": 615099
+  },
+  "Dash": {
+   "kind": "spell",
+   "id": 1850,
+   "level": null,
+   "icon": 132120
+  },
+  "Deadly Poison": {
+   "kind": "item",
+   "id": 2892,
+   "level": null,
+   "icon": 132290
+  },
+  "Defender's Leather Hood": {
+   "kind": "item",
+   "id": 252447,
+   "level": null,
+   "icon": null
+  },
+  "Defensive Stance": {
+   "kind": "spell",
+   "id": 71,
+   "level": 10,
+   "icon": 132341
+  },
+  "Demon Skin": {
+   "kind": "spell",
+   "id": 687,
+   "level": 1,
+   "icon": 136185
+  },
+  "Demonic Sacrifice": {
+   "kind": "spell",
+   "id": 18788,
+   "level": null,
+   "icon": 136184
+  },
+  "Demoralizing Roar": {
+   "kind": "spell",
+   "id": 99,
+   "level": 10,
+   "icon": 132121
+  },
+  "Demoralizing Shout": {
+   "kind": "spell",
+   "id": 1160,
+   "level": 14,
+   "icon": 132366
+  },
+  "Desperate Prayer": {
+   "kind": "spell",
+   "id": 13908,
+   "level": 10,
+   "icon": 135954
+  },
+  "Deterrence": {
+   "kind": "spell",
+   "id": 19263,
+   "level": 20,
+   "icon": 132369
+  },
+  "Devastate": {
+   "kind": "spell",
+   "id": 20243,
+   "level": null,
+   "icon": 135291
+  },
+  "Devotion Aura": {
+   "kind": "spell",
+   "id": 465,
+   "level": 1,
+   "icon": 135893
+  },
+  "Devouring Plague": {
+   "kind": "spell",
+   "id": 2944,
+   "level": 20,
+   "icon": 252997
+  },
+  "Dire Bear Form": {
+   "kind": "spell",
+   "id": 9634,
+   "level": 40,
+   "icon": 132276
+  },
+  "Dirge's Kickin' Chimaerok Chops": {
+   "kind": "item",
+   "id": 21023,
+   "level": null,
+   "icon": 134021
+  },
+  "Disarm": {
+   "kind": "spell",
+   "id": 676,
+   "level": 18,
+   "icon": 132343
+  },
+  "Disease Cleansing Totem": {
+   "kind": "spell",
+   "id": 8170,
+   "level": 38,
+   "icon": 136019
+  },
+  "Disengage": {
+   "kind": "spell",
+   "id": 781,
+   "level": 20,
+   "icon": 132294
+  },
+  "Distract": {
+   "kind": "spell",
+   "id": 1725,
+   "level": 22,
+   "icon": 132289
+  },
+  "Dive": {
+   "kind": "spell",
+   "id": 23145,
+   "level": null,
+   "icon": 136126
+  },
+  "Divine Intervention": {
+   "kind": "spell",
+   "id": 19752,
+   "level": 30,
+   "icon": 136106
+  },
+  "Divine Shield": {
+   "kind": "spell",
+   "id": 642,
+   "level": 34,
+   "icon": 135896
+  },
+  "Divine Spirit": {
+   "kind": "spell",
+   "id": 14752,
+   "level": 30,
+   "icon": 135898
+  },
+  "Drain Life": {
+   "kind": "spell",
+   "id": 689,
+   "level": 14,
+   "icon": 136169
+  },
+  "Drain Soul": {
+   "kind": "spell",
+   "id": 1120,
+   "level": 10,
+   "icon": 136163
+  },
+  "Draught of Detect Demon": {
+   "kind": "item",
+   "id": 9233,
+   "level": null,
+   "icon": 134833
+  },
+  "Draught of Detect Undead": {
+   "kind": "item",
+   "id": 9154,
+   "level": null,
+   "icon": 134833
+  },
+  "EZ-Thro Dark Bomb": {
+   "kind": "spell",
+   "id": 1266930,
+   "level": 1,
+   "icon": 136235
+  },
+  "EZ-Thro Mana Bomb": {
+   "kind": "spell",
+   "id": 1266931,
+   "level": 1,
+   "icon": 136235
+  },
+  "Earth Shock": {
+   "kind": "spell",
+   "id": 8042,
+   "level": 4,
+   "icon": 136026
+  },
+  "Egg Nog": {
+   "kind": "item",
+   "id": 17198,
+   "level": null,
+   "icon": 132791
+  },
+  "Elixir of Fire Power": {
+   "kind": "item",
+   "id": 6373,
+   "level": null,
+   "icon": 134835
+  },
+  "Elixir of Greater Defense": {
+   "kind": "item",
+   "id": 13445,
+   "level": null,
+   "icon": 134846
+  },
+  "Elixir of Minor Defense": {
+   "kind": "item",
+   "id": 5997,
+   "level": null,
+   "icon": 134843
+  },
+  "Elixir of Wisdom": {
+   "kind": "item",
+   "id": 3383,
+   "level": null,
+   "icon": 134717
+  },
+  "Enchanted Lute": {
+   "kind": "item",
+   "id": 279976,
+   "level": null,
+   "icon": 4631367
+  },
+  "Enrage": {
+   "kind": "spell",
+   "id": 5229,
+   "level": 12,
+   "icon": 132126
+  },
+  "Entangling Roots": {
+   "kind": "spell",
+   "id": 339,
+   "level": 8,
+   "icon": 136100
+  },
+  "Evasion": {
+   "kind": "spell",
+   "id": 5277,
+   "level": 8,
+   "icon": 136205
+  },
+  "Eviscerate": {
+   "kind": "spell",
+   "id": 2098,
+   "level": 1,
+   "icon": 132292
+  },
+  "Evocation": {
+   "kind": "spell",
+   "id": 12051,
+   "level": 20,
+   "icon": 136075
+  },
+  "Execute": {
+   "kind": "spell",
+   "id": 20647,
+   "level": 1,
+   "icon": 135358
+  },
+  "Exorcism": {
+   "kind": "spell",
+   "id": 879,
+   "level": 20,
+   "icon": 135903
+  },
+  "Expert Campfire Kit": {
+   "kind": "item",
+   "id": 279974,
+   "level": null,
+   "icon": 7808148
+  },
+  "Explosive Trap": {
+   "kind": "spell",
+   "id": 13813,
+   "level": 34,
+   "icon": 135826
+  },
+  "Expose Armor": {
+   "kind": "spell",
+   "id": 8647,
+   "level": 14,
+   "icon": 132354
+  },
+  "Faction Banner": {
+   "kind": "item",
+   "id": 279972,
+   "level": null,
+   "icon": 132484
+  },
+  "Fade": {
+   "kind": "spell",
+   "id": 586,
+   "level": 8,
+   "icon": 135994
+  },
+  "Faerie Fire": {
+   "kind": "spell",
+   "id": 770,
+   "level": 18,
+   "icon": 136033
+  },
+  "Fear": {
+   "kind": "spell",
+   "id": 5782,
+   "level": 8,
+   "icon": 136183
+  },
+  "Fear Ward": {
+   "kind": "spell",
+   "id": 6346,
+   "level": 20,
+   "icon": 135902
+  },
+  "Feign Death": {
+   "kind": "spell",
+   "id": 5384,
+   "level": 30,
+   "icon": 132293
+  },
+  "Feint": {
+   "kind": "spell",
+   "id": 1966,
+   "level": 16,
+   "icon": 132294
+  },
+  "Fel Domination": {
+   "kind": "spell",
+   "id": 18708,
+   "level": null,
+   "icon": 136082
+  },
+  "Feral Charge": {
+   "kind": "spell",
+   "id": 1238122,
+   "level": 20,
+   "icon": 132183
+  },
+  "Fermenter": {
+   "kind": "item",
+   "id": 279970,
+   "level": null,
+   "icon": 3566827
+  },
+  "Ferocious Bite": {
+   "kind": "spell",
+   "id": 22568,
+   "level": 32,
+   "icon": 132127
+  },
+  "Field Guide": {
+   "kind": "item",
+   "id": 213563,
+   "level": null,
+   "icon": 133741
+  },
+  "Filet of Redgill": {
+   "kind": "item",
+   "id": 13930,
+   "level": null,
+   "icon": 133892
+  },
+  "Find Fish": {
+   "kind": "spell",
+   "id": 43308,
+   "level": null,
+   "icon": 133888
+  },
+  "Fire Blast": {
+   "kind": "spell",
+   "id": 2136,
+   "level": 6,
+   "icon": 135807
+  },
+  "Fire Nova": {
+   "kind": "spell",
+   "id": 408341,
+   "level": 12,
+   "icon": 135824
+  },
+  "Fire Nova Totem": {
+   "kind": "spell",
+   "id": 27623,
+   "level": null,
+   "icon": 135824
+  },
+  "Fire Oil": {
+   "kind": "item",
+   "id": 6371,
+   "level": null,
+   "icon": 134818
+  },
+  "Fireball": {
+   "kind": "spell",
+   "id": 133,
+   "level": 1,
+   "icon": 135812
+  },
+  "First Aid Kit": {
+   "kind": "item",
+   "id": 279968,
+   "level": null,
+   "icon": 133681
+  },
+  "Fish Bowl": {
+   "kind": "item",
+   "id": 279967,
+   "level": null,
+   "icon": 4777763
+  },
+  "Fishing Hut": {
+   "kind": "item",
+   "id": 279966,
+   "level": null,
+   "icon": 132930
+  },
+  "Fishing Rack": {
+   "kind": "item",
+   "id": 279965,
+   "level": null,
+   "icon": 1053359
+  },
+  "Flame Shock": {
+   "kind": "spell",
+   "id": 8050,
+   "level": 10,
+   "icon": 135813
+  },
+  "Flamestrike": {
+   "kind": "spell",
+   "id": 2120,
+   "level": 16,
+   "icon": 135826
+  },
+  "Flametongue Weapon": {
+   "kind": "spell",
+   "id": 8024,
+   "level": null,
+   "icon": 135814
+  },
+  "Flash Heal": {
+   "kind": "spell",
+   "id": 2061,
+   "level": 20,
+   "icon": 135907
+  },
+  "Flash of Light": {
+   "kind": "spell",
+   "id": 19750,
+   "level": 20,
+   "icon": 135907
+  },
+  "Flask of Natural Accuracy": {
+   "kind": "item",
+   "id": 274273,
+   "level": null,
+   "icon": 463902
+  },
+  "Flask of Natural Aggression": {
+   "kind": "item",
+   "id": 274274,
+   "level": null,
+   "icon": 463898
+  },
+  "Flask of Natural Precision": {
+   "kind": "item",
+   "id": 274275,
+   "level": null,
+   "icon": 463900
+  },
+  "Flask of Natural Swiftness": {
+   "kind": "item",
+   "id": 274276,
+   "level": null,
+   "icon": 463901
+  },
+  "Freezing Trap": {
+   "kind": "spell",
+   "id": 1499,
+   "level": 20,
+   "icon": 135834
+  },
+  "Frenzied Regeneration": {
+   "kind": "spell",
+   "id": 22842,
+   "level": 36,
+   "icon": 132091
+  },
+  "Frenzy Potion": {
+   "kind": "item",
+   "id": 250940,
+   "level": null,
+   "icon": 463922
+  },
+  "Frost Armor": {
+   "kind": "spell",
+   "id": 168,
+   "level": 1,
+   "icon": 135843
+  },
+  "Frost Nova": {
+   "kind": "spell",
+   "id": 122,
+   "level": 10,
+   "icon": 135848
+  },
+  "Frost Shock": {
+   "kind": "spell",
+   "id": 8056,
+   "level": 20,
+   "icon": 135849
+  },
+  "Frost Trap": {
+   "kind": "spell",
+   "id": 13809,
+   "level": 28,
+   "icon": 135840
+  },
+  "Frostbolt": {
+   "kind": "spell",
+   "id": 116,
+   "level": 4,
+   "icon": 135846
+  },
+  "Frostfire Bolt": {
+   "kind": "spell",
+   "id": 401502,
+   "level": 40,
+   "icon": 236217
+  },
+  "Garrote": {
+   "kind": "spell",
+   "id": 703,
+   "level": 14,
+   "icon": 132297
+  },
+  "Ghost Wolf": {
+   "kind": "spell",
+   "id": 2645,
+   "level": 20,
+   "icon": 136095
+  },
+  "Gift of the Wild": {
+   "kind": "spell",
+   "id": 21849,
+   "level": 50,
+   "icon": 136078
+  },
+  "Gingerbread Cookie": {
+   "kind": "item",
+   "id": 17197,
+   "level": null,
+   "icon": 134018
+  },
+  "Gloves of Spell Mastery": {
+   "kind": "item",
+   "id": 14146,
+   "level": null,
+   "icon": 132940
+  },
+  "Goblin Deviled Clams": {
+   "kind": "item",
+   "id": 5527,
+   "level": null,
+   "icon": 134431
+  },
+  "Gouge": {
+   "kind": "spell",
+   "id": 1776,
+   "level": 6,
+   "icon": 132155
+  },
+  "Grace of Air Totem": {
+   "kind": "spell",
+   "id": 8835,
+   "level": 42,
+   "icon": 136046
+  },
+  "Great Rage Potion": {
+   "kind": "item",
+   "id": 5633,
+   "level": null,
+   "icon": 134801
+  },
+  "Greater Discolored Healing Potion": {
+   "kind": "item",
+   "id": 247241,
+   "level": null,
+   "icon": 134818
+  },
+  "Greater Heal": {
+   "kind": "spell",
+   "id": 2060,
+   "level": 40,
+   "icon": 135913
+  },
+  "Greenhouse": {
+   "kind": "item",
+   "id": 279964,
+   "level": null,
+   "icon": 134188
+  },
+  "Growl": {
+   "kind": "spell",
+   "id": 2649,
+   "level": 1,
+   "icon": 132270
+  },
+  "Guard's Silvered Chain Helm": {
+   "kind": "item",
+   "id": 250529,
+   "level": null,
+   "icon": null
+  },
+  "Hammer of Justice": {
+   "kind": "spell",
+   "id": 853,
+   "level": 8,
+   "icon": 135963
+  },
+  "Hammer of the Righteous": {
+   "kind": "spell",
+   "id": 407632,
+   "level": 40,
+   "icon": 236253
+  },
+  "Heal": {
+   "kind": "spell",
+   "id": 2054,
+   "level": 16,
+   "icon": 135915
+  },
+  "Healing Stream Totem": {
+   "kind": "spell",
+   "id": 5394,
+   "level": 20,
+   "icon": 135127
+  },
+  "Healing Touch": {
+   "kind": "spell",
+   "id": 5185,
+   "level": 1,
+   "icon": 136041
+  },
+  "Healing Wave": {
+   "kind": "spell",
+   "id": 331,
+   "level": 1,
+   "icon": 136052
+  },
+  "Heavy Thorium Bar": {
+   "kind": "item",
+   "id": 251291,
+   "level": null,
+   "icon": 348540
+  },
+  "Heavy Timbermaw Belt": {
+   "kind": "item",
+   "id": 19043,
+   "level": null,
+   "icon": 132505
+  },
+  "Heavy Timbermaw Boots": {
+   "kind": "item",
+   "id": 19048,
+   "level": null,
+   "icon": 132553
+  },
+  "Hellfire": {
+   "kind": "spell",
+   "id": 1949,
+   "level": 30,
+   "icon": 135818
+  },
+  "Helm of the Great Chief": {
+   "kind": "item",
+   "id": 12636,
+   "level": null,
+   "icon": 133126
+  },
+  "Hemorrhage": {
+   "kind": "spell",
+   "id": 16511,
+   "level": 30,
+   "icon": 136168
+  },
+  "Herb Baked Egg": {
+   "kind": "item",
+   "id": 6888,
+   "level": null,
+   "icon": 132834
+  },
+  "Heroic Strike": {
+   "kind": "spell",
+   "id": 78,
+   "level": 1,
+   "icon": 132282
+  },
+  "Holy Fire": {
+   "kind": "spell",
+   "id": 14914,
+   "level": 20,
+   "icon": 135972
+  },
+  "Holy Light": {
+   "kind": "spell",
+   "id": 635,
+   "level": 1,
+   "icon": 135920
+  },
+  "Holy Nova": {
+   "kind": "spell",
+   "id": 15237,
+   "level": 20,
+   "icon": 135922
+  },
+  "Holy Shock": {
+   "kind": "spell",
+   "id": 1311606,
+   "level": 30,
+   "icon": 135972
+  },
+  "Holy Strike": {
+   "kind": "spell",
+   "id": 679,
+   "level": 6,
+   "icon": 626003
+  },
+  "Holy Wrath": {
+   "kind": "spell",
+   "id": 2812,
+   "level": 50,
+   "icon": 135902
+  },
+  "Howl of Terror": {
+   "kind": "spell",
+   "id": 5484,
+   "level": 40,
+   "icon": 136147
+  },
+  "Huge Thorium Battleaxe": {
+   "kind": "item",
+   "id": 12775,
+   "level": null,
+   "icon": 135581
+  },
+  "Hunter's Mark": {
+   "kind": "spell",
+   "id": 1130,
+   "level": 6,
+   "icon": 132212
+  },
+  "Hurricane": {
+   "kind": "spell",
+   "id": 16914,
+   "level": 40,
+   "icon": 136018
+  },
+  "Ice Armor": {
+   "kind": "spell",
+   "id": 7302,
+   "level": 30,
+   "icon": 135843
+  },
+  "Ice Barrier": {
+   "kind": "spell",
+   "id": 11426,
+   "level": 40,
+   "icon": 135988
+  },
+  "Ice Block": {
+   "kind": "spell",
+   "id": 11958,
+   "level": 4,
+   "icon": 135841
+  },
+  "Ice Deflector": {
+   "kind": "item",
+   "id": 4386,
+   "level": null,
+   "icon": 132995
+  },
+  "Ice Lance": {
+   "kind": "spell",
+   "id": 1312002,
+   "level": 20,
+   "icon": 135844
+  },
+  "Immolate": {
+   "kind": "spell",
+   "id": 348,
+   "level": 1,
+   "icon": 135817
+  },
+  "Immolation Trap": {
+   "kind": "spell",
+   "id": 13795,
+   "level": 16,
+   "icon": 135813
+  },
+  "Improved Counterspell": {
+   "kind": "spell",
+   "id": 11255,
+   "level": 1,
+   "icon": 135856
+  },
+  "Improved Ghost Wolf": {
+   "kind": "spell",
+   "id": 16262,
+   "level": null,
+   "icon": 136095
+  },
+  "Incense Candle": {
+   "kind": "item",
+   "id": 279962,
+   "level": null,
+   "icon": 133751
+  },
+  "Incinerate": {
+   "kind": "spell",
+   "id": 412758,
+   "level": 40,
+   "icon": 135789
+  },
+  "Inner Fire": {
+   "kind": "spell",
+   "id": 588,
+   "level": 12,
+   "icon": 135926
+  },
+  "Inner Focus": {
+   "kind": "spell",
+   "id": 14751,
+   "level": null,
+   "icon": 135863
+  },
+  "Insect Swarm": {
+   "kind": "spell",
+   "id": 5570,
+   "level": 20,
+   "icon": 136045
+  },
+  "Instant Poison": {
+   "kind": "item",
+   "id": 6947,
+   "level": null,
+   "icon": 132273
+  },
+  "Intercept": {
+   "kind": "spell",
+   "id": 20252,
+   "level": 30,
+   "icon": 132307
+  },
+  "Invulnerable Mail": {
+   "kind": "item",
+   "id": 12641,
+   "level": null,
+   "icon": 132629
+  },
+  "Iron Oven": {
+   "kind": "item",
+   "id": 279982,
+   "level": null,
+   "icon": 629055
+  },
+  "Journeyman Campfire Kit": {
+   "kind": "item",
+   "id": 279961,
+   "level": null,
+   "icon": 7808148
+  },
+  "Judgement": {
+   "kind": "spell",
+   "id": 20271,
+   "level": 4,
+   "icon": 135959
+  },
+  "Kaldorei Spider Kabob": {
+   "kind": "item",
+   "id": 5472,
+   "level": null,
+   "icon": 134024
+  },
+  "Kick": {
+   "kind": "spell",
+   "id": 1766,
+   "level": 12,
+   "icon": 132219
+  },
+  "Kidney Shot": {
+   "kind": "spell",
+   "id": 408,
+   "level": 30,
+   "icon": 132298
+  },
+  "Lacerate": {
+   "kind": "spell",
+   "id": 414647,
+   "level": 1,
+   "icon": 132131
+  },
+  "Lava Burst": {
+   "kind": "spell",
+   "id": 408490,
+   "level": 40,
+   "icon": 237582
+  },
+  "Lay on Hands": {
+   "kind": "spell",
+   "id": 633,
+   "level": 10,
+   "icon": 135928
+  },
+  "Leader of the Pack": {
+   "kind": "spell",
+   "id": 17007,
+   "level": null,
+   "icon": 136112
+  },
+  "Lean Wolf Steak": {
+   "kind": "item",
+   "id": 12209,
+   "level": null,
+   "icon": 134003
+  },
+  "Lesser Heal": {
+   "kind": "spell",
+   "id": 2050,
+   "level": 1,
+   "icon": 135929
+  },
+  "Lesser Healing Wave": {
+   "kind": "spell",
+   "id": 8004,
+   "level": 20,
+   "icon": 136043
+  },
+  "Life Tap": {
+   "kind": "spell",
+   "id": 1454,
+   "level": 6,
+   "icon": 136126
+  },
+  "Lightning Bolt": {
+   "kind": "spell",
+   "id": 403,
+   "level": 1,
+   "icon": 136048
+  },
+  "Lightning Shield": {
+   "kind": "spell",
+   "id": 324,
+   "level": 8,
+   "icon": 136051
+  },
+  "Lightwell": {
+   "kind": "spell",
+   "id": 724,
+   "level": 40,
+   "icon": 135980
+  },
+  "Lodestone": {
+   "kind": "item",
+   "id": 279960,
+   "level": null,
+   "icon": 134419
+  },
+  "Longjaw Mud Snapper": {
+   "kind": "item",
+   "id": 4592,
+   "level": null,
+   "icon": 133918
+  },
+  "Lotus Claw": {
+   "kind": "spell",
+   "id": 1294053,
+   "level": null,
+   "icon": 136243
+  },
+  "Mage Armor": {
+   "kind": "spell",
+   "id": 6117,
+   "level": 34,
+   "icon": 135991
+  },
+  "Major Healing Potion": {
+   "kind": "item",
+   "id": 13446,
+   "level": null,
+   "icon": 134834
+  },
+  "Major Mana Potion": {
+   "kind": "item",
+   "id": 13444,
+   "level": null,
+   "icon": 134856
+  },
+  "Malleable Essence of Nature": {
+   "kind": "item",
+   "id": 274030,
+   "level": null,
+   "icon": 132119
+  },
+  "Mana Shield": {
+   "kind": "spell",
+   "id": 1463,
+   "level": 20,
+   "icon": 136153
+  },
+  "Mana Tide Totem": {
+   "kind": "spell",
+   "id": 16190,
+   "level": 40,
+   "icon": 135861
+  },
+  "Mana Well": {
+   "kind": "item",
+   "id": 279956,
+   "level": null,
+   "icon": 135738
+  },
+  "Mark of the Wild": {
+   "kind": "spell",
+   "id": 1126,
+   "level": 1,
+   "icon": 136078
+  },
+  "Maul": {
+   "kind": "spell",
+   "id": 6807,
+   "level": 10,
+   "icon": 132136
+  },
+  "Mend Pet": {
+   "kind": "spell",
+   "id": 136,
+   "level": 12,
+   "icon": 132179
+  },
+  "Mender's Potion": {
+   "kind": "item",
+   "id": 250946,
+   "level": null,
+   "icon": 463925
+  },
+  "Mind Blast": {
+   "kind": "spell",
+   "id": 8092,
+   "level": 10,
+   "icon": 136224
+  },
+  "Mind Flay": {
+   "kind": "spell",
+   "id": 15407,
+   "level": 20,
+   "icon": 136208
+  },
+  "Minor Healing Potion": {
+   "kind": "item",
+   "id": 118,
+   "level": null,
+   "icon": 134829
+  },
+  "Minor Mana Potion": {
+   "kind": "item",
+   "id": 2455,
+   "level": null,
+   "icon": 134850
+  },
+  "Minor Recombobulator": {
+   "kind": "item",
+   "id": 4381,
+   "level": null,
+   "icon": 133001
+  },
+  "Mithril Blacksmith Hammer": {
+   "kind": "item",
+   "id": 285280,
+   "level": null,
+   "icon": 133057
+  },
+  "Mithril Headed Trout": {
+   "kind": "spell",
+   "id": 20916,
+   "level": null,
+   "icon": 136192
+  },
+  "Mocking Blow": {
+   "kind": "spell",
+   "id": 694,
+   "level": 16,
+   "icon": 132350
+  },
+  "Molten Armor": {
+   "kind": "spell",
+   "id": 428741,
+   "level": null,
+   "icon": 132221
+  },
+  "Molten Foundry": {
+   "kind": "item",
+   "id": 279952,
+   "level": null,
+   "icon": 5931157
+  },
+  "Mongoose Bite": {
+   "kind": "spell",
+   "id": 1495,
+   "level": 16,
+   "icon": 132215
+  },
+  "Moonfire": {
+   "kind": "spell",
+   "id": 8921,
+   "level": 4,
+   "icon": 136096
+  },
+  "Moonkin Form": {
+   "kind": "spell",
+   "id": 24858,
+   "level": 40,
+   "icon": 136036
+  },
+  "Mortal Strike": {
+   "kind": "spell",
+   "id": 12294,
+   "level": 40,
+   "icon": 132355
+  },
+  "Multi-Shot": {
+   "kind": "spell",
+   "id": 2643,
+   "level": 18,
+   "icon": 132330
+  },
+  "Mutilate": {
+   "kind": "spell",
+   "id": 1310705,
+   "level": 30,
+   "icon": 236270
+  },
+  "Nature Protection Potion": {
+   "kind": "item",
+   "id": 6052,
+   "level": null,
+   "icon": 134717
+  },
+  "Nature's Grasp": {
+   "kind": "spell",
+   "id": 16689,
+   "level": 10,
+   "icon": 136063
+  },
+  "Omen of Clarity": {
+   "kind": "spell",
+   "id": 16864,
+   "level": 20,
+   "icon": 136017
+  },
+  "Overpower": {
+   "kind": "spell",
+   "id": 7384,
+   "level": 12,
+   "icon": 132223
+  },
+  "Penance": {
+   "kind": "spell",
+   "id": 402174,
+   "level": 30,
+   "icon": 237545
+  },
+  "Pick Lock": {
+   "kind": "spell",
+   "id": 1804,
+   "level": null,
+   "icon": 136058
+  },
+  "Pick Pocket": {
+   "kind": "spell",
+   "id": 921,
+   "level": 4,
+   "icon": 133644
+  },
+  "Plague Doctor's Laboratory": {
+   "kind": "item",
+   "id": 279951,
+   "level": null,
+   "icon": 4626285
+  },
+  "Plated Armorfish": {
+   "kind": "item",
+   "id": 286152,
+   "level": null,
+   "icon": 133890
+  },
+  "Poached Sunscale Salmon": {
+   "kind": "item",
+   "id": 13932,
+   "level": null,
+   "icon": 133905
+  },
+  "Polymorph": {
+   "kind": "spell",
+   "id": 118,
+   "level": 8,
+   "icon": 136071
+  },
+  "Portal of Summoning": {
+   "kind": "spell",
+   "id": 437169,
+   "level": 60,
+   "icon": 134423
+  },
+  "Pounce": {
+   "kind": "spell",
+   "id": 9005,
+   "level": 36,
+   "icon": 132142
+  },
+  "Power Word: Fortitude": {
+   "kind": "spell",
+   "id": 1243,
+   "level": 1,
+   "icon": 135987
+  },
+  "Power Word: Shield": {
+   "kind": "spell",
+   "id": 17,
+   "level": 6,
+   "icon": 135940
+  },
+  "Powerful Poultice": {
+   "kind": "item",
+   "id": 255719,
+   "level": null,
+   "icon": 4554332
+  },
+  "Prayer of Healing": {
+   "kind": "spell",
+   "id": 596,
+   "level": 30,
+   "icon": 135943
+  },
+  "Prayer of Mending": {
+   "kind": "spell",
+   "id": 401859,
+   "level": 40,
+   "icon": 135944
+  },
+  "Presence of Mind": {
+   "kind": "spell",
+   "id": 12043,
+   "level": 1,
+   "icon": 136031
+  },
+  "Primal Bite": {
+   "kind": "spell",
+   "id": 407995,
+   "level": 25,
+   "icon": 132278
+  },
+  "Pristine Circlet": {
+   "kind": "item",
+   "id": 253949,
+   "level": null,
+   "icon": null
+  },
+  "Prowl": {
+   "kind": "spell",
+   "id": 5215,
+   "level": 20,
+   "icon": 132089
+  },
+  "Psychic Scream": {
+   "kind": "spell",
+   "id": 8122,
+   "level": 14,
+   "icon": 136184
+  },
+  "Pummel": {
+   "kind": "spell",
+   "id": 6552,
+   "level": 38,
+   "icon": 132938
+  },
+  "Pyroblast": {
+   "kind": "spell",
+   "id": 11366,
+   "level": 20,
+   "icon": 135808
+  },
+  "Rain of Fire": {
+   "kind": "spell",
+   "id": 5740,
+   "level": 20,
+   "icon": 136186
+  },
+  "Rake": {
+   "kind": "spell",
+   "id": 1822,
+   "level": 24,
+   "icon": 132122
+  },
+  "Rapid Fire": {
+   "kind": "spell",
+   "id": 3045,
+   "level": 26,
+   "icon": 132208
+  },
+  "Raptor Strike": {
+   "kind": "spell",
+   "id": 2973,
+   "level": 1,
+   "icon": 132223
+  },
+  "Ravage": {
+   "kind": "spell",
+   "id": 6785,
+   "level": 32,
+   "icon": 132141
+  },
+  "Reagent Bot": {
+   "kind": "item",
+   "id": 279950,
+   "level": null,
+   "icon": 133871
+  },
+  "Rebirth": {
+   "kind": "spell",
+   "id": 20484,
+   "level": 20,
+   "icon": 136080
+  },
+  "Recklessness": {
+   "kind": "spell",
+   "id": 1719,
+   "level": 50,
+   "icon": 132109
+  },
+  "Regrowth": {
+   "kind": "spell",
+   "id": 8936,
+   "level": 12,
+   "icon": 136085
+  },
+  "Reincarnation": {
+   "kind": "spell",
+   "id": 20608,
+   "level": 30,
+   "icon": 136080
+  },
+  "Rejuvenation": {
+   "kind": "spell",
+   "id": 774,
+   "level": 4,
+   "icon": 136081
+  },
+  "Rend": {
+   "kind": "spell",
+   "id": 772,
+   "level": 4,
+   "icon": 132155
+  },
+  "Renew": {
+   "kind": "spell",
+   "id": 139,
+   "level": 8,
+   "icon": 135953
+  },
+  "Repair Bot": {
+   "kind": "item",
+   "id": 279949,
+   "level": null,
+   "icon": 1336885
+  },
+  "Resurrection": {
+   "kind": "spell",
+   "id": 2006,
+   "level": 10,
+   "icon": 135955
+  },
+  "Retaliation": {
+   "kind": "spell",
+   "id": 20230,
+   "level": 20,
+   "icon": 132336
+  },
+  "Retribution Aura": {
+   "kind": "spell",
+   "id": 7294,
+   "level": 16,
+   "icon": 135873
+  },
+  "Revenge": {
+   "kind": "spell",
+   "id": 6572,
+   "level": 14,
+   "icon": 132353
+  },
+  "Revive": {
+   "kind": "spell",
+   "id": 437138,
+   "level": 12,
+   "icon": 132132
+  },
+  "Righteous Fury": {
+   "kind": "spell",
+   "id": 25780,
+   "level": 16,
+   "icon": 135962
+  },
+  "Rip": {
+   "kind": "spell",
+   "id": 1079,
+   "level": 20,
+   "icon": 132152
+  },
+  "Riptide": {
+   "kind": "spell",
+   "id": 408521,
+   "level": 40,
+   "icon": 252995
+  },
+  "Ritual of Summoning": {
+   "kind": "spell",
+   "id": 698,
+   "level": 20,
+   "icon": 136223
+  },
+  "Roasted Boar Meat": {
+   "kind": "item",
+   "id": 2681,
+   "level": null,
+   "icon": 133974
+  },
+  "Robe of the Archmage": {
+   "kind": "item",
+   "id": 14152,
+   "level": null,
+   "icon": 132679
+  },
+  "Robe of the Void": {
+   "kind": "item",
+   "id": 14153,
+   "level": null,
+   "icon": 132692
+  },
+  "Rock Garden": {
+   "kind": "item",
+   "id": 279948,
+   "level": null,
+   "icon": 134385
+  },
+  "Rockbiter Weapon": {
+   "kind": "spell",
+   "id": 8017,
+   "level": null,
+   "icon": 136086
+  },
+  "Rupture": {
+   "kind": "spell",
+   "id": 1943,
+   "level": 20,
+   "icon": 132302
+  },
+  "SAF-T Ultra Precision Scope": {
+   "kind": "item",
+   "id": 279272,
+   "level": null,
+   "icon": 3610512
+  },
+  "Safe Fall": {
+   "kind": "spell",
+   "id": 1860,
+   "level": null,
+   "icon": 132914
+  },
+  "Sap": {
+   "kind": "spell",
+   "id": 6770,
+   "level": 10,
+   "icon": 132310
+  },
+  "Scorch": {
+   "kind": "spell",
+   "id": 2948,
+   "level": 22,
+   "icon": 135827
+  },
+  "Scorpid Sting": {
+   "kind": "spell",
+   "id": 3043,
+   "level": 22,
+   "icon": 132169
+  },
+  "Seal of Command": {
+   "kind": "spell",
+   "id": 20375,
+   "level": 20,
+   "icon": 132347
+  },
+  "Seal of Fury": {
+   "kind": "spell",
+   "id": 1311649,
+   "level": 10,
+   "icon": 135957
+  },
+  "Seal of Righteousness": {
+   "kind": "spell",
+   "id": 20154,
+   "level": 1,
+   "icon": 132325
+  },
+  "Seal of the Crusader": {
+   "kind": "spell",
+   "id": 21082,
+   "level": 6,
+   "icon": 135924
+  },
+  "Searing Pain": {
+   "kind": "spell",
+   "id": 5676,
+   "level": 18,
+   "icon": 135827
+  },
+  "Searing Totem": {
+   "kind": "spell",
+   "id": 3599,
+   "level": 10,
+   "icon": 135825
+  },
+  "Seed Hybridizer": {
+   "kind": "item",
+   "id": 279947,
+   "level": null,
+   "icon": 656440
+  },
+  "Serpent Sting": {
+   "kind": "spell",
+   "id": 1978,
+   "level": 4,
+   "icon": 132204
+  },
+  "Shadow Bolt": {
+   "kind": "spell",
+   "id": 686,
+   "level": 1,
+   "icon": 136197
+  },
+  "Shadow Word: Death": {
+   "kind": "spell",
+   "id": 1309595,
+   "level": 32,
+   "icon": 136149
+  },
+  "Shadow Word: Pain": {
+   "kind": "spell",
+   "id": 589,
+   "level": 4,
+   "icon": 136207
+  },
+  "Shadowburn": {
+   "kind": "spell",
+   "id": 17877,
+   "level": 20,
+   "icon": 136191
+  },
+  "Shadowform": {
+   "kind": "spell",
+   "id": 15473,
+   "level": null,
+   "icon": 136200
+  },
+  "Shadowmeld": {
+   "kind": "spell",
+   "id": 20580,
+   "level": null,
+   "icon": 132089
+  },
+  "Sharpening Wheel": {
+   "kind": "item",
+   "id": 279944,
+   "level": null,
+   "icon": 135243
+  },
+  "Shield Bash": {
+   "kind": "spell",
+   "id": 72,
+   "level": 12,
+   "icon": 132357
+  },
+  "Shield Block": {
+   "kind": "spell",
+   "id": 2565,
+   "level": 16,
+   "icon": 132110
+  },
+  "Shield Wall": {
+   "kind": "spell",
+   "id": 871,
+   "level": 28,
+   "icon": 132362
+  },
+  "Shred": {
+   "kind": "spell",
+   "id": 5221,
+   "level": 22,
+   "icon": 136231
+  },
+  "Silence": {
+   "kind": "spell",
+   "id": 6726,
+   "level": null,
+   "icon": 135975
+  },
+  "Simple Poultice": {
+   "kind": "item",
+   "id": 255716,
+   "level": null,
+   "icon": 4554333
+  },
+  "Sinister Strike": {
+   "kind": "spell",
+   "id": 1752,
+   "level": 1,
+   "icon": 136189
+  },
+  "Siphon Life": {
+   "kind": "spell",
+   "id": 18265,
+   "level": 30,
+   "icon": 136188
+  },
+  "Slam": {
+   "kind": "spell",
+   "id": 1240193,
+   "level": 20,
+   "icon": 132340
+  },
+  "Slice and Dice": {
+   "kind": "spell",
+   "id": 5171,
+   "level": 10,
+   "icon": 132306
+  },
+  "Slitherskin Mackerel": {
+   "kind": "item",
+   "id": 787,
+   "level": null,
+   "icon": 133910
+  },
+  "Slow Fall": {
+   "kind": "spell",
+   "id": 130,
+   "level": 12,
+   "icon": 135992
+  },
+  "Smite": {
+   "kind": "spell",
+   "id": 585,
+   "level": 1,
+   "icon": 135924
+  },
+  "Sniper Shot": {
+   "kind": "spell",
+   "id": 1310687,
+   "level": 40,
+   "icon": 1412205
+  },
+  "Soul Fire": {
+   "kind": "spell",
+   "id": 6353,
+   "level": 48,
+   "icon": 135808
+  },
+  "Soul Link": {
+   "kind": "spell",
+   "id": 19028,
+   "level": 40,
+   "icon": 136160
+  },
+  "Spellblasting Potion": {
+   "kind": "item",
+   "id": 250934,
+   "level": null,
+   "icon": 463921
+  },
+  "Spirit of Redemption": {
+   "kind": "spell",
+   "id": 20711,
+   "level": null,
+   "icon": 132864
+  },
+  "Sprint": {
+   "kind": "spell",
+   "id": 2983,
+   "level": 10,
+   "icon": 132307
+  },
+  "Starfire": {
+   "kind": "spell",
+   "id": 2912,
+   "level": 20,
+   "icon": 135753
+  },
+  "Stealth": {
+   "kind": "spell",
+   "id": 1784,
+   "level": 1,
+   "icon": 132320
+  },
+  "Stoneclaw Totem": {
+   "kind": "spell",
+   "id": 5730,
+   "level": 8,
+   "icon": 136097
+  },
+  "Stonescale Oil": {
+   "kind": "item",
+   "id": 13423,
+   "level": null,
+   "icon": 134848
+  },
+  "Stoneskin Totem": {
+   "kind": "spell",
+   "id": 8071,
+   "level": 4,
+   "icon": 136098
+  },
+  "Storm Gauntlets": {
+   "kind": "item",
+   "id": 12632,
+   "level": null,
+   "icon": 132964
+  },
+  "Stormstrike": {
+   "kind": "spell",
+   "id": 17364,
+   "level": 40,
+   "icon": 132314
+  },
+  "Strength of Earth Totem": {
+   "kind": "spell",
+   "id": 8075,
+   "level": 10,
+   "icon": 136023
+  },
+  "Summon Dreadsteed": {
+   "kind": "spell",
+   "id": 23161,
+   "level": null,
+   "icon": 132238
+  },
+  "Summon Felsteed": {
+   "kind": "spell",
+   "id": 5784,
+   "level": null,
+   "icon": 136103
+  },
+  "Summon Incubus": {
+   "kind": "spell",
+   "id": 713,
+   "level": 20,
+   "icon": 4352492
+  },
+  "Summon Succubus": {
+   "kind": "spell",
+   "id": 712,
+   "level": 20,
+   "icon": 136220
+  },
+  "Summon Warhorse": {
+   "kind": "spell",
+   "id": 13819,
+   "level": null,
+   "icon": 136103
+  },
+  "Sunder Armor": {
+   "kind": "spell",
+   "id": 7386,
+   "level": 10,
+   "icon": 132363
+  },
+  "Surgical Tourniquet": {
+   "kind": "item",
+   "id": 255722,
+   "level": null,
+   "icon": 133679
+  },
+  "Sweetpaw Jam": {
+   "kind": "item",
+   "id": 267341,
+   "level": null,
+   "icon": 133748
+  },
+  "Swim Speed Potion": {
+   "kind": "item",
+   "id": 6372,
+   "level": null,
+   "icon": 134754
+  },
+  "Swipe": {
+   "kind": "spell",
+   "id": 1264494,
+   "level": 12,
+   "icon": 134296
+  },
+  "Tactical Mastery": {
+   "kind": "spell",
+   "id": 1310185,
+   "level": 14,
+   "icon": 136031
+  },
+  "Tame Beast": {
+   "kind": "spell",
+   "id": 1515,
+   "level": null,
+   "icon": 132164
+  },
+  "Taunt": {
+   "kind": "spell",
+   "id": 355,
+   "level": 10,
+   "icon": 136080
+  },
+  "Teleport: Dalaran": {
+   "kind": "spell",
+   "id": 1297659,
+   "level": 50,
+   "icon": 1536440
+  },
+  "Teleport: Moonglade": {
+   "kind": "spell",
+   "id": 18960,
+   "level": 10,
+   "icon": 135758
+  },
+  "Thorns": {
+   "kind": "spell",
+   "id": 467,
+   "level": 6,
+   "icon": 136104
+  },
+  "Thunder Clap": {
+   "kind": "spell",
+   "id": 6343,
+   "level": 6,
+   "icon": 136105
+  },
+  "Tiger's Fury": {
+   "kind": "spell",
+   "id": 417045,
+   "level": 1,
+   "icon": 132242
+  },
+  "Totemic Projection": {
+   "kind": "spell",
+   "id": 437009,
+   "level": 22,
+   "icon": 538574
+  },
+  "Totemic Recall": {
+   "kind": "spell",
+   "id": 36936,
+   "level": 20,
+   "icon": 310733
+  },
+  "Toxin Study": {
+   "kind": "item",
+   "id": 279940,
+   "level": null,
+   "icon": 463860
+  },
+  "Track Beasts": {
+   "kind": "spell",
+   "id": 1494,
+   "level": 1,
+   "icon": 132328
+  },
+  "Tranquility": {
+   "kind": "spell",
+   "id": 740,
+   "level": 30,
+   "icon": 136107
+  },
+  "Trapper's Workbench": {
+   "kind": "item",
+   "id": 279938,
+   "level": null,
+   "icon": 5948139
+  },
+  "Travel Form": {
+   "kind": "spell",
+   "id": 783,
+   "level": 30,
+   "icon": 132144
+  },
+  "Tree of Life": {
+   "kind": "spell",
+   "id": 439733,
+   "level": null,
+   "icon": 132145
+  },
+  "Truefaith Vestments": {
+   "kind": "item",
+   "id": 14154,
+   "level": null,
+   "icon": 132672
+  },
+  "Turtle Scale Breastplate": {
+   "kind": "item",
+   "id": 8189,
+   "level": null,
+   "icon": 132634
+  },
+  "Vampiric Embrace": {
+   "kind": "spell",
+   "id": 15286,
+   "level": 30,
+   "icon": 136230
+  },
+  "Vanish": {
+   "kind": "spell",
+   "id": 1856,
+   "level": 22,
+   "icon": 132331
+  },
+  "Victory Rush": {
+   "kind": "spell",
+   "id": 402927,
+   "level": 20,
+   "icon": 132342
+  },
+  "Viper Sting": {
+   "kind": "spell",
+   "id": 3034,
+   "level": 36,
+   "icon": 132157
+  },
+  "Voidwalker": {
+   "kind": "spell",
+   "id": 5108,
+   "level": null,
+   "icon": 136221
+  },
+  "Volley": {
+   "kind": "spell",
+   "id": 1510,
+   "level": 40,
+   "icon": 132222
+  },
+  "Water Shield": {
+   "kind": "spell",
+   "id": 408510,
+   "level": 20,
+   "icon": 132315
+  },
+  "Whirlwind": {
+   "kind": "spell",
+   "id": 1680,
+   "level": 36,
+   "icon": 132369
+  },
+  "Wild Growth": {
+   "kind": "spell",
+   "id": 408120,
+   "level": 40,
+   "icon": 236153
+  },
+  "Wild Leather Armor Kit": {
+   "kind": "item",
+   "id": 279258,
+   "level": null,
+   "icon": 4632799
+  },
+  "Wildthorn Mail": {
+   "kind": "item",
+   "id": 12624,
+   "level": null,
+   "icon": 132634
+  },
+  "Windfury Totem": {
+   "kind": "spell",
+   "id": 8512,
+   "level": 32,
+   "icon": 136114
+  },
+  "Windfury Weapon": {
+   "kind": "spell",
+   "id": 8232,
+   "level": 30,
+   "icon": 136018
+  },
+  "Wing Clip": {
+   "kind": "spell",
+   "id": 2974,
+   "level": 12,
+   "icon": 132309
+  },
+  "Woolen Tourniquet": {
+   "kind": "item",
+   "id": 255720,
+   "level": null,
+   "icon": 133675
+  },
+  "Wrath": {
+   "kind": "spell",
+   "id": 5176,
+   "level": 1,
+   "icon": 136006
+  },
+  "Wyvern Sting": {
+   "kind": "spell",
+   "id": 24335,
+   "level": null,
+   "icon": 135125
+  }
+ }
+}
