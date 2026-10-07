@@ -26,9 +26,11 @@ actually build a class page:
     | a | b |           pipe tables
     1. / -              lists
     [[Ability]]         an ability chip. Named in guides/_data/spells.json: a link to the
-                        ability with its icon and a CSS-only tooltip. Not named there: the
-                        plain styled chip it has always been, so a removed ability or a
-                        pet name never becomes a dead link.
+                        ability with its icon and a rich hover/focus tooltip -- large icon,
+                        cast, cost, range, cooldown, duration, description -- built as real
+                        inline DOM and shown by CSS alone. Not named there: the plain styled
+                        chip it has always been, so a removed ability or a pet name never
+                        becomes a dead link.
     `Talent`            a talent. Linked from the same index and given the same tooltip,
                         and its icon, but it keeps its <code> look: the boxed
                         monospace already separates a talent from an ability, so the
@@ -51,7 +53,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "guides" / "_src"
 OUT = ROOT / "guides" / "wow-forever"
 DATA = ROOT / "guides" / "_data"
-STAMP = "20261007-3"
+STAMP = "20261007-4"
 
 # ---- ability chips: where a chip points, and where its icon comes from ----------
 # The exact Wowhead Forever URL shape is UNCONFIRMED. These two templates are the only
@@ -65,6 +67,15 @@ ITEM_URL = "https://www.wowhead.com/forever/item={id}"
 ICON_URL = "/assets/spell-icons/{icon}.webp"
 ICON_DIR = ROOT / "assets" / "spell-icons"
 KIND_LABEL = {"spell": "Spell", "item": "Item", "talent": "Talent"}
+# The tooltip's labelled rows, in the order a client tooltip shows them. The index holds
+# these PRE-FORMATTED ("Instant", "30 Mana", "30 yd range") -- this generator never
+# composes a value, so a units or wording change is one file away and not this one. Any
+# key may be absent or null and that row is simply not drawn: a spell with no cooldown
+# must show no cooldown row, never an empty one. Before tools/build_spell_index.py began
+# emitting them the whole set was missing, which degrades to name + meta -- exactly what
+# the old one-line tooltip said -- so this list is safe to extend ahead of the data.
+TIP_ROWS = (("cast", "Cast"), ("cost", "Cost"), ("range", "Range"),
+            ("cooldown", "Cooldown"), ("duration", "Duration"))
 
 # Filled by load_spells() from guides/_data/spells.json before anything renders. Empty is
 # a supported state and the only one there was before 2026-10-07: every chip falls back
@@ -183,6 +194,87 @@ def load_spells():
         return
 
 
+def field(entry, key):
+    """One pre-formatted display string from the index, or None if there is nothing to show.
+
+    The index is generated, so a key may be absent entirely (an older index), present and
+    null (the field does not apply to this spell), or blank. All three mean the same thing
+    to a tooltip -- draw no row -- and collapsing them here is what stops every caller
+    repeating the three-way check. `desc` is additionally null whenever the client's
+    templating could not be fully resolved, so a half-resolved "$s1 damage" string never
+    reaches a page: this generator does not have to detect one.
+    """
+    value = entry.get(key)
+    if not isinstance(value, str):
+        return None
+    value = value.strip()
+    return value or None
+
+
+def tip_markup(raw, entry, kind):
+    """The rich tooltip, as real DOM nested inside the chip's own anchor.
+
+    Until 2026-10-07 this was a data-tip attribute drawn by [data-tip]::after with
+    content: attr(data-tip). A pseudo-element's content is ONE text string -- it cannot
+    hold the 40px icon or a row per field -- so a richer tooltip was never a styling
+    change; it had to become markup. The reason markup was avoided no longer holds:
+    Null_Ossuary's chamberlain/brain/corpus.py reads these generated pages for
+    rel="canonical" and <title> only and chunks guides/_src/*.md, so tooltip text in the
+    DOM is never indexed and there is no retrieval cost to paying for it here.
+
+    Every element is INLINE -- span, b, i -- because the host is an <a>, and for a talent
+    an <a> nested inside a <code>. A <div>, <table> or <dl> in there is invalid HTML and
+    the parser would hoist it straight out of the anchor, taking the tooltip with it.
+    Layout is entirely CSS's: position: absolute blockifies .tip, so css/guides.css lays
+    the rows out as flex without a single block element in the markup.
+
+    aria-hidden="true" goes on the wrapper, not the parts. The tooltip restates what the
+    link already points at, so to a screen reader it is pure duplication; excluding it
+    also keeps the anchor's accessible name the ability name alone, which is what it was
+    before any of this.
+    """
+    out = ['<span class="tip" aria-hidden="true"><span class="tip-head">']
+
+    # The large icon. The same file the inline chip icon uses -- /assets/spell-icons/ is
+    # the only origin img-src 'self' permits -- rendered at 40px instead of 18px, so it
+    # costs no extra request.
+    icon = entry.get("icon")
+    if isinstance(icon, int):
+        out.append(f'<img class="tip-icon" src="{ICON_URL.format(icon=icon)}"'
+                   ' alt="" width="40" height="40" loading="lazy" decoding="async">')
+
+    out.append('<span class="tip-id">'
+               f'<b class="tip-name">{html.escape(raw, quote=False)}</b>')
+    # The meta line carries what is too short to deserve a row of its own. It is the old
+    # one-line tooltip with the school appended, and it is dropped whole if the index
+    # knows neither a level nor a school and the kind label is all that would be left.
+    meta = []
+    if isinstance(entry.get("level"), int):
+        meta.append(f"Level {entry['level']}")
+    meta.append(KIND_LABEL.get(kind, kind.title()))
+    school = field(entry, "school")
+    if school:
+        meta.append(school)
+    joined = html.escape(" · ".join(meta), quote=False)
+    out.append(f'<i class="tip-meta">{joined}</i></span></span>')
+
+    # One row per field the index actually has. A missing key is not an empty row: a
+    # spell with no cooldown shows no cooldown line at all, which is also what makes the
+    # pre-contract index (kind/id/level/icon only) degrade to name + meta on its own.
+    for key, label in TIP_ROWS:
+        value = field(entry, key)
+        if value:
+            out.append(f'<span class="tip-row"><i class="tip-k">{label}</i>'
+                       f'<i class="tip-v">{html.escape(value, quote=False)}</i></span>')
+
+    desc = field(entry, "desc")
+    if desc:
+        out.append(f'<span class="tip-desc">{html.escape(desc, quote=False)}</span>')
+
+    out.append('</span>')
+    return "".join(out)
+
+
 def talent(m):
     """A `backtick` term, linked when the index knows it.
 
@@ -191,7 +283,8 @@ def talent(m):
     look would erase information the prose is relying on. The boxed monospace is what
     carries that line -- against the chip's sans-serif accent it is unmistakable -- so
     the icon rides along without blurring anything. The anchor goes INSIDE the <code>
-    to keep the box around both.
+    to keep the box around both, and the tooltip inside the anchor, one level deeper
+    than a chip's -- which is why it is built from inline elements only.
     """
     raw = html.unescape(m.group(1))
     name = html.escape(raw, quote=False)
@@ -207,11 +300,6 @@ def talent(m):
         CHIP_STATS["code_plain"] += 1
         return f"<code>{name}</code>"
 
-    tip = [raw]
-    if isinstance(entry.get("level"), int):
-        tip.append(f"Level {entry['level']}")
-    tip.append(KIND_LABEL.get(kind, kind.title()))
-    tip = html.escape(" \u00b7 ".join(tip), quote=True)
     href = html.escape(template.format(id=ident), quote=True)
 
     icon, img = entry.get("icon"), ""
@@ -222,22 +310,23 @@ def talent(m):
                ' alt="" width="16" height="16" loading="lazy" decoding="async">')
 
     CHIP_STATS["code_linked"] += 1
-    return (f'<code><a class="tl" href="{href}" target="_blank" rel="noopener"'
-            f' data-tip="{tip}">{img}{name}</a></code>')
+    return (f'<code><a class="tl" href="{href}" target="_blank" rel="noopener">'
+            f'{img}{name}{tip_markup(raw, entry, kind)}</a></code>')
 
 
 def chip(m):
     """Render one [[Ability]] chip.
 
-    With an entry: an anchor carrying the icon, the visible name, the link and a
-    data-tip. WITHOUT an entry: byte-for-byte what this generator emitted before the
-    index existed. 8 of the 433 chips are abilities Forever removed, plus pet names, and
-    a dead link or a broken image is worse than a chip that is merely not clickable.
+    With an entry: an anchor carrying the small inline icon, the visible name, the link
+    and the rich tooltip. WITHOUT an entry: byte-for-byte what this generator emitted
+    before the index existed. 8 of the 433 chips are abilities Forever removed, plus pet
+    names, and a dead link or a broken image is worse than a chip that is merely not
+    clickable. The no-entry branch is deliberately the FIRST thing here and shares
+    nothing with the rest, so moving guides/_data/spells.json aside returns every page to
+    that state whole rather than to a half-linked one.
 
-    The tooltip text goes in an ATTRIBUTE, never in a span. The Chamberlain's brain index
-    chunks the generated HTML of these pages, and tooltip text that is DOM text would be
-    duplicated into the retrieval corpus 1500 times over. css/guides.css draws it with
-    content: attr(data-tip) on a pseudo-element, which is not text content.
+    The tooltip is built by tip_markup() -- see there for why it is DOM and not an
+    attribute any more.
     """
     raw = html.unescape(m.group(1))          # inline() escaped it before we got here
     name = html.escape(raw, quote=False)     # ... so put it back exactly as it was
@@ -253,14 +342,6 @@ def chip(m):
     template = ITEM_URL if kind == "item" else SPELL_URL
     href = template.format(id=ident) if template and isinstance(ident, int) else ""
 
-    # Short on purpose: it is a tooltip, not a paragraph. Level is omitted when unknown
-    # rather than printed as "Level None".
-    tip = [raw]
-    if isinstance(entry.get("level"), int):
-        tip.append(f"Level {entry['level']}")
-    tip.append(KIND_LABEL.get(kind, kind.title()))
-    tip = html.escape(" · ".join(tip), quote=True)
-
     icon, img = entry.get("icon"), ""
     if isinstance(icon, int):
         if not (ICON_DIR / f"{icon}.webp").exists():
@@ -271,12 +352,13 @@ def chip(m):
         CHIP_STATS["noicon"] += 1
 
     CHIP_STATS["linked"] += 1
+    tip = tip_markup(raw, entry, kind)
     if href:
         return (f'<a class="ab" href="{html.escape(href, quote=True)}"'
-                f' target="_blank" rel="noopener" data-tip="{tip}">{img}{name}</a>')
+                f' target="_blank" rel="noopener">{img}{name}{tip}</a>')
     # Linking turned off for this kind: keep the icon and the tooltip, and keep it
     # keyboard-reachable so :focus-visible can still open the tooltip.
-    return f'<span class="ab" tabindex="0" data-tip="{tip}">{img}{name}</span>'
+    return f'<span class="ab" tabindex="0">{img}{name}{tip}</span>'
 
 
 INLINE = [

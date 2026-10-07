@@ -29,7 +29,7 @@ Ratings: **Overall 4.5, Levelling 2.5, Dungeon 5.0, Utility 4.0, Mobility 1.0.**
 6. **[[Shadow Word: Pain]]**
 7. **Wand until it dies**: *"generally recommended to use your wand to finish off a foe rather than [[Smite]] or [[Mind Blast]]"*
 **Healing:** [[Power Word: Shield]] to buy yourself a cast → [[Heal]] → [[Renew]] for chip damage. From 30, [[Penance]] on a 12-second cooldown.
-**Multi-target: none is published, and the spec's one listed weakness is *"lacks group/AoE healing."***
+**Multi-target: none is published, and the spec's one listed weakness is** *"lacks group/AoE healing."*
 ## Stat priority
 **Healing:** Healing Power, then MP5, Spirit, Intellect, critical strike — Icy Veins' order.
 **Critical strike is talked up here where Holy talks it down**: `Renewed Hope` and `Divine Aegis` both trigger off healing crits.

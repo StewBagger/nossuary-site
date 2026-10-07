@@ -52,13 +52,29 @@ ICONS = ROOT / "assets" / "spell-icons"
 
 PRODUCT = "wow_cn_beta"  # Forever. See module docstring -- not a wow_classic* label.
 API = "https://wago.tools"
-TABLES = ("SpellName", "SpellMisc", "SpellLevels", "SkillLineAbility", "ItemSparse", "Item")
+TABLES = ("SpellName", "SpellMisc", "SpellLevels", "SkillLineAbility", "ItemSparse",
+          "Item", "Talent", "Spell", "SpellEffect", "SpellCastTimes", "SpellPower",
+          "SpellRange", "SpellCooldowns", "SpellDuration")
 
 # Spot-checks against the guides' own prose. A rank rule that breaks these is wrong.
 # These are not decoration: the first rule tried here (lowest non-zero BaseLevel) put
 # Consecration at level 1, because Forever ships a second id family for it that includes
 # a level-1 row no Paladin can train. These caught that before it reached a page.
 VERIFY = {"Holy Strike": 6, "Consecration": 20, "Ice Lance": 20, "Shadow Bolt": 1}
+
+# The same idea applied to the description resolver. A tooltip that quietly prints a
+# wrong number is worse than one that prints nothing, so a resolved description has to
+# reproduce a figure the guides already state in prose. Holy Strike is "25% of weapon
+# damage at the rank you train at 6" on paladin-retribution.md.
+VERIFY_DESC = {"Holy Strike": "25"}
+
+SCHOOLS = {1: "Physical", 2: "Holy", 4: "Fire", 8: "Nature",
+           16: "Frost", 32: "Shadow", 64: "Arcane"}
+
+# Blizzard's tooltip templating. $s1/$m1 are effect values, $d a duration, $<id>s1 another
+# spell's effect, ${...} arithmetic. Anything still carrying a $ after a pass is NOT shown:
+# a half-resolved string on a public page is the failure this guards against.
+TOKEN_RE = re.compile(r"\$(?:\{[^}]*\}|<[^>]*>|[0-9]*[a-zA-Z]+[0-9]*)")
 
 CHIP_RE = re.compile(r"\[\[([^\]]+)\]\]")
 TICK_RE = re.compile(r"`([^`]+)`")
@@ -118,6 +134,147 @@ def chips() -> tuple[dict[str, int], set[str]]:
             counts[name] += 1
             tick_names.add(name)
     return dict(counts), tick_names - chip_names
+
+
+def load_details(build: str) -> dict:
+    """Everything a tooltip shows beyond name and icon, keyed for lookup by spell id."""
+    effects: dict[int, dict[int, float]] = defaultdict(dict)
+    for r in table("SpellEffect", build):
+        try:
+            sid, idx = int(r["SpellID"]), int(r["EffectIndex"])
+            effects[sid][idx] = float(r["EffectBasePointsF"] or 0)
+        except (ValueError, TypeError, KeyError):
+            continue
+
+    desc: dict[int, str] = {}
+    for r in table("Spell", build):
+        try:
+            sid = int(r["ID"])
+        except (ValueError, TypeError, KeyError):
+            continue
+        d = (r.get("Description_lang") or "").strip()
+        if d:
+            desc[sid] = d
+
+    cast_ms = {int(r["ID"]): float(r["Base"] or 0)
+               for r in table("SpellCastTimes", build) if r.get("ID", "").isdigit()}
+    dur_ms = {int(r["ID"]): float(r["Duration"] or 0)
+              for r in table("SpellDuration", build) if r.get("ID", "").isdigit()}
+    rng: dict[int, float] = {}
+    for r in table("SpellRange", build):
+        if r.get("ID", "").isdigit():
+            try:
+                rng[int(r["ID"])] = max(float(r.get("RangeMax_0") or 0),
+                                        float(r.get("RangeMax_1") or 0))
+            except (ValueError, TypeError):
+                continue
+
+    cost: dict[int, int] = {}
+    for r in table("SpellPower", build):
+        try:
+            sid, mana = int(r["SpellID"]), int(float(r.get("ManaCost") or 0))
+        except (ValueError, TypeError, KeyError):
+            continue
+        if mana > 0:
+            cost.setdefault(sid, mana)
+
+    cd: dict[int, float] = {}
+    for r in table("SpellCooldowns", build):
+        try:
+            sid = int(r["SpellID"])
+            ms = max(float(r.get("RecoveryTime") or 0),
+                     float(r.get("CategoryRecoveryTime") or 0))
+        except (ValueError, TypeError, KeyError):
+            continue
+        if ms > 0:
+            cd.setdefault(sid, ms)
+
+    misc: dict[int, dict] = {}
+    for r in table("SpellMisc", build):
+        try:
+            sid = int(r["SpellID"])
+        except (ValueError, TypeError, KeyError):
+            continue
+        misc.setdefault(sid, {
+            "cast": cast_ms.get(int(r.get("CastingTimeIndex") or 0), 0.0),
+            "dur": dur_ms.get(int(r.get("DurationIndex") or 0), 0.0),
+            "rng": rng.get(int(r.get("RangeIndex") or 0), 0.0),
+            "school": int(r.get("SchoolMask") or 0),
+        })
+
+    return {"effects": effects, "desc": desc, "cost": cost, "cd": cd, "misc": misc}
+
+
+def secs(ms: float) -> str:
+    return f"{ms / 1000:g}"
+
+
+def resolve_desc(sid: int, d: dict) -> str | None:
+    """Render one spell's description, or None if any token is left unresolved.
+
+    Blizzard's tooltip strings are templates: `$m2% weapon damage plus $s1 as Holy damage`.
+    $sN and $mN are effect N's value, $d the duration, $<id>sN another spell's effect, and
+    ${...} arithmetic over those. This resolves the forms that actually occur and REFUSES
+    the rest -- a tooltip reading "deals $s1 damage" on a live page is worse than a tooltip
+    with no description, so a string that still contains a $ after substitution is dropped.
+    """
+    text = d["desc"].get(sid)
+    if not text:
+        return None
+
+    def value(spell: int, which: str, n: int) -> float | None:
+        eff = d["effects"].get(spell, {})
+        v = eff.get(n - 1)
+        return None if v is None else v
+
+    def one(m: re.Match) -> str:
+        tok = m.group(0)
+        # $<other spell id>s1 -- that spell's effect, not this one's
+        cross = re.fullmatch(r"\$(\d+)([smM])(\d+)", tok)
+        if cross:
+            v = value(int(cross.group(1)), cross.group(2), int(cross.group(3)))
+            return f"{abs(v):g}" if v is not None else tok
+        own = re.fullmatch(r"\$([smM])(\d+)", tok)
+        if own:
+            v = value(sid, own.group(1), int(own.group(2)))
+            return f"{abs(v):g}" if v is not None else tok
+        if tok == "$d":
+            ms = d["misc"].get(sid, {}).get("dur", 0.0)
+            return f"{secs(ms)} sec" if ms else tok
+        return tok
+
+    out = TOKEN_RE.sub(one, text)
+    # One more pass: ${$1280345m1*8} style arithmetic resolves only once its inner
+    # references have. Anything still holding a $ is abandoned rather than guessed at.
+    out = TOKEN_RE.sub(one, out)
+    if "$" in out:
+        return None
+    return " ".join(out.split())
+
+
+def present(sid: int, d: dict) -> dict:
+    """The display strings a tooltip shows. Absent facts are simply absent."""
+    m = d["misc"].get(sid, {})
+    out: dict[str, str] = {}
+    if m:
+        cast = m.get("cast", 0.0)
+        out["cast"] = "Instant" if not cast else f"{secs(cast)} sec cast"
+        if m.get("rng"):
+            r = m["rng"]
+            out["range"] = "Melee" if r <= 5 else f"{r:g} yd range"
+        if m.get("dur"):
+            out["duration"] = f"{secs(m['dur'])} sec"
+        school = SCHOOLS.get(m.get("school", 0))
+        if school:
+            out["school"] = school
+    if sid in d["cost"]:
+        out["cost"] = f"{d['cost'][sid]} Mana"
+    if sid in d["cd"]:
+        out["cooldown"] = f"{secs(d['cd'][sid])} sec cooldown"
+    desc = resolve_desc(sid, d)
+    if desc:
+        out["desc"] = desc
+    return out
 
 
 def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict, dict]:
@@ -226,6 +383,20 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         else:
             unmatched.append(name)
 
+    # Enrich every spell and talent with what a tooltip shows. Items are skipped: their
+    # facts live on different tables and the chip for one is a link, not a stat block.
+    detail = load_details(build)
+    for e in entries.values():
+        if e["kind"] not in ("spell", "talent"):
+            continue
+        e.update(present(e["id"], detail))
+        if e["kind"] == "talent":
+            # A talent is not trained at a level and its school is the engine's default
+            # rather than a fact about the talent. Both read as noise in a tooltip, and
+            # "Level 1" on a talent is actively misleading.
+            e["level"] = None
+            e.pop("school", None)
+
     report = {
         "total": len(names),
         "matched": len(entries),
@@ -235,6 +406,7 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         "talents": sum(1 for e in entries.values() if e["kind"] == "talent"),
         "levelled": sum(1 for e in entries.values() if e["level"]),
         "icons": {e["icon"] for e in entries.values() if e["icon"]},
+        "described": sum(1 for e in entries.values() if e.get("desc")),
     }
     return entries, report
 
@@ -331,6 +503,12 @@ def main() -> None:
         if got != want:
             verdict(f"FAIL -- rank rule broke: {name} resolved to level {got}, guides say {want}")
 
+    for name, figure in VERIFY_DESC.items():
+        got = entries.get(name, {}).get("desc")
+        if got and figure not in got:
+            verdict(f"FAIL -- description resolver broke: {name} rendered {got!r}, "
+                    f"which does not contain {figure!r} as the guides state")
+
     stamp = stamp_of(build, entries)
     written, failed = pull_icons(rep["icons"], build)
 
@@ -348,7 +526,7 @@ def main() -> None:
     pct = 100 * rep["matched"] / rep["total"]
     print(f"matched: {rep['matched']}/{rep['total']} ({pct:.1f}%) -- "
           f"{rep['spells']} spell, {rep['talents']} talent, {rep['items']} item, "
-          f"{rep['levelled']} with a level")
+          f"{rep['levelled']} with a level, {rep['described']} with a description")
     if rep["unmatched"]:
         print(f"unmatched ({len(rep['unmatched'])}): {', '.join(rep['unmatched'])}")
     if failed:

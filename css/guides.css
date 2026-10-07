@@ -187,11 +187,11 @@ a.guide-card:hover .guide-card-name { color: var(--class-accent); }
 /* --- Ability chips ------------------------------------------------------ */
 /* Every guide site links and icons every ability name, and since 2026-10-07 so do we:
    tools/build_guides.py reads guides/_data/spells.json and renders a chip WITH an entry
-   as an anchor carrying its icon, its link and a data-tip. A chip with no entry (8 of
+   as an anchor carrying its icon, its link and its tooltip. A chip with no entry (8 of
    433 -- abilities Forever removed, plus pet names) still renders as a bare
    <span class="ab">, which is why every rule below that is not about the name itself is
-   keyed off [data-tip] or a.ab rather than off .ab. The chip's colour is the CLASS
-   accent in both cases, so the two render identically at rest. */
+   keyed off a.ab or the tooltip's own .tip rather than off .ab. The chip's colour is the
+   CLASS accent in both cases, so the two render identically at rest. */
 .ab {
   font: 600 .93em var(--sans); color: var(--class-accent);
   white-space: nowrap;
@@ -222,14 +222,20 @@ a.ab:hover, a.ab:focus-visible {
   border-radius: 3px;
 }
 
-/* --- Chip tooltip (CSS only, no DOM text) -------------------------------- */
-/* These pages ship script-src 'none', so there is no JS to position or toggle this --
-   and that is not a workaround, it is the requirement. The text comes from the
-   data-tip ATTRIBUTE through content: attr(); it is deliberately NOT in a span, because
-   the Chamberlain's brain index chunks the generated HTML of these pages and tooltip
-   text that was DOM text would be duplicated into the retrieval corpus on every one of
-   the 1530 chips. Pseudo-element content is not text content. */
-[data-tip] { position: relative; }
+/* --- Chip tooltip (real DOM, still no JS) -------------------------------- */
+/* These pages ship script-src 'none', so there is nothing to position or toggle this but
+   CSS -- and that is not a workaround, it is the requirement.
+   It WAS a data-tip attribute drawn by content: attr() on a pseudo-element. That had a
+   hard ceiling: `content` is a single text string, so it could hold neither the 40px icon
+   nor a row per field, and the owner wanted both. Since 2026-10-07 the tooltip is real
+   markup -- `span.tip` inside the chip's own anchor -- and the objection that kept it out
+   of the DOM turned out to be false: Null_Ossuary's chamberlain/brain/corpus.py reads
+   these generated pages for rel="canonical" and <title> only and chunks guides/_src/*.md,
+   so tooltip text here is never indexed.
+   The markup is inline-only (span/b/i) because its host is an <a>, and for a talent an
+   <a> inside a <code>; position: absolute blockifies .tip, which is what lets the rows be
+   flex rows without a block element anywhere in the HTML. */
+.ab, .tl { position: relative; }
 /* A talent keeps the <code> look; only the colour and the tooltip are added. */
 code .tl { color: inherit; text-decoration: none; }
 code .tl:hover, code .tl:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
@@ -239,36 +245,89 @@ code:has(.tl) { cursor: pointer; }
   display: inline-block; width: 1.15em; height: 1.15em;
   vertical-align: -.2em; margin-right: .32em; border-radius: 2px;
 }
-[data-tip]::after,
-[data-tip]::before {
-  content: ""; position: absolute; left: 0; bottom: calc(100% + 7px);
-  opacity: 0; visibility: hidden;        /* not a hit target and not reachable when shut */
-  pointer-events: none; z-index: 60;     /* over the sticky nav (z-index 50) */
+
+/* The panel. Anchored left-edge-to-left-edge with the chip and opening upwards, exactly
+   where the pseudo-element sat -- a tooltip that moved would be a regression in the one
+   place this was already solved. z-index 60 clears the sticky nav (50); the clipping that
+   .guide-table's overflow-x would otherwise do is handled at its own rule above. */
+.tip {
+  position: absolute; left: 0; bottom: calc(100% + 7px);
+  width: max-content; max-width: min(300px, calc(100vw - 32px));
+  display: flex; flex-direction: column; gap: 5px;
+  padding: 9px 11px 10px; border-radius: 8px;
+  border: 1px solid var(--line); background: #060807; color: var(--bone);
+  box-shadow: 0 10px 26px -8px #000;
+  font: 500 .72rem/1.4 var(--mono); letter-spacing: .03em;
+  /* The chip sets white-space: nowrap and a.ab:hover underlines; neither may reach in
+     here. text-decoration does not propagate into an out-of-flow box, but saying so
+     costs nothing and the day someone un-absolutes this it is the only thing that
+     stops 300px of underlined tooltip. */
+  white-space: normal; text-align: left; text-transform: none; text-decoration: none;
+  opacity: 0; visibility: hidden;        /* not reachable, not read, not a hit target */
+  pointer-events: none;                  /* ALWAYS: the tip must never swallow a click */
+  z-index: 60;
   transition: opacity .12s ease;
 }
-[data-tip]::after {
-  content: attr(data-tip);
-  width: max-content; max-width: min(34ch, calc(100vw - 32px));
-  padding: 5px 9px; border-radius: 7px;
-  border: 1px solid var(--line); background: #060807; color: var(--bone);
-  font: 500 .72rem/1.35 var(--mono); letter-spacing: .04em;
-  white-space: normal; text-transform: none; text-decoration: none;
-  box-shadow: 0 8px 22px -8px #000;
-}
-/* The caret. Sits in the 7px gap, so it is drawn as a square rotated 45deg with two
-   borders -- the panel's own border carries round to it. */
-[data-tip]::before {
-  width: 8px; height: 8px; left: 12px; bottom: calc(100% + 3.5px);
-  background: #060807;
+/* The caret, now a child of the panel rather than a second pseudo-element on the chip:
+   a square rotated 45deg sitting half-out of the bottom edge, so the panel's own border
+   carries round to its two visible sides. */
+.tip::after {
+  content: ""; position: absolute; left: 13px; top: calc(100% - 4px);
+  width: 8px; height: 8px; background: #060807;
   border-right: 1px solid var(--line); border-bottom: 1px solid var(--line);
   transform: rotate(45deg);
 }
-[data-tip]:hover::after, [data-tip]:hover::before,
-[data-tip]:focus-visible::after, [data-tip]:focus-visible::before {
+
+/* Header: the large icon beside the name and the meta line. */
+.tip-head { display: flex; align-items: center; gap: 9px; }
+/* style.css sets img { display: block } globally, which is what we want for a flex item;
+   flex: none keeps a 40px icon 40px when the name wraps. */
+.tip-icon {
+  flex: none; width: 40px; height: 40px; border-radius: 4px;
+  border: 1px solid var(--line);
+}
+.tip-id { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.tip-name {
+  font: 600 .84rem/1.25 var(--sans); letter-spacing: 0;
+  color: var(--class-accent);          /* the chip's colour, so the two read as one thing */
+}
+/* <i> for the meta and the row cells is a deliberate choice of a short inline element
+   over a <span>, and nothing here is emphasis -- so the italics come straight off. */
+.tip-meta {
+  font-style: normal; font-size: .68rem; color: var(--grey);
+  text-transform: uppercase; letter-spacing: .06em;
+}
+
+/* One row per field the index HAS. The generator emits no row for an absent or null
+   field, so there is no empty-state rule to write here: a spell with no cooldown has no
+   .tip-row for it at all, and a pre-contract index with only kind/id/level/icon produces
+   a tooltip that is just the header. */
+.tip-row {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 14px;
+  border-top: 1px solid rgba(47, 56, 52, .5); padding-top: 4px;
+}
+/* The first row needs no divider -- the header is already one. Addressed through the
+   header's adjacency and NOT :first-of-type, which resolves against the element type
+   (span) and so would match .tip-head, never a row. */
+.tip-head + .tip-row { border-top: 0; padding-top: 1px; }
+.tip-k { font-style: normal; color: var(--grey); white-space: nowrap; }
+.tip-v { font-style: normal; color: var(--bone); text-align: right; }
+
+.tip-desc {
+  font: 400 .72rem/1.5 var(--sans); letter-spacing: 0; color: var(--bone-dim);
+  border-top: 1px solid rgba(47, 56, 52, .5); padding-top: 6px;
+}
+
+/* Hover and keyboard focus, as before. The talent's <code> is a trigger too: the box's
+   padding belongs to the <code>, not the anchor, so hovering the edge of a talent used
+   to open nothing. */
+.ab:hover > .tip, .ab:focus-visible > .tip,
+.tl:hover > .tip, .tl:focus-visible > .tip,
+code:has(.tl):hover .tip {
   opacity: 1; visibility: visible;
 }
 @media (prefers-reduced-motion: reduce) {
-  [data-tip]::after, [data-tip]::before { transition: none; }
+  .tip { transition: none; }
 }
 
 /* --- Per-class accents --------------------------------------------------- */
