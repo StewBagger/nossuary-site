@@ -14,7 +14,7 @@ On damage the published line is *"Frost Mage won't top the damage meters, but fe
 ## Your talent points
 **Level 20: 0/0/11.** Two published builds, both legal, differing on the first five points.
 **Build A** (hit and consistency):
-1. `Elemental Precision`, 5 points (Forever gave this 5 ranks; Classic had 3). Blizzard also rewrote it from cutting the target's resist chance to plain Fire and Frost hit
+1. `Elemental Precision`, 5 points (the published build spends 5 ranks here, where Classic had 3; neither Blizzard nor the client confirms the new count). Blizzard also rewrote it from cutting the target's resist chance to plain Fire and Frost hit
 2. `Frostbite`, 3 points
 3. `Ice Shards`, 2 points
 4. **[[Ice Lance]]** at 20
@@ -47,8 +47,8 @@ Icy Veins is the only one of the three tracked sources that ranks Frost's stats;
 | --- | --- | --- |
 | **[[Ice Lance]]** | exactly 20 | New in Forever. Instant, no cooldown, low base damage, **+300% against a frozen target** |
 | **`Frostbite` 3/3** | 17 | 15% chance for your Chill effects to freeze. It is the engine that feeds Ice Lance and `Shatter` |
-| **`Fingers of Frost`** | exactly 30 | New, row 5, and it needs [[Ice Lance]]. Your Chill effects can grant **1 or 2 charges** that make a cast treat the target as frozen without rooting it; one point buys one charge. The 15% chance the sites print is a client reading |
-| **`Shatter` 3/3** | 27 | **50%** for three points, where Classic needed five. Same ceiling, cheaper |
+| **`Fingers of Frost`** | exactly 30 | New, row 5, and it needs [[Ice Lance]]. Your Chill effects can grant **1 or 2 charges** that make a cast treat the target as frozen without rooting it *(ours, not a source's)*; one point buys one charge. The 15% chance the sites print is a client reading |
+| **`Shatter` 3/3** | 27 | **50%** for three points, where Classic needed five. Same ceiling, cheaper. That rank count is the published builds', not Blizzard's or the client's |
 ## What Forever changed for Frost
 - **[[Ice Lance]] and `Fingers of Frost` are both brand new**, and together they are the spec.
 - **The slows were cut hard**, and Blizzard says why. `Improved Blizzard` maxes at 40% (Classic: 65%; rank 1 is 15% against Classic's 30%), cut to stop Frost Mages AoE-farming instances *"widely used by gold farmers and boosters to disrupt the economy of the game"*. [[Cone of Cold]] lost duration against the same kiting: 40% over 6 seconds, down from 50% over 8. `Permafrost` now extends Chill effects by 11/22/33% instead of a flat 1/2/3 seconds, so it cannot stretch `Improved Blizzard` any further; it still adds 10% slow at 3/3.

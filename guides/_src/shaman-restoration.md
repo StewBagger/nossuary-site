@@ -32,7 +32,7 @@ Dungeons are what it is for: *"Restoration will make you a strong dungeon healer
 ## Stat priority
 Healing Power, then critical strike, Haste, Intellect, MP5, Spirit, Stamina.
 **Sources genuinely disagree about critical strike here**: one puts it second, another puts it last (Healing Power > Intellect > MP5 > Spirit > Haste > crit), and nothing resolves it. A third phrases the top of the list as *"Healing and spell power above everything, then Intellect… and Spirit for what comes back between fights."*
-Healing bonus on gear now also grants **one third as much spell damage**, which makes filler [[Lightning Bolt]]s less wasteful than they used to be.
+Healing bonus on gear now also grants **one third as much spell damage** *(ours, not a source's)*, which makes filler [[Lightning Bolt]]s less wasteful than they used to be.
 ## What defines Restoration
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ Healing bonus on gear now also grants **one third as much spell damage**, which 
 - **New:** `Mindfulness`, [[Water Shield]] and [[Riptide]]. `Mindfulness` keeps part of your mana regeneration running while you cast, and the client reads 5% against the 17% a rank, 50% at 3/3, in circulation. Blizzard publishes no number, and placed the talent low *"to make it more accessible for Elemental Shaman"*. Removed: `Nature's Guidance`, the only Restoration talent Blizzard lists as cut.
 - **`Healing Way` is now a flat bonus to [[Healing Wave]] itself**, instead of a stacking per-target buff you had to build up with low-rank casts. The client's rank-1 record reads 33%, against the 8/17/25% across 3 ranks in circulation, and Blizzard publishes no number. That removes an entire Classic upkeep habit. If you played a Resto Shaman before, stop pre-stacking.
 - **[[Mana Tide Totem]] is the 16-point milestone now, not the 31-point capstone**, so it arrives at 25 instead of 40. The client has it cut to 88 mana per tick, down from 170.
-- **`Tidal Focus` now also grants global hit.** `Healing Focus` is 3 ranks reaching 70%. `Improved Reincarnation` now also grants +2% maximum health per rank, 4% at 2/2. `Natural Grace` (formerly `Healing Grace`) is row 2 and cuts threat from all your spells, not just heals.
+- **`Tidal Focus` now also grants global hit.** `Healing Focus` is 3 ranks reaching 70%. `Improved Reincarnation` now also grants +2% maximum health per rank, 4% at 2/2 — that split across ranks is ours, not a source's. `Natural Grace` (formerly `Healing Grace`) is row 2 and cuts threat from all your spells, not just heals.
 - **`Totemic Focus` is row 1 now, and it discounts more than totems:** [[Totemic Projection]] and the Call spells too, which matters because [[Call of the Elements]] charges you for all four totems at once.
 - **`Tidal Mastery` no longer touches Lightning spells**, so your filler [[Lightning Bolt]]s get no critical strike chance from it.
 - **[[Riptide]] can now critically strike**, as of the September 24 patch.

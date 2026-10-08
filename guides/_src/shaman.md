@@ -12,7 +12,7 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of t
 | **[Elemental](/guides/wow-forever/shaman/elemental/)** | Ranged DPS | `Elemental Focus` at 20 gives every Fire, Frost or Nature spell a 10% Clearcasting chance | [[Lightning Bolt]] and [[Chain Lightning]], which is level 32 and outside the beta cap |
 | **[Enhancement](/guides/wow-forever/shaman/enhancement/)** | Melee DPS | Weapon imbues last 60 minutes instead of 5, so one [[Rockbiter Weapon]] covers a session | One two-hander and no dual wield, on the one build two sources publish identically |
 | **[Restoration](/guides/wow-forever/shaman/restoration/)** | Healer | [[Water Shield]] at 20 returns 2% of your maximum mana each time you are hit or crit a heal | [[Chain Heal]] and `Nature's Swiftness` |
-**Shamans cannot dual wield in Forever.** If you have played a later expansion, unlearn that.
+**Shamans cannot dual wield in Forever** — no published source grants it, and Blizzard's deep dive never mentions it. If you have played a later expansion, unlearn that.
 A widely-published level-30 Elemental build is also not legal on the current client: it spends 5 points on `Elemental Fury`. Blizzard moved that talent to row 6 and put it behind `Call of Thunder`, out of reach at 21 points. That build predates the change.
 Blizzard endorses a narrow version of Enhancement tanking. The redesigned `Spirit Weapons` keeps the Shaman's *"unique ability to generate high threat and serve as a temporary tank in small group gameplay"*. `Improved Stormstrike` is written for *"when serving as a temporary tank."* **Temporary, and small group, is the whole of the sanctioned claim.** There is no published tanking build, no raid or dungeon tank role named for Shaman, and no taunt. See [Enhancement](/guides/wow-forever/shaman/enhancement/).
 ## Is Shaman for you?
@@ -58,7 +58,7 @@ Read this section in proportion. Race is the smallest of the choices on this pag
 - **The four totem class quests are mandatory and they gate the class.** You cannot use any totem of an element until you finish its quest, and each gives you a physical totem item you must keep in your bags. Earth at 4, Fire at 10, Water at 20, Air at 30. The Alliance water chain is new content and takes roughly two hours of running; at least you have [[Ghost Wolf]] by then.
 - **Do not assume dual wield.** No Forever source grants it to Shaman, and one guide explicitly declines to infer it from a removed talent. Blizzard confirms `Shield Specialization` is removed, so no talent pays for a shield. Blizzard's class summary still counts *"Mail armor and a Shield"* among Shaman strengths, so carry one for survival rather than damage.
 - **Mail armour arrives at 40, not level 1.** That is single-sourced and contradicts vanilla, so verify it in game. If it holds, you are a leather-wearer for 39 levels.
-- **The Legacy perk `Permanence` doubles long buffs**, which reads directly onto totems: five minutes becomes ten.
+- **The Legacy perk `Permanence` doubles long buffs**, and reading that onto totems — five minutes becomes ten — is ours, not a source's.
 ## What changed from Classic
 | Change | What it means for you |
 | --- | --- |

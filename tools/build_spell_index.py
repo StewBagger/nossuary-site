@@ -161,7 +161,23 @@ FORCE_ID: dict[object, int] = {
     "Cutthroat": 462708,              # 424980 carries no usable text
     ("Berserk", "druid"): 417141,     # 23397 is a creature's 30-second Shadow aura
     ("Lacerate", "druid"): 414644,    # 414647 is empty and stamped level 1
+    # 53672 is the WRATH-ERA talent and it was winning on id order: "next Flash of
+    # Light by 0.75 sec OR next Holy Light crit by 10%". Forever's own 426065 reads
+    # "Holy Shock AND Flash of Light crits reduce your next Holy Light cast", which is
+    # what paladin-holy.md says. A provenance audit read the stale record and reported
+    # the PAGE as wrong; the page was right and the tooltip beside it was not.
+    "Infusion of Light": 426065,
+    # 48108 is the WOTLK talent and it names Living Bomb, a spell Forever does not
+    # have. Forever's 400624 reads the way Blizzard's own dive describes it: a
+    # non-periodic Fire crit shortening the next Pyroblast.
+    "Hot Streak": 400624,
 }
+# HOW THESE WERE FOUND, so the next one is cheaper: Classic's spell ids run below
+# roughly 30,000 and Forever's own authored content sits above 400,000, so a name
+# resolving to anything in between is usually a later expansion's copy of the same
+# name. Three of the four defects above were caught by that one filter. It is worth
+# re-running after any build bump:
+#   chosen id in 30k..400k, while a >400k candidate with a description exists.
 
 SCHOOLS = {1: "Physical", 2: "Holy", 4: "Fire", 8: "Nature",
            16: "Frost", 32: "Shadow", 64: "Arcane"}

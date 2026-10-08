@@ -66,7 +66,7 @@ Racials decide things in **PvP**, specifically the ones that break crowd control
 Forever changed the answer: Tauren Hunter was the weak vanilla pick and is now the strongest. Dwarf's new racial is `Mace Specialization`, and maces are not a Hunter weapon option, so a Dwarf cannot use it (Icy Veins, ClassicWoW.gg).
 **Skyborne is new on both factions** and can play Hunter. Its racials are combat-adjacent rather than Hunter-specific: passive haste, +5% damage to Elemental creatures, and a faction-split utility button (glide for Alliance, a movement-speed burst for Horde).
 ## Quality of life
-- **Level 10 is the class.** Do the pet chain the moment you reach it, and tame a Bear first: `Swipe` is one of the few pet abilities that holds threat on several targets at once. In Forever you cannot tame a beast above your own level.
+- **Level 10 is the class.** Do the pet chain the moment you reach it, and tame a Bear first: `Swipe` is one of the few pet abilities that holds threat on several targets at once. foreverchanges.pro reads the client as letting you tame a beast up to two levels above your own.
 - **Ammunition and the quiver are real costs.** The quiver gives a ranged attack-speed bonus and does not stack, so carry exactly one. Buy ammunition in stacks whenever you pass a vendor.
 - **[[Aspect of the Cheetah]] is your mount until 40** and should be up almost all the time in the world; `Pathfinding` pushes it to +36%.
 - **Your class trainer gives mail at 40**, and a weapon master teaches anything you did not start with, including polearms from 20. As a Human, make the trip for one-handed swords and the crit.

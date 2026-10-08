@@ -41,8 +41,8 @@ The [[Camp Tent]] tops up rather than stacks: *"does nothing if you already have
 | [[Expert Campfire Kit]] | 220 | 200 | 10 |
 You can learn a Blueprint well before you can craft the kit, which is why guides quote different numbers for the same thing. Both are right, printed from different columns.
 ## Two published numbers that disagree
-- Blizzard's panel says the [[Sharpening Wheel]] gives attack power. **The beta client says Strength.** The client is what is live, and both guide sites follow it.
-- **Blizzard's panel says a basic campfire allows three objects.** The client shows 3, 5 and 10 for the three kit tiers. The panel was describing the basic kit.
+- The [[Sharpening Wheel]] is widely reported as giving attack power. **The beta client says Strength.** The client is what is live, and both guide sites follow it. The attack-power claim is attributed to Blizzard's What's Next panel, but the recap this page cites does not contain it, so treat it as reported rather than published.
+- A basic campfire is likewise reported as allowing **three objects**. The client shows 3, 5 and 10 for the three kit tiers, so that reading fits the basic kit only — and again, the cited recap does not say it.
 ## What changed in the October 1 build
 - **Campfires no longer damage players below level 5**, and they deal reduced damage to players under 90% health.
 - **The [[Boosted Rest]] debuff has a new icon and a rewritten tooltip**, which Blizzard says is *"intended to make the effect clearer."* No value changed. Leatherworking's [[Camp Tent]] is the only rest-related camp object on this page. Blizzard's note names the debuff but not the object it belongs to, so that link is inferred here rather than stated.

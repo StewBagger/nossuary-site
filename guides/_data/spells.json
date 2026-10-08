@@ -1,8 +1,8 @@
 {
  "build": "1.60.1.70245",
  "product": "wow_cn_beta",
- "generated": "2026-10-08T12:15:08+00:00",
- "stamp": "a30b48bcfc3c",
+ "generated": "2026-10-08T15:23:15+00:00",
+ "stamp": "d0b2f5f0b00f",
  "inputs": "3b880ea065fe",
  "entries": {
   "Adrenaline Rush": {
@@ -5073,12 +5073,11 @@
   },
   "Hot Streak": {
    "kind": "talent",
-   "id": 48108,
+   "id": 400624,
    "level": null,
-   "icon": 236218,
+   "icon": 135809,
    "cast": "Instant",
-   "duration": "10 sec",
-   "desc": "Any time you score 2 spell criticals in a row using using Fireball, Fire Blast, Scorch, Living Bomb, or Frostfire Bolt, you have a chance the next Pyroblast spell cast within 10 sec will be instant cast."
+   "desc": "Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times."
   },
   "Howl of Terror": {
    "kind": "spell",
@@ -6171,12 +6170,11 @@
   },
   "Infusion of Light": {
    "kind": "talent",
-   "id": 53672,
+   "id": 426065,
    "level": null,
    "icon": 236254,
    "cast": "Instant",
-   "duration": "15 sec",
-   "desc": "Your Holy Shock critical hits reduce the cast time of your next Flash of Light by 0.75 sec or increase the critical chance of your next Holy Light by 10%."
+   "desc": "Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 1.0 sec."
   },
   "Initiative": {
    "kind": "talent",

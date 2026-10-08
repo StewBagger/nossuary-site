@@ -14,7 +14,7 @@ You can safely pull several enemies and grind them down. Mana is what limits you
 No source publishes a levelling score for any Paladin spec. That experience cut and the guide's warning about it are what the sources say on levelling here.
 ## Your talent points
 **Level 20: 0/11/0.** Two published builds agree on the first ten points.
-1. `Redoubt`, 5 points. **+4% Block per rank, 20% at the 5 points this build spends.** It is the first pick, as no alternative tier-1 Protection talent is published, and the Block chance it grants feeds `Holy Shield` (a 30% base chance to Block) and `Reckoning`'s block-triggered proc.
+1. `Redoubt`, 5 points. **+4% Block per rank, 20% at the 5 points this build spends.** It is the first pick, as no alternative tier-1 Protection talent is published. That the Block chance it grants feeds `Holy Shield` (a 30% base chance to Block) and `Reckoning`'s block-triggered proc is our own reading, not a source's.
 2. `Precision`, 3 points — +3% hit
 3. `Anticipation`, 2 points
 4. The eleventh point is either **`Shield Specialization`** or `Improved Seal of Fury`
@@ -30,7 +30,7 @@ Named alternatives for that last point: `Improved Righteous Fury` for damage red
 5. **[[Holy Strike]]** on cooldown
 6. **[[Exorcism]]** against Undead and Demons; keep a Blessing and an Aura up
 **Single target:** same order, but drop [[Consecration]] to conserve mana.
-**Swapping seals removes your taunt.** And `Swift Judgement`, which finishes Judgement's cooldown and makes the next one free, is there to recover a missed taunt. Do not press it for damage.
+**Swapping seals removes your taunt** *(ours, not a source's)*. And `Swift Judgement`, which finishes Judgement's cooldown and makes the next one free, is there to recover a missed taunt. Do not press it for damage.
 ## Stat priority
 **Spell Power**, then Hit, Stamina, Defense, Armor, Block, Intellect, Strength, Agility.
 Spell Power first genuinely is correct here. In Forever a Paladin's threat *is* Holy damage: [[Seal of Fury]], [[Consecration]] and [[Holy Strike]], all amplified by [[Righteous Fury]]. Seal of Fury's absorb is worth half of that damage again. Take mail over leather where the stats are close, and **carry a shield**, which Seal of Fury's absorb requires.
@@ -42,7 +42,7 @@ Spell Power first genuinely is correct here. In Forever a Paladin's threat *is* 
 | **[[Seal of Fury]] + [[Judgement]]** | 10, baseline | **This is the taunt**, and it is not a talent. The single biggest change to the spec |
 | **`Improved Seal of Fury`** | 20 | Returns mana when the Fury absorb is fully consumed, scaling up to 45% by the attacker's level |
 | **`Shield Specialization`** | 20 | +10% shield absorb per rank, and a 33% chance per rank for a block to restore 6% of your maximum mana, once every 3 seconds at most |
-| **`Templar's Bulwark`** | 30 | An absorb worth **100% of your max health** for 8 seconds, but it applies Forbearance, so it and [[Divine Shield]] are one cooldown, not two |
+| **`Templar's Bulwark`** | 30 | An absorb worth **100% of your max health** for 8 seconds. It applies Forbearance, as [[Divine Shield]] does, so we read the two as one cooldown rather than two *(ours, not a source's)* |
 ## What Forever changed for Protection
 - **Five new talents:** `Improved Seal of Fury`, `Sacred Duty`, `Swift Judgement`, `Templar's Bulwark`, and `Iron Creed`.
 - **`Improved Righteous Fury` is a different talent under the same name**. It now gives −2% damage taken per rank while Righteous Fury is up, where Classic gave threat.

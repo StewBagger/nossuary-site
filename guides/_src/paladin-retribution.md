@@ -42,7 +42,7 @@ Published gear lists split into a **Spell Power** build and an Attack Power buil
 ## What defines Retribution
 | Talent or ability | Earliest level | What it does |
 | --- | --- | --- |
-| **[[Holy Strike]]** | 6, baseline | **25% of weapon damage at the rank you train at 6, rising per rank to 50% at rank 8.** The full curve is 25/29/32/36/39/43/46/50%, plus a flat Holy component. 10-second cooldown. Only the added component is Holy: armour still reduces the weapon half |
+| **[[Holy Strike]]** | 6, baseline | **25% of weapon damage at the rank you train at 6, rising per rank to 50% at rank 8.** The full curve is 25/29/32/36/39/43/46/50%, plus a flat Holy component. 10-second cooldown. The client tags the whole spell Holy, but its text splits the damage into a weapon component and an added Holy one, so we read armour as reducing the weapon half *(ours, not a source's)* |
 | **[[Seal of Command]]** | **exactly 20** | Procs Holy damage scaled off the swing, so it wants a slow two-hander. Its Judgement is amplified against stunned targets |
 | **`Benediction` + `Holy Conduit`** | 10 and 15 | The mana economy, and the reason the level-20 respec exists |
 ## What Forever changed for Retribution

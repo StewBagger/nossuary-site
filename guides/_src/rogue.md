@@ -69,7 +69,7 @@ Read this section in proportion. Race is the smallest of the choices on this pag
 | [[Pick Lock]] at level 1, as a secondary skill | Free money and utility from the start |
 | `Hack and Slash` replaced all four weapon specialisations | One talent branches by whichever weapon you hold, **axes included**, on the same bonus swords get |
 | Rogues can use one-handed axes | Which is why Orc's racial now matters |
-| Poisons scale with Attack Power and can crit | Crit is worth more than it was |
+| Poisons scale with Attack Power on the published guides' reading, and can crit | Crit is worth more than it was |
 | Energy regeneration is continuous, not ticked | You cannot bank a tick to arrive exactly when needed |
 | **[[Expose Armor]] now matches five [[Sunder Armor]]s**, and missing it no longer costs your combo points (fixed October 1) | Worth casting in a group, and safe at low hit chance. It no longer locks the tank out of Sunder, which cannot overwrite yours unless yours is the weaker effect |
 ## At level 60

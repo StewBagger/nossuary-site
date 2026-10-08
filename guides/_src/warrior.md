@@ -45,7 +45,7 @@ Blizzard's closing assessment of the class, in its own words:
 | 12 | [[Overpower]], [[Shield Bash]] — **your only interrupt until [[Pummel]] at 38**, so keep a shield in the bag |
 | 14 | **[[Tactical Mastery]] is trained now, not a talent.** It retains 10 rage through a stance change |
 | 16 | [[Shield Block]], now **2 attacks over 7 seconds** |
-| 20 | **[[Victory Rush]], new**: free, scales with Attack Power, heals 10% of max health. It is up for 20 sec after you kill a non-trivial enemy, on its own 30-second cooldown (Blizzard), so it will not fire on every kill. Dual wield unlocks. [[Cleave]] and [[Retaliation]] are as in Classic, both re-tuned. [[Slam]] trains earlier but now carries an 18-second cooldown it never had. Eleventh talent point |
+| 20 | **[[Victory Rush]], new**: free, scales with Attack Power, heals 10% of max health. It is up for 20 sec after you kill a non-trivial enemy, on its own 30-second cooldown (Blizzard), so we read it as not firing on every kill *(ours, not a source's)*. Dual wield unlocks. [[Cleave]] and [[Retaliation]] are as in Classic, both re-tuned. [[Slam]] trains earlier but now carries an 18-second cooldown it never had. Eleventh talent point |
 | 24 | [[Execute]] |
 | 30 | **Second class quest**: [[Berserker Stance]], [[Intercept]]. Twenty-first talent point |
 | 36 | [[Whirlwind]] |

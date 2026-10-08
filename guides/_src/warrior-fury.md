@@ -10,7 +10,7 @@ Three kinds of caveat run through these pages and they do not mean the same thin
 **The hover tooltips on these Warrior pages come from that same build.** A few of them print the older number beside prose carrying Blizzard's newer one. Where they disagree, believe the prose: it is Blizzard's figure, and the tooltip is the number the game is still showing.
 :::
 ## What Fury is for
-**Dual-wielding out-generates a two-hander on Rage simply by swinging more often**, and it hands you somewhere to dump the surplus: [[Whirlwind]] now always strikes with both weapons, no talent required, for every Warrior who dual-wields.
+**Dual-wielding out-generates a two-hander on Rage simply by swinging more often** *(ours, not a source's)*, and it hands you somewhere to dump the surplus: [[Whirlwind]] now always strikes with both weapons, no talent required, for every Warrior who dual-wields.
 The catch is timing. **You cannot dual-wield until level 20**, and [[Whirlwind]] is level 36. For the first twenty levels you are a two-handed Warrior with Fury talents, and the spec proper arrives well after that.
 **No source rates Fury the best Warrior leveller.** Icy Veins ties it with Arms at 2.0/5 for Levelling and scores Protection higher at 2.5/5; neither Wowhead nor ClassicWoW.gg publishes a score. What Fury has going for it is that its tier 1 and 2 talents are what *every* Warrior takes, which is why the published Arms and Fury level-20 builds are identical.
 ## Your talent points

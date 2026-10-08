@@ -23,7 +23,7 @@ Anti-Venom works mid-fight; poultices and tourniquets do not, so plan those two 
 First Aid places three, like every profession:
 | Skill | Object | What it does |
 | --- | --- | --- |
-| 20 | [[First Aid Kit]] | **56 Stamina** at 60 and 21 at level 30, mutually exclusive with [[Power Word: Fortitude]]: a Priest's buff replaces it rather than adding to it |
+| 20 | [[First Aid Kit]] | **56 Stamina** at 60 and 21 at level 30, mutually exclusive with [[Power Word: Fortitude]]: a Priest's buff replaces it rather than adding to it *(ours, not a source's)* |
 | 140 | [[Toxin Study]] | Blueprint |
 | 300 | [[Plague Doctor's Laboratory]] | Blueprint |
 ## What Forever changed
