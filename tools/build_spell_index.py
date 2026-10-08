@@ -137,7 +137,31 @@ CLASS_BY_MASK = {1: "warrior", 2: "paladin", 4: "hunter", 8: "rogue", 16: "pries
 RANK_RE = re.compile(r"^Rank (\d+)$")
 
 VERIFY_CLASS = {("Deflection", "hunter"): 19295, ("Deflection", "paladin"): 20060,
-                ("Deflection", "warrior"): 16462, ("Deflection", "rogue"): 13713}
+                ("Deflection", "warrior"): 16462, ("Deflection", "rogue"): 13713,
+                # Five per-class copies sharing racial skill line 753, told apart only
+                # by SkillLineAbility.ClassMask. Before that column was read, every
+                # class resolved to the rogue's copy and a Mage page described Energy.
+                ("Eureka!", "mage"): 1259817, ("Eureka!", "warrior"): 1259813,
+                ("Eureka!", "rogue"): 1259812, ("Eureka!", "priest"): 1259823,
+                ("Eureka!", "warlock"): 1259821}
+
+# WHERE THE NAME IS AMBIGUOUS AND THE TABLES CANNOT SETTLE IT. Rank and trainable level
+# pick between same-named rows; neither knows which row carries the CURRENT text. Each
+# id below was read out of build 1.60.1.70245 by hand and matches what the guides say.
+#
+# `Hack and Slash` is the clearest case: Forever renamed the three old weapon-spec slots
+# to that one name and applied the merge to only one of them, so the client holds three
+# spells called `Hack and Slash` and the merged tooltip -- axe/sword extra attack, dagger
+# /fist crit, mace armour ignore -- is on 13960 alone. 13706 is the ex-Dagger slot and
+# describes a fraction of the talent. The others resolved to an empty row, a creature's
+# ability, or a differently-named spell's record (all found 2026-10-08).
+FORCE_ID: dict[object, int] = {
+    "Hack and Slash": 13960,          # merged row; 13706 is the ex-Dagger slot
+    "Quietus": 1310728,               # 1231651 is a collision, not placeholder junk
+    "Cutthroat": 462708,              # 424980 carries no usable text
+    ("Berserk", "druid"): 417141,     # 23397 is a creature's 30-second Shadow aura
+    ("Lacerate", "druid"): 414644,    # 414647 is empty and stamped level 1
+}
 
 SCHOOLS = {1: "Physical", 2: "Holy", 4: "Fire", 8: "Nature",
            16: "Frost", 32: "Shadow", 64: "Arcane"}
@@ -584,6 +608,13 @@ def resolve_desc(sid: int, d: dict) -> str | None:
     out = PLURAL_RE.sub(plural, out)
     if "$" in out:
         return None
+    # Client colour escapes: |cAARRGGBB ... |r, and |n for a line break. Blizzard uses
+    # them to label the branches of a multi-weapon tooltip, so the one talent that needs
+    # them most is `Hack and Slash` -- whose merged row published a literal
+    # "|CFFFFFFFFAxe/Sword:|R" onto two Rogue pages until this stripped them.
+    out = re.sub(r"\|[cC][0-9a-fA-F]{8}", "", out)
+    out = re.sub(r"\|[rR]", "", out)
+    out = re.sub(r"\|n", " ", out)
     return " ".join(out.split())
 
 
@@ -649,6 +680,7 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
     # that makes "lowest rank" mean "lowest rank a player can have".
     learnable: set[int] = set()
     skill_of: dict[int, set[int]] = defaultdict(set)
+    class_mask_of: dict[int, int] = {}
     for r in table("SkillLineAbility", build):
         try:
             sid, line = int(r["Spell"]), int(r["SkillLine"] or 0)
@@ -657,6 +689,12 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         learnable.add(sid)
         if line:
             skill_of[sid].add(line)
+        try:
+            mask = int(r.get("ClassMask") or 0)
+        except (ValueError, TypeError):
+            mask = 0
+        if mask:
+            class_mask_of[sid] = class_mask_of.get(sid, 0) | mask
 
     # skill line -> the classes that can train it. See CLASS_BY_MASK.
     classes_of_line: dict[int, set[str]] = defaultdict(set)
@@ -670,6 +708,17 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
                 classes_of_line[line].add(name)
 
     def classes_of(sid: int) -> set[str]:
+        # SkillLineAbility's OWN ClassMask first, because a shared skill line cannot tell
+        # per-class copies apart. Forever's `Eureka!` ships one spell per class, all five
+        # on racial skill line 753, which SkillRaceClassInfo maps to all nine classes --
+        # so every class resolved to whichever copy sorted first and a Mage page showed
+        # the rogue's Energy wording. The per-row mask says 128 for the mage's copy.
+        direct: set[str] = set()
+        for bit, name in CLASS_BY_MASK.items():
+            if class_mask_of.get(sid, 0) & bit:
+                direct.add(name)
+        if direct:
+            return direct
         out: set[str] = set()
         for line in skill_of.get(sid, ()):
             out |= classes_of_line.get(line, set())
@@ -828,7 +877,39 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
     for name, e in entries.items():
         if e["kind"] not in ("spell", "talent"):
             continue
+        # FORCE_ID before enrichment, so the forced row's own text is what gets read.
+        if name in FORCE_ID:
+            e["id"] = FORCE_ID[name]
+            e["icon"] = icon.get(e["id"], e.get("icon"))
+            e["level"] = level.get(e["id"])
+            e.pop("rank", None)
+        for key, sid in FORCE_ID.items():
+            # A forced class entry may be the FIRST by_class entry this name has: a name
+            # that collides with a creature ability rather than another class carries no
+            # map of its own, and `Berserk` is exactly that.
+            if isinstance(key, tuple) and key[0] == name:
+                e.setdefault("by_class", {})[key[1]] = {
+                    "id": sid, "level": level.get(sid), "icon": icon.get(sid)}
         e.update(present(e["id"], detail))
+
+        # A CANDIDATE WITH NO TEXT IS THE WRONG CANDIDATE. Selection goes by rank and
+        # trainable level, neither of which knows whether the row carries a usable
+        # description -- so a name with many candidates could land on an empty or
+        # internal row and render a stat block with no body. Only entries that came out
+        # with NO description are touched, so this cannot override a working pick.
+        if not e.get("desc"):
+            for alt in sorted(spell_ids.get(norm(name), []),
+                              key=lambda i: (i not in learnable, level.get(i, 999),
+                                             rank_of.get(i, 99))):
+                if alt == e["id"]:
+                    continue
+                got = present(alt, detail)
+                if got.get("desc"):
+                    e["id"] = alt
+                    e["icon"] = icon.get(alt, e.get("icon"))
+                    e["level"] = level.get(alt)
+                    e.update(got)
+                    break
         if name in DESC_WRONG:
             e.pop("desc", None)  # see DESC_WRONG: the client figure contradicts the guides
         if e["kind"] == "talent":
@@ -837,6 +918,30 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
             # "Level 1" on a talent is actively misleading.
             e["level"] = None
             e.pop("school", None)
+
+        # THE SAME ENRICHMENT PER CLASS, and it is not optional. `by_class` used to
+        # carry id/level/icon only, so for a colliding name the link and the art were
+        # the page's own class while the tooltip TEXT fell back to the default entry.
+        # The Paladin page linked spell=20111 and printed the Warrior's
+        # "two-handed melee weapons by 1%" inside the tooltip, beside prose correctly
+        # saying 2% -- one build after the LINK was made class-aware (2026-10-07), the
+        # description was still global. A reader sees a page contradicting itself.
+        ladder = sorted(((rank_of[i], i) for i in spell_ids.get(norm(name), [])
+                         if i in rank_of))
+        top = ladder[-1][0] if ladder else None
+        for sub in (e.get("by_class") or {}).values():
+            sid = sub.get("id")
+            if not sid:
+                continue
+            sub.update(present(sid, detail))
+            if name in DESC_WRONG:
+                sub.pop("desc", None)
+            mine = rank_of.get(sid)
+            if mine and top:
+                sub["rank"] = f"Rank {mine} of {top}" if top > mine else f"Rank {mine}"
+            if e["kind"] == "talent":
+                sub["level"] = None
+                sub.pop("school", None)
 
     report = {
         "total": len(names),
