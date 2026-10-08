@@ -4,7 +4,7 @@ sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizza
 
 Paladin is a plate-wearing melee fighter that runs on mana, and it is no longer faction-locked. Undead Paladins are new in Forever, with their own class hub in Tirisfal Glades.
 :::scope
-Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, raised from 20 that day, so no level-60 Paladin build has been tested. Two talents that show up in published level-30 builds elsewhere, `Crusade` and `Improved Holy Strike`, both still carry spell records in the newest client build, 1.60.1.70245, so neither is absent from it. Nothing in that client places a Paladin talent in a tree either way, and Blizzard has published no Paladin deep dive. Treat any level-30 Paladin build you find as a projection.
+Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, raised from 20 that day, so no level-60 Paladin build has been tested. Published level-30 builds elsewhere spend points on `Crusade` and `Improved Holy Strike`. Both still exist in the newest client build, 1.60.1.70245, so neither has been deleted outright. Whether you can still reach them in the tree is the part nobody can check: the client's talent tables have not been updated for Forever, and Paladin is the one class Blizzard has not written a deep dive for. Treat any level-30 Paladin build you find as a projection.
 :::
 ## Which spec?
 | Spec | Role | Its strongest point | In one line |
