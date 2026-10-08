@@ -87,7 +87,7 @@ Play Hunter if you want the pet, not you, holding the enemy, and you do not mind
 | Turtle | `Shell Shield` | Reduces damage taken and attack speed for 12 seconds |
 | Windserpent | `Lightning Breath` | 20-yard-range damaging attack |
 | Wolf | `Furious Howl` | Increases party members' melee Attack Power |
-**Foxes are new to Forever.** Pick a family for its unique ability now, not for a damage stat that no longer exists — an earlier version of this page removed per-family damage modifiers on Icy Veins' authority, and Blizzard's post confirms that read: the model is gear-scaling plus a unique ability, not a hidden multiplier.
+**Foxes are new to Forever.** Pick a family for its unique ability now, not for a damage stat that no longer exists — Blizzard's post confirms the model is gear-scaling plus a unique ability, not a hidden multiplier.
 ## What changed from Classic
 | Change | What it means for you |
 | --- | --- |

@@ -37,7 +37,7 @@ Healing bonus on gear now also grants **one third as much spell damage**, which 
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
 | **[[Water Shield]]** | **exactly 20** | New. 3 globes; 2% of maximum mana when you are hit or when you crit a heal; 10 minutes. **One Elemental Shield at a time**: [[Lightning Shield]] replaces it |
-| **[[Mana Tide Totem]]** | **25** | **Moved from row 7 to row 4** and no longer needs `Restorative Totems`. The 16-point milestone |
+| **[[Mana Tide Totem]]** | **25** | The 16-point milestone, and it no longer needs `Restorative Totems` |
 | **`Nature's Swiftness`** | **exactly 30** | Your next **Nature spell** becomes instant, whatever it is, so in practice a [[Healing Wave]] you cannot be interrupted out of |
 | **[[Riptide]]** | **40** | New, the row-7 capstone. Instant, 6-second cooldown, and a [[Chain Heal]] cast *directly* on the Riptide target is 25% stronger |
 ## What Forever changed for Restoration

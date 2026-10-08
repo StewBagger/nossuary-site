@@ -38,7 +38,7 @@ Weapon DPS on a **slow two-hander**, then Hit and Expertise, critical strike, St
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
 | **`Mental Dexterity`** | **15** | New. Converts Intellect into attack power, up to 100% at rank 3. Also the new prerequisite for `Flurry` |
-| **[[Stormstrike]]** | **25** | **Moved from row 7 to row 4**, and its cooldown cut from 20 seconds to 8. Personal +20% to your next Bolt, Chain Lightning or [[Earth Shock]] |
+| **[[Stormstrike]]** | **25** | Row 4, on an **8-second cooldown**. Personal +20% to your next Bolt, Chain Lightning or [[Earth Shock]] |
 | **`Maelstrom Weapon`** | 35 | New. At rank 5, five stacks make a [[Lightning Bolt]] **instant and free**. At rank 1 it is only 20% of that, so it is all-or-nothing |
 | **`Rage of the Far Seer`** | **40** | The 31-point capstone. *"Shamans don't get [[Bloodlust]] in Forever… Rage of the Farseer acts as the next best thing"* |
 ## What Forever changed for Enhancement

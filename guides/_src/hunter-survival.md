@@ -14,7 +14,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1
 If solo speed is what you care about, the published advice above points to Beast Mastery, with a respec to Survival when you want to duel. **Our own reading, not a source's: if you level in groups, play whichever you enjoy — the gap is small.**
 ## Your talent points
 **Level 20: 0/0/11**, a durability build rather than a damage one.
-1. **`Deflection`, 5 points**: +5% base parry (1% per rank, was 2% per rank)
+1. **`Deflection`, 5 points**: +5% base parry, 1% per rank
 2. **`Entrapment`, 3 points**: every trap you own gets worse to be caught in
 3. **[[Deterrence]]**, and the remaining points toward it
 There is no published level-20 Survival damage build, because no source recommends one.
@@ -38,7 +38,7 @@ Below level 10, walk backwards between shots to stay out of the dead zone.
 ## What defines Survival
 | Talent or ability | Earliest level | What it does |
 | --- | --- | --- |
-| **`Deflection` 5/5** | 14 | +5% base parry, 1% per rank (was 2% per rank, 10% at 5/5, halved in the October 1 build). Parry is not a stat Hunters normally have |
+| **`Deflection` 5/5** | 14 | +5% base parry, 1% per rank. Parry is not a stat Hunters normally have |
 | **[[Deterrence]]** | 20 | +25% dodge and parry for 10 seconds, 5-minute cooldown, and half of the PvP case |
 | **`Entrapment` 3/5** | 15 | **Every** trap you trigger roots what it catches, and more points make the root last longer. Blizzard confirms this is a Forever redesign: it used to be a chance to trigger, and is now a guaranteed trigger with the duration scaling instead. No per-rank durations have been published |
 | **`Strider Kick`** | the 21-point gold medal talent, reachable inside the level-30 cap | An instant, no-trigger-needed weapon-damage attack that **also grants +30% movement speed for 3 seconds**, which is Blizzard's own wording. The 100% weapon-damage figure and the 8-second cooldown are the client's spell data, not Blizzard's. One of the two abilities that make Survival melee real rather than reactive |

@@ -81,6 +81,14 @@ TIP_ROWS = (("cast", "Cast"), ("cost", "Cost"), ("range", "Range"),
 # a supported state and the only one there was before 2026-10-07: every chip falls back
 # to the plain styled span.
 SPELLS = {}
+
+# The class whose page is being rendered, or "" for the index and the profession pages.
+# A chip resolves against THIS class first: a name can be a different spell in each
+# class's tree, and resolving by name alone pointed every guide that mentions
+# `Deflection` at the Warrior's copy -- including the Hunter and Paladin pages
+# (reader report, 2026-10-07). Module-level because the renderers are regex callbacks
+# and the alternative is threading a parameter through every one of them.
+PAGE_CLASS = ""
 CHIP_STATS = {"linked": 0, "plain": 0, "noicon": 0, "code_linked": 0, "code_plain": 0,
               "lost_icon": set(), "unknown": set()}
 
@@ -255,6 +263,13 @@ def tip_markup(raw, entry, kind):
     school = field(entry, "school")
     if school:
         meta.append(school)
+    # Which rank these figures describe. The guides discuss a maxed talent while the
+    # client's row is rank 1, and an unlabelled "1%" beside prose saying "5/5" reads as a
+    # contradiction rather than as a different rank (reader report, 2026-10-07). Absent
+    # where the client records no rank, which is every Forever-new talent.
+    rank = field(entry, "rank")
+    if rank:
+        meta.append(rank)
     joined = html.escape(" · ".join(meta), quote=False)
     out.append(f'<i class="tip-meta">{joined}</i></span></span>')
 
@@ -275,6 +290,19 @@ def tip_markup(raw, entry, kind):
     return "".join(out)
 
 
+def for_page(entry):
+    """The entry as it applies to the page being rendered.
+
+    Falls back to the global entry when the name does not collide across classes, or
+    when the page belongs to no class -- the index and the profession pages, where
+    there is no better answer than the default.
+    """
+    per = entry.get("by_class") or {}
+    if PAGE_CLASS and PAGE_CLASS in per:
+        return {**entry, **per[PAGE_CLASS]}
+    return entry
+
+
 def talent(m):
     """A `backtick` term, linked when the index knows it.
 
@@ -289,6 +317,7 @@ def talent(m):
     raw = html.unescape(m.group(1))
     name = html.escape(raw, quote=False)
     entry = SPELLS.get(raw)
+    entry = for_page(entry) if entry else None
     ident = entry.get("id") if entry else None
     if not entry or not isinstance(ident, int):
         CHIP_STATS["code_plain"] += 1
@@ -331,6 +360,7 @@ def chip(m):
     raw = html.unescape(m.group(1))          # inline() escaped it before we got here
     name = html.escape(raw, quote=False)     # ... so put it back exactly as it was
     entry = SPELLS.get(raw)
+    entry = for_page(entry) if entry else None
     if not entry:
         CHIP_STATS["plain"] += 1
         if SPELLS:
@@ -718,6 +748,8 @@ def main():
         if not md.exists():
             print(f"  skip {slug} (no source yet)")
             continue
+        global PAGE_CLASS
+        PAGE_CLASS = slug          # every chip on this hub and its spec pages is this class's
         meta, text = frontmatter(md.read_text())
         lines = text.split("\n")
         standfirst = inline(lines[0].strip())
@@ -762,6 +794,7 @@ def main():
             print(f"    wrote {slug}/{sslug}/")
 
     # ---- professions: a hub at /professions/ plus one page each ----
+    PAGE_CLASS = ""      # a profession page belongs to no class; the default entry is right
     NEWBOX[0] = "New to professions?"
     prof_written = []
     pd = OUT / "professions"

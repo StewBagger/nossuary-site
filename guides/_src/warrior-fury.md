@@ -14,9 +14,9 @@ The catch is when: **you cannot dual-wield until level 20**, and [[Whirlwind]] i
 **Level 20: 0/11/0.**
 1. `Cruelty`, 5 points
 2. `Unbridled Wrath`, 5 points
-3. The eleventh point used to be a straight **`Piercing Howl`** vs **`Improved Cleave`** call. **`Improved Cleave` is gone — deleted outright in the October 1 build**, so that choice no longer exists. Piercing Howl is the pick by default now; it is also a more honest one than it was, since the same build gave `Booming Voice` a real job (10/20/30/40/50% wider Shout radius, 5/10/15/20/25% cheaper Shouts) instead of the nothing it did before. On a PvP realm, still take Piercing Howl for the slow.
-**Level 30: 0/21/0 — our own extension, not a published build**, reaching `Death Wish`: `Cruelty` 5, `Unbridled Wrath` 5, `Furious Precision` 3, `Blood Craze` 2, **`Dual Wield Specialization` 5**, `Death Wish` 1. `Furious Precision` fills the three points `Improved Cleave` used to hold — it is the new row 3 talent (+4/7/10% off-hand hit) that replaced `Boundless Rage`, and it is also the closest thing left to the off-hand hit chance `Dual Wield Specialization` itself no longer grants (see Stat priority).
-**`Raging Blows` changed shape and this build does not take it.** It no longer makes [[Whirlwind]] strike with your off-hand — **Whirlwind now always strikes with both weapons, no talent required, for every Warrior who dual-wields.** What is left of `Raging Blows` is a flat Rage discount, 3 off both [[Cleave]] and [[Whirlwind]] (up from 2, Cleave-only). Worth a point if you have one spare past 21; not worth restructuring the build for.
+3. **`Piercing Howl`**, 1 point — the default, and on a PvP realm take it for the slow.
+**Level 30: 0/21/0 — our own extension, not a published build**, reaching `Death Wish`: `Cruelty` 5, `Unbridled Wrath` 5, `Furious Precision` 3, `Blood Craze` 2, **`Dual Wield Specialization` 5**, `Death Wish` 1. **`Furious Precision`** (+4/7/10% off-hand Hit) is where a dual-wielder gets off-hand Hit from a talent (see Stat priority).
+**`Raging Blows` is not in this build.** What it does is discount Rage, 3 off both [[Cleave]] and [[Whirlwind]]. Worth a point if you have one spare past 21; not worth restructuring the build for.
 ## Rotation
 **Identical to Arms at low level, minus [[Slam]].** The two specs play the same until 30.
 1. **[[Battle Shout]]** and **[[Bloodrage]]**
@@ -24,33 +24,33 @@ The catch is when: **you cannot dual-wield until level 20**, and [[Whirlwind]] i
 3. **[[Demoralizing Shout]]** on non-casters
 4. **[[Victory Rush]]** on proc
 5. **[[Overpower]]** on a dodge
-6. **[[Rend]]** early, if it lives — it now taps the enemy onto your threat table the instant it lands (October 1 build)
+6. **[[Rend]]** early, if it lives — it taps the enemy onto your threat table the instant it lands
 7. **[[Sunder Armor]]** once or twice, stopping below 50%
 **Multi-target: avoid it.** [[Cleave]] once or twice; the shouts are mitigation, not damage.
 ## Stat priority
-Weapon damage, then **Hit**, which matters *especially* while dual-wielding because a missed swing is rage you never earn, then critical strike, Strength, Agility, Stamina. Crit pulls double duty: a critical strike generates **100% increased Rage** as of the October 2 build, raised from the 75% Blizzard restored it at, on top of the crit's extra damage.
-**Dual-wielding still out-generates a two-hander on rage**, simply from swinging more often, but `Dual Wield Specialization` is a smaller reason why than it was before the October 1 and 2 builds. As of the October 1–2 builds it **no longer grants +100% off-hand Rage generation and no longer grants off-hand Hit chance** — both removed, leaving only its +25% off-hand damage. The new row 3 talent `Furious Precision` (+4/7/10% off-hand hit) lands at the same 10% cap DWS used to give, but it now costs a separate 3 points instead of riding along with DWS's 5 — the hit chance and the Rage/damage payoff are two talents now, not one.
+Weapon damage, then **Hit**, which matters *especially* while dual-wielding because a missed swing is rage you never earn, then critical strike, Strength, Agility, Stamina. Crit pulls double duty: a critical strike generates **100% increased Rage**, on top of the crit's extra damage.
+`Dual Wield Specialization` gives **+25% off-hand damage** and nothing else. Off-hand Hit comes from the row 3 talent **`Furious Precision`** (+4/7/10%), a separate 3 points rather than riding along with DWS's 5.
 **Live bug, not design:** Blizzard's own Known Issues list for this build still states that `Dual Wield Specialization` is granting its 2/4/6/8/10% Hit bonus to **both** your main hand and off-hand, when it should only ever have applied off-hand — and in the same breath, a separate line in the same patch notes says the talent was supposed to stop granting off-hand hit at all. Those two Blizzard statements do not fully square with each other; what's clear is the bug caused Blizzard's own testers bad data, which is why they say this whole pass on Fury happened. Don't plan a build around off-hand hit from this talent until it settles.
-Separately, **queueing [[Heroic Strike]] no longer raises your off-hand hit chance** (October 1) — if your hit-chance math assumed that, it no longer applies.
+Separately, **queueing [[Heroic Strike]] no longer raises your off-hand hit chance.**
 ## What defines Fury
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
-| **`Unbridled Wrath`** | maxed by 19 | ~60% chance of +1 Rage on melee damage. **No longer doubles to +2 Rage for a two-hander** (October 1) — a separate fix also corrected the proc chance itself, which had been lower than Blizzard intended. Mandatory purely because of the rage rework |
-| **`Dual Wield Specialization`** | 25 | +25% off-hand damage. No longer grants off-hand Rage or off-hand Hit — both removed as of October 1–2 (see Stat priority for the live bug around the Hit half) |
-| **`Death Wish`** | 30 | +20% physical damage and Fear immunity for 30 sec, 10 Rage, 3-min cooldown. **Now the prerequisite for `Flurry`, replacing `Enrage`** (see below). And [[Bloodthirst]] at 40 |
+| **`Unbridled Wrath`** | maxed by 19 | ~60% chance of +1 Rage on melee damage. Mandatory purely because of the rage rework |
+| **`Dual Wield Specialization`** | 25 | +25% off-hand damage. No longer grants off-hand Rage or off-hand Hit (see Stat priority for the live bug around the Hit half) |
+| **`Death Wish`** | 30 | +20% physical damage and Fear immunity for 30 sec, 10 Rage, 3-min cooldown. **The prerequisite for `Flurry`** (see below). And [[Bloodthirst]] at 40 |
 ## What Forever changed for Fury
 **Blizzard's own framing for this pass (October 1–2): more early utility, and points freed up later instead of being forced into `Enrage` just to reach `Flurry`.** That is a direct response to Classic/launch-beta Fury pathing, and it reshuffles several rows:
-- **`Improved Cleave` and `Boundless Rage` are both gone — deleted outright**, not moved. Anywhere this page or its builds used to lean on either, see the rewritten sections above.
-- **Two new early talents.** `Lingering Rage` (row 2): delays Rage decay out of combat by 2/4/6/8/10 seconds — a QoL pick, not a levelling one. `Furious Precision` (row 3, replacing `Boundless Rage`): +4/7/10% off-hand Hit chance, and now the main place a dual-wielder gets off-hand Hit from a talent at all.
-- **`Booming Voice` finally does something again.** The September 30 Class Deep Dive recorded Shout durations going baseline and left the talent's own job an open question; the October 1–2 pass answered it — the talent now grants 10/20/30/40/50% wider Shout **area of effect** and cuts their **Rage cost** by 5/10/15/20/25%.
-- **`Iron Will` is not a Fury talent.** It sat in this tree's row 2 and the September 30 Class Deep Dive placed it in Arms row 2; the October 1 build moved it again, past Arms, to **Protection row 1** — see that guide.
+- **`Improved Cleave` and `Boundless Rage` are both gone — deleted outright**, not moved.
+- **Two new early talents.** `Lingering Rage` (row 2): delays Rage decay out of combat by 2/4/6/8/10 seconds — a QoL pick, not a levelling one. `Furious Precision` (row 3, replacing `Boundless Rage`): +4/7/10% off-hand Hit chance.
+- **`Booming Voice` does something again:** 10/20/30/40/50% wider Shout **area of effect**, and Shout **Rage cost** cut by 5/10/15/20/25%.
+- **`Iron Will` is not a Fury talent** — it is **Protection row 1**; see that guide.
 - `Unbridled Wrath` **no longer grants double Rage for a two-handed weapon** — a change that also softens the case for an Arms Warrior parking points in this row (see the Arms guide).
 - **New talent `Gore Drinker`, row 6, requires `Enrage`.** Your `Enrage`, `Berserker Rage`, `Bloodrage`, `Death Wish` and [[Bloodthirst]] make your next 3 melee attacks restore 0.5/1% of max Health. This is the reason to still take `Enrage` even though it no longer gates `Flurry`.
 - **`Flurry`'s prerequisite changed from `Enrage` to `Death Wish`.** This is the headline pathing change: you no longer have to buy into `Enrage` just to reach `Flurry`, which is exactly the "free up points" goal Blizzard stated. `Enrage` is still worth taking on its own merits (see `Gore Drinker` above), just no longer mandatory en route.
-- `Improved Berserker Rage` moved from row 6 to **row 5**, and `Berserker Rage` itself now trains at **level 30** (was 32) — reachable right at the beta's new cap instead of two levels past it.
-- `Blood Craze` **no longer triggers off [[Bloodthirst]] casts** — the September 30 Class Deep Dive announced that trigger, and the October 2 build removed it again. It still triggers on being crit or on taking a hit worth more than 20% of your max health.
-- **[[Bloodthirst]]'s Attack Power ratio is back to 45%** (October 1) — the September 30 Class Deep Dive had it retuned to a base value with less Attack Power scaling, at 35%; that cut is reversed. It still does not heal you by itself, and the `Blood Craze` route the deep dive gave it is closed too, removed in the October 2 build (see above). It still costs 30 Rage on a 6-second cooldown, and still carries +10% movement speed for 10 sec.
-- `Flurry` is still nerfed from 30% to 25% total increased attack speed, unchanged by the October builds. `Improved Battle Shout` and `Improved Demoralizing Shout` are gone, as the September 30 Class Deep Dive recorded — both effects are baseline now.
+- `Improved Berserker Rage` moved from row 6 to **row 5**, and `Berserker Rage` itself now trains at **level 30**, right at the beta's cap.
+- `Blood Craze` triggers on being crit or on taking a hit worth more than 20% of your max health, and **not off [[Bloodthirst]] casts**.
+- **[[Bloodthirst]]'s Attack Power ratio is 45%** — the September 30 Class Deep Dive printed 35%, which the October 1 build reversed. It does not heal you by itself, costs 30 Rage on a 6-second cooldown, and carries +10% movement speed for 10 sec.
+- `Flurry` gives **25%** total increased attack speed rather than Classic's 30%. `Improved Battle Shout` and `Improved Demoralizing Shout` are gone, as the September 30 Class Deep Dive recorded — both effects are baseline now.
 - **`Death Wish` was rebuilt.** Classic's version cut armour and all resistances by 20% as its downside; Forever's instead adds +5% damage taken, on top of the same +20% physical damage and new Fear immunity (ClassicWoW.gg's exact tooltip text).
 ## At level 60
 Unknown, and Icy Veins is unusually frank about it: *"we are unsure currently if there will be additional ways to generate Rage at Level 60, as these changes alone greatly reduce Fury Warrior's Rage generation."* That was written against the launch beta, before Blizzard's September 30 post and the October 1–2 builds since: the restored crit-Rage bonus (now 100%, see Stat priority), Armor no longer cutting into Rage from damage taken, and Bloodthirst's AP ratio returning to 45% all land squarely on Fury, so some of that shortfall should already be smaller than when Icy Veins wrote it — not confirmed by any source, just the direction the changes point.

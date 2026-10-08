@@ -9,7 +9,7 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of t
 ## Which spec?
 | Spec | Role | Its strongest point | In one line |
 | --- | --- | --- | --- |
-| **[Balance](/guides/wow-forever/druid/balance/)** | Ranged DPS | `Eclipse` at 30: each [[Wrath]] cuts 0.50 s off your next two [[Starfire]]s, no crit needed | [[Wrath]] got 50% more base damage on September 24, and [[Moonkin Form]] waits until 40 |
+| **[Balance](/guides/wow-forever/druid/balance/)** | Ranged DPS | `Eclipse` at 30: each [[Wrath]] cuts 0.50 s off your next two [[Starfire]]s, no crit needed | An alternating caster rotation rather than spamming one spell, and [[Moonkin Form]] waits until 40 |
 | **[Feral — Bear](/guides/wow-forever/druid/feral-bear/)** | Tank | Multiplies the armour on your gear, adds +180 health, and can drop form to heal itself | Leather tanking on rage and dodge, with no block and no parry |
 | **[Feral — Cat](/guides/wow-forever/druid/feral-cat/)** | Melee DPS | [[Rip]] scales with attack power now, so five combo points keep a 12-second bleed running | Energy and combo points, and +30% movement speed permanently |
 | **[Restoration](/guides/wow-forever/druid/restoration/)** | Healer | `Swiftmend` turns a running [[Rejuvenation]] or [[Regrowth]] into an instant heal and leaves it ticking | HoTs rather than repair, and a 1-second global cooldown on [[Rejuvenation]] |
@@ -68,11 +68,11 @@ Blizzard's own class deep dive sharpens that trade-off rather than softening it:
 | Change | What it means for you |
 | --- | --- |
 | **Weapon damage now scales Bear, Cat and Dire Bear form** | Auto-attack DPS equals your weapon's DPS outright, at a fixed 1.0-second swing in Cat Form and 2.5 seconds in Bear/Dire Bear, and weapon-damage abilities use the same numbers. Chase weapon DPS, not weapon stats — the reverse of Classic |
-| `Tiger's Fury` removed | **Live as of October 1, not merely announced.** Replaced by a new Feral talent, `Shifting Power` — Row 4, connected to `Shredding Attacks`, Cat Form only. See [Feral — Cat](/guides/wow-forever/druid/feral-cat/) |
+| `Tiger's Fury` removed | Replaced by a new Feral talent, `Shifting Power` — Row 4, connected to `Shredding Attacks`, Cat Form only. See [Feral — Cat](/guides/wow-forever/druid/feral-cat/) |
 | All Shapeshift Forms immune to Disarm (Oct 1) | Only once you are already shifted: disarmed *before* you shift, the form does **not** clear the Disarm, and you deal reduced damage for its duration |
 | [[Revive]] added at level 12 | An out-of-combat resurrect, **eight levels before [[Rebirth]]** |
 | [[Nature's Grasp]] and [[Omen of Clarity]] now trained | Both were talents; Omen now procs off melee too |
-| [[Faerie Fire]] usable in forms | The separate feral version is gone, and as of October 1 it no longer resets your swing timer when used |
+| [[Faerie Fire]] usable in forms | The separate feral version is gone, and it does not reset your swing timer |
 | `Swiftmend` moved to Restoration tier 4 | A healer gets it about fifteen levels earlier, and **it no longer consumes the heal-over-time** |
 | [[Barkskin]] usable while shapeshifted | Blizzard’s only stated change to it: a bear or a cat can now pop it without dropping form |
 | [[Hurricane]]'s cooldown removed | Fixes the Balance area-damage hole |

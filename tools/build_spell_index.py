@@ -114,6 +114,31 @@ DESC_WRONG = {
     "Naturalist": "its own rank-1 cast-time cut of 0.1 sec against +100% to all damage",
 }
 
+# SkillRaceClassInfo.ClassMask, the only table that says which CLASS a skill line
+# belongs to. Needed because the display names collide: skill lines 257 and 267 are
+# BOTH called "Protection" -- Warrior's and Paladin's. Resolving a chip by name alone
+# is what made every guide that mentions `Deflection` link to the WARRIOR's copy,
+# including the Hunter and Paladin pages (reported by a reader, 2026-10-07).
+CLASS_BY_MASK = {1: "warrior", 2: "paladin", 4: "hunter", 8: "rogue", 16: "priest",
+                 64: "shaman", 128: "mage", 256: "warlock", 1024: "druid"}
+
+# A chip on a class's page must resolve to THAT class's spell. Verified against the
+# reported failure: `Deflection` is a talent in four trees at once.
+# The guides discuss a maxed talent ("`Shield Specialization` 5/5 returns 5 Rage per
+# block") while the client's row is rank 1, so a reader saw "5/5" in the prose and "1%"
+# in the tooltip and reasonably concluded one was wrong (reported 2026-10-07).
+#
+# THE FIX IS TO LABEL THE RANK, NOT TO SHOW A HIGHER ONE. Resolving to max rank was
+# tried and is wrong here: these are levelling guides capped at level 30, and a spell's
+# higher ranks are level-gated content a reader cannot have. The assertions caught it --
+# Holy Shield's max rank deals 221 damage where paladin-protection.md says 110, because
+# 110 is the rank that exists at the cap. So the shown rank is unchanged and now says
+# which rank it is; where the client records no rank, it stays silent.
+RANK_RE = re.compile(r"^Rank (\d+)$")
+
+VERIFY_CLASS = {("Deflection", "hunter"): 19295, ("Deflection", "paladin"): 20060,
+                ("Deflection", "warrior"): 16462, ("Deflection", "rogue"): 13713}
+
 SCHOOLS = {1: "Physical", 2: "Holy", 4: "Fire", 8: "Nature",
            16: "Frost", 32: "Shadow", 64: "Arcane"}
 
@@ -623,11 +648,32 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
     # is the table that says which spells a class actually trains, so it is the filter
     # that makes "lowest rank" mean "lowest rank a player can have".
     learnable: set[int] = set()
+    skill_of: dict[int, set[int]] = defaultdict(set)
     for r in table("SkillLineAbility", build):
         try:
-            learnable.add(int(r["Spell"]))
+            sid, line = int(r["Spell"]), int(r["SkillLine"] or 0)
         except (ValueError, TypeError, KeyError):
             continue
+        learnable.add(sid)
+        if line:
+            skill_of[sid].add(line)
+
+    # skill line -> the classes that can train it. See CLASS_BY_MASK.
+    classes_of_line: dict[int, set[str]] = defaultdict(set)
+    for r in table("SkillRaceClassInfo", build):
+        try:
+            line, mask = int(r["SkillID"]), int(r["ClassMask"] or 0)
+        except (ValueError, TypeError, KeyError):
+            continue
+        for bit, name in CLASS_BY_MASK.items():
+            if mask & bit:
+                classes_of_line[line].add(name)
+
+    def classes_of(sid: int) -> set[str]:
+        out: set[str] = set()
+        for line in skill_of.get(sid, ()):
+            out |= classes_of_line.get(line, set())
+        return out
 
     icon: dict[int, int] = {}
     for r in table("SpellMisc", build):
@@ -698,6 +744,84 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         else:
             unmatched.append(name)
 
+    # RANK LADDERS. NameSubtext_lang carries "Rank N" where the client records one;
+    # Forever's new talents (Deflection, Reverence, Shatter) carry none, and those stay
+    # silent rather than claiming a rank we cannot see.
+    rank_of: dict[int, int] = {}
+    for r in table("Spell", build):
+        try:
+            sid = int(r["ID"])
+        except (ValueError, TypeError, KeyError):
+            continue
+        m = RANK_RE.match((r.get("NameSubtext_lang") or "").strip())
+        if m:
+            rank_of[sid] = int(m.group(1))
+
+    for name, e in entries.items():
+        if e["kind"] == "item":
+            continue
+        ladder = sorted(((rank_of[i], i) for i in spell_ids.get(norm(name), [])
+                         if i in rank_of))
+        if not ladder:
+            continue
+        top = ladder[-1][0]
+        # LINK RANK 1 WHERE RANK 1 EXISTS. The guides are levelling guides, so the first
+        # rank is the one a reader meets, and a uniform rule is explicable where "lowest
+        # trainable level" is not. It also corrects a stale pointer: for talents the
+        # selection prefers Talent.db2's recorded rank-1 spell, and for Trueshot Aura
+        # that id is rank 3 of the current ladder while rank 1 exists at level 25.
+        # Some ladders genuinely start at rank 2 (Lightning Mastery, Monster Slaying);
+        # those keep what they have and the label says which rank it is.
+        if ladder[0][0] == 1 and ladder[0][1] in learnable:
+            e["id"] = ladder[0][1]
+            e["icon"] = icon.get(e["id"], e.get("icon"))
+            e["level"] = level.get(e["id"])
+        mine = rank_of.get(e["id"])
+        if mine:
+            e["rank"] = f"Rank {mine} of {top}" if top > mine else f"Rank {mine}"
+
+    # PER-CLASS RESOLUTION. A name can be a different spell in each class's tree, so
+    # one global answer is wrong wherever the trees collide. Each colliding name gets a
+    # `by_class` map and the renderer picks the entry for the page it is drawing; names
+    # that do not collide carry none, so the common case costs nothing.
+    def pick(ids: list[int], kind: str) -> int | None:
+        # Same split as the rank block above: a talent means its maxed rank, an ability
+        # means the first rank you can train. Without this the per-class pass would
+        # quietly put a colliding talent back on rank 1.
+        if kind == "talent":
+            ladder = sorted(((rank_of[i], i) for i in ids if i in rank_of))
+            if ladder:
+                return ladder[-1][1]
+        ranked = sorted((level[i], i) for i in ids if i in level and i in learnable)
+        if ranked:
+            return ranked[0][1]
+        return min(ids) if ids else None
+
+    for name, e in entries.items():
+        if e["kind"] == "item":
+            continue
+        cand = spell_ids.get(norm(name), [])
+        by_cls: dict[str, list[int]] = defaultdict(list)
+        for i in cand:
+            for c in classes_of(i):
+                by_cls[c].append(i)
+        if len(by_cls) < 2:
+            continue                      # one class or none -- the default entry is right
+        per: dict[str, dict] = {}
+        for c, ids in by_cls.items():
+            sid = pick(ids, e["kind"])
+            if sid is None:
+                continue
+            per[c] = {"id": sid, "level": level.get(sid), "icon": icon.get(sid)}
+        if len(per) > 1:
+            e["by_class"] = dict(sorted(per.items()))
+
+    for (name, cls), want in VERIFY_CLASS.items():
+        got = entries.get(name, {}).get("by_class", {}).get(cls, {}).get("id")
+        if got != want:
+            verdict(f"FAIL -- class resolution broke: {name} for {cls} resolved to "
+                    f"{got}, expected {want}")
+
     # Enrich every spell and talent with what a tooltip shows. Items are skipped: their
     # facts live on different tables and the chip for one is a link, not a stat block.
     detail = load_details(build)
@@ -722,7 +846,12 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         "items": sum(1 for e in entries.values() if e["kind"] == "item"),
         "talents": sum(1 for e in entries.values() if e["kind"] == "talent"),
         "levelled": sum(1 for e in entries.values() if e["level"]),
-        "icons": {e["icon"] for e in entries.values() if e["icon"]},
+        # Per-class entries point at DIFFERENT spells, so they have their own icons.
+        # Missing them left five chips naming a file that was never fetched -- caught by
+        # build_guides.py's lost_icon notice, which is why that notice exists.
+        "icons": ({e["icon"] for e in entries.values() if e.get("icon")}
+                  | {d["icon"] for e in entries.values()
+                     for d in (e.get("by_class") or {}).values() if d.get("icon")}),
         "described": sum(1 for e in entries.values() if e.get("desc")),
     }
     return entries, report

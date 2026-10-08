@@ -39,15 +39,15 @@ Play Paladin if you want a melee class that carries its own heals, wears mail fr
 | 4 | [[Judgement]], [[Blessing of Might]] |
 | **6** | **[[Holy Strike]], new in Forever**, a real attack this early, and universally liked |
 | 8 | [[Hammer of Justice]] |
-| **10** | [[Lay on Hands]] (20 min, was an hour), **[[Seal of Fury]], new**, the tank seal, and **judging it taunts** |
+| **10** | [[Lay on Hands]] (20 min), **[[Seal of Fury]], new**, the tank seal, and **judging it taunts** |
 | 16 | [[Righteous Fury]] |
 | **20** | Trained: [[Exorcism]], [[Flash of Light]], and now also [[Consecration]] and [[Blessing of Kings]], which were talents in Classic. Talent: [[Seal of Command]] |
-| 26 | [[Blessing of Salvation]], now 1 hour, was 5 minutes |
-| 30 | [[Divine Intervention]], [[Holy Shock]] via talent, moved down from a 31-point capstone |
+| 26 | [[Blessing of Salvation]] |
+| 30 | [[Divine Intervention]], [[Holy Shock]] via talent |
 | 34 | [[Divine Shield]], now **−50% your damage**, and applies Forbearance |
 | **40** | **Plate armour**, [[Summon Warhorse]], **[[Hammer of the Righteous]], new**, needs a one-hander |
 | 50 | [[Holy Wrath]], now also stuns for 2 seconds |
-| 52–60 | Greater Blessings, now **1 hour**, so timers stop desyncing |
+| 52–60 | Greater Blessings |
 **[[Blessing of Sanctuary]] is not in Forever**, in either form.
 ## Which race
 **Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling** *(ours, not a source's)*. Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.

@@ -49,7 +49,7 @@ Spell Power, then Hit, **Haste**, critical strike, Spirit, Intellect, Stamina.
 | --- | --- | --- |
 | **`Bane` 5/5** | 14 | −0.5 s on [[Shadow Bolt]], [[Immolate]] and [[Incinerate]], −2 s on [[Soul Fire]]. **Moved to tier 1** and now covers Incinerate. Universal in every published build |
 | **[[Shadowburn]]** | 20 | Your only instant at the low cap, and a shard on a kill inside 8 seconds |
-| **[[Conflagrate]]** | 25 | **Moved from tier 7 to tier 4 and no longer requires `Improved Immolate`**: a tier-7 Classic talent, reachable at 25 in Forever |
+| **[[Conflagrate]]** | 25 | **Tier 4, and it no longer requires `Improved Immolate`**: a tier-7 Classic talent, reachable at 25 in Forever |
 | **`Ruin`** | 24 | **5 ranks in Forever where Classic had 1, and moved from tier 5 to tier 3**: a 25-point Classic talent now reachable a full level earlier |
 ## What Forever changed for Destruction
 - **Five new talents**: `Molten Skin` (−10% all damage taken at 5/5, though 5/5 is **level 19**; rank 1 at 15 is −2%), [[Bane of Havoc]], `Fire and Brimstone`, `Shadow and Flame`, and the capstone [[Incinerate]].

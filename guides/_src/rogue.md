@@ -38,7 +38,7 @@ Play Rogue if you like deciding when a fight starts, and you are willing to leve
 | 4 | [[Backstab]], [[Pick Pocket]] |
 | 6 | [[Gouge]] |
 | 8 | [[Evasion]] |
-| **10** | [[Slice and Dice]], [[Sprint]], **[[Sap]]. Nolonger requires stealth and no longer breaks it**, first talent point, dual wield |
+| **10** | [[Slice and Dice]], [[Sprint]], **[[Sap]]**, first talent point, dual wield |
 | 12 | [[Kick]] |
 | 14 | [[Garrote]], [[Expose Armor]], buffed |
 | 16 | [[Feint]] |

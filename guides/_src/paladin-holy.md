@@ -16,7 +16,7 @@ Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1
 2. `Healing Light`, 3 points
 3. `Spiritual Focus` or `Improved Seals`, 2 points — Icy Veins' default is `Spiritual Focus` for pure healing; Wowhead's own build spends them on `Improved Seals` instead, for the extra Judgement damage. Either is defensible
 4. `Reverence`, 1 point
-Note that `Healing Light`'s [[Holy Shock]] component does nothing until you train [[Holy Shock]] at **exactly level 30**. The October 1 build raised the cap to 30, so it is live now, and the level 30 build below trains it.
+Note that `Healing Light`'s [[Holy Shock]] component does nothing until you train [[Holy Shock]] at **exactly level 30**, which the level 30 build below trains.
 **Level 30: 21/0/0 — our own extension, not a published build**, reaching [[Holy Shock]]: `Divine Intellect` 5, `Healing Light` 3, `Spiritual Focus` 2, `Reverence` 3, `Purifying Power` 2, `Infusion of Light` 2, `Divine Favor` 1, `Illumination` 2, [[Holy Shock]] 1.
 ## Rotation
 **Healing:**
@@ -24,7 +24,7 @@ Note that `Healing Light`'s [[Holy Shock]] component does nothing until you trai
 2. **[[Holy Light]]** only with mana to spare, on someone in real danger
 3. **[[Lay on Hands]]** as the emergency, it heals for your full health and **consumes all your mana**, so you are finished healing for that fight
 4. Maintain [[Blessing of Might]] on the party, plus [[Devotion Aura]] or [[Retribution Aura]] — **live bug as of October 1:** [[Retribution Aura]] currently reflects off the *target's* spell power instead of yours, not intended design, so treat its output as unreliable until Blizzard fixes it
-**While soloing, your damage rotation is Retribution's minus [[Seal of Command]]**, keep a seal up, and press [[Holy Strike]] and [[Judgement]] on cooldown. Saying that plainly rather than repeating it.
+**While soloing, your damage rotation is Retribution's minus [[Seal of Command]].**
 **Multi-target: there effectively is none below 30.** `Light's Vigil` is a 31-point capstone and [[Consecration]] is expensive, so area healing is spreading [[Flash of Light]] around.
 ## Stat priority
 Healing Power, then Intellect, MP5, critical strike, Haste, Spirit.
@@ -34,7 +34,7 @@ If you are not planning to heal seriously, gear **Weapon Damage, Hit and critica
 | --- | --- | --- |
 | **`Reverence`** | 20 | A share of your mana regeneration continues while casting, 30% at the 3 points this build spends, the mana-stability talent, and now `Illumination`'s prerequisite |
 | **`Infusion of Light`** | 25 | [[Holy Shock]] and [[Flash of Light]] crits cut your next [[Holy Light]] cast, up to 1 second at the 2 points this build spends, 0.5 seconds per rank |
-| **[[Holy Shock]]** | **exactly 30** | Moved down from tier 7, and the gate for the Holy-damage "Shockadin" path |
+| **[[Holy Shock]]** | **exactly 30** | The gate for the Holy-damage "Shockadin" path |
 | **`Light's Vigil`** | 40 | The new capstone, and Holy's answer to **area healing**: mark an ally, then your next [[Holy Shock]] on them triggers no cooldown and heals their party, the whole group in a dungeon, but only the marked ally's **subgroup** in a raid. The heal itself gets no mana refund (only the hostile version refunds 75%), and you may only have one active per Paladin, per party. **It replaced Holy Shock as the capstone** |
 ## What Forever changed for Holy
 - **Seven new talents**, including `Voice of Truth` (6 seconds of silence and interrupt immunity), `Reverence`, `Purifying Power`, `Infusion of Light`, `Divine Precision`, and the `Light's Vigil` capstone.

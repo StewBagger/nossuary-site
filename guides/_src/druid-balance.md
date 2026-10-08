@@ -33,7 +33,7 @@ Item level, then Spell Power, Intellect, Haste, critical strike, Spirit.
 | **`Nature's Grace`** | ~30 | **Rewritten**: now +10% casting speed *and* −10% global cooldown for 3 seconds on a **non-periodic** crit. Damage-over-time crits do not trigger it |
 | **[[Moonkin Form]]** | **40** | The 31-point capstone. Also raises armour from items by 360% while shapeshifted. Unreachable in the beta |
 ## What Forever changed for Balance
-- **[[Wrath]] itself was redesigned to a much cheaper Mana cost with lower base damage to match** — Blizzard's own framing of the baseline change; the September 24 buff (base damage up ~50%, above) was layered on top of this redesign, not instead of it.
+- **[[Wrath]] was redesigned to a much cheaper Mana cost with lower base damage to match** — Blizzard's own framing; the September 24 buff (above) was layered on top of this redesign, not instead of it.
 - **`Eclipse` is new**, and it is the spec's identity.
 - **[[Moonkin Form]]'s aura is now all critical strike**: spell *and* melee, within **45 yards**, up from spell crit at 30. It is **mutually exclusive with `Leader of the Pack`**, it doubles [[Omen of Clarity]]'s proc chance, and **you cannot cast healing spells in it** (Classic allowed only Balance spells, which is a different restriction).
 - **[[Omen of Clarity]] and [[Nature's Grasp]] are no longer talents**: they are trained, at 20 and 10. **[[Nature's Grasp]] also gained reach**: it is now **castable while shapeshifted** and no longer outdoors-only. Blizzard states no change to its proc.

@@ -35,18 +35,18 @@ Play Shaman if you want one character that can heal, cast at range or fight in m
 ## Levelling milestones
 | Level | What you get |
 | --- | --- |
-| 1 | [[Lightning Bolt]], [[Healing Wave]], **[[Rockbiter Weapon]], now 60 minutes, was 5** |
+| 1 | [[Lightning Bolt]], [[Healing Wave]], **[[Rockbiter Weapon]], now 60 minutes** |
 | **4** | **Earth Totem class quest** → [[Stoneskin Totem]], now reducing all physical damage |
 | 8 | [[Stoneclaw Totem]], your emergency taunt, [[Lightning Shield]] |
 | **10** | **Fire Totem class quest** → [[Searing Totem]], [[Flame Shock]], **[[Flametongue Weapon]] (60 min)** |
-| 12 | **[[Fire Nova]], renamed and reworked: no longer a totem, now an instant burst around your active fire totem** |
+| 12 | **[[Fire Nova]]**: an instant burst around your active fire totem |
 | **20** | **Water Totem class quest. And [[Ghost Wolf]] — 40% run speed, faster than Aspect of the Cheetah**, and with the talent it becomes instant and usable indoors. Also [[Frost Shock]], [[Healing Stream Totem]], **[[Call of the Elements]]** and [[Totemic Recall]], which now actually restores Mana on recall — real sustain for a levelling Shaman |
 | **22** | **[[Totemic Projection]], new**, relocates every live totem |
 | **30** | **Air Totem class quest**, [[Windfury Weapon]] (60 min), [[Reincarnation]], [[Astral Recall]] |
 | 32 | [[Chain Lightning]], half a second faster than vanilla |
 | 40 | [[Chain Heal]], mount |
 | **42** | [[Grace of Air Totem]] — **the last new Shaman ability in the game.** 43 to 60 is ranks only |
-**[[Tranquil Air Totem]] is in Forever**, but it no longer stacks with [[Windfury Totem]] or [[Grace of Air Totem]] — the September 24 build stopped the three combining, even when different Shamans in the same group drop them.
+**[[Tranquil Air Totem]] is in Forever**, but it no longer stacks with [[Windfury Totem]] or [[Grace of Air Totem]], even when different Shamans in the same group drop them.
 ## Which race
 **Read this section in proportion.** Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling** *(ours, not a source's)*. Where racials genuinely decide things is **PvP**, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Alliance — Dwarf, and it is forced**, being the only Alliance Shaman. It is fine anyway: `Stoneform` is a real solo cooldown, and **`Mace Specialization` gives +1% crit to spells and abilities merely for holding a mace**, which Shaman train by default, so it is free crit for Elemental and Restoration too.
@@ -63,7 +63,7 @@ Play Shaman if you want one character that can heal, cast at range or fight in m
 | **Weapon imbues last 60 minutes, not 5** | One refresh an hour, so the imbue stops being upkeep |
 | **Totems last 5 minutes and reach 30 yards** | "Per pull" is no longer the unit. `Totemic Mastery` was removed because 30 yards is now baseline |
 | **The totem bar** | Three saveable four-totem loadouts, one button to drop a set, one to pick them all up and **refund 25% of the mana**, one to teleport them |
-| [[Disease Cleansing Totem]] now lasts its full 5 minutes | A duration bug, fixed October 1 |
+| [[Disease Cleansing Totem]] now lasts its full 5 minutes | Like every other totem |
 | [[Fire Nova]] is no longer a totem | It bursts around your active fire totem instead |
 | [[Improved Ghost Wolf]] makes it instant and indoor-usable | Vanilla never allowed either |
 | Alliance Shaman exist | Dwarf only |

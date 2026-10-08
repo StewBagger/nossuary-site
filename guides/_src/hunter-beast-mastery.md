@@ -43,10 +43,10 @@ Forever changed pets more than it changed the Hunter.
 - **Pets get increased stats from your own gear, so they scale as you gear up — and Blizzard confirms that is now the only way to buff them.** Pets can no longer receive player buffs that increase their stats, so a stat buff you cast lands on you, not your pet
 - Happiness and loyalty still exist, feed your pet
 - Focus is the pet resource, and it works the same way for every family
-- **Ability ranks are taught, not inherited.** Tame a beast that already knows the rank, take your own pet back, and teach it with Beast Training at a training-point cost. **Loyalty gates training**, and it rises slowly. Note the September 24 build nerfed [[Tame Beast]] so it **no longer works on beasts above your own level**. The October 1 build also fixed a batch of tameable beasts whose pet abilities were ranked too high for the creature's own level — Blizzard says that could make a freshly tamed pet look like it had "forgotten" an ability it should have known, and that should not happen anymore
+- **Ability ranks are taught, not inherited.** Tame a beast that already knows the rank, take your own pet back, and teach it with Beast Training at a training-point cost. **Loyalty gates training**, and it rises slowly. Note that [[Tame Beast]] **does not work on beasts above your own level**. The October 1 build also fixed tameable beasts whose pet abilities were ranked too high for the creature's own level, which Blizzard says could make a freshly tamed pet look like it had "forgotten" an ability it should have known
 - **Every family can now learn either [[Bite]] or [[Claw]] (some both), and either [[Dive]] or [[Dash]], on top of one ability unique to that family** — the Bear's [[Swipe]] is one of those, not a leftover damage modifier. Full family/ability list, including the new Fox's `Trickster's Dance`, on the [Hunter overview](/guides/wow-forever/hunter/#pet-families)
 - **Foxes are a new pet family**, added in this Forever pass
-- **Aggressive Mode is back**, in the pet tab of your spellbook, as of October 1
+- **Aggressive Mode is back**, in the pet tab of your spellbook
 **The early recommendation is a Bear**, for one specific reason: its **Swipe** is a 5-second-cooldown frontal cleave, and *"one of the rare pet abilities capable of dealing consistent AoE damage to hold aggro on multiple targets."*
 ## What defines Beast Mastery
 | Talent | Earliest level | What it does |

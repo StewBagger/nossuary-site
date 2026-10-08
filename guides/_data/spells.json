@@ -1,8 +1,8 @@
 {
  "build": "1.60.1.70245",
  "product": "wow_cn_beta",
- "generated": "2026-10-07T11:49:43+00:00",
- "stamp": "2b55a8411b27",
+ "generated": "2026-10-08T09:41:35+00:00",
+ "stamp": "2f6177729fb5",
  "inputs": "cd30956a2ca4",
  "entries": {
   "Adrenaline Rush": {
@@ -37,6 +37,7 @@
    "id": 19434,
    "level": 20,
    "icon": 135130,
+   "rank": "Rank 1 of 6",
    "cast": "2 sec cast",
    "range": "35 yd range",
    "school": "Physical",
@@ -63,6 +64,7 @@
    "id": 8676,
    "level": 18,
    "icon": 132282,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -112,6 +114,23 @@
    "id": 12297,
    "level": null,
    "icon": 136056,
+   "by_class": {
+    "paladin": {
+     "id": 20096,
+     "level": null,
+     "icon": 135994
+    },
+    "shaman": {
+     "id": 16254,
+     "level": 1,
+     "icon": 136056
+    },
+    "warrior": {
+     "id": 12297,
+     "level": 1,
+     "icon": 136056
+    }
+   },
    "cast": "Instant",
    "desc": "Increases your Defense Skill by 20."
   },
@@ -130,6 +149,7 @@
    "id": 400574,
    "level": 20,
    "icon": 135735,
+   "rank": "Rank 1 of 5",
    "cast": "2.5 sec cast",
    "range": "30 yd range",
    "school": "Arcane"
@@ -154,6 +174,7 @@
    "id": 1449,
    "level": 14,
    "icon": 136116,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "school": "Arcane",
    "cost": "75 Mana"
@@ -179,6 +200,7 @@
    "id": 1459,
    "level": 1,
    "icon": 135932,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "3600 sec",
@@ -207,6 +229,7 @@
    "id": 5143,
    "level": 8,
    "icon": 136096,
+   "rank": "Rank 1 of 8",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "3 sec",
@@ -225,6 +248,7 @@
    "id": 3044,
    "level": 6,
    "icon": 132218,
+   "rank": "Rank 1 of 8",
    "cast": "-1000 sec cast",
    "range": "35 yd range",
    "school": "Arcane",
@@ -251,6 +275,53 @@
    "id": 9788,
    "level": null,
    "icon": 132739,
+   "by_class": {
+    "druid": {
+     "id": 9788,
+     "level": null,
+     "icon": 132739
+    },
+    "hunter": {
+     "id": 9788,
+     "level": null,
+     "icon": 132739
+    },
+    "mage": {
+     "id": 9788,
+     "level": null,
+     "icon": 132739
+    },
+    "paladin": {
+     "id": 9788,
+     "level": null,
+     "icon": 132739
+    },
+    "priest": {
+     "id": 9788,
+     "level": null,
+     "icon": 132739
+    },
+    "rogue": {
+     "id": 9788,
+     "level": null,
+     "icon": 132739
+    },
+    "shaman": {
+     "id": 9788,
+     "level": null,
+     "icon": 132739
+    },
+    "warlock": {
+     "id": 9788,
+     "level": null,
+     "icon": 132739
+    },
+    "warrior": {
+     "id": 9788,
+     "level": null,
+     "icon": 132739
+    }
+   },
    "cast": "Instant",
    "desc": "Allows a blacksmith to make special armors that are unavailable to the typical artisan blacksmith."
   },
@@ -259,6 +330,7 @@
    "id": 13161,
    "level": null,
    "icon": 132252,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "duration": "Until cancelled",
    "school": "Nature",
@@ -281,6 +353,7 @@
    "id": 13165,
    "level": 10,
    "icon": 136076,
+   "rank": "Rank 1 of 7",
    "cast": "Instant",
    "duration": "Until cancelled",
    "school": "Nature",
@@ -314,6 +387,7 @@
    "id": 20043,
    "level": 46,
    "icon": 136074,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "duration": "Until cancelled",
    "school": "Nature",
@@ -345,6 +419,54 @@
    "id": 4334,
    "level": null,
    "icon": 132316,
+   "rank": "Rank 1 of 15",
+   "by_class": {
+    "druid": {
+     "id": 20574,
+     "level": null,
+     "icon": 132393
+    },
+    "hunter": {
+     "id": 20574,
+     "level": null,
+     "icon": 132393
+    },
+    "mage": {
+     "id": 20574,
+     "level": null,
+     "icon": 132393
+    },
+    "paladin": {
+     "id": 20574,
+     "level": null,
+     "icon": 132393
+    },
+    "priest": {
+     "id": 20574,
+     "level": null,
+     "icon": 132393
+    },
+    "rogue": {
+     "id": 20574,
+     "level": null,
+     "icon": 132393
+    },
+    "shaman": {
+     "id": 20574,
+     "level": null,
+     "icon": 132393
+    },
+    "warlock": {
+     "id": 20574,
+     "level": null,
+     "icon": 132393
+    },
+    "warrior": {
+     "id": 20574,
+     "level": null,
+     "icon": 132393
+    }
+   },
    "cast": "Instant",
    "duration": "Until cancelled",
    "desc": "Increases your damage with One-Handed Axes by 1."
@@ -360,6 +482,7 @@
    "id": 53,
    "level": 4,
    "icon": 132090,
+   "rank": "Rank 1 of 9",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -370,6 +493,53 @@
    "id": 1278067,
    "level": null,
    "icon": 466035,
+   "by_class": {
+    "druid": {
+     "id": 1278067,
+     "level": null,
+     "icon": 466035
+    },
+    "hunter": {
+     "id": 1278067,
+     "level": null,
+     "icon": 466035
+    },
+    "mage": {
+     "id": 1278067,
+     "level": null,
+     "icon": 466035
+    },
+    "paladin": {
+     "id": 1278067,
+     "level": null,
+     "icon": 466035
+    },
+    "priest": {
+     "id": 1278067,
+     "level": null,
+     "icon": 466035
+    },
+    "rogue": {
+     "id": 1278067,
+     "level": null,
+     "icon": 466035
+    },
+    "shaman": {
+     "id": 1278067,
+     "level": null,
+     "icon": 466035
+    },
+    "warlock": {
+     "id": 1278067,
+     "level": null,
+     "icon": 466035
+    },
+    "warrior": {
+     "id": 1278067,
+     "level": null,
+     "icon": 466035
+    }
+   },
    "cast": "Instant",
    "school": "Physical",
    "desc": "Allows the fisher to add features to a wilderness camp."
@@ -387,6 +557,7 @@
    "id": 980,
    "level": 8,
    "icon": 136139,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "24 sec",
@@ -423,6 +594,7 @@
    "id": 710,
    "level": 28,
    "icon": 136135,
+   "rank": "Rank 1 of 2",
    "cast": "1.5 sec cast",
    "range": "30 yd range",
    "duration": "20 sec",
@@ -454,6 +626,7 @@
    "id": 5211,
    "level": 14,
    "icon": 132114,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "range": "Melee",
    "duration": "2 sec",
@@ -481,6 +654,7 @@
    "id": 6673,
    "level": 1,
    "icon": 132333,
+   "rank": "Rank 1 of 7",
    "cast": "Instant",
    "duration": "180 sec",
    "school": "Physical",
@@ -547,6 +721,53 @@
    "id": 20554,
    "level": null,
    "icon": 135727,
+   "by_class": {
+    "druid": {
+     "id": 20554,
+     "level": null,
+     "icon": 135727
+    },
+    "hunter": {
+     "id": 20554,
+     "level": null,
+     "icon": 135727
+    },
+    "mage": {
+     "id": 20554,
+     "level": null,
+     "icon": 135727
+    },
+    "paladin": {
+     "id": 20554,
+     "level": null,
+     "icon": 135727
+    },
+    "priest": {
+     "id": 20554,
+     "level": null,
+     "icon": 135727
+    },
+    "rogue": {
+     "id": 20554,
+     "level": null,
+     "icon": 135727
+    },
+    "shaman": {
+     "id": 20554,
+     "level": null,
+     "icon": 135727
+    },
+    "warlock": {
+     "id": 20554,
+     "level": null,
+     "icon": 135727
+    },
+    "warrior": {
+     "id": 20554,
+     "level": null,
+     "icon": 135727
+    }
+   },
    "cast": "Instant",
    "duration": "10 sec",
    "cooldown": "180 sec cooldown"
@@ -572,6 +793,7 @@
    "id": 401937,
    "level": null,
    "icon": 135883,
+   "rank": "Rank 1 of 6",
    "cast": "1.5 sec cast",
    "range": "40 yd range",
    "cost": "155 Mana",
@@ -582,6 +804,7 @@
    "id": 17253,
    "level": 1,
    "icon": 132278,
+   "rank": "Rank 1 of 8",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -600,6 +823,7 @@
    "id": 15268,
    "level": null,
    "icon": 136160,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "desc": "Gives your Shadow damage spells a 2% chance to stun the target for 3 sec."
   },
@@ -620,6 +844,7 @@
    "id": 11113,
    "level": 30,
    "icon": 135903,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "duration": "6 sec",
    "school": "Fire",
@@ -651,6 +876,7 @@
    "id": 19740,
    "level": 4,
    "icon": 135906,
+   "rank": "Rank 1 of 7",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "3600 sec",
@@ -674,6 +900,7 @@
    "id": 19742,
    "level": 14,
    "icon": 135970,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "3600 sec",
@@ -710,6 +937,7 @@
    "id": 10,
    "level": 20,
    "icon": 135857,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "8 sec",
@@ -736,6 +964,53 @@
    "id": 20572,
    "level": null,
    "icon": 135726,
+   "by_class": {
+    "druid": {
+     "id": 20572,
+     "level": null,
+     "icon": 135726
+    },
+    "hunter": {
+     "id": 20572,
+     "level": null,
+     "icon": 135726
+    },
+    "mage": {
+     "id": 20572,
+     "level": null,
+     "icon": 135726
+    },
+    "paladin": {
+     "id": 20572,
+     "level": null,
+     "icon": 135726
+    },
+    "priest": {
+     "id": 20572,
+     "level": null,
+     "icon": 135726
+    },
+    "rogue": {
+     "id": 20572,
+     "level": null,
+     "icon": 135726
+    },
+    "shaman": {
+     "id": 20572,
+     "level": null,
+     "icon": 135726
+    },
+    "warlock": {
+     "id": 20572,
+     "level": null,
+     "icon": 135726
+    },
+    "warrior": {
+     "id": 20572,
+     "level": null,
+     "icon": 135726
+    }
+   },
    "cast": "Instant",
    "duration": "15 sec",
    "cooldown": "120 sec cooldown",
@@ -768,6 +1043,7 @@
    "id": 23881,
    "level": 40,
    "icon": 136012,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "Melee",
    "duration": "10 sec",
@@ -901,6 +1177,53 @@
    "id": 20577,
    "level": null,
    "icon": 132278,
+   "by_class": {
+    "druid": {
+     "id": 20577,
+     "level": null,
+     "icon": 132278
+    },
+    "hunter": {
+     "id": 20577,
+     "level": null,
+     "icon": 132278
+    },
+    "mage": {
+     "id": 20577,
+     "level": null,
+     "icon": 132278
+    },
+    "paladin": {
+     "id": 20577,
+     "level": null,
+     "icon": 132278
+    },
+    "priest": {
+     "id": 20577,
+     "level": null,
+     "icon": 132278
+    },
+    "rogue": {
+     "id": 20577,
+     "level": null,
+     "icon": 132278
+    },
+    "shaman": {
+     "id": 20577,
+     "level": null,
+     "icon": 132278
+    },
+    "warlock": {
+     "id": 20577,
+     "level": null,
+     "icon": 132278
+    },
+    "warrior": {
+     "id": 20577,
+     "level": null,
+     "icon": 132278
+    }
+   },
    "cast": "Instant",
    "range": "Melee",
    "cooldown": "120 sec cooldown",
@@ -927,6 +1250,7 @@
    "id": 1064,
    "level": 40,
    "icon": 136042,
+   "rank": "Rank 1 of 3",
    "cast": "2.5 sec cast",
    "range": "40 yd range",
    "school": "Nature",
@@ -937,6 +1261,7 @@
    "id": 421,
    "level": 32,
    "icon": 136015,
+   "rank": "Rank 1 of 4",
    "cast": "2 sec cast",
    "range": "30 yd range",
    "school": "Nature",
@@ -965,24 +1290,40 @@
   },
   "Charge": {
    "kind": "spell",
-   "id": 7371,
-   "level": 1,
-   "icon": 132184,
+   "id": 100,
+   "level": 4,
+   "icon": 132337,
+   "rank": "Rank 1 of 6",
+   "by_class": {
+    "hunter": {
+     "id": 7370,
+     "level": null,
+     "icon": 132184
+    },
+    "warrior": {
+     "id": 100,
+     "level": 4,
+     "icon": 132337
+    }
+   },
    "cast": "Instant",
    "range": "25 yd range",
-   "duration": "4 sec",
    "school": "Physical",
-   "cost": "35 Mana",
-   "cooldown": "25 sec cooldown",
-   "desc": "Charges an enemy, immobilizes it for 1 sec, and adds 44 melee attack power to the boar's next attack."
+   "cooldown": "15 sec cooldown",
+   "desc": "Charge an enemy, generate 9 Rage, and Stun it for 1 sec. Cannot be used in combat."
   },
   "Chastise": {
    "kind": "talent",
-   "id": 19337,
+   "id": 1277331,
    "level": null,
    "icon": 135886,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
-   "range": "100 yd range"
+   "range": "20 yd range",
+   "duration": "2 sec",
+   "cost": "50 Mana",
+   "cooldown": "120 sec cooldown",
+   "desc": "Chastise the target, causing 46 Holy damage and immobilizing them for up to 2 sec. Only works against Humanoids. This spell causes very low threat."
   },
   "Cheap Shot": {
    "kind": "spell",
@@ -997,20 +1338,33 @@
   },
   "Claw": {
    "kind": "spell",
-   "id": 16827,
-   "level": 1,
+   "id": 1082,
+   "level": 20,
    "icon": 132140,
+   "rank": "Rank 1 of 8",
+   "by_class": {
+    "druid": {
+     "id": 1082,
+     "level": 20,
+     "icon": 132140
+    },
+    "hunter": {
+     "id": 2975,
+     "level": null,
+     "icon": 132140
+    }
+   },
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
-   "cost": "25 Mana",
-   "desc": "Claw the enemy, causing 5 damage."
+   "cost": "45 Mana"
   },
   "Cleave": {
    "kind": "spell",
    "id": 845,
    "level": 20,
    "icon": 132338,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -1052,6 +1406,53 @@
    "id": 1266920,
    "level": 1,
    "icon": 136235,
+   "by_class": {
+    "druid": {
+     "id": 1266920,
+     "level": 1,
+     "icon": 136235
+    },
+    "hunter": {
+     "id": 1266920,
+     "level": 1,
+     "icon": 136235
+    },
+    "mage": {
+     "id": 1266920,
+     "level": 1,
+     "icon": 136235
+    },
+    "paladin": {
+     "id": 1266920,
+     "level": 1,
+     "icon": 136235
+    },
+    "priest": {
+     "id": 1266920,
+     "level": 1,
+     "icon": 136235
+    },
+    "rogue": {
+     "id": 1266920,
+     "level": 1,
+     "icon": 136235
+    },
+    "shaman": {
+     "id": 1266920,
+     "level": 1,
+     "icon": 136235
+    },
+    "warlock": {
+     "id": 1266920,
+     "level": 1,
+     "icon": 136235
+    },
+    "warrior": {
+     "id": 1266920,
+     "level": 1,
+     "icon": 136235
+    }
+   },
    "cast": "45 sec cast",
    "school": "Physical"
   },
@@ -1103,6 +1504,7 @@
    "id": 120,
    "level": 26,
    "icon": 135852,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "duration": "6 sec",
    "school": "Frost",
@@ -1114,6 +1516,7 @@
    "id": 1293817,
    "level": 25,
    "icon": 135807,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "30 yd range",
    "school": "Fire",
@@ -1135,6 +1538,7 @@
    "id": 587,
    "level": 6,
    "icon": 133952,
+   "rank": "Rank 1 of 7",
    "cast": "3 sec cast",
    "school": "Arcane",
    "cost": "60 Mana",
@@ -1155,6 +1559,7 @@
    "id": 5504,
    "level": 4,
    "icon": 132793,
+   "rank": "Rank 1 of 8",
    "cast": "3 sec cast",
    "school": "Arcane",
    "cost": "60 Mana",
@@ -1165,6 +1570,7 @@
    "id": 26573,
    "level": 20,
    "icon": 135926,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "duration": "8 sec",
    "school": "Holy",
@@ -1177,6 +1583,7 @@
    "id": 1277456,
    "level": null,
    "icon": 458722,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "50000 yd range",
    "duration": "15 sec"
@@ -1208,6 +1615,54 @@
    "id": 172,
    "level": 4,
    "icon": 136118,
+   "rank": "Rank 1 of 7",
+   "by_class": {
+    "druid": {
+     "id": 16985,
+     "level": null,
+     "icon": 136192
+    },
+    "hunter": {
+     "id": 16985,
+     "level": null,
+     "icon": 136192
+    },
+    "mage": {
+     "id": 16985,
+     "level": null,
+     "icon": 136192
+    },
+    "paladin": {
+     "id": 16985,
+     "level": null,
+     "icon": 136192
+    },
+    "priest": {
+     "id": 16985,
+     "level": null,
+     "icon": 136192
+    },
+    "rogue": {
+     "id": 16985,
+     "level": null,
+     "icon": 136192
+    },
+    "shaman": {
+     "id": 16985,
+     "level": null,
+     "icon": 136192
+    },
+    "warlock": {
+     "id": 172,
+     "level": 4,
+     "icon": 136118
+    },
+    "warrior": {
+     "id": 16985,
+     "level": null,
+     "icon": 136192
+    }
+   },
    "cast": "2 sec cast",
    "range": "30 yd range",
    "duration": "12 sec",
@@ -1220,6 +1675,7 @@
    "id": 19306,
    "level": null,
    "icon": 132336,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "Melee",
    "duration": "5 sec",
@@ -1242,21 +1698,35 @@
   },
   "Cower": {
    "kind": "spell",
-   "id": 8998,
-   "level": 28,
+   "id": 1742,
+   "level": null,
    "icon": 132118,
+   "rank": "Rank 1 of 6",
+   "by_class": {
+    "druid": {
+     "id": 8998,
+     "level": 28,
+     "icon": 132118
+    },
+    "hunter": {
+     "id": 1747,
+     "level": null,
+     "icon": 132118
+    }
+   },
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
-   "cost": "20 Mana",
-   "cooldown": "10 sec cooldown",
-   "desc": "Cower, causing no damage but lowering your threat a small amount, making the enemy less likely to attack you."
+   "cost": "15 Mana",
+   "cooldown": "5 sec cooldown",
+   "desc": "Cower, causing no damage but lowering your threat, making the enemy less likely to attack you."
   },
   "Create Firestone": {
    "kind": "spell",
    "id": 6366,
    "level": 28,
    "icon": 134085,
+   "rank": "Rank 1 of 4",
    "cast": "3 sec cast",
    "school": "Fire",
    "cost": "500 Mana",
@@ -1267,6 +1737,7 @@
    "id": 6201,
    "level": 10,
    "icon": 135230,
+   "rank": "Rank 1 of 5",
    "cast": "3 sec cast",
    "school": "Shadow",
    "cost": "95 Mana",
@@ -1277,6 +1748,7 @@
    "id": 2362,
    "level": 36,
    "icon": 134131,
+   "rank": "Rank 1 of 3",
    "cast": "5 sec cast",
    "school": "Shadow",
    "cost": "500 Mana",
@@ -1329,6 +1801,53 @@
    "id": 20552,
    "level": null,
    "icon": 133938,
+   "by_class": {
+    "druid": {
+     "id": 20552,
+     "level": null,
+     "icon": 133938
+    },
+    "hunter": {
+     "id": 20552,
+     "level": null,
+     "icon": 133938
+    },
+    "mage": {
+     "id": 20552,
+     "level": null,
+     "icon": 133938
+    },
+    "paladin": {
+     "id": 20552,
+     "level": null,
+     "icon": 133938
+    },
+    "priest": {
+     "id": 20552,
+     "level": null,
+     "icon": 133938
+    },
+    "rogue": {
+     "id": 20552,
+     "level": null,
+     "icon": 133938
+    },
+    "shaman": {
+     "id": 20552,
+     "level": null,
+     "icon": 133938
+    },
+    "warlock": {
+     "id": 20552,
+     "level": null,
+     "icon": 133938
+    },
+    "warrior": {
+     "id": 20552,
+     "level": null,
+     "icon": 133938
+    }
+   },
    "cast": "Instant",
    "desc": "Cultivate a nearby herb, growing a duplicate you can harvest without requiring Herbalism skill. Each herb may only be cultivated once."
   },
@@ -1337,6 +1856,18 @@
    "id": 8946,
    "level": 14,
    "icon": 136067,
+   "by_class": {
+    "druid": {
+     "id": 8946,
+     "level": 14,
+     "icon": 136067
+    },
+    "shaman": {
+     "id": 526,
+     "level": 16,
+     "icon": 136067
+    }
+   },
    "cast": "Instant",
    "range": "30 yd range",
    "school": "Nature"
@@ -1346,6 +1877,7 @@
    "id": 704,
    "level": 14,
    "icon": 136225,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "120 sec",
@@ -1370,6 +1902,7 @@
    "id": 702,
    "level": 4,
    "icon": 136138,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "120 sec",
@@ -1382,6 +1915,7 @@
    "id": 440892,
    "level": 20,
    "icon": 615099,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "300 sec",
@@ -1401,6 +1935,7 @@
    "id": 2946,
    "level": null,
    "icon": 5852175,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "100 yd range"
   },
@@ -1409,6 +1944,19 @@
    "id": 1850,
    "level": null,
    "icon": 132120,
+   "rank": "Rank 1 of 3",
+   "by_class": {
+    "druid": {
+     "id": 1850,
+     "level": null,
+     "icon": 132120
+    },
+    "hunter": {
+     "id": 23100,
+     "level": null,
+     "icon": 132120
+    }
+   },
    "cast": "Instant",
    "duration": "15 sec",
    "school": "Physical",
@@ -1491,6 +2039,28 @@
    "id": 16462,
    "level": null,
    "icon": 132269,
+   "by_class": {
+    "hunter": {
+     "id": 19295,
+     "level": null,
+     "icon": 132269
+    },
+    "paladin": {
+     "id": 20060,
+     "level": null,
+     "icon": 132269
+    },
+    "rogue": {
+     "id": 13713,
+     "level": null,
+     "icon": 132269
+    },
+    "warrior": {
+     "id": 16462,
+     "level": null,
+     "icon": 132269
+    }
+   },
    "cast": "Instant",
    "desc": "Increases your Parry chance by 1%."
   },
@@ -1499,6 +2069,7 @@
    "id": 687,
    "level": 1,
    "icon": 136185,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "duration": "1800 sec",
    "school": "Shadow",
@@ -1577,6 +2148,7 @@
    "id": 99,
    "level": 10,
    "icon": 132121,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "duration": "30 sec",
    "school": "Physical",
@@ -1588,6 +2160,7 @@
    "id": 24423,
    "level": null,
    "icon": 132200,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "Melee",
    "duration": "30 sec",
@@ -1600,6 +2173,7 @@
    "id": 1160,
    "level": 14,
    "icon": 132366,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "duration": "45 sec",
    "school": "Physical",
@@ -1610,6 +2184,7 @@
    "id": 13908,
    "level": 10,
    "icon": 135954,
+   "rank": "Rank 1 of 7",
    "cast": "Instant",
    "school": "Holy",
    "cooldown": "600 sec cooldown",
@@ -1639,6 +2214,7 @@
    "id": 20243,
    "level": 50,
    "icon": 135291,
+   "rank": "Rank 1",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -1657,6 +2233,7 @@
    "id": 465,
    "level": 1,
    "icon": 135893,
+   "rank": "Rank 1 of 7",
    "cast": "Instant",
    "duration": "Until cancelled",
    "school": "Holy",
@@ -1675,6 +2252,7 @@
    "id": 2944,
    "level": 20,
    "icon": 252997,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "24 sec",
@@ -1734,6 +2312,7 @@
    "id": 781,
    "level": 20,
    "icon": 132294,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -1743,13 +2322,16 @@
   },
   "Dismember": {
    "kind": "talent",
-   "id": 96,
+   "id": 1264758,
    "level": null,
-   "icon": 132090,
+   "icon": 132187,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "Melee",
    "duration": "10 sec",
-   "desc": "Increases the damage of your next melee swing by 100 and causes the target to bleed"
+   "cost": "35 Mana",
+   "cooldown": "6 sec cooldown",
+   "desc": "Viciously bites enemy appendages for 12 damage and reduces the effectiveness of any healing by 50% for 10 sec."
   },
   "Distract": {
    "kind": "spell",
@@ -1769,6 +2351,7 @@
    "id": 23145,
    "level": null,
    "icon": 136126,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "duration": "15 sec",
    "school": "Physical",
@@ -1807,6 +2390,7 @@
    "id": 1277370,
    "level": null,
    "icon": 1022949,
+   "rank": "Rank 1 of 7",
    "cast": "Instant",
    "range": "40 yd range",
    "cooldown": "600 sec cooldown",
@@ -1844,6 +2428,7 @@
    "id": 642,
    "level": 34,
    "icon": 135896,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "duration": "10 sec",
    "school": "Holy",
@@ -1856,6 +2441,7 @@
    "id": 14752,
    "level": 30,
    "icon": 135898,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "3600 sec",
@@ -1868,6 +2454,7 @@
    "id": 689,
    "level": 14,
    "icon": 136169,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "20 yd range",
    "duration": "5 sec",
@@ -1880,6 +2467,7 @@
    "id": 1120,
    "level": 10,
    "icon": 136163,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "15 sec",
@@ -1904,23 +2492,85 @@
    "id": 13715,
    "level": null,
    "icon": 132147,
+   "by_class": {
+    "rogue": {
+     "id": 13715,
+     "level": null,
+     "icon": 132147
+    },
+    "warrior": {
+     "id": 23584,
+     "level": null,
+     "icon": 132147
+    }
+   },
    "cast": "Instant",
    "desc": "Increases the damage done by your off-hand weapon by 50%."
   },
   "Dust Cloud": {
    "kind": "talent",
-   "id": 7272,
+   "id": 1265899,
    "level": null,
-   "icon": 132156,
+   "icon": 136090,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
-   "duration": "12 sec",
-   "desc": "Reduces nearby enemies' chance to hit with attacks by 30% for 12 sec."
+   "range": "Melee",
+   "duration": "30 sec",
+   "cost": "10 Mana",
+   "desc": "Your tallstrider kicks up an abrasive cloud of dust, reducing the target's Armor by 65 for 30 sec."
   },
   "EZ-Thro Dark Bomb": {
    "kind": "spell",
    "id": 1266930,
    "level": 1,
    "icon": 136235,
+   "by_class": {
+    "druid": {
+     "id": 1266930,
+     "level": 1,
+     "icon": 136235
+    },
+    "hunter": {
+     "id": 1266930,
+     "level": 1,
+     "icon": 136235
+    },
+    "mage": {
+     "id": 1266930,
+     "level": 1,
+     "icon": 136235
+    },
+    "paladin": {
+     "id": 1266930,
+     "level": 1,
+     "icon": 136235
+    },
+    "priest": {
+     "id": 1266930,
+     "level": 1,
+     "icon": 136235
+    },
+    "rogue": {
+     "id": 1266930,
+     "level": 1,
+     "icon": 136235
+    },
+    "shaman": {
+     "id": 1266930,
+     "level": 1,
+     "icon": 136235
+    },
+    "warlock": {
+     "id": 1266930,
+     "level": 1,
+     "icon": 136235
+    },
+    "warrior": {
+     "id": 1266930,
+     "level": 1,
+     "icon": 136235
+    }
+   },
    "cast": "60 sec cast",
    "school": "Physical"
   },
@@ -1929,6 +2579,53 @@
    "id": 1266931,
    "level": 1,
    "icon": 136235,
+   "by_class": {
+    "druid": {
+     "id": 1266931,
+     "level": 1,
+     "icon": 136235
+    },
+    "hunter": {
+     "id": 1266931,
+     "level": 1,
+     "icon": 136235
+    },
+    "mage": {
+     "id": 1266931,
+     "level": 1,
+     "icon": 136235
+    },
+    "paladin": {
+     "id": 1266931,
+     "level": 1,
+     "icon": 136235
+    },
+    "priest": {
+     "id": 1266931,
+     "level": 1,
+     "icon": 136235
+    },
+    "rogue": {
+     "id": 1266931,
+     "level": 1,
+     "icon": 136235
+    },
+    "shaman": {
+     "id": 1266931,
+     "level": 1,
+     "icon": 136235
+    },
+    "warlock": {
+     "id": 1266931,
+     "level": 1,
+     "icon": 136235
+    },
+    "warrior": {
+     "id": 1266931,
+     "level": 1,
+     "icon": 136235
+    }
+   },
    "cast": "60 sec cast",
    "school": "Physical"
   },
@@ -1945,6 +2642,7 @@
    "id": 8042,
    "level": 4,
    "icon": 136026,
+   "rank": "Rank 1 of 7",
    "cast": "Instant",
    "range": "20 yd range",
    "duration": "2 sec",
@@ -2019,6 +2717,53 @@
    "id": 1259707,
    "level": null,
    "icon": 4630367,
+   "by_class": {
+    "druid": {
+     "id": 1259707,
+     "level": null,
+     "icon": 4630367
+    },
+    "hunter": {
+     "id": 1259707,
+     "level": null,
+     "icon": 4630367
+    },
+    "mage": {
+     "id": 1259707,
+     "level": null,
+     "icon": 4630367
+    },
+    "paladin": {
+     "id": 1259707,
+     "level": null,
+     "icon": 4630367
+    },
+    "priest": {
+     "id": 1259707,
+     "level": null,
+     "icon": 4630367
+    },
+    "rogue": {
+     "id": 1259707,
+     "level": null,
+     "icon": 4630367
+    },
+    "shaman": {
+     "id": 1259707,
+     "level": null,
+     "icon": 4630367
+    },
+    "warlock": {
+     "id": 1259707,
+     "level": null,
+     "icon": 4630367
+    },
+    "warrior": {
+     "id": 1259707,
+     "level": null,
+     "icon": 4630367
+    }
+   },
    "cast": "Instant",
    "desc": "Damage dealt versus Elementals increased by 5%."
   },
@@ -2043,6 +2788,7 @@
    "id": 16266,
    "level": null,
    "icon": 135814,
+   "rank": "Rank 1",
    "cast": "Instant",
    "desc": "Increases the melee attack power bonus of your Rockbiter Weapon by 7%, your Windfury Weapon effect by 13% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 5%."
   },
@@ -2085,6 +2831,53 @@
    "id": 1259799,
    "level": null,
    "icon": 136057,
+   "by_class": {
+    "druid": {
+     "id": 1259799,
+     "level": null,
+     "icon": 136057
+    },
+    "hunter": {
+     "id": 1259799,
+     "level": null,
+     "icon": 136057
+    },
+    "mage": {
+     "id": 1259799,
+     "level": null,
+     "icon": 136057
+    },
+    "paladin": {
+     "id": 1259799,
+     "level": null,
+     "icon": 136057
+    },
+    "priest": {
+     "id": 1259799,
+     "level": null,
+     "icon": 136057
+    },
+    "rogue": {
+     "id": 1259799,
+     "level": null,
+     "icon": 136057
+    },
+    "shaman": {
+     "id": 1259799,
+     "level": null,
+     "icon": 136057
+    },
+    "warlock": {
+     "id": 1259799,
+     "level": null,
+     "icon": 136057
+    },
+    "warrior": {
+     "id": 1259799,
+     "level": null,
+     "icon": 136057
+    }
+   },
    "cast": "Instant",
    "duration": "15 sec",
    "cooldown": "180 sec cooldown",
@@ -2109,6 +2902,53 @@
    "id": 13742,
    "level": null,
    "icon": 136205,
+   "by_class": {
+    "druid": {
+     "id": 20550,
+     "level": null,
+     "icon": 136112
+    },
+    "hunter": {
+     "id": 20550,
+     "level": null,
+     "icon": 136112
+    },
+    "mage": {
+     "id": 20550,
+     "level": null,
+     "icon": 136112
+    },
+    "paladin": {
+     "id": 20550,
+     "level": null,
+     "icon": 136112
+    },
+    "priest": {
+     "id": 20550,
+     "level": null,
+     "icon": 136112
+    },
+    "rogue": {
+     "id": 13742,
+     "level": null,
+     "icon": 136205
+    },
+    "shaman": {
+     "id": 20550,
+     "level": null,
+     "icon": 136112
+    },
+    "warlock": {
+     "id": 20550,
+     "level": null,
+     "icon": 136112
+    },
+    "warrior": {
+     "id": 20550,
+     "level": null,
+     "icon": 136112
+    }
+   },
    "cast": "Instant",
    "desc": "Reduces the cooldown of your Sprint and Evasion abilities by 60%."
   },
@@ -2125,6 +2965,7 @@
    "id": 16259,
    "level": null,
    "icon": 136023,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "desc": "Increases the effect of your Strength of Earth and Grace of Air Totems by 8%."
   },
@@ -2133,6 +2974,18 @@
    "id": 5229,
    "level": 12,
    "icon": 132126,
+   "by_class": {
+    "druid": {
+     "id": 5229,
+     "level": 12,
+     "icon": 132126
+    },
+    "warrior": {
+     "id": 12317,
+     "level": null,
+     "icon": 136224
+    }
+   },
    "cast": "Instant",
    "duration": "10 sec",
    "school": "Physical",
@@ -2144,6 +2997,7 @@
    "id": 339,
    "level": 8,
    "icon": 136100,
+   "rank": "Rank 1 of 6",
    "cast": "1.5 sec cast",
    "range": "30 yd range",
    "duration": "12 sec",
@@ -2163,6 +3017,53 @@
    "id": 20589,
    "level": null,
    "icon": 132309,
+   "by_class": {
+    "druid": {
+     "id": 20589,
+     "level": null,
+     "icon": 132309
+    },
+    "hunter": {
+     "id": 20589,
+     "level": null,
+     "icon": 132309
+    },
+    "mage": {
+     "id": 20589,
+     "level": null,
+     "icon": 132309
+    },
+    "paladin": {
+     "id": 20589,
+     "level": null,
+     "icon": 132309
+    },
+    "priest": {
+     "id": 20589,
+     "level": null,
+     "icon": 132309
+    },
+    "rogue": {
+     "id": 20589,
+     "level": null,
+     "icon": 132309
+    },
+    "shaman": {
+     "id": 20589,
+     "level": null,
+     "icon": 132309
+    },
+    "warlock": {
+     "id": 20589,
+     "level": null,
+     "icon": 132309
+    },
+    "warrior": {
+     "id": 20589,
+     "level": null,
+     "icon": 132309
+    }
+   },
    "cast": "Instant",
    "duration": "3 sec",
    "cooldown": "120 sec cooldown",
@@ -2173,6 +3074,53 @@
    "id": 1259812,
    "level": null,
    "icon": 4226119,
+   "by_class": {
+    "druid": {
+     "id": 1259812,
+     "level": null,
+     "icon": 4226119
+    },
+    "hunter": {
+     "id": 1259812,
+     "level": null,
+     "icon": 4226119
+    },
+    "mage": {
+     "id": 1259812,
+     "level": null,
+     "icon": 4226119
+    },
+    "paladin": {
+     "id": 1259812,
+     "level": null,
+     "icon": 4226119
+    },
+    "priest": {
+     "id": 1259812,
+     "level": null,
+     "icon": 4226119
+    },
+    "rogue": {
+     "id": 1259812,
+     "level": null,
+     "icon": 4226119
+    },
+    "shaman": {
+     "id": 1259812,
+     "level": null,
+     "icon": 4226119
+    },
+    "warlock": {
+     "id": 1259812,
+     "level": null,
+     "icon": 4226119
+    },
+    "warrior": {
+     "id": 1259812,
+     "level": null,
+     "icon": 4226119
+    }
+   },
    "cast": "Instant",
    "duration": "15 sec",
    "cooldown": "120 sec cooldown",
@@ -2194,6 +3142,7 @@
    "id": 2098,
    "level": 1,
    "icon": 132292,
+   "rank": "Rank 1 of 9",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -2212,19 +3161,21 @@
   },
   "Execute": {
    "kind": "spell",
-   "id": 20647,
-   "level": 1,
+   "id": 5308,
+   "level": 24,
    "icon": 135358,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
-   "range": "100 yd range",
+   "range": "Melee",
    "school": "Physical",
-   "cost": "1 Mana"
+   "cost": "150 Mana"
   },
   "Exorcism": {
    "kind": "spell",
    "id": 879,
    "level": 20,
    "icon": 135903,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "30 yd range",
    "school": "Holy",
@@ -2237,6 +3188,53 @@
    "id": 20591,
    "level": null,
    "icon": 132864,
+   "by_class": {
+    "druid": {
+     "id": 20591,
+     "level": null,
+     "icon": 132864
+    },
+    "hunter": {
+     "id": 20591,
+     "level": null,
+     "icon": 132864
+    },
+    "mage": {
+     "id": 20591,
+     "level": null,
+     "icon": 132864
+    },
+    "paladin": {
+     "id": 20591,
+     "level": null,
+     "icon": 132864
+    },
+    "priest": {
+     "id": 20591,
+     "level": null,
+     "icon": 132864
+    },
+    "rogue": {
+     "id": 20591,
+     "level": null,
+     "icon": 132864
+    },
+    "shaman": {
+     "id": 20591,
+     "level": null,
+     "icon": 132864
+    },
+    "warlock": {
+     "id": 20591,
+     "level": null,
+     "icon": 132864
+    },
+    "warrior": {
+     "id": 20591,
+     "level": null,
+     "icon": 132864
+    }
+   },
    "cast": "Instant",
    "desc": "Maximum Mana increased by 5%."
   },
@@ -2251,6 +3249,7 @@
    "id": 13813,
    "level": 34,
    "icon": 135826,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "duration": "60 sec",
    "school": "Fire",
@@ -2262,6 +3261,7 @@
    "id": 8647,
    "level": 14,
    "icon": 132354,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "Melee",
    "duration": "30 sec",
@@ -2295,6 +3295,7 @@
    "id": 586,
    "level": 8,
    "icon": 135994,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "duration": "10 sec",
    "school": "Shadow",
@@ -2307,6 +3308,7 @@
    "id": 770,
    "level": 18,
    "icon": 136033,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "40 sec",
@@ -2319,6 +3321,7 @@
    "id": 5782,
    "level": 8,
    "icon": 136183,
+   "rank": "Rank 1 of 3",
    "cast": "1.5 sec cast",
    "range": "20 yd range",
    "duration": "10 sec",
@@ -2343,6 +3346,7 @@
    "id": 6347,
    "level": null,
    "icon": 136189,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "100 yd range"
   },
@@ -2363,6 +3367,7 @@
    "id": 1966,
    "level": 16,
    "icon": 132294,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -2452,6 +3457,7 @@
    "id": 22568,
    "level": 32,
    "icon": 132127,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -2463,6 +3469,18 @@
    "id": 16934,
    "level": null,
    "icon": 132190,
+   "by_class": {
+    "druid": {
+     "id": 16934,
+     "level": null,
+     "icon": 132190
+    },
+    "hunter": {
+     "id": 19598,
+     "level": null,
+     "icon": 134297
+    }
+   },
    "cast": "Instant",
    "desc": "Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 1 Rage or Energy."
   },
@@ -2491,6 +3509,53 @@
    "id": 43308,
    "level": null,
    "icon": 133888,
+   "by_class": {
+    "druid": {
+     "id": 43308,
+     "level": null,
+     "icon": 133888
+    },
+    "hunter": {
+     "id": 43308,
+     "level": null,
+     "icon": 133888
+    },
+    "mage": {
+     "id": 43308,
+     "level": null,
+     "icon": 133888
+    },
+    "paladin": {
+     "id": 43308,
+     "level": null,
+     "icon": 133888
+    },
+    "priest": {
+     "id": 43308,
+     "level": null,
+     "icon": 133888
+    },
+    "rogue": {
+     "id": 43308,
+     "level": null,
+     "icon": 133888
+    },
+    "shaman": {
+     "id": 43308,
+     "level": null,
+     "icon": 133888
+    },
+    "warlock": {
+     "id": 43308,
+     "level": null,
+     "icon": 133888
+    },
+    "warrior": {
+     "id": 43308,
+     "level": null,
+     "icon": 133888
+    }
+   },
    "cast": "Instant",
    "duration": "Until cancelled",
    "school": "Physical",
@@ -2510,6 +3575,7 @@
    "id": 2136,
    "level": 6,
    "icon": 135807,
+   "rank": "Rank 1 of 7",
    "cast": "Instant",
    "range": "20 yd range",
    "school": "Fire",
@@ -2522,6 +3588,7 @@
    "id": 408341,
    "level": 12,
    "icon": 135824,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "30 yd range",
    "school": "Fire",
@@ -2533,6 +3600,7 @@
    "id": 27623,
    "level": null,
    "icon": 135824,
+   "rank": "Rank 5",
    "cast": "Instant",
    "duration": "5 sec",
    "school": "Fire",
@@ -2558,6 +3626,7 @@
    "id": 133,
    "level": 1,
    "icon": 135812,
+   "rank": "Rank 1 of 12",
    "cast": "1.5 sec cast",
    "range": "35 yd range",
    "duration": "4 sec",
@@ -2594,6 +3663,7 @@
    "id": 8050,
    "level": 10,
    "icon": 135813,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "20 yd range",
    "duration": "12 sec",
@@ -2607,6 +3677,7 @@
    "id": 2120,
    "level": 16,
    "icon": 135826,
+   "rank": "Rank 1 of 6",
    "cast": "3 sec cast",
    "range": "30 yd range",
    "duration": "8 sec",
@@ -2619,6 +3690,7 @@
    "id": 8024,
    "level": null,
    "icon": 135814,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "school": "Fire",
    "cost": "30 Mana"
@@ -2628,6 +3700,7 @@
    "id": 2061,
    "level": 20,
    "icon": 135907,
+   "rank": "Rank 1 of 7",
    "cast": "1.5 sec cast",
    "range": "40 yd range",
    "school": "Holy",
@@ -2639,6 +3712,7 @@
    "id": 19750,
    "level": 20,
    "icon": 135907,
+   "rank": "Rank 1 of 6",
    "cast": "1.5 sec cast",
    "range": "40 yd range",
    "school": "Holy",
@@ -2682,6 +3756,18 @@
    "id": 12319,
    "level": null,
    "icon": 132152,
+   "by_class": {
+    "shaman": {
+     "id": 16256,
+     "level": 1,
+     "icon": 132152
+    },
+    "warrior": {
+     "id": 12319,
+     "level": 1,
+     "icon": 132152
+    }
+   },
    "cast": "Instant"
   },
   "Focused Fire": {
@@ -2705,6 +3791,7 @@
    "id": 18544,
    "level": null,
    "icon": 136092,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "desc": "Increases your spell damage by 1% and the critical strike chance of your offensive spells by 1%."
   },
@@ -2713,6 +3800,7 @@
    "id": 1499,
    "level": 20,
    "icon": 135834,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "duration": "60 sec",
    "school": "Frost",
@@ -2742,6 +3830,7 @@
    "id": 168,
    "level": 1,
    "icon": 135843,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "duration": "1800 sec",
    "school": "Frost",
@@ -2761,6 +3850,7 @@
    "id": 122,
    "level": 10,
    "icon": 135848,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "duration": "8 sec",
    "school": "Frost",
@@ -2772,6 +3862,7 @@
    "id": 8056,
    "level": 20,
    "icon": 135849,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "20 yd range",
    "duration": "8 sec",
@@ -2805,6 +3896,7 @@
    "id": 116,
    "level": 4,
    "icon": 135846,
+   "rank": "Rank 1 of 11",
    "cast": "1.5 sec cast",
    "range": "30 yd range",
    "duration": "5 sec",
@@ -2816,6 +3908,7 @@
    "id": 401502,
    "level": 40,
    "icon": 236217,
+   "rank": "Rank 1 of 3",
    "cast": "3 sec cast",
    "range": "35 yd range",
    "duration": "9 sec",
@@ -2824,14 +3917,15 @@
   },
   "Furious Howl": {
    "kind": "talent",
-   "id": 3149,
+   "id": 24604,
    "level": null,
-   "icon": 136101,
+   "icon": 132203,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
-   "range": "Melee",
-   "duration": "15 sec",
+   "duration": "60 sec",
+   "cost": "60 Mana",
    "cooldown": "30 sec cooldown",
-   "desc": "Increases the Strength of nearby party members by 5 for 15 sec."
+   "desc": "The wolf howls, increasing the melee attack power of all party members within 15 yards by 5. Lasts 60 sec."
   },
   "Furor": {
    "kind": "talent",
@@ -2846,6 +3940,7 @@
    "id": 703,
    "level": 14,
    "icon": 132297,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "Melee",
    "duration": "18 sec",
@@ -2903,6 +3998,7 @@
    "id": 21849,
    "level": 50,
    "icon": 136078,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "range": "40 yd range",
    "duration": "3600 sec",
@@ -2933,6 +4029,7 @@
    "id": 1776,
    "level": 6,
    "icon": 132155,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "Melee",
    "duration": "4 sec",
@@ -2953,6 +4050,7 @@
    "id": 8835,
    "level": 42,
    "icon": 136046,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "duration": "300 sec",
    "school": "Nature",
@@ -2976,6 +4074,7 @@
    "id": 2060,
    "level": 40,
    "icon": 135913,
+   "rank": "Rank 1 of 5",
    "cast": "3 sec cast",
    "range": "40 yd range",
    "school": "Holy",
@@ -2998,14 +4097,25 @@
   },
   "Growl": {
    "kind": "spell",
-   "id": 2649,
-   "level": 1,
+   "id": 1853,
+   "level": null,
    "icon": 132270,
+   "rank": "Rank 1 of 7",
+   "by_class": {
+    "druid": {
+     "id": 6795,
+     "level": 10,
+     "icon": 132270
+    },
+    "hunter": {
+     "id": 1853,
+     "level": null,
+     "icon": 132270
+    }
+   },
    "cast": "Instant",
-   "range": "Melee",
+   "range": "100 yd range",
    "school": "Physical",
-   "cost": "15 Mana",
-   "cooldown": "5 sec cooldown",
    "desc": "Taunt the target, increasing the likelihood the creature will focus attacks on you."
   },
   "Guard's Silvered Chain Helm": {
@@ -3028,6 +4138,7 @@
    "id": 853,
    "level": 8,
    "icon": 135963,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "10 yd range",
    "duration": "3 sec",
@@ -3060,6 +4171,7 @@
    "id": 2054,
    "level": 16,
    "icon": 135915,
+   "rank": "Rank 1 of 4",
    "cast": "3 sec cast",
    "range": "40 yd range",
    "school": "Holy",
@@ -3087,6 +4199,7 @@
    "id": 5394,
    "level": 20,
    "icon": 135127,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "duration": "300 sec",
    "school": "Frost",
@@ -3098,6 +4211,7 @@
    "id": 5185,
    "level": 1,
    "icon": 136041,
+   "rank": "Rank 1 of 11",
    "cast": "1.5 sec cast",
    "range": "40 yd range",
    "school": "Nature",
@@ -3109,6 +4223,7 @@
    "id": 331,
    "level": 1,
    "icon": 136052,
+   "rank": "Rank 1 of 10",
    "cast": "1.5 sec cast",
    "range": "40 yd range",
    "school": "Nature",
@@ -3120,6 +4235,7 @@
    "id": 29206,
    "level": null,
    "icon": 136044,
+   "rank": "Rank 1",
    "cast": "Instant",
    "desc": "Increases the amount healed by your Healing Wave spell by 33%."
   },
@@ -3162,6 +4278,7 @@
    "id": 1949,
    "level": 30,
    "icon": 135818,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "duration": "15 sec",
    "school": "Fire",
@@ -3196,6 +4313,7 @@
    "id": 78,
    "level": 1,
    "icon": 132282,
+   "rank": "Rank 1 of 9",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -3207,6 +4325,7 @@
    "id": 9035,
    "level": null,
    "icon": 136157,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "120 sec",
@@ -3226,6 +4345,7 @@
    "id": 14914,
    "level": 20,
    "icon": 135972,
+   "rank": "Rank 1 of 8",
    "cast": "3.5 sec cast",
    "range": "30 yd range",
    "duration": "10 sec",
@@ -3238,6 +4358,7 @@
    "id": 635,
    "level": 1,
    "icon": 135920,
+   "rank": "Rank 1 of 9",
    "cast": "2.5 sec cast",
    "range": "40 yd range",
    "school": "Holy",
@@ -3249,6 +4370,7 @@
    "id": 15237,
    "level": 20,
    "icon": 135922,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "school": "Holy",
    "cost": "185 Mana"
@@ -3266,6 +4388,7 @@
    "id": 20925,
    "level": null,
    "icon": 135880,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "duration": "10 sec",
    "cost": "150 Mana",
@@ -3277,6 +4400,7 @@
    "id": 1311606,
    "level": 30,
    "icon": 135972,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "40 yd range",
    "school": "Holy",
@@ -3297,6 +4421,7 @@
    "id": 679,
    "level": 6,
    "icon": 626003,
+   "rank": "Rank 1 of 8",
    "cast": "Instant",
    "range": "Melee",
    "school": "Holy",
@@ -3309,6 +4434,7 @@
    "id": 2812,
    "level": 50,
    "icon": 135902,
+   "rank": "Rank 1 of 2",
    "cast": "2 sec cast",
    "school": "Holy",
    "cost": "645 Mana",
@@ -3328,6 +4454,7 @@
    "id": 5484,
    "level": 40,
    "icon": 136147,
+   "rank": "Rank 1 of 2",
    "cast": "2 sec cast",
    "duration": "10 sec",
    "school": "Shadow",
@@ -3345,6 +4472,7 @@
    "id": 19151,
    "level": null,
    "icon": 135942,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "duration": "Until cancelled",
    "desc": "Increases all damage caused against Humanoid targets by 1% and increases critical damage caused against Humanoid targets by an additional 1%."
@@ -3354,6 +4482,7 @@
    "id": 1130,
    "level": 6,
    "icon": 132212,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "100 yd range",
    "duration": "120 sec",
@@ -3366,6 +4495,7 @@
    "id": 16914,
    "level": 40,
    "icon": 136018,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "10 sec",
@@ -3378,6 +4508,7 @@
    "id": 7302,
    "level": 30,
    "icon": 135843,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "duration": "1800 sec",
    "school": "Frost",
@@ -3389,6 +4520,7 @@
    "id": 11426,
    "level": 40,
    "icon": 135988,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "duration": "60 sec",
    "school": "Frost",
@@ -3419,6 +4551,7 @@
    "id": 1312002,
    "level": 20,
    "icon": 135844,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "30 yd range",
    "school": "Frost",
@@ -3453,6 +4586,7 @@
    "id": 348,
    "level": 1,
    "icon": 135817,
+   "rank": "Rank 1 of 8",
    "cast": "2 sec cast",
    "range": "30 yd range",
    "duration": "15 sec",
@@ -3464,6 +4598,7 @@
    "id": 13795,
    "level": 16,
    "icon": 135813,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "duration": "60 sec",
    "school": "Fire",
@@ -3533,6 +4668,7 @@
    "id": 12318,
    "level": null,
    "icon": 132333,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "desc": "Increases the melee attack power bonus of your Battle Shout by 5%."
   },
@@ -3549,6 +4685,7 @@
    "id": 20042,
    "level": null,
    "icon": 135906,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "desc": "Increases the melee attack power bonus of your Blessing of Might by 4%."
   },
@@ -3557,6 +4694,7 @@
    "id": 20244,
    "level": null,
    "icon": 135970,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "desc": "Increases the effect of your Blessing of Wisdom spell by 10%."
   },
@@ -3630,6 +4768,7 @@
    "id": 18310,
    "level": null,
    "icon": 136162,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "desc": "Increases the speed reduction of your Curse of Exhaustion by 5%."
   },
@@ -3638,6 +4777,7 @@
    "id": 18179,
    "level": null,
    "icon": 136138,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "desc": "Increases the effect of your Curse of Weakness by 6%."
   },
@@ -3646,6 +4786,7 @@
    "id": 12324,
    "level": null,
    "icon": 132366,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "desc": "Increases the melee attack power reduction of your Demoralizing Shout by 8%."
   },
@@ -3686,6 +4827,7 @@
    "id": 17079,
    "level": null,
    "icon": 132126,
+   "rank": "Rank 1 of 2",
    "cast": "Instant"
   },
   "Improved Entangling Roots": {
@@ -3716,6 +4858,7 @@
    "id": 19557,
    "level": null,
    "icon": 132150,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "desc": "Increases the duration of your Eyes of the Beast by 30 sec."
   },
@@ -3724,6 +4867,7 @@
    "id": 19286,
    "level": null,
    "icon": 132293,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "desc": "Reduces the chance your Feign Death ability will be resisted by 2%."
   },
@@ -3756,6 +4900,7 @@
    "id": 18126,
    "level": null,
    "icon": 135809,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "desc": "Reduces the casting time of your Imp's Firebolt spell by 0.5 sec."
   },
@@ -3764,6 +4909,7 @@
    "id": 18767,
    "level": null,
    "icon": 132386,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "desc": "Increases the bonus Fire damage from Firestones and the Firestone effect by 15%."
   },
@@ -3821,6 +4967,7 @@
    "id": 18692,
    "level": null,
    "icon": 135230,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "desc": "Increases the amount of Health restored by your Healthstone by 10%."
   },
@@ -3853,6 +5000,7 @@
    "id": 17815,
    "level": null,
    "icon": 135817,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "desc": "Increases the initial damage of your Immolate spell by 5%."
   },
@@ -3877,6 +5025,7 @@
    "id": 18128,
    "level": null,
    "icon": 136136,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "desc": "Reduces the cooldown of your Succubus' and Incubus' Lash of Pain spell by 3 sec."
   },
@@ -3908,6 +5057,7 @@
    "id": 17050,
    "level": null,
    "icon": 136078,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "desc": "Increases the effects of your Mark of the Wild and Gift of the Wild spells by 7%."
   },
@@ -3948,6 +5098,7 @@
    "id": 12290,
    "level": null,
    "icon": 135275,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "desc": "Increases the critical strike chance of your Overpower ability by 25%."
   },
@@ -3956,6 +5107,7 @@
    "id": 14749,
    "level": null,
    "icon": 135987,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "desc": "Increases the effect of your Power Word: Fortitude and Prayer of Fortitude spells by 15%."
   },
@@ -3988,6 +5140,7 @@
    "id": 17074,
    "level": null,
    "icon": 136085,
+   "rank": "Rank 1",
    "cast": "Instant",
    "desc": "Increases the critical effect chance of your Regrowth spell by 10%."
   },
@@ -4028,6 +5181,7 @@
    "id": 20091,
    "level": null,
    "icon": 135873,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "desc": "Increases the damage done by your Retribution Aura by 25%."
   },
@@ -4060,6 +5214,7 @@
    "id": 14076,
    "level": null,
    "icon": 132310,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "desc": "Gives you a 30% chance to return to stealth mode after using your Sap ability."
   },
@@ -4090,6 +5245,7 @@
    "id": 20335,
    "level": null,
    "icon": 135924,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "desc": "Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Judgement of the Crusader by 5%."
   },
@@ -4137,6 +5293,7 @@
    "id": 12945,
    "level": null,
    "icon": 132110,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "desc": "Allows your Shield Block ability to block an additional attack and increases the duration by 0.5 second."
   },
@@ -4184,6 +5341,7 @@
    "id": 18774,
    "level": null,
    "icon": 134131,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "desc": "Increases the amount of damage absorbed by your Spellstone by 15%."
   },
@@ -4224,6 +5382,7 @@
    "id": 18821,
    "level": null,
    "icon": 136154,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "desc": "Reduces the Attack Speed and Casting Speed penalty of your Subjugate Demon spell by 2% and reduces the resist chance by 2%."
   },
@@ -4248,6 +5407,7 @@
    "id": 12302,
    "level": null,
    "icon": 136080,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "desc": "Reduces the cooldown of your Taunt ability by 1 sec."
   },
@@ -4256,6 +5416,7 @@
    "id": 16836,
    "level": null,
    "icon": 136104,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "desc": "Increases damage caused by your Thorns spell by 25%."
   },
@@ -4304,6 +5465,7 @@
    "id": 29192,
    "level": null,
    "icon": 135792,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "desc": "Increases the melee attack power bonus of your Windfury Totem by 15% and increases the damage caused by your Flametongue Totem by 6%."
   },
@@ -4312,6 +5474,7 @@
    "id": 19228,
    "level": null,
    "icon": 132309,
+   "rank": "Rank 1",
    "cast": "Instant",
    "desc": "Gives your Wing Clip ability a 20% chance to immobilize the target for 5 sec."
   },
@@ -4334,6 +5497,7 @@
    "id": 412758,
    "level": 40,
    "icon": 135789,
+   "rank": "Rank 1 of 3",
    "cast": "2.5 sec cast",
    "range": "30 yd range",
    "school": "Fire",
@@ -4370,6 +5534,7 @@
    "id": 588,
    "level": 12,
    "icon": 135926,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "duration": "600 sec",
    "school": "Holy",
@@ -4392,6 +5557,7 @@
    "id": 5570,
    "level": 20,
    "icon": 136045,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "12 sec",
@@ -4425,6 +5591,7 @@
    "id": 20252,
    "level": 30,
    "icon": 132307,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "range": "25 yd range",
    "school": "Physical",
@@ -4499,6 +5666,7 @@
    "id": 1766,
    "level": 12,
    "icon": 132219,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "Melee",
    "duration": "5 sec",
@@ -4512,6 +5680,7 @@
    "id": 408,
    "level": 30,
    "icon": 132298,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -4537,12 +5706,28 @@
   },
   "Lacerate": {
    "kind": "spell",
-   "id": 414647,
-   "level": 1,
-   "icon": 132131,
+   "id": 24118,
+   "level": 30,
+   "icon": 132155,
+   "rank": "Rank 1 of 4",
+   "by_class": {
+    "druid": {
+     "id": 414647,
+     "level": 1,
+     "icon": 132131
+    },
+    "hunter": {
+     "id": 24118,
+     "level": 30,
+     "icon": 132155
+    }
+   },
    "cast": "Instant",
-   "range": "50000 yd range",
-   "school": "Physical"
+   "range": "Melee",
+   "duration": "21 sec",
+   "school": "Physical",
+   "cost": "40 Mana",
+   "desc": "Wounds the target causing them to bleed for 119 damage over 21 sec."
   },
   "Lacerating Strikes": {
    "kind": "talent",
@@ -4566,6 +5751,7 @@
    "id": 20359,
    "level": null,
    "icon": 135917,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "desc": "Increases the duration of your Judgement of Light and Judgement of Wisdom by 10 sec."
   },
@@ -4574,6 +5760,7 @@
    "id": 408490,
    "level": 40,
    "icon": 237582,
+   "rank": "Rank 1 of 3",
    "cast": "2.5 sec cast",
    "range": "30 yd range",
    "school": "Fire",
@@ -4586,6 +5773,7 @@
    "id": 633,
    "level": 10,
    "icon": 135928,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "range": "40 yd range",
    "school": "Holy",
@@ -4612,6 +5800,7 @@
    "id": 2050,
    "level": 1,
    "icon": 135929,
+   "rank": "Rank 1 of 3",
    "cast": "1.5 sec cast",
    "range": "40 yd range",
    "school": "Holy",
@@ -4623,6 +5812,7 @@
    "id": 8004,
    "level": 20,
    "icon": 136043,
+   "rank": "Rank 1 of 6",
    "cast": "1.5 sec cast",
    "range": "40 yd range",
    "school": "Nature",
@@ -4658,6 +5848,7 @@
    "id": 1454,
    "level": 6,
    "icon": 136126,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "school": "Shadow"
   },
@@ -4666,6 +5857,7 @@
    "id": 1310909,
    "level": null,
    "icon": 236256,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "range": "100 yd range",
    "duration": "30 sec",
@@ -4676,6 +5868,7 @@
    "id": 403,
    "level": 1,
    "icon": 136048,
+   "rank": "Rank 1 of 10",
    "cast": "1.5 sec cast",
    "range": "30 yd range",
    "school": "Nature",
@@ -4684,18 +5877,21 @@
   },
   "Lightning Breath": {
    "kind": "talent",
-   "id": 15797,
+   "id": 24844,
    "level": null,
    "icon": 136048,
-   "cast": "2 sec cast",
-   "range": "30 yd range",
-   "desc": "Breathes lightning at an enemy, inflicting Nature damage."
+   "rank": "Rank 1 of 6",
+   "cast": "Instant",
+   "range": "20 yd range",
+   "cost": "50 Mana",
+   "desc": "Breathes lightning, instantly dealing 9 Nature damage to a single target."
   },
   "Lightning Mastery": {
    "kind": "talent",
    "id": 16579,
    "level": null,
    "icon": 135990,
+   "rank": "Rank 2 of 5",
    "cast": "Instant",
    "desc": "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.4 sec."
   },
@@ -4712,6 +5908,18 @@
    "id": 13712,
    "level": null,
    "icon": 136047,
+   "by_class": {
+    "hunter": {
+     "id": 19168,
+     "level": null,
+     "icon": 136047
+    },
+    "rogue": {
+     "id": 13712,
+     "level": null,
+     "icon": 136047
+    }
+   },
    "cast": "Instant",
    "desc": "Increases your Dodge chance by 5%."
   },
@@ -4720,6 +5928,7 @@
    "id": 324,
    "level": 8,
    "icon": 136051,
+   "rank": "Rank 1 of 7",
    "cast": "Instant",
    "duration": "600 sec",
    "school": "Nature",
@@ -4731,6 +5940,7 @@
    "id": 724,
    "level": 40,
    "icon": 135980,
+   "rank": "Rank 1 of 3",
    "cast": "1.5 sec cast",
    "duration": "180 sec",
    "school": "Holy",
@@ -4794,6 +6004,54 @@
    "id": 4366,
    "level": null,
    "icon": 132325,
+   "rank": "Rank 1 of 15",
+   "by_class": {
+    "druid": {
+     "id": 1259719,
+     "level": null,
+     "icon": 133042
+    },
+    "hunter": {
+     "id": 1259719,
+     "level": null,
+     "icon": 133042
+    },
+    "mage": {
+     "id": 1259719,
+     "level": null,
+     "icon": 133042
+    },
+    "paladin": {
+     "id": 1259719,
+     "level": null,
+     "icon": 133042
+    },
+    "priest": {
+     "id": 1259719,
+     "level": null,
+     "icon": 133042
+    },
+    "rogue": {
+     "id": 1259719,
+     "level": null,
+     "icon": 133042
+    },
+    "shaman": {
+     "id": 1259719,
+     "level": null,
+     "icon": 133042
+    },
+    "warlock": {
+     "id": 1259719,
+     "level": null,
+     "icon": 133042
+    },
+    "warrior": {
+     "id": 1259719,
+     "level": null,
+     "icon": 133042
+    }
+   },
    "cast": "Instant",
    "duration": "Until cancelled",
    "desc": "Increases your damage with One-Handed Maces by 1."
@@ -4811,6 +6069,7 @@
    "id": 6117,
    "level": 34,
    "icon": 135991,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "duration": "1800 sec",
    "school": "Arcane",
@@ -4872,6 +6131,7 @@
    "id": 1463,
    "level": 20,
    "icon": 136153,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "duration": "60 sec",
    "school": "Arcane",
@@ -4882,6 +6142,7 @@
    "id": 16190,
    "level": 40,
    "icon": 135861,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "duration": "13 sec",
    "school": "Frost",
@@ -4920,6 +6181,7 @@
    "id": 1126,
    "level": 1,
    "icon": 136078,
+   "rank": "Rank 1 of 7",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "3600 sec",
@@ -4971,6 +6233,7 @@
    "id": 6807,
    "level": 10,
    "icon": 132136,
+   "rank": "Rank 1 of 7",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -4990,6 +6253,7 @@
    "id": 136,
    "level": 12,
    "icon": 132179,
+   "rank": "Rank 1 of 7",
    "cast": "Instant",
    "range": "20 yd range",
    "duration": "5 sec",
@@ -5040,6 +6304,7 @@
    "id": 8092,
    "level": 10,
    "icon": 136224,
+   "rank": "Rank 1 of 9",
    "cast": "1.5 sec cast",
    "range": "30 yd range",
    "school": "Shadow",
@@ -5052,6 +6317,7 @@
    "id": 15407,
    "level": 20,
    "icon": 136208,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "20 yd range",
    "duration": "3 sec",
@@ -5072,6 +6338,7 @@
    "id": 1265054,
    "level": null,
    "icon": 136063,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "Melee",
    "duration": "4 sec",
@@ -5116,6 +6383,53 @@
    "id": 20916,
    "level": null,
    "icon": 136192,
+   "by_class": {
+    "druid": {
+     "id": 20916,
+     "level": null,
+     "icon": 136192
+    },
+    "hunter": {
+     "id": 20916,
+     "level": null,
+     "icon": 136192
+    },
+    "mage": {
+     "id": 20916,
+     "level": null,
+     "icon": 136192
+    },
+    "paladin": {
+     "id": 20916,
+     "level": null,
+     "icon": 136192
+    },
+    "priest": {
+     "id": 20916,
+     "level": null,
+     "icon": 136192
+    },
+    "rogue": {
+     "id": 20916,
+     "level": null,
+     "icon": 136192
+    },
+    "shaman": {
+     "id": 20916,
+     "level": null,
+     "icon": 136192
+    },
+    "warlock": {
+     "id": 20916,
+     "level": null,
+     "icon": 136192
+    },
+    "warrior": {
+     "id": 20916,
+     "level": null,
+     "icon": 136192
+    }
+   },
    "cast": "3 sec cast",
    "school": "Physical"
   },
@@ -5124,6 +6438,7 @@
    "id": 694,
    "level": 16,
    "icon": 132350,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "Melee",
    "duration": "6 sec",
@@ -5160,6 +6475,7 @@
    "id": 1495,
    "level": 16,
    "icon": 132215,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -5172,6 +6488,7 @@
    "id": 24294,
    "level": null,
    "icon": 134154,
+   "rank": "Rank 2 of 3",
    "cast": "Instant",
    "duration": "Until cancelled",
    "desc": "Increases all damage caused against Beasts, Giants and Dragonkin targets by 2% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional 2%."
@@ -5181,6 +6498,7 @@
    "id": 8921,
    "level": 4,
    "icon": 136096,
+   "rank": "Rank 1 of 10",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "9 sec",
@@ -5201,6 +6519,7 @@
    "id": 16845,
    "level": null,
    "icon": 136087,
+   "rank": "Rank 1",
    "cast": "Instant",
    "desc": "Reduces the Mana cost of your damaging spells by 25%."
   },
@@ -5227,6 +6546,7 @@
    "id": 12294,
    "level": 40,
    "icon": 132355,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "Melee",
    "duration": "10 sec",
@@ -5251,6 +6571,7 @@
    "id": 1310705,
    "level": 30,
    "icon": 236270,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical"
@@ -5283,6 +6604,7 @@
    "id": 16902,
    "level": null,
    "icon": 135138,
+   "rank": "Rank 1 of 5",
    "cast": "Instant"
   },
   "Naturalist": {
@@ -5319,6 +6641,7 @@
    "id": 16689,
    "level": 10,
    "icon": 136063,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "duration": "45 sec",
    "school": "Nature",
@@ -5330,6 +6653,7 @@
    "id": 16180,
    "level": null,
    "icon": 135860,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "desc": "Improves your chance to hit by 1%."
   },
@@ -5362,6 +6686,18 @@
    "id": 16188,
    "level": null,
    "icon": 136076,
+   "by_class": {
+    "druid": {
+     "id": 17116,
+     "level": 1,
+     "icon": 136076
+    },
+    "shaman": {
+     "id": 16188,
+     "level": 1,
+     "icon": 136076
+    }
+   },
    "cast": "Instant",
    "duration": "Until cancelled",
    "cooldown": "180 sec cooldown",
@@ -5372,6 +6708,53 @@
    "id": 18094,
    "level": null,
    "icon": 136223,
+   "by_class": {
+    "druid": {
+     "id": 23653,
+     "level": null,
+     "icon": 136192
+    },
+    "hunter": {
+     "id": 23653,
+     "level": null,
+     "icon": 136192
+    },
+    "mage": {
+     "id": 23653,
+     "level": null,
+     "icon": 136192
+    },
+    "paladin": {
+     "id": 23653,
+     "level": null,
+     "icon": 136192
+    },
+    "priest": {
+     "id": 23653,
+     "level": null,
+     "icon": 136192
+    },
+    "rogue": {
+     "id": 23653,
+     "level": null,
+     "icon": 136192
+    },
+    "shaman": {
+     "id": 23653,
+     "level": null,
+     "icon": 136192
+    },
+    "warlock": {
+     "id": 18094,
+     "level": 1,
+     "icon": 136223
+    },
+    "warrior": {
+     "id": 23653,
+     "level": null,
+     "icon": 136192
+    }
+   },
    "cast": "Instant",
    "desc": "Gives your Corruption, Drain Soul, Drain Life, and Wrack spells a 4% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by 100%."
   },
@@ -5413,6 +6796,7 @@
    "id": 7384,
    "level": 12,
    "icon": 132223,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -5433,6 +6817,53 @@
    "id": 3124,
    "level": null,
    "icon": 132269,
+   "by_class": {
+    "druid": {
+     "id": 3127,
+     "level": null,
+     "icon": 132269
+    },
+    "hunter": {
+     "id": 3127,
+     "level": null,
+     "icon": 132269
+    },
+    "mage": {
+     "id": 3127,
+     "level": null,
+     "icon": 132269
+    },
+    "paladin": {
+     "id": 3127,
+     "level": null,
+     "icon": 132269
+    },
+    "priest": {
+     "id": 3127,
+     "level": null,
+     "icon": 132269
+    },
+    "rogue": {
+     "id": 3127,
+     "level": null,
+     "icon": 132269
+    },
+    "shaman": {
+     "id": 3127,
+     "level": null,
+     "icon": 132269
+    },
+    "warlock": {
+     "id": 3127,
+     "level": null,
+     "icon": 132269
+    },
+    "warrior": {
+     "id": 3127,
+     "level": null,
+     "icon": 132269
+    }
+   },
    "cast": "Instant",
    "desc": "Gives a chance to parry enemy melee attacks."
   },
@@ -5449,6 +6880,7 @@
    "id": 402174,
    "level": 30,
    "icon": 237545,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "40 yd range",
    "school": "Holy",
@@ -5523,6 +6955,7 @@
    "id": 1264735,
    "level": null,
    "icon": 132186,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "Melee",
    "duration": "9 sec",
@@ -5541,6 +6974,53 @@
    "id": 12566,
    "level": null,
    "icon": 132091,
+   "by_class": {
+    "druid": {
+     "id": 1259918,
+     "level": null,
+     "icon": 236717
+    },
+    "hunter": {
+     "id": 1259918,
+     "level": null,
+     "icon": 236717
+    },
+    "mage": {
+     "id": 1259918,
+     "level": null,
+     "icon": 236717
+    },
+    "paladin": {
+     "id": 1259918,
+     "level": null,
+     "icon": 236717
+    },
+    "priest": {
+     "id": 1259918,
+     "level": null,
+     "icon": 236717
+    },
+    "rogue": {
+     "id": 1259918,
+     "level": null,
+     "icon": 236717
+    },
+    "shaman": {
+     "id": 1259918,
+     "level": null,
+     "icon": 236717
+    },
+    "warlock": {
+     "id": 1259918,
+     "level": null,
+     "icon": 236717
+    },
+    "warrior": {
+     "id": 1259918,
+     "level": null,
+     "icon": 236717
+    }
+   },
    "cast": "Instant",
    "duration": "Until cancelled",
    "desc": "Increases your running speed. The longer you run the faster you go up to a maximum speed. You cannot use plainsrunning in combat, underwater, or Indoors."
@@ -5572,6 +7052,7 @@
    "id": 118,
    "level": 8,
    "icon": 136071,
+   "rank": "Rank 1 of 4",
    "cast": "1.5 sec cast",
    "range": "30 yd range",
    "duration": "20 sec",
@@ -5596,6 +7077,7 @@
    "id": 9005,
    "level": 36,
    "icon": 132142,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "range": "Melee",
    "duration": "2 sec",
@@ -5607,6 +7089,7 @@
    "id": 1243,
    "level": 1,
    "icon": 135987,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "3600 sec",
@@ -5619,6 +7102,7 @@
    "id": 17,
    "level": 6,
    "icon": 135940,
+   "rank": "Rank 1 of 10",
    "cast": "Instant",
    "range": "40 yd range",
    "duration": "30 sec",
@@ -5645,6 +7129,7 @@
    "id": 596,
    "level": 30,
    "icon": 135943,
+   "rank": "Rank 1 of 5",
    "cast": "3 sec cast",
    "range": "40 yd range",
    "school": "Holy",
@@ -5655,6 +7140,7 @@
    "id": 401859,
    "level": 40,
    "icon": 135944,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "range": "40 yd range",
    "school": "Holy",
@@ -5663,9 +7149,22 @@
   },
   "Precision": {
    "kind": "talent",
-   "id": 13705,
+   "id": 20189,
    "level": null,
-   "icon": 132222,
+   "icon": 132282,
+   "rank": "Rank 1",
+   "by_class": {
+    "paladin": {
+     "id": 20189,
+     "level": null,
+     "icon": 132282
+    },
+    "rogue": {
+     "id": 13705,
+     "level": null,
+     "icon": 132222
+    }
+   },
    "cast": "Instant",
    "desc": "Improves your chance to hit by 1%."
   },
@@ -5721,6 +7220,7 @@
    "id": 407995,
    "level": 25,
    "icon": 132278,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -5739,6 +7239,19 @@
    "id": 5215,
    "level": 20,
    "icon": 132089,
+   "rank": "Rank 1 of 3",
+   "by_class": {
+    "druid": {
+     "id": 5215,
+     "level": 20,
+     "icon": 132089
+    },
+    "hunter": {
+     "id": 24451,
+     "level": null,
+     "icon": 132142
+    }
+   },
    "cast": "Instant",
    "duration": "Until cancelled",
    "school": "Physical",
@@ -5750,6 +7263,7 @@
    "id": 8122,
    "level": 14,
    "icon": 136184,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "duration": "8 sec",
    "school": "Shadow",
@@ -5761,6 +7275,7 @@
    "id": 6552,
    "level": 38,
    "icon": 132938,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "range": "Melee",
    "duration": "4 sec",
@@ -5798,6 +7313,7 @@
    "id": 11366,
    "level": 20,
    "icon": 135808,
+   "rank": "Rank 1 of 8",
    "cast": "6 sec cast",
    "range": "35 yd range",
    "duration": "12 sec",
@@ -5828,6 +7344,7 @@
    "id": 5740,
    "level": 20,
    "icon": 136186,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "8 sec",
@@ -5840,6 +7357,7 @@
    "id": 1822,
    "level": 24,
    "icon": 132122,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "Melee",
    "duration": "9 sec",
@@ -5879,6 +7397,7 @@
    "id": 2973,
    "level": 1,
    "icon": 132223,
+   "rank": "Rank 1 of 8",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -5891,6 +7410,7 @@
    "id": 6785,
    "level": 32,
    "icon": 132141,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -5907,6 +7427,7 @@
    "id": 20484,
    "level": 20,
    "icon": 136080,
+   "rank": "Rank 1 of 5",
    "cast": "2 sec cast",
    "range": "30 yd range",
    "school": "Nature",
@@ -5951,6 +7472,7 @@
    "id": 8936,
    "level": 12,
    "icon": 136085,
+   "rank": "Rank 1 of 9",
    "cast": "2 sec cast",
    "range": "40 yd range",
    "duration": "21 sec",
@@ -5973,6 +7495,7 @@
    "id": 774,
    "level": 4,
    "icon": 136081,
+   "rank": "Rank 1 of 11",
    "cast": "Instant",
    "range": "40 yd range",
    "duration": "12 sec",
@@ -5999,6 +7522,7 @@
    "id": 772,
    "level": 4,
    "icon": 132155,
+   "rank": "Rank 1 of 7",
    "cast": "Instant",
    "range": "Melee",
    "duration": "9 sec",
@@ -6019,6 +7543,7 @@
    "id": 139,
    "level": 8,
    "icon": 135953,
+   "rank": "Rank 1 of 10",
    "cast": "Instant",
    "range": "40 yd range",
    "duration": "15 sec",
@@ -6080,6 +7605,7 @@
    "id": 2006,
    "level": 10,
    "icon": 135955,
+   "rank": "Rank 1 of 5",
    "cast": "10 sec cast",
    "range": "30 yd range",
    "school": "Holy",
@@ -6101,6 +7627,7 @@
    "id": 7294,
    "level": 16,
    "icon": 135873,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "duration": "Until cancelled",
    "school": "Holy",
@@ -6111,6 +7638,7 @@
    "id": 6572,
    "level": 14,
    "icon": 132353,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -6139,6 +7667,7 @@
    "id": 437138,
    "level": 12,
    "icon": 132132,
+   "rank": "Rank 1 of 5",
    "cast": "10 sec cast",
    "range": "30 yd range",
    "school": "Physical",
@@ -6159,6 +7688,7 @@
    "id": 1079,
    "level": 20,
    "icon": 132152,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "Melee",
    "duration": "12 sec",
@@ -6181,6 +7711,7 @@
    "id": 408521,
    "level": 40,
    "icon": 252995,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "range": "40 yd range",
    "duration": "15 sec",
@@ -6230,6 +7761,7 @@
    "id": 8017,
    "level": null,
    "icon": 136086,
+   "rank": "Rank 1 of 7",
    "cast": "Instant",
    "school": "Nature",
    "cost": "15 Mana",
@@ -6248,6 +7780,7 @@
    "id": 1943,
    "level": 20,
    "icon": 132302,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "Melee",
    "duration": "6 sec",
@@ -6316,6 +7849,7 @@
    "id": 6770,
    "level": 10,
    "icon": 132310,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "range": "Melee",
    "duration": "25 sec",
@@ -6336,6 +7870,7 @@
    "id": 1265065,
    "level": null,
    "icon": 132193,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "Melee",
    "duration": "18 sec",
@@ -6356,6 +7891,7 @@
    "id": 2948,
    "level": 22,
    "icon": 135827,
+   "rank": "Rank 1 of 7",
    "cast": "1.5 sec cast",
    "range": "30 yd range",
    "school": "Fire",
@@ -6385,6 +7921,7 @@
    "id": 20375,
    "level": 20,
    "icon": 132347,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "duration": "30 sec",
    "school": "Holy",
@@ -6396,6 +7933,7 @@
    "id": 1311649,
    "level": 10,
    "icon": 135957,
+   "rank": "Rank 1 of 7",
    "cast": "Instant",
    "duration": "30 sec",
    "school": "Holy",
@@ -6407,6 +7945,7 @@
    "id": 20154,
    "level": 1,
    "icon": 132325,
+   "rank": "Rank 1 of 8",
    "cast": "Instant",
    "duration": "30 sec",
    "school": "Holy",
@@ -6418,6 +7957,7 @@
    "id": 21082,
    "level": 6,
    "icon": 135924,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "duration": "30 sec",
    "school": "Holy",
@@ -6437,6 +7977,7 @@
    "id": 5676,
    "level": 18,
    "icon": 135827,
+   "rank": "Rank 1 of 6",
    "cast": "1.5 sec cast",
    "range": "30 yd range",
    "school": "Fire",
@@ -6448,6 +7989,7 @@
    "id": 3599,
    "level": 10,
    "icon": 135825,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "duration": "30 sec",
    "school": "Fire",
@@ -6464,6 +8006,7 @@
    "id": 1978,
    "level": 4,
    "icon": 132204,
+   "rank": "Rank 1 of 9",
    "cast": "-1000 sec cast",
    "range": "35 yd range",
    "duration": "15 sec",
@@ -6499,6 +8042,7 @@
    "id": 686,
    "level": 1,
    "icon": 136197,
+   "rank": "Rank 1 of 10",
    "cast": "1.7 sec cast",
    "range": "30 yd range",
    "school": "Shadow",
@@ -6533,6 +8077,7 @@
    "id": 1309595,
    "level": 32,
    "icon": 136149,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "30 yd range",
    "school": "Shadow",
@@ -6545,6 +8090,7 @@
    "id": 589,
    "level": 4,
    "icon": 136207,
+   "rank": "Rank 1 of 8",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "18 sec",
@@ -6565,6 +8111,7 @@
    "id": 17877,
    "level": 20,
    "icon": 136191,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "8 sec",
@@ -6589,6 +8136,7 @@
    "id": 18137,
    "level": null,
    "icon": 136051,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "duration": "600 sec",
    "cost": "50 Mana",
@@ -6599,6 +8147,53 @@
    "id": 20580,
    "level": null,
    "icon": 132089,
+   "by_class": {
+    "druid": {
+     "id": 20580,
+     "level": null,
+     "icon": 132089
+    },
+    "hunter": {
+     "id": 20580,
+     "level": null,
+     "icon": 132089
+    },
+    "mage": {
+     "id": 20580,
+     "level": null,
+     "icon": 132089
+    },
+    "paladin": {
+     "id": 20580,
+     "level": null,
+     "icon": 132089
+    },
+    "priest": {
+     "id": 20580,
+     "level": null,
+     "icon": 132089
+    },
+    "rogue": {
+     "id": 20580,
+     "level": null,
+     "icon": 132089
+    },
+    "shaman": {
+     "id": 20580,
+     "level": null,
+     "icon": 132089
+    },
+    "warlock": {
+     "id": 20580,
+     "level": null,
+     "icon": 132089
+    },
+    "warrior": {
+     "id": 20580,
+     "level": null,
+     "icon": 132089
+    }
+   },
    "cast": "Instant",
    "duration": "Until cancelled",
    "school": "Physical",
@@ -6639,6 +8234,53 @@
    "id": 1299026,
    "level": null,
    "icon": 136082,
+   "by_class": {
+    "druid": {
+     "id": 1299026,
+     "level": 1,
+     "icon": 136082
+    },
+    "hunter": {
+     "id": 1299026,
+     "level": 1,
+     "icon": 136082
+    },
+    "mage": {
+     "id": 1299026,
+     "level": 1,
+     "icon": 136082
+    },
+    "paladin": {
+     "id": 1299026,
+     "level": 1,
+     "icon": 136082
+    },
+    "priest": {
+     "id": 1299026,
+     "level": 1,
+     "icon": 136082
+    },
+    "rogue": {
+     "id": 1299026,
+     "level": 1,
+     "icon": 136082
+    },
+    "shaman": {
+     "id": 1299026,
+     "level": 1,
+     "icon": 136082
+    },
+    "warlock": {
+     "id": 1299026,
+     "level": 1,
+     "icon": 136082
+    },
+    "warrior": {
+     "id": 1299026,
+     "level": 1,
+     "icon": 136082
+    }
+   },
    "cast": "Instant",
    "duration": "8 sec",
    "cooldown": "180 sec cooldown",
@@ -6649,6 +8291,7 @@
    "id": 26064,
    "level": null,
    "icon": 132199,
+   "rank": "Rank 1",
    "cast": "Instant",
    "duration": "12 sec",
    "cost": "10 Mana",
@@ -6660,6 +8303,7 @@
    "id": 72,
    "level": 12,
    "icon": 132357,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "range": "Melee",
    "duration": "6 sec",
@@ -6685,6 +8329,7 @@
    "id": 23922,
    "level": null,
    "icon": 134951,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "Melee",
    "cost": "200 Mana",
@@ -6696,6 +8341,24 @@
    "id": 16253,
    "level": null,
    "icon": 134952,
+   "rank": "Rank 1 of 5",
+   "by_class": {
+    "paladin": {
+     "id": 20149,
+     "level": null,
+     "icon": 134952
+    },
+    "shaman": {
+     "id": 16301,
+     "level": null,
+     "icon": 134952
+    },
+    "warrior": {
+     "id": 12298,
+     "level": 1,
+     "icon": 134952
+    }
+   },
    "cast": "Instant",
    "duration": "Until cancelled",
    "desc": "Increases your chance to block attacks with a shield by 1% and increases the amount blocked by 5%."
@@ -6724,6 +8387,7 @@
    "id": 5221,
    "level": 22,
    "icon": 136231,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -6768,6 +8432,7 @@
    "id": 1752,
    "level": 1,
    "icon": 136189,
+   "rank": "Rank 1 of 8",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
@@ -6778,6 +8443,7 @@
    "id": 18265,
    "level": 30,
    "icon": 136188,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "30 sec",
@@ -6790,6 +8456,53 @@
    "id": 1259686,
    "level": null,
    "icon": 1029587,
+   "by_class": {
+    "druid": {
+     "id": 1259686,
+     "level": null,
+     "icon": 1029587
+    },
+    "hunter": {
+     "id": 1259686,
+     "level": null,
+     "icon": 1029587
+    },
+    "mage": {
+     "id": 1259686,
+     "level": null,
+     "icon": 1029587
+    },
+    "paladin": {
+     "id": 1259686,
+     "level": null,
+     "icon": 1029587
+    },
+    "priest": {
+     "id": 1259686,
+     "level": null,
+     "icon": 1029587
+    },
+    "rogue": {
+     "id": 1259686,
+     "level": null,
+     "icon": 1029587
+    },
+    "shaman": {
+     "id": 1259686,
+     "level": null,
+     "icon": 1029587
+    },
+    "warlock": {
+     "id": 1259686,
+     "level": null,
+     "icon": 1029587
+    },
+    "warrior": {
+     "id": 1259686,
+     "level": null,
+     "icon": 1029587
+    }
+   },
    "cast": "0.5 sec cast",
    "cooldown": "120 sec cooldown",
    "desc": "Attempt to draw power from a convergence of elements and receive its blessing, increasing your movement and mounted movement speeds by 10%. Lasts 30 sec if no elemental convergence is nearby, and 900 sec if one is found."
@@ -6799,6 +8512,7 @@
    "id": 1240193,
    "level": 20,
    "icon": 132340,
+   "rank": "Rank 1 of 5",
    "cast": "1.5 sec cast",
    "range": "Melee",
    "school": "Physical",
@@ -6819,6 +8533,7 @@
    "id": 5171,
    "level": 10,
    "icon": 132306,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "range": "100 yd range",
    "duration": "6 sec",
@@ -6847,6 +8562,7 @@
    "id": 585,
    "level": 1,
    "icon": 135924,
+   "rank": "Rank 1 of 8",
    "cast": "1.5 sec cast",
    "range": "30 yd range",
    "school": "Holy",
@@ -6858,6 +8574,7 @@
    "id": 1310687,
    "level": 40,
    "icon": 1412205,
+   "rank": "Rank 1 of 4",
    "cast": "4 sec cast",
    "range": "45 yd range",
    "duration": "10 sec",
@@ -6871,6 +8588,7 @@
    "id": 1264478,
    "level": null,
    "icon": 252188,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "Melee",
    "duration": "30 sec",
@@ -6883,6 +8601,7 @@
    "id": 6353,
    "level": 48,
    "icon": 135808,
+   "rank": "Rank 1 of 2",
    "cast": "6 sec cast",
    "range": "30 yd range",
    "school": "Fire",
@@ -6994,6 +8713,7 @@
    "id": 2983,
    "level": 10,
    "icon": 132307,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "duration": "15 sec",
    "school": "Physical",
@@ -7005,6 +8725,7 @@
    "id": 2912,
    "level": 20,
    "icon": 135753,
+   "rank": "Rank 1 of 7",
    "cast": "3.5 sec cast",
    "range": "30 yd range",
    "school": "Arcane",
@@ -7016,6 +8737,7 @@
    "id": 10797,
    "level": null,
    "icon": 135753,
+   "rank": "Rank 1 of 7",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "6 sec",
@@ -7028,6 +8750,7 @@
    "id": 1784,
    "level": 1,
    "icon": 132320,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "duration": "Until cancelled",
    "school": "Physical",
@@ -7039,6 +8762,7 @@
    "id": 5730,
    "level": 8,
    "icon": 136097,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "duration": "15 sec",
    "school": "Nature",
@@ -7050,6 +8774,53 @@
    "id": 7020,
    "level": null,
    "icon": 132275,
+   "by_class": {
+    "druid": {
+     "id": 20594,
+     "level": 1,
+     "icon": 136225
+    },
+    "hunter": {
+     "id": 20594,
+     "level": 1,
+     "icon": 136225
+    },
+    "mage": {
+     "id": 20594,
+     "level": 1,
+     "icon": 136225
+    },
+    "paladin": {
+     "id": 20594,
+     "level": 1,
+     "icon": 136225
+    },
+    "priest": {
+     "id": 20594,
+     "level": 1,
+     "icon": 136225
+    },
+    "rogue": {
+     "id": 20594,
+     "level": 1,
+     "icon": 136225
+    },
+    "shaman": {
+     "id": 20594,
+     "level": 1,
+     "icon": 136225
+    },
+    "warlock": {
+     "id": 20594,
+     "level": 1,
+     "icon": 136225
+    },
+    "warrior": {
+     "id": 20594,
+     "level": 1,
+     "icon": 136225
+    }
+   },
    "cast": "Instant",
    "duration": "15 sec",
    "cooldown": "30 sec cooldown",
@@ -7066,6 +8837,7 @@
    "id": 8071,
    "level": 4,
    "icon": 136098,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "duration": "300 sec",
    "school": "Nature",
@@ -7096,6 +8868,7 @@
    "id": 8075,
    "level": 10,
    "icon": 136023,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "duration": "300 sec",
    "school": "Nature",
@@ -7107,6 +8880,7 @@
    "id": 1317257,
    "level": null,
    "icon": 132198,
+   "rank": "Rank 1",
    "cast": "Instant",
    "range": "Melee",
    "duration": "3 sec",
@@ -7126,6 +8900,53 @@
    "id": 23161,
    "level": null,
    "icon": 132238,
+   "by_class": {
+    "druid": {
+     "id": 23161,
+     "level": null,
+     "icon": 132238
+    },
+    "hunter": {
+     "id": 23161,
+     "level": null,
+     "icon": 132238
+    },
+    "mage": {
+     "id": 23161,
+     "level": null,
+     "icon": 132238
+    },
+    "paladin": {
+     "id": 23161,
+     "level": null,
+     "icon": 132238
+    },
+    "priest": {
+     "id": 23161,
+     "level": null,
+     "icon": 132238
+    },
+    "rogue": {
+     "id": 23161,
+     "level": null,
+     "icon": 132238
+    },
+    "shaman": {
+     "id": 23161,
+     "level": null,
+     "icon": 132238
+    },
+    "warlock": {
+     "id": 23161,
+     "level": null,
+     "icon": 132238
+    },
+    "warrior": {
+     "id": 23161,
+     "level": null,
+     "icon": 132238
+    }
+   },
    "cast": "3 sec cast",
    "range": "10 yd range",
    "duration": "Until cancelled",
@@ -7138,6 +8959,53 @@
    "id": 5784,
    "level": null,
    "icon": 136103,
+   "by_class": {
+    "druid": {
+     "id": 5784,
+     "level": null,
+     "icon": 136103
+    },
+    "hunter": {
+     "id": 5784,
+     "level": null,
+     "icon": 136103
+    },
+    "mage": {
+     "id": 5784,
+     "level": null,
+     "icon": 136103
+    },
+    "paladin": {
+     "id": 5784,
+     "level": null,
+     "icon": 136103
+    },
+    "priest": {
+     "id": 5784,
+     "level": null,
+     "icon": 136103
+    },
+    "rogue": {
+     "id": 5784,
+     "level": null,
+     "icon": 136103
+    },
+    "shaman": {
+     "id": 5784,
+     "level": null,
+     "icon": 136103
+    },
+    "warlock": {
+     "id": 5784,
+     "level": null,
+     "icon": 136103
+    },
+    "warrior": {
+     "id": 5784,
+     "level": null,
+     "icon": 136103
+    }
+   },
    "cast": "3 sec cast",
    "duration": "Until cancelled",
    "school": "Shadow",
@@ -7149,6 +9017,7 @@
    "id": 1293241,
    "level": null,
    "icon": 132158,
+   "rank": "Rank 1 of 4",
    "cast": "-1000 sec cast",
    "range": "35 yd range",
    "cost": "80 Mana",
@@ -7179,6 +9048,53 @@
    "id": 13819,
    "level": null,
    "icon": 136103,
+   "by_class": {
+    "druid": {
+     "id": 13819,
+     "level": null,
+     "icon": 136103
+    },
+    "hunter": {
+     "id": 13819,
+     "level": null,
+     "icon": 136103
+    },
+    "mage": {
+     "id": 13819,
+     "level": null,
+     "icon": 136103
+    },
+    "paladin": {
+     "id": 13819,
+     "level": null,
+     "icon": 136103
+    },
+    "priest": {
+     "id": 13819,
+     "level": null,
+     "icon": 136103
+    },
+    "rogue": {
+     "id": 13819,
+     "level": null,
+     "icon": 136103
+    },
+    "shaman": {
+     "id": 13819,
+     "level": null,
+     "icon": 136103
+    },
+    "warlock": {
+     "id": 13819,
+     "level": null,
+     "icon": 136103
+    },
+    "warrior": {
+     "id": 13819,
+     "level": null,
+     "icon": 136103
+    }
+   },
    "cast": "3 sec cast",
    "duration": "Until cancelled",
    "school": "Holy",
@@ -7190,6 +9106,7 @@
    "id": 7386,
    "level": 10,
    "icon": 132363,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "Melee",
    "duration": "30 sec",
@@ -7286,21 +9203,81 @@
   },
   "Swipe": {
    "kind": "spell",
-   "id": 1264494,
-   "level": 12,
+   "id": 779,
+   "level": 16,
    "icon": 134296,
+   "rank": "Rank 1 of 5",
+   "by_class": {
+    "druid": {
+     "id": 779,
+     "level": 16,
+     "icon": 134296
+    },
+    "hunter": {
+     "id": 1264727,
+     "level": null,
+     "icon": 134296
+    }
+   },
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
-   "cost": "20 Mana",
-   "cooldown": "5 sec cooldown",
-   "desc": "Swipe 3 nearby enemies, inflicting 4 damage."
+   "cost": "200 Mana",
+   "desc": "Swipe 3 nearby enemies, inflicting 18 damage."
   },
   "Sword Specialization": {
    "kind": "talent",
    "id": 4350,
    "level": null,
    "icon": 132223,
+   "rank": "Rank 1 of 14",
+   "by_class": {
+    "druid": {
+     "id": 20597,
+     "level": null,
+     "icon": 132223
+    },
+    "hunter": {
+     "id": 20597,
+     "level": null,
+     "icon": 132223
+    },
+    "mage": {
+     "id": 20597,
+     "level": null,
+     "icon": 132223
+    },
+    "paladin": {
+     "id": 20597,
+     "level": null,
+     "icon": 132223
+    },
+    "priest": {
+     "id": 20597,
+     "level": null,
+     "icon": 132223
+    },
+    "rogue": {
+     "id": 20597,
+     "level": null,
+     "icon": 132223
+    },
+    "shaman": {
+     "id": 20597,
+     "level": null,
+     "icon": 132223
+    },
+    "warlock": {
+     "id": 20597,
+     "level": null,
+     "icon": 132223
+    },
+    "warrior": {
+     "id": 20597,
+     "level": null,
+     "icon": 132223
+    }
+   },
    "cast": "Instant",
    "duration": "Until cancelled",
    "desc": "Increases your damage with One-Handed Swords by 1."
@@ -7377,20 +9354,69 @@
   },
   "Tendon Rip": {
    "kind": "talent",
-   "id": 3604,
+   "id": 1265038,
    "level": null,
-   "icon": 132109,
+   "icon": 132190,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "range": "Melee",
-   "duration": "8 sec",
-   "cooldown": "20 sec cooldown",
-   "desc": "Reduces an enemy's movement speed by 25% for 8 sec."
+   "duration": "9 sec",
+   "cost": "25 Mana",
+   "cooldown": "30 sec cooldown",
+   "desc": "Tears at an enemy's legs for 12 damage over 9 sec and reduces movement speed by 50% for 9 sec."
   },
   "The Human Spirit": {
    "kind": "talent",
    "id": 20598,
    "level": null,
    "icon": 132874,
+   "by_class": {
+    "druid": {
+     "id": 20598,
+     "level": null,
+     "icon": 132874
+    },
+    "hunter": {
+     "id": 20598,
+     "level": null,
+     "icon": 132874
+    },
+    "mage": {
+     "id": 20598,
+     "level": null,
+     "icon": 132874
+    },
+    "paladin": {
+     "id": 20598,
+     "level": null,
+     "icon": 132874
+    },
+    "priest": {
+     "id": 20598,
+     "level": null,
+     "icon": 132874
+    },
+    "rogue": {
+     "id": 20598,
+     "level": null,
+     "icon": 132874
+    },
+    "shaman": {
+     "id": 20598,
+     "level": null,
+     "icon": 132874
+    },
+    "warlock": {
+     "id": 20598,
+     "level": null,
+     "icon": 132874
+    },
+    "warrior": {
+     "id": 20598,
+     "level": null,
+     "icon": 132874
+    }
+   },
    "cast": "Instant",
    "desc": "Spirit increased by 5%."
   },
@@ -7399,6 +9425,18 @@
    "id": 16929,
    "level": null,
    "icon": 134355,
+   "by_class": {
+    "druid": {
+     "id": 16929,
+     "level": null,
+     "icon": 134355
+    },
+    "hunter": {
+     "id": 19609,
+     "level": null,
+     "icon": 134355
+    }
+   },
    "cast": "Instant",
    "desc": "While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 3 additional base Armor per level and another 1.00 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms."
   },
@@ -7407,6 +9445,7 @@
    "id": 467,
    "level": 6,
    "icon": 136104,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "600 sec",
@@ -7426,6 +9465,7 @@
    "id": 6343,
    "level": 6,
    "icon": 136105,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "duration": "10 sec",
    "school": "Physical",
@@ -7446,6 +9486,7 @@
    "id": 26090,
    "level": null,
    "icon": 132189,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "cost": "60 Mana",
    "cooldown": "60 sec cooldown"
@@ -7472,6 +9513,7 @@
    "id": 3716,
    "level": null,
    "icon": 136160,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "range": "Melee",
    "cost": "20 Mana",
@@ -7520,6 +9562,7 @@
    "id": 2652,
    "level": null,
    "icon": 136143,
+   "rank": "Rank 1 of 6",
    "cast": "Instant",
    "duration": "600 sec",
    "cost": "25 Mana",
@@ -7530,6 +9573,53 @@
    "id": 1260189,
    "level": null,
    "icon": 136157,
+   "by_class": {
+    "druid": {
+     "id": 1260189,
+     "level": null,
+     "icon": 136157
+    },
+    "hunter": {
+     "id": 1260189,
+     "level": null,
+     "icon": 136157
+    },
+    "mage": {
+     "id": 1260189,
+     "level": null,
+     "icon": 136157
+    },
+    "paladin": {
+     "id": 1260189,
+     "level": null,
+     "icon": 136157
+    },
+    "priest": {
+     "id": 1260189,
+     "level": null,
+     "icon": 136157
+    },
+    "rogue": {
+     "id": 1260189,
+     "level": null,
+     "icon": 136157
+    },
+    "shaman": {
+     "id": 1260189,
+     "level": null,
+     "icon": 136157
+    },
+    "warlock": {
+     "id": 1260189,
+     "level": null,
+     "icon": 136157
+    },
+    "warrior": {
+     "id": 1260189,
+     "level": null,
+     "icon": 136157
+    }
+   },
    "cast": "Instant",
    "desc": "Your spells and attacks have a 5% chance to drain Health from the target, up to 5% of your maximum Health."
   },
@@ -7538,6 +9628,23 @@
    "id": 12299,
    "level": null,
    "icon": 135892,
+   "by_class": {
+    "paladin": {
+     "id": 20143,
+     "level": 1,
+     "icon": 135892
+    },
+    "shaman": {
+     "id": 16252,
+     "level": 1,
+     "icon": 135892
+    },
+    "warrior": {
+     "id": 12299,
+     "level": 1,
+     "icon": 135892
+    }
+   },
    "cast": "Instant",
    "desc": "Increases your Armor value from items by 10%."
   },
@@ -7562,6 +9669,54 @@
    "id": 740,
    "level": 30,
    "icon": 136107,
+   "rank": "Rank 1 of 4",
+   "by_class": {
+    "druid": {
+     "id": 740,
+     "level": 30,
+     "icon": 136107
+    },
+    "hunter": {
+     "id": 461718,
+     "level": null,
+     "icon": 136192
+    },
+    "mage": {
+     "id": 461718,
+     "level": null,
+     "icon": 136192
+    },
+    "paladin": {
+     "id": 461718,
+     "level": null,
+     "icon": 136192
+    },
+    "priest": {
+     "id": 461718,
+     "level": null,
+     "icon": 136192
+    },
+    "rogue": {
+     "id": 461718,
+     "level": null,
+     "icon": 136192
+    },
+    "shaman": {
+     "id": 461718,
+     "level": null,
+     "icon": 136192
+    },
+    "warlock": {
+     "id": 461718,
+     "level": null,
+     "icon": 136192
+    },
+    "warrior": {
+     "id": 461718,
+     "level": null,
+     "icon": 136192
+    }
+   },
    "cast": "Instant",
    "duration": "10 sec",
    "school": "Nature",
@@ -7599,6 +9754,7 @@
    "id": 1310612,
    "level": null,
    "icon": 458223,
+   "rank": "Rank 1",
    "cast": "Instant",
    "duration": "12 sec",
    "cost": "10 Mana",
@@ -7613,13 +9769,14 @@
   },
   "Trueshot Aura": {
    "kind": "talent",
-   "id": 19506,
+   "id": 1299346,
    "level": null,
    "icon": 132329,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "duration": "1800 sec",
-   "cost": "325 Mana",
-   "desc": "Increases the Ranged Attack Power of party members within 45 yards by 50. Lasts 1800 sec."
+   "cost": "180 Mana",
+   "desc": "Increases the Ranged Attack Power of party members within 45 yds by 30."
   },
   "Turtle Scale Breastplate": {
    "kind": "item",
@@ -7664,6 +9821,18 @@
    "id": 12163,
    "level": null,
    "icon": 132400,
+   "by_class": {
+    "paladin": {
+     "id": 20111,
+     "level": 1,
+     "icon": 133041
+    },
+    "warrior": {
+     "id": 12163,
+     "level": 1,
+     "icon": 132400
+    }
+   },
    "cast": "Instant",
    "desc": "Increases the damage you deal with two-handed melee weapons by 1%."
   },
@@ -7724,6 +9893,7 @@
    "id": 1856,
    "level": 22,
    "icon": 132331,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "school": "Physical",
    "cooldown": "300 sec cooldown",
@@ -7734,6 +9904,23 @@
    "id": 16909,
    "level": null,
    "icon": 136075,
+   "by_class": {
+    "druid": {
+     "id": 16909,
+     "level": null,
+     "icon": 136075
+    },
+    "paladin": {
+     "id": 20049,
+     "level": null,
+     "icon": 132275
+    },
+    "warlock": {
+     "id": 426195,
+     "level": null,
+     "icon": 236299
+    }
+   },
    "cast": "Instant",
    "desc": "Increases the critical strike damage bonus of your Arcane and Nature spells by 20%."
   },
@@ -7768,16 +9955,20 @@
   },
   "Vindication": {
    "kind": "talent",
-   "id": 9452,
+   "id": 67,
    "level": null,
    "icon": 135985,
-   "cast": "Instant"
+   "rank": "Rank 1",
+   "cast": "Instant",
+   "range": "100 yd range",
+   "duration": "10 sec"
   },
   "Viper Sting": {
    "kind": "spell",
    "id": 3034,
    "level": 36,
    "icon": 132157,
+   "rank": "Rank 1 of 3",
    "cast": "-1000 sec cast",
    "range": "35 yd range",
    "duration": "8 sec",
@@ -7813,6 +10004,7 @@
    "id": 1510,
    "level": 40,
    "icon": 132222,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "range": "35 yd range",
    "duration": "6 sec",
@@ -7833,6 +10025,18 @@
    "id": 6057,
    "level": null,
    "icon": 135463,
+   "by_class": {
+    "mage": {
+     "id": 6057,
+     "level": null,
+     "icon": 135463
+    },
+    "priest": {
+     "id": 14524,
+     "level": null,
+     "icon": 135463
+    }
+   },
    "cast": "Instant",
    "desc": "Increases your damage with Wands by 13%."
   },
@@ -7841,6 +10045,53 @@
    "id": 45,
    "level": null,
    "icon": 132091,
+   "by_class": {
+    "druid": {
+     "id": 20549,
+     "level": null,
+     "icon": 132368
+    },
+    "hunter": {
+     "id": 20549,
+     "level": null,
+     "icon": 132368
+    },
+    "mage": {
+     "id": 20549,
+     "level": null,
+     "icon": 132368
+    },
+    "paladin": {
+     "id": 20549,
+     "level": null,
+     "icon": 132368
+    },
+    "priest": {
+     "id": 20549,
+     "level": null,
+     "icon": 132368
+    },
+    "rogue": {
+     "id": 20549,
+     "level": null,
+     "icon": 132368
+    },
+    "shaman": {
+     "id": 20549,
+     "level": null,
+     "icon": 132368
+    },
+    "warlock": {
+     "id": 20549,
+     "level": null,
+     "icon": 132368
+    },
+    "warrior": {
+     "id": 20549,
+     "level": null,
+     "icon": 132368
+    }
+   },
    "cast": "Instant",
    "desc": "Knocks nearby enemies back."
   },
@@ -7868,6 +10119,7 @@
    "id": 29082,
    "level": null,
    "icon": 132215,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
    "duration": "Until cancelled",
    "desc": "Increases the damage you deal with all weapons by 2%."
@@ -7885,18 +10137,68 @@
    "id": 9787,
    "level": null,
    "icon": 135326,
+   "by_class": {
+    "druid": {
+     "id": 9787,
+     "level": null,
+     "icon": 135326
+    },
+    "hunter": {
+     "id": 9787,
+     "level": null,
+     "icon": 135326
+    },
+    "mage": {
+     "id": 9787,
+     "level": null,
+     "icon": 135326
+    },
+    "paladin": {
+     "id": 9787,
+     "level": null,
+     "icon": 135326
+    },
+    "priest": {
+     "id": 9787,
+     "level": null,
+     "icon": 135326
+    },
+    "rogue": {
+     "id": 9787,
+     "level": null,
+     "icon": 135326
+    },
+    "shaman": {
+     "id": 9787,
+     "level": null,
+     "icon": 135326
+    },
+    "warlock": {
+     "id": 9787,
+     "level": null,
+     "icon": 135326
+    },
+    "warrior": {
+     "id": 9787,
+     "level": null,
+     "icon": 135326
+    }
+   },
    "cast": "Instant",
    "desc": "Allows a blacksmith to make special weapons that are unavailable to the typical artisan blacksmith."
   },
   "Web": {
    "kind": "talent",
-   "id": 745,
+   "id": 1265843,
    "level": null,
-   "icon": 132149,
+   "icon": 136113,
+   "rank": "Rank 1 of 5",
    "cast": "Instant",
-   "range": "30 yd range",
-   "duration": "10 sec",
-   "desc": "Casts a web over an enemy, immobilizing it for 10 sec."
+   "range": "20 yd range",
+   "duration": "4 sec",
+   "cost": "20 Mana",
+   "cooldown": "40 sec cooldown",
+   "desc": "Entangles an enemy in a corrosive web, immobilizing them and dealing 12 Nature damage over 4 sec."
   },
   "Well Rested": {
    "kind": "talent",
@@ -7921,6 +10223,7 @@
    "id": 408120,
    "level": 40,
    "icon": 236153,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "range": "40 yd range",
    "duration": "7 sec",
@@ -7945,6 +10248,53 @@
    "id": 7744,
    "level": null,
    "icon": 136187,
+   "by_class": {
+    "druid": {
+     "id": 7744,
+     "level": null,
+     "icon": 136187
+    },
+    "hunter": {
+     "id": 7744,
+     "level": null,
+     "icon": 136187
+    },
+    "mage": {
+     "id": 7744,
+     "level": null,
+     "icon": 136187
+    },
+    "paladin": {
+     "id": 7744,
+     "level": null,
+     "icon": 136187
+    },
+    "priest": {
+     "id": 7744,
+     "level": null,
+     "icon": 136187
+    },
+    "rogue": {
+     "id": 7744,
+     "level": null,
+     "icon": 136187
+    },
+    "shaman": {
+     "id": 7744,
+     "level": null,
+     "icon": 136187
+    },
+    "warlock": {
+     "id": 7744,
+     "level": null,
+     "icon": 136187
+    },
+    "warrior": {
+     "id": 7744,
+     "level": null,
+     "icon": 136187
+    }
+   },
    "cast": "Instant",
    "cooldown": "120 sec cooldown",
    "desc": "Instantly removes all Charm, Fear and Sleep effects."
@@ -7954,6 +10304,53 @@
    "id": 1259718,
    "level": null,
    "icon": 136129,
+   "by_class": {
+    "druid": {
+     "id": 1259718,
+     "level": null,
+     "icon": 136129
+    },
+    "hunter": {
+     "id": 1259718,
+     "level": null,
+     "icon": 136129
+    },
+    "mage": {
+     "id": 1259718,
+     "level": null,
+     "icon": 136129
+    },
+    "paladin": {
+     "id": 1259718,
+     "level": null,
+     "icon": 136129
+    },
+    "priest": {
+     "id": 1259718,
+     "level": null,
+     "icon": 136129
+    },
+    "rogue": {
+     "id": 1259718,
+     "level": null,
+     "icon": 136129
+    },
+    "shaman": {
+     "id": 1259718,
+     "level": null,
+     "icon": 136129
+    },
+    "warlock": {
+     "id": 1259718,
+     "level": null,
+     "icon": 136129
+    },
+    "warrior": {
+     "id": 1259718,
+     "level": null,
+     "icon": 136129
+    }
+   },
    "cast": "Instant",
    "cooldown": "180 sec cooldown",
    "desc": "Instantly removes all Stun effects."
@@ -7963,6 +10360,53 @@
    "id": 1259710,
    "level": null,
    "icon": 463565,
+   "by_class": {
+    "druid": {
+     "id": 1259710,
+     "level": null,
+     "icon": 463565
+    },
+    "hunter": {
+     "id": 1259710,
+     "level": null,
+     "icon": 463565
+    },
+    "mage": {
+     "id": 1259710,
+     "level": null,
+     "icon": 463565
+    },
+    "paladin": {
+     "id": 1259710,
+     "level": null,
+     "icon": 463565
+    },
+    "priest": {
+     "id": 1259710,
+     "level": null,
+     "icon": 463565
+    },
+    "rogue": {
+     "id": 1259710,
+     "level": null,
+     "icon": 463565
+    },
+    "shaman": {
+     "id": 1259710,
+     "level": null,
+     "icon": 463565
+    },
+    "warlock": {
+     "id": 1259710,
+     "level": null,
+     "icon": 463565
+    },
+    "warrior": {
+     "id": 1259710,
+     "level": null,
+     "icon": 463565
+    }
+   },
    "cast": "Instant",
    "desc": "Increases your spellcasting, melee, and ranged Haste by 1%."
   },
@@ -7971,6 +10415,7 @@
    "id": 8512,
    "level": 32,
    "icon": 136114,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "duration": "300 sec",
    "school": "Nature",
@@ -7981,6 +10426,7 @@
    "id": 8232,
    "level": 30,
    "icon": 136018,
+   "rank": "Rank 1 of 4",
    "cast": "Instant",
    "school": "Nature",
    "cost": "90 Mana"
@@ -7990,6 +10436,7 @@
    "id": 2974,
    "level": 12,
    "icon": 132309,
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "range": "Melee",
    "duration": "10 sec",
@@ -8009,6 +10456,53 @@
    "id": 20585,
    "level": null,
    "icon": 136116,
+   "by_class": {
+    "druid": {
+     "id": 20585,
+     "level": null,
+     "icon": 136116
+    },
+    "hunter": {
+     "id": 20585,
+     "level": null,
+     "icon": 136116
+    },
+    "mage": {
+     "id": 20585,
+     "level": null,
+     "icon": 136116
+    },
+    "paladin": {
+     "id": 20585,
+     "level": null,
+     "icon": 136116
+    },
+    "priest": {
+     "id": 20585,
+     "level": null,
+     "icon": 136116
+    },
+    "rogue": {
+     "id": 20585,
+     "level": null,
+     "icon": 136116
+    },
+    "shaman": {
+     "id": 20585,
+     "level": null,
+     "icon": 136116
+    },
+    "warlock": {
+     "id": 20585,
+     "level": null,
+     "icon": 136116
+    },
+    "warrior": {
+     "id": 20585,
+     "level": null,
+     "icon": 136116
+    }
+   },
    "cast": "Instant",
    "desc": "Transform into a wisp upon death, increasing movement speed by 75%."
   },
@@ -8031,6 +10525,7 @@
    "id": 1316697,
    "level": null,
    "icon": 460687,
+   "rank": "Rank 1",
    "cast": "Instant",
    "range": "30 yd range",
    "duration": "6 sec",
@@ -8042,6 +10537,7 @@
    "id": 5176,
    "level": 1,
    "icon": 136006,
+   "rank": "Rank 1 of 8",
    "cast": "1.5 sec cast",
    "range": "30 yd range",
    "school": "Nature",
