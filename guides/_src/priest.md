@@ -49,7 +49,7 @@ Play Priest if you want to be the person keeping everyone alive, and you are hap
 | 32 | **[[Shadow Word: Death]] is new**, instant, 15-second cooldown, with 10% max-health backlash if it does not kill |
 | 40 | [[Greater Heal]], mount. **[[Lightwell]] is not here** — Blizzard removed the talent outright, see below |
 | 48–60 | Prayer of Fortitude, Shadow Protection and Spirit all become **raid-wide** |
-**The client puts the gate at 10 points in the Shadow tree, not at your spec.** A healing Priest may dip into Shadow for [[Mind Flay]], so it is not listed above as a level-gated ability.
+**The client puts the gate at 10 points in the Shadow tree, not at your spec**, so a healing Priest can dip into Shadow for [[Mind Flay]]. Talent points buy it, not a training level.
 ## Which race
 Read this section in proportion. Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling** *(ours, not a source's)*. Racials decide things in PvP, and specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **You used to pick Dwarf for [[Fear Ward]].** Fear Ward is now baseline for everyone, so that reason is gone.
@@ -66,7 +66,7 @@ Read this section in proportion. Race is the smallest of the choices on this pag
 | Troll | `Hex of Weakness`. Unchanged. | `Shadowguard`. Unchanged. |
 | Undead | `Touch of Weakness`. Unchanged. | `Dark Sacrifice` (20) — cannibalise your own health for Mana over time, gain increased by Spirit. **New.** |
 Blizzard did not publish a level for Troll's two spells or for Human's `Feedback`; the "second racial spell" the milestones table above flags at **level 20** is the race's level-20 column entry wherever one is given.
-The levels and cooldowns in that table are Blizzard's own. The client disagrees twice: it puts `Divine Grace` on a 10-minute cooldown rather than 5, and gives `Contingency Plan` a 15-second ward with no cooldown at all. Blizzard's post outranks the client, so the table keeps Blizzard's figures.
+The levels and cooldowns above are Blizzard's own. The client disagrees twice: it puts `Divine Grace` on a 10-minute cooldown rather than 5, and gives `Contingency Plan` a 15-second ward with no cooldown at all. Blizzard's post outranks the client, so plan around Blizzard's figures.
 ## Quality of life
 - **The wand is the levelling mechanic.** Wand skill is default, so a wand works the moment you loot one, and `Wand Specialization` is now two points instead of five. Get one early.
 - **Re-drag your action bars, or use macros.** Before level 20 nearly every even level brings a new rank of Smite, Mind Blast, Shadow Word: Pain or Power Word: Shield, and the bars do not update themselves. A `/cast Spell Name` macro always fires the highest rank you know.

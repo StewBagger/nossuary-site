@@ -4,7 +4,7 @@ sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizza
 
 Paladin is a plate-wearing melee fighter that runs on mana, and it is no longer faction-locked. Undead Paladins are new in Forever, with their own class hub in Tirisfal Glades.
 :::scope
-Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, raised from 20 that day, so no level-60 Paladin build has been tested. Published level-30 builds elsewhere spend points on `Crusade` and `Improved Holy Strike`. Both still exist in the newest client build, 1.60.1.70245, so neither has been deleted outright. Whether you can still reach them in the tree is the part nobody can check: the client's talent tables have not been updated for Forever, and Paladin is the one class Blizzard has not written a deep dive for. Treat any level-30 Paladin build you find as a projection.
+Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, raised from 20 that day, so no level-60 Paladin build has been tested. Published level-30 builds elsewhere spend points on `Crusade` and `Improved Holy Strike`. Both still exist in the newest client build, 1.60.1.70245, so neither has been deleted outright. Whether you can still click them in the tree is the part nobody can check. Paladin is also the one class Blizzard has not written a deep dive for. Treat any level-30 Paladin build you find as a projection.
 :::
 ## Which spec?
 | Spec | Role | Its strongest point | In one line |
@@ -14,7 +14,7 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of t
 | **[Retribution](/guides/wow-forever/paladin/retribution/)** | Melee DPS | [[Seal of Command]] at 20 procs Holy off each swing, and a stun amplifies its Judgement | Two-hander plus Holy, and [[Holy Strike]] arrives at level 6 |
 **Every Paladin now gets [[Holy Strike]] at level 6**, twenty levels earlier than Classic gave you a button. [[Consecration]] and [[Blessing of Kings]] are trained at 20 in every spec, so the three share more of their kit than they did in Classic.
 Protection used to have dungeon levelling as its escape hatch, and that route is largely gone. **Forever cut dungeon experience hard, and the October 1 build cut dungeon *quest* experience too:** dungeon quests now reward 50% less extra experience beyond normal quest values. Blizzard framed the cut as a deliberate reduction in levelling speed.
-**The two talents stand on very different evidence.** `Improved Holy Strike` was folded into the class: [[Holy Strike]]'s cooldown is now 10 seconds for every Paladin, and Blizzard's September 24 notes say so. The client's own Holy Strike row agrees on the 10 seconds while keeping the talent's separate record, which it also does for talents Blizzard has confirmed deleted. `Crusade` has no Blizzard note of any kind and its record is intact, so nothing we can read says it left the tree.
+**The two talents stand on very different evidence.** `Improved Holy Strike` was folded into the class: Blizzard's September 24 notes give [[Holy Strike]] a 10-second cooldown for every Paladin, so there is nothing left to talent. `Crusade` has no Blizzard note of any kind, so nobody can tell you whether you can still spend a point there.
 ## Is Paladin for you?
 Play Paladin if you want a melee class that carries its own heals, wears mail from level 1 and plate from 40, and can train for whichever of the three roles a group is short of.
 :::strengths
@@ -49,7 +49,7 @@ Play Paladin if you want a melee class that carries its own heals, wears mail fr
 | 40 | **Plate armour**, [[Summon Warhorse]], [[Hammer of the Righteous]], new, needs a one-hander |
 | 50 | [[Holy Wrath]], now also stuns for 2 seconds |
 | 52–60 | Greater Blessings |
-**`Blessing of Sanctuary` is not in Forever**, in either form. The client has no spell record for it under any name, which makes it the one Paladin removal those tables confirm outright.
+**`Blessing of Sanctuary` is not in Forever**, in either form. Nothing trains it and no tree offers it. It is the Paladin removal you can be surest of.
 ## Which race
 Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation. **No race is a wrong answer for levelling** *(ours, not a source's)*. Racials decide things in PvP. The ones that matter there break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Alliance: Human or Dwarf.** Human's `Sword Specialization` gives +2% crit to spells and abilities off a sword carried purely as a stat stick. It is the largest weapon racial, and it feeds both gearing paths. Dwarf's `Stoneform` is a real solo cooldown.

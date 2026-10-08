@@ -13,7 +13,7 @@ The published verdict on taming a pet at level 10 is blunt: *"the single greates
 **Learn the dead zone immediately.** Below level 10, walk backwards between shots. You want as many ranged attacks in as possible before the enemy closes.
 ## Your talent points
 **Level 20: 10/1/0 or 11/0/0.** There is no single obvious level-20 capstone in this tree, and the published advice is correspondingly flexible.
-1. **`Deadly Aspects`, 5 points**, the outlier in an otherwise flexible build. A chance on [[Auto Shot]] of increased ranged attack speed while [[Aspect of the Hawk]] is up. The client holds one record for it, reading a 10% chance of +30% for 12 seconds and no per-rank ladder at all; Blizzard's notes publish no numbers for it
+1. **`Deadly Aspects`, 5 points**, the outlier in an otherwise flexible build. A chance on [[Auto Shot]] of increased ranged attack speed while [[Aspect of the Hawk]] is up. The client reads a 10% chance of +30% for 12 seconds, with no per-rank ladder; Blizzard's notes publish no numbers for it
 2. **`Pathfinding`, 2 points**: +6% to [[Aspect of the Cheetah]] and [[Aspect of the Pack]], taking Cheetah to +36%. It does nothing while you are in [[Aspect of the Hawk]], so it is a travel talent rather than a combat one. Before a mount that still counts: *"so much more noticeable than anything else while you run around the world"*
 3. **The last 4 points are subjective.** Named options, with what each is for:
    - `Improved Revive Pet`, makes bringing your pet back reliable **in combat**
@@ -52,7 +52,7 @@ Forever changed pets more than it changed the Hunter.
 ## What defines Beast Mastery
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
-| **`Deadly Aspects`** | 10, maxed at 14 | A chance on [[Auto Shot]] of **increased ranged attack speed, and only while [[Aspect of the Hawk]] is up**. The client's single record reads a 10% chance of +30% over 12 seconds, with no per-rank figures, and Blizzard has published none of it. There is a melee half too, off [[Aspect of the Beast]]. The talent the published level-20 build is designed around |
+| **`Deadly Aspects`** | 10, maxed at 14 | A chance on [[Auto Shot]] of **increased ranged attack speed, and only while [[Aspect of the Hawk]] is up**. The client reads a 10% chance of +30% over 12 seconds, with no per-rank figures, and Blizzard has published none of it. There is a melee half too, off [[Aspect of the Beast]]. The talent the published level-20 build is designed around |
 | **`Pathfinding`** | 14 | **+6% to [[Aspect of the Cheetah]] and [[Aspect of the Pack]]**, not to movement speed generally, and worth nothing while you are in Hawk |
 | **`Bestial Swiftness`** | 20 | Pet movement speed, quality of life while levelling, real value in PvP |
 | **`Summon Hawk`** | 16 points into this tree (later than a base level-20 build) | Summons a hawk that hits once then attacks for 18 seconds on its own, up to two active; shares its cooldown with [[Arcane Shot]] |

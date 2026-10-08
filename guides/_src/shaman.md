@@ -48,7 +48,7 @@ Blizzard's own summary sets the trade. Shaman *"can be effective melee or spell 
 | 32 | [[Chain Lightning]], half a second faster than vanilla |
 | 40 | [[Chain Heal]], mount, Call of the Ancestors for a third totem set, and **Dual Specialization**. Everything on this row is published and above the beta cap, so untested |
 | 42 | [[Grace of Air Totem]] — **the last new Shaman ability in the game.** 43 to 60 is ranks only |
-**Tranquil Air Totem is gone.** Blizzard's deep dive says so flatly: *"Tranquil Air Totem: Removed."* The beta client has no spell for it. [[Windfury Totem]] and Flametongue Totem are party buffs now, not weapon enchants, and they do not all stack. [[Windfury Totem]] excludes both [[Grace of Air Totem]] and Flametongue Totem, and a Shaman already carrying the matching weapon imbue gains nothing from either totem.
+**Tranquil Air Totem is gone.** Blizzard's deep dive says so flatly: *"Tranquil Air Totem: Removed."* There is no such spell in the beta. [[Windfury Totem]] and Flametongue Totem are party buffs now, not weapon enchants, and they do not all stack. [[Windfury Totem]] excludes both [[Grace of Air Totem]] and Flametongue Totem, and a Shaman already carrying the matching weapon imbue gains nothing from either totem.
 ## Which race
 Read this section in proportion. Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling** *(ours, not a source's)*. Racials decide things in PvP, specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Alliance — Dwarf, and it is forced**, being the only Alliance Shaman. It is fine anyway. `Stoneform` is a real solo cooldown, and `Mace Specialization` gives +1% crit to spells and abilities merely for holding a mace. Shaman train maces by default, so that is free crit for Elemental and Restoration too.
@@ -63,7 +63,7 @@ Read this section in proportion. Race is the smallest of the choices on this pag
 | Change | What it means for you |
 | --- | --- |
 | **Weapon imbues last 60 minutes, not 5** | One refresh an hour, and an imbue now runs **alongside** a sharpening stone, weight stone or oil, which Classic never allowed |
-| **Totems last 5 minutes and reach 30 yards** | "Per pull" is no longer the unit. Every totem now buffs party members within 30 yards with no talent spent, which is what `Totemic Mastery` used to grant, so we read that talent as gone *(ours, not a source's)*. Blizzard lists no removal for it |
+| **Totems last 5 minutes and reach 30 yards** | "Per pull" is no longer the unit. Every totem now buffs party members within 30 yards with no talent spent, which is what `Totemic Mastery` used to grant, so treat that talent as gone *(ours, not a source's)*. Blizzard lists no removal for it |
 | **The totem bar** | Three saveable four-totem loadouts, one button to drop a set, one to pick them all up for **25% of their Mana back**, and one to teleport them. Blizzard says that refund is bugged in beta and pays out nothing |
 | [[Disease Cleansing Totem]] now lasts its full 5 minutes | Like every other totem |
 | [[Fire Nova]] is no longer a totem | It bursts around your active fire totem instead |

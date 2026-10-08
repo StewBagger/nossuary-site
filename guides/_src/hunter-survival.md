@@ -47,7 +47,7 @@ Below level 10, walk backwards between shots to stay out of the dead zone.
 ## Survival talent changes, Classic to Forever
 Beyond the level-20 build above, Blizzard's own changelog for the tree:
 - `Improved Tracking`, new, combines the old `Monster Slaying` and `Humanoid Slaying` into one talent that increases damage to whatever creature type you are currently tracking
-- `Savage Strikes` redesigned: now +2/4% to **all** melee damage, instead of +10/20% to Raptor Strike and Mongoose Bite specifically. The client has not caught up here: its one record still reads a 20% melee critical strike chance, so believe Blizzard rather than the tooltip
+- `Savage Strikes` redesigned: now +2/4% to **all** melee damage, instead of +10/20% to Raptor Strike and Mongoose Bite specifically. The client has not caught up here: the in-game tooltip still reads a 20% melee critical strike chance, so believe Blizzard
 - **`Survivalist` moved from row 3 up to row 2**
 - `Improved Wing Clip` now reaches its maximum 20% chance in 3 points instead of more
 - `Surefooted` moved from row 4 up to row 3; its hit-chance bonus now applies to all attacks, and it reduces the duration of movement-impairing effects instead of just reducing their chance to land on you

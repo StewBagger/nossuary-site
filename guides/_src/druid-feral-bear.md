@@ -24,7 +24,7 @@ The three-tank line-up of Protection Warrior, Protection Paladin and Feral Druid
 ## Threat and mitigation rotation
 1. **[[Growl]]** to pull and to hold. Rage comes from taking hits and auto-attacking
 2. **[[Enrage]]**: 30 rage over 10 seconds on a 1-minute cooldown, *"at the cost of reducing your Armor slightly"*
-3. **[[Faerie Fire]]** to strip armour. In Forever it is usable in Bear, Dire Bear or Cat Form, which it was not in Classic. Per Blizzard it costs no resources but gains a 6-second cooldown, and it does not reset your swing timer. The client still holds the Classic record here, at 55 Mana with no cooldown, so this is one Blizzard has published that the client has not caught up with. One known bug: Blizzard's October 1 Known Issues list states that multiple debuffs, Faerie Fire named specifically, currently generate no threat, so do not rely on it to hold aggro until that is fixed
+3. **[[Faerie Fire]]** to strip armour. In Forever it is usable in Bear, Dire Bear or Cat Form, which it was not in Classic. Per Blizzard it costs no resources but gains a 6-second cooldown, and it does not reset your swing timer. In game it still costs Classic's 55 Mana with no cooldown. Blizzard has published the change and the client has not caught up, so follow Blizzard. One known bug: Blizzard's October 1 Known Issues list states that multiple debuffs, Faerie Fire named specifically, currently generate no threat, so do not rely on it to hold aggro until that is fixed
 4. **[[Maul]]** as your rage dump
 5. **[[Bash]]** to stun, and with `Brutal Impact` it comes back much faster
 Pre-buff [[Mark of the Wild]] and [[Thorns]]. Drop form to self-heal. [[Nature's Grasp]] or [[Entangling Roots]] to disengage. Both now work in form and indoors.

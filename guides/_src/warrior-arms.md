@@ -13,7 +13,7 @@ Icy Veins rates Warrior a poor leveller, one of the more difficult classes, "esp
 ## Your talent points
 **Level 20: 0/11/0, entirely in Fury.** Not a typo: it is what both published Arms builds do.
 1. `Cruelty`, 5 points
-2. `Unbridled Wrath`, 5 points — **it no longer grants its old +2-rage-per-proc bonus for two-handed weapons**, which used to be the reason an Arms Warrior took it. The published builds pre-date that change, and so does the client: its tooltip still shows the doubling, so take this from Blizzard's October 1 notes rather than from the talent. Even so, nothing else in Fury row 1 is worth taking instead
+2. `Unbridled Wrath`, 5 points — **it no longer grants its old +2-rage-per-proc bonus for two-handed weapons**, which used to be the reason an Arms Warrior took it. The published builds pre-date that change and so does the game: the tooltip in front of you still shows the doubling, so take this from Blizzard's October 1 notes rather than from the talent. Even so, nothing else in Fury row 1 is worth taking instead
 3. `Piercing Howl`, 1 point
 **If you would rather commit to Arms early at 20** — our own extension, not a published build: `Improved Heroic Strike` 3, `Improved Rend` 3, `Improved Charge` 2, `Improved Overpower` 2, then 1 point into `Deep Wounds`. Improved Rend is forced here: it is Deep Wounds' prerequisite.
 **Level 30: 21/0/0 — our own extension, not a published build**, reaching `Sweeping Strikes`: `Improved Heroic Strike` 3, `Improved Rend` 3, `Improved Charge` 2, `Improved Tactical Mastery` 2, `Improved Overpower` 2, `Deep Wounds` 3, `Two-Handed Weapon Specialization` 3, `Impale` 2, `Sweeping Strikes` 1.
