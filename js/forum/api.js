@@ -10,13 +10,18 @@ export const TOKEN_KEY = "nossuary.forum.token";
 export const LIMITS = Object.freeze({ titleMin: 3, titleMax: 120, bodyMin: 1, bodyMax: 10000 });
 
 export class ApiError extends Error {
-  constructor(status, code, detail = null, retryAfter = null) {
+  constructor(status, code, detail = null, retryAfter = null, reason = null) {
     super(describeError({ status, code, detail, retryAfter }));
     this.name = "ApiError";
     this.status = status;       // 0 = never reached the API
     this.code = code;           // the API's `error`, or a local one: "network", "bad_response"
     this.detail = detail;
     this.retryAfter = retryAfter;
+    // The Worker's 403 carries BOTH `error: "forbidden"` and a machine-readable `reason`
+    // ("not_member", "consent_required", ...). Kept as a field and deliberately NOT fed into
+    // describeError: the generic message a forum page shows for a 403 is unchanged, and a page
+    // that wants to branch on the exact refusal (intake does) has something stable to branch on.
+    this.reason = reason;
   }
 }
 
@@ -127,7 +132,8 @@ export function createApi({ base, fetch: doFetch, storage, onSignedOut = () => {
       let retry = Number(data?.retry_after);
       if (!Number.isFinite(retry)) retry = Number(res.headers?.get?.("retry-after"));
       throw new ApiError(res.status, typeof data?.error === "string" ? data.error : "http",
-        typeof data?.detail === "string" ? data.detail : null, Number.isFinite(retry) ? retry : null);
+        typeof data?.detail === "string" ? data.detail : null, Number.isFinite(retry) ? retry : null,
+        typeof data?.reason === "string" ? data.reason : null);
     }
     if (!data || typeof data !== "object") throw new ApiError(res.status, "bad_response");
     return data;
@@ -142,6 +148,19 @@ export function createApi({ base, fetch: doFetch, storage, onSignedOut = () => {
     me: () => request("GET", "/v1/me", { read: false }),
     logout: () => request("POST", "/v1/auth/logout", { read: false }),
     deleteAccount: () => request("DELETE", "/v1/me", { read: false }),
+
+    // The Chamberlain's deep intake (/intake/, js/forum/page-intake.js). Both are member-only,
+    // so `read: false`: there is no signed-out answer worth retrying a 401 for.
+    intake: () => request("GET", "/v1/intake", { read: false }),
+    submitIntake: (consent, answers) => request("POST", "/v1/intake", { body: { consent, answers }, read: false }),
+
+    // A member's own WoW: Forever roster registration (/roster/edit/, js/forum/page-roster-edit.js).
+    // Member-only on both routes, so `read: false`. The GET carries the pick-lists as well as the
+    // registration, and the POST sends ONE key — the Worker's onlyKeys(["registration"]) answers 400
+    // `unknown field "…"` for anything else, so nothing extra may be smuggled alongside it.
+    // The POST answers 202: it ENQUEUES. Nothing is saved when it resolves.
+    roster: () => request("GET", "/v1/roster/me", { read: false }),
+    submitRoster: (registration) => request("POST", "/v1/roster/me", { body: { registration }, read: false }),
 
     categories: () => request("GET", "/v1/categories"),
     board: (slug, page = 1) => request("GET", `/v1/boards/${enc(slug)}?page=${positive(page)}`),

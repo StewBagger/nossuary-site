@@ -3,21 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- One thread: /forums/thread/?t=id[&page=N][#p-ID] (js/forum/page-thread.js).
-       Everything the API returns is rendered with textContent, or as DOM nodes by js/forum/markdown.js
-       for post bodies; nothing is ever inserted as HTML. connect-src must name the origin of
-       forumApiUrl in js/config.js (tests/forum.test.mjs checks it). -->
+  <!-- The Chamberlain's deep intake (js/forum/page-intake.js), served by the FORUM Worker: the
+       questions, their helper lines, the per-answer limit and the consent text all come from
+       GET /v1/intake and none of them is written into this page. The question text is a storage
+       key on the far side, so a copy here would be a copy that can drift.
+       Everything the API returns is rendered with textContent; nothing is ever inserted as HTML.
+       connect-src must name the origin of forumApiUrl in js/config.js (tests/intake.test.mjs
+       checks it). -->
+  <!-- A member-only form, not content: never indexed, and deliberately not in sitemap.xml. -->
+  <meta name="robots" content="noindex, nofollow">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://nossuary-forum.stewbagger.workers.dev; img-src 'self' https://cdn.discordapp.com data:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
   <meta name="theme-color" content="#0b0d0c">
-  <title>Thread · Forums · Null Ossuary</title>
-  <meta name="description" content="A thread on the Null Ossuary forums.">
+  <title>The deep intake · Null Ossuary</title>
+  <meta name="description" content="The Chamberlain's deep intake, for members of the Null Ossuary Discord.">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="stylesheet" href="/css/style.css?v=20261008-1">
-  <!-- ?v= is the forum's build stamp: bump it in every forums/**/index.html AND in every import in
-       js/forum/*.js whenever any of those files, style.css or config.js changes (tests/forum.test.mjs
-       fails if the stamps disagree). -->
+  <!-- ?v= is the forum surface's build stamp: this page loads forum modules, so it is bumped with
+       them — in every forums/**/index.html, every import in js/forum/*.js and here (the stamp test
+       in tests/forum.test.mjs and tests/intake.test.mjs fail if any of them disagree). -->
   <script src="/js/config.js?v=20261008-1" defer></script>
-  <script type="module" src="/js/forum/page-thread.js?v=20261008-1"></script>
+  <script type="module" src="/js/forum/page-intake.js?v=20261008-1"></script>
 </head>
 <body class="forum">
   <a class="skip" href="#forum-main">Skip to content</a>
@@ -31,7 +36,7 @@
       <ul>
         <li><a href="/#play">Play</a></li>
         <li><a href="/#mods">Mods</a></li>
-        <li><a href="/forums/" aria-current="page">Forums</a></li>
+        <li><a href="/forums/">Forums</a></li>
         <li><a href="/#support">Support</a></li>
         <li><a href="/#work">Workshop</a></li>
         <li><a href="/#contact">Contact</a></li>
@@ -47,8 +52,8 @@
     <div class="wrap forum-wrap">
       <p class="forum-status" id="forum-status" role="alert" hidden></p>
       <div id="forum-main" aria-busy="true">
-        <p class="forum-loading"><span class="dot" aria-hidden="true"></span>Loading the thread…</p>
-        <noscript><p class="forum-noscript">The forums need JavaScript to load posts. Turn it on and reload.</p></noscript>
+        <p class="forum-loading"><span class="dot" aria-hidden="true"></span>Loading the questions…</p>
+        <noscript><p class="forum-noscript">The deep intake needs JavaScript: the questions and the consent text are fetched rather than written into this page. Turn it on and reload.</p></noscript>
       </div>
     </div>
   </main>
@@ -59,7 +64,7 @@
         <img src="/assets/emblem-256.webp" alt="" width="28" height="28" loading="lazy">
         <span>Null Ossuary</span>
       </span>
-      <span class="muted small">Forums · <a href="/">nossuary.com</a> · Be civil; staff moderate. Project Zomboid is a trademark of The Indie Stone; not affiliated.</span>
+      <span class="muted small">The deep intake · <a href="/">nossuary.com</a> · Your answers go to the Chamberlain's own store; see them with /mydata and erase them with /forgetme.</span>
     </div>
   </footer>
 </body>

@@ -18,12 +18,12 @@
   <meta property="og:image" content="https://nossuary.com/assets/guides/wow-forever/og-1200x630.jpg">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/css/style.css?v=20260930-5">
-  <link rel="stylesheet" href="/css/roster.css?v=20260930-5">
+  <link rel="stylesheet" href="/css/style.css?v=20261008-2">
+  <link rel="stylesheet" href="/css/roster.css?v=20261008-2">
   <!-- ?v= is this page's build stamp: bump it on every reference here whenever roster.css,
        roster.js, style.css or config.js changes (tests/roster.test.mjs fails if they disagree). -->
-  <script src="/js/config.js?v=20260930-5" defer></script>
-  <script type="module" src="/js/roster.js?v=20260930-5"></script>
+  <script src="/js/config.js?v=20261008-2" defer></script>
+  <script type="module" src="/js/roster.js?v=20261008-2"></script>
 </head>
 <body class="forum roster">
   <a class="skip" href="#roster-main">Skip to content</a>
@@ -72,6 +72,12 @@
         <span id="roster-updated" class="rs-loading">Loading the roster…</span>
         <span id="roster-launch">Launches 4 November 2026</span>
       </p>
+
+      <!-- The one way in to the form. /roster/edit/ is a member-only page on the FORUM Worker and is
+           noindex and absent from the sitemap, so this link is how a member reaches it at all. -->
+      <p class="rs-yours">Playing too? <a href="/roster/edit/">Add or change your own registration</a>
+        — members of the Discord can fill in the whole thing on one page, or keep using the
+        <code>/roster</code> command in the Discord.</p>
 
       <p id="roster-note" class="forum-status forum-status-warn" role="status" hidden></p>
 

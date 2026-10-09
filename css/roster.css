@@ -26,6 +26,15 @@
 }
 .rs-meta #roster-launch { color: var(--amber); }
 
+/* The way in to /roster/edit/ — a member-only page on the forum Worker that is noindex and absent
+   from the sitemap, so this line is the only thing that makes it reachable. It sits with the meta
+   line rather than in the empty state, because it has to be there whether anybody has signed up
+   or not: before launch the empty state is the whole page, and after launch it is gone. */
+.rs-yours {
+  margin: -14px 0 26px; font-size: .92rem; color: var(--bone-dim);
+}
+.rs-yours code { font: .88em/1.4 var(--mono); color: var(--phosphor); }
+
 /* --- Empty state -------------------------------------------------------- */
 /* Before launch this is the whole page, so it has to read as a finished thing rather than
    as a table that failed to load. */

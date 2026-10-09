@@ -566,7 +566,76 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--p
 .new-thread { gap: 18px; }
 .new-thread .form-status { min-height: 0; }
 .new-thread .form-status:empty { display: none; }
+
+/* --- The deep intake (intake/, js/forum/page-intake.js) -------------------
+   One stylesheet, like every other forum-Worker surface: the forum pages and admin/ load
+   css/style.css and nothing else, and roster/ and guides/ (which are not Worker surfaces) are the
+   ones with a second file. Almost everything here is .field/.composer-hint/.card reused. */
+.intake-form { gap: 24px; }
+.intake-form .form-status:empty { display: none; }
+.intake-field label { font-size: 1rem; color: var(--bone); line-height: 1.35; }
+.intake-field textarea { min-height: 82px; }
+.intake-helper { margin: 0; }
+.intake-waiting, .intake-consent, .intake-done { margin: 0 0 18px; }
+.intake-waiting p, .intake-consent p { margin: 0 0 8px; }
+.intake-waiting p:last-child, .intake-consent p:last-child { margin-bottom: 0; }
+.intake-waiting { border-color: rgba(240, 180, 76, .35); }
+.intake-waiting strong { color: var(--amber); }
+.intake-consent { margin: 6px 0 0; }
+/* A checkbox is not a full-width text input, and its label sits beside it, not above it. */
+.intake-check { display: flex; align-items: flex-start; gap: 10px; margin: 14px 0 0; }
+.intake-check input[type="checkbox"] { width: auto; flex: 0 0 auto; margin-top: .2rem; padding: 0; }
+.intake-check label { font-size: .95rem; color: var(--bone); }
+.intake-done { text-align: center; padding: 40px 26px; }
+.intake-done .eyebrow { font-size: 1.2rem; margin-bottom: .6rem; }
+.intake-done h2 { font-size: 1.6rem; }
+.intake-done .cta { justify-content: center; margin-bottom: 0; }
 textarea { font-family: var(--sans); line-height: 1.55; }
+
+/* --- A member's own roster registration (roster/edit/, js/forum/page-roster-edit.js) -------
+   One stylesheet, like every other forum-Worker surface. The classes are `redit-` because the
+   PUBLIC roster page's are `rs-` in css/roster.css, which this page does not load: that page
+   reads the status Worker and shares no code with this one. */
+.redit-form { gap: 20px; }
+.redit-form .form-status:empty { display: none; }
+.redit-character { margin: 0 0 16px; }
+.redit-character:last-of-type { margin-bottom: 0; }
+.redit-character-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; margin: 0 0 14px; }
+.redit-character-head h2 { margin: 0; font-size: 1.15rem; }
+/* The identity row: faction, race, class and talents read as one decision, so they sit together
+   and wrap rather than becoming a column of full-width boxes. */
+.redit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px 16px; }
+@media (max-width: 520px) { .redit-grid { grid-template-columns: minmax(0, 1fr); } }
+.redit-field { margin: 0; }
+.redit-hint { margin: 0; }
+.redit-roles { margin: 0; color: var(--phosphor-dim); }
+.redit-roles:empty { display: none; }
+.redit-professions { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px 16px; margin: 16px 0 0; }
+.redit-group { border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px 12px; margin: 0; min-width: 0; }
+.redit-group legend { padding: 0 6px; font: 600 .78rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--phosphor-dim); }
+.redit-specs { display: grid; gap: 14px; align-content: start; }
+/* A checkbox is not a full-width text input, and its label sits beside it, not above it. */
+.redit-check { display: flex; align-items: flex-start; gap: 10px; margin: 8px 0 0; }
+.redit-check input[type="checkbox"] { width: auto; flex: 0 0 auto; margin-top: .2rem; padding: 0; }
+.redit-check label { font-size: .95rem; color: var(--bone); }
+.redit-actions, .redit-send { margin: 0; }
+.redit-send { align-items: center; gap: 10px 16px; }
+.redit-size { margin: 0; flex: 1 1 14rem; justify-content: flex-start; gap: 4px 8px; }
+.redit-publish { margin: 0; }
+.redit-publish p { margin: 0 0 8px; }
+.redit-publish p:last-child { margin-bottom: 0; }
+/* Already queued, and about to clear everything: both are amber, because both are states a member
+   has to read before they press anything, and neither is an error. */
+.redit-pending { margin: 0 0 18px; border-color: rgba(240, 180, 76, .35); }
+.redit-pending p { margin: 0 0 8px; }
+.redit-pending p:last-child { margin-bottom: 0; }
+.redit-pending strong { color: var(--amber); }
+.redit-clearing { margin: 0; color: var(--amber); font-size: .9rem; }
+.redit-clearing[hidden] { display: none; }
+.redit-queued { text-align: center; padding: 40px 26px; }
+.redit-queued .eyebrow { font-size: 1.2rem; margin-bottom: .6rem; }
+.redit-queued h2 { font-size: 1.6rem; }
+.redit-queued .cta { justify-content: center; margin-bottom: 0; }
 
 /* --- Footer ------------------------------------------------------------ */
 .footer { border-top: 1px solid var(--line); padding: 28px 0; background: #080a09; }
