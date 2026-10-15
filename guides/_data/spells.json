@@ -1,9 +1,9 @@
 {
- "build": "1.60.1.70338",
+ "build": "1.60.1.70374",
  "product": "wow_cn_beta",
- "generated": "2026-10-13T10:56:02+00:00",
- "stamp": "fcc9b1f96d7f",
- "inputs": "4c22446dfbfc",
+ "generated": "2026-10-15T08:59:37+00:00",
+ "stamp": "7f5754b2e7d1",
+ "inputs": "d858bf250c7e",
  "entries": {
   "Adrenaline Rush": {
    "kind": "spell",
