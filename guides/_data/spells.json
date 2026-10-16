@@ -1,8 +1,8 @@
 {
  "build": "1.60.1.70374",
  "product": "wow_cn_beta",
- "generated": "2026-10-16T09:05:14+00:00",
- "stamp": "201b50e8b324",
+ "generated": "2026-10-16T09:27:04+00:00",
+ "stamp": "e5f99e2a0816",
  "inputs": "5b86588185a8",
  "entries": {
   "Adrenaline Rush": {
@@ -493,78 +493,11 @@
   },
   "Axe Specialization": {
    "kind": "talent",
-   "id": 4334,
+   "id": 20574,
    "level": null,
-   "icon": 132316,
-   "rank": "Rank 1 of 15",
-   "by_class": {
-    "druid": {
-     "id": 20574,
-     "level": null,
-     "icon": 132393,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and abilities by 1% while you have an axe or a two-handed axe equipped."
-    },
-    "hunter": {
-     "id": 20574,
-     "level": null,
-     "icon": 132393,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and abilities by 1% while you have an axe or a two-handed axe equipped."
-    },
-    "mage": {
-     "id": 20574,
-     "level": null,
-     "icon": 132393,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and abilities by 1% while you have an axe or a two-handed axe equipped."
-    },
-    "paladin": {
-     "id": 20574,
-     "level": null,
-     "icon": 132393,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and abilities by 1% while you have an axe or a two-handed axe equipped."
-    },
-    "priest": {
-     "id": 20574,
-     "level": null,
-     "icon": 132393,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and abilities by 1% while you have an axe or a two-handed axe equipped."
-    },
-    "rogue": {
-     "id": 20574,
-     "level": null,
-     "icon": 132393,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and abilities by 1% while you have an axe or a two-handed axe equipped."
-    },
-    "shaman": {
-     "id": 20574,
-     "level": null,
-     "icon": 132393,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and abilities by 1% while you have an axe or a two-handed axe equipped."
-    },
-    "warlock": {
-     "id": 20574,
-     "level": null,
-     "icon": 132393,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and abilities by 1% while you have an axe or a two-handed axe equipped."
-    },
-    "warrior": {
-     "id": 20574,
-     "level": null,
-     "icon": 132393,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and abilities by 1% while you have an axe or a two-handed axe equipped."
-    }
-   },
+   "icon": 132393,
    "cast": "Instant",
-   "duration": "Until cancelled",
-   "desc": "Increases your damage with One-Handed Axes by 1."
+   "desc": "Increases your critical strike chance with all spells and abilities by 1% while you have an axe or a two-handed axe equipped."
   },
   "Azerothium Bar": {
    "kind": "item",
@@ -3406,76 +3339,20 @@
   },
   "Endurance": {
    "kind": "talent",
-   "id": 13742,
+   "id": 20550,
    "level": null,
-   "icon": 136205,
+   "icon": 136112,
    "by_class": {
-    "druid": {
-     "id": 20550,
-     "level": null,
-     "icon": 136112,
-     "cast": "Instant",
-     "desc": "Total Health increased by 5% and chance to hit increased by 1%."
-    },
-    "hunter": {
-     "id": 20550,
-     "level": null,
-     "icon": 136112,
-     "cast": "Instant",
-     "desc": "Total Health increased by 5% and chance to hit increased by 1%."
-    },
-    "mage": {
-     "id": 20550,
-     "level": null,
-     "icon": 136112,
-     "cast": "Instant",
-     "desc": "Total Health increased by 5% and chance to hit increased by 1%."
-    },
-    "paladin": {
-     "id": 20550,
-     "level": null,
-     "icon": 136112,
-     "cast": "Instant",
-     "desc": "Total Health increased by 5% and chance to hit increased by 1%."
-    },
-    "priest": {
-     "id": 20550,
-     "level": null,
-     "icon": 136112,
-     "cast": "Instant",
-     "desc": "Total Health increased by 5% and chance to hit increased by 1%."
-    },
     "rogue": {
      "id": 13742,
      "level": null,
      "icon": 136205,
      "cast": "Instant",
      "desc": "Reduces the cooldown of your Sprint and Evasion abilities by 60%."
-    },
-    "shaman": {
-     "id": 20550,
-     "level": null,
-     "icon": 136112,
-     "cast": "Instant",
-     "desc": "Total Health increased by 5% and chance to hit increased by 1%."
-    },
-    "warlock": {
-     "id": 20550,
-     "level": null,
-     "icon": 136112,
-     "cast": "Instant",
-     "desc": "Total Health increased by 5% and chance to hit increased by 1%."
-    },
-    "warrior": {
-     "id": 20550,
-     "level": null,
-     "icon": 136112,
-     "cast": "Instant",
-     "desc": "Total Health increased by 5% and chance to hit increased by 1%."
     }
    },
    "cast": "Instant",
-   "desc": "Reduces the cooldown of your Sprint and Evasion abilities by 60%."
+   "desc": "Total Health increased by 5% and chance to hit increased by 1%."
   },
   "Endurance Training": {
    "kind": "talent",
@@ -6777,78 +6654,11 @@
   },
   "Mace Specialization": {
    "kind": "talent",
-   "id": 4366,
+   "id": 1259719,
    "level": null,
-   "icon": 132325,
-   "rank": "Rank 1 of 15",
-   "by_class": {
-    "druid": {
-     "id": 1259719,
-     "level": null,
-     "icon": 133042,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 1% while you have a mace or two-handed mace equipped."
-    },
-    "hunter": {
-     "id": 1259719,
-     "level": null,
-     "icon": 133042,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 1% while you have a mace or two-handed mace equipped."
-    },
-    "mage": {
-     "id": 1259719,
-     "level": null,
-     "icon": 133042,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 1% while you have a mace or two-handed mace equipped."
-    },
-    "paladin": {
-     "id": 1259719,
-     "level": null,
-     "icon": 133042,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 1% while you have a mace or two-handed mace equipped."
-    },
-    "priest": {
-     "id": 1259719,
-     "level": null,
-     "icon": 133042,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 1% while you have a mace or two-handed mace equipped."
-    },
-    "rogue": {
-     "id": 1259719,
-     "level": null,
-     "icon": 133042,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 1% while you have a mace or two-handed mace equipped."
-    },
-    "shaman": {
-     "id": 1259719,
-     "level": null,
-     "icon": 133042,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 1% while you have a mace or two-handed mace equipped."
-    },
-    "warlock": {
-     "id": 1259719,
-     "level": null,
-     "icon": 133042,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 1% while you have a mace or two-handed mace equipped."
-    },
-    "warrior": {
-     "id": 1259719,
-     "level": null,
-     "icon": 133042,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 1% while you have a mace or two-handed mace equipped."
-    }
-   },
+   "icon": 133042,
    "cast": "Instant",
-   "duration": "Until cancelled",
-   "desc": "Increases your damage with One-Handed Maces by 1."
+   "desc": "Increases your critical strike chance with all spells and attacks by 1% while you have a mace or two-handed mace equipped."
   },
   "Maelstrom Weapon": {
    "kind": "talent",
@@ -7818,77 +7628,11 @@
   },
   "Plainsrunning": {
    "kind": "talent",
-   "id": 12566,
+   "id": 1259918,
    "level": null,
-   "icon": 132091,
-   "by_class": {
-    "druid": {
-     "id": 1259918,
-     "level": null,
-     "icon": 236717,
-     "cast": "Instant",
-     "desc": "Gain 1% increased movement speed every 5 sec spent moving, up to a maximum of 30% increase. Taking damage or standing still will reduce this effect."
-    },
-    "hunter": {
-     "id": 1259918,
-     "level": null,
-     "icon": 236717,
-     "cast": "Instant",
-     "desc": "Gain 1% increased movement speed every 5 sec spent moving, up to a maximum of 30% increase. Taking damage or standing still will reduce this effect."
-    },
-    "mage": {
-     "id": 1259918,
-     "level": null,
-     "icon": 236717,
-     "cast": "Instant",
-     "desc": "Gain 1% increased movement speed every 5 sec spent moving, up to a maximum of 30% increase. Taking damage or standing still will reduce this effect."
-    },
-    "paladin": {
-     "id": 1259918,
-     "level": null,
-     "icon": 236717,
-     "cast": "Instant",
-     "desc": "Gain 1% increased movement speed every 5 sec spent moving, up to a maximum of 30% increase. Taking damage or standing still will reduce this effect."
-    },
-    "priest": {
-     "id": 1259918,
-     "level": null,
-     "icon": 236717,
-     "cast": "Instant",
-     "desc": "Gain 1% increased movement speed every 5 sec spent moving, up to a maximum of 30% increase. Taking damage or standing still will reduce this effect."
-    },
-    "rogue": {
-     "id": 1259918,
-     "level": null,
-     "icon": 236717,
-     "cast": "Instant",
-     "desc": "Gain 1% increased movement speed every 5 sec spent moving, up to a maximum of 30% increase. Taking damage or standing still will reduce this effect."
-    },
-    "shaman": {
-     "id": 1259918,
-     "level": null,
-     "icon": 236717,
-     "cast": "Instant",
-     "desc": "Gain 1% increased movement speed every 5 sec spent moving, up to a maximum of 30% increase. Taking damage or standing still will reduce this effect."
-    },
-    "warlock": {
-     "id": 1259918,
-     "level": null,
-     "icon": 236717,
-     "cast": "Instant",
-     "desc": "Gain 1% increased movement speed every 5 sec spent moving, up to a maximum of 30% increase. Taking damage or standing still will reduce this effect."
-    },
-    "warrior": {
-     "id": 1259918,
-     "level": null,
-     "icon": 236717,
-     "cast": "Instant",
-     "desc": "Gain 1% increased movement speed every 5 sec spent moving, up to a maximum of 30% increase. Taking damage or standing still will reduce this effect."
-    }
-   },
+   "icon": 236717,
    "cast": "Instant",
-   "duration": "Until cancelled",
-   "desc": "Increases your running speed. The longer you run the faster you go up to a maximum speed. You cannot use plainsrunning in combat, underwater, or Indoors."
+   "desc": "Gain 1% increased movement speed every 5 sec spent moving, up to a maximum of 30% increase. Taking damage or standing still will reduce this effect."
   },
   "Plated Armorfish": {
    "kind": "item",
@@ -9815,96 +9559,13 @@
   },
   "Stoneform": {
    "kind": "talent",
-   "id": 7020,
+   "id": 20594,
    "level": null,
-   "icon": 132275,
-   "by_class": {
-    "druid": {
-     "id": 20594,
-     "level": null,
-     "icon": 136225,
-     "cast": "Instant",
-     "duration": "8 sec",
-     "cooldown": "180 sec cooldown",
-     "desc": "Instantly removes and grants immunity to all Bleed, Poison, and Disease effects, and reduces all Physical damage taken by 10% for 8 sec."
-    },
-    "hunter": {
-     "id": 20594,
-     "level": null,
-     "icon": 136225,
-     "cast": "Instant",
-     "duration": "8 sec",
-     "cooldown": "180 sec cooldown",
-     "desc": "Instantly removes and grants immunity to all Bleed, Poison, and Disease effects, and reduces all Physical damage taken by 10% for 8 sec."
-    },
-    "mage": {
-     "id": 20594,
-     "level": null,
-     "icon": 136225,
-     "cast": "Instant",
-     "duration": "8 sec",
-     "cooldown": "180 sec cooldown",
-     "desc": "Instantly removes and grants immunity to all Bleed, Poison, and Disease effects, and reduces all Physical damage taken by 10% for 8 sec."
-    },
-    "paladin": {
-     "id": 20594,
-     "level": null,
-     "icon": 136225,
-     "cast": "Instant",
-     "duration": "8 sec",
-     "cooldown": "180 sec cooldown",
-     "desc": "Instantly removes and grants immunity to all Bleed, Poison, and Disease effects, and reduces all Physical damage taken by 10% for 8 sec."
-    },
-    "priest": {
-     "id": 20594,
-     "level": null,
-     "icon": 136225,
-     "cast": "Instant",
-     "duration": "8 sec",
-     "cooldown": "180 sec cooldown",
-     "desc": "Instantly removes and grants immunity to all Bleed, Poison, and Disease effects, and reduces all Physical damage taken by 10% for 8 sec."
-    },
-    "rogue": {
-     "id": 20594,
-     "level": null,
-     "icon": 136225,
-     "cast": "Instant",
-     "duration": "8 sec",
-     "cooldown": "180 sec cooldown",
-     "desc": "Instantly removes and grants immunity to all Bleed, Poison, and Disease effects, and reduces all Physical damage taken by 10% for 8 sec."
-    },
-    "shaman": {
-     "id": 20594,
-     "level": null,
-     "icon": 136225,
-     "cast": "Instant",
-     "duration": "8 sec",
-     "cooldown": "180 sec cooldown",
-     "desc": "Instantly removes and grants immunity to all Bleed, Poison, and Disease effects, and reduces all Physical damage taken by 10% for 8 sec."
-    },
-    "warlock": {
-     "id": 20594,
-     "level": null,
-     "icon": 136225,
-     "cast": "Instant",
-     "duration": "8 sec",
-     "cooldown": "180 sec cooldown",
-     "desc": "Instantly removes and grants immunity to all Bleed, Poison, and Disease effects, and reduces all Physical damage taken by 10% for 8 sec."
-    },
-    "warrior": {
-     "id": 20594,
-     "level": null,
-     "icon": 136225,
-     "cast": "Instant",
-     "duration": "8 sec",
-     "cooldown": "180 sec cooldown",
-     "desc": "Instantly removes and grants immunity to all Bleed, Poison, and Disease effects, and reduces all Physical damage taken by 10% for 8 sec."
-    }
-   },
+   "icon": 136225,
    "cast": "Instant",
-   "duration": "15 sec",
-   "cooldown": "30 sec cooldown",
-   "desc": "Increases the caster's armor by 20 for 15 sec."
+   "duration": "8 sec",
+   "cooldown": "180 sec cooldown",
+   "desc": "Instantly removes and grants immunity to all Bleed, Poison, and Disease effects, and reduces all Physical damage taken by 10% for 8 sec."
   },
   "Stonescale Oil": {
    "kind": "item",
@@ -10374,78 +10035,11 @@
   },
   "Sword Specialization": {
    "kind": "talent",
-   "id": 4350,
+   "id": 20597,
    "level": null,
    "icon": 132223,
-   "rank": "Rank 1 of 14",
-   "by_class": {
-    "druid": {
-     "id": 20597,
-     "level": null,
-     "icon": 132223,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 2% while you have a sword or two-handed sword equipped."
-    },
-    "hunter": {
-     "id": 20597,
-     "level": null,
-     "icon": 132223,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 2% while you have a sword or two-handed sword equipped."
-    },
-    "mage": {
-     "id": 20597,
-     "level": null,
-     "icon": 132223,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 2% while you have a sword or two-handed sword equipped."
-    },
-    "paladin": {
-     "id": 20597,
-     "level": null,
-     "icon": 132223,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 2% while you have a sword or two-handed sword equipped."
-    },
-    "priest": {
-     "id": 20597,
-     "level": null,
-     "icon": 132223,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 2% while you have a sword or two-handed sword equipped."
-    },
-    "rogue": {
-     "id": 20597,
-     "level": null,
-     "icon": 132223,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 2% while you have a sword or two-handed sword equipped."
-    },
-    "shaman": {
-     "id": 20597,
-     "level": null,
-     "icon": 132223,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 2% while you have a sword or two-handed sword equipped."
-    },
-    "warlock": {
-     "id": 20597,
-     "level": null,
-     "icon": 132223,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 2% while you have a sword or two-handed sword equipped."
-    },
-    "warrior": {
-     "id": 20597,
-     "level": null,
-     "icon": 132223,
-     "cast": "Instant",
-     "desc": "Increases your critical strike chance with all spells and attacks by 2% while you have a sword or two-handed sword equipped."
-    }
-   },
    "cast": "Instant",
-   "duration": "Until cancelled",
-   "desc": "Increases your damage with One-Handed Swords by 1."
+   "desc": "Increases your critical strike chance with all spells and attacks by 2% while you have a sword or two-handed sword equipped."
   },
   "Tactical Mastery": {
    "kind": "spell",
@@ -11301,81 +10895,9 @@
    "id": 45,
    "level": null,
    "icon": 132091,
-   "by_class": {
-    "druid": {
-     "id": 20549,
-     "level": null,
-     "icon": 132368,
-     "cast": "0.5 sec cast",
-     "duration": "2 sec",
-     "cooldown": "120 sec cooldown"
-    },
-    "hunter": {
-     "id": 20549,
-     "level": null,
-     "icon": 132368,
-     "cast": "0.5 sec cast",
-     "duration": "2 sec",
-     "cooldown": "120 sec cooldown"
-    },
-    "mage": {
-     "id": 20549,
-     "level": null,
-     "icon": 132368,
-     "cast": "0.5 sec cast",
-     "duration": "2 sec",
-     "cooldown": "120 sec cooldown"
-    },
-    "paladin": {
-     "id": 20549,
-     "level": null,
-     "icon": 132368,
-     "cast": "0.5 sec cast",
-     "duration": "2 sec",
-     "cooldown": "120 sec cooldown"
-    },
-    "priest": {
-     "id": 20549,
-     "level": null,
-     "icon": 132368,
-     "cast": "0.5 sec cast",
-     "duration": "2 sec",
-     "cooldown": "120 sec cooldown"
-    },
-    "rogue": {
-     "id": 20549,
-     "level": null,
-     "icon": 132368,
-     "cast": "0.5 sec cast",
-     "duration": "2 sec",
-     "cooldown": "120 sec cooldown"
-    },
-    "shaman": {
-     "id": 20549,
-     "level": null,
-     "icon": 132368,
-     "cast": "0.5 sec cast",
-     "duration": "2 sec",
-     "cooldown": "120 sec cooldown"
-    },
-    "warlock": {
-     "id": 20549,
-     "level": null,
-     "icon": 132368,
-     "cast": "0.5 sec cast",
-     "duration": "2 sec",
-     "cooldown": "120 sec cooldown"
-    },
-    "warrior": {
-     "id": 20549,
-     "level": null,
-     "icon": 132368,
-     "cast": "0.5 sec cast",
-     "duration": "2 sec",
-     "cooldown": "120 sec cooldown"
-    }
-   },
    "cast": "Instant",
+   "duration": "2 sec",
+   "cooldown": "120 sec cooldown",
    "desc": "Knocks nearby enemies back."
   },
   "Water Shield": {

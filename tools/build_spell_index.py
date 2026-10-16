@@ -145,6 +145,14 @@ VERIFY_CLASS = {("Deflection", "hunter"): 19295, ("Deflection", "paladin"): 2006
                 ("Eureka!", "rogue"): 1259812, ("Eureka!", "priest"): 1259823,
                 ("Eureka!", "warlock"): 1259821}
 
+# THE RACIALS, WHICH NO TABLE ABOVE CAN SETTLE. Every discriminator here is a CLASS,
+# and a racial belongs to a RACE: see the racial pass in resolve() for what that cost.
+# Each id below was read out of build 1.60.1.70374 and matches what the hub pages say.
+VERIFY_RACIAL = {"Sword Specialization": 20597,   # Human, +2% crit with a sword equipped
+                 "Axe Specialization": 20574,     # Orc, +1% crit with an axe equipped
+                 "Mace Specialization": 1259719,  # Dwarf, +1% crit with a mace equipped
+                 "Stoneform": 20594}              # Dwarf, bleed/poison/disease immunity
+
 # WHERE THE NAME IS AMBIGUOUS AND THE TABLES CANNOT SETTLE IT. Rank and trainable level
 # pick between same-named rows; neither knows which row carries the CURRENT text. Each
 # id below was read out of build 1.60.1.70245 by hand and matches what the guides say.
@@ -881,6 +889,83 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         if len(per) > 1:
             e["by_class"] = dict(sorted(per.items()))
 
+    # A RACIAL IS RACE-SCOPED AND EVERY DISCRIMINATOR ABOVE IS A CLASS. Nothing in this
+    # function could resolve `Sword Specialization`: its 21 rows are Classic's
+    # weapon-skill ladder plus Forever's rework, the ladder wins on rank, and the class
+    # machinery has no mask to prefer with. So all nine hub pages rendered "Increases
+    # your damage with One-Handed Swords by 1" in the tooltip beside prose correctly
+    # saying 2% critical strike -- live, past every gate, for as long as the pages have
+    # existed (found 2026-10-16).
+    #
+    # THE ID HEURISTIC IN FORCE_ID'S NOTE DOES NOT CATCH THIS CLASS OF DEFECT. Blizzard
+    # reworked the racials IN PLACE on their Classic rows, so here the right answer is
+    # 20597 and the wrong one is 4350 and both sit below 30,000. The skill line is the
+    # only thing that separates them, and CategoryID will not do it either: category 9
+    # holds Cooking, Fishing and Riding alongside "Racial - Human". The line's own name
+    # is the discriminator.
+    #
+    # Fires ONLY when a name has exactly one row on a racial line, which is what makes
+    # it safe to derive rather than hand-list: `Eureka!` ships five per-class copies on
+    # Racial - Gnome, so this stands aside and the ClassMask pass keeps resolving it.
+    #
+    # A CLASS'S OWN COPY STILL WINS, and that distinction is the whole correctness of
+    # this pass. `Endurance` is the Tauren racial on druid.md and shaman.md AND the Rogue
+    # talent that cuts Sprint and Evasion cooldowns on rogue-combat.md. So by_class is
+    # rebuilt here from the evidence that actually names a class: the row's own
+    # ClassMask, or a skill line that belongs to EXACTLY ONE class. A line shared by
+    # many classes proves nothing about which copy a page means -- that is how a racial
+    # line (every class can be a Tauren) and a weapon-skill line (everyone can swing an
+    # axe) each spread one row across all nine classes and outvoted the racial on every
+    # hub. Two earlier drafts of this pass got this wrong in opposite directions: the
+    # first dropped by_class outright and put the Tauren racial on the rogue's build
+    # list, the second kept only direct masks and did the same, because the rogue's own
+    # talent row carries no mask and is known only by its tree.
+    racial_lines = {int(r["ID"]) for r in table("SkillLine", build)
+                    if "racial" in (r.get("DisplayName_lang") or "").lower()}
+    racials = 0
+    for name, e in entries.items():
+        if e["kind"] == "item":
+            continue
+        rows = [i for i in spell_ids.get(norm(name), [])
+                if skill_of.get(i, set()) & racial_lines]
+        if len(rows) != 1 or rows[0] == e["id"]:
+            continue
+        e["id"] = rows[0]
+        e["icon"] = icon.get(rows[0], e.get("icon"))
+        e["level"] = level.get(rows[0])
+        e.pop("rank", None)       # ranked against a ladder that is not this row's
+        owned: dict[str, list[int]] = defaultdict(list)
+        for i in spell_ids.get(norm(name), []):
+            if i == rows[0]:
+                continue
+            mine = {cls for bit, cls in CLASS_BY_MASK.items()
+                    if class_mask_of.get(i, 0) & bit}
+            if not mine:
+                for line in skill_of.get(i, ()):
+                    if line in racial_lines:
+                        continue
+                    holders = classes_of_line.get(line, set())
+                    if len(holders) == 1:
+                        mine |= holders
+            for cls in mine:
+                owned[cls].append(i)
+        claimed: dict[str, dict] = {}
+        for cls, ids in owned.items():
+            sid = pick(ids, e["kind"])
+            if sid is not None:
+                claimed[cls] = {"id": sid, "level": level.get(sid), "icon": icon.get(sid)}
+        if claimed:
+            e["by_class"] = dict(sorted(claimed.items()))
+        else:
+            e.pop("by_class", None)
+        racials += 1
+
+    for name, want in VERIFY_RACIAL.items():
+        got = entries.get(name, {}).get("id")
+        if got != want:
+            verdict(f"FAIL -- racial resolution broke: {name} resolved to {got}, "
+                    f"expected {want}")
+
     for (name, cls), want in VERIFY_CLASS.items():
         got = entries.get(name, {}).get("by_class", {}).get(cls, {}).get("id")
         if got != want:
@@ -974,6 +1059,7 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
                   | {d["icon"] for e in entries.values()
                      for d in (e.get("by_class") or {}).values() if d.get("icon")}),
         "described": sum(1 for e in entries.values() if e.get("desc")),
+        "racials": racials,
     }
     return entries, report
 
@@ -1093,7 +1179,8 @@ def main() -> None:
     pct = 100 * rep["matched"] / rep["total"]
     print(f"matched: {rep['matched']}/{rep['total']} ({pct:.1f}%) -- "
           f"{rep['spells']} spell, {rep['talents']} talent, {rep['items']} item, "
-          f"{rep['levelled']} with a level, {rep['described']} with a description")
+          f"{rep['levelled']} with a level, {rep['described']} with a description, "
+          f"{rep['racials']} resolved on a racial skill line")
     if rep["unmatched"]:
         print(f"unmatched ({len(rep['unmatched'])}): {', '.join(rep['unmatched'])}")
     if failed:
