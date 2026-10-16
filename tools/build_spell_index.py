@@ -151,7 +151,8 @@ VERIFY_CLASS = {("Deflection", "hunter"): 19295, ("Deflection", "paladin"): 2006
 VERIFY_RACIAL = {"Sword Specialization": 20597,   # Human, +2% crit with a sword equipped
                  "Axe Specialization": 20574,     # Orc, +1% crit with an axe equipped
                  "Mace Specialization": 1259719,  # Dwarf, +1% crit with a mace equipped
-                 "Stoneform": 20594}              # Dwarf, bleed/poison/disease immunity
+                 "Stoneform": 20594,              # Dwarf, bleed/poison/disease immunity
+                 "War Stomp": 20549}              # Tauren, and it carries no desc
 
 # WHERE THE NAME IS AMBIGUOUS AND THE TABLES CANNOT SETTLE IT. Rank and trainable level
 # pick between same-named rows; neither knows which row carries the CURRENT text. Each
@@ -164,6 +165,15 @@ VERIFY_RACIAL = {"Sword Specialization": 20597,   # Human, +2% crit with a sword
 # describes a fraction of the talent. The others resolved to an empty row, a creature's
 # ability, or a differently-named spell's record (all found 2026-10-08).
 FORCE_ID: dict[object, int] = {
+    # Two of Forever's new Undead-priest racials, neither reachable by skill line: both
+    # name families hold unmasked rows that outsort the real one. `Dark Sacrifice` was
+    # resolving to 2946, a Physical 100-yard spell of the same name, against a page
+    # describing a health-for-mana trade. `Contingency Plan` was resolving to 1277456,
+    # whose 15-second duration and absent cooldown the page had written down as the
+    # client's reading -- it is 30 seconds on a 10-minute cooldown on the row the priest
+    # skill line actually claims (613, ClassMask 16), which is what the page says.
+    "Dark Sacrifice": 1277324,
+    "Contingency Plan": 1277462,
     "Hack and Slash": 13960,          # merged row; 13706 is the ex-Dagger slot
     "Quietus": 1310728,               # 1231651 is a collision, not placeholder junk
     "Cutthroat": 462708,              # 424980 carries no usable text
@@ -651,7 +661,13 @@ def present(sid: int, d: dict) -> dict:
         out["cast"] = "Instant" if not cast else f"{secs(cast)} sec cast"
         if m.get("rng"):
             r = m["rng"]
-            out["range"] = "Melee" if r <= 5 else f"{r:g} yd range"
+            # 50000 yards is the client's "no range limit" sentinel, used on self-cast
+            # and raid-wide effects. Four Forever priest racials carry it, and
+            # "Range 50000 yd range" was published on priest.md as if it were a figure.
+            if r >= 50000:
+                pass
+            else:
+                out["range"] = "Melee" if r <= 5 else f"{r:g} yd range"
         dur = m.get("dur", 0.0)
         if dur < 0:
             # The client stores -1 for "lasts until you cancel it" -- every aura, form
@@ -922,6 +938,7 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
     # talent row carries no mask and is known only by its tree.
     racial_lines = {int(r["ID"]) for r in table("SkillLine", build)
                     if "racial" in (r.get("DisplayName_lang") or "").lower()}
+    racial_names: set[str] = set()
     racials = 0
     for name, e in entries.items():
         if e["kind"] == "item":
@@ -958,6 +975,7 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
             e["by_class"] = dict(sorted(claimed.items()))
         else:
             e.pop("by_class", None)
+        racial_names.add(name)
         racials += 1
 
     for name, want in VERIFY_RACIAL.items():
@@ -998,7 +1016,13 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         # description -- so a name with many candidates could land on an empty or
         # internal row and render a stat block with no body. Only entries that came out
         # with NO description are touched, so this cannot override a working pick.
-        if not e.get("desc"):
+        # ... EXCEPT WHERE THE ROW WAS IDENTIFIED BY ITS RACIAL SKILL LINE, which is
+        # positive evidence and outranks the presence of text. `War Stomp`'s Tauren row
+        # (20549) carries no description, so this block swapped it for a creature's
+        # "Knocks nearby enemies back" -- undoing the racial pass silently and putting a
+        # knockback on druid.md where the page says AoE stun. A correct row with no
+        # tooltip text beats a wrong row that has one.
+        if not e.get("desc") and name not in racial_names:
             for alt in sorted(spell_ids.get(norm(name), []),
                               key=lambda i: (i not in learnable, level.get(i, 999),
                                              rank_of.get(i, 99))):

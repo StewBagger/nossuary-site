@@ -1,8 +1,8 @@
 {
  "build": "1.60.1.70374",
  "product": "wow_cn_beta",
- "generated": "2026-10-16T09:27:04+00:00",
- "stamp": "e5f99e2a0816",
+ "generated": "2026-10-16T09:33:35+00:00",
+ "stamp": "e23aa14bbc9f",
  "inputs": "5b86588185a8",
  "entries": {
   "Adrenaline Rush": {
@@ -1191,7 +1191,6 @@
    "level": null,
    "icon": 135271,
    "cast": "Instant",
-   "range": "50000 yd range",
    "duration": "6 sec",
    "desc": "Your Main Hand melee attacks against enemies afflicted by your Rend have a 15% chance to allow the use of your Overpower ability on the target. Lasts 6 sec."
   },
@@ -1806,13 +1805,13 @@
   },
   "Contingency Plan": {
    "kind": "talent",
-   "id": 1277456,
+   "id": 1277462,
    "level": null,
    "icon": 458722,
-   "rank": "Rank 1 of 5",
    "cast": "Instant",
-   "range": "50000 yd range",
-   "duration": "15 sec"
+   "range": "30 yd range",
+   "duration": "30 sec",
+   "cooldown": "600 sec cooldown"
   },
   "Convection": {
    "kind": "talent",
@@ -2228,12 +2227,12 @@
   },
   "Dark Sacrifice": {
    "kind": "talent",
-   "id": 2946,
+   "id": 1277324,
    "level": null,
    "icon": 5852175,
-   "rank": "Rank 1 of 5",
    "cast": "Instant",
-   "range": "100 yd range"
+   "duration": "15 sec",
+   "cooldown": "600 sec cooldown"
   },
   "Dash": {
    "kind": "spell",
@@ -2535,7 +2534,7 @@
    "icon": 135291,
    "rank": "Rank 1",
    "cast": "Instant",
-   "range": "50000 yd range",
+   "range": "Melee",
    "school": "Physical",
    "cost": "150 Mana",
    "desc": "Sunder Armor also deals 150% weapon damage, increased by 10% per application of Sunder Armor already on the target."
@@ -4460,7 +4459,6 @@
    "level": null,
    "icon": 135730,
    "cast": "Instant",
-   "range": "50000 yd range",
    "desc": "Increases the periodic damage and healing done by your spells and abilities by 1%."
   },
   "Ghost Wolf": {
@@ -5217,8 +5215,7 @@
    "id": 1310710,
    "level": null,
    "icon": 136235,
-   "cast": "Instant",
-   "range": "50000 yd range"
+   "cast": "Instant"
   },
   "Improved Bane of Agony": {
    "kind": "talent",
@@ -10892,13 +10889,12 @@
   },
   "War Stomp": {
    "kind": "talent",
-   "id": 45,
+   "id": 20549,
    "level": null,
-   "icon": 132091,
-   "cast": "Instant",
+   "icon": 132368,
+   "cast": "0.5 sec cast",
    "duration": "2 sec",
-   "cooldown": "120 sec cooldown",
-   "desc": "Knocks nearby enemies back."
+   "cooldown": "120 sec cooldown"
   },
   "Water Shield": {
    "kind": "spell",

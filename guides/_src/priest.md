@@ -66,7 +66,7 @@ Read this section in proportion. Race is the smallest of the choices on this pag
 | Troll | `Hex of Weakness`. Unchanged. | `Shadowguard`. Unchanged. |
 | Undead | `Touch of Weakness`. Unchanged. | `Dark Sacrifice` (20) — cannibalise your own health for Mana over time, gain increased by Spirit. **New.** |
 Blizzard did not publish a level for Troll's two spells or for Human's `Feedback`; the "second racial spell" the milestones table above flags at **level 20** is the race's level-20 column entry wherever one is given.
-The levels and cooldowns above are Blizzard's own. The client disagrees twice: it puts `Divine Grace` on a 10-minute cooldown rather than 5, and gives `Contingency Plan` a 15-second ward with no cooldown at all. Blizzard's post outranks the client, so plan around Blizzard's figures.
+The levels and cooldowns above are Blizzard's own, and the client disagrees with both of Gnome's and Human's cooldowns: `Divine Grace` and `Contingency Plan` each read 10 minutes in the client where Blizzard says 5. The ward's 30 seconds agree. `Dark Sacrifice` carries a 10-minute cooldown in the client too, and Blizzard publishes none for it. Blizzard's post outranks the client, so plan around Blizzard's figures.
 ## Quality of life
 - **The wand is the levelling mechanic.** Wand skill is default, so a wand works the moment you loot one, and `Wand Specialization` is now two points instead of five. Get one early.
 - **Re-drag your action bars, or use macros.** Before level 20 nearly every even level brings a new rank of Smite, Mind Blast, Shadow Word: Pain or Power Word: Shield, and the bars do not update themselves. A `/cast Spell Name` macro always fires the highest rank you know.
