@@ -153,9 +153,9 @@ window.OSSUARY = {
   // The asset id, not the mod's url alias -- an alias can be changed by whoever owns the mod
   // page, and none of the Null mods has one set, so show/mod/<assetid> is their only address.
   //
-  // Experimental builds are unlisted, and so is any mod without a store entry: Null Cartography
-  // and Null Smithy are finished but unpublished, and a card with nowhere to go is worse than no
-  // card. `game` groups the list, one heading per game in first-seen order.
+  // Experimental builds are unlisted, and so is any mod without a store entry: Null Smithy is
+  // finished but unpublished, and a card with nowhere to go is worse than no card. `game` groups
+  // the list, one heading per game in first-seen order.
   //
   // Names and blurbs here MUST match the forum board for the same mod -- forum-worker's
   // test/seed.test.js asserts it across the two repos.
@@ -177,6 +177,7 @@ window.OSSUARY = {
     { game: "Vintage Story", store: "moddb", name: "Null Compass", id: "69456", blurb: "Three compasses and the temporal beacon they point at. Bearings, never positions." },
     { game: "Vintage Story", store: "moddb", name: "Null Lockdown", id: "69462", blurb: "Hardcore navigation: no world map, no coordinate readouts, and the server-side leaks closed too." },
     { game: "Vintage Story", store: "moddb", name: "Null Claims", id: "69465", blurb: "Land claiming without commands: one hotkey opens a window that drives vanilla's own claim system." },
+    { game: "Vintage Story", store: "moddb", name: "Null Cartography", id: "69534", blurb: "Survey with a sextant, record it in a field notebook, then ink your chart at the cartography table." },
   ],
 
   // Games with a Null server planned but nothing to join yet, shown under the servers as "Coming soon".

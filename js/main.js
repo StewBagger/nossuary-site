@@ -220,8 +220,8 @@
   // Grouped by `game`, one heading per game in first-seen order, so a second game's mods become a
   // second group with no markup change.
   // Where a mod card points, by `store`. A mod with no store entry, an unknown one, or a
-  // non-numeric id is not shown at all -- Null Cartography and Null Smithy are finished but
-  // unpublished, and a card with nowhere to go is worse than no card.
+  // non-numeric id is not shown at all -- Null Smithy is finished but unpublished, and a card
+  // with nowhere to go is worse than no card.
   const STORES = {
     steam: { href: (id) => `https://steamcommunity.com/sharedfiles/filedetails/?id=${id}`, go: "View on Workshop →" },
     moddb: { href: (id) => `https://mods.vintagestory.at/show/mod/${id}`, go: "View on the ModDB →" },
