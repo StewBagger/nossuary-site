@@ -60,7 +60,10 @@
           s.subtitle ? el("p", { class: "muted small", text: s.subtitle }) : null,
           el("div", { class: "addresses" },
             field("IP", s.ip),
-            field("Port", s.port)),
+            field("Port", s.port),
+            // Only for servers that cannot be joined without one (Enshrouded). A copy field
+            // rather than prose for the same reason as the port: it gets typed into a box.
+            s.password ? field("Password", s.password) : null),
           el("dl", { class: "stats" },
             stat("Players", "players"),
             stat("Uptime", "uptime"),

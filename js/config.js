@@ -65,6 +65,8 @@ window.OSSUARY = {
   // Game servers. Naming: "Null" + the kind of place the game is set in. `game` shows as a tag on the
   // card and in the hero's live strip. `ip` and `port` are shown as separate copy fields (Project
   // Zomboid's Add Server form takes them apart); `id` keys into the status document.
+  // `password` is optional and only for a server that cannot be joined without one — a deliberately
+  // public join password, never a staff credential, because this repo and this page are public.
   servers: [
     {
       id: "pz-stable",
@@ -83,6 +85,19 @@ window.OSSUARY = {
       ip: "play.nossuary.com",
       port: "16263",
       tag: "Experimental",
+    },
+    {
+      id: "en-null-shroud",
+      game: "Enshrouded",
+      name: "Null Shroud",
+      subtitle: "1.0 from launch day · fresh world, 16 slots",
+      ip: "play.nossuary.com",
+      port: "15637",
+      // Enshrouded will not let you join without one, so the address alone is useless here.
+      // This is the Friend-tier password and nothing more: in Enshrouded the password IS the
+      // role, so the staff password must never be put in this file — the repo is public.
+      password: "nossuary",
+      tag: "Stable",
     },
   ],
 
@@ -167,7 +182,6 @@ window.OSSUARY = {
   // Games with a Null server planned but nothing to join yet, shown under the servers as "Coming soon".
   // null or [] = no row.
   comingSoon: [
-    { game: "Enshrouded" },
     { game: "Vintage Story" },
   ],
 
