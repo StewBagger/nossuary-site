@@ -1,10 +1,11 @@
-updated: October 8, 2026
-build: 1.60.1.70245
-sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Holy Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/holy/level-20-healer-overview ;; Wowhead — Level 20 Protection Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/protection/level-20-tank-overview ;; Wowhead — Level 20 Retribution Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-20-dps-overview ;; Icy Veins — Paladin Class Overview|https://www.icy-veins.com/wow-forever/paladin-class-overview ;; ClassicWoW.gg — Paladin|https://classicwow.gg/forever/guides/paladin ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap
+updated: October 16, 2026
+build: 1.60.1.70374
+sources: Blizzard — Class Deep Dives: Paladin|https://worldofwarcraft.blizzard.com/en-us/news/24302099 ;; Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Holy Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/holy/level-20-healer-overview ;; Wowhead — Level 20 Protection Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/protection/level-20-tank-overview ;; Wowhead — Level 20 Retribution Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-20-dps-overview ;; Icy Veins — Paladin Class Overview|https://www.icy-veins.com/wow-forever/paladin-class-overview ;; ClassicWoW.gg — Paladin|https://classicwow.gg/forever/guides/paladin ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap
 
 Paladin is a plate-wearing melee fighter that runs on mana, and it is no longer faction-locked. Undead Paladins are new in Forever, with their own class hub in Tirisfal Glades.
 :::scope
-Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, raised from 20 that day, so no level-60 Paladin build has been tested. Published level-30 builds elsewhere spend points on `Crusade` and `Improved Holy Strike`. Both still exist in the newest client build, 1.60.1.70245, so neither has been deleted outright. Whether you can still click them in the tree is the part nobody can check. Paladin is also the one class Blizzard has not written a deep dive for. Treat any level-30 Paladin build you find as a projection.
+Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, raised from 20 that day, so no level-60 Paladin build has been tested. **Blizzard published its Paladin class deep dive on October 15, 2026**, the last of the nine and the one these pages were written without. Where Blizzard states something directly, this page now says so and the guide sites hold the rest.
+Published level-30 builds elsewhere spend points on `Crusade` and `Improved Holy Strike`. Both are in the client at build 1.60.1.70374 with working text: `Crusade` adds 2% damage and 2% again against Demons and Undead, and `Improved Holy Strike` takes 2 seconds off that ability's cooldown. The dive names the talents each spec lost, and neither of these is on any of those lists. Treat a level-30 Paladin build you find as a projection anyway, because nobody has levelled one.
 :::
 ## Which spec?
 | Spec | Role | Its strongest point | In one line |
@@ -14,18 +15,20 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of t
 | **[Retribution](/guides/wow-forever/paladin/retribution/)** | Melee DPS | [[Seal of Command]] at 20 procs Holy off each swing, and a stun amplifies its Judgement | Two-hander plus Holy, and [[Holy Strike]] arrives at level 6 |
 **Every Paladin now gets [[Holy Strike]] at level 6**, twenty levels earlier than Classic gave you a button. [[Consecration]] and [[Blessing of Kings]] are trained at 20 in every spec, so the three share more of their kit than they did in Classic.
 Protection used to have dungeon levelling as its escape hatch, and that route is largely gone. **Forever cut dungeon experience hard, and the October 1 build cut dungeon *quest* experience too:** dungeon quests now reward 50% less extra experience beyond normal quest values. Blizzard framed the cut as a deliberate reduction in levelling speed.
-**The two talents stand on very different evidence.** `Improved Holy Strike` was folded into the class: Blizzard's September 24 notes give [[Holy Strike]] a 10-second cooldown for every Paladin, so there is nothing left to talent. `Crusade` has no Blizzard note of any kind, so nobody can tell you whether you can still spend a point there.
+**Neither talent is on Blizzard's cut lists.** The dive names what each spec gave up: `Improved Retribution Aura` and `Sanctity Aura` for Retribution, `Blessing of Sanctuary` and `Improved Concentration Aura` for Protection. Blizzard's September 24 notes give [[Holy Strike]] a 10-second cooldown for every Paladin, and the client's `Improved Holy Strike` takes two seconds off that, so the talent still buys something. A client record is not proof the tree can still reach a talent, so confirm both in game before you spend the points.
 ## Is Paladin for you?
 Play Paladin if you want a melee class that carries its own heals, wears mail from level 1 and plate from 40, and can train for whichever of the three roles a group is short of.
 :::strengths
 - Heals itself in every spec: [[Holy Light]] from level 1, [[Lay on Hands]] from 10, [[Divine Shield]] from 34
 - Covers all three group roles — [[Seal of Fury]] taunts from 10, and the heals need no talent points
 - Blessings and auras apply to the whole party, and Blessings now last a full hour
+- Blizzard calls Paladins the strongest single-target healers in the game, and very strong against Undead and Demons
 :::
 :::weaknesses
 - Holy and Protection spend their talent points on healing and threat rather than damage
 - Runs on mana: [[Holy Strike]], [[Judgement]] and [[Consecration]] all draw on the same bar
 - No area damage at all until [[Consecration]] at 20
+- Blizzard's own list of what the class lacks: no interrupt, no way to slow a target, and less reach than its other mana users even with Holy talents
 :::
 :::new
 **Is the rotation simple?** Three buttons: keep a seal up, judge it, strike on cooldown.
@@ -46,10 +49,10 @@ Play Paladin if you want a melee class that carries its own heals, wears mail fr
 | 26 | [[Blessing of Salvation]] |
 | 30 | [[Divine Intervention]], [[Holy Shock]] via talent |
 | 34 | [[Divine Shield]], now **−50% your damage**, and applies Forbearance |
-| 40 | **Plate armour**, [[Summon Warhorse]], [[Hammer of the Righteous]], new, needs a one-hander |
-| 50 | [[Holy Wrath]], now also stuns for 2 seconds |
+| 40 | **Plate armour**, [[Summon Warhorse]], [[Hammer of the Righteous]], new: it hits your target and up to three enemies beside it for Holy damage worth three times your main hand's damage per second, on a 6-second cooldown |
+| 50 | [[Holy Wrath]]. Its 2-second stun is a guide-site reading: the client's own row for it carries no tooltip text |
 | 52–60 | Greater Blessings |
-**`Blessing of Sanctuary` is not in Forever**, in either form. Nothing trains it and no tree offers it. It is the Paladin removal you can be surest of.
+**`Blessing of Sanctuary` is not in Forever**, in either form. Nothing trains it, no tree offers it, and Blizzard's dive lists it among the talents Protection lost. It is the Paladin removal you can be surest of.
 ## Which race
 Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation. **No race is a wrong answer for levelling** *(ours, not a source's)*. Racials decide things in PvP. The ones that matter there break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Alliance: Human or Dwarf.** Human's `Sword Specialization` gives +2% crit to spells and abilities off a sword carried purely as a stat stick. It is the largest weapon racial, and it feeds both gearing paths. Dwarf's `Stoneform` is a real solo cooldown.
@@ -66,10 +69,13 @@ Race is the smallest of the choices on this page, well behind spec, gear and kno
 | --- | --- |
 | **Judgement no longer consumes your seal** | You stop re-casting after every Judgement. This is the most-discussed change in the beta |
 | [[Consecration]] and [[Blessing of Kings]] trained at 20 | Every spec gets both, without spending talent points |
-| [[Holy Strike]] at 6 and [[Seal of Fury]] at 10 | Two new baseline buttons inside the first ten levels |
+| [[Holy Strike]] at 6 and [[Seal of Fury]] at 10 | Two new baseline buttons inside the first ten levels, and judging the seal taunts at 10 yards, further than a Druid's or a Warrior's taunt reaches |
 | Blessings last 1 hour, Greater Blessings too | No more desynced buff timers |
 | `Repentance` moved from tier 7 to tier 5 | The Retribution capstone slot is now `Twist of Light`. [[Seal of Command]] is unchanged: tier 3, live at 20, as in Classic |
-| Resistance auras are raid-wide | |
+| Resistance auras are raid-wide | Fire, Frost and Shadow resistance reach every raid member within 30 yards |
+| Seal twisting is gone from the baseline class | It comes back only as Retribution's capstone [[Twist of Light]], which Blizzard built to be less strict about timing |
+| [[Consecration]] deals real damage to only 4 enemies | Blizzard capped it there on purpose, to keep the Paladin level with a Warrior's Thunderclap instead of making the class an area-damage class |
+| Salvation stops being a Blessing | Blizzard has published this and the beta does not have it yet. Once it lands you can hold a Blessing and Salvation at the same time, and the raid-wide version is called `Mass Salvation` |
 | Undead Paladins exist | With their own hub, quests and mounts |
 ## At level 60
-Unknown. No source publishes a Paladin build past 30, so whether Retribution's Seal of Command path or the new Spell Power path wins is untested. Raids open December 9.
+Unknown. No source publishes a Paladin build past 30, so whether Retribution's Seal of Command path or the new Spell Power path wins is untested. Blizzard's dive closes by calling all three specs playable at the top — effective tanks, competitive damage dealers, the strongest single-target healers — and publishes no level-60 numbers behind it. Raids open December 9.

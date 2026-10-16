@@ -1,9 +1,9 @@
 {
  "build": "1.60.1.70374",
  "product": "wow_cn_beta",
- "generated": "2026-10-15T08:59:37+00:00",
- "stamp": "7f5754b2e7d1",
- "inputs": "d858bf250c7e",
+ "generated": "2026-10-16T09:05:14+00:00",
+ "stamp": "201b50e8b324",
+ "inputs": "5b86588185a8",
  "entries": {
   "Adrenaline Rush": {
    "kind": "spell",
@@ -1612,6 +1612,15 @@
    "cost": "25 Mana",
    "desc": "Claw the enemy, causing 5 damage."
   },
+  "Cleanse": {
+   "kind": "talent",
+   "id": 4987,
+   "level": null,
+   "icon": 135953,
+   "cast": "Instant",
+   "range": "30 yd range",
+   "desc": "Cleanses a friendly target, removing 1 poison effect, 1 disease effect, and 1 magic effect."
+  },
   "Cleave": {
    "kind": "spell",
    "id": 845,
@@ -1840,6 +1849,14 @@
    "school": "Arcane",
    "cost": "60 Mana",
    "desc": "Conjures 2 bottles of water, providing the mage and his allies with something to drink. Conjured items disappear if logged out for more than 15 minutes."
+  },
+  "Consecrated Ground": {
+   "kind": "talent",
+   "id": 1310905,
+   "level": null,
+   "icon": 135926,
+   "cast": "Instant",
+   "desc": "Gives your Holy spells 10% increased damage against the first 4 enemies that enter your Consecration."
   },
   "Consecration": {
    "kind": "spell",
@@ -2800,6 +2817,18 @@
    "icon": 135918,
    "cast": "Instant",
    "desc": "Improves your chance to hit with Holy spells by 18%."
+  },
+  "Divine Protection": {
+   "kind": "talent",
+   "id": 498,
+   "level": null,
+   "icon": 135954,
+   "rank": "Rank 1 of 2",
+   "cast": "Instant",
+   "duration": "6 sec",
+   "cost": "15 Mana",
+   "cooldown": "300 sec cooldown",
+   "desc": "You are protected from all physical attacks and spells for 6 sec, but during that time you cannot attack or use physical abilities yourself. Applies Forbearance for 60 sec. Cannot be cast while Forbearance is active."
   },
   "Divine Shield": {
    "kind": "spell",
@@ -4768,6 +4797,18 @@
    "cooldown": "60 sec cooldown",
    "desc": "Stuns the target for 3 sec."
   },
+  "Hammer of Wrath": {
+   "kind": "talent",
+   "id": 24275,
+   "level": null,
+   "icon": 132326,
+   "rank": "Rank 1 of 3",
+   "cast": "1 sec cast",
+   "range": "30 yd range",
+   "cost": "295 Mana",
+   "cooldown": "6 sec cooldown",
+   "desc": "Hurls a hammer that strikes an enemy for 288 Holy damage. Only usable on enemies that have 20% or less health."
+  },
   "Hammer of the Righteous": {
    "kind": "spell",
    "id": 407632,
@@ -5013,6 +5054,14 @@
    "school": "Holy",
    "cost": "185 Mana",
    "desc": "The caster creates zones of holy energy, inflicting 250 Holy damage every 1 sec to players within."
+  },
+  "Holy Power": {
+   "kind": "talent",
+   "id": 5923,
+   "level": null,
+   "icon": 135938,
+   "cast": "Instant",
+   "desc": "Increases the critical strike chance of your Holy Shock and Holy Strike spells by 15%, and all other spells by 5%."
   },
   "Holy Precision": {
    "kind": "talent",
@@ -6330,6 +6379,28 @@
    "cooldown": "10 sec cooldown",
    "desc": "Unleash the energy of a Seal spell upon an enemy. Does not consume the Seal. Refer to individual Seals for Judgement effect."
   },
+  "Judgement of Light": {
+   "kind": "talent",
+   "id": 20185,
+   "level": null,
+   "icon": 135917,
+   "rank": "Rank 1 of 4",
+   "cast": "Instant",
+   "range": "100 yd range",
+   "duration": "40 sec",
+   "desc": "Melee attacks made against you have a chance of causing the attacker to be healed for 25."
+  },
+  "Judgement of Wisdom": {
+   "kind": "talent",
+   "id": 20186,
+   "level": null,
+   "icon": 135960,
+   "rank": "Rank 1 of 3",
+   "cast": "Instant",
+   "range": "100 yd range",
+   "duration": "40 sec",
+   "desc": "Attacks and spells used against the target have a chance of restoring 33 of the attacker's mana."
+  },
   "Kaldorei Spider Kabob": {
    "kind": "item",
    "id": 5472,
@@ -6435,12 +6506,13 @@
    "desc": "When activated, this ability temporarily grants you 30% of your maximum health for 20 sec. After the effect expires, the health is lost."
   },
   "Lasting Judgement": {
-   "kind": "talent",
+   "kind": "spell",
    "id": 20359,
    "level": null,
    "icon": 135917,
    "rank": "Rank 1 of 3",
    "cast": "Instant",
+   "school": "Physical",
    "desc": "Increases the duration of your Judgement of Light and Judgement of Wisdom by 10 sec."
   },
   "Lava Burst": {
@@ -8105,6 +8177,15 @@
    "cast": "Instant",
    "desc": "Increases the critical strike chance of your Backstab by 30% and your Mutilate by 15%, and gives Backstab a 45% chance to add an additional Combo Point."
   },
+  "Purify": {
+   "kind": "talent",
+   "id": 1152,
+   "level": null,
+   "icon": 135949,
+   "cast": "Instant",
+   "range": "30 yd range",
+   "desc": "Purifies the friendly target, removing 1 disease effect and 1 poison effect."
+  },
   "Purifying Power": {
    "kind": "talent",
    "id": 429144,
@@ -8768,6 +8849,15 @@
    "school": "Holy",
    "cost": "40 Mana",
    "desc": "Fills you with divine fury for 30 sec, causing melee attacks to deal an additional 6 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy inflicts23 Holy damage to an enemy and taunts the target to attack you for 4 sec."
+  },
+  "Seal of Justice": {
+   "kind": "talent",
+   "id": 20164,
+   "level": null,
+   "icon": 135971,
+   "cast": "Instant",
+   "duration": "30 sec",
+   "desc": "Fills the Paladin with the spirit of justice for 30 sec, giving each melee attack a chance to stun for 2 sec. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy will judge an enemy for 10 sec, preventing them from fleeing. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time."
   },
   "Seal of Righteousness": {
    "kind": "spell",
@@ -10934,11 +11024,12 @@
    "desc": "Increases the damage and healing of your instant cast spells by 5%."
   },
   "Twist of Light": {
-   "kind": "talent",
+   "kind": "spell",
    "id": 1310735,
    "level": null,
    "icon": 135878,
    "cast": "Instant",
+   "school": "Physical",
    "desc": "Reduces the Mana cost of your Seal spells by 20%, and when you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, you gain an Echo of that Seal. Your next melee attack applies the replaced Seal's effects, consuming the Echo."
   },
   "Two-Handed Axes and Maces": {
@@ -11003,6 +11094,14 @@
    "icon": 132091,
    "cast": "Instant",
    "desc": "Increases the damage done by your pets and hawks by 20%."
+  },
+  "Unyielding Faith": {
+   "kind": "talent",
+   "id": 9453,
+   "level": null,
+   "icon": 135984,
+   "cast": "Instant",
+   "desc": "Reduces the duration of Fear and Disorient effects on you by 30%."
   },
   "Vampiric Embrace": {
    "kind": "spell",
