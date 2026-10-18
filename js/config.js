@@ -165,9 +165,9 @@ window.OSSUARY = {
   // The asset id, not the mod's url alias -- an alias can be changed by whoever owns the mod
   // page, and none of the Null mods has one set, so show/mod/<assetid> is their only address.
   //
-  // Experimental builds are unlisted, and so is any mod without a store entry: Null Smithy is
-  // finished but unpublished, and a card with nowhere to go is worse than no card. `game` groups
-  // the list, one heading per game in first-seen order.
+  // Experimental builds are unlisted, and so is any mod without a store entry — a card with
+  // nowhere to go is worse than no card. As of 2026-10-18 every Null mod is published, so all
+  // eight are listed. `game` groups the list, one heading per game in first-seen order.
   //
   // Names and blurbs here MUST match the forum board for the same mod -- forum-worker's
   // test/seed.test.js asserts it across the two repos.
@@ -190,13 +190,18 @@ window.OSSUARY = {
     { game: "Vintage Story", store: "moddb", name: "Null Lockdown", id: "69462", blurb: "Hardcore navigation: no world map, no coordinate readouts, and the server-side leaks closed too." },
     { game: "Vintage Story", store: "moddb", name: "Null Claims", id: "69465", blurb: "Land claiming without commands: one hotkey opens a window that drives vanilla's own claim system." },
     { game: "Vintage Story", store: "moddb", name: "Null Cartography", id: "69534", blurb: "Survey with a sextant, record it in a field notebook, then ink your chart at the cartography table." },
+    { game: "Vintage Story", store: "moddb", name: "Null Smithy", id: "74584", blurb: "Makes the smith load-bearing: metal tools are a smithed head, a seasoned haft and a rivet." },
+    { game: "Vintage Story", store: "moddb", name: "Null Arts", id: "74585", blurb: "The breeding ladder for the four crops it never covered: fennel, cassava, pineapple, licorice." },
+    { game: "Vintage Story", store: "moddb", name: "Null Skills", id: "74586", blurb: "A maintained fork of XLib and XSkills for 1.22: thirteen skill trees, 185 abilities." },
+    { game: "Vintage Story", store: "moddb", name: "Null Classes", id: "74588", blurb: "Fourteen trades, freely chosen. Your class is what others need from you; any can be earned." },
   ],
 
   // Games with a Null server planned but nothing to join yet, shown under the servers as "Coming soon".
   // null or [] = no row.
-  comingSoon: [
-    { game: "Vintage Story" },
-  ],
+  // Emptied 2026-10-18: Vintage Story was the only entry and Null Story went live that day, so
+  // it moved into `servers` above. Leaving it here as well put a "coming soon" card beside the
+  // live one.
+  comingSoon: [],
 
   // Ko-fi page for the Support section and its nav link. null = no Support section.
   kofiUrl: "https://ko-fi.com/kronosmedia",
