@@ -99,6 +99,18 @@ window.OSSUARY = {
       password: "nossuary",
       tag: "Stable",
     },
+    {
+      id: "vs-null-story",
+      game: "Vintage Story",
+      name: "Null Story",
+      subtitle: "1.22.7 \u00b7 no map, no coordinates \u00b7 32 slots",
+      ip: "play.nossuary.com",
+      port: "42420",
+      // No password: Null Story opened to the public on 2026-10-18 and is advertised in the
+      // game's own server browser. The eight Null mods it runs are requiredOnClient and are
+      // published on the Vintage Story ModDB, so the in-game Mod Manager finds them by name.
+      tag: "Stable",
+    },
   ],
 
   // Live status JSON: Chamberlain pushes it to a Cloudflare Worker (outbound only; see README).
