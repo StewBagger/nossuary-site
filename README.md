@@ -31,6 +31,7 @@ Intent, decisions and open threads live in the vault
 | `css/roster.css` | roster styling only, loaded by that one page — the same per-section arrangement as `guides.css`, so `style.css` keeps its own `?v=` stamp |
 | `sitemap.xml` | the indexable pages (`/`, `/forums/`, `/privacy/`). Add a page here when one is added; bump its `<lastmod>` when its content changes |
 | `assets/` | web-sized derivatives of the Null Ossuary branding set |
+| `assets/mods/<modid>/` | item and block renders the Null Vintage Story mods' ModDB descriptions link to (192 px WebP, drawn by `Null_Mods/tools/vsrender.py`). The ModDB pages hotlink these exact paths, so renaming or removing one breaks a live store page |
 | `CNAME` | custom domain for GitHub Pages (`nossuary.com`) — removing it breaks the domain; the apex A records in No-IP point at GitHub |
 
 ## Preview locally
