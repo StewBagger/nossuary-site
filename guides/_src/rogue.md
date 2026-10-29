@@ -52,8 +52,8 @@ Play Rogue if you like deciding when a fight starts, and you are willing to leve
 **Every Rogue combat ability trains at its Classic level.** What moved is the two utility systems: Lockpicking and Poisons are secondary skills now, like First Aid, and Pick Lock came down to level 1 with them.
 ## Which race
 Read this section in proportion. Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling** *(ours, not a source's)*. Racials decide things in PvP, specifically the ones that break crowd control. `Will of the Forsaken` (Undead) stops fear, sleep and charm; `Escape Artist` (Gnome) breaks roots and snares; `Stoneform` (Dwarf) clears bleeds, poisons and disease. A free trinket slot is worth more than any damage racial below.
-**Alliance: Human** for long fights, on `Sword Specialization` at +2% crit, the largest weapon racial. Gnome is the better levelling pick, for `Eureka!` and `Escape Artist`.
-**Horde: Orc, unambiguously.** `Axe Specialization` gives +1% crit, and Rogues can use one-handed axes in Forever, which is new.
+**Alliance: Human** for long fights, on `Ruthless` at +2% crit with any weapon, the largest crit racial. Gnome is the better levelling pick, for `Eureka!` and `Escape Artist`.
+**Horde: Orc, unambiguously.** `Savage` gives +1% crit with any weapon.
 **Forever changed the answer three ways.** Weapon racials became crit racials, Rogues gained one-handed axes, and `Hack and Slash` extended the old weapon-specialisation bonus to axes. Your weapon no longer picks your spec for you.
 ## Quality of life
 - **The level-20 poison quest is the one thing you must not skip.** Reagents come from a poison vendor near your class trainer. In Forever a poison and a sharpening stone or weightstone go on the same weapon at once, where Classic made you choose. Every poison also carries more charges than it did.

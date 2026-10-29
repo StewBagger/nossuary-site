@@ -56,7 +56,7 @@ Blizzard's closing assessment of the class, in its own words:
 ## Which race
 Read this section in proportion. Race is the smallest choice on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling** *(ours, not a source's)*. Racials decide things in PvP. The ones that count break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
 **Alliance — Night Elf.** `Elune's Light` gives +10% crit for 15 seconds and lines up with your cooldowns, `Shadowmeld` drops threat, and `Wisp Spirit` speeds corpse runs.
-**Horde — Orc.** `Blood Fury` is +10% attack power and `Axe Specialization` gives +1% crit, which makes axes worth seeking out.
+**Horde — Orc.** `Blood Fury` is +10% attack power and `Savage` gives +1% crit to all spells and abilities, whatever weapon you hold.
 **Forever changed the answer.** Vanilla's Human and Orc weapon-skill picks are gone, all three weapon racials became critical-strike racials, and Night Elf gained an offensive cooldown it never had.
 ## Quality of life
 - **Do the level-10 class quest immediately, and the level-30 one on time.** They are how you get [[Defensive Stance]], [[Sunder Armor]], [[Taunt]] and later [[Berserker Stance]]. A Warrior who skips them has no tanking kit at all.

@@ -55,7 +55,7 @@ Play Paladin if you want a melee class that carries its own heals, wears mail fr
 **`Blessing of Sanctuary` is not in Forever**, in either form. Nothing trains it, no tree offers it, and Blizzard's dive lists it among the talents Protection lost. It is the Paladin removal you can be surest of.
 ## Which race
 Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation. **No race is a wrong answer for levelling** *(ours, not a source's)*. Racials decide things in PvP. The ones that matter there break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
-**Alliance: Human or Dwarf.** Human's `Sword Specialization` gives +2% crit to spells and abilities off a sword carried purely as a stat stick. It is the largest weapon racial, and it feeds both gearing paths. Dwarf's `Stoneform` is a real solo cooldown.
+**Alliance: Human or Dwarf.** Human's `Ruthless` gives +2% crit to all spells and attacks with any weapon. It is the largest crit racial, and it feeds both gearing paths. Dwarf's `Stoneform` is a real solo cooldown.
 **Horde: Undead, and it is forced**, being the only Horde Paladin. It is good anyway. `Cannibalize` now restores 35% health *and* mana, which on a mana-using melee class is close to a free recovery on every corpse.
 **Paladin is no longer Alliance-only.** Undead Paladins get their own hub at Bandarion Keep in the previously inaccessible Whispering Wood, Tirisfal Glades, and their own level 40 and 60 mount quests.
 ## Quality of life

@@ -10,8 +10,12 @@ can render each chip as a link with its art instead of a styled span.
     python3 tools/build_spell_index.py --force    # rebuild an unchanged index
 
 WHERE THE DATA COMES FROM. wago.tools reads the retail/classic CASC and exposes each DB2
-table as CSV. Forever ships under the product label `wow_cn_beta` -- NOT one of the
-`wow_classic*` labels, which is the single least guessable fact in this file. The guides'
+table as CSV. Forever ships under the product label `wowf` -- NOT one of the
+`wow_classic*` labels, which is the single least guessable fact in this file. Until
+2026-10-29 this read `wow_cn_beta`, the beta client; when the launch client appeared as
+`wowf` (preinstall, build 1.60.1.70634 on 2026-10-27) the beta label stopped moving at
+70450, an interim build whose racials matched neither the guides nor launch, and the
+nightly run failed its racial check for ten nights against a client nobody would play. The guides'
 other client-sourced readings come through foreverchanges.pro, which reads the same place.
 
 THE RANK PROBLEM is the reason this is not a dictionary lookup. 336 of 433 chip names map
@@ -50,7 +54,7 @@ SRC = ROOT / "guides" / "_src"
 DATA = ROOT / "guides" / "_data" / "spells.json"
 ICONS = ROOT / "assets" / "spell-icons"
 
-PRODUCT = "wow_cn_beta"  # Forever. See module docstring -- not a wow_classic* label.
+PRODUCT = "wowf"  # Forever's launch client. See module docstring -- not a wow_classic* label.
 API = "https://wago.tools"
 TABLES = ("SpellName", "SpellMisc", "SpellLevels", "SkillLineAbility", "ItemSparse",
           "Item", "Talent", "Spell", "SpellEffect", "SpellCastTimes", "SpellPower",
@@ -148,9 +152,12 @@ VERIFY_CLASS = {("Deflection", "hunter"): 19295, ("Deflection", "paladin"): 2006
 # THE RACIALS, WHICH NO TABLE ABOVE CAN SETTLE. Every discriminator here is a CLASS,
 # and a racial belongs to a RACE: see the racial pass in resolve() for what that cost.
 # Each id below was read out of build 1.60.1.70374 and matches what the hub pages say.
-VERIFY_RACIAL = {"Sword Specialization": 20597,   # Human, +2% crit with a sword equipped
-                 "Axe Specialization": 20574,     # Orc, +1% crit with an axe equipped
-                 "Mace Specialization": 1259719,  # Dwarf, +1% crit with a mace equipped
+# The three weapon racials kept their ids and lost their weapon condition in the launch
+# client (wowf 1.60.1.70685): Sword/Axe/Mace Specialization became Ruthless/Savage/Earth
+# Fury, and those old names now belong only to non-racial rows (4350.., 4334.., 4366..).
+VERIFY_RACIAL = {"Ruthless": 20597,               # Human, +2% crit, any weapon
+                 "Savage": 20574,                 # Orc, +1% crit, any weapon
+                 "Earth Fury": 1259719,           # Dwarf, +2% crit damage and healing
                  "Stoneform": 20594,              # Dwarf, bleed/poison/disease immunity
                  "War Stomp": 20549}              # Tauren, and it carries no desc
 
