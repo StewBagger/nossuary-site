@@ -182,11 +182,12 @@ test("each faction sees only its own people", () => {
   assert.equal(roster.charactersFor(DOC, "Alliance")[0].name, "Rook");
 });
 
-test("a character with neither faction is reported, not silently dropped", () => {
+test("a character outside the guild's faction is reported, not silently dropped", () => {
   const doc = { ...DOC, characters: [...DOC.characters, ch({ faction: "Neutral", name: "Pan" })] };
   assert.equal(roster.charactersFor(doc, "Horde").length, 3);
-  assert.equal(roster.unplacedCharacters(doc).length, 1);
-  assert.equal(roster.unplacedCharacters(DOC).length, 0);
+  // The fixture's one Alliance character has no section either, now the guild is Horde only.
+  assert.equal(roster.unplacedCharacters(doc).length, 2);
+  assert.equal(roster.unplacedCharacters(DOC).length, 1);
 });
 
 // -- by class ---------------------------------------------------------------------
@@ -722,14 +723,14 @@ test("the roster is in the sitemap", () => {
 test("the page states what it is and when WoW: Forever launches, before any fetch", () => {
   assert.match(page, /4 November 2026/);
   assert.match(page, /<noscript>/);
-  // Both factions are their own section in the markup, not drawn only when data arrives.
-  assert.match(page, /data-faction="Alliance"/);
+  // The Horde section is in the markup, not drawn only when data arrives; the guild has no Alliance.
+  assert.doesNotMatch(page, /data-faction="Alliance"/);
   assert.match(page, /data-faction="Horde"/);
 });
 
 test("every tab names the panel it controls, and every panel names its tab", () => {
   const tabs = [...page.matchAll(/role="tab"[^>]*aria-controls="([^"]+)"/g)].map((m) => m[1]);
-  assert.equal(tabs.length, 6, "three views per faction");
+  assert.equal(tabs.length, 3, "three views per faction");
   for (const id of tabs) {
     assert.ok(page.includes(`id="${id}"`), `no panel with id ${id}`);
     assert.match(page, new RegExp(`id="${id}"[^>]*role="tabpanel"|role="tabpanel"[^>]*id="${id}"`));

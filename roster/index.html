@@ -11,10 +11,10 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://nossuary-status.stewbagger.workers.dev; img-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
   <meta name="theme-color" content="#0b0d0c">
   <title>Guild roster · WoW: Forever · Null Ossuary</title>
-  <meta name="description" content="Who is playing what in Null Ossuary's WoW: Forever guild — by class, by profession and by role, for Alliance and Horde. Launches 4 November 2026.">
+  <meta name="description" content="Who is playing what in Null Ossuary's WoW: Forever guild — by class, by profession and by role, Horde only, on RP-PvP. Launches 4 November 2026.">
   <link rel="canonical" href="https://nossuary.com/roster/">
   <meta property="og:title" content="Guild roster · WoW: Forever · Null Ossuary">
-  <meta property="og:description" content="Who is playing what in Null Ossuary's WoW: Forever guild — by class, by profession and by role, for Alliance and Horde. Launches 4 November 2026.">
+  <meta property="og:description" content="Who is playing what in Null Ossuary's WoW: Forever guild — by class, by profession and by role, Horde only, on RP-PvP. Launches 4 November 2026.">
   <meta property="og:image" content="https://nossuary.com/assets/guides/wow-forever/og-1200x630.jpg">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -54,7 +54,7 @@
         <p class="eyebrow">WoW: Forever</p>
         <h1 id="roster-title">Guild roster</h1>
         <p class="lede">Who is playing what when the servers open — by class, by profession and by
-          role, for both factions. Published from the sign-up sheet; it changes as people change
+          role, Horde only, on the RP-PvP ruleset. Published from the sign-up sheet; it changes as people change
           their minds, which they will.</p>
       </div>
     </section>
@@ -111,38 +111,6 @@
         <p id="roster-anon" class="muted small"></p>
         <p id="roster-unplaced" class="muted small" hidden></p>
       </div>
-
-      <section class="rs-faction rs-alliance" data-faction="Alliance" aria-labelledby="alliance-h">
-        <div class="rs-faction-head">
-          <h2 id="alliance-h">Alliance</h2>
-          <dl class="rs-figures rs-figures-inline">
-            <div>
-              <dt>Members</dt>
-              <dd data-count="members">—</dd>
-            </div>
-            <div>
-              <dt>Characters</dt>
-              <dd data-count="characters">—</dd>
-            </div>
-          </dl>
-        </div>
-        <p class="muted small" data-anon hidden></p>
-
-        <div class="rs-tabs" role="tablist" aria-label="Alliance roster views">
-          <button type="button" role="tab" id="alliance-tab-class" aria-controls="alliance-class" aria-selected="true">By class</button>
-          <button type="button" role="tab" id="alliance-tab-profession" aria-controls="alliance-profession" aria-selected="false" tabindex="-1">By profession</button>
-          <button type="button" role="tab" id="alliance-tab-role" aria-controls="alliance-role" aria-selected="false" tabindex="-1">By role</button>
-        </div>
-        <div class="rs-panel" role="tabpanel" id="alliance-class" data-view="class" aria-labelledby="alliance-tab-class" tabindex="0">
-          <p class="rs-loading muted">Loading…</p>
-        </div>
-        <div class="rs-panel" role="tabpanel" id="alliance-profession" data-view="profession" aria-labelledby="alliance-tab-profession" tabindex="0" hidden>
-          <p class="rs-loading muted">Loading…</p>
-        </div>
-        <div class="rs-panel" role="tabpanel" id="alliance-role" data-view="role" aria-labelledby="alliance-tab-role" tabindex="0" hidden>
-          <p class="rs-loading muted">Loading…</p>
-        </div>
-      </section>
 
       <section class="rs-faction rs-horde" data-faction="Horde" aria-labelledby="horde-h">
         <div class="rs-faction-head">

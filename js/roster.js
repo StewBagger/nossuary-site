@@ -28,7 +28,7 @@ export const DEFAULT_ROSTER = "https://nossuary-status.stewbagger.workers.dev/v1
 export const ROSTER_STALE_MS = 15 * 60_000; // older than this and the document is not current
 export const ROSTER_REFRESH_MS = 5 * 60_000; // a roster changes slowly; poll gently
 
-export const FACTIONS = ["Alliance", "Horde"];
+export const FACTIONS = ["Horde"];
 export const ROLES = ["Tank", "Healer", "Melee", "Ranged"];
 export const PRIORITIES = ["primary", "secondary", "tertiary"];
 export const PRIORITY_LABELS = { primary: "1st pick", secondary: "2nd pick", tertiary: "3rd pick" };
@@ -133,7 +133,7 @@ export function charactersFor(doc, faction) {
   return characterList(doc).filter((c) => sameFaction(c.faction, faction));
 }
 
-// A faction value that is neither Alliance nor Horde would otherwise vanish from a page whose
+// A faction value that is not one of FACTIONS would otherwise vanish from a page whose
 // whole job is that nobody is left out. Counted and reported rather than silently dropped.
 export function unplacedCharacters(doc) {
   return characterList(doc).filter((c) => !FACTIONS.some((f) => sameFaction(c.faction, f)));
@@ -689,7 +689,7 @@ function renderTotals(doc) {
   if (line) {
     line.hidden = unplaced.length === 0;
     line.textContent = unplaced.length
-      ? `${unplaced.length} character${unplaced.length === 1 ? " is" : "s are"} recorded without a faction and so appear in neither section below.`
+      ? `${unplaced.length} character${unplaced.length === 1 ? " is" : "s are"} recorded without a faction and so do not appear below.`
       : "";
   }
 
