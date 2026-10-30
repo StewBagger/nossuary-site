@@ -1,9 +1,9 @@
 {
- "build": "1.60.1.70685",
+ "build": "1.60.1.70707",
  "product": "wowf",
- "generated": "2026-10-29T11:19:06+00:00",
- "stamp": "aca49184ac9e",
- "inputs": "cdcd0d64c7ee",
+ "generated": "2026-10-30T07:25:42+00:00",
+ "stamp": "5bc210075854",
+ "inputs": "ed3c64cdc0cf",
  "entries": {
   "Adrenaline Rush": {
    "kind": "spell",
@@ -435,7 +435,7 @@
    "duration": "Until cancelled",
    "school": "Nature",
    "cost": "20 Mana",
-   "desc": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 20. Only one Aspect can be active at a time."
+   "desc": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 15. Only one Aspect can be active at a time."
   },
   "Aspect of the Monkey": {
    "kind": "talent",
@@ -1049,7 +1049,7 @@
      "icon": 135726,
      "cast": "Instant",
      "duration": "15 sec",
-     "cooldown": "180 sec cooldown",
+     "cooldown": "120 sec cooldown",
      "desc": "Increases Attack Power and Spell Power by 10% for 15 sec."
     },
     "hunter": {
@@ -1058,7 +1058,7 @@
      "icon": 135726,
      "cast": "Instant",
      "duration": "15 sec",
-     "cooldown": "180 sec cooldown",
+     "cooldown": "120 sec cooldown",
      "desc": "Increases Attack Power and Spell Power by 10% for 15 sec."
     },
     "mage": {
@@ -1067,7 +1067,7 @@
      "icon": 135726,
      "cast": "Instant",
      "duration": "15 sec",
-     "cooldown": "180 sec cooldown",
+     "cooldown": "120 sec cooldown",
      "desc": "Increases Attack Power and Spell Power by 10% for 15 sec."
     },
     "paladin": {
@@ -1076,7 +1076,7 @@
      "icon": 135726,
      "cast": "Instant",
      "duration": "15 sec",
-     "cooldown": "180 sec cooldown",
+     "cooldown": "120 sec cooldown",
      "desc": "Increases Attack Power and Spell Power by 10% for 15 sec."
     },
     "priest": {
@@ -1085,7 +1085,7 @@
      "icon": 135726,
      "cast": "Instant",
      "duration": "15 sec",
-     "cooldown": "180 sec cooldown",
+     "cooldown": "120 sec cooldown",
      "desc": "Increases Attack Power and Spell Power by 10% for 15 sec."
     },
     "rogue": {
@@ -1094,7 +1094,7 @@
      "icon": 135726,
      "cast": "Instant",
      "duration": "15 sec",
-     "cooldown": "180 sec cooldown",
+     "cooldown": "120 sec cooldown",
      "desc": "Increases Attack Power and Spell Power by 10% for 15 sec."
     },
     "shaman": {
@@ -1103,7 +1103,7 @@
      "icon": 135726,
      "cast": "Instant",
      "duration": "15 sec",
-     "cooldown": "180 sec cooldown",
+     "cooldown": "120 sec cooldown",
      "desc": "Increases Attack Power and Spell Power by 10% for 15 sec."
     },
     "warlock": {
@@ -1112,7 +1112,7 @@
      "icon": 135726,
      "cast": "Instant",
      "duration": "15 sec",
-     "cooldown": "180 sec cooldown",
+     "cooldown": "120 sec cooldown",
      "desc": "Increases Attack Power and Spell Power by 10% for 15 sec."
     },
     "warrior": {
@@ -1121,13 +1121,13 @@
      "icon": 135726,
      "cast": "Instant",
      "duration": "15 sec",
-     "cooldown": "180 sec cooldown",
+     "cooldown": "120 sec cooldown",
      "desc": "Increases Attack Power and Spell Power by 10% for 15 sec."
     }
    },
    "cast": "Instant",
    "duration": "15 sec",
-   "cooldown": "180 sec cooldown",
+   "cooldown": "120 sec cooldown",
    "desc": "Increases Attack Power and Spell Power by 10% for 15 sec."
   },
   "Bloodlust": {
@@ -3235,14 +3235,6 @@
    "cooldown": "180 sec cooldown",
    "desc": "Gain mastery over Fire and Lightning, reducing the cast time of Lightning Bolt and Lava Burst by 0.5 sec, and removing the cooldown from Chain Lightning. Lasts 15 sec."
   },
-  "Elemental Precision": {
-   "kind": "talent",
-   "id": 29438,
-   "level": null,
-   "icon": 135989,
-   "cast": "Instant",
-   "desc": "Improves your chance to hit with Frost and Fire spells by 6%."
-  },
   "Elemental Warding": {
    "kind": "talent",
    "id": 28996,
@@ -3749,15 +3741,13 @@
   },
   "Explosive Trap": {
    "kind": "spell",
-   "id": 13813,
+   "id": 13812,
    "level": 34,
    "icon": 135826,
    "rank": "Rank 1 of 3",
    "cast": "Instant",
-   "duration": "60 sec",
-   "school": "Fire",
-   "cost": "275 Mana",
-   "cooldown": "30 sec cooldown"
+   "duration": "20 sec",
+   "school": "Fire"
   },
   "Expose Armor": {
    "kind": "spell",
@@ -5183,6 +5173,7 @@
    "range": "30 yd range",
    "school": "Frost",
    "cost": "45 Mana",
+   "cooldown": "8 sec cooldown",
    "desc": "Deals 28 Frost damage to an enemy target. Deals 200% increased damage to Frozen targets."
   },
   "Ice Shards": {
@@ -5522,14 +5513,6 @@
    "icon": 135819,
    "cast": "Instant",
    "desc": "Reduces the cooldown of your Fire Blast spell by 2 sec and increases its range by 15 yards."
-  },
-  "Improved Fireball": {
-   "kind": "talent",
-   "id": 11069,
-   "level": null,
-   "icon": 135812,
-   "cast": "Instant",
-   "desc": "Reduces the casting time of your Fireball and Frostfire Bolt spells by 0.5 sec."
   },
   "Improved Firebolt": {
    "kind": "talent",
@@ -7829,6 +7812,13 @@
    "icon": 132282,
    "rank": "Rank 1",
    "by_class": {
+    "mage": {
+     "id": 29438,
+     "level": null,
+     "icon": 135989,
+     "cast": "Instant",
+     "desc": "Improves your chance to hit with all spells by 6%."
+    },
     "paladin": {
      "id": 20189,
      "level": null,
@@ -8351,8 +8341,8 @@
   },
   "Revenge": {
    "kind": "spell",
-   "id": 6572,
-   "level": 14,
+   "id": 12170,
+   "level": null,
    "icon": 132353,
    "rank": "Rank 1 of 6",
    "cast": "Instant",
@@ -8360,7 +8350,7 @@
    "school": "Physical",
    "cost": "50 Mana",
    "cooldown": "5 sec cooldown",
-   "desc": "Instantly counterattack an enemy for 22 damage and a high amount of threat. Revenge must follow a block, dodge or parry."
+   "desc": "Instantly counterattack an enemy for 18 damage. Revenge must follow a block, dodge, or parry."
   },
   "Reverberation": {
    "kind": "talent",
@@ -8392,7 +8382,7 @@
   "Righteous Fury": {
    "kind": "spell",
    "id": 25780,
-   "level": 16,
+   "level": 10,
    "icon": 135962,
    "cast": "Instant",
    "duration": "1800 sec",
@@ -10803,7 +10793,7 @@
    "cast": "Instant",
    "duration": "1800 sec",
    "cost": "180 Mana",
-   "desc": "Increases the Ranged Attack Power of party or raid members within 45 yds by 30."
+   "desc": "Increases the Ranged Attack Power of party or raid members within 45 yds by 15."
   },
   "Turtle Scale Breastplate": {
    "kind": "item",
