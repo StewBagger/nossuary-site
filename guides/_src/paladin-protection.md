@@ -1,6 +1,6 @@
 updated: October 31, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Paladin|https://worldofwarcraft.blizzard.com/en-us/news/24302099 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Protection Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/protection/level-20-tank-overview ;; Icy Veins — Protection Paladin Tank Guide|https://www.icy-veins.com/wow-forever/protection-paladin-tank-pve-guide ;; ClassicWoW.gg — Protection Paladin|https://classicwow.gg/forever/guides/paladin/protection ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes
+sources: Blizzard — Class Deep Dives: Paladin|https://worldofwarcraft.blizzard.com/en-us/news/24302099 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Protection Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/protection/level-20-tank-overview ;; Icy Veins — Protection Paladin Tank Guide|https://www.icy-veins.com/wow-forever/protection-paladin-tank-pve-guide ;; ClassicWoW.gg — Protection Paladin|https://classicwow.gg/forever/guides/paladin/protection ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes ;; WoWSims Forever — Protection|https://www.wowsims.com/forever/paladin/protection/
 
 Shield tanking that generates threat from Holy damage rather than weapon damage, which makes it **the only tank in the game that gears for Spell Power.**
 :::scope
@@ -27,10 +27,18 @@ Named alternatives: `Divine Intellect` in place of `Sacred Duty`, because points
 **Multi-target is the default here**, which is unusual for a tank.
 1. **[[Righteous Fury]]** up at all times
 2. **[[Seal of Fury]]** maintained: bonus Holy damage on every swing, an absorb worth 50% of that damage, and the taunt
-3. **[[Consecration]]** as often as mana allows, for threat on four
-4. **[[Judgement]]**: damage, and your taunt while Seal of Fury is up. Hold it when you expect to lose something
-5. **[[Holy Strike]]** on cooldown
-6. **[[Exorcism]]** against Undead and Demons; keep a Blessing and an Aura up
+3. **[[Judgement]]**: damage, and your taunt while Seal of Fury is up. Hold it when you expect to lose something
+4. **[[Consecration]]** as often as mana allows, for threat on four
+5. **`Holy Shield`** from level 30, if you took it
+6. **[[Holy Strike]]** on cooldown
+7. **[[Exorcism]]** against Undead and Demons; keep a Blessing and an Aura up
+**Why that order, and when it changes:**
+- **[[Judgement]] takes no global cooldown,** so it never competes with the buttons below it. WoWSims' level 60 list presses it whenever it is ready *(WoWSims' model)*. That list fights one boss and has no add to pick up, so holding it for a loose enemy is our call *(ours, not a source's)*.
+- **On one enemy, [[Consecration]] is a poor trade.** Rank 1 costs 135 Mana for 48 damage on one target before Spell Power, and 192 across four. [[Holy Strike]] costs 12 at level 20. WoWSims keeps the ring above [[Holy Strike]] on a single boss, but that is at 60 in raid gear.
+- **Lay the ring as they arrive.** It ticks once a second for 8 seconds, so a tick on empty ground is mana gone. Its cooldown is also 8 seconds, so one cast can follow the last with no overlap.
+- **Recast [[Seal of Fury]] when it has gone, not before.** It lasts 30 seconds, [[Judgement]] leaves it standing and a recast adds no second shield. WoWSims casts it only once it is down *(WoWSims' model)*.
+- **`Holy Shield` wants four blocks.** WoWSims puts it above [[Holy Strike]] at 60 *(WoWSims' model)*. At level 30 it costs 100 Mana and deals 300 if all 4 charges go inside its 10 seconds, where rank 2 of [[Consecration]] deals 320 across four enemies for 235. It costs you the same when you block only once.
+- **Skip the Crusader opener on a pack.** WoWSims opens a boss by judging [[Seal of the Crusader]] first. That debuff sits on one enemy and puts your only [[Judgement]] on its 10-second cooldown, so the taunt is gone when the pull goes wrong *(ours, not a source's)*.
 **Judging no longer costs you the Seal.** Blizzard states [[Judgement]] does not consume the Paladin's active Seal, so taunting with it leaves [[Seal of Fury]] running and the next taunt comes back with the cooldown. The taunt also reaches further than any other tank's: Blizzard puts it at 10 yards, because it is delivered by Judgement, where Druid Growl and Warrior Taunt reach 5. Use that reach to pick up an add before it arrives.
 **The absorb does not stack.** Re-applying [[Seal of Fury]] refreshes the shield rather than adding a second one, per Blizzard, so there is nothing to gain from stacking applications.
 **Single target:** same order, but drop [[Consecration]] to conserve mana.

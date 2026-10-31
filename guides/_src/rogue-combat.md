@@ -1,6 +1,6 @@
 updated: October 31, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraft.blizzard.com/en-us/news/24310968 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Combat Rogue Guide|https://www.wowhead.com/forever/guide/classes/rogue/combat/level-20-dps-overview ;; Icy Veins — Combat Rogue PvE Guide|https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide ;; ClassicWoW.gg — Combat Rogue|https://classicwow.gg/forever/guides/rogue/combat
+sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraft.blizzard.com/en-us/news/24310968 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Combat Rogue Guide|https://www.wowhead.com/forever/guide/classes/rogue/combat/level-20-dps-overview ;; Icy Veins — Combat Rogue PvE Guide|https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide ;; ClassicWoW.gg — Combat Rogue|https://classicwow.gg/forever/guides/rogue/combat ;; WoWSims Forever — Rogue|https://www.wowsims.com/forever/rogue/dps/
 
 Sustained weapon damage with recurring burst windows, and **the only Rogue cleave in the game.** Two buttons while levelling.
 :::scope
@@ -21,11 +21,17 @@ Levelling guide, 1 to 60. The beta closed on October 23 at level 30, so nothing 
 ## Rotation
 **At level 20 all three Rogue specs play the same.** Icy Veins says so on its Assassination page. Wowhead's own three level-20 guides confirm it by being largely interchangeable: *"During the early stages of Rogue leveling, it is difficult to really differentiate the specializations."*
 1. From 20, [[Instant Poison]] on both weapons
-2. Open from [[Stealth]] with [[Ambush]]
-3. [[Backstab]] if you are behind the target, otherwise [[Sinister Strike]]
+2. Open from [[Stealth]] with [[Ambush]], or [[Garrote]] without a dagger in the main hand
+3. [[Backstab]] if you are behind the target with a dagger in the main hand, otherwise [[Sinister Strike]]
 4. At 5 combo points, [[Slice and Dice]] if the target will survive its duration
 5. Otherwise [[Eviscerate]] at 5 combo points
 **Multi-target: nothing until [[Blade Flurry]] is reachable.** It costs 25 energy for +20% melee speed and one extra nearby target for 15 seconds, on a 2-minute cooldown. ClassicWoW.gg calls it *"two-target pressure, not damage across an unlimited pack"*. It adds that *"the attack-speed benefit applies even on a single enemy, so do not hold it through a whole boss fight just because no add is present."*
+**What changes the answer:**
+- **[[Backstab]] or [[Sinister Strike]].** With the same dagger in hand, Backstab deals more per Energy at every level, even against the 40-Energy [[Sinister Strike]] that `Improved Sinister Strike` gives you, because its 150% also multiplies its flat bonus. It costs more per combo point, 60 Energy against 45, and it needs you behind the target. `Puncturing Wounds` at 3 points brings Backstab to about 41 Energy per point, close to the 40 of a talented [[Sinister Strike]]. The Sword Build has neither choice: [[Backstab]] and [[Ambush]] both need a dagger in the main hand, so [[Sinister Strike]] is its only builder.
+- **[[Slice and Dice]] speeds up your swings and nothing else.** It adds no Energy and no builder damage, so its 25 Energy has to come back through auto attacks: +20% melee speed at rank 1, +30% at rank 2, trained at 42. Five points last 21 seconds, one point lasts 9. Wowhead's advice is to refresh it as close to expiry as possible. At 60, WoWSims' list does not wait for 5: it recasts on any number of points the moment the buff falls off *(WoWSims' model)*. Icy Veins' levelling rotation spends at 5, and that is the list above.
+- **Hold Energy for the refresh.** At 60, with [[Slice and Dice]] under 2 seconds and at least one combo point, WoWSims' list stops building until it has recast, unless you are at 75 Energy or more *(WoWSims' model)*.
+- **Leave [[Rupture]] alone.** At 60, WoWSims' list casts it only with `Hemorrhage` on the target or `Thousand Cuts` learned, so a Combat Rogue never presses it *(WoWSims' model)*.
+- **`Adrenaline Rush`, from 40, is wasted near full Energy.** It doubles Energy regeneration for 15 seconds on a 5-minute cooldown, and Energy past the top of the bar is lost. WoWSims' list waits until you are at 50 Energy or less with [[Slice and Dice]] running *(WoWSims' model)*.
 ## Stat priority
 Weapon damage, then Hit and Expertise, Agility, critical strike, Strength, Stamina.
 Published gear advice adds: **slow main hand, fast off hand**, and *"Intellect and Spirit are wasted on a rogue."*

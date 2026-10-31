@@ -1,6 +1,6 @@
 updated: October 31, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Paladin|https://worldofwarcraft.blizzard.com/en-us/news/24302099 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Retribution Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-20-dps-overview ;; Icy Veins — Retribution Paladin Melee DPS Guide|https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide ;; ClassicWoW.gg — Ret Paladin|https://classicwow.gg/forever/guides/paladin/retribution ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes
+sources: Blizzard — Class Deep Dives: Paladin|https://worldofwarcraft.blizzard.com/en-us/news/24302099 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Retribution Paladin Guide|https://www.wowhead.com/forever/guide/classes/paladin/retribution/level-20-dps-overview ;; Icy Veins — Retribution Paladin Melee DPS Guide|https://www.icy-veins.com/wow-forever/retribution-paladin-melee-dps-pve-guide ;; ClassicWoW.gg — Ret Paladin|https://classicwow.gg/forever/guides/paladin/retribution ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes ;; WoWSims Forever — Retribution|https://www.wowsims.com/forever/paladin/retribution/
 
 Two-handed melee with Holy magic layered on top. **[[Holy Strike]] at level 6** turns it from auto-attack-and-wait into something you actually play, twenty levels earlier than Classic gave a Paladin a button.
 :::scope
@@ -33,12 +33,20 @@ Wowhead called that Holy-leaning "Shockadin" build the stronger PvE choice. It r
 **Neither build can actually twist seals.** Blizzard removed the baseline Seal Twisting that Classic and Classic Anniversary had, and the capstone in its place is `Unsealed Wrath` at 31 points in this tree. A level-20 or level-30 build labelled for twisting is a build for the weapon and the seal choice, not for the twist.
 ## Rotation
 1. **Always have a seal up**: [[Seal of Righteousness]], or [[Seal of Command]] once talented
-2. On anything that will survive several Judgements, **judge [[Seal of the Crusader]] first** for the Holy damage amplifier, then switch back. Blizzard states [[Judgement]] no longer consumes your active Seal, so this costs you mana and nothing else, and the debuff lasts 40 seconds. Blizzard also moved the Judgement half of `Improved Seal of the Crusader` into the class, so the amplifier needs no talent points
-3. **[[Holy Strike]]** on cooldown, as mana allows
-4. **[[Judgement]]** on cooldown, as mana allows
+2. On anything that will survive several Judgements, **judge [[Seal of the Crusader]] first** for the Holy damage amplifier, then switch back. Blizzard states [[Judgement]] no longer consumes your active Seal, so this costs you mana, two Seal casts and that Judgement's damage. The debuff lasts 40 seconds and your melee strikes refresh it. Blizzard also moved the Judgement half of `Improved Seal of the Crusader` into the class, so the amplifier needs no talent points
+3. **[[Judgement]]** on cooldown, as mana allows
+4. **[[Holy Strike]]** on cooldown, as mana allows
 5. With [[Seal of Command]], **[[Hammer of Justice]] first**: Judgement of Command hits far harder into a stunned target
-6. **[[Exorcism]]** against Undead and Demons only
-7. Maintain a Blessing and an Aura; top up with [[Holy Light]]
+6. **[[Hammer of Wrath]]** from level 44, on anything at 20% health or less
+7. **[[Exorcism]]** against Undead and Demons only
+8. Maintain a Blessing and an Aura; top up with [[Holy Light]]
+**Why that order, and when it changes:**
+- **[[Judgement]] takes no global cooldown,** so press it and [[Holy Strike]] together rather than choosing. WoWSims' level 60 list also leads with [[Judgement]] *(WoWSims' model)*. When mana runs short, [[Holy Strike]] is the last to go: it costs 12 at level 20, where your Seal costs 60 or 65.
+- **Is the Crusader opener worth it?** Not on a normal quest mob. At level 20 rank 2 adds about 15 to a [[Judgement]] or a [[Holy Strike]] and about 4 to a [[Seal of Righteousness]] swing with a two-hander, because it counts at each ability's spell power coefficient *(WoWSims' model)*. That takes about 11 more seconds of fighting just to repay the [[Judgement]] it spent, before the mana.
+- **[[Seal of Command]] against [[Seal of Righteousness]] depends on your white hit.** With a two-hander, Command pulls ahead once a white hit passes about 59 at level 20 and about 98 at 30 *(WoWSims' model, using its measured Righteousness formula and the seven procs a minute it carries from Classic)*. Near those figures the choice is close, which fits Wowhead's finding at 20.
+- **Recast a Seal only when it would run out before your next swing.** It pays only on swings, and it lasts 30 seconds *(WoWSims' model)*.
+- **Save [[Judgement]] for the stun when you can.** Rank 1 of Judgement of Command does 97 into a stunned target and 48.5 otherwise, and [[Hammer of Justice]] costs 30 Mana on a 1-minute cooldown, stunning for only 3 seconds at rank 1. The Seal's text also counts an incapacitated target, so `Repentance` opens the same window on a Humanoid.
+- **Fillers come last, and they are not equal.** On one target at level 20, [[Exorcism]] deals 79 for 85 Mana and [[Consecration]] 48 for 135, both before Spell Power. Use [[Consecration]] on packs. WoWSims' list stops both below 10% mana at 60 *(WoWSims' model)*.
 **Multi-target: none until 20.** Then [[Consecration]], and it is expensive: **135 Mana** at rank 1, on an 8-second cooldown. Blizzard limits what it can do on purpose: moderate damage to the first 4 enemies that walk into it, very low damage to everything after that, so Paladin threat stays level with a Warrior's Thunderclap. The thin damage on the fifth target is the design, and Blizzard says the limit keeps Forever out of expansion-era AoE pulling. The client agrees. Its rank 1 does 16 Holy damage over 8 seconds to anything in the area, with an extra 32 over 8 seconds for the first four.
 Later, `Sacred Arbiter` gives [[Holy Strike]] **+20% damage** and makes it refresh every Judgement effect on the target, **even those from other Paladins**, so staying in melee maintains them without re-judging. Blizzard puts it at the new 16-point gold medal, around level 25; the client's thinner text stops at the Judgements on the target without naming whose they are.
 ## Stat priority
@@ -51,7 +59,7 @@ Published gear lists split into a **Spell Power** build and an Attack Power buil
 ## What defines Retribution
 | Talent or ability | Earliest level | What it does |
 | --- | --- | --- |
-| **[[Holy Strike]]** | 6, baseline | Instant Holy damage worth **50% of your equipped weapon damage**, plus a bonus that grows with each new rank — Blizzard's own figure, and all of the damage is Holy. It has 8 ranks, and the one you train at 6 reads 25% of weapon damage plus a flat 12 Holy for 5 Mana, on a 10-second cooldown |
+| **[[Holy Strike]]** | 6, baseline | Instant Holy damage worth **50% of your equipped weapon damage**, plus a bonus that grows with each new rank — Blizzard's own figure, and all of the damage is Holy. It has 8 ranks, and the one you train at 6 reads 25% of weapon damage plus a flat 12 Holy for 5 Mana, on a 10-second cooldown. The percentage applies to that flat bonus too, so the 12 is worth 3 *(WoWSims' model)* |
 | **[[Seal of Command]]** | **exactly 20** | A chance on each swing at Holy damage worth **70% of normal weapon damage**, so it wants a slow two-hander, at 65 Mana for 30 seconds of it. Its Judgement does 48.5 Holy at rank 1 and **97 into a stunned or incapacitated target**. Blizzard's deep dive does not mention this Seal at all, so every figure here is the client's |
 | **`Benediction` + `Sanctified Judgement`** | 10 and 15 | The mana economy, and the reason the level-20 respec exists. `Benediction` takes **up to 10% off every instant-cast spell and ability**. `Sanctified Judgement` gives [[Judgement]] up to a 100% chance to refund up to 60% of the judged Seal's mana cost |
 ## What Forever changed for Retribution

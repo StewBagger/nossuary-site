@@ -1,6 +1,6 @@
 updated: October 31, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraft.blizzard.com/en-us/news/24310968 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Affliction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-20-dps-overview ;; Icy Veins — Affliction Warlock|https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-guide ;; ClassicWoW.gg — Aff Warlock|https://classicwow.gg/forever/guides/warlock/affliction ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes
+sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraft.blizzard.com/en-us/news/24310968 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Affliction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-20-dps-overview ;; Icy Veins — Affliction Warlock|https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-guide ;; ClassicWoW.gg — Aff Warlock|https://classicwow.gg/forever/guides/warlock/affliction ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes ;; WoWSims Forever — Warlock|https://www.wowsims.com/forever/warlock/dps/
 
 Stacked shadow damage-over-time spells plus channelled drains, *"for players who enjoy watching their enemies slowly rot away."*
 :::scope
@@ -32,7 +32,14 @@ Icy Veins and Wowhead order the opening DoTs differently, and both give a reason
 7. **Wand as filler.** The published note is explicit: *"At Level 20 with Greater Magic Wand, [[Shadow Bolt]] currently deals less damage for the time spent casting while also costing Mana and generating additional threat"*. Wowhead agrees for levelling generally: *"you'll use your wand more for damage because it deals more DPS than Shadow Bolt, and it's also mana-free"*. Both notes are from level 20, before wands needed a 0.5-second stand-still to fire
 8. **[[Drain Soul]]** to finish, for the shard
 9. **Stop spending mana when your existing effects will finish the enemy**
-From 30, [[Shadow Bolt]] becomes worth casting on `Nightfall` procs — but not while [[Drain Soul]] is still channelling. Starting another cast interrupts the channel, so take the free proc before you start Drain Soul, not during it. Use [[Life Tap]] *"ideally while moving."*
+Once you have `Nightfall`, [[Shadow Bolt]] becomes worth casting on its procs — but not while [[Drain Soul]] is still channelling. Starting another cast interrupts the channel, so take the instant bolt before you start Drain Soul, not during it. Use [[Life Tap]] *"ideally while moving."*
+**Why this order.** Mana figures here are the client's base numbers at the rank you hold around level 28, before gear and talents.
+- **Your effects are your best Mana.** Over a full duration, [[Bane of Agony]] returns 1.87 damage per point of Mana, [[Corruption]] 1.32 and [[Immolate]] 1.02, against 0.82 for [[Drain Life]] and 0.49 for [[Shadow Bolt]].
+- **[[Bane of Agony]] only pays if the enemy lasts.** The tooltip says it builds up. WoWSims runs its 12 ticks as four at half, four at full and four at one and a half, so half the duration delivers a third of the base damage *(WoWSims' model)*. That is the case for holding it on anything about to die.
+- **Let an effect run out before you recast it.** WoWSims' Affliction list recasts each one only after it has fallen, and its model discards the ticks still to come on an early recast *(WoWSims' model, at 60)*.
+- **WoWSims' list opens the way Wowhead does, without the threat argument.** It goes Bane of Agony, Corruption, [[Siphon Life]], curse, Immolate *(WoWSims' model, at 60)*. It has no threat condition, so it does not settle the levelling disagreement above.
+- **Drains go last once you have `Soul Siphon`.** On tier 5, so level 30 at the earliest, it gives [[Drain Life]], [[Drain Soul]] and `Wrack` 4, 8 or 12% per other Affliction effect on the target, counting three at most: up to 36% at 3/3, and nothing on a bare target.
+- **A `Nightfall` proc removes the cast time, not the cost.** The instant [[Shadow Bolt]] is still 160 Mana at rank 5, so skip it when Mana is what you are short of *(ours, not a source's)*.
 **Multi-target:** *"For maximum damage on AoE and only if the pack lives long enough, spread your DoTs first and then use [[Rain of Fire]]."* If the pack dies fast, skip the effects and go straight to Rain of Fire.
 ## Stat priority
 Spell Power, then Hit, Intellect, Spirit, critical strike, Stamina, Haste.

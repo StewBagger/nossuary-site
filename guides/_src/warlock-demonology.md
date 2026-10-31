@@ -1,6 +1,6 @@
 updated: October 31, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraft.blizzard.com/en-us/news/24310968 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Demonology Warlock|https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-20-dps-overview ;; Icy Veins — Demonology Warlock|https://www.icy-veins.com/wow-forever/demonology-warlock-ranged-dps-pve-guide ;; ClassicWoW.gg — Demo Warlock|https://classicwow.gg/forever/guides/warlock/demonology
+sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraft.blizzard.com/en-us/news/24310968 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Demonology Warlock|https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-20-dps-overview ;; Icy Veins — Demonology Warlock|https://www.icy-veins.com/wow-forever/demonology-warlock-ranged-dps-pve-guide ;; ClassicWoW.gg — Demo Warlock|https://classicwow.gg/forever/guides/warlock/demonology ;; WoWSims Forever — Warlock|https://www.wowsims.com/forever/warlock/dps/
 
 Your demon fights alongside you and your own damage keeps it alive. In Forever, demons scale with your gear.
 :::scope
@@ -31,6 +31,12 @@ Icy Veins and Wowhead order the opening DoTs differently, same as the other two 
 7. **Wand as filler** at level 20, standing still for the 0.5 seconds it needs to fire
 8. **[[Life Tap]]** when you need mana: *"With `Demonic Energies`, this will also restore Mana to your demon"*
 9. **[[Drain Soul]]** for shards
+**Why this order.** Mana figures here are the client's base numbers at the rank you hold around level 28, before gear and talents.
+- **Your effects are your best Mana.** Over a full duration, [[Bane of Agony]] returns 1.87 damage per point of Mana, [[Corruption]] 1.32 and [[Immolate]] 1.02, against 0.49 for [[Shadow Bolt]] or [[Searing Pain]].
+- **Fight length decides them.** WoWSims' Demonology lists cast an effect only if the fight will outlast its full duration, and recast it only after it has fallen *(WoWSims' model, at 60)*. [[Bane of Agony]] has the most to lose: WoWSims runs its 12 ticks as four at half, four at full and four at one and a half, so half the duration delivers a third of the base damage *(WoWSims' model)*.
+- **WoWSims opens with Bane of Agony in both lists, as Wowhead does.** They differ after it: Immolate then Corruption with the Imp, Corruption then Immolate with the Succubus *(WoWSims' model, at 60)*. Neither has a threat condition, so they do not settle the levelling disagreement above.
+- **Once you have `Demonic Brand`, [[Searing Pain]] is set-up as well as damage.** Each charge adds 20 to 23 damage at level 30, so the six charges at 3/3 are worth about 130 against the spell's own 33 if your demon lands them all inside the 10 seconds *(WoWSims' model)*. Its lists recast Searing Pain with under 2.5 seconds of brand left *(WoWSims' model, at 60)*.
+- **[[Hellfire]] out-damages [[Rain of Fire]] at 30, and it costs you as much as it deals.** Rank 1 does over 80 a second to everything nearby and the same to you, for 645 Mana. Rank 1 Rain of Fire does 21 a second for 295. WoWSims' lists use Hellfire at three or more targets within 5 yards and no Rain of Fire *(WoWSims' model, at 60)*. Solo, a few seconds of it is all your health can pay for *(ours, not a source's)*.
 **Multi-target:** spread [[Corruption]] and [[Bane of Agony]] while the demon holds the pack, then [[Rain of Fire]].
 ## Stat priority
 Spell Power, then Hit, Intellect, Spirit, critical strike, Stamina, Haste.

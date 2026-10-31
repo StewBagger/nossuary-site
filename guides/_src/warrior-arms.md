@@ -1,6 +1,6 @@
 updated: October 31, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Priest and Warrior|https://worldofwarcraft.blizzard.com/en-us/news/24301514 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Arms Warrior|https://www.wowhead.com/forever/guide/classes/warrior/arms/level-20-dps-overview ;; Icy Veins — Arms Warrior|https://www.icy-veins.com/wow-forever/arms-warrior-melee-dps-pve-guide ;; ClassicWoW.gg — Arms Warrior|https://classicwow.gg/forever/guides/warrior/arms
+sources: Blizzard — Class Deep Dives: Priest and Warrior|https://worldofwarcraft.blizzard.com/en-us/news/24301514 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Arms Warrior|https://www.wowhead.com/forever/guide/classes/warrior/arms/level-20-dps-overview ;; Icy Veins — Arms Warrior|https://www.icy-veins.com/wow-forever/arms-warrior-melee-dps-pve-guide ;; ClassicWoW.gg — Arms Warrior|https://classicwow.gg/forever/guides/warrior/arms ;; WoWSims Forever — Arms|https://www.wowsims.com/forever/warrior/dps/
 
 Two-handed burst with bleeds and a 50% healing debuff. **At level 20 both published Arms builds spend all eleven of their points in the Fury tree.** Arms' own engine sits at level 30 and beyond.
 :::scope
@@ -26,8 +26,15 @@ Icy Veins rates Warrior a poor leveller, one of the more difficult classes, "esp
 6. **[[Rend]]** early, only on something that lives out the bleed — it taps the enemy onto your threat table the instant it lands
 7. **[[Sunder Armor]]** once or twice; stop below 50% health
 8. **[[Slam]]**: only immediately after a white hit, until you have `Improved Slam`
+9. **[[Execute]]** from level 24, once the target is at 20% health or less
 **Multi-target: don't.** Kill one fast and [[Cleave]] once or twice as rage allows. [[Thunder Clap]] and [[Demoralizing Shout]] are damage reduction here, not damage. With a healer, pull two for the extra rage from damage taken.
 **Arms is the only Warrior spec whose published priority includes [[Slam]].** Steps 1 to 7 are Fury's seven abilities in the same order, worded a little differently.
+**The reasons behind the order:**
+- **[[Overpower]] comes first whenever it lights up.** 5 Rage buys weapon damage plus 5 on top of your normal swings, and it cannot be blocked, dodged or parried. The window stays open 5 seconds, so finishing a Global Cooldown first loses nothing.
+- **[[Rend]] beats [[Heroic Strike]] on anything that lives 15 seconds.** At level 24 Rend deals 45 for 10 Rage, 4.5 per Rage. Heroic Strike adds 44 to a swing for 15 Rage, 2.9 per Rage, and that swing earns no Rage (Icy Veins says so of [[Cleave]]; WoWSims treats both the same way). At 60 the Arms list holds Heroic Strike for 90 Rage, and never presses it once you have `Improved Slam` *(WoWSims' model)*.
+- **[[Slam]] waits for the swing because it delays the swing.** Blizzard says it stops doing that only with `Improved Slam`, so straight after a white hit is when the delay costs least. At 60 the list casts it within about 0.3 seconds of a main-hand hit, and drops that rule once its cast is shorter than a Global Cooldown *(WoWSims' model)*.
+- **Press [[Execute]] the moment you have 15 Rage.** Rank 1 deals 125 for 15, and each extra point adds only 3, so two at 15 Rage deal 250 where one at 30 deals 170. Stop putting Rage into [[Rend]] here; at 60 the list stops refreshing it and stops [[Slam]] too *(WoWSims' model)*.
+- **From 30 [[Rend]] does a second job.** `Bloodthrill` only works on a target with your own Rend, so past 30 keep it rolling on anything that lasts. At 60 the list refreshes it only with one Global Cooldown left, and opens any fight of two or more with `Sweeping Strikes`, 30 Rage for an extra target on your next 5 melee attacks *(WoWSims' model)*.
 ## Stat priority
 Weapon damage, then **Hit**, critical strike, Strength, Agility, Stamina. Slow and heavy: rage is normalized to weapon speed, and [[Slam]] and [[Mortal Strike]] both take their base from the weapon.
 ## What defines Arms

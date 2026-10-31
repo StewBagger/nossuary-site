@@ -1,6 +1,6 @@
 updated: October 31, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraft.blizzard.com/en-us/news/24310968 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Subtlety Guide|https://www.wowhead.com/forever/guide/classes/rogue/subtlety/level-20-dps-overview ;; Icy Veins — Subtlety Rogue PvE Guide|https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide ;; ClassicWoW.gg — Subtlety Rogue|https://classicwow.gg/forever/guides/rogue/subtlety
+sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraft.blizzard.com/en-us/news/24310968 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Subtlety Guide|https://www.wowhead.com/forever/guide/classes/rogue/subtlety/level-20-dps-overview ;; Icy Veins — Subtlety Rogue PvE Guide|https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide ;; ClassicWoW.gg — Subtlety Rogue|https://classicwow.gg/forever/guides/rogue/subtlety ;; WoWSims Forever — Rogue|https://www.wowsims.com/forever/rogue/dps/
 
 Stealth openers and a [[Rupture]]-driven bleed cycle, with no area damage of any kind.
 :::scope
@@ -23,6 +23,13 @@ Wowhead publishes **two different level 20 builds**, and neither is Subtlety-fla
 5. **Dagger-only alternative:** [[Gouge]] then [[Backstab]], but wait for near-maximum energy first
 **Once `Hemorrhage` is reachable:** use it to build, then [[Rupture]] immediately on long fights.
 **Multi-target: none.** Wowhead: *"No AoE capabilities whatsoever."*
+**What changes the answer:**
+- **[[Backstab]] or [[Sinister Strike]].** With the same dagger in hand, Backstab deals more per Energy at every level, even against the 40-Energy [[Sinister Strike]] that `Improved Sinister Strike` gives you, because its 150% also multiplies its flat bonus. It costs more per combo point, 60 Energy against 45, and it needs you behind the target.
+- **`Ghostly Strike` cannot be your only builder.** It costs 40 Energy and has a 20-second cooldown. At 60, WoWSims' list presses it ahead of every other builder whenever it is ready *(WoWSims' model)*.
+- **`Hemorrhage` is the cheap point, and its debuff only serves [[Rupture]].** 35 Energy, no cooldown, no need to be behind the target. The +15% lasts 15 seconds and a 5-point [[Rupture]] lasts 16. At 60, WoWSims' list casts [[Rupture]] on 3 or more points with the debuff up, without waiting for 5, and does not recast it while it is running *(WoWSims' model)*.
+- **`Premeditation` is lost if you sit on it.** 2 points on a 2-minute cooldown, gone after 20 seconds unless you add to them or spend them. You hold 5 at most, so WoWSims' list presses it only at 3 points or fewer *(WoWSims' model)*.
+- **`Cutthroat`, from 35: take the free [[Ambush]] at once.** WoWSims' list puts it above every builder and stops casting [[Backstab]] while it is up *(WoWSims' model)*. It still needs a dagger and you behind the target.
+- **`Thousand Cuts`, from 40, makes [[Rupture]] come first.** Each tick takes 3 Energy off your next `Hemorrhage` or [[Backstab]], up to 15. With it, WoWSims' list casts [[Eviscerate]] only with 4 seconds or more left on [[Rupture]], unless you are close to capping Energy *(WoWSims' model)*.
 ## Stat priority
 Weapon damage **favouring a slow main hand**, then Hit and Expertise, Agility, attack power, critical strike, Strength.
 This spec's list differs from the other two. The published example shows why: *"Between a 15 DPS weapon that has a 1.9 speed, and a 14 DPS weapon with a 2.8 speed, the 2.8 speed one will serve you better."*

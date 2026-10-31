@@ -1,6 +1,6 @@
 updated: October 31, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Feral Tank Druid|https://www.wowhead.com/forever/guide/classes/druid/feral/level-20-tank-overview ;; Icy Veins — Feral Druid|https://www.icy-veins.com/wow-forever/feral-druid-melee-dps-and-tank-pve-guide ;; ClassicWoW.gg — Bear Druid|https://classicwow.gg/forever/guides/druid/bear ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes
+sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Feral Tank Druid|https://www.wowhead.com/forever/guide/classes/druid/feral/level-20-tank-overview ;; Icy Veins — Feral Druid|https://www.icy-veins.com/wow-forever/feral-druid-melee-dps-and-tank-pve-guide ;; ClassicWoW.gg — Bear Druid|https://classicwow.gg/forever/guides/druid/bear ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes ;; WoWSims Forever — Feral Bear|https://www.wowsims.com/forever/druid/feralbear/
 
 Leather tanking in Bear Form on rage and dodge: no block, no parry. **This is your only combat form between levels 10 and 20**, so every Druid plays it whether they intend to tank or not.
 :::scope
@@ -25,12 +25,20 @@ The three-tank line-up of Protection Warrior, Protection Paladin and Feral Druid
 To 40, also ours, the tank reading adds `Predatory Strikes` 2, `Natural Instinct` 2, `Natural Reaction` 5 and `Primal Bite` 1, which makes 31 points. [[Leader of the Pack]] opens `Primal Bite`.
 ## Threat and mitigation rotation
 1. **[[Growl]]** to pull and to hold. Rage comes from taking hits and auto-attacking
-2. **[[Enrage]]**: 30 rage over 10 seconds on a 1-minute cooldown, *"at the cost of reducing your Armor slightly"*
+2. **[[Enrage]]** when you are short of rage for your next attack: 30 rage over 10 seconds on a 1-minute cooldown, *"at the cost of reducing your Armor slightly"*
 3. **[[Faerie Fire]]** to strip armour. In Forever it is usable in Bear, Dire Bear or Cat Form, which it was not in Classic. Per Blizzard it costs no resources in form but gains a 6-second cooldown, and it does not reset your swing timer. It generates threat in Bear and Dire Bear Form, and it cannot proc [[Omen of Clarity]] there
-4. **[[Maul]]** as your rage dump
-5. **[[Bash]]** to stun, and with `Brutal Impact` it comes back much faster
+4. **[[Demoralizing Roar]]** on whatever you are holding: 10 rage, 30 seconds, every nearby enemy
+5. **[[Lacerate]]** from 25, stacked to 5 and refreshed before it runs out
+6. **[[Maul]]** as your rage dump
+7. **[[Bash]]** to stun, and with `Brutal Impact` it comes back much faster
 Pre-buff [[Mark of the Wild]] and [[Thorns]]. Drop form to self-heal. [[Nature's Grasp]] to disengage: it works in form and indoors. [[Entangling Roots]] works indoors too, but you have to drop form to cast it.
 **Multi-target: [[Swipe]], and know its limit.** Swipe hits three targets, and `Primal Bite` at 40 is single-target, so Swipe's three is your whole answer. Swipe scales with Attack Power, gaining 3% of it. Blizzard says the in-game tooltip will not show this until a future update, so the ability's own text is wrong in the meantime.
+**What changes the answer:**
+- **When to press [[Enrage]].** When rage is what stops your next attack, not on cooldown. It lowers your base armour by 27% in Bear Form and comes back only after a minute, and 10 of its rage arrives at once. WoWSims' model holds it the same way *(WoWSims' model)*.
+- **Refreshing [[Lacerate]].** Early, unlike a Cat's bleeds. The stacks are the value: the first application hits for nothing, and each later one adds 10% weapon damage per stack already there. WoWSims' model reapplies a 5-stack with 3 seconds left *(WoWSims' model)*. Rank 1 is only 20 damage over 15 seconds per stack, and the tooltip's "high amount of threat" has no number in the client, so it is a button for long fights rather than quick pulls.
+- **[[Swipe]] or [[Lacerate]].** [[Swipe]] from two targets. At 30, with `Feral Instinct` 3/3 and `Ferocity` 5, rank 2 deals 32.5 to each for 15 rage, so 65 across two, against 20 over 15 seconds from one [[Lacerate]]. WoWSims' model swaps at two targets too, at 60 once one of them bleeds, for `Rend and Tear` *(WoWSims' model)*.
+- **Holding rage from [[Maul]].** [[Maul]] adds a flat amount to your next swing, 37 at 26 to 33. So it comes after everything else, on rage you can spare. From 40, WoWSims' model keeps it unqueued while `Primal Bite` is about to come back unless the rage covers both *(WoWSims' model)*.
+- **Rage as health, from 36.** [[Frenzied Regeneration]] converts up to 10 rage a second for 10 seconds at 1% health per point, on a 3-minute cooldown, so it heals by what you are holding. Keep rage back on a dangerous pull rather than dumping it into [[Maul]] *(ours, not a source's)*. WoWSims' model presses it at 25% health, and [[Barkskin]] at 60% from 44 *(WoWSims' model)*.
 ## Stat priority
 **Stamina and armour first**, then Agility (dodge *and* more armour), then Defense.
 Bear Form multiplies your gear's armour, so a leather piece with a high armour number beats the same stats on cloth. **The weapon's damage now counts in Bear Form, and more damage means more threat**, so choose the weapon on its stats *and* its damage together. Blizzard describes the mechanism: auto-attack DPS in Bear, Cat or Dire Bear Form equals your weapon's DPS outright. The swing speed is a fixed 2.5 seconds in Bear and Dire Bear, 1.0 second in Cat Form, and weapon-damage abilities use the same numbers. Blizzard publishes the two speeds but not which form takes which, so that pairing is ours, not a source's.

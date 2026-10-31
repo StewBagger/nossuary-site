@@ -1,6 +1,6 @@
 updated: October 31, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Mage and Shaman|https://worldofwarcraft.blizzard.com/en-us/news/24302097 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Frost Mage|https://www.wowhead.com/forever/guide/classes/mage/frost/level-20-dps-overview ;; Icy Veins — Frost Mage|https://www.icy-veins.com/wow-forever/frost-mage-ranged-dps-pve-guide ;; ClassicWoW.gg — Frost Mage|https://classicwow.gg/forever/guides/mage/frost ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes
+sources: Blizzard — Class Deep Dives: Mage and Shaman|https://worldofwarcraft.blizzard.com/en-us/news/24302097 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Frost Mage|https://www.wowhead.com/forever/guide/classes/mage/frost/level-20-dps-overview ;; Icy Veins — Frost Mage|https://www.icy-veins.com/wow-forever/frost-mage-ranged-dps-pve-guide ;; ClassicWoW.gg — Frost Mage|https://classicwow.gg/forever/guides/mage/frost ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes ;; WoWSims Forever — Frost|https://www.wowsims.com/forever/mage/dps/
 
 Freeze the target, then hit it for **four times the damage** (+300%). Icy Veins: *"with `Frostbite`, melee enemies will often not even reach you before killing them."*
 :::scope
@@ -33,6 +33,11 @@ Two Blizzard changes make that order legal: `Shatter` no longer requires `Improv
 4. Melee on you → **[[Frost Nova]]**, back away, [[Ice Lance]] as you retreat
 5. **Wand** to finish low-health enemies rather than spending mana
 6. From 30, a `Fingers of Frost` charge treats your next spell as if the target were frozen. Spend it on [[Ice Lance]] when that is ready and on [[Frostbolt]] when it is not
+- **Never press [[Ice Lance]] on an unfrozen target.** At 25, before spell damage, it hits for about 30 unfrozen and 119 frozen, where [[Frostbolt]] hits for 73. Frozen it beats the bolt and takes no cast; unfrozen it costs you the bolt's damage.
+- **[[Fire Blast]] and [[Ice Lance]] share a cooldown.** Casting either puts 8 seconds on both, so a Fire Blast finisher can leave you without Ice Lance for the next freeze. Use the wand instead.
+- **[[Frost Nova]] is the freeze you can schedule.** `Frostbite` 3/3 rolls 15% per Chill, which averages 6.7 bolts, or about 17 seconds at a 2.6-second cast. Frost Nova is on a 25-second cooldown, so use it when a target reaches you. WoWSims' boss cannot be frozen this way, so its list has nothing to say here *(WoWSims' model)*.
+- **From 39, [[Cone of Cold]] waits for 5 stacks of `Winter's Chill` on a single target.** At 5/5 that is 100% more damage, and WoWSims casts it only at 5 stacks *(WoWSims' model)*. It reaches 10 yards, so it only fits a target you have let close.
+- **From 40, keep [[Ice Barrier]]'s damage bonus running.** The 15% lasts 60 seconds whether or not the shield breaks, on a 30-second cooldown. WoWSims recasts with 3 seconds left *(WoWSims' model)*.
 **Multi-target:** [[Flamestrike]] while you hold no threat, then [[Arcane Explosion]] once you do: *"Arcane Explosion… has higher DPS than Blizzard until we get more talent points."*
 ## Stat priority
 Icy Veins is the only one of the three tracked sources that ranks Frost's stats; its order:

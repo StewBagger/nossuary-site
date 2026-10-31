@@ -1,6 +1,6 @@
 updated: October 31, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Mage and Shaman|https://worldofwarcraft.blizzard.com/en-us/news/24302097 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Enhancement Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-20-dps-overview ;; Icy Veins — Enhancement Shaman PvE Guide|https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide ;; ClassicWoW.gg — Enhancement Shaman|https://classicwow.gg/forever/guides/shaman/enhancement
+sources: Blizzard — Class Deep Dives: Mage and Shaman|https://worldofwarcraft.blizzard.com/en-us/news/24302097 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Enhancement Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-20-dps-overview ;; Icy Veins — Enhancement Shaman PvE Guide|https://www.icy-veins.com/wow-forever/enhancement-shaman-melee-dps-pve-guide ;; ClassicWoW.gg — Enhancement Shaman|https://classicwow.gg/forever/guides/shaman/enhancement ;; WoWSims Forever — Enhancement|https://www.wowsims.com/forever/shaman/enhancement/
 
 Melee weapon damage that feeds your spellcasting: [[Stormstrike]] and `Maelstrom Weapon` turn swings into [[Lightning Bolt]]s. **The spec the sources agree on for levelling**, and the one build two independent sources publish identically.
 :::scope
@@ -30,6 +30,12 @@ Levelling guide, 1 to 60. The beta closed on October 23 at level 30, so nothing 
 6. **[[Fire Nova]]** with an active Fire totem
 7. **Auto-attack**: most of your damage
 **From 25, insert [[Stormstrike]]** before your [[Lightning Bolt]] or [[Earth Shock]]: 8-second cooldown, +20% for 12 seconds.
+**Why this order.** Figures here are the client's base numbers around level 20, before gear.
+- **`Shamanistic Focus` makes Shocks your cheap damage.** With it, [[Earth Shock]] returns 1.05 damage per point of Mana, [[Frost Shock]] 1.04 and [[Flame Shock]] 1.24 over its full 12 seconds, against 1.02 for [[Lightning Bolt]]. All three are instant, so Shocks go on cooldown and the Bolt stays a pull.
+- **The three Shocks share a 6-second cooldown, so pick by fight length.** WoWSims' single-target list keeps [[Flame Shock]] up and uses [[Earth Shock]] in the gaps *(WoWSims' model, at 60)*. The published advice above is Earth Shock alone. On anything that lives 12 seconds, Flame Shock's 65 beats Earth Shock's 49 for about the same Mana. On shorter fights, Earth Shock lands it all at once *(ours, not a source's)*.
+- **[[Fire Nova]] is for packs.** It gets no `Shamanistic Focus` discount, so on one target it returns about half what a Shock does. WoWSims' single-target list has it last *(WoWSims' model, at 60)*.
+- **Spend [[Stormstrike]] on something worth it.** Its 20% reaches only your next [[Lightning Bolt]], [[Chain Lightning]] or [[Earth Shock]]. [[Flame Shock]] and [[Frost Shock]] get nothing, and a rank-1 Bolt wastes it.
+- **From 35, wait for five `Maelstrom Weapon` charges.** At 5/5 each charge takes 20% off the next Bolt's cast time and Mana, so five make it instant and free. WoWSims' list holds the Bolt until then *(WoWSims' model, at 60)*.
 **Multi-target: [[Fire Nova]]**, 32 to 38 damage for 65 Mana at rank 1. One published guide's advice stands: *"especially early, Enhancement really needs to be engaging things one at a time."*
 ## Stat priority
 Weapon DPS on a **slow two-hander**, then Hit and Expertise, critical strike, Strength, Intellect, Agility, Spell Power, Spirit, Stamina.

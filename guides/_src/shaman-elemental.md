@@ -1,6 +1,6 @@
 updated: October 31, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Mage and Shaman|https://worldofwarcraft.blizzard.com/en-us/news/24302097 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Elemental Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/elemental/level-20-dps-overview ;; Icy Veins — Elemental Shaman PvE Guide|https://www.icy-veins.com/wow-forever/elemental-shaman-ranged-dps-pve-guide ;; ClassicWoW.gg — Elemental Shaman|https://classicwow.gg/forever/guides/shaman/elemental
+sources: Blizzard — Class Deep Dives: Mage and Shaman|https://worldofwarcraft.blizzard.com/en-us/news/24302097 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Elemental Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/elemental/level-20-dps-overview ;; Icy Veins — Elemental Shaman PvE Guide|https://www.icy-veins.com/wow-forever/elemental-shaman-ranged-dps-pve-guide ;; ClassicWoW.gg — Elemental Shaman|https://classicwow.gg/forever/guides/shaman/elemental ;; WoWSims Forever — Elemental|https://www.wowsims.com/forever/shaman/elemental/
 
 Ranged caster mixing hard lightning casts with Shocks, interrupts and totems. **Its new talents arrive from 25 on**: `Earthbound` is the 16-point milestone at 25, `Lightning Overload` and [[Lava Burst]] sit at 21 points, level 30, and `Elemental Mastery` is the 31-point capstone at 40.
 :::scope
@@ -28,8 +28,15 @@ Wowhead's case for spending in Restoration is that mana, and [[Water Shield]] fi
 1. **Pre-place your totems** before the pull. [[Call of the Elements]] at 20 does it in one button. [[Searing Totem]] goes last, because it starts attacking
 2. **[[Lightning Bolt]]** to pull
 3. **[[Flame Shock]]**, refreshed on anything long-lived
-4. **Back to [[Lightning Bolt]]**
-**Multi-target: [[Fire Nova]] on cooldown at three or more enemies.** It requires an active Fire totem and hits softly, 32 to 38 damage at rank 1, so [[Chain Lightning]] takes over from level 32 *(ours, not a source's)*.
+4. **[[Lava Burst]]** from 30, on cooldown while your Flame Shock is on the target
+5. **Back to [[Lightning Bolt]]**
+**Why this order.** Figures here are the client's base numbers, before gear and talents.
+- **[[Lightning Bolt]] is your Mana spell, and Shocks buy speed.** Around level 28, Bolt rank 5 returns 0.96 damage per point of Mana, [[Flame Shock]] rank 3 returns 0.62 over its full 12 seconds, and [[Earth Shock]] rank 4 returns 0.56. That is why Flame Shock waits for something long-lived.
+- **[[Flame Shock]] before [[Lava Burst]].** The 20% bonus lifts rank 1 from 0.91 to 1.09 per point of Mana, past Bolt. WoWSims' list casts Lava Burst only while Flame Shock is up *(WoWSims' model, at 60)*.
+- **You get one Shock at a time.** The three share a 6-second cooldown. WoWSims' list recasts Flame Shock only after it has fallen *(WoWSims' model, at 60)*.
+- **Spend Clearcasting on the expensive spell.** `Elemental Focus` makes your next damage spell free, so a proc saves 160 Mana on rank 3 Flame Shock and 85 on rank 5 Bolt *(ours, not a source's)*.
+- **Rank down when Mana runs short, at 60.** Below 20% Mana, WoWSims' list drops from Bolt rank 10 to rank 8 *(WoWSims' model)*. Rank 8 returns 1.01 per point of Mana and rank 10 returns 0.89.
+**Multi-target: [[Fire Nova]] on cooldown at three or more enemies, with [[Chain Lightning]] between from level 32.** It requires an active Fire totem and hits softly early, 32 to 38 damage at rank 1. Rank 3 at 32 hits about 130 on every enemy near the totem, about 390 across three, where Chain Lightning rank 1 totals about 190 across three. WoWSims' list also puts it ahead of Chain Lightning, from two targets *(WoWSims' model, at 60)*.
 ## Stat priority
 Spell Power, then Hit, Haste, critical strike, Intellect, MP5, Spirit, Stamina.
 **Nature damage and plain spell power lead equally.** Then comes *"Intellect, which is how many bolts you get before you have to sit down."* Take leather over cloth where the stats are otherwise equal.

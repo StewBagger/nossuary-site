@@ -1,6 +1,6 @@
 updated: October 31, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraft.blizzard.com/en-us/news/24310968 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Assassination Guide|https://www.wowhead.com/forever/guide/classes/rogue/assassination/level-20-dps-overview ;; Icy Veins — Assassination Rogue PvE Guide|https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-guide ;; ClassicWoW.gg — Assassination Rogue|https://classicwow.gg/forever/guides/rogue/assassination
+sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraft.blizzard.com/en-us/news/24310968 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Assassination Guide|https://www.wowhead.com/forever/guide/classes/rogue/assassination/level-20-dps-overview ;; Icy Veins — Assassination Rogue PvE Guide|https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-guide ;; ClassicWoW.gg — Assassination Rogue|https://classicwow.gg/forever/guides/rogue/assassination ;; WoWSims Forever — Rogue|https://www.wowsims.com/forever/rogue/dps/
 
 Poison pressure on a single target, built around [[Mutilate]]. It needs **21 Assassination talent points**, which is the whole argument about this spec.
 :::scope
@@ -25,12 +25,19 @@ Levelling guide, 1 to 60. The beta closed on October 23 at level 30, so nothing 
 ## Rotation
 **At level 20 all three Rogue specs play the same.** Icy Veins says so on its own Assassination guide. Wowhead's three level-20 guides confirm it by being largely interchangeable: *"During the early stages of Rogue leveling, it is difficult to really differentiate the specializations."*
 1. From 20, [[Instant Poison]] on both weapons
-2. Open from [[Stealth]] with [[Ambush]]
-3. [[Backstab]] behind the target, otherwise [[Sinister Strike]]
+2. Open from [[Stealth]] with [[Ambush]], or [[Garrote]] without a dagger in the main hand
+3. [[Backstab]] behind the target with a dagger in the main hand, otherwise [[Sinister Strike]]
 4. At 5 combo points, [[Slice and Dice]] if the target will survive its duration
 5. Otherwise [[Eviscerate]] at 5 combo points
-**Once [[Mutilate]] is reachable**, it becomes your builder in place of Backstab/Sinister Strike, with [[Slice and Dice]] upkeep unchanged.
+**Once [[Mutilate]] is reachable**, it becomes your builder in place of Backstab/Sinister Strike, with [[Slice and Dice]] upkeep unchanged and [[Deadly Poison]] on one weapon.
 **Multi-target: no source publishes an Assassination area rotation.** `Remorseless Attacks` *"heavily incentivizes pulling multiple mobs"*, but that rewards chain-killing rather than cleaving.
+**What changes the answer:**
+- **[[Backstab]] or [[Sinister Strike]].** With the same dagger in hand, Backstab deals more per Energy at every level, even against the 40-Energy [[Sinister Strike]] that `Improved Sinister Strike` gives you, because its 150% also multiplies its flat bonus. It costs more per combo point, 60 Energy against 45, and it needs you behind the target.
+- **Finish at 5 with `Relentless Strikes`.** Each point is a 20% chance of 25 Energy back, so five is certain and four is 80%. A 5-point [[Slice and Dice]] can refund its whole cost.
+- **[[Slice and Dice]] speeds up your swings and nothing else.** It adds no Energy and no builder damage, so its 25 Energy has to come back through auto attacks: +20% melee speed at rank 1, +30% at rank 2, trained at 42. Five points last 21 seconds, one point lasts 9. Wowhead's advice is to refresh it as close to expiry as possible. At 60, WoWSims' list does not wait for 5: it recasts on any number of points the moment the buff falls off *(WoWSims' model)*. Icy Veins' levelling rotation spends at 5, and that is the list above.
+- **[[Mutilate]] wins on cost per point.** 60 Energy for 2 points is 30 per point, and it does not need you behind the target. A cast at 4 points wastes one, so WoWSims' list finishes at 4 once [[Mutilate]] is known *(WoWSims' model)*.
+- **[[Mutilate]]'s bonus needs a poison on the target.** [[Instant Poison]] deals its damage and leaves nothing behind, so on both weapons it earns no +20%. [[Deadly Poison]], from level 30, stays on the target. WoWSims' preset is Instant on the main hand and Deadly on the off hand, and it counts only Deadly and Wound as poisoned *(WoWSims' model)*.
+- **At 40 and up, your finishers change.** Blizzard expects `Venom` and [[Slice and Dice]] upkeep to take your finishers, with [[Rupture]] and [[Eviscerate]] lower. At 60, WoWSims' list keeps [[Slice and Dice]] first, casts `Venom` on 3 or more points when it is down, then spends on [[Eviscerate]], never [[Rupture]]. It saves `Cold Blood` for a 5-point [[Eviscerate]] *(WoWSims' model)*.
 ## Stat priority
 Weapon damage, then Hit and Expertise, Agility, critical strike, Strength, Stamina.
 Published gear advice adds: **slow main hand, fast off hand**, and *"Intellect and Spirit are wasted on a rogue."*

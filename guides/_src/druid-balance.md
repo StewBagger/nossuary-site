@@ -1,6 +1,6 @@
 updated: October 31, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Balance Druid Guide|https://www.wowhead.com/forever/guide/classes/druid/balance/level-20-dps-overview ;; Icy Veins — Balance Druid|https://www.icy-veins.com/wow-forever/balance-druid-ranged-dps-pve-guide ;; ClassicWoW.gg — Balance Druid|https://classicwow.gg/forever/guides/druid/balance ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes
+sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Balance Druid Guide|https://www.wowhead.com/forever/guide/classes/druid/balance/level-20-dps-overview ;; Icy Veins — Balance Druid|https://www.icy-veins.com/wow-forever/balance-druid-ranged-dps-pve-guide ;; ClassicWoW.gg — Balance Druid|https://classicwow.gg/forever/guides/druid/balance ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes ;; WoWSims Forever — Balance|https://www.wowsims.com/forever/druid/balance/
 
 Arcane and Nature caster with the new `Eclipse` mechanic — [[Wrath]] shortens your next [[Starfire]], so you alternate rather than spam one spell.
 :::scope
@@ -23,8 +23,14 @@ At these levels the rotation is short.
 1. **Apply and maintain [[Moonfire]]**
 2. **Maintain [[Insect Swarm]]** if you have it. It is a tier-4 Balance talent, so level 25 at the earliest
 3. **Spam [[Wrath]]**
-That is all of it below 30. From level 40 the intent is [[Moonkin Form]] → both damage-over-time effects → [[Wrath]] to four `Eclipse` charges → [[Starfire]] to consume them, but the beta stopped before anyone could play it.
+That is all of it below 30. From level 40 the intent is [[Moonkin Form]] → both damage-over-time effects → one [[Wrath]] for two `Eclipse` charges → two [[Starfire]]s to spend them, but the beta stopped before anyone could play it.
 **Multi-target: there isn't one until [[Hurricane]] trains at 40.** Before that you multi-dot [[Moonfire]] and split packs with [[Entangling Roots]], which `Overgrowth` raises to 3 targets at once.
+**What changes the answer**, on tooltip numbers before spell power:
+- **[[Wrath]] or [[Starfire]].** Mana decides it. At 30 with `Improved Wrath` 5/5, [[Wrath]] deals 49 for 35 Mana, or 1.4 per Mana, and [[Starfire]] deals 119 for 135, or 0.9. Per second of casting they are level, 33 against 34. `Improved Starfire` 5/5 lifts [[Starfire]] to 40 a second, so it finishes a mob faster if you have the Mana to spare.
+- **Recasting [[Moonfire]].** Do not, while it runs. At 30 a second cast adds a 55 hit for 150 Mana, where [[Wrath]] deals 49 for 35. WoWSims' model also recasts it only once it has gone *(WoWSims' model)*. Its instant hit is still your best button on the move.
+- **[[Insect Swarm]] on a dying target.** It deals nothing up front. At 30, rank 2 needs 4 of its 6 ticks, 8 seconds, to out-damage one [[Wrath]]. At 25 to 29, rank 1 needs all 6, so on anything that will die sooner, cast [[Wrath]].
+- **[[Starfire]] with `Eclipse`.** Cast it as soon as a charge is up. One [[Wrath]] gives 2 charges, which is two [[Starfire]]s, and stacking to the cap of 4 only spends more time on [[Wrath]]. WoWSims' model does this at 60 *(WoWSims' model)*. There, with `Improved Starfire` 5/5 and `Eclipse` 3/3, one [[Wrath]] and two [[Starfire]]s deal 132 a second against 127 for [[Starfire]] alone, so the gain is small and it grows with spell power.
+- **[[Hurricane]] or single-target.** At 40, rank 1 deals 69 a second to each enemy in it, and [[Wrath]] rank 6 with `Improved Wrath` 5/5 deals 40. On two targets [[Hurricane]] already leads on speed and about matches that [[Wrath]] per Mana, but one channel costs 880. At 60 WoWSims' model waits for four targets *(WoWSims' model)*. The client shows why spell power pushes that way: each tick takes 0.03 of it, where [[Wrath]] takes 0.57.
 ## Stat priority
 Item level, then Spell Power, Intellect, Haste, critical strike, Spirit.
 *"Focus on equipping your highest level pieces"* while levelling. More specifically: Arcane damage for [[Moonfire]] and [[Starfire]], with plain Spell Power worth the same, and Nature damage good for [[Wrath]] alone. Then Intellect. **Between two otherwise equal pieces the leather one wins**, for the armour. Stamina sits near the bottom.

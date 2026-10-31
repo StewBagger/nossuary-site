@@ -1,6 +1,6 @@
 updated: October 31, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Priest and Warrior|https://worldofwarcraft.blizzard.com/en-us/news/24301514 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Warrior Updates, October 2|https://us.forums.blizzard.com/en/wow/t/warrior-updates-in-todays-beta-build/2369360 ;; Wowhead — Level 20 Fury Warrior|https://www.wowhead.com/forever/guide/classes/warrior/fury/level-20-dps-overview ;; Icy Veins — Fury Warrior|https://www.icy-veins.com/wow-forever/fury-warrior-melee-dps-pve-guide ;; ClassicWoW.gg — Fury Warrior|https://classicwow.gg/forever/guides/warrior/fury
+sources: Blizzard — Class Deep Dives: Priest and Warrior|https://worldofwarcraft.blizzard.com/en-us/news/24301514 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Warrior Updates, October 2|https://us.forums.blizzard.com/en/wow/t/warrior-updates-in-todays-beta-build/2369360 ;; Wowhead — Level 20 Fury Warrior|https://www.wowhead.com/forever/guide/classes/warrior/fury/level-20-dps-overview ;; Icy Veins — Fury Warrior|https://www.icy-veins.com/wow-forever/fury-warrior-melee-dps-pve-guide ;; ClassicWoW.gg — Fury Warrior|https://classicwow.gg/forever/guides/warrior/fury ;; WoWSims Forever — Fury|https://www.wowsims.com/forever/warrior/dps/
 
 Dual-wield rage dump, except that **the spec's own gimmick is unavailable the whole time you level towards it**: you cannot dual-wield until 20.
 :::scope
@@ -30,7 +30,14 @@ It is still our extension rather than a published build — no source had posted
 5. **[[Overpower]]** on a dodge
 6. **[[Rend]]** early, if it lives — it taps the enemy onto your threat table the instant it lands
 7. **[[Sunder Armor]]** once or twice, stopping below 50%
+8. **[[Execute]]** from level 24, once the target is at 20% health or less
 **Multi-target: avoid it.** [[Cleave]] once or twice; the shouts are mitigation, not damage.
+**The reasons behind the order:**
+- **[[Overpower]] comes first whenever it lights up.** 5 Rage buys weapon damage plus 5 on top of your normal swings, and the window stays open 5 seconds.
+- **[[Rend]] beats [[Heroic Strike]] on anything that lives 15 seconds.** At level 24 Rend deals 45 for 10 Rage, 4.5 per Rage. Heroic Strike adds 44 to a swing for 15 Rage, 2.9 per Rage, and that swing earns no Rage (Icy Veins says so of [[Cleave]]; WoWSims treats both the same way).
+- **Press [[Execute]] the moment you have 15 Rage.** Rank 1 deals 125 for 15, and each extra point adds only 3, so two at 15 Rage deal 250 where one at 30 deals 170. At 60 the list puts it above [[Whirlwind]] and [[Bloodthirst]] *(WoWSims' model)*.
+- **From 30, count the Rage before you leave `Berserker Stance`.** [[Overpower]] needs [[Battle Stance]], [[Rend]] needs Battle or Defensive, and changing stance keeps only 10 Rage, or up to 25 with `Improved Tactical Mastery`. Swapping at 40 Rage on this page's build throws away 30, so swap when you are low. At 60 the list, keeping 25, swaps for Overpower only at 73 Rage or less *(WoWSims' model)*.
+- **At 60 the list goes [[Whirlwind]], then [[Bloodthirst]], then [[Heroic Strike]] only at 40 Rage or more** *(WoWSims' model)*. Whirlwind costs 25 and Bloodthirst 30, so a Heroic Strike at 15 Rage can leave you short of both.
 ## Stat priority
 Weapon damage, then **Hit**, then critical strike, Strength, Agility, Stamina. Hit matters *especially* while dual-wielding, because a missed swing is rage you never earn. Crit pulls double duty: a critical strike generates 100% increased Rage on top of the crit's extra damage.
 `Dual Wield Specialization` gives **+25% off-hand damage** and **+50% off-hand Rage** at 5/5, +5% and +10% per rank (client; Blizzard has published neither figure). Any 50% off-hand damage you see quoted belongs to the Rogue talent of the same name. Off-hand Hit comes from the row 3 talent `Furious Precision` (+4/7/10%), a separate 3 points rather than riding along with DWS's 5.

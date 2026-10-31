@@ -1,6 +1,6 @@
 updated: October 31, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Mage and Shaman|https://worldofwarcraft.blizzard.com/en-us/news/24302097 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Fire Mage|https://www.wowhead.com/forever/guide/classes/mage/fire/level-20-dps-overview ;; Icy Veins — Fire Mage|https://www.icy-veins.com/wow-forever/fire-mage-ranged-dps-pve-guide ;; ClassicWoW.gg — Fire Mage|https://classicwow.gg/forever/guides/mage/fire ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes
+sources: Blizzard — Class Deep Dives: Mage and Shaman|https://worldofwarcraft.blizzard.com/en-us/news/24302097 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Fire Mage|https://www.wowhead.com/forever/guide/classes/mage/fire/level-20-dps-overview ;; Icy Veins — Fire Mage|https://www.icy-veins.com/wow-forever/fire-mage-ranged-dps-pve-guide ;; ClassicWoW.gg — Fire Mage|https://classicwow.gg/forever/guides/mage/fire ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes ;; WoWSims Forever — Fire|https://www.wowsims.com/forever/mage/dps/
 
 Pure damage and nothing else *(ours)*. Forever finally makes [[Pyroblast]] a spell you cast during a fight instead of before it.
 :::scope
@@ -26,6 +26,12 @@ Fire is not written off, though: *"The AoE leveling potential of Fire is also re
 4. **[[Fire Blast]] to finish** anything non-trivial
 5. **Wand heavily** at low level rather than spending mana
 From 25, use [[Fire Blast]] on cooldown to build stacks: *"Use `Hot Streak` [now `Heating Up`] as soon as it reaches 3 stacks"*, and keep the `Improved Scorch` stack up on long fights.
+- **Hold [[Pyroblast]] for 3 stacks while the target has health to spare.** A cast spends every stack unless [[Presence of Mind]] made it instant, so a Pyroblast at 1 stack throws them away. At 25 the hit does about 90 damage per second of casting at 3 stacks and 23 at none, where a [[Fireball]] with `Accelerant` 5 does 40. That gap is why an uncut Pyroblast belongs on the pull.
+- **Two stacks will do on a dying target.** That is a 3-second cast, the same as a [[Fireball]] with `Accelerant` 5, and Pyroblast's hit is the larger at every level from 20 to 60.
+- **[[Fire Blast]] is the stack source you can count on.** It adds one even without a crit, so three in a row take 16 seconds, or 12 with `Improved Fire Blast` 2/2, inside the 20-second buff. That holds on any fight long enough, whatever your crit.
+- **From 25, [[Fireball]] unless [[Fire Blast]] is about to come back.** WoWSims casts Fireball only when Fire Blast will stay on cooldown through the cast, and [[Scorch]] otherwise *(WoWSims' model)*. A 1.5-second Scorch cannot hold Fire Blast back the way a 3-second Fireball can.
+- **Build the `Improved Scorch` stack when a fight will outlast its cost.** Five Scorches followed by Fireballs catch up with Fireballs alone after 8 to 15 seconds, across levels 28 to 50 with no spell damage *(ours, not a source's)*. The stack lasts 30 seconds on that target; WoWSims refreshes it with under 5 left *(WoWSims' model)*.
+- **At 60, [[Frostfire Bolt]] does not replace [[Fireball]] in a pure Fire build.** WoWSims' Fire list keeps Fireball, and only its Fire and Frost hybrid fills with Frostfire Bolt *(WoWSims' model)*.
 **Multi-target.** Tanked: [[Flamestrike]], then [[Blast Wave]] (if you took it at 30), then [[Arcane Explosion]]. Solo: gather, [[Frost Nova]], [[Flamestrike]] plus [[Cone of Cold]], then kite with [[Arcane Explosion]] and [[Blast Wave]].
 ## Stat priority
 Icy Veins is the only one of the three tracked sources that ranks Fire's stats; its order:
