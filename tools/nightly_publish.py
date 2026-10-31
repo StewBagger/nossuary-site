@@ -98,6 +98,20 @@ def tool(name: str, prefix: str) -> str:
     return line
 
 
+def advisory(name: str, prefix: str) -> None:
+    """Run a check whose result is recorded and can never stop a publish."""
+    print(f"-- {name} (advisory)", flush=True)
+    try:
+        p = subprocess.run((PY, f"tools/{name}"), cwd=ROOT, capture_output=True, text=True,
+                           timeout=120)
+    except (OSError, subprocess.SubprocessError) as e:
+        report[prefix] = f"did not run: {e}"
+        return
+    print(p.stdout, end="", flush=True)
+    lines = [ln.strip() for ln in p.stdout.splitlines() if ln.startswith(f"{prefix}:")]
+    report[prefix] = lines[-1] if lines else f"no verdict line, exit {p.returncode}"
+
+
 # `XY path`, where X or Y may be a space -- and where git()'s strip() may already
 # have eaten a leading one. Anchored on the status pair, so the path survives either.
 PORCELAIN = re.compile(r"^\s*\S{1,2}\s+(?:.*->\s+)?(.+)$")
@@ -150,6 +164,7 @@ def main() -> None:
                 dirty=dirty)
 
     before = entries_at("HEAD")
+    advisory("check_talent_builds.py", "check-talents")
 
     # ---- rebuild the index ---------------------------------------------------
     v = tool("build_spell_index.py", "spell-index")

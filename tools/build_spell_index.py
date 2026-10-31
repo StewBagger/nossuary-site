@@ -59,7 +59,8 @@ API = "https://wago.tools"
 TABLES = ("SpellName", "SpellMisc", "SpellLevels", "SkillLineAbility", "ItemSparse",
           "Item", "Talent", "Spell", "SpellEffect", "SpellCastTimes", "SpellPower",
           "SpellRange", "SpellCooldowns", "SpellDuration", "SpellRadius",
-          "SpellAuraOptions", "SpellTargetRestrictions")
+          "SpellAuraOptions", "SpellTargetRestrictions", "SpellDescriptionVariables",
+          "SpellXDescriptionVariables")
 
 # Spot-checks against the guides' own prose. A rank rule that breaks these is wrong.
 # These are not decoration: the first rule tried here (lowest non-zero BaseLevel) put
@@ -95,7 +96,59 @@ VERIFY_DESC = {
     "Soul Siphon": "36",                       # ${}   warlock-affliction.md: "up to 36%"
     "Distract": "1 level lower",               # $l..; singular, because the number is 1
     "Improved Distract": "2 levels",           # $l..; plural, because the number is 2
+    # The forms the 70707 text brought in, each read against the rendering foreverchanges
+    # gives the same row. Only Life Tap disagrees and that is a hotfix: see VERIFY_ROW.
+    "Revenge": "(20 + 22.5% of attack power) to",  # $<var>, $apm, and a $?a71 held stance
+    "Victory Rush": "(1 + 15% of attack power)",   # $apm over its own third effect
+    "Explosive Trap": "105 to 135 Fire damage",    # $<id>s1, rolled, and grown to level 40
+    "Mutilate": "Awards 2 Combo Points",           # $L..; a word from its number
+    "Eviscerate": "1 point : 6-10 damage",         # $mN $MN $bN $<mult>
+    "Execute": "into 3 additional damage",         # $*10;F1
+    "Frostbolt": "causing 19 to 21 Frost damage",  # $m2$*$<frostdamage>
+    "Piercing Howl": "within 10 yds",              # $a2 on a row holding one effect
+    "Power Word: Shield": "absorbing 48 damage",   # $?a14748[..][..], on rank 1 alone
+    "Mana Shield": "Drains 2 mana per damage",     # $e
 }
+
+# EVERY ROW BELOW WAS A DEFECT. Read by hand out of build 1.60.1.70707, one id per name, and
+# each is the row SkillLineAbility gives the class that trains it. Before the rule in
+# resolve() these rendered a creature, a trainer or another rank (the 2026-10-31 audit
+# found them; "Teaches Backstab (Rank 9)." was on every Rogue page). The rule should hold
+# these by itself, so a failure here means a build moved a row or the rule broke, and
+# either way the chip must not republish in silence. Checked after enrichment, because
+# the swap that caused all this runs there. A (name, class) key reads by_class.
+#
+# These pin the row and not its figures. Life Tap's row reads 30 Health where the game
+# says 60: an October hotfix changed its rider 18182, and chips stay on the base client.
+VERIFY_ROW: dict[object, int] = {
+    "Ambush": 8676, "Backstab": 53, "Cheap Shot": 1833, "Eviscerate": 2098, "Garrote": 703,
+    "Gouge": 1776, "Mutilate": 1310707, "Rupture": 1943, "Sinister Strike": 1752,
+    "Slice and Dice": 5171,
+    "Arcane Blast": 400574, "Arcane Explosion": 1449, "Blizzard": 10, "Cone of Cold": 120,
+    "Frost Nova": 122, "Frostbolt": 116, "Ice Barrier": 11426, "Mana Shield": 1463,
+    "Demoralizing Shout": 1160, "Defensive Stance": 71, "Execute": 5308, "Revenge": 6572,
+    "Piercing Howl": 12323, "Whirlwind": 1680, "Weaponmaster": 1290261,
+    "Master of Defense": 1310316,
+    "Entangling Roots": 339, "Pounce": 9005, "Rake": 1822, "Ravage": 6785, "Rip": 1079,
+    "Shred": 5221, "Thorns": 467, ("Claw", "druid"): 1082, ("Cure Poison", "druid"): 8946,
+    ("Lacerate", "druid"): 414644, ("Tranquility", "druid"): 740,
+    "Holy Nova": 15237, "Power Word: Shield": 17, "Prayer of Healing": 596,
+    "Psychic Scream": 8122, "Silence": 15487,
+    "Chain Heal": 1064, "Chain Lightning": 421, "Flametongue Weapon": 8024,
+    "Searing Totem": 3599,
+    "Immolate": 348, "Life Tap": 1454, "Voidwalker": 697, "Malevolence": 1310949,
+    "Demonic Brand": 1293695,
+    "Explosive Trap": 13813,
+}
+
+# The two strings a Hunter or Warrior reader caught by eye: a cost in the wrong resource at
+# ten times the figure, and a cast time of -1000 seconds.
+VERIFY_STAT = {("Heroic Strike", "cost"): "15 Rage", ("Backstab", "cost"): "60 Energy",
+               ("Thunderstomp", "cost"): "60 Focus", ("Frostbolt", "cost"): "25 Mana",
+               ("Arcane Blast", "cost"): "15% of base Mana",
+               ("Arcane Shot", "cast"): "Instant", ("Serpent Sting", "cast"): "Instant",
+               ("Concussive Shot", "cast"): "Instant", ("Scorpid Sting", "cast"): "Instant",
+               ("Viper Sting", "cast"): "Instant"}
 
 # Two spells whose template resolves to a figure the guides directly contradict. Both
 # read $sN/$mN off an effect whose aura is the engine's dummy (4) and whose base points
@@ -155,10 +208,17 @@ VERIFY_CLASS = {("Deflection", "hunter"): 19295, ("Deflection", "paladin"): 2006
 # The three weapon racials kept their ids and lost their weapon condition in the launch
 # client (wowf 1.60.1.70685): Sword/Axe/Mace Specialization became Ruthless/Savage/Earth
 # Fury, and those old names now belong only to non-racial rows (4350.., 4334.., 4366..).
-VERIFY_RACIAL = {"Ruthless": 20597,               # Human, +2% crit, any weapon
-                 "Savage": 20574,                 # Orc, +1% crit, any weapon
-                 "Earth Fury": 1259719,           # Dwarf, +2% crit damage and healing
-                 "Stoneform": 20594,              # Dwarf, bleed/poison/disease immunity
+#
+# THESE ASSERT THE ROW, NOT THE FIGURE. The base client still reads 2% on Ruthless where
+# Blizzard's October 26 racial pass makes it 1%, and it still carries Savage and Earth Fury,
+# which that pass removed: hotfixes reach neither wago.tools nor this index. So the notes
+# below say only which racial a row is. A figure written here is one a future client
+# would falsify, and the id is what a regression would change. A name the guides stop
+# using is skipped, not failed: that is an edit to the prose, not a broken resolver.
+VERIFY_RACIAL = {"Ruthless": 20597,               # Human
+                 "Savage": 20574,                 # Orc
+                 "Earth Fury": 1259719,           # Dwarf
+                 "Stoneform": 20594,              # Dwarf
                  "War Stomp": 20549}              # Tauren, and it carries no desc
 
 # WHERE THE NAME IS AMBIGUOUS AND THE TABLES CANNOT SETTLE IT. Rank and trainable level
@@ -186,6 +246,20 @@ FORCE_ID: dict[object, int] = {
     "Cutthroat": 462708,              # 424980 carries no usable text
     ("Berserk", "druid"): 417141,     # 23397 is a creature's 30-second Shadow aura
     ("Lacerate", "druid"): 414644,    # 414647 is empty and stamped level 1
+    # Talent names no table above can reach. Talent.db2 still points Weaponmaster at 12284,
+    # the old mace half, and the merged row 1290261 is on no skill line, but it is the
+    # only row naming all three weapons. Master of Defense's 23602 is the Rage it pays out
+    # and drops the chance entirely; 1310316 is the talent. Its base points read 0, so it
+    # shows no text: see the guard in effect_value(). Malevolence's 449919 reads "up to 50
+    # increased damage" where 1310949 is the Shadow crit talent Blizzard's dive describes,
+    # and Demonic Brand's 1293699 is what a brand deals, not the talent that applies it.
+    "Weaponmaster": 1290261,
+    "Master of Defense": 1310316,
+    "Malevolence": 1310949,
+    "Demonic Brand": 1293695,
+    # The guides name the pet. 5108 is a creature's 180-second summon of one, so a reader
+    # saw a three-minute Voidwalker; 697 is the spell the Warlock trains.
+    "Voidwalker": 697,
     # 53672 is the WRATH-ERA talent and it was winning on id order: "next Flash of
     # Light by 0.75 sec OR next Holy Light crit by 10%". Forever's own 426065 reads
     # "Holy Shock AND Flash of Light crits reduce your next Holy Light cast", which is
@@ -204,6 +278,12 @@ FORCE_ID: dict[object, int] = {
 # re-running after any build bump:
 #   chosen id in 30k..400k, while a >400k candidate with a description exists.
 
+# SpellPower.PowerType -> (the word the client prints, how many stored units make one).
+# Rage is stored x10, the same convention $/10; undoes in tooltips: Heroic Strike's 150 is
+# the 15 Rage the game charges. Types outside this map are not a price a chip can state
+# (4 is combo points), and -2 is health, whose amount sits in the template, not the row.
+POWER = {0: ("Mana", 1), 1: ("Rage", 10), 2: ("Focus", 1), 3: ("Energy", 1)}
+
 SCHOOLS = {1: "Physical", 2: "Holy", 4: "Fire", 8: "Nature",
            16: "Frost", 32: "Shadow", 64: "Arcane"}
 
@@ -212,32 +292,59 @@ SCHOOLS = {1: "Physical", 2: "Holy", 4: "Fire", 8: "Nature",
 # means effect 1. Anything still carrying a $ after the passes below is NOT shown: a
 # half-resolved string on a public page is the failure this guards against.
 #
-#   per effect     $sN $mN $MN $SN base points   $oN total over the duration
-#                  $aN radius      $tN tick period   $xN chain targets   $qN misc value
+#   per effect     $mN $MN the low and high end of a rolled value, $sN $SN $wN the value
+#                  $oN total over the duration     $aN radius     $tN tick period
+#                  $xN chain targets  $qN misc value  $bN per combo point  $eN amplitude
+#                  $FN chain amplitude (Execute's damage per point of Rage)
 #   per spell      $d duration  $n proc charges  $h proc chance  $i max targets
-#   directives     ${...} arithmetic   $/N;<ref> divide   $lone:many;   $gmale:female;
-#                  ${...}.N -- print the expression to N decimal places
+#                  $u max stacks  $r range
+#   directives     ${...} arithmetic   $/N;<ref> divide   $*N;<ref> multiply
+#                  $lone:many;   $gmale:female;   ${...}.N -- print to N decimal places
+#                  $?a1[yes][no] -- the reader's own state, see branches() in resolve_desc
+#                  $<name> -- a named variable, see load_details
+#   gear           $apm $AP attack power, $rap $RAP ranged, printed as a share of it;
+#                  $SPI and the spell-power family read 0: see GEAR_TOKENS
 #
-# Left deliberately unresolved, each for a reason in resolve_desc: $?...[a][b] (runtime
-# state), $@spelldesc<id> (another tooltip), $<mult> and friends (named client variables),
-# $b $bh $bc $rap $AP (spell-power and attack-power scaling), $u $e $z $c $r $p (one or
-# two spells each, and no value to check them against).
-EFFECT_TOKENS = "smMSoatxq"   # $<letter>N -- indexed on one of the spell's effects
-SPELL_TOKENS = "dnhi"         # $<letter>  -- a property of the whole spell, never indexed
+# Left deliberately unresolved, each for a reason in resolve_desc: $@spelldesc<id> (another
+# tooltip), $PL and any $?$PL ladder (the reader's level), $z $c $p (one or two spells
+# each, and no value to check them against).
+EFFECT_TOKENS = "smMSoatxqbewF"   # $<letter>N -- indexed on one of the spell's effects
+SPELL_TOKENS = "dnhiur"           # $<letter>  -- a property of the whole spell, never indexed
 DUMMY_AURA = 4               # the engine's scripted-talent aura; its base points are a flag
+
+# Gear a build cannot see. Attack power is printed the way the client prints it, as
+# "(20 + 22.5% of attack power)", because that ratio IS the fact: Revenge at 22.5% and
+# Victory Rush at 15% say how the ability scales, and a flat 20 would hide it. Spirit and
+# spell power are read as 0, which is the tooltip of a character wearing nothing: Life
+# Tap's template multiplies Spirit in, and its own next sentence already says so.
+ATTACK_POWER = {"apm": "attack power", "AP": "attack power",
+                "rap": "ranged attack power", "RAP": "ranged attack power"}
+GEAR_TOKENS = "SPI|SPFR|SPFI|SPS|SPN|SPH|SPA|SPD|SP|spfi|sps|bh|bc"
+
+# The reader's state for a $?a<id> test is "untalented, no auras", because that is the
+# tooltip a level-appropriate reader meets -- with one exception. Defensive Stance (71)
+# reads as held, not absent: `Revenge` is only usable in it, so its other branch, 25%, is
+# a figure no player can ever see. The client prints 22.5.
+HELD_AURAS = {71}
 
 TOKEN_RE = re.compile(r"""\$(?:
       \{[^{}]*\}(?:\.\d)?          # ${ $m1*3 } -- arithmetic, optionally to N decimals
-    | /\d+;\d*[a-zA-Z]\d*          # $/1000;S1 -- divide the reference that follows
+    | [/*]\d+;\d*[a-zA-Z]\d*       # $/1000;S1 -- divide the reference that follows
     | [lL][^:;$\s]*:[^;$]*;        # $lpoint:points; -- singular:plural
     | g[^:;$\s]*:[^;$]*;           # $ghis:her; -- male:female
     | <[^>]*>                      # $<mult> -- a named client variable
+    | (?:apm|AP|rap|RAP|%s)(?![a-zA-Z0-9])   # gear the build cannot see
     | \d*[a-zA-Z]\d*               # $s1  $m2  $12536s1  $d  $n
-)""", re.X)
+)""" % GEAR_TOKENS, re.X)
 
 # $lone:many; is settled after the numbers are in, because which form is right depends on
 # the number that ends up in front of it.
 PLURAL_RE = re.compile(r"\$[lL]([^:;$\s]*):([^;$]*);")
+
+# A $? test the resolver can answer: has-spell, has-aura and $p, the last only ever a
+# talent's rider on a Druid heal, joined by & or |. Anything
+# else, $PL above all, needs the reader's level and is left for the $ check to drop.
+TEST_RE = re.compile(r"!?(?:[as]|\$p)\d+(?:[&|]!?(?:[as]|\$p)\d+)*")
 
 CHIP_RE = re.compile(r"\[\[([^\]]+)\]\]")
 TICK_RE = re.compile(r"`([^`]+)`")
@@ -331,14 +438,40 @@ def load_details(build: str) -> dict:
             "base": number(r, "EffectBasePointsF"),
             "aura": int(number(r, "EffectAura")),
             "period": number(r, "EffectAuraPeriod"),
-            "radius": radius_of.get(int(number(r, "EffectRadiusIndex_0")), 0.0),
+            # The second slot is the row's other target: Explosive Trap's burn holds its
+            # 10 yards there and the first reads 0.
+            "radius": (radius_of.get(int(number(r, "EffectRadiusIndex_0")))
+                       or radius_of.get(int(number(r, "EffectRadiusIndex_1")), 0.0)),
             "chain": int(number(r, "EffectChainTargets")),
             "misc": int(number(r, "EffectMiscValue_0")),
+            # Variance is the width of a rolled value as a share of its middle: Revenge's
+            # 22 at 0.1538 is the client's "20 to 24", which is what $m1 and $M1 read.
+            "half": abs(number(r, "EffectBasePointsF")) * number(r, "Variance") / 2,
+            "per": number(r, "EffectPointsPerResource"),
+            "amp": number(r, "EffectAmplitude"),
+            "chain_amp": number(r, "EffectChainAmplitude"),
+            "grow": number(r, "EffectRealPointsPerLevel"),
         }
+
+    # A rank's figure grows with the caster's level until the rank's own MaxLevel, and
+    # the base points are its value at BaseLevel. Read at the top of that span, as every
+    # client-sourced figure these guides cite is: Life Tap rank 1 is 20 at level 6 and the
+    # 60 Health the game states by 16, Immolate's 8 is 11. A row with no MaxLevel has no
+    # span: its figure follows the reader, so it stays what the row holds.
+    for r in table("SpellLevels", build):
+        try:
+            sid = int(r["SpellID"])
+            low, high = int(number(r, "BaseLevel")), int(number(r, "MaxLevel"))
+        except (ValueError, TypeError, KeyError):
+            continue
+        if high > low:
+            for e in effects.get(sid, {}).values():
+                e["base"] += e["grow"] * (high - low)
 
     # Charges and proc chance are per spell, not per effect, and live on their own table.
     charges: dict[int, int] = {}
     chance: dict[int, int] = {}
+    stacks: dict[int, int] = {}
     for r in table("SpellAuraOptions", build):
         try:
             sid = int(r["SpellID"])
@@ -347,6 +480,7 @@ def load_details(build: str) -> dict:
         if sid not in charges:
             charges[sid] = int(number(r, "ProcCharges"))
             chance[sid] = int(number(r, "ProcChance"))
+            stacks[sid] = int(number(r, "CumulativeAura"))
 
     targets: dict[int, int] = {}
     for r in table("SpellTargetRestrictions", build):
@@ -379,14 +513,46 @@ def load_details(build: str) -> dict:
             except (ValueError, TypeError):
                 continue
 
-    cost: dict[int, int] = {}
-    for r in table("SpellPower", build):
+    # Named variables live in their own two tables, bound per spell: $<mult> on Eviscerate
+    # and $<frostdamage> on Frostbolt are talent multipliers, $<APRatio> on Revenge is the
+    # share of attack power. Each body is more template, so it is read when it is used.
+    var_text = {}
+    for r in table("SpellDescriptionVariables", build):
+        if r.get("ID", "").isdigit():
+            var_text[int(r["ID"])] = {
+                m.group(1): m.group(2).strip()
+                for m in re.finditer(r"\$(\w+)=(.*?)(?=\$\w+=|\Z)", r.get("Variables") or "",
+                                     re.S)}
+    variables: dict[int, dict[str, str]] = {}
+    for r in table("SpellXDescriptionVariables", build):
         try:
-            sid, mana = int(r["SpellID"]), int(float(r.get("ManaCost") or 0))
+            variables[int(r["SpellID"])] = var_text.get(
+                int(r["SpellDescriptionVariablesID"]), {})
         except (ValueError, TypeError, KeyError):
             continue
-        if mana > 0:
-            cost.setdefault(sid, mana)
+
+    # Every row used to read as Mana, so Heroic Strike printed "150 Mana": a Warrior
+    # chip stated the wrong resource at ten times the figure, and a Rogue's Energy
+    # was Mana too. PowerType says which. Only the lowest OrderIndex is the price: a
+    # rogue's finisher carries a second row, type 4, for the combo points it consumes.
+    cost: dict[int, str] = {}
+    cost_at: dict[int, int] = {}
+    for r in table("SpellPower", build):
+        try:
+            sid, amount = int(r["SpellID"]), number(r, "ManaCost")
+            kind, pct = int(number(r, "PowerType")), number(r, "PowerCostPct")
+            at = int(number(r, "OrderIndex"))
+        except (ValueError, TypeError, KeyError):
+            continue
+        if kind not in POWER or at >= cost_at.get(sid, 99):
+            continue
+        name, per = POWER[kind]
+        if amount > 0:
+            cost[sid], cost_at[sid] = f"{figure(amount / per)} {name}", at
+        elif pct > 0:
+            # Forever's percentage costs: Arcane Blast holds ManaCost 0 and 15 here. Reading
+            # ManaCost alone left the whole family with no cost row at all.
+            cost[sid], cost_at[sid] = f"{figure(pct)}% of base {name}", at
 
     cd: dict[int, float] = {}
     for r in table("SpellCooldowns", build):
@@ -413,7 +579,8 @@ def load_details(build: str) -> dict:
         })
 
     return {"effects": effects, "desc": desc, "cost": cost, "cd": cd, "misc": misc,
-            "charges": charges, "chance": chance, "targets": targets}
+            "charges": charges, "chance": chance, "targets": targets, "stacks": stacks,
+            "vars": variables}
 
 
 def secs(ms: float) -> str:
@@ -424,6 +591,16 @@ def figure(v: float) -> str:
     """One resolved number as a tooltip prints it, with -0.0 normalised away."""
     v = round(v, 4)
     return f"{v if v else 0.0:g}"
+
+
+def printed(v: float) -> str:
+    """A number as it reaches the sentence, as opposed to figure()'s working precision.
+
+    The client prints whole numbers once a value is big enough to be one: Mutilate's
+    17.25 is 17, Rupture's 24.72 is 25, Seal of the Crusader's 35.2 is 35, while small
+    figures keep their fraction, Flametongue's 4.71 and Seal of Righteousness's 3.48.
+    """
+    return figure(round(v)) if abs(v) >= 10 else figure(round(v, 2))
 
 
 def arithmetic(expr: str) -> float | None:
@@ -504,6 +681,79 @@ def resolve_desc(sid: int, d: dict) -> str | None:
     if not text:
         return None
 
+    working = 0  # >0 while computing a variable, see one()
+
+    def branches(body: str) -> str:
+        """Settle every $?test[yes][no], which may chain and nest.
+
+        A test asks about the reader, who is not here, so it is answered for the reader
+        these guides are written to: no talents and no auras (see HELD_AURAS). PW:S and
+        Rejuvenation carry a talent multiplier in a branch on rank 1 alone, and refusing
+        those is what took rank 1 down and put rank 2's tooltip on the chip. A test on
+        anything else -- above all $PL, the reader's level -- is left in place and the
+        leftover $ drops the description: that one really cannot be answered here.
+        """
+        def bracket(at: int) -> tuple[str, int]:
+            depth, i = 0, at
+            while i < len(body):
+                depth += {"[": 1, "]": -1}.get(body[i], 0)
+                i += 1
+                if not depth:
+                    return body[at + 1:i - 1], i
+            return "", -1
+
+        def holds(test: str) -> bool:
+            one_of = []
+            for clause in test.split("|"):
+                every = []
+                for t in clause.split("&"):
+                    has = t.lstrip("!")[0] == "a" and int(t.lstrip("!")[1:]) in HELD_AURAS
+                    every.append(not has if t.startswith("!") else has)
+                one_of.append(all(every))
+            return any(one_of)
+
+        out, at = [], 0
+        while (start := body.find("$?", at)) >= 0:
+            out.append(body[at:start])
+            at, chosen = start, None
+            while body.startswith("$?", at):
+                m = TEST_RE.match(body, at + 2)
+                if not m or body[m.end():m.end() + 1] != "[":
+                    return "".join(out) + body[start:]
+                yes, at = bracket(m.end())
+                if at < 0:
+                    return "".join(out) + body[start:]
+                if chosen is None and holds(m.group(0)):
+                    chosen = yes
+            if body[at:at + 1] == "[":
+                no, at = bracket(at)
+                if at < 0:
+                    return "".join(out) + body[start:]
+                chosen = no if chosen is None else chosen
+            out.append(branches(chosen or ""))
+        out.append(body[at:])
+        return "".join(out)
+
+    def variable(name: str, seen: frozenset = frozenset()) -> float | None:
+        """A $<name>'s value, or None if its body cannot be read at build time."""
+        body = d["vars"].get(sid, {}).get(name)
+        if body is None or name in seen:
+            return None
+
+        def inner(m: re.Match) -> str:
+            v = variable(m.group(1), seen | {name})
+            return m.group(0) if v is None else figure(v)
+
+        nonlocal working
+        settled = re.sub(r"\$<(\w+)>", inner, branches(body))
+        working += 1
+        settled = TOKEN_RE.sub(one_signed, settled)
+        working -= 1
+        try:
+            return float(settled)
+        except ValueError:
+            return None
+
     def duration(spell: int) -> float | None:
         """A spell's duration in ms, or None when the field is not a length.
 
@@ -515,18 +765,34 @@ def resolve_desc(sid: int, d: dict) -> str | None:
         ms = d["misc"].get(spell, {}).get("dur", 0.0)
         return None if ms <= 0 else ms
 
+    def rolled(e: dict) -> tuple[float, float]:
+        """The two ends of a rolled value, rounded as the client rounds them."""
+        return float(round(e["base"] - e["half"])), float(round(e["base"] + e["half"]))
+
     def effect_value(spell: int, letter: str, n: int, signed: bool) -> float | None:
         e = d["effects"].get(spell, {}).get(n - 1)
+        if e is None and letter == "a":
+            # Piercing Howl's template says $a2 and its row holds one effect: the template
+            # outlived a second effect. A radius belongs to the spell's area, so any
+            # effect's will do where the one named is gone.
+            return next((x["radius"] for x in d["effects"].get(spell, {}).values()
+                         if x["radius"]), None)
         if e is None:
             return None
-        if letter in "smMS":
+        if letter in "smMSw":
             # 0 and "no such field" are the same byte in the CSV, and every description
             # that resolved a 0 here read as nonsense -- "a 0% chance to gain an extra
             # attack" (Reckoning), "Increases your dodge chance by 0%" (Natural Reaction).
             # Eight of those were live before this guard.
+            # ... UNLESS it is another spell's, inside arithmetic. Life Tap multiplies by
+            # (1+$18182m1/100) and Ice Barrier by ($11189s3/100+1): a talent's rider that
+            # holds nothing yet, which is 0 in the sum and never reaches the sentence.
             if not e["base"]:
-                return None
-            return e["base"] if signed else abs(e["base"])
+                return 0.0 if signed and spell != sid else None
+            base = e["base"]
+            if letter in "mM" and e["half"]:
+                base = rolled(e)[0 if letter == "m" else 1]
+            return base if signed else abs(base)
         if letter == "o":
             # The total a periodic effect deals over its whole duration: one tick's base
             # points times however many ticks fit. Bloodrage checks it exactly -- base 10
@@ -544,6 +810,12 @@ def resolve_desc(sid: int, d: dict) -> str | None:
             return e["chain"] or None
         if letter == "q":
             return e["misc"] or None
+        if letter == "b":
+            return e["per"] or None
+        if letter == "e":
+            return e["amp"] or None
+        if letter == "F":
+            return e["chain_amp"] or None
         return None
 
     def spell_value(spell: int, letter: str) -> float | None:
@@ -561,6 +833,10 @@ def resolve_desc(sid: int, d: dict) -> str | None:
             return v if 0 < v < 100 else None
         if letter == "i":
             return d["targets"].get(spell) or None
+        if letter == "u":
+            return d["stacks"].get(spell) or None
+        if letter == "r":
+            return d["misc"].get(spell, {}).get("rng") or None
         return None
 
     def reference(tok: str, signed: bool = False) -> float | None:
@@ -584,9 +860,22 @@ def resolve_desc(sid: int, d: dict) -> str | None:
             # Signed values inside the braces: the template writes the sign into the
             # expression, so ${$m2/-1000} over base points of -30000 is the 30 second
             # cooldown cut Brutal Impact states, and abs() first would print -30.
-            inner = TOKEN_RE.sub(one_signed, expr.group(1))
+            # Frostbolt writes its product as "$m2$*$<frostdamage>"; the extra $ is noise.
+            inner = TOKEN_RE.sub(one_signed, expr.group(1).replace("$*$", "*$"))
             if "$" in inner:
                 return tok
+            # Attack power comes through as a marker: the expression is computed with it
+            # at nothing and at 100 to split the flat part from the share. See ATTACK_POWER.
+            marker = re.search(r"@(\w+)@", inner)
+            if marker:
+                word = re.sub(marker.re, "%s", inner)
+                flat = arithmetic(word % "0")
+                share = arithmetic(word % "100")
+                if flat is None or share is None or flat < 0 or share <= flat:
+                    return tok
+                what = ATTACK_POWER[marker.group(1)]
+                part = f"{figure(share - flat)}% of {what}"
+                return f"({figure(flat)} + {part})" if flat else part
             v = arithmetic(inner)
             # A negative result means the sign convention is not the one assumed here.
             # That is a guess rather than a reading, so it is left to drop the string.
@@ -597,14 +886,22 @@ def resolve_desc(sid: int, d: dict) -> str | None:
             # points over /-1000 is the 0.1 sec it has always cut, and Infusion of Light's
             # -750 is 0.75 -- one tagged .1 and the other .2, which is the whole proof.
             dp = expr.group(2)
-            return f"{v:.{int(dp)}f}" if dp else figure(v)
+            if dp:
+                return f"{v:.{int(dp)}f}"
+            # A variable's body is a step in a sum, not a sentence: printed() would take
+            # Revenge's 0.225 to 0.23 and publish "23% of attack power".
+            return figure(v) if working else printed(v)
 
-        div = re.fullmatch(r"\$/(\d+);(\d*[a-zA-Z]\d*)", tok)
+        div = re.fullmatch(r"\$([/*])(\d+);(\d*[a-zA-Z]\d*)", tok)
         if div:
             # $/1000;S1 -- the client stores milliseconds, tenths of rage and tenths of a
             # percent, and divides on the way out. Bane's -500 is the 0.5 sec it states.
-            n, v = int(div.group(1)), reference("$" + div.group(2))
-            return tok if not n or v is None else figure(abs(v) / n)
+            # $*10;F1 is the same directive the other way up: Execute's 3 damage per Rage
+            # is 0.3 per stored tenth.
+            n, v = int(div.group(2)), reference("$" + div.group(3))
+            if not n or v is None:
+                return tok
+            return figure(abs(v) * n if div.group(1) == "*" else abs(v) / n)
 
         gender = re.fullmatch(r"\$g([^:;$\s]*):([^;$]*);", tok)
         if gender:
@@ -615,21 +912,39 @@ def resolve_desc(sid: int, d: dict) -> str | None:
         if PLURAL_RE.fullmatch(tok):
             return tok  # settled below, once the number in front of it is known
 
+        named = re.fullmatch(r"\$<(\w+)>", tok)
+        if named:
+            v = variable(named.group(1))
+            return tok if v is None else figure(v)
+
         v = reference(tok)
         if v is None:
             return tok
         if re.fullmatch(r"\$\d*d", tok):
             return f"{secs(v * 1000)} sec"
-        return figure(v)
+        bare = re.fullmatch(r"\$(\d*)[sSw](\d*)", tok)
+        if bare:
+            # A bare value on a rolled effect prints its range. The midpoint is a number the
+            # client never shows: Explosive Trap reads "105 to 135", not 120.
+            e = d["effects"].get(int(bare.group(1) or sid), {}).get(int(bare.group(2) or 1) - 1)
+            if e and e["half"]:
+                low, high = rolled(e)
+                return f"{figure(abs(low))} to {figure(abs(high))}"
+        return printed(v)
 
     def one_signed(m: re.Match) -> str:
         tok = m.group(0)
+        gear = re.fullmatch(r"\$([a-zA-Z]{2,4})", tok)
+        if gear and gear.group(1) in ATTACK_POWER:
+            return f"@{gear.group(1)}@"
+        if gear and re.fullmatch(GEAR_TOKENS, gear.group(1)):
+            return "0"
         if TOKEN_RE.fullmatch(tok) and re.fullmatch(r"\$\d*[a-zA-Z]\d*", tok):
             v = reference(tok, signed=True)
             return tok if v is None else figure(v)
         return one(m)
 
-    out = TOKEN_RE.sub(one, text)
+    out = TOKEN_RE.sub(one, branches(text))
     # One more pass: ${$1280345m1*8} style arithmetic resolves only once its inner
     # references have. Anything still holding a $ is abandoned rather than guessed at.
     out = TOKEN_RE.sub(one, out)
@@ -641,10 +956,12 @@ def resolve_desc(sid: int, d: dict) -> str | None:
         lower" and Improved Distract by "an additional 2 levels lower", from the same
         ${$m2/-5} over base points of -5 and -10.
         """
-        before = re.search(r"(\d+(?:\.\d+)?)\s*$", m.string[:m.start()])
-        if before is None:
+        # The nearest number, not the adjacent one: "Awards 2 Combo $LPoint:Points;" has a
+        # word in between, and requiring adjacency cost Mutilate its whole tooltip.
+        before = re.findall(r"\d+(?:\.\d+)?", m.string[:m.start()])
+        if not before:
             return m.group(0)  # nothing to agree with; let the $ drop the description
-        return m.group(1) if float(before.group(1)) == 1 else m.group(2)
+        return m.group(1) if float(before[-1]) == 1 else m.group(2)
 
     out = PLURAL_RE.sub(plural, out)
     if "$" in out:
@@ -659,13 +976,21 @@ def resolve_desc(sid: int, d: dict) -> str | None:
     return " ".join(out.split())
 
 
+# Everything present() can set. A row swapped for another must lose ALL of these first.
+DISPLAY = ("cast", "range", "duration", "school", "cost", "cooldown", "desc")
+
+
 def present(sid: int, d: dict) -> dict:
     """The display strings a tooltip shows. Absent facts are simply absent."""
     m = d["misc"].get(sid, {})
     out: dict[str, str] = {}
     if m:
         cast = m.get("cast", 0.0)
-        out["cast"] = "Instant" if not cast else f"{secs(cast)} sec cast"
+        # Cast-time row 18 holds -1000000 ms, which 83 spells point at, among them Arcane
+        # Shot and the Stings, whose own text says "An instant shot". A negative time is
+        # the same fact as "lasts until cancelled" below it: a sentinel, not a length.
+        # "-1000 sec cast" was on every Hunter page.
+        out["cast"] = "Instant" if cast <= 0 else f"{secs(cast)} sec cast"
         if m.get("rng"):
             r = m["rng"]
             # 50000 yards is the client's "no range limit" sentinel, used on self-cast
@@ -686,7 +1011,7 @@ def present(sid: int, d: dict) -> dict:
         if school:
             out["school"] = school
     if sid in d["cost"]:
-        out["cost"] = f"{d['cost'][sid]} Mana"
+        out["cost"] = d["cost"][sid]
     if sid in d["cd"]:
         out["cooldown"] = f"{secs(d['cd'][sid])} sec cooldown"
     desc = resolve_desc(sid, d)
@@ -806,6 +1131,48 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         if sid and sid in spell_name_of:
             talent_rank1.setdefault(norm(spell_name_of[sid]), sid)
 
+    # RANK LADDERS. NameSubtext_lang carries "Rank N" where the client records one;
+    # Forever's new talents (Deflection, Reverence, Shatter) carry none, and those stay
+    # silent rather than claiming a rank we cannot see.
+    #
+    # `worded` is read here because two rows can tie on everything else. Explosive Trap
+    # holds a level-34 rank 1 twice on the same skill line and mask: 13812 is the blast
+    # the trap fires, with no text and no price, and 13813 is the spell you cast. Mutilate
+    # does the same with 1310705 and 1310707. Lowest id picked the wrong half of each.
+    rank_of: dict[int, int] = {}
+    worded: set[int] = set()
+    for r in table("Spell", build):
+        try:
+            sid = int(r["ID"])
+        except (ValueError, TypeError, KeyError):
+            continue
+        m = RANK_RE.match((r.get("NameSubtext_lang") or "").strip())
+        if m:
+            rank_of[sid] = int(m.group(1))
+        if (r.get("Description_lang") or "").strip():
+            worded.add(sid)
+
+    def kin(a: int, b: int) -> bool:
+        """Is `a` a row of the same class's spell as `b`? Only a learnable row can be."""
+        if a not in learnable:
+            return False
+        ours, theirs = classes_of(b), classes_of(a)
+        return not ours or bool(ours & theirs)
+
+    def rank_label(name: str, sid: int) -> str | None:
+        """"Rank 1 of 4", counted on this class's ladder and not on the name's.
+
+        Every row sharing the name used to count, so `Kick` read "Rank 1 of 6" where a
+        Rogue has 4 and `Charge` borrowed its top rank from a Hunter pet's Charge.
+        """
+        mine = rank_of.get(sid)
+        if not mine:
+            return None
+        ids = spell_ids.get(norm(name), [])
+        ladder = [rank_of[i] for i in ids if i in rank_of and kin(i, sid)]
+        top = max(ladder or [rank_of[i] for i in ids if i in rank_of] or [mine])
+        return f"Rank {mine} of {top}" if top > mine else f"Rank {mine}"
+
     entries: dict[str, dict] = {}
     unmatched: list[str] = []
     for name, uses in sorted(names.items()):
@@ -823,9 +1190,10 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
                              "icon": icon.get(sid), "uses": uses}
             continue
 
-        trainable = sorted((level[i], i) for i in sids if i in level and i in learnable)
+        trainable = sorted((level[i], i not in worded, i) for i in sids
+                           if i in level and i in learnable)
         if trainable and name not in talents:
-            lv, sid = trainable[0]
+            lv, _, sid = trainable[0]
             entries[name] = {"kind": "spell", "id": sid, "level": lv,
                              "icon": icon.get(sid), "uses": uses}
         elif iids and name not in talents:
@@ -833,34 +1201,24 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
             entries[name] = {"kind": "item", "id": iid, "level": None,
                              "icon": item_icon.get(iid), "uses": uses}
         elif sids:
-            sid = min(sids)
+            # A row on no skill line is nothing a player has, so lowest id over the whole
+            # family is how a creature won: `Piercing Howl` went to 10576, an NPC's silence
+            # with no skill line, over the talent 12323, and warrior-fury.md then wrote
+            # the silence down as the talent's mechanic. `Silence` lost the same way: the
+            # priest's 15487 has a skill line and, alone of the ranks, no SpellLevels row.
+            sid = min([i for i in sids if i in learnable] or sids,
+                      key=lambda i: (i not in worded, i))
             entries[name] = {"kind": "talent" if name in talents else "spell",
                              "id": sid, "level": level.get(sid) if name not in talents else None,
                              "icon": icon.get(sid), "uses": uses}
         else:
             unmatched.append(name)
 
-    # RANK LADDERS. NameSubtext_lang carries "Rank N" where the client records one;
-    # Forever's new talents (Deflection, Reverence, Shatter) carry none, and those stay
-    # silent rather than claiming a rank we cannot see.
-    rank_of: dict[int, int] = {}
-    for r in table("Spell", build):
-        try:
-            sid = int(r["ID"])
-        except (ValueError, TypeError, KeyError):
-            continue
-        m = RANK_RE.match((r.get("NameSubtext_lang") or "").strip())
-        if m:
-            rank_of[sid] = int(m.group(1))
-
     for name, e in entries.items():
         if e["kind"] == "item":
             continue
-        ladder = sorted(((rank_of[i], i) for i in spell_ids.get(norm(name), [])
-                         if i in rank_of))
-        if not ladder:
-            continue
-        top = ladder[-1][0]
+        ladder = sorted((rank_of[i], i not in worded, i) for i in spell_ids.get(norm(name), [])
+                        if i in rank_of and i in learnable)
         # LINK RANK 1 WHERE RANK 1 EXISTS. The guides are levelling guides, so the first
         # rank is the one a reader meets, and a uniform rule is explicable where "lowest
         # trainable level" is not. It also corrects a stale pointer: for talents the
@@ -868,13 +1226,13 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         # that id is rank 3 of the current ladder while rank 1 exists at level 25.
         # Some ladders genuinely start at rank 2 (Lightning Mastery, Monster Slaying);
         # those keep what they have and the label says which rank it is.
-        if ladder[0][0] == 1 and ladder[0][1] in learnable:
-            e["id"] = ladder[0][1]
+        if ladder and ladder[0][0] == 1:
+            e["id"] = ladder[0][2]
             e["icon"] = icon.get(e["id"], e.get("icon"))
             e["level"] = level.get(e["id"])
-        mine = rank_of.get(e["id"])
-        if mine:
-            e["rank"] = f"Rank {mine} of {top}" if top > mine else f"Rank {mine}"
+        label = rank_label(name, e["id"])
+        if label:
+            e["rank"] = label
 
     # PER-CLASS RESOLUTION. A name can be a different spell in each class's tree, so
     # one global answer is wrong wherever the trees collide. Each colliding name gets a
@@ -885,13 +1243,14 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         # means the first rank you can train. Without this the per-class pass would
         # quietly put a colliding talent back on rank 1.
         if kind == "talent":
-            ladder = sorted(((rank_of[i], i) for i in ids if i in rank_of))
+            ladder = sorted((rank_of[i], i in worded, i) for i in ids if i in rank_of)
             if ladder:
-                return ladder[-1][1]
-        ranked = sorted((level[i], i) for i in ids if i in level and i in learnable)
+                return ladder[-1][2]
+        ranked = sorted((level[i], i not in worded, i) for i in ids
+                        if i in level and i in learnable)
         if ranked:
-            return ranked[0][1]
-        return min(ids) if ids else None
+            return ranked[0][2]
+        return min(ids, key=lambda i: (i not in worded, i)) if ids else None
 
     for name, e in entries.items():
         if e["kind"] == "item":
@@ -952,7 +1311,10 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
             continue
         rows = [i for i in spell_ids.get(norm(name), [])
                 if skill_of.get(i, set()) & racial_lines]
-        if len(rows) != 1 or rows[0] == e["id"]:
+        # Not skipped when selection already holds the racial row: since `worded` the
+        # general pass can land there by itself, and leaving early then kept the nine-class
+        # by_class this pass exists to rebuild, with no racial_names mark to protect it.
+        if len(rows) != 1:
             continue
         e["id"] = rows[0]
         e["icon"] = icon.get(rows[0], e.get("icon"))
@@ -987,13 +1349,13 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
 
     for name, want in VERIFY_RACIAL.items():
         got = entries.get(name, {}).get("id")
-        if got != want:
+        if name in entries and got != want:
             verdict(f"FAIL -- racial resolution broke: {name} resolved to {got}, "
                     f"expected {want}")
 
     for (name, cls), want in VERIFY_CLASS.items():
         got = entries.get(name, {}).get("by_class", {}).get(cls, {}).get("id")
-        if got != want:
+        if name in entries and got != want:
             verdict(f"FAIL -- class resolution broke: {name} for {cls} resolved to "
                     f"{got}, expected {want}")
 
@@ -1009,6 +1371,9 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
             e["icon"] = icon.get(e["id"], e.get("icon"))
             e["level"] = level.get(e["id"])
             e.pop("rank", None)
+            label = rank_label(name, e["id"])
+            if label:
+                e["rank"] = label
         for key, sid in FORCE_ID.items():
             # A forced class entry may be the FIRST by_class entry this name has: a name
             # that collides with a creature ability rather than another class carries no
@@ -1029,17 +1394,36 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         # "Knocks nearby enemies back" -- undoing the racial pass silently and putting a
         # knockback on druid.md where the page says AoE stun. A correct row with no
         # tooltip text beats a wrong row that has one.
-        if not e.get("desc") and name not in racial_names:
+        #
+        # ... AND A PLAYER'S ROW IS ONLY EVER SWAPPED FOR ITS OWN TWIN. This block was the
+        # single largest source of wrong tooltips the site has had: resolve_desc() refused
+        # any template it could not fully read, the trained row came out blank, and this
+        # then took the first row of that name with readable text, which was a creature's
+        # or a trainer's. Backstab showed "Teaches Backstab (Rank 9).", Arcane Blast a
+        # knockback, Life Tap a tier-set bonus, Frostbolt another row's 3 sec cast: most of
+        # what the 2026-10-31 audit found was a blank row plus this. The swap also left
+        # the blank row's other fields behind, so the stat block and the text described
+        # different spells. So a row a player can learn may now only move
+        # to a row of the same class AT THE SAME RANK -- the row split in two, as
+        # Mutilate's is -- and failing that it stays blank. Wrong text is the worse
+        # failure, as it was for `War Stomp`. A row no class owns (a pet, a recipe whose
+        # effect is the item's) has nothing to protect, and keeps the old search.
+        if not e.get("desc") and name not in racial_names and name not in FORCE_ID:
+            mine = e["id"]
+            class_row = 0 < len(classes_of(mine)) < len(CLASS_BY_MASK)
             for alt in sorted(spell_ids.get(norm(name), []),
                               key=lambda i: (i not in learnable, level.get(i, 999),
                                              rank_of.get(i, 99))):
-                if alt == e["id"]:
+                if alt == mine or (class_row and not (
+                        kin(alt, mine) and rank_of.get(alt) == rank_of.get(mine))):
                     continue
                 got = present(alt, detail)
                 if got.get("desc"):
                     e["id"] = alt
                     e["icon"] = icon.get(alt, e.get("icon"))
                     e["level"] = level.get(alt)
+                    for field in DISPLAY:
+                        e.pop(field, None)
                     e.update(got)
                     break
         if name in DESC_WRONG:
@@ -1058,9 +1442,6 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         # "two-handed melee weapons by 1%" inside the tooltip, beside prose correctly
         # saying 2% -- one build after the LINK was made class-aware (2026-10-07), the
         # description was still global. A reader sees a page contradicting itself.
-        ladder = sorted(((rank_of[i], i) for i in spell_ids.get(norm(name), [])
-                         if i in rank_of))
-        top = ladder[-1][0] if ladder else None
         for sub in (e.get("by_class") or {}).values():
             sid = sub.get("id")
             if not sid:
@@ -1068,9 +1449,9 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
             sub.update(present(sid, detail))
             if name in DESC_WRONG:
                 sub.pop("desc", None)
-            mine = rank_of.get(sid)
-            if mine and top:
-                sub["rank"] = f"Rank {mine} of {top}" if top > mine else f"Rank {mine}"
+            label = rank_label(name, sid)
+            if label:
+                sub["rank"] = label
             if e["kind"] == "talent":
                 sub["level"] = None
                 sub.pop("school", None)
@@ -1189,9 +1570,23 @@ def main() -> None:
 
     for name, figure in VERIFY_DESC.items():
         got = entries.get(name, {}).get("desc")
-        if got and figure not in got:
+        # Blank is a failure too. This read `if got and ...`, so the one regression a
+        # stricter resolver is most likely to cause, a template it stops reading, passed.
+        if name in entries and figure not in (got or ""):
             verdict(f"FAIL -- description resolver broke: {name} rendered {got!r}, "
                     f"which does not contain {figure!r} as the guides state")
+
+    for key, want in VERIFY_ROW.items():
+        name, cls = key if isinstance(key, tuple) else (key, None)
+        e = entries.get(name)
+        got = e and (e.get("by_class", {}).get(cls, {}) if cls else e).get("id")
+        if e and got != want:
+            verdict(f"FAIL -- row selection broke: {key} resolved to {got}, expected {want}")
+
+    for (name, field), want in VERIFY_STAT.items():
+        got = entries.get(name, {}).get(field)
+        if name in entries and got != want:
+            verdict(f"FAIL -- tooltip stat broke: {name} {field} is {got!r}, expected {want!r}")
 
     stamp = stamp_of(build, entries)
     written, failed = pull_icons(rep["icons"], build)

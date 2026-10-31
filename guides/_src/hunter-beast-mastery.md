@@ -1,26 +1,27 @@
-updated: October 8, 2026
-build: 1.60.1.70245
-sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Beta Known Issues, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-known-issues-october-1/2352687 ;; Wowhead — Level 20 Beast Mastery Hunter|https://www.wowhead.com/forever/guide/classes/hunter/beast-mastery/level-20-dps-overview ;; Icy Veins — Beast Mastery Hunter Ranged DPS PvE Guide|https://www.icy-veins.com/wow-forever/beast-mastery-hunter-ranged-dps-pve-guide ;; ClassicWoW.gg — BM Hunter Overview & Changes|https://classicwow.gg/forever/guides/hunter/beast-mastery
+updated: October 31, 2026
+build: 1.60.1.70707
+sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Beta Known Issues, October 8|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-known-issues-october-1/2352687 ;; Wowhead — Level 20 Beast Mastery Hunter|https://www.wowhead.com/forever/guide/classes/hunter/beast-mastery/level-20-dps-overview ;; Icy Veins — Beast Mastery Hunter Ranged DPS PvE Guide|https://www.icy-veins.com/wow-forever/beast-mastery-hunter-ranged-dps-pve-guide ;; ClassicWoW.gg — BM Hunter Overview & Changes|https://classicwow.gg/forever/guides/hunter/beast-mastery ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes
 
 Ranged physical damage with a pet that carries a real share of the work. **Wowhead's advice at this level is to spend points here**, rather than on Marksmanship's `Lone Wolf`: *"taking a couple of points in the BM tree is strongly advised."*
 :::scope
-Levelling guide, 1 to 60. The beta is capped at **level 30** as of the October 1 build, raised from 20 that day, so no level-60 Beast Mastery build has been tested. Talents start at level 10 and each tier costs five more points in the tree, so the tiers open at levels 10, 14, 19, 24, 29, 34 and 39. The beta also runs a Legacy system: extra talent points stacked on top of the normal rate. Some published level 20 builds therefore show talents a character levelling without it would not reach for several more levels, `Summon Hawk` chief among them. **Blizzard's own caveat applies to everything on this page:** *"class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."*
+Levelling guide, 1 to 60. The beta closed on October 23 at level 30, so nothing above 30 was tested by players; talents and spells past 30 come from the launch client and Blizzard's posts. Talents start at level 10 and each tier costs five more points in the tree, so the tiers open at levels 10, 15, 20, 25, 30, 35 and 40. Legacy's `Talented` perk starts talent points up to five levels early, so some published level 20 builds show talents a character levelling without it would not reach for several more levels, `Summon Hawk` chief among them. A first character has no Legacy points to spend until it has earned them. These pages follow the hotfix Blizzard pushed to the launch realms on October 30, read from the game's hotfix data. Blizzard has not announced it, so it may still move before November 4. Where a hover tooltip and the text disagree, believe the text: tooltips can lag a hotfix.
 :::
 ## What Beast Mastery is for
-`Deadly Aspects` gives [[Auto Shot]] a chance of increased ranged attack speed, **and only while [[Aspect of the Hawk]] is up.** The +30% for 12 seconds is the beta client's spell data, not a Blizzard-published number. The talent has a melee half too, off [[Aspect of the Beast]], for a melee-leaning build.
+`Deadly Aspects` gives [[Auto Shot]] a chance of increased ranged attack speed, **and only while [[Aspect of the Hawk]] is up.** The +30% for 12 seconds is the launch client's spell data, not a Blizzard-published number. The talent has a melee half too, off [[Aspect of the Beast]], for a melee-leaning build.
 Around it the tree buys the pet. `Focused Fire` raises your damage and your pet's together, `Endurance Training` gives the pet Health and Armor in one talent, and `Intimidation` grants it +100% critical strike chance on its next attack. At 16 points in the tree, `Summon Hawk` adds a second attacker for 18 seconds. The tree's other early points are movement speed and pet reliability.
 The published verdict on taming a pet at level 10 is blunt: *"the single greatest leveling tool that any class gets without exception."* `Deadly Aspects`, the talent the published build is designed around, is called *"one of the best 5 point talents you can take."*
 **Learn the dead zone immediately.** Below level 10, walk backwards between shots. You want as many ranged attacks in as possible before the enemy closes.
 ## Your talent points
-**Level 20: 10/1/0 or 11/0/0.** There is no single obvious level-20 capstone in this tree, and the published advice is correspondingly flexible.
-1. **`Deadly Aspects`, 5 points**, the outlier in an otherwise flexible build. A chance on [[Auto Shot]] of increased ranged attack speed while [[Aspect of the Hawk]] is up. The client reads a 10% chance of +30% for 12 seconds, with no per-rank ladder; Blizzard's notes publish no numbers for it
-2. **`Pathfinding`, 2 points**: +6% to [[Aspect of the Cheetah]] and [[Aspect of the Pack]], taking Cheetah to +36%. It does nothing while you are in [[Aspect of the Hawk]], so it is a travel talent rather than a combat one. Before a mount that still counts: *"so much more noticeable than anything else while you run around the world"*
-3. **The last 4 points are subjective.** Named options, with what each is for:
-   - `Improved Revive Pet`, makes bringing your pet back reliable **in combat**
-   - `Focused Fire` — *"the strongest DPS talent available at this point"*
-   - `Lethal Attacks` — *"a close second"*
-   - `Hawk Eye`, extra range, for kiting and PvP
-   - `Bestial Swiftness`, if all 10 go into Beast Mastery, your pet closes on targets far faster
+**Level 20: 11/0/0 or 10/1/0.** Our own extension, not a published build: we adjusted the published list because `Pathfinding` sits on row 3, so ten points must go in first and only one of its two ranks fits at level 20. There is no single obvious level-20 capstone in this tree, and the published advice is correspondingly flexible.
+1. **`Deadly Aspects`, 5 points**, the outlier in an otherwise flexible build. A chance on [[Auto Shot]] of increased ranged attack speed while [[Aspect of the Hawk]] is up. The client reads a 2% chance per rank, 10% at 5/5, of +30% for 12 seconds; Blizzard's notes publish no numbers for it
+2. **`Focused Fire`, 2 points** — *"the strongest DPS talent available at this point"*. Row 2 opens at level 15
+3. **`Improved Revive Pet`, 2 points**, makes bringing your pet back reliable **in combat**, and **`Endurance Training`, 1 point**, which brings the tree to the ten that open row 3
+4. **`Pathfinding`, 1 point**: +3% per rank to [[Aspect of the Cheetah]] and [[Aspect of the Pack]]. Level 21 buys the second rank and takes Cheetah to +36%. It does nothing while you are in [[Aspect of the Hawk]], so it is a travel talent rather than a combat one. Before a mount that still counts: *"so much more noticeable than anything else while you run around the world"*
+5. **The last 4 points are subjective**, as long as ten sit on rows 1 and 2 before anything on row 3. Named options, with what each is for:
+   - `Endurance Training` or `Improved Aspect of the Monkey`, in place of `Improved Revive Pet`
+   - `Lethal Attacks` — *"a close second"* — as a single Marksmanship point in place of `Pathfinding`, which makes the build 10/1/0
+   - `Hawk Eye`, the same swap, for extra range, kiting and PvP
+   - `Bestial Swiftness`, in place of `Pathfinding`, your pet closes on targets far faster
 `Summon Hawk` is deeper still, at 16 points spent in this tree, so it is not part of the base level-20 build; see *What Forever changed* below.
 ## Rotation
 **Early Hunter is mostly Auto Shot**, and that is by design.
@@ -44,7 +45,7 @@ Forever changed pets more than it changed the Hunter.
 - **Pets get increased stats from your own gear**, so they scale as you gear up, and Blizzard confirms that is now the only way to buff them. Pets can no longer receive player buffs that increase their stats, so a stat buff you cast lands on you, not your pet
 - Happiness and loyalty still exist, feed your pet
 - Focus is the pet resource, and it works the same way for every family
-- **Ability ranks are taught, not inherited.** Tame a beast that already knows the rank, take your own pet back, and teach it with Beast Training at a training-point cost. Loyalty gates training, and it rises slowly. [[Tame Beast]] does not work on beasts above your own level. The October 1 build also fixed tameable beasts whose pet abilities were ranked too high for the creature's own level. Blizzard says that could make a freshly tamed pet look like it had "forgotten" an ability it should have known
+- **Ability ranks are taught, not inherited.** Tame a beast that already knows the rank, take your own pet back, and teach it with Beast Training at a training-point cost. Loyalty gates training, and it rises slowly. [[Tame Beast]] does not work on beasts above your own level.
 - **Every family can now learn either [[Bite]] or [[Claw]]** (some both), and either [[Dive]] or [[Dash]], on top of one ability unique to that family. The Bear's [[Swipe]] is one of those. The full family and ability list, including the new Fox's `Trickster's Dance`, is on the [Hunter overview](/guides/wow-forever/hunter/#pet-families)
 - **Foxes are a new pet family**, added in this Forever pass
 - **Aggressive Mode is back**, in the pet tab of your spellbook
@@ -52,8 +53,8 @@ Forever changed pets more than it changed the Hunter.
 ## What defines Beast Mastery
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
-| **`Deadly Aspects`** | 10, maxed at 14 | A chance on [[Auto Shot]] of **increased ranged attack speed, and only while [[Aspect of the Hawk]] is up**. The client reads a 10% chance of +30% over 12 seconds, with no per-rank figures, and Blizzard has published none of it. There is a melee half too, off [[Aspect of the Beast]]. The talent the published level-20 build is designed around |
-| **`Pathfinding`** | 14 | **+6% to [[Aspect of the Cheetah]] and [[Aspect of the Pack]]**, not to movement speed generally, and worth nothing while you are in Hawk |
+| **`Deadly Aspects`** | 10, maxed at 14 | A chance on [[Auto Shot]] of **increased ranged attack speed, and only while [[Aspect of the Hawk]] is up**. The client reads a 2% chance per rank, 10% at 5/5, of +30% over 12 seconds, and Blizzard has published none of it. There is a melee half too, off [[Aspect of the Beast]]. The talent the published level-20 build is designed around |
+| **`Pathfinding`** | 20, maxed at 21 | **+6% to [[Aspect of the Cheetah]] and [[Aspect of the Pack]]**, not to movement speed generally, and worth nothing while you are in Hawk |
 | **`Bestial Swiftness`** | 20 | Pet movement speed, quality of life while levelling, real value in PvP |
 | **`Summon Hawk`** | 16 points into this tree (later than a base level-20 build) | Summons a hawk that hits once then attacks for 18 seconds on its own, up to two active; shares its cooldown with [[Arcane Shot]] |
 ## Beast Mastery talent changes, Classic to Forever
@@ -62,7 +63,7 @@ Beyond the level-20 build above, Blizzard's own changelog for the tree:
 - `Endurance Training` absorbed the old `Thick Hide` talent, so it now grants your pet both Health and Armor in one talent
 - `Focused Fire`, new, increases all damage you **and** your active pet deal
 - `Aspect of the Monkey` now grants twice the Dodge, and your pet gains half the benefit of it
-- `Pathfinding` moved from row 3 to row 2
+- `Pathfinding` stays on row 3, where it sat in Classic; the move to row 2 in Blizzard's article did not hold
 - `Unleashed Fury`'s pet-damage bonus is slightly smaller, but now also benefits a summoned Hawk
 - `Improved Mend Pet` now also cuts Mend Pet's Mana cost
 - `Ferocity`'s pet critical-strike bonus is slightly smaller, but now also benefits a summoned Hawk
@@ -75,4 +76,4 @@ Beyond the level-20 build above, Blizzard's own changelog for the tree:
 - **`Improved Serpent Sting` became `Improved Stings`** (Marksmanship, moved from row 4 up to row 2). It carries a larger Serpent Sting damage increase than the talent it replaced, cuts the [[Viper Sting]] cooldown and lengthens [[Scorpid Sting]]. Stale lists naming `Improved Serpent Sting` cannot be entered as printed; the points belong in `Improved Stings`.
 - The utility kit is intact and still the class's signature. [[Feign Death]] usually drops you out of the fight entirely, *"one of the most valuable leveling spells"*, though enemies keep hitting your pet. **Cancel it: left running its full 6 minutes it actually kills you.** The rest: [[Freezing Trap]], [[Frost Trap]], [[Concussive Shot]], and [[Disengage]] as a threat dump rather than a leap.
 ## At level 60
-Unknown. The open question is how much of your gear actually reaches the pet; Beast Mastery's endgame case rests on that one number.
+The trees and spell ranks to 60 are in the launch client, but nothing past level 30 was played in the beta. The open question is how much of your gear actually reaches the pet; Beast Mastery's endgame case rests on that one number.

@@ -1,10 +1,10 @@
-updated: October 8, 2026
-build: 1.60.1.70245
-sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Beta Known Issues, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-known-issues-october-1/2352687 ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap ;; foreverchanges.pro — beta client data|https://foreverchanges.pro ;; Wowhead — Level 20 Beast Mastery Hunter|https://www.wowhead.com/forever/guide/classes/hunter/beast-mastery/level-20-dps-overview ;; Wowhead — Level 20 Marksmanship Hunter|https://www.wowhead.com/forever/guide/classes/hunter/marksmanship/level-20-dps-overview ;; Wowhead — Level 20 Survival Hunter|https://www.wowhead.com/forever/guide/classes/hunter/survival/level-20-dps-overview ;; Icy Veins — Hunter Class Guide|https://www.icy-veins.com/wow-forever/hunter-class-overview ;; ClassicWoW.gg — Hunter Overview & Changes|https://classicwow.gg/forever/guides/hunter
+updated: October 31, 2026
+build: 1.60.1.70707
+sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Beta Known Issues, October 8|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-known-issues-october-1/2352687 ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap ;; foreverchanges.pro — beta client data|https://foreverchanges.pro ;; Wowhead — Level 20 Beast Mastery Hunter|https://www.wowhead.com/forever/guide/classes/hunter/beast-mastery/level-20-dps-overview ;; Wowhead — Level 20 Marksmanship Hunter|https://www.wowhead.com/forever/guide/classes/hunter/marksmanship/level-20-dps-overview ;; Wowhead — Level 20 Survival Hunter|https://www.wowhead.com/forever/guide/classes/hunter/survival/level-20-dps-overview ;; Icy Veins — Hunter Class Guide|https://www.icy-veins.com/wow-forever/hunter-class-overview ;; ClassicWoW.gg — Hunter Overview & Changes|https://classicwow.gg/forever/guides/hunter ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes
 
 Your pet tanks while you shoot, and Forever made pets scale with your own gear.
 :::scope
-Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of the October 1 build, raised from 20 that day. No level-60 Hunter build has been tested. The ability training levels below come from foreverchanges.pro's reading of the beta client and are reliable. The beta also runs a Legacy system: bonus talent points on top of the normal one-per-level rate, so a beta character reaches deep talents earlier than levelling alone allows. Wowhead's level 20 Beast Mastery build takes `Summon Hawk`, 16 points into the Beast Mastery tree, at level 20 with Legacy active and level 25 without it. **Blizzard's own caveat applies to everything on this page:** *"class abilities and talents may continue to evolve throughout the beta test and are subject to additional changes."*
+Written for levelling, 1 to 60. The beta closed on October 23 at level 30, so nothing above 30 was tested by players; talents and spells past 30 come from the launch client and Blizzard's posts. The ability training levels below come from foreverchanges.pro's reading of the launch client and are reliable. Legacy's `Talented` perk starts talent points up to five levels early, so `Summon Hawk`, 16 points into the Beast Mastery tree, can land at level 20 instead of 25, which is how Wowhead's level 20 Beast Mastery build takes it. A first character has no Legacy points to spend until it has earned them. These pages follow the hotfix Blizzard pushed to the launch realms on October 30, read from the game's hotfix data. Blizzard has not announced it, so it may still move before November 4. Where a hover tooltip and the text disagree, believe the text: tooltips can lag a hotfix.
 :::
 ## Which spec?
 | Spec | Role | Its strongest point | In one line |
@@ -15,10 +15,10 @@ Written for levelling, 1 to 60. Forever's beta is capped at **level 30** as of t
 **Beast Mastery** spends its points on the pet and the aspects: `Deadly Aspects` off [[Aspect of the Hawk]], `Focused Fire` raising your damage and your pet's together, `Endurance Training` giving the pet Health and Armor in one talent.
 **Marksmanship** buys shot damage without the pet. `Lone Wolf` sits eleven points deep, earliest at level 20, and gives +20% with all attacks while you keep no pet out. It stacks onto [[Multi-Shot]] in a pull.
 **Survival** buys defences and control the other two trees do not have: parry, [[Deterrence]], and `Entrapment` making every trap root what it catches.
-At eleven points the **rotation is identical across all three specs**, and the difference is four flexible talent points. Each spec page carries that spec's own sourced material in full.
+At eleven points the **rotation is identical across all three specs**, and the difference is where the points go. Each spec page carries that spec's own sourced material in full.
 Respec when your goal changes: Marksmanship for dungeon pulls, Survival for duels.
 Blizzard frames the three trees as a spectrum. A Hunter can *"double down on ... ranged combat and their pets, choose not to have a pet at all, or ... dance back and forth between ranged and melee combat."*
-That spectrum is reachable inside the current cap, and it is not a promise about level 60. Survival's melee payoff is the 21-point talent `Strider Kick`, Marksmanship's is the 21-point `Trueshot Aura`, and 21 points fit inside the level-30 budget (see the Survival guide). Everything above 30 is untested.
+You can reach both ends of that spectrum by level 30. Survival's melee payoff is the 21-point talent `Strider Kick`, reachable at level 30 (see the Survival guide), and Marksmanship's is the 16-point `Trueshot Aura`, reachable at level 25.
 ## Is Hunter for you?
 Play Hunter if you want the pet, not you, holding the enemy, and you do not mind managing ammunition, a quiver and pet food.
 Blizzard's own framing of the class: Hunters have *"an amazing toolkit of problem-solving Aspects and attacks but cannot Stun or Interrupt,"* and in solo or small-group play the pet does the tanking.
@@ -35,7 +35,7 @@ Blizzard's own framing of the class: Hunters have *"an amazing toolkit of proble
 :::new
 **Is the rotation simple?** Yes, and all three spec pages print the same one: mark, send the pet, sting, shoot.
 **Is it forgiving?** Solo, your pet holds the target. In a dungeon the pet is not the tank, so that cover is gone.
-**What carries you while levelling?** Your pet tanks for you from level 10, and at the level cap the three trees differ by four flexible talent points.
+**What carries you while levelling?** Your pet tanks for you from level 10, and at level 20 the three trees share one rotation and differ only in where the points go.
 **Does it need a group?** No, solo the pet does the tanking.
 :::
 ## Levelling milestones
@@ -55,21 +55,22 @@ Blizzard's own framing of the class: Hunters have *"an amazing toolkit of proble
 | 34 | [[Explosive Trap]] |
 | 40 | **Mail armour from the class trainer**, mount, [[Volley]], [[Aspect of the Pack]] |
 | 46 | [[Aspect of the Wild]], now raid-wide |
-**Survival's melee payoff is bought with talent points rather than trained.** `Strider Kick` is the 21-point gold medal talent and `Expose Prey` is a row talent, so neither arrives at a fixed level. Wowhead's spell data attaches level 32 to both. That figure is Wowhead's own, not the client's: the client reads level 30 for `Strider Kick`, exactly where your 21st talent point lands, and gives `Expose Prey` no level at all (see the Survival guide).
+**Survival's melee payoff is bought with talent points rather than trained.** `Strider Kick` is the 21-point gold medal talent and `Expose Prey` is a row talent, so neither arrives at a fixed level. Wowhead's spell data attaches level 32 to both. That figure is Wowhead's own, not the client's: the client gives neither a fixed level, and your 21st talent point lands at level 30 (see the Survival guide).
 **[[Misdirection]] is not in Forever.** Two published guides mention it, but it is a Burning Crusade ability and it is absent from the client.
 **[[Wyvern Sting]] is gone**, and it did get a replacement. Blizzard confirms it was folded, together with Killer Instinct and Improved Feign Death, into a new Survival talent, `Resourcefulness` (see the Survival guide). ClassicWoW.gg's "no stand-in named for it" does not hold against the primary source.
 ## Which race
 Race is the smallest of the choices on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling** *(ours, not a source's)*.
-Racials decide things in **PvP**, specifically the ones that break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below.
-**Horde — Tauren**, called the single strongest Hunter race across both factions. `Plainsrunning` ramps to +30% movement speed, so you can stutter-step and shoot from level 1 while keeping [[Aspect of the Hawk]] up instead of swapping to Cheetah. `Endurance` also now gives +1% hit.
-**Alliance — Human**, new to Hunter in Forever. `Ruthless` gives +2% crit with all spells and attacks, the largest crit racial. It needs no weapon, so it applies to every shot.
-Forever changed the answer: Tauren Hunter was the weak vanilla pick and is now the strongest. Dwarf's new racial is `Earth Fury`, +2% to critical strike damage. It needs no weapon, so a Dwarf Hunter gets it in full.
-**Skyborne is new on both factions** and can play Hunter. Its racials are combat-adjacent rather than Hunter-specific: passive haste, +5% damage to Elemental creatures, and a faction-split utility button (glide for Alliance, a movement-speed burst for Horde).
+Racials decide things in **PvP**, specifically the ones that break crowd control: `Will to Survive` (Human, removes all stuns), `Shatter Curse` (Orc, removes Curses and Banes) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below *(ours, not a source's)*.
+**Horde — Orc.** `Command` makes your pet deal 5% more damage.
+**Horde — Tauren.** `Plainsrunning` ramps to +60% movement speed, not while mounted, but it needs continuous movement: stutter-stepping does not keep it up, and taking damage or standing still reduces it. `Endurance` is +5% Health and nothing else.
+**Alliance — Human**, new to Hunter in Forever. `Ruthless` gives +1% crit with all spells and attacks. It needs no weapon, so it applies to every shot.
+**Alliance — Dwarf.** The new racial is `Artisan's Precision`, +1% hit with spells and attacks.
+**Skyborne is new on both factions** and can play Hunter. Its racials are combat-adjacent rather than Hunter-specific: +2% haste, +5% damage to Elemental creatures, `Walk on Air` (glide) on both factions, and a faction-split button: `Read Leyline` for Alliance (Health and Mana regeneration), `Skysight` for Horde (a movement-speed burst).
 ## Quality of life
-- **Level 10 is the class.** Do the pet chain the moment you reach it, and tame a Bear first: `Swipe` is one of the few pet abilities that holds threat on several targets at once. foreverchanges.pro reads the client as letting you tame a beast up to two levels above your own.
+- **Level 10 is the class.** Do the pet chain the moment you reach it, and tame a Bear first: `Swipe` is one of the few pet abilities that holds threat on several targets at once. [[Tame Beast]] does not work on beasts above your own level.
 - **Ammunition and the quiver are real costs.** The quiver gives a ranged attack-speed bonus and does not stack, so carry exactly one. Buy ammunition in stacks whenever you pass a vendor.
 - **[[Aspect of the Cheetah]] is your mount until 40** and should be up almost all the time in the world; `Pathfinding` pushes it to +36%.
-- **Your class trainer gives mail at 40**, and a weapon master teaches anything you did not start with, including polearms from 20. As a Human, make the trip for one-handed swords and the crit.
+- **Your class trainer gives mail at 40**, and a weapon master teaches anything you did not start with, including polearms from 20.
 ## Pet families
 **Forever changed the pet model itself.** Pets no longer carry a per-family damage buff or penalty. They scale off your own gear instead, and identity now comes from each family's kit rather than a hidden multiplier. Blizzard confirms every pet family can now learn either [[Bite]] or [[Claw]] (some families both), and either [[Dive]] or [[Dash]]. On top of that shared kit, every family has exactly one ability nothing else has:
 | Family | Unique ability | What it does |
@@ -81,7 +82,7 @@ Forever changed the answer: Tauren Hunter was the weak vanilla pick and is now t
 | Carrion Bird | `Demoralizing Screech` | Damages nearby enemies and reduces their melee Attack Power |
 | Cat | `Prowl` | Stealth, and increased damage on the next attack from Stealth |
 | Crab | `Pinch` | Damage and slows the target's movement |
-| Crocolisk | `Dismember` | Damage and reduces the target's healing received by 50% |
+| Crocolisk | `Dismember` | Damage and reduces the target's healing received by 25% for 6 seconds, on a 15-second cooldown |
 | **Fox** *(new family)* | `Trickster's Dance` | Increases the pet's dodge chance and attack speed for 12 seconds |
 | Gorilla | `Thunderstomp` | Damages enemies in an area |
 | Hyena | `Tendon Rip` | Movement slow and a bleed over time on the target |
@@ -96,7 +97,7 @@ Foxes are new to Forever. Pick a family for its unique ability, not for a damage
 ## What changed from Classic
 | Change | What it means for you |
 | --- | --- |
-| **Pets get increased stats from your gear** | Blizzard publishes no coefficients for it, and the beta's character sheet cannot be read for them either: pet Hit chance does not display the master's scaling coefficient, pet Expertise is not displayed at all, and pet Movement Speed shows wrong base values. A pet can no longer be stat-buffed directly: Blizzard confirms pets cannot receive player buffs that increase their stats, so gear the Hunter, not the pet |
+| **Pets get increased stats from your gear** | Blizzard publishes no coefficients for it, and the character sheet did not show them in the beta either: pet Hit chance did not display the master's scaling coefficient, pet Expertise was not displayed at all, and pet Movement Speed showed wrong base values. A pet can no longer be stat-buffed directly: Blizzard confirms pets cannot receive player buffs that increase their stats, so gear the Hunter, not the pet |
 | [[Aimed Shot]] trained at 20, not talented | Every Hunter gets it, and it shares a cooldown with [[Multi-Shot]] |
 | **[[Arcane Shot]] no longer shares a cooldown with [[Aimed Shot]]** | You can press both; the shared cooldown moved onto [[Multi-Shot]] instead, per Blizzard |
 | **Traps usable in combat**, cooldowns 15s → 30s | Fire-based and Frost-based traps now have separate cooldowns, so you can hold one of each; **you can still only place a trap at your own location** |
@@ -106,6 +107,6 @@ Foxes are new to Forever. Pick a family for its unique ability, not for a damage
 | Survival became a melee specialisation | Its melee payoff is talent-gated and deep: `Strider Kick` is the 21-point gold medal talent, so ranged shots remain the way you fight while levelling (see the Survival guide) |
 | The 8-yard dead zone remains | Forever did not fix it, despite heavy feedback |
 | **Summon Hawk**, new Beast Mastery talent | Deals an initial hit then attacks on its own for 18 seconds; shares its cooldown with [[Arcane Shot]], and only two hawks can be up at once |
-**Shot-weaving is gone.** Icy Veins states it plainly as a Forever quality-of-life change: *"your abilities will not clip your auto shots; you do not need to time your rotation around your auto shots."* Neither Wowhead nor ClassicWoW.gg contradicts it.
+**Shot-weaving is gone.** Icy Veins states it plainly as a Forever quality-of-life change: *"your abilities will not clip your auto shots; you do not need to time your rotation around your auto shots."* Neither Wowhead nor ClassicWoW.gg contradicts it. You must stand still for 0.5 seconds before [[Auto Shot]] fires, though it still fires while you cast [[Aimed Shot]].
 ## At level 60
-Unknown. Nothing past level 30 has been played, so the 31-point builds are untested. The open questions: whether `Lone Wolf` beats a live pet, whether [[Sniper Shot]]'s four-second cast is a damage loss, and whether melee Survival is viable at all. Raids open December 9.
+Nothing past level 30 was played in the beta, so the 31-point builds are untested. The launch client does settle their shape: [[Sniper Shot]] needs `Trueshot Aura` first, and `Lacerating Strikes` needs `Expose Prey`. The open questions: whether `Lone Wolf` beats a live pet, whether [[Sniper Shot]]'s four-second cast is a damage loss, and whether melee Survival is viable at all. Raids open December 9.

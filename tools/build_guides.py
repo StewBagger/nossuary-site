@@ -89,6 +89,9 @@ SPELLS = {}
 # (reader report, 2026-10-07). Module-level because the renderers are regex callbacks
 # and the alternative is threading a parameter through every one of them.
 PAGE_CLASS = ""
+
+# What one spell row contributes to an entry; see for_page().
+ROW_FIELDS = ("rank", "cast", "range", "duration", "school", "cost", "cooldown", "desc")
 CHIP_STATS = {"linked": 0, "plain": 0, "noicon": 0, "code_linked": 0, "code_plain": 0,
               "lost_icon": set(), "unknown": set()}
 
@@ -299,7 +302,12 @@ def for_page(entry):
     """
     per = entry.get("by_class") or {}
     if PAGE_CLASS and PAGE_CLASS in per:
-        return {**entry, **per[PAGE_CLASS]}
+        # The class row REPLACES what is shown, it does not overlay it. A plain merge kept
+        # every field the class row lacks, so a row with no text wore the default entry's:
+        # Lacerate on a Druid page printed the Hunter pet's bleed, Cure Poison a consumable's
+        # "Imbiber is cured", and Claw a Hunter pet's damage. Absent facts stay absent.
+        shared = {k: v for k, v in entry.items() if k not in ROW_FIELDS}
+        return {**shared, **per[PAGE_CLASS]}
     return entry
 
 
