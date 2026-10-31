@@ -584,9 +584,9 @@ def profnav(active=None):
 # Front matter carries them:  sources: Wowhead|https://... ;; Icy Veins|https://...
 # A guide that cites nothing is indistinguishable from a guide that invented its
 # numbers, and these pages make claims a reader will act on for a hundred hours.
-# Three majors only -- Wowhead, Icy Veins and ClassicWoW.gg. Forum and reseller
-# posts are deliberately not cited: they are downstream of these, when they are not
-# simply wrong.
+# Web-Development DR-0015 holds the order: Blizzard, the client, combat logs, sims, the
+# three guide sites, then player reports that show numbers or logs. Reseller posts stay
+# out: they are downstream of these, when they are not simply wrong.
 SOURCE_NOTE = ("Compiled from the three major Forever guide sites and cross-checked against "
                "each other. Where Blizzard has published an official class deep dive, that post "
                "outranks all three and the page is written from it. Everything else \u2014 talent "

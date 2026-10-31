@@ -1,6 +1,6 @@
 updated: October 31, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Feral Druid DPS|https://www.wowhead.com/forever/guide/classes/druid/feral/level-20-dps-overview ;; Icy Veins — Feral Druid|https://www.icy-veins.com/wow-forever/feral-druid-melee-dps-and-tank-pve-guide ;; ClassicWoW.gg — Cat Druid|https://classicwow.gg/forever/guides/druid/cat ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes
+sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Feral Druid DPS|https://www.wowhead.com/forever/guide/classes/druid/feral/level-20-dps-overview ;; Icy Veins — Feral Druid|https://www.icy-veins.com/wow-forever/feral-druid-melee-dps-and-tank-pve-guide ;; ClassicWoW.gg — Cat Druid|https://classicwow.gg/forever/guides/druid/cat ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes ;; WoWSims Forever — Feral Cat|https://www.wowsims.com/forever/druid/feralcat/
 
 Energy and combo points in Cat Form, on bleeds rather than big hits. From level 20 onward, one guide calls it *"one of the fastest and most mobile specializations in the WoW Forever beta."* Before 20 you are a bear.
 :::scope
@@ -41,28 +41,26 @@ To 40, also ours, the Cat line adds `Predatory Discipline` 1, `Predatory Strikes
 3. Maintain **[[Rip]]** at 5 combo points
 4. Maintain **[[Rake]]**
 5. **[[Ferocious Bite]]** at 5 combo points when the target will not live through [[Rip]]
-6. **[[Claw]]** as filler, with the exceptions under Claw or Shred below
+6. **[[Shred]]** as filler from behind, or **[[Claw]]** when you cannot get there; see Claw or Shred below
 The target-selection rule: *"pick [[Rip]] when the enemy will live through the ticks, and direct damage when the remaining kill time is too short. Keep an existing bleed running instead of restarting it."*
 **Multi-target: there is none in Cat Form.** [[Swipe]] is Bear-only. Either shift to Bear and [[Swipe]], or spread [[Rake]] and [[Rip]] on targets durable enough to be worth it.
 ## Claw or Shred
-**[[Shred]] hits harder, but [[Claw]] usually does more damage for the Energy you have** *(ours, worked out from the game's numbers and not tested in play)*. A Cat runs out of Energy before it runs out of global cooldowns, so damage per Energy decides the filler. Both add one combo point, so the cheaper [[Claw]] also reaches [[Rip]] sooner.
-With `Ferocity` 3 and `Shredding Attacks` 3, [[Claw]] costs 42 Energy and [[Shred]] costs 54. Each table row is the size your ordinary auto-attack has to reach before [[Shred]] does more damage per Energy:
-| Level | [[Claw]] | [[Shred]] | [[Shred]] wins above |
+**[[Shred]] hits harder and [[Claw]] costs less, and once you own `Shredding Attacks` the two are close on damage per Energy** *(ours, worked out from the game's numbers and not tested in play)*. A Cat usually runs short of Energy before it runs short of global cooldowns, so damage per Energy is the fair comparison. Both percentages apply to the flat bonus as well: rank 5 [[Shred]] is 155% of your auto-attack plus 80, not 155% of the auto-attack with 80 on top.
+**Before `Shredding Attacks`, use [[Claw]].** Neither level 20 build has it, so [[Claw]] costs 40 Energy against [[Shred]]'s 60 and wins at any normal auto-attack size.
+**After it, [[Shred]] from behind is a fine filler, and [[Claw]] costs you little when you cannot get there.** With `Ferocity` 3 and `Shredding Attacks` 3, [[Claw]] costs 42 and [[Shred]] costs 54. Below the auto-attack size in each row [[Claw]] does more per Energy, and above it [[Shred]] does:
+| Level | [[Claw]] rank bonus | [[Shred]] rank bonus | [[Shred]] wins above |
 | --- | --- | --- | --- |
-| 20–27 | 110% + 27 | 155% + 22 | 94 |
-| 28–29 | 110% + 39 | 155% + 22 | 207 |
-| 30–37 | 110% + 39 | 155% + 32 | 134 |
-| 38–45 | 110% + 57 | 155% + 44 | 216 |
-| 46–47 | 110% + 57 | 155% + 64 | 68 |
-| 48–53 | 110% + 88 | 155% + 64 | 362 |
-| 54–57 | 110% + 88 | 155% + 80 | 244 |
-| 58–60 | 110% + 115 | 155% + 80 | 500 |
-**At 58 with a 150 auto-attack,** [[Claw]] deals 280 for 42 Energy and [[Shred]] deals 312 for 54: 6.7 against 5.8 damage per Energy, so about 15% more from [[Claw]] over a fight. With no points in `Shredding Attacks` and at least 3 in `Ferocity`, [[Claw]] wins at any auto-attack size, which covers the level 20 builds above.
-**Use [[Shred]] from behind when:**
-- [[Omen of Clarity]] has made your next ability free, because only the size of the hit matters then
-- you are level 46 or 47, the two levels where its new rank arrives ahead of [[Claw]]'s
-- your auto-attack is above that row of the table
-- you are about to reach full Energy, because Energy you cannot hold is worth nothing
+| 20–27 | 27 | 22 | 30 |
+| 28–29 | 39 | 22 | 155 |
+| 30–37 | 39 | 32 | 41 |
+| 38–45 | 57 | 44 | 91 |
+| 46–47 | 57 | 64 | any size |
+| 48–53 | 88 | 64 | 186 |
+| 54–57 | 88 | 80 | any size |
+| 58–60 | 115 | 80 | 285 |
+**At 59 with a 150 auto-attack,** [[Claw]] deals 292 for 42 Energy and [[Shred]] deals 356 for 54: 6.9 against 6.6 per Energy, a gap of about 5%. The gap stays around that size at most levels, so moving behind the target is rarely worth losing time for, except at 46 or 47, where [[Shred]] leads by more. With `Ferocity` 5 the balance tips back to [[Claw]].
+**WoWSims' level 60 rotation uses [[Shred]] whenever it can land and [[Claw]] only when it cannot.** That is a raid model against a boss, and it is why [[Shred]] stays the default here.
+**Always [[Shred]] from behind when [[Omen of Clarity]] makes your next ability free**, because the cost no longer matters. Spend Energy on either rather than sit at full Energy, which wastes it.
 ## Stat priority
 **Agility first**, then Strength, then Stamina.
 The reason Agility leads is that *"in cat form it is attack power, critical strike and armor at once."*
