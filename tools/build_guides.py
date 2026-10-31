@@ -597,6 +597,10 @@ SOURCE_NOTE = ("Compiled from the three major Forever guide sites and cross-chec
                "guides disagree with each other, this page says which said what.")
 
 
+FEEDBACK_NOTE = ("Something look wrong, or want to know why a page says what it says? "
+                 "<a href=\"/forums/board/?b=wf-guides\">Ask on the guides board</a>.")
+
+
 def sources_block(meta, headings):
     raw = (meta or {}).get("sources", "").strip()
     items = []
@@ -614,7 +618,8 @@ def sources_block(meta, headings):
         return ""
     headings.append(("sources", "Sources"))
     return ('\n        <section class="guide-sources"><h2 id="sources">Sources</h2>'
-            f'<p>{SOURCE_NOTE}</p><ul>' + "".join(items) + "</ul></section>")
+            f'<p>{SOURCE_NOTE}</p><ul>' + "".join(items) + "</ul>"
+            f'<p>{FEEDBACK_NOTE}</p></section>')
 
 
 def frontmatter(text):
