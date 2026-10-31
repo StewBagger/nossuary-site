@@ -32,7 +32,7 @@ Where Cat and Bear diverge on the shared tree:
 To 40, also ours, the Cat line adds `Predatory Discipline` 1, `Predatory Strikes` 3, `Rend and Tear` 5 and `Shifting Power` 1, which makes 31 points.
 ## Rotation
 **At level 20 it is three buttons:**
-1. **[[Shred]]** from behind, or **[[Claw]]** when you cannot get there, to build combo points
+1. **[[Claw]]** to build combo points, or **[[Shred]]** from behind on a free [[Omen of Clarity]] proc
 2. **[[Rip]]** at 5 combo points
 **From 24 you add [[Rake]] and [[Ferocious Bite]].** The published rotation also calls for [[Tiger's Fury]] here *"when below 40 Energy"*; drop that step, because [[Tiger's Fury]] has been removed. Its replacement `Shifting Power` (below) is a tier 7 talent, so it waits for level 40.
 **From 30:**
@@ -41,9 +41,28 @@ To 40, also ours, the Cat line adds `Predatory Discipline` 1, `Predatory Strikes
 3. Maintain **[[Rip]]** at 5 combo points
 4. Maintain **[[Rake]]**
 5. **[[Ferocious Bite]]** at 5 combo points when the target will not live through [[Rip]]
-6. **[[Shred]]** as filler, from behind
+6. **[[Claw]]** as filler, with the exceptions under Claw or Shred below
 The target-selection rule: *"pick [[Rip]] when the enemy will live through the ticks, and direct damage when the remaining kill time is too short. Keep an existing bleed running instead of restarting it."*
 **Multi-target: there is none in Cat Form.** [[Swipe]] is Bear-only. Either shift to Bear and [[Swipe]], or spread [[Rake]] and [[Rip]] on targets durable enough to be worth it.
+## Claw or Shred
+**[[Shred]] hits harder, but [[Claw]] usually does more damage for the Energy you have** *(ours, worked out from the game's numbers and not tested in play)*. A Cat runs out of Energy before it runs out of global cooldowns, so damage per Energy decides the filler. Both add one combo point, so the cheaper [[Claw]] also reaches [[Rip]] sooner.
+With `Ferocity` 3 and `Shredding Attacks` 3, [[Claw]] costs 42 Energy and [[Shred]] costs 54. Each table row is the size your ordinary auto-attack has to reach before [[Shred]] does more damage per Energy:
+| Level | [[Claw]] | [[Shred]] | [[Shred]] wins above |
+| --- | --- | --- | --- |
+| 20–27 | 110% + 27 | 155% + 22 | 94 |
+| 28–29 | 110% + 39 | 155% + 22 | 207 |
+| 30–37 | 110% + 39 | 155% + 32 | 134 |
+| 38–45 | 110% + 57 | 155% + 44 | 216 |
+| 46–47 | 110% + 57 | 155% + 64 | 68 |
+| 48–53 | 110% + 88 | 155% + 64 | 362 |
+| 54–57 | 110% + 88 | 155% + 80 | 244 |
+| 58–60 | 110% + 115 | 155% + 80 | 500 |
+**At 58 with a 150 auto-attack,** [[Claw]] deals 280 for 42 Energy and [[Shred]] deals 312 for 54: 6.7 against 5.8 damage per Energy, so about 15% more from [[Claw]] over a fight. With no points in `Shredding Attacks` and at least 3 in `Ferocity`, [[Claw]] wins at any auto-attack size, which covers the level 20 builds above.
+**Use [[Shred]] from behind when:**
+- [[Omen of Clarity]] has made your next ability free, because only the size of the hit matters then
+- you are level 46 or 47, the two levels where its new rank arrives ahead of [[Claw]]'s
+- your auto-attack is above that row of the table
+- you are about to reach full Energy, because Energy you cannot hold is worth nothing
 ## Stat priority
 **Agility first**, then Strength, then Stamina.
 The reason Agility leads is that *"in cat form it is attack power, critical strike and armor at once."*
@@ -71,7 +90,7 @@ The reason Agility leads is that *"in cat form it is attack power, critical stri
 ## What Forever changed for Cat
 - The old `Furor` powershifting trick is dead, and **Blizzard reintroduced the gameplay in a different form on purpose**. `Furor`, now in Feral tier 1, was rewritten: instead of a flat 40 energy on entering Cat Form, five points let you regenerate Energy out of form *"as if they were in Cat Form"*. Energy you hold is kept through Bear and Dire Bear Form, but it does not regenerate in them. The numbers are client text rather than published. At 5/5, shifting into Cat Form restores 100% of the Energy you had when last in Cat Form, plus 10 Energy per second spent outside Bear Form or Dire Bear Form, up to 100 Energy, and *"Leaving an empty bar and instantly re-entering supplies no flat refill."* Blizzard then adds: *"We realize this removed the 'power shifting' gameplay some players prize, so we have re-added that gameplay in a much more approachable way with the `Shifting Power` talent in the Feral talent tree."* See `Shifting Power` above for its numbers.
 - **[[Tiger's Fury]] is gone.** Blizzard's class deep dive flagged it under baseline shapeshifting changes: *"Tiger's Fury: (Removed.) This has been replaced with a new Feral-specific talent called Shifting Power."* `Shifting Power` (above) is what replaced it.
-- **[[Shred]] got stronger, and [[Rip]] stayed close to Classic.** Blizzard says Shred’s *"damage increased significantly to need less talent support to be effective"*, with no figures published either way. [[Rip]] rank 6 deals 243/396/549/702/855 over 12 seconds by combo point, against Classic's 942 at 5 points, while rank 1 sits slightly above Classic's. It scales with attack power, as Classic's tooltip also says.
+- **[[Shred]] reads lower than Classic in the launch client, and [[Rip]] stayed close to it.** Blizzard's deep dive says Shred’s *"damage increased significantly to need less talent support to be effective"* and publishes no figure, but rank 5 reads 155% plus 80 where Classic read 225% plus 180. We do not know why the two disagree. [[Rip]] rank 6 deals 243/396/549/702/855 over 12 seconds by combo point, against Classic's 942 at 5 points, while rank 1 sits slightly above Classic's. It scales with attack power, as Classic's tooltip also says.
 - **[[Claw]] became a weapon-damage multiplier**: *"110% normal damage plus 27"*, where Classic gave a flat *"27 additional damage."* [[Ferocious Bite]] has a new rank 1 at 24, 33 to 43 damage with 1 combo point and 129 to 139 with 5. Classic's ranks follow as ranks 2 to 6, and their numbers no longer match Classic's.
 - **New talents:** `Primal Bite`, `Lacerate`, `Predatory Discipline`, `Natural Instinct`, `Natural Reaction`, `Rend and Tear`, `Shifting Power`. `King of the Jungle`, which older guides list, is gone from the tree, so no build can spend a point on it. `Heart of the Wild` moved to Restoration tier 1, and `Furor` took its slot. `Feral Instinct` was rewritten from bear threat to +30% [[Swipe]] damage.
 - **A rename and a merge, both confirmed directly by Blizzard's class deep dive.** `Mangle` is now the `Primal Bite` talent, and it is gone from the spellbook: *"We have opted to go with this ability instead of Mangle."* Classic's `Primal Fury` and `Blood Frenzy` were merged into one node. Blizzard's own text says the merged node is `Blood Frenzy`: *"The effects of the old Primal Fury and Blood Frenzy talent have been combined into this single 2-point talent."* It gained a cat clause giving combo-point generators a chance at an extra point on a crit. `Primal Fury` is not selectable, so lists naming it cannot be entered as printed.
