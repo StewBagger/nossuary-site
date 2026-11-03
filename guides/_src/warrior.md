@@ -42,7 +42,7 @@ Blizzard's closing assessment of the class, in its own words:
 | 6 | [[Thunder Clap]] — now scales significantly with Attack Power, but its **cooldown rose to 6 seconds** and its threat was rebalanced downwards. Both pay for it being usable in [[Defensive Stance]] (Blizzard) |
 | 10 | **Class quest, mandatory.** [[Defensive Stance]], [[Sunder Armor]], [[Taunt]], [[Bloodrage]]. First talent point |
 | 12 | [[Overpower]], [[Shield Bash]] — **your only interrupt until [[Pummel]] at 38**, so keep a shield in the bag |
-| 14 | **[[Tactical Mastery]] is trained now, not a talent.** It retains 10 rage through a stance change |
+| 14 | **[[Tactical Mastery]] is trained now, not a talent.** It retains 10 rage through a stance change. [[Demoralizing Shout]] trains here too, and lasts 45 seconds (client) |
 | 16 | [[Shield Block]], now **2 attacks over 7 seconds** |
 | 20 | **[[Victory Rush]], new**: free, scales with Attack Power, heals 10% of max health. It is up for 20 sec after you kill a non-trivial enemy, on its own 30-second cooldown (Blizzard), so we read it as not firing on every kill *(ours, not a source's)*. Dual wield unlocks. [[Cleave]] as in Classic; [[Retaliation]] as in Classic with its cooldown halved to 15 minutes. [[Slam]] trains earlier and carries a 15-second cooldown Classic never gave it (Blizzard). Eleventh talent point |
 | 24 | [[Execute]] |
@@ -55,7 +55,7 @@ Blizzard's closing assessment of the class, in its own words:
 ## Which race
 Read this section in proportion. Race is the smallest choice on this page, well behind spec, gear and knowing your rotation, and **no race is a wrong answer for levelling** *(ours, not a source's)*. Racials decide things in PvP. The ones that count break crowd control: `Will of the Forsaken` (Undead, fear, sleep and charm), `Escape Artist` (Gnome, roots and snares) and `Stoneform` (Dwarf, bleeds, poisons and disease). A free trinket slot is worth more than any damage racial below *(ours, not a source's)*.
 **Alliance — Night Elf.** `Elune's Light` gives +10% crit for 15 seconds and lines up with your cooldowns, `Shadowmeld` drops threat, and `Wisp Spirit` speeds corpse runs.
-**Horde — Orc.** `Blood Fury` is +10% attack power and spell power for 15 seconds on a 2-minute cooldown, and `Hardiness` shortens stuns on you by 20%. We keep it as the Horde pick for that pair, a short damage cooldown you can use often plus less time stunned *(ours, not a source's)*.
+**Horde — Orc.** `Blood Fury` is +10% attack power and spell power for 15 seconds on a 2-minute cooldown, and `Hardiness` shortens stuns on you by 20%. We keep it as the Horde pick for that pair, a short damage cooldown you can use often plus less time stunned *(ours, not a source's)*. Tauren Warriors start with 5 more Strength than Human Warriors, a base-stat fix in Blizzard's November 2 notes, and Troll `Berserking` gives 10% attack speed for 15 seconds (client; Blizzard gives the 15 seconds).
 **Forever changed the answer.** Vanilla's Human and Orc weapon-skill picks are gone and no racial cares what weapon you hold. Human keeps a flat 1% crit in `Ruthless`, and Night Elf gained an offensive cooldown it never had.
 ## Quality of life
 - **Do the level-10 class quest immediately, and the level-30 one on time.** They are how you get [[Defensive Stance]], [[Sunder Armor]], [[Taunt]] and later [[Berserker Stance]]. A Warrior who skips them has no tanking kit at all.

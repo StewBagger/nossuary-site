@@ -49,8 +49,8 @@ Below level 10, walk backwards between shots to stay out of the dead zone.
 | --- | --- | --- |
 | **`Deflection` 5/5** | 14 | +5% base parry, 1% per rank. Parry is not a stat Hunters normally have |
 | **[[Deterrence]]** | 20 | +25% dodge and parry for 10 seconds, 5-minute cooldown, and half of the PvP case |
-| **`Entrapment` 3/5** | 15, 3/5 at 17 | **Every** trap you trigger roots what it catches, and more points make the root last longer. Blizzard confirms this is a Forever redesign: it used to be a chance to trigger, and is now a guaranteed trigger with the duration scaling instead. The root lasts 1 second per rank, up to 5, with diminishing returns shared with `Counterattack` and `Improved Wing Clip` |
-| **`Strider Kick`** | the 21-point gold medal talent, level 30 | An instant weapon-damage attack, no trigger needed, that **also grants +30% movement speed for 3 seconds**, which is Blizzard's own wording. The 100% weapon-damage figure and the 8-second cooldown are the client's spell data, not Blizzard's. One of the two abilities that make Survival melee real rather than reactive |
+| **`Entrapment` 3/5** | 15, 3/5 at 17 | **Every** trap you trigger roots what it catches, and more points make the root last longer. Blizzard confirms this is a Forever redesign: it used to be a chance to trigger, and is now a guaranteed trigger with the duration scaling instead. The root lasts 1 second per rank, up to 5, with diminishing returns shared with `Counterattack` and `Improved Wing Clip`. On a [[Frost Trap]] it roots only when the trap first goes off, not on each pulse of the frost, per Blizzard's notes |
+| **`Strider Kick`** | the 21-point gold medal talent, level 30 | An instant weapon-damage attack, no trigger needed, that **also grants +30% movement speed for 3 seconds**, which is Blizzard's own wording. The 100% weapon-damage figure and the 8-second cooldown are the client's spell data, not Blizzard's. Blizzard's notes confirm it works while you are disarmed or have no main-hand weapon. One of the two abilities that make Survival melee real rather than reactive |
 | **`Expose Prey`** | deep in the tree, past the level-20 build | Your attacks on a [[Hunter's Mark]]ed target have a chance to activate [[Mongoose Bite]] for 10 seconds (5% chance per rank, 10% at 2/2) — the offensive route into a bite that used to require dodging first |
 ## Survival talent changes, Classic to Forever
 Beyond the level-20 build above, Blizzard's own changelog for the tree:
@@ -62,7 +62,7 @@ Beyond the level-20 build above, Blizzard's own changelog for the tree:
 - **`Survival Tactics`** (formerly `Trap Mastery`) now also increases [[Feign Death]]'s chance to hit, in addition to Traps
 - `Predator's Edge`, new, increases the critical strike damage of your melee abilities, not auto attacks, and boosts off-hand damage while dual-wielding
 - `Counterattack` moved from row 5 up to row 4, and is now the 16-point gold medal talent
-- `Resourcefulness`, new, reduces the Mana cost of all Traps and melee abilities, and gives your critical strikes a chance to regenerate Mana from Spirit while casting
+- `Resourcefulness`, new, reduces the Mana cost of all Traps and melee abilities, and gives your critical strikes a chance to regenerate Mana from Spirit while casting. Only crits from melee and ranged abilities count; Blizzard's notes say traps never trigger it
 - **`Survivalist's Discipline`, new, reduces the cooldown of Traps and [[Deterrence]]**
 - `Lightning Reflexes` keeps Classic's Agility bonus, 3/6/9/12/15% by rank
 - **Removed:** `Wyvern Sting`, `Killer Instinct` and `Improved Feign Death` are combined into the new `Resourcefulness`; `Monster Slaying` and `Humanoid Slaying` are combined into the new `Improved Tracking`

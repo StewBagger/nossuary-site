@@ -56,6 +56,7 @@ Play Warlock if you do not mind tracking a pet, a handful of timers and two reso
 - **Voidwalker, from 10**: *"your tanky option and the best option to use once you unlock it."* Beta reports said its threat spell `Torment` *"generated an extremely high amount of threat"*, though Wowhead flags Torment as noticeably weaker until you train rank 2 at 20.
 - **Succubus, from 20, as your damage pet**: measured at roughly a quarter of your total damage, and it *"deals insanely high damage compared to the other available demons."* Keep the Voidwalker for elites: beta reports called it *"the safest demon to use while leveling."*
 - **Felhunter, from 30**, for Spell Lock and Devour Magic.
+**Your current demon is stunned while you summon a new one**, on Blizzard's development notes, so change demons between pulls, not during one.
 `Demonic Sacrifice` inverted its buffs and now lasts two hours: **sacrificing the Imp gives +15% Shadow, the Succubus +15% Fire.** The Classic muscle memory is backwards. The Voidwalker restores mana and the Felhunter health. Blizzard moved the talent to the 11-point milestone, so Demonology reaches it at 20.
 ## Which race
 **Read this section in proportion.** Race sits behind spec, gear and knowing your rotation — our own reading, which no source scores. No race is a wrong answer for levelling: Icy Veins calls the field too close to rank and says the races are close in terms of damage.

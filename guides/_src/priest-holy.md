@@ -46,7 +46,7 @@ Healing Power, then MP5, Spirit, Intellect, critical strike.
 - **`Blessed Recovery`** also triggers off any single hit that deals more than 30% of your max health, not only the old proc condition.
 - **`Inspiration`** now triggers from all non-periodic critical heals, not a narrower list.
 - **`Improved Healing`** now also discounts [[Penance]] and [[Prayer of Mending]], alongside its existing heals.
-- **`Searing Light` redesigned**: still raises all Holy damage, but by a smaller percentage, and it now also gives Holy Fire damage a chance to make your next [[Holy Nova]] cost no Mana.
+- **`Searing Light` redesigned**: still raises all Holy damage, now by 2%, and each periodic tick of [[Holy Fire]] has a 5% chance to make your next [[Holy Nova]] cost no Mana.
 - **`Litany of Light`** refunds part of a heal's Mana cost whenever you cast a different-named healing spell than your last one: alternate your heals rather than spam one.
 - **`Spiritual Healing`** now only needs 3 points for the same benefit, where Classic needed more.
 - `Spiritual Guidance`'s bonus to spell damage is cut to *"approximately one third as much as the bonus to spell healing."* That is Blizzard's wording, and the client's 25% healing against 8% damage at 5/5 fits it. **This is a direct nerf to Holy's solo damage.**

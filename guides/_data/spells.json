@@ -1,9 +1,9 @@
 {
  "build": "1.60.1.70753",
  "product": "wowf",
- "generated": "2026-11-03T14:07:43+00:00",
- "stamp": "bde304e24496",
- "inputs": "edd9366c3fd7",
+ "generated": "2026-11-03T14:31:05+00:00",
+ "stamp": "cde851ff9624",
+ "inputs": "def26b3e55a1",
  "entries": {
   "Abolish Disease": {
    "kind": "talent",
@@ -107,6 +107,19 @@
    "duration": "30 sec",
    "cooldown": "180 sec cooldown",
    "desc": "Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec."
+  },
+  "Amplify Magic": {
+   "kind": "spell",
+   "id": 1008,
+   "level": 18,
+   "icon": 135907,
+   "rank": "Rank 1 of 4",
+   "cast": "Instant",
+   "range": "30 yd range",
+   "duration": "600 sec",
+   "school": "Arcane",
+   "cost": "150 Mana",
+   "desc": "Amplifies magic used against the targeted party member, increasing damage taken from spells by up to 23 and healing spells by up to 45. Lasts 600 sec."
   },
   "Ancestral Healing": {
    "kind": "talent",
@@ -2865,6 +2878,72 @@
    "duration": "5 sec",
    "school": "Arcane",
    "desc": "Burns 675 to 1125 mana from those in the blast radius and deals 50% of the mana drained in damage to the target. Also Silences targets in the blast for 5 sec."
+  },
+  "EZ-Thro Thorium Grenade": {
+   "kind": "talent",
+   "id": 1269330,
+   "level": null,
+   "icon": 135826,
+   "by_class": {
+    "druid": {
+     "id": 1266929,
+     "level": null,
+     "icon": 136235,
+     "cast": "60 sec cast"
+    },
+    "hunter": {
+     "id": 1266929,
+     "level": null,
+     "icon": 136235,
+     "cast": "60 sec cast"
+    },
+    "mage": {
+     "id": 1266929,
+     "level": null,
+     "icon": 136235,
+     "cast": "60 sec cast"
+    },
+    "paladin": {
+     "id": 1266929,
+     "level": null,
+     "icon": 136235,
+     "cast": "60 sec cast"
+    },
+    "priest": {
+     "id": 1266929,
+     "level": null,
+     "icon": 136235,
+     "cast": "60 sec cast"
+    },
+    "rogue": {
+     "id": 1266929,
+     "level": null,
+     "icon": 136235,
+     "cast": "60 sec cast"
+    },
+    "shaman": {
+     "id": 1266929,
+     "level": null,
+     "icon": 136235,
+     "cast": "60 sec cast"
+    },
+    "warlock": {
+     "id": 1266929,
+     "level": null,
+     "icon": 136235,
+     "cast": "60 sec cast"
+    },
+    "warrior": {
+     "id": 1266929,
+     "level": null,
+     "icon": 136235,
+     "cast": "60 sec cast"
+    }
+   },
+   "cast": "1 sec cast",
+   "range": "45 yd range",
+   "duration": "3 sec",
+   "desc": "Inflicts 300 to 500 Fire damage and stuns targets for 3 sec in a 3 yd radius. Any damage will break the effect."
   },
   "Early Demise": {
    "kind": "talent",
@@ -7852,6 +7931,17 @@
    "level": null,
    "icon": 132151,
    "cast": "Instant"
+  },
+  "Remove Lesser Curse": {
+   "kind": "spell",
+   "id": 475,
+   "level": 18,
+   "icon": 136082,
+   "cast": "Instant",
+   "range": "30 yd range",
+   "school": "Arcane",
+   "cost": "10% of base Mana",
+   "desc": "Removes 1 Curse or Bane from a friendly target."
   },
   "Rend": {
    "kind": "spell",

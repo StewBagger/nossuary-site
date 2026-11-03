@@ -1,6 +1,6 @@
 updated: November 3, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraft.blizzard.com/en-us/news/24310968 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Subtlety Guide|https://www.wowhead.com/forever/guide/classes/rogue/subtlety/level-20-dps-overview ;; Icy Veins — Subtlety Rogue PvE Guide|https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide ;; ClassicWoW.gg — Subtlety Rogue|https://classicwow.gg/forever/guides/rogue/subtlety ;; WoWSims Forever — Rogue|https://www.wowsims.com/forever/rogue/dps/
+sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraft.blizzard.com/en-us/news/24310968 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Subtlety Guide|https://www.wowhead.com/forever/guide/classes/rogue/subtlety/level-20-dps-overview ;; Icy Veins — Subtlety Rogue PvE Guide|https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide ;; ClassicWoW.gg — Subtlety Rogue|https://classicwow.gg/forever/guides/rogue/subtlety ;; WoWSims Forever — Rogue|https://www.wowsims.com/forever/rogue/dps/ ;; Gaunerh — Is Ambush + Hemorrhage Actually GOOD? WoW Forever Rogue|https://www.youtube.com/watch?v=9KXT_wavNAY
 
 Stealth openers and a [[Rupture]]-driven bleed cycle, with no area damage of any kind.
 :::scope
@@ -22,7 +22,7 @@ Wowhead published **two level 20 builds** for the beta's tree, and both still fi
 3. Build with [[Backstab]] behind the target, otherwise [[Sinister Strike]]. From 25, **`Ghostly Strike` is your non-positional builder**, and the [[Ambush]] it unlocks without [[Stealth]] is a second opener mid-fight
 4. [[Slice and Dice]] on durable targets, [[Eviscerate]] otherwise. *"[[Rupture]] is rarely used at lower levels."*
 5. **Dagger-only alternative:** [[Gouge]] then [[Backstab]], but wait for near-maximum energy first
-**Once `Hemorrhage` is reachable:** use it to build, then [[Rupture]] immediately on long fights.
+**Once `Hemorrhage` is reachable:** use it to build, then [[Rupture]] immediately on long fights. Gaunerh picks the finisher by the target's Health: [[Rupture]] if it will live through the bleed, [[Eviscerate]] to finish it off. That `Hemorrhage` and `Serrated Blades` both raise [[Rupture]] damage is in the client; the Health cut-off is his judgement.
 **Multi-target: none.** Wowhead: *"No AoE capabilities whatsoever."*
 **What changes the answer:**
 - **[[Backstab]] or [[Sinister Strike]].** With the same dagger in hand, Backstab deals more per Energy at every level, even against the 40-Energy [[Sinister Strike]] that `Efficient Strikes` gives you, because its 150% also multiplies its flat bonus. It costs more per combo point, 60 Energy against 45, and it needs you behind the target.

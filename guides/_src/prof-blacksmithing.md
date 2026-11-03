@@ -4,7 +4,7 @@ sources: Blizzard — Development Notes, updated November 2|https://us.forums.bl
 
 Plate, mail, weapons and stones. In vanilla it was the money profession. **In Forever it is a raid-power profession.** 197 of its 437 recipes are new, and it owns two crafted tier sets.
 :::scope
-Recipes, reagents and skill levels come from foreverchanges.pro's reading of the beta client and are solid. The beta stopped professions at skill 225, so nothing above it was crafted before launch. Blizzard is deliberately hiding item stats until they drop, so 70 Blacksmithing recipes make something the client will not describe. Every "best in slot" figure below comes from level-20 lists and has not been re-checked at higher levels. Nobody knows the level-60 answers.
+Recipes, reagents and skill levels come from foreverchanges.pro's reading of the beta client and are solid. The beta stopped professions at skill 225, so nothing above it was crafted before launch. Blizzard is deliberately hiding item stats until they drop, so 70 Blacksmithing recipes make something the client will not describe. Every "best in slot" figure below comes from level-20 lists and has not been re-checked at higher levels. The level-60 item facts below are read from the launch client; how those items perform at 60 is untested.
 :::
 ## Is Blacksmithing worth taking?
 Blacksmithing makes plate and mail, so Warriors and Paladins are its wearers. It earns **Legacy Points** at skill 150, 225 and 300. By the best-in-slot counts below it is worth taking, and its gear is genuinely competitive rather than a stopgap *(ours, not a source's)*.
@@ -12,6 +12,11 @@ At level 20, **17 of the 22 Blacksmithing items in level-20 best-in-slot lists a
 The advice that comes with it: *"Use Blacksmithing to fill useful gaps in your equipment rather than slowing down your leveling route to craft every available recipe."*
 ## What it pairs with
 Blacksmithing eats ore, and **Mining is the only profession that gathers it.** That is unchanged, and Blacksmithing has no other feed.
+Its camp object is [[Sharpening Wheel]] at skill 20: 34 Strength to everyone sitting at the fire at level 52 and above. The Anvil and the Master Forge follow from Blueprints at 140 and 300 and keep the Wheel's buff. The [Camping guide](/guides/wow-forever/professions/camping/) has the full table.
+## At level 60, against Engineering
+- **Most of Blacksmithing's level-60 plate is Bind on Equip**, so anyone can buy it. Of the Blacksmithing items at item level 58 and above that the launch client describes, it binds only seven on pickup: Enriched Thorium Helm, Leggings and Breastplate (item level 62–63, Defense, Stamina and Spell Power), Dark Iron Plate, and three weapons, Corruption, Blood Talon and Legionite Glaive. Lionheart Helm and the Enchanted Thorium set are Bind on Equip. The two tier sets are not described in the client, so their binding is unknown.
+- **The Bind on Pickup tank line starts lower.** Sentinel's plans run from skill 150 to 250, ending in Sentinel's Gloves and Sentinel's Waistguard at item level 55 (Defense, Stamina, Strength). Those pieces need the profession.
+- **What Engineering locks is the reverse**: items you cannot *use* without the skill, rather than items you cannot buy. The [Engineering guide](/guides/wow-forever/professions/engineering/) lists them.
 ## What Forever changed
 - **A whole new armour economy at the trade camp.** 60 plans bought with [Merchant's Favor](/guides/wow-forever/professions/merchants-favor/), in role-templated families: five mail lines at skill 45–125, then five plate lines at 175–250. You get one piece per stat profile per slot, so the tank version carries Defense Rating and the healer version Spell Damage and Healing. They are Bind on Pickup, so taking the profession is the only way to get them.
 - **New blacksmith-only weapons that double as your tool.** [[Mithril Blacksmith Hammer]] at skill 195 and [[Arcanite Blacksmith Hammer]] at 270 both *"serve as a Blacksmith Hammer"* and are real weapons. No vanilla equivalent.
@@ -26,7 +31,7 @@ Blacksmithing eats ore, and **Mining is the only profession that gathers it.** T
 `Armorsmith`, `Weaponsmith` and the three Master sub-specialisations (Swordsmith, Hammersmith, Axesmith) **are all present in the launch client**, wired into the live skill line with their vanilla descriptions intact. The spec-gated plans are still in the data too: Persuader, Arcanite Champion, Corruption, Heartseeker, Masterwork Stormhammer, Hammer of the Titans.
 **Everything else about them is unknown**: skill level, whether they are still mutually exclusive, what switching costs. No guide site mentions them at all, and presence in the client proves only that they were not removed. The beta stopped professions at 225 and characters at 30, and every specialisation sits above that, so no tester reached one.
 ## Levelling it
-1. **1 → 75**: Rough Sharpening Stone (~26), then Rough Grinding Stone (~74)
+1. **1 → 75**: Rough Sharpening Stone (~26), then Rough Grinding Stone (~74). Keep the sharpening stones: each adds 2 damage to a sharp weapon for 30 minutes
 2. **75 → 150**: copper and bronze armour
 3. **150 → 225**: Green Iron Bracers → Golden Scale Bracers → Mithril Plate Bracers → Steel Plate Helm
 4. **225 → 300**: the published route is 59 crafts of [[Huge Thorium Battleaxe]]

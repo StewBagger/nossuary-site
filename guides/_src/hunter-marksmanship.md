@@ -1,6 +1,6 @@
 updated: November 3, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Beta Known Issues, October 8|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-known-issues-october-1/2352687 ;; Wowhead — Level 20 Marksmanship Hunter|https://www.wowhead.com/forever/guide/classes/hunter/marksmanship/level-20-dps-overview ;; Icy Veins — Marksmanship Hunter Ranged DPS PvE Guide|https://www.icy-veins.com/wow-forever/marksmanship-hunter-ranged-dps-pve-guide ;; ClassicWoW.gg — MM Hunter Overview & Changes|https://classicwow.gg/forever/guides/hunter/marksmanship ;; WoWSims Forever — Marksmanship|https://www.wowsims.com/forever/hunter/dps/
+sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Beta Known Issues, October 8|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-known-issues-october-1/2352687 ;; Wowhead — Level 20 Marksmanship Hunter|https://www.wowhead.com/forever/guide/classes/hunter/marksmanship/level-20-dps-overview ;; Icy Veins — Marksmanship Hunter Ranged DPS PvE Guide|https://www.icy-veins.com/wow-forever/marksmanship-hunter-ranged-dps-pve-guide ;; ClassicWoW.gg — MM Hunter Overview & Changes|https://classicwow.gg/forever/guides/hunter/marksmanship ;; WoWSims Forever — Marksmanship|https://www.wowsims.com/forever/hunter/dps/ ;; WillE — ULTIMATE WoW Forever Class Overview (WOW FOREVER)|https://www.youtube.com/watch?v=7QRS0UYz3yQ
 
 Ranged physical damage without leaning on the pet, and in Forever, **the dungeon area-damage Hunter.**
 :::scope
@@ -16,6 +16,7 @@ Two published verdicts agree about soloing it. Going 11 points deep to reach `Lo
 ## Your talent points
 **Level 20: 0/11/0**, to reach `Lone Wolf`.
 The sequence is eleven points into Marksmanship. You are buying the tier-3 talent at the end of it, so the intermediate points follow the tree rather than a preference.
+WillE singles out `Careful Aim` among the early Marksmanship talents. That it adds up to 100% of your Intellect to melee and ranged Attack Power is Blizzard's figure; putting it first is his judgement.
 The warning that comes with it is explicit: *"At low level, you should never take Lone Wolf unless your goal is to maximize your cleave and AoE damage in dungeons."*
 **If you are questing, spec Beast Mastery instead**: `Deadly Aspects` 5 and `Focused Fire` 2, which the Beast Mastery page covers.
 ## Rotation

@@ -54,6 +54,8 @@ No source had published a level-30 Discipline build, healing or damage, when thi
 - **`Wand Specialization` is 2 ranks reaching 25%**, where Classic needed 5, so every wand-levelling build front-loads it. Wands no longer gain spell power.
 - **`Meditation`'s mana benefit from Spirit is *"increased substantially"*.** That is Blizzard's phrasing, with no number attached. The client reads 17/33/50% of your Mana regeneration continuing while casting. `Mental Strength` is row 2 and grants +2% Intellect per rank, 10% at 5/5, which this build takes.
 - **[[Power Word: Shield]] can replace a shield already on the target** when yours is of equal or higher rank, on a target who has no Weakened Soul.
+- **Shielding a Warrior or Druid tank no longer starves their Rage.** Blizzard's class post says Rage from taking damage now ignores all absorbs, so a shield on the tank costs them no Rage.
+- **[[Penance]] hits and heals for less than its first beta numbers.** Blizzard's development notes say it had been treated as a 3-second channel rather than 2, cut its damage and healing to match, and made rank 1 cost half as much Mana again. Blizzard's stated aim is that it keeps a consistent Mana-efficiency edge over [[Heal]] and [[Greater Heal]].
 - **The client makes [[Mind Flay]] talent-only**, gated on 10 points in Shadow and on level 20, exactly as Classic did. No published Discipline build reaches it, so in practice you will not have it. See the [Shadow](/guides/wow-forever/priest/shadow/) page.
 ## At level 60
 Unknown: whether absorb-stacking (`Divine Aegis` plus `Renewed Hope` plus `Soul Warding`) beats raw throughput in raids. [[Penance]]'s numbers scale off gear whose stats are **hidden until it drops**, and no raid has been tested.

@@ -44,6 +44,7 @@ Blizzard's own summary gives both halves. Mages *"remain one of the most powerfu
 | 10 | **[[Frost Nova]]**, your first real control |
 | 14 | **[[Arcane Explosion]]**, first area power spike |
 | 16 | **[[Flamestrike]]**, second |
+| 18 | [[Amplify Magic]], and [[Remove Lesser Curse]], which removes a Bane as well as a Curse in the launch client |
 | 20 | [[Blink]], [[Evocation]], [[Blizzard]], [[Mana Shield]], and two capital **teleports** (your faction's third at 30) |
 | 24 | **[[Counterspell]]** |
 | 28 | [[Conjure Mana Agate]] |

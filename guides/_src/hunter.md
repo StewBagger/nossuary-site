@@ -75,9 +75,9 @@ Racials decide things in **PvP**, specifically the ones that break crowd control
 **Forever changed the pet model itself.** Pets no longer carry a per-family damage buff or penalty. They scale off your own gear instead, and identity now comes from each family's kit rather than a hidden multiplier. Blizzard confirms every pet family can now learn either [[Bite]] or [[Claw]] (some families both), and either [[Dive]] or [[Dash]]. On top of that shared kit, every family has exactly one ability nothing else has:
 | Family | Unique ability | What it does |
 | --- | --- | --- |
-| Bat | `Sonic Blast` | Damage, plus a spellcasting slow on the target |
+| Bat | `Sonic Blast` | Damage, plus a 30% spellcasting slow on the target for 20 seconds, on a 60-second cooldown |
 | Bear | [[Swipe]] | Damaging attack that hits 3 targets |
-| Bird of Prey (formerly Owl) | `Mine!` | Damage and disarms the target |
+| Bird of Prey (formerly Owl) | `Mine!` | Damage and disarms the target for 3 seconds, on a 90-second cooldown |
 | Boar | `Charge` | Charges to and immobilizes the target, and gains Attack Power on the pet's next attack |
 | Carrion Bird | `Demoralizing Screech` | Damages nearby enemies and reduces their melee Attack Power |
 | Cat | `Prowl` | Stealth, and increased damage on the next attack from Stealth |

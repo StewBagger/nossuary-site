@@ -1,6 +1,6 @@
 updated: November 3, 2026
 build: 1.60.1.70245
-sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
+sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro ;; MyBigBlaze — Don’t Pick the Wrong Profession in WoW Forever|https://www.youtube.com/watch?v=nXI3Szkeve4 ;; mulltiy — WoW Forever Profession Tier List – Best for PvE, PvP & Goldmaking!|https://www.youtube.com/watch?v=K6DAUw8ztrE
 
 Bombs, trinkets, goggles and gadgets. **Forever did not fold it into the new crafted-gear economy**: no tier set, and the fewest trade-camp recipes of any profession. It is still the most expensive thing in the game to level *(ours, not a source's)*; there are no prices before launch.
 :::scope
@@ -10,12 +10,17 @@ Recipes and skill levels come from foreverchanges.pro's reading of the beta clie
 It earns **Legacy Points** like the other crafting professions, but it got no tier set and only 29 trade-camp recipes, the fewest of any profession. Take it for utility and fun; it is also the most expensive to buy out *(ours, not a source's)*.
 Three reasons to take it anyway, **two of them published**:
 1. **You are a Gnome.** The racial was rewritten for Forever (see below)
-2. **PvP.** The published Hunter advice is *"Engineering for valuable PvP items"*
+2. **PvP.** The published Hunter advice is *"Engineering for valuable PvP items"*, and MyBigBlaze and mulltiy both name Engineering the profession for PvP
 3. **As a second profession at 60**, once Blacksmithing has given you the gear: *"After Blacksmithing has provided the gear you need, you can replace it with Engineering."*
 [[Minor Recombobulator]] at Engineering 140 appears in **32 of the level-20 best-in-slot lists**, effectively every class and spec in the game. That count comes from level-20 lists and has not been re-checked at higher levels.
 The Mage guide adds a warning: *"without a Herbalism or Mining alt, these will be difficult or expensive to level."*
 ## What it pairs with
 Engineering eats ore and stone, and **Mining is the only profession that gathers them.** That is unchanged.
+Its camp object is [[Reagent Bot]] at skill 20, a reagent vendor at the fire. [[Repair Bot]] follows from a Blueprint at 140 and adds repairs, and the Anarchist's Workbench at 300. See the [Camping guide](/guides/wow-forever/professions/camping/).
+## At level 60, against Blacksmithing
+- **Engineering's lock is on using items, not buying them.** In the launch client these need Engineering to use: Goblin Sapper Charge at 205, Gnomish Battle Chicken at 230, Thorium Grenade at 260, Dark Iron Bomb at 285, and Arcane Bomb, Force Reactive Disk and Arcanite Dragonling at 300. The Sapper deals 600 Fire damage to all nearby enemies and 500 to you. The Disk deals 30 damage to all nearby enemies each time your shield blocks.
+- **The new grenades need no Engineering.** No EZ-Thro or SAF-T item in the client carries a skill requirement, and the client describes `EZ-Thro Thorium Grenade` as *"Anyone can use grenades with EZ-Thro!"* It and [[EZ-Thro Dark Bomb]] carry the same base Fire damage as Thorium Grenade and Dark Iron Bomb, 400 and 450. An engineer can sell grenades to anyone, and a non-engineer can throw them. The Sapper has no EZ-Thro copy.
+- **Blacksmithing locks the opposite way**: almost all of its level-60 plate is Bind on Equip and can be bought. The [Blacksmithing guide](/guides/wow-forever/professions/blacksmithing/) lists the Bind on Pickup exceptions.
 ## What Forever changed
 - **The Gnome racial was rewritten.** Vanilla gave *"Engineering skill increased by 15."* Forever gives *"Your gnomish ingenuity reduces the rate of engineering devices failing or backfiring when you use them by 20%."*
 - **Engineering-only gating is fully intact, and is being applied to brand-new items.** 98 items carry a *"Requires Engineering"* line, 20 of them new. The vanilla ones are untouched: Gnomish Rocket Boots, Parachute Cloak, Arcanite Dragonling, Force Reactive Disk, Goblin Jumper Cables XL, Master Engineer's Goggles, Bloodvine Goggles.

@@ -27,6 +27,7 @@ This profession changed more than any other.
 - **Six Season of Discovery enchants are obtainable**, but twelve more sit dead in the client with no vendor selling them, including Retricutioner, Dismantle, Excellent Spirit and Superior Intellect. If you played Season of Discovery, do not assume your enchants came with you.
 - **New craftables**: staves, off-hands, seven new wands, and three new Heart of the Mountain trinkets at 285.
 - **The wands are not a gold line.** Blizzard's October 1 build made *"all crafted common and uncommon quality wands"* sell at vendors for 1 copper. The September 24 build stopped wands gaining any *additional* damage from the user's spell damage. Craft them to wear or to disenchant; vendoring one pays nothing.
+- **Wizard oils are at their Classic values.** Blizzard's September 24 build set Minor Wizard Oil to 8 spell damage and healing, Lesser Wizard Oil to 16 and Wizard Oil to 24, and left Brilliant Wizard Oil unchanged. Each lasts 30 minutes on a weapon. Do not budget from a beta guide that quotes higher figures.
 - **New gloves enchant, [[Lotus Claw]]** at 295: *"a small chance to acquire Death Lotus when gathering any herb in Hyjal."*
 - **A new profession perk, ring enchants** for attack power, spell power or Stamina, on your own rings only. That is a later-expansion perk in a vanilla relaunch. Values, skill and cost are not published.
 - **Certification** at 300 for 1,000 Favor unlocks the title "the Enchanter".

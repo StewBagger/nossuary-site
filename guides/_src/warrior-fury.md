@@ -57,12 +57,12 @@ Blizzard's own framing for its October 1–2 pass: **more early utility, and poi
 - **`Booming Voice` does something again:** Shout area of effect is 10/20/30/40/50% wider, and Shout Rage cost is cut by 5/10/15/20/25%. The same 5/10/15/20/25% comes off `Piercing Howl`'s Rage cost.
 - **`Iron Will` is not a Fury talent**: it is Protection row 1, covered in that guide.
 - `Unbridled Wrath` **no longer grants double Rage for a two-handed weapon**: 1 Rage at 12/24/36/48/60%. The change also softens the case for an Arms Warrior parking points in this row (see the Arms guide).
-- **`Enrage` sits in row 3**, beside `Blood Craze`, `Piercing Howl` and `Furious Precision`.
+- **`Enrage` sits in row 3**, beside `Blood Craze`, `Piercing Howl` and `Furious Precision`. Any damaging attack on you has a 30% chance to trigger it, for +2% physical damage per point over 12 seconds, so 10% at 5/5 (client).
 - **New talent `Gore Drinker`, row 5, requires `Blood Craze`.** Your `Enrage`, `Berserker Rage`, `Bloodrage`, `Death Wish` and [[Bloodthirst]] make your next 3 melee attacks restore 0.5/1% of max Health, and that healing generates no threat (Blizzard). The level 30 build's single `Blood Craze` point does not reach it: in our reading a prerequisite needs its full 3 ranks, as Classic's did *(ours, not a source's)*.
 - **New talent `Reckless Swings`, row 4**, 1 point: 25% of base health for 5 extra Rage on each of your next 4 melee attacks, 15-second cooldown. Covered under Your talent points.
 - **`Flurry` has no prerequisite; [[Bloodthirst]] requires `Death Wish`** (Blizzard). You can take `Flurry` without `Enrage` or `Death Wish`.
 - **New talent `Improved Whirlwind`, row 6**, 2 points: 1/2 seconds off [[Whirlwind]]'s cooldown and 15/30% more damage to the closest enemy (Blizzard).
-- `Improved Berserker Rage` moved from row 6 to row 5, and `Berserker Rage` itself now trains at **level 30**.
+- `Improved Berserker Rage` moved from row 6 to row 5, and `Berserker Rage` itself now trains at **level 30**. Berserker Rage also makes you generate extra Rage from damage taken for its 10 seconds, and the talent adds 5 Rage on use plus a 50% chance at rank 1 to remove every movement-impairing effect on you (client).
 - `Blood Craze` triggers on being crit or on taking a hit worth more than 20% of your max health, and **not off [[Bloodthirst]] casts**. It does not trigger while you sit, and its healing generates no threat (Blizzard).
 - **[[Bloodthirst]]'s Attack Power ratio is 45%.** It does not heal you by itself, costs 30 Rage on a 6-second cooldown, and carries +10% movement speed for 10 sec.
 - `Flurry` has **3 ranks**: 10/20/30% attack speed for 3 swings after a critical strike, the same 30% at full rank as Classic's 5 (Blizzard). `Improved Battle Shout` and `Improved Demoralizing Shout` are gone, as the September 30 Class Deep Dive recorded — both effects are baseline now.
