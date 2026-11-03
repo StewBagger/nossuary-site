@@ -1,9 +1,9 @@
-updated: October 8, 2026
+updated: November 3, 2026
 build: 1.60.1.70245
 
 Potions, elixirs, flasks and transmutes. **70 of its 179 recipes are new**, including three whole consumable ladders and four new raid flasks.
 :::scope
-Recipes, skill levels and reagents come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta**, so nothing above that has been crafted by anyone. The levelling route below is computed from recipe skill-colours rather than tested, and the source publishing it says so. Where the new herbs come from is unpublished.
+Recipes, skill levels and reagents come from foreverchanges.pro's reading of the beta client and are solid. **The beta stopped professions at skill 225**, so nothing above that was crafted before launch. The levelling route below is computed from recipe skill-colours rather than tested, and the source publishing it says so. Where the new herbs come from is unpublished.
 :::
 ## Is Alchemy worth taking?
 It is a money profession *and* a raid-utility profession. It earns **Legacy Points** at skill 150, 225 and 300, and grants a title. Of the crafting professions it has the strongest case *(ours, not a source's)*.
@@ -59,7 +59,7 @@ The published route, computed from recipe costs rather than tested:
 13. **260 → 265**: [[Draught of Detect Demon]], ~5
 14. **265 → 295**: [[Elixir of Greater Defense]], ~34. Vendor recipe, and the expensive block
 15. **295 → 300**: [[Major Mana Potion]], ~5
-**The beta wall lands mid-step 10, at skill 225.** The longest single step is 209 to 237, and it needs a vendor recipe, so buy that before you get there.
+**Your skill stops at 225, mid-step 10, until you train Artisan**, which needs character level 35. The longest single step is 209 to 237, and it needs a vendor recipe, so buy that before you get there.
 ## Certification and title
 New in Forever: an **Alchemy Certification** at skill 300 unlocks the title "the Alchemist". The title is account-wide, but only a character with 300 Alchemy can display it.
 ## What is not known

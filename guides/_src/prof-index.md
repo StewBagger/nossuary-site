@@ -1,10 +1,10 @@
-updated: October 8, 2026
+updated: November 3, 2026
 build: 1.60.1.70245
-sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
+sources: Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
 Professions still run 1 to 300 and you still pick two primaries. What changed is everything around them: **919 new recipes**, a camping system, a second currency, and a food buff that gives +5% experience from level one.
 :::scope
-Recipe counts, skill levels, trainer ranks and buff values below come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta.** Everything above that is read from client data, not played. Node density, respawn timers and skill-up rates are unpublished for every gathering profession bar one line: Blizzard's October 1 build *"reduced the amount of Poor Copper Vein nodes available in starter areas"*. The zone recommendations in the gathering guides are Classic spawn data, and Forever's new zones are not counted yet.
+Recipe counts, skill levels, trainer ranks and buff values below come from foreverchanges.pro's reading of the beta client and are solid. **The beta stopped professions at skill 225**, so everything above that is read from client data, not played. Node density, respawn timers and skill-up rates are unpublished for every gathering profession bar one line: Blizzard's October 1 build *"reduced the amount of Poor Copper Vein nodes available in starter areas"*. The zone recommendations in the gathering guides are Classic spawn data, and Forever's new zones are not counted yet.
 :::
 Looking for a class instead? **[The class guides are here](/guides/wow-forever/)**, all nine, one page per specialisation.
 ## Start here: the three things that matter most
@@ -27,7 +27,7 @@ Unchanged from Classic, and confirmed in the client.
 | Artisan | 200 | 35 | 300 |
 **There is no Master rank and no 275 tier.** That is Burning Crusade, and a veteran who half-remembers it will go looking for a trainer who does not exist.
 **Artisan needs character level 35**, which is the gate people forget: your profession cannot pass 225 until then no matter how much you craft.
-**In the beta no profession passes skill 225 at all**, because the level cap is below 35. Everything published about 225 to 300 is read from client data, not played.
+**No profession passed skill 225 in the beta**, because its level cap of 30 sat below 35. Everything published about 225 to 300 is read from client data, not played.
 
 ## Which two primaries?
 | Profession | Kind | Legacy Points? | In one line |
@@ -64,20 +64,19 @@ Unchanged from Classic, and confirmed in the client.
 | Profession | The perk |
 | --- | --- |
 | Blacksmithing | Stat-boosting **belt buckles**, and Repair All, a free repair cooldown |
-| Engineering | Gadgets and **tinkers crafted with Tinkerbox** |
 | Enchanting | **Ring enchants** for attack power, spell power or Stamina, on your own rings |
 | Leatherworking | **Bracer kits**, and a saddle that increases mounted speed |
 | Tailoring | **Cloth Scavenging** for extra cloth from enemies, and cloak embroidery |
-**None of these exists in vanilla 1.12**, and no skill level, cost or value has been published for any of them. They are named and nothing more.
+**None of these exists in vanilla 1.12**, and no skill level, cost or value has been published for any of them. They are named and nothing more. Engineering has no such perk: the Tinkerbox, its modules and its schematics are not in the launch client.
 ## A warning about stats
 **Forever uses rating stats and a unified Spell Power** where vanilla used flat percentages and split spell damage from healing. A crafted piece reads like `+25 Stamina, +9 Defense Rating, +14 Spell Power`. If you read a vanilla stat budget onto these items you will misjudge them.
 **Blizzard is also hiding item stats until they drop.** Only about a fifth of the new items are revealed, and 240 recipes across the four gear professions make something the client will not describe. That is deliberate.
 ## Specialisations
 Only three professions have them, exactly as in vanilla: Blacksmithing (Armorsmith, Weaponsmith, and the three Master smiths), Leatherworking (Dragonscale, Elemental, Tribal) and Engineering (Gnomish, Goblin). **Tailoring, Enchanting and Alchemy have none.** If you remember Elixir or Potion Mastery, that is Burning Crusade.
-All ten are present in the beta client with their descriptions intact. **Beyond that, almost nothing is known**: not the skill levels, not whether they are still mutually exclusive, not what switching costs. Only Engineering's has a published sentence confirming it is a live system, quest-based as in vanilla.
-The reason nobody knows is structural: **the beta caps professions at 225 and characters at 30**, and every specialisation sits above that. No tester can reach one.
+All ten are present in the launch client with their descriptions intact. **Beyond that, almost nothing is known**: not the skill levels, not whether they are still mutually exclusive, not what switching costs. Only Engineering's has a published sentence confirming it is a live system, quest-based as in vanilla.
+The reason nobody knows is structural: **the beta stopped professions at 225 and characters at 30**, and every specialisation sits above that, so no tester reached one.
 ## What is not known
 - **Gathering material tables beyond Classic's.** Two ores (Pitchblende, Heavy Thorium Ore) and six herbs (Demonsage, Death Lotus, Marefoil, Stranglevine, Rosecap, Frilled Lichen) exist in the client as crafting reagents, and no gathering node is published for any of them. Three do at least have a gathering spell: Demonsage and Marefoil sit beside the 28 Classic herbs, and Heavy Thorium has a lode of its own. They are probably the "Scarce materials" `Bountiful Harvest` boosts, but nobody has confirmed that.
-- **Gathering node density, respawn rules and skill-up rates.** Unpublished for all three gathering professions, with one exception: Blizzard thinned the Poor Copper Vein nodes in the starter areas on October 1. That is the only node-density figure Blizzard has published for any of them.
+- **Gathering node density, respawn rules and skill-up rates.** Unpublished for all three gathering professions, with one exception: Blizzard thinned the Poor Copper Vein nodes in the starter areas on October 1. That is the only node-density figure Blizzard has published for any of them. Blizzard's November 2 notes speed up respawns in many areas for launch, fastest in the starting zones, without saying whether gathering nodes are included.
 - **Legacy perk point costs**, and whether perks can be refunded. In the beta a class trainer resets them for 10 gold.
 - **Whether the +5% experience stacks** with the Cozy Sleeping Bag's +3% or with rested experience. Nobody has tested it.

@@ -1,15 +1,15 @@
-updated: October 8, 2026
+updated: November 3, 2026
 build: 1.60.1.70245
-sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
+sources: Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
 Ore, stone and smelting. **The vein table is unchanged from Classic**, so your old route still works. Blizzard did thin the copper in the starter areas on October 1, where that route begins. What changed otherwise is what the ore is worth, plus a camp object that hands your group up to 90 attack power.
 :::scope
-Vein types, skill thresholds and camp objects come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta.** The zone recommendations below are Classic spawn data; Forever's new zones, including Zephras Isle, are not counted yet. Node density, respawn rules and skill-up rates are unpublished, apart from the October 1 cut to Poor Copper Vein nodes in the starter areas.
+Vein types, skill thresholds and camp objects come from foreverchanges.pro's reading of the beta client and are solid. The beta stopped professions at skill 225, so nothing above it was crafted before launch. The zone recommendations below are Classic spawn data; Forever's new zones, including Zephras Isle, are not counted yet. Node density, respawn rules and skill-up rates are unpublished, apart from the October 1 cut to Poor Copper Vein nodes in the starter areas.
 :::
 ## Is Mining worth taking?
 Waylaid Crates give low-level ore a guaranteed buyer it never had in vanilla, which makes Mining a better money profession than it was *(ours, not a source's)*.
 Mining crafts nothing itself; its entire value is feedstock and gold. It also **earns no Legacy Points**, since only the six crafting professions do. If you are chasing the 18 Tradeskill points, this is the wrong pick.
-Beyond gold, the camp object is the argument. [[Lodestone]] at skill 20 gives **90 melee attack power** to everyone sitting nearby and does not stack with [[Blessing of Might]], so a melee group without a Paladin wants a miner at the fire. The 90 is the figure at level 52 and above. The client scales it by level, and at the beta's level-30 cap the Lodestone gives 32. Blizzard publishes no camp-object value and no equivalence to a class buff.
+Beyond gold, the camp object is the argument. [[Lodestone]] at skill 20 gives **90 melee attack power** to everyone sitting nearby and does not stack with [[Blessing of Might]], so a melee group without a Paladin wants a miner at the fire. The 90 is the figure at level 52 and above. The client scales it by level, and at level 30 the Lodestone gives 32. Blizzard publishes no camp-object value and no equivalence to a class buff.
 ## What it pairs with
 Blacksmithing and Engineering both eat ore, and **Mining is the only profession that gathers it.** Neither has another feed, and nothing published suggests Forever changed that.
 ## The veins

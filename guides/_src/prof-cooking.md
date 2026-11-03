@@ -1,4 +1,4 @@
-updated: October 8, 2026
+updated: November 3, 2026
 build: 1.60.1.70245
 
 **Available at level 1.** 103 of Cooking's 123 dishes give +5% experience from kills while you are well fed, and the first of them comes at Cooking skill 1 on a level-1 character.

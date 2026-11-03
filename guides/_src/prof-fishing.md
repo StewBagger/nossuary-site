@@ -1,4 +1,4 @@
-updated: October 8, 2026
+updated: November 3, 2026
 build: 1.60.1.70245
 
 Slow and peaceful, and in Forever no longer optional if you want Cooking: **five of Cooking's seven levelling steps are fish.**

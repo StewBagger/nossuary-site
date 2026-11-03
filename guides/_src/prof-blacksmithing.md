@@ -1,14 +1,14 @@
-updated: October 8, 2026
+updated: November 3, 2026
 build: 1.60.1.70245
-sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
+sources: Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696
 
 Plate, mail, weapons and stones. In vanilla it was the money profession. **In Forever it is a raid-power profession.** 197 of its 437 recipes are new, and it owns two crafted tier sets.
 :::scope
-Recipes, reagents and skill levels come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta.** Blizzard is deliberately hiding item stats until they drop, so 70 Blacksmithing recipes make something the client will not describe. Every "best in slot" figure below is level 20, which was the beta cap when it was written. The cap rose to 30 on October 1 and the figures have not been re-checked against it. Nobody knows the level-60 answers.
+Recipes, reagents and skill levels come from foreverchanges.pro's reading of the beta client and are solid. The beta stopped professions at skill 225, so nothing above it was crafted before launch. Blizzard is deliberately hiding item stats until they drop, so 70 Blacksmithing recipes make something the client will not describe. Every "best in slot" figure below comes from level-20 lists and has not been re-checked at higher levels. Nobody knows the level-60 answers.
 :::
 ## Is Blacksmithing worth taking?
 Blacksmithing makes plate and mail, so Warriors and Paladins are its wearers. It earns **Legacy Points** at skill 150, 225 and 300. By the best-in-slot counts below it is worth taking, and its gear is genuinely competitive rather than a stopgap *(ours, not a source's)*.
-At the current cap, **17 of the 22 Blacksmithing items in level-20 best-in-slot lists are new Forever items**. [[Guard's Silvered Chain Helm]] at skill 95 is best in slot for six Warrior and Paladin specs.
+At level 20, **17 of the 22 Blacksmithing items in level-20 best-in-slot lists are new Forever items**. [[Guard's Silvered Chain Helm]] at skill 95 is best in slot for six Warrior and Paladin specs.
 The advice that comes with it: *"Use Blacksmithing to fill useful gaps in your equipment rather than slowing down your leveling route to craft every available recipe."*
 ## What it pairs with
 Blacksmithing eats ore, and **Mining is the only profession that gathers it.** That is unchanged, and Blacksmithing has no other feed.
@@ -23,8 +23,8 @@ Blacksmithing eats ore, and **Mining is the only profession that gathers it.** T
 - **Only 6 of 437 recipes changed their reagents.** Blacksmithing's existing costs are essentially untouched.
 - **A dungeon-drop route that was always meant to exist now works.** Blizzard's October 1 build made available *"a number of recipes intended for Blacksmithing and Leatherworking as random drops in dungeons"*. The word *intended* matters: the route was always planned and has only now gone live. It is a third way to get recipes, alongside the trainer and the trade-camp plans. No drop list and no list of dungeons has been published.
 ## Specialisations
-`Armorsmith`, `Weaponsmith` and the three Master sub-specialisations (Swordsmith, Hammersmith, Axesmith) **are all present in the beta client**, wired into the live skill line with their vanilla descriptions intact. The spec-gated plans are still in the data too: Persuader, Arcanite Champion, Corruption, Heartseeker, Masterwork Stormhammer, Hammer of the Titans.
-**Everything else about them is unknown**: skill level, whether they are still mutually exclusive, what switching costs. No guide site mentions them at all, and presence in the client proves only that they were not removed. The beta caps professions at 225 and characters at 30, and every specialisation sits above that, so no tester can reach one.
+`Armorsmith`, `Weaponsmith` and the three Master sub-specialisations (Swordsmith, Hammersmith, Axesmith) **are all present in the launch client**, wired into the live skill line with their vanilla descriptions intact. The spec-gated plans are still in the data too: Persuader, Arcanite Champion, Corruption, Heartseeker, Masterwork Stormhammer, Hammer of the Titans.
+**Everything else about them is unknown**: skill level, whether they are still mutually exclusive, what switching costs. No guide site mentions them at all, and presence in the client proves only that they were not removed. The beta stopped professions at 225 and characters at 30, and every specialisation sits above that, so no tester reached one.
 ## Levelling it
 1. **1 → 75**: Rough Sharpening Stone (~26), then Rough Grinding Stone (~74)
 2. **75 → 150**: copper and bronze armour

@@ -1,6 +1,6 @@
-updated: October 31, 2026
+updated: November 3, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Priest and Warrior|https://worldofwarcraft.blizzard.com/en-us/news/24301514 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Warrior Updates, October 2|https://us.forums.blizzard.com/en/wow/t/warrior-updates-in-todays-beta-build/2369360 ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap ;; foreverchanges.pro — beta client data|https://foreverchanges.pro ;; Wowhead — Level 20 Arms Warrior|https://www.wowhead.com/forever/guide/classes/warrior/arms/level-20-dps-overview ;; Wowhead — Level 20 Fury Warrior|https://www.wowhead.com/forever/guide/classes/warrior/fury/level-20-dps-overview ;; Wowhead — Level 20 Protection Warrior|https://www.wowhead.com/forever/guide/classes/warrior/protection/level-20-tank-overview ;; Icy Veins — Warrior Class Overview|https://www.icy-veins.com/wow-forever/warrior-class-overview ;; ClassicWoW.gg — Warrior|https://classicwow.gg/forever/guides/warrior
+sources: Blizzard — Class Deep Dives: Priest and Warrior|https://worldofwarcraft.blizzard.com/en-us/news/24301514 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Warrior Updates, October 2|https://us.forums.blizzard.com/en/wow/t/warrior-updates-in-todays-beta-build/2369360 ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap ;; foreverchanges.pro — beta client data|https://foreverchanges.pro ;; Wowhead — Level 20 Arms Warrior|https://www.wowhead.com/forever/guide/classes/warrior/arms/level-20-dps-overview ;; Wowhead — Level 20 Fury Warrior|https://www.wowhead.com/forever/guide/classes/warrior/fury/level-20-dps-overview ;; Wowhead — Level 20 Protection Warrior|https://www.wowhead.com/forever/guide/classes/warrior/protection/level-20-tank-overview ;; Icy Veins — Warrior Class Overview|https://www.icy-veins.com/wow-forever/warrior-class-overview ;; ClassicWoW.gg — Warrior|https://classicwow.gg/forever/guides/warrior
 
 Warrior builds its own resource by fighting, and spends it on three jobs: two-handed damage, dual-wield damage, and shield tanking. You start every fight with an empty bar and fill it by swinging. Rage from dealing damage is now fully normalized to weapon speed, and a critical strike generates **100% increased Rage**.
 :::scope
@@ -9,9 +9,9 @@ Levelling guide, 1 to 60. The beta closed on October 23 at level 30, so nothing 
 ## Which spec?
 | Spec | Role | Its strongest point | In one line |
 | --- | --- | --- | --- |
-| **[Arms](/guides/wow-forever/warrior/arms/)** | Melee DPS | [[Rend]] into `Bloodthrill` into [[Overpower]] from 30, at 4% per rank (20% at 34): hits on your own bleed proc it, no dodge needed | Two-handed bleeds plus a 50% healing debuff, and eleven points that go to Fury at 20 |
+| **[Arms](/guides/wow-forever/warrior/arms/)** | Melee DPS | [[Rend]] into `Bloodthrill` into [[Overpower]] from 30, at 10% per rank (20% at 31): hits on your own bleed proc it, no dodge needed | Two-handed bleeds plus a 50% healing debuff, and eleven points that go to Fury at 20 |
 | **[Fury](/guides/wow-forever/warrior/fury/)** | Melee DPS | Dual-wielding from 20 swings more often, and `Unbridled Wrath` gives ~60% of those hits +1 Rage | A rage dump that waits on its own kit: dual wield at 20, [[Whirlwind]] at 36 |
-| **[Protection](/guides/wow-forever/warrior/protection/)** | Tank | `Shield Specialization` 5/5 returns 5 Rage per block, where Classic gave 1, and that funds [[Revenge]] | Shield tanking, and three of its talents now require a shield |
+| **[Protection](/guides/wow-forever/warrior/protection/)** | Tank | `Shield Specialization` 5/5 returns 5 Rage per block, where Classic gave 1, and that funds [[Revenge]]; [[Defensive Stance]] adds 80% threat (Blizzard) | Shield tanking, and three of its talents now require a shield |
 **At level 20 the published Arms and Fury builds are identical**: eleven points in the Fury tree, because nothing in Arms is worth reaching yet. Protection's is its own. Pick by what you want at 30 and beyond, not by what you can feel at 20. Dual Specialization opens at level 40 (Blizzard), so the pick is not permanent.
 ## Is Warrior for you?
 Play Warrior if you want to watch the enemy rather than your own bars. Icy Veins describes the trade: one of the harder classes to level, one of the strongest once geared. **Wowhead takes the opposite tone on levelling itself.** Forever's changes make Arms "feel phenomenal," a deliberate contrast with Vanilla's reputation.
@@ -44,7 +44,7 @@ Blizzard's closing assessment of the class, in its own words:
 | 12 | [[Overpower]], [[Shield Bash]] — **your only interrupt until [[Pummel]] at 38**, so keep a shield in the bag |
 | 14 | **[[Tactical Mastery]] is trained now, not a talent.** It retains 10 rage through a stance change |
 | 16 | [[Shield Block]], now **2 attacks over 7 seconds** |
-| 20 | **[[Victory Rush]], new**: free, scales with Attack Power, heals 10% of max health. It is up for 20 sec after you kill a non-trivial enemy, on its own 30-second cooldown (Blizzard), so we read it as not firing on every kill *(ours, not a source's)*. Dual wield unlocks. [[Cleave]] as in Classic; [[Retaliation]] as in Classic with its cooldown halved to 15 minutes. [[Slam]] trains earlier but now carries an 18-second cooldown it never had. Eleventh talent point |
+| 20 | **[[Victory Rush]], new**: free, scales with Attack Power, heals 10% of max health. It is up for 20 sec after you kill a non-trivial enemy, on its own 30-second cooldown (Blizzard), so we read it as not firing on every kill *(ours, not a source's)*. Dual wield unlocks. [[Cleave]] as in Classic; [[Retaliation]] as in Classic with its cooldown halved to 15 minutes. [[Slam]] trains earlier and carries a 15-second cooldown Classic never gave it (Blizzard). Eleventh talent point |
 | 24 | [[Execute]] |
 | 30 | **Second class quest**: [[Berserker Stance]], [[Intercept]]. Twenty-first talent point |
 | 36 | [[Whirlwind]] |
@@ -72,8 +72,9 @@ Read this section in proportion. Race is the smallest choice on this page, well 
 | Critical hits give increased Rage | **100% increased Rage**, set by Blizzard on October 2. A Rage formula is not something a tooltip shows, so that figure is Blizzard's |
 | **Armor no longer reduces Rage from taking damage** | Blizzard's formula assumes a fixed mitigation for your level, 20% to 40%, whatever you wear. Your own gear stops mattering to your Rage income, and absorbs like Power Word: Shield no longer block Rage gain either |
 | Yellow attacks generate no rage | [[Heroic Strike]] and [[Cleave]] are net rage losses while levelling |
-| [[Victory Rush]] added at 20 | **Your first self-heal**, and the only one you get without spending a point. Blizzard adds two talented ones: `Blood Craze`, which no longer fires off [[Bloodthirst]] casts, and `Gore Drinker` at Fury row 6 |
+| [[Victory Rush]] added at 20 | **Your first self-heal**, and the only one you get without spending a point. Blizzard adds two talented ones: `Blood Craze`, which does not fire off [[Bloodthirst]] casts, and `Gore Drinker` at Fury row 5. Neither heal generates threat (Blizzard) |
 | [[Tactical Mastery]] baseline at 14 | You keep 10 rage through a stance change without spending a point |
+| [[Defensive Stance]] adds 80% threat, and Paladins have no Blessing of Salvation | Classic's stance gave 30%. Damage dealers no longer have a blessing to shed threat with, so the tank's own threat has to cover the gap; see the Protection guide |
 | The three major cooldowns no longer share a lockout | Retaliation and Shield Wall dropped to 15 minutes, but **Recklessness is still 30** |
 | Plate armour at 40 | Cloth, leather and mail until then |
 ## At level 60

@@ -1,10 +1,10 @@
-updated: October 8, 2026
+updated: November 3, 2026
 build: 1.60.1.70245
-sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
+sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
 Bombs, trinkets, goggles and gadgets. **Forever did not fold it into the new crafted-gear economy**: no tier set, and the fewest trade-camp recipes of any profession. It is still the most expensive thing in the game to level *(ours, not a source's)*; there are no prices before launch.
 :::scope
-Recipes and skill levels come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta**, and 33 Engineering recipes make something the client will not describe. Whether its raid value went up or down is unpublished.
+Recipes and skill levels come from foreverchanges.pro's reading of the beta client and are solid. **The beta stopped professions at skill 225**, and 33 Engineering recipes make something the client will not describe. Whether its raid value went up or down is unpublished.
 :::
 ## Is Engineering worth taking?
 It earns **Legacy Points** like the other crafting professions, but it got no tier set and only 29 trade-camp recipes, the fewest of any profession. Take it for utility and fun; it is also the most expensive to buy out *(ours, not a source's)*.
@@ -12,7 +12,7 @@ Three reasons to take it anyway, **two of them published**:
 1. **You are a Gnome.** The racial was rewritten for Forever (see below)
 2. **PvP.** The published Hunter advice is *"Engineering for valuable PvP items"*
 3. **As a second profession at 60**, once Blacksmithing has given you the gear: *"After Blacksmithing has provided the gear you need, you can replace it with Engineering."*
-[[Minor Recombobulator]] at Engineering 140 appears in **32 of the level-20 best-in-slot lists**, effectively every class and spec in the game. That figure is level 20, which was the beta cap when it was written. The cap rose to 30 on October 1 and it has not been re-checked.
+[[Minor Recombobulator]] at Engineering 140 appears in **32 of the level-20 best-in-slot lists**, effectively every class and spec in the game. That count comes from level-20 lists and has not been re-checked at higher levels.
 The Mage guide adds a warning: *"without a Herbalism or Mining alt, these will be difficult or expensive to level."*
 ## What it pairs with
 Engineering eats ore and stone, and **Mining is the only profession that gathers them.** That is unchanged.
@@ -26,7 +26,7 @@ Engineering eats ore and stone, and **Mining is the only profession that gathers
 - **New thrown weapons**: Satchel of Copper, Bronze, Iron and Dark Iron Bombs, which *"explode on impact"* and carry Stamina.
 - **[[Compact Critter Carrier]]** at 225 *"allows Hunters in your group to access their stabled pets."*
 - **Bombs got cheaper and fireworks got much more efficient.** 23 recipes changed reagents. Rough Dynamite now takes 1 Rough Blasting Powder instead of 2. Every rocket now makes 5 instead of 3 for the same cost, and there are three new colours.
-- **A new profession perk:** *"Engineering-only gadgets and tinkers crafted with Tinkerbox."* What a Tinkerbox is, and what it costs, is not published.
+- **There is no Tinkerbox.** The Tinkerbox, its three modules and their seven schematics are not in the launch client, so a guide that lists it as an Engineering perk is out of date.
 - **Certification** at 300 for 1,000 Favor unlocks the title "the Engineer".
 - **There is still no engineering mount.** The pets list holds four entries and all four are vanilla. If you remember an engineering mount, that is Burning Crusade.
 ## Specialisations
@@ -44,4 +44,4 @@ Engineering eats ore and stone, and **Mining is the only profession that gathers
 **225 → 300:** 162 Thorium Bar, 176 Solid Stone, 88 Mithril Bar, 30 Dense Stone, 28 Runecloth.
 **Engineering is cheap in bars and expensive in schematics.** Several key steps are gold-bought rather than trainer-taught, and that is where the money goes.
 ## What is not known
-The Gnomish and Goblin skill level and switch cost. What Tinkerbox is. **Whether Engineering's raid value changed at all** (no source states it either way). What 33 of its recipes make, and where about twenty of the new high-skill schematics come from.
+The Gnomish and Goblin skill level and switch cost. **Whether Engineering's raid value changed at all** (no source states it either way). What 33 of its recipes make, and where about twenty of the new high-skill schematics come from.

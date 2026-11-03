@@ -1,6 +1,6 @@
-updated: October 8, 2026
+updated: November 3, 2026
 build: 1.60.1.70245
-sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
+sources: Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
 **New in Forever.** A cook lights a fire, everyone drops one crafted object beside it, and the whole group carries the buffs for an hour, including buffs that normally need a specific class.
 :::scope
@@ -30,7 +30,7 @@ Every profession has three objects, at skill **20, 140 and 300**. The 140 and 30
 | Engineering | [[Reagent Bot]] | A reagent vendor. Repairs come with the skill-140 [[Repair Bot]] | None |
 | Cooking | The campfire itself | Capacity for other objects | None |
 Every object, value and non-stacking rule in that table is **foreverchanges.pro's reading of the client**. Blizzard describes camping itself, names the campfire and the [[Boosted Rest]] debuff, and has rewritten its tooltips. It has published no camp object, no buff value and no equivalence to a class buff.
-**Every stat buff in that table is the figure at the level beside it, and the client scales the rest by character level.** Each object climbs on its own ladder: the Lodestone pays 12 attack power below level 12, then 20, 32, 49 and 67, before reaching 90 at 52. At the beta's level-30 cap a full camp hands out 32 attack power, 12 Intellect, 21 Stamina and 15 mana every 5 seconds. Add 11 Strength, 14 Spirit, and the Lute's 163 armour with +7 all stats and +6 all resistances. The three percentage buffs do not scale: the Fish Bowl's 8%, the Camp Chair's 2% and the Camp Tent's 5% read the same at every level.
+**Every stat buff in that table is the figure at the level beside it, and the client scales the rest by character level.** Each object climbs on its own ladder: the Lodestone pays 12 attack power below level 12, then 20, 32, 49 and 67, before reaching 90 at 52. At level 30 a full camp hands out 32 attack power, 12 Intellect, 21 Stamina and 15 mana every 5 seconds. Add 11 Strength, 14 Spirit, and the Lute's 163 armour with +7 all stats and +6 all resistances. The three percentage buffs do not scale: the Fish Bowl's 8%, the Camp Chair's 2% and the Camp Tent's 5% read the same at every level.
 **A camp hands a group the class buffs it does not have.** A party with no Paladin can still have Blessing of Kings, Might and Wisdom. None of them stacks with the real thing, so you get one or the other. The Druid crit aura appears twice because Blizzard made [[Moonkin Form]] and [[Leader of the Pack]] the same effect, mutually exclusive with each other.
 The [[Camp Tent]] tops up rather than stacks: *"does nothing if you already have more."* The [[Faction Banner]] only buffs your own faction, and has separate Horde and Alliance recipes.
 ## Campfire capacity
@@ -41,7 +41,7 @@ The [[Camp Tent]] tops up rather than stacks: *"does nothing if you already have
 | [[Expert Campfire Kit]] | 220 | 200 | 10 |
 You can learn a Blueprint well before you can craft the kit, which is why guides quote different numbers for the same thing. Both are right, printed from different columns.
 ## Two published numbers that disagree
-- The [[Sharpening Wheel]] is widely reported as giving attack power. **The beta client says Strength.** The client is what is live, and both guide sites follow it. The attack-power claim is attributed to Blizzard's What's Next panel, but the recap this page cites does not contain it, so treat it as reported rather than published.
+- The [[Sharpening Wheel]] is widely reported as giving attack power. **The client says Strength.** The client is what is live, and both guide sites follow it. The attack-power claim is attributed to Blizzard's What's Next panel, but the recap this page cites does not contain it, so treat it as reported rather than published.
 - A basic campfire is likewise reported as allowing **three objects**. The client shows 3, 5 and 10 for the three kit tiers, so that reading fits the basic kit only — and again, the cited recap does not say it.
 ## What changed in the October 1 build
 - **Campfires no longer damage players below level 5**, and they deal reduced damage to players under 90% health.

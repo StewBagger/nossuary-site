@@ -1,15 +1,15 @@
-updated: October 8, 2026
+updated: November 3, 2026
 build: 1.60.1.70245
-sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Beta Known Issues, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-known-issues-october-1/2352687 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
+sources: Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Beta Known Issues, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-known-issues-october-1/2352687 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
 Herbs, and the only feed for Alchemy. **The herb table is unchanged from Classic.** Six new herbs exist in the client with no published node, only two of which can be gathered at all, and Tauren Cultivation was rewritten from the ground up.
 :::scope
-Herb list, skill thresholds and camp objects come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta.** The zones below are Classic spawn data; Forever's new zones are not counted. The source publishing the client data marks node locations, respawns and required skill as unconfirmed.
+Herb list, skill thresholds and camp objects come from foreverchanges.pro's reading of the beta client and are solid. The beta stopped professions at skill 225, so nothing above it was crafted before launch. The zones below are Classic spawn data; Forever's new zones are not counted. The source publishing the client data marks node locations, respawns and required skill as unconfirmed.
 :::
 ## Is Herbalism worth taking?
 Alchemy gained 70 new recipes and four new raid flasks, and all of that demand lands on herbs. That makes Herbalism the strongest of the three gathering professions right now *(ours, not a source's)*.
 **It earns no Legacy Points.** Only the six crafting professions do.
-The camp object is [[Incense Candle]] at skill 20: **25 Intellect** to everyone sitting nearby, which is the figure at level 56 and above. The client scales it by level, so at the beta's level-30 cap the candle gives 12. It does not stack with [[Arcane Intellect]], so it is redundant if you have a Mage. Both readings are the client's; Blizzard publishes no camp-object value and no equivalence to a class buff.
+The camp object is [[Incense Candle]] at skill 20: **25 Intellect** to everyone sitting nearby, which is the figure at level 56 and above. The client scales it by level, so at level 30 the candle gives 12. It does not stack with [[Arcane Intellect]], so it is redundant if you have a Mage. Both readings are the client's; Blizzard publishes no camp-object value and no equivalence to a class buff.
 ## What it pairs with
 Alchemy eats herbs, and **Herbalism is the only profession that gathers them.** Unchanged, and Alchemy has no other feed.
 One change for veterans, and this is our own reading rather than a published one: [Merchant's Favor](/guides/wow-forever/professions/merchants-favor/) buys recipes, and you can buy the crates at the auction house. That makes the Herbalism half of the pair more optional than it was.

@@ -1,10 +1,10 @@
-updated: October 8, 2026
+updated: November 3, 2026
 build: 1.60.1.70245
-sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
+sources: Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
 Leather off things you already killed, and **the cheapest profession in the game to carry** *(ours, not a source's)*. It keys off the beast's level rather than a node table. On the client reading, its camp object gives your whole group 2% critical strike.
 :::scope
-The skill formula and camp objects come from foreverchanges.pro's reading of the beta client and are solid. **Professions are capped at skill 225 in the beta.** Whether a Skinning Knife is still required is not published. Skinnable creature lists, leather tables and trainer requirements are explicitly unconfirmed.
+The skill formula and camp objects come from foreverchanges.pro's reading of the beta client and are solid. The beta stopped professions at skill 225, so nothing above it was crafted before launch. Whether a Skinning Knife is still required is not published. Skinnable creature lists, leather tables and trainer requirements are explicitly unconfirmed.
 :::
 ## Is Skinning worth taking?
 It is the weakest of the three as a pure money profession, because leather demand is narrower than ore or herbs *(ours, not a source's)*.

@@ -1,4 +1,4 @@
-updated: October 8, 2026
+updated: November 3, 2026
 build: 1.60.1.70245
 
 **The most changed secondary skill in Forever**, with 17 of its 31 recipes new. It is no longer just bandages: First Aid now cures poison, disease and bleeds, and makes healing potions.

@@ -1,10 +1,10 @@
-updated: October 31, 2026
+updated: November 3, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraft.blizzard.com/en-us/news/24310968 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Affliction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-20-dps-overview ;; Wowhead — Level 20 Demonology Warlock|https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-20-dps-overview ;; Wowhead — Level 20 Destruction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/destruction/level-20-dps-overview ;; Icy Veins — Warlock Class Overview|https://www.icy-veins.com/wow-forever/warlock-class-overview ;; ClassicWoW.gg — Warlock|https://classicwow.gg/forever/guides/warlock ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes
+sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraft.blizzard.com/en-us/news/24310968 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Affliction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-20-dps-overview ;; Wowhead — Level 20 Demonology Warlock|https://www.wowhead.com/forever/guide/classes/warlock/demonology/level-20-dps-overview ;; Wowhead — Level 20 Destruction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/destruction/level-20-dps-overview ;; Icy Veins — Warlock Class Overview|https://www.icy-veins.com/wow-forever/warlock-class-overview ;; ClassicWoW.gg — Warlock|https://classicwow.gg/forever/guides/warlock ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes
 
 Warlock levels with a demon tanking for you. Forever split damage curses into Banes, so **you now hold one Bane and one Curse at the same time**, and Life Tap gives twice the mana it used to.
 :::scope
-Written for levelling, 1 to 60. The beta closed on October 23 at level 30, so nothing above 30 was tested by players; talents and spells past 30 come from the launch client and Blizzard's posts. The longest anyone played was a level-38 demo. Ability training levels below come from foreverchanges.pro's reading of the launch client. These pages follow the hotfix Blizzard pushed to the launch realms on October 30, read from the game's hotfix data. Blizzard has not announced it, so it may still move before November 4. Hover tooltips read the base client and can lag a hotfix: where one differs from the text here, the text is right.
+Written for levelling, 1 to 60. The beta closed on October 23 at level 30, so nothing above 30 was tested by players; talents and spells past 30 come from the launch client and Blizzard's posts. The longest anyone played was a level-38 demo. Ability training levels below come from foreverchanges.pro's reading of the launch client. These pages follow Blizzard's development notes of November 2, which confirm the Warlock changes of the October 30 hotfix. Those notes raise class damage across the game and give higher-level creatures more health to match; for Warlock the changes they list are `Wrack`, `Shadow and Flame`, demon health, Spellstones, [[Bane of Agony]] and [[Drain Soul]]. Hover tooltips read the base client and can lag a hotfix: where one differs from the text here, the text is right.
 :::
 ## Which spec?
 | Spec | Role | Its strongest point | In one line |
@@ -14,7 +14,7 @@ Written for levelling, 1 to 60. The beta closed on October 23 at level 30, so no
 | **[Destruction](/guides/wow-forever/warlock/destruction/)** | Ranged DPS | [[Shadowburn]] at 20 costs a Soul Shard and refunds it if the target dies inside 8 seconds | Hard-cast direct damage, and at low level a wand competes with [[Shadow Bolt]] on Wowhead's reading |
 Wowhead's Level 20 overview makes the same **wand argument for all three specs**: *"you'll use your wand more for damage because it deals more DPS than Shadow Bolt, and it's also mana-free."* That note is about level 20 and predates the wand's 0.5-second stand-still before it fires. Destruction is the exception. Wowhead calls wanding *"an equally good option but not really Destruction-oriented"* once `Bane` has cut [[Shadow Bolt]]'s cast time; the other two specs keep wanding.
 Blizzard's own summary claims all three *"now do damage to compete with any other spellcaster, with three completely different styles to conduct that competition."* That is Blizzard on its own class, and no level-60 test exists to check it.
-**Your demon matters more than in Classic, in every spec**, because demons now scale with your gear. Blizzard's deep dive says *"pets now scale from their summoner's stats."* Nothing published says how much of each stat carries. [[Voidwalker]] at 10 is the levelling pet, [[Succubus]] at 20 the damage pet. [[Felhunter]] comes at 30, as in Classic.
+**Your demon matters more than in Classic, in every spec**, because demons now scale with your gear. Blizzard's deep dive says *"pets now scale from their summoner's stats."* Blizzard gives one ratio, 2 Health per point of your Stamina; nothing published says how much of the other stats carries. [[Voidwalker]] at 10 is the levelling pet, [[Succubus]] at 20 the damage pet. [[Felhunter]] comes at 30, as in Classic.
 ## Is Warlock for you?
 Play Warlock if you do not mind tracking a pet, a handful of timers and two resources at once.
 :::strengths
@@ -24,7 +24,7 @@ Play Warlock if you do not mind tracking a pet, a handful of timers and two reso
 :::
 :::weaknesses
 - Five things to track at once: timers, pet, health, mana and shards
-- Demon abilities are trained from Grimoires, bought separately from your own spells, and every rank costs gold
+- Demon abilities are trained from Grimoires, bought separately from your own spells, and every rank costs gold. Blizzard prices your trainer lower to cover what it expects the Grimoires to cost
 - Soul shards still do not stack
 :::
 :::new
@@ -41,7 +41,7 @@ Play Warlock if you do not mind tracking a pet, a handful of timers and two reso
 | 4 | [[Corruption]], [[Curse of Weakness]] |
 | 6 | **[[Life Tap]] now scales with Spirit**, and gives roughly double the mana it did in Classic |
 | 8 | **[[Bane of Agony]]** (renamed from Curse of Agony), [[Fear]] |
-| 10 | **Voidwalker class quest**, [[Drain Soul]], which now rolls for a Soul Shard on every tick, the chance rising each tick it fails until it is guaranteed, and [[Create Healthstone]] |
+| 10 | **Voidwalker class quest**, [[Drain Soul]], which always grants a Soul Shard on a kill and only rarely on damage alone, and [[Create Healthstone]] |
 | 14 | [[Drain Life]], [[Curse of Recklessness]], which no longer gives the enemy attack power. That is a buff at low level; its armour reduction also fell at higher ranks (505 against Classic's 640 at rank 4), so it is a trade later |
 | 20 | **Succubus class quest**, [[Ritual of Summoning]], [[Rain of Fire]], and [[Curse of the Elements]] moved much earlier, from 32 in Classic, and now hitting every magic school |
 | 28 | **[[Create Firestone]]** reworked into a weapon imbue: Fire damage and +1% spell crit at the rank you train here, up to +2% later |
@@ -71,7 +71,7 @@ The racials that break crowd control are PvP tools: `Will of the Forsaken` (Unde
 - **Soul shards got better but not fixed.** They are now classed as a Reagent, and Forever added a reagent bag slot, so your soul bag no longer eats one of your four real bags. They still do not stack.
 - **Four class quests, all mandatory:** Imp at 2, Voidwalker at 10, Succubus at 20, Felhunter at 30. They are short and they are how you get your demons.
 - **Tailoring and Enchanting.** Tailoring makes your bags including the soul bag, and Enchanting makes the wand Wowhead says *"deals more DPS than Shadow Bolt"* at level 20.
-- **Budget for Grimoires**: as in the weaknesses above, every rank of every demon ability costs gold.
+- **Budget for Grimoires**: as in the weaknesses above, every rank of every demon ability costs gold. Blizzard's notes put every class's training from 1 to 60 at 206 to 207 gold, and take the expected Grimoire costs off the Warlock's share, so the trainer bill is lower and the Grimoires make up the rest.
 - **Talents have a new 16-point milestone**, alongside the one-point milestones at 11, 21 and 31: `Curse of Exhaustion`, [[Fel Domination]] and [[Conflagrate]], one per tree. Before Legacy `Talented`, points start at 10 and come one per level, so the 11-point talent lands at 20, the 16-point at 25 and the 21-point at 30, which is where [[Soul Link]] and [[Bane of Havoc]] sit. The 31-point capstones `Wrack`, `Demonic Pact` and [[Incinerate]] need level 40, above anything the beta reached.
 - **The Legacy perk `Talented` starts your talent points earlier**: rank 1 at level 9, and each rank one level sooner, down to level 5 at rank 5. It does not raise the 51-point cap. Legacy Points come from account challenges; the window opens once a first character reaches 25, and a character can spend up to 16 at launch.
 - **Demons take a `Move To` order now.** Icy Veins flags it as a real quality-of-life addition: a 100-yard-range command that repositions your pet on demand, instead of relying on Follow and Stay.
@@ -84,7 +84,7 @@ The racials that break crowd control are PvP tools: `Will of the Forsaken` (Unde
 | [[Life Tap]] scales with Spirit and gives about double | Spirit is suddenly a real Warlock stat |
 | [[Curse of the Elements]] at 20, all magic schools | It was level 32 and Fire/Frost only |
 | Firestone and Spellstone are weapon imbues now | They stack with Wizard Oil, so the stone is no longer a choice against an oil |
-| Timed damage can crit, and on the published guides' reading nothing snapshots | Buffs apply live to ticks already running |
+| Timed damage can crit, and on the published guides' reading nothing snapshots | Buffs apply live to ticks already running. Blizzard's notes confirm it for [[Bane of Agony]], which updates its damage while it runs |
 | Soul shards are reagents with their own bag slot | Still do not stack |
 ## At level 60
 The launch client gives the 51-point trees, with `Wrack`, `Demonic Pact` and [[Incinerate]] as capstones, and [[Bane of Doom]], [[Summon Dreadsteed]] and [[Portal of Summoning]] at 60. No tested endgame rotation or gearing exists yet. Raids open December 9.

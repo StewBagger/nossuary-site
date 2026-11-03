@@ -1,15 +1,15 @@
-updated: October 8, 2026
+updated: November 3, 2026
 build: 1.60.1.70245
-sources: Blizzard — Beta Development Notes, October 1|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
+sources: Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
 
 Permanent bonuses on gear, paid for by destroying other gear. Forever gave enchanters a new role: **you are the supply chain for every crafted tier set in the game.**
 :::scope
-Recipes, reagents and skill levels come from foreverchanges.pro's reading of the beta client and are solid. **Professions cap at skill 225 in the beta.** One of the sources below has no Forever Enchanting page at all, so this profession is more thinly covered than the others.
+Recipes, reagents and skill levels come from foreverchanges.pro's reading of the beta client and are solid. The beta stopped professions at skill 225, so nothing above it was crafted before launch. One of the sources below has no Forever Enchanting page at all, so this profession is more thinly covered than the others.
 :::
 ## Is Enchanting worth taking?
 It earns **Legacy Points** at 150, 225 and 300. It is worth taking if you are a caster also taking Tailoring, or if you want the most durable gold engine in the game *(ours, not a source's)*.
 You pour money in and sell enchants at 60, so it gives you little while you level *(ours, not a source's)*. The relic figures below cut against that. **Forever did give it an argument it never had**: [[Malleable Essence of Nature]] gates every crafted tier piece in Blacksmithing, Leatherworking and Tailoring. The only source of it is disenchanting items from the two new raids.
-At the beta cap its three new **class relics are best in slot**. One source calls each *"the best relic at level 20 in my gear lists."* That figure is level 20, which was the beta cap when it was written. The cap rose to 30 on October 1 and the relics have not been re-checked.
+At level 20 its three new **class relics are best in slot**. One source calls each *"the best relic at level 20 in my gear lists."* Nobody has re-checked the relics at higher levels.
 ## What it pairs with
 **Tailoring**, and for the vanilla reason, unchanged: *"Enchanting doesn't rely on a particular gathering profession, so Enchanters occasionally pursue Tailoring to allow them to quickly create magic items to disenchant."*
 It still has no gathering profession and is still funded by disenchanting.

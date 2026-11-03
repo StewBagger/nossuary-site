@@ -1,9 +1,9 @@
 {
  "build": "1.60.1.70753",
  "product": "wowf",
- "generated": "2026-11-03T08:25:17+00:00",
- "stamp": "6d82e5fbec4c",
- "inputs": "9154daf148ed",
+ "generated": "2026-11-03T14:07:43+00:00",
+ "stamp": "bde304e24496",
+ "inputs": "edd9366c3fd7",
  "entries": {
   "Abolish Disease": {
    "kind": "talent",
@@ -1803,6 +1803,15 @@
    "cooldown": "30 sec cooldown",
    "desc": "Counters the enemy's spellcast, preventing any spell from that school of magic from being cast for 10 sec. Generates a high amount of threat."
   },
+  "Coup de Grace": {
+   "kind": "talent",
+   "id": 1310709,
+   "level": null,
+   "icon": 132290,
+   "cast": "Instant",
+   "range": "100 yd range",
+   "desc": "Increases the damage of your Eviscerate ability against targets afflicted with your Deadly Poison by 2% per application."
+  },
   "Cower": {
    "kind": "spell",
    "id": 1742,
@@ -2047,14 +2056,6 @@
    "cost": "50 Mana",
    "desc": "Curses the target for 300 sec, reducing Magic resistances by 30 and increases Magic damage taken by 4%. Only one Curse per Warlock can be active on any one target."
   },
-  "Cutthroat": {
-   "kind": "talent",
-   "id": 462708,
-   "level": null,
-   "icon": 626005,
-   "cast": "Instant",
-   "desc": "Your Backstab has a 15% chance to cause your next Ambush within 10 sec to not require Stealth."
-  },
   "Dark Inspiration": {
    "kind": "talent",
    "id": 1326159,
@@ -2129,6 +2130,19 @@
    "id": 2892,
    "level": null,
    "icon": 132290
+  },
+  "Death Mark": {
+   "kind": "talent",
+   "id": 1325756,
+   "level": null,
+   "icon": 132094,
+   "rank": "Rank 1 of 4",
+   "cast": "Instant",
+   "range": "25 yd range",
+   "duration": "6 sec",
+   "cost": "25 Energy",
+   "cooldown": "10 sec cooldown",
+   "desc": "Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. After 6 sec, the stored damage is dealt, up to a maximum increased by Attack Power: 1 point : 12% of damage stored, 0.04% Attack Power max. 2 points: 24% of damage stored, 0.08% of Attack Power max. 3 points: 36% of damage stored, 0.12% of Attack Power max. 4 points: 48% of damage stored, 0.16% of Attack Power max. 5 points: 60% of damage stored, 0.2% of Attack Power max."
   },
   "Death Wish": {
    "kind": "talent",
@@ -3006,6 +3020,14 @@
    "duration": "15 sec",
    "cooldown": "180 sec cooldown",
    "desc": "Increases your critical strike chance with all spells and attacks by 10% for 15 sec."
+  },
+  "Elusiveness": {
+   "kind": "talent",
+   "id": 13981,
+   "level": null,
+   "icon": 135994,
+   "cast": "Instant",
+   "desc": "Reduces the cooldown of your Vanish and Blind abilities by 90 sec."
   },
   "Emberstorm": {
    "kind": "talent",
@@ -3998,6 +4020,25 @@
    "cost": "60 Mana",
    "cooldown": "30 sec cooldown",
    "desc": "Place a Frost trap that creates an ice slick around itself for 30 sec when the first enemy approaches it. All enemies within 10 yards will be slowed by 60% while in the area of effect. Trap will exist for 60 sec. Only one Frost trap can be active at a time."
+  },
+  "Frost Ward": {
+   "kind": "talent",
+   "id": 6143,
+   "level": null,
+   "icon": 135850,
+   "rank": "Rank 1 of 5",
+   "cast": "Instant",
+   "duration": "30 sec",
+   "cost": "85 Mana",
+   "cooldown": "30 sec cooldown",
+   "desc": "Absorbs 162 Frost damage. Lasts 30 sec."
+  },
+  "Frost Warding": {
+   "kind": "talent",
+   "id": 11189,
+   "level": null,
+   "icon": 135850,
+   "cast": "Instant"
   },
   "Frostbite": {
    "kind": "talent",
@@ -5011,14 +5052,6 @@
    "cast": "Instant",
    "desc": "Reduces the cooldown of your Disarm ability by 20 secs."
   },
-  "Improved Distract": {
-   "kind": "talent",
-   "id": 14084,
-   "level": null,
-   "icon": 132289,
-   "cast": "Instant",
-   "desc": "Increases the radius of your Distract ability by 5 yds, and further reduces the Stealth detection of distracted enemies as though they were an additional 2 levels lower."
-  },
   "Improved Drain Life": {
    "kind": "talent",
    "id": 23554,
@@ -5161,6 +5194,13 @@
    "icon": 132155,
    "cast": "Instant",
    "desc": "Increases the duration of your Gouge ability by 1.5 sec."
+  },
+  "Improved Hamstring": {
+   "kind": "talent",
+   "id": 12289,
+   "level": null,
+   "icon": 132316,
+   "cast": "Instant"
   },
   "Improved Healing": {
    "kind": "talent",
@@ -5694,6 +5734,14 @@
    "cast": "Instant",
    "desc": "Increases the melee attack power bonus of your Windfury Totem by 15% and increases the damage caused by your Flametongue Totem by 6%."
   },
+  "Improved Whirlwind": {
+   "kind": "talent",
+   "id": 24431,
+   "level": null,
+   "icon": 136235,
+   "cast": "Instant",
+   "desc": "Decrease the rage cost of Whirlwind by 3."
+  },
   "Improved Wing Clip": {
    "kind": "talent",
    "id": 19228,
@@ -6017,19 +6065,6 @@
    "cast": "Instant",
    "school": "Physical",
    "desc": "Increases the duration of your Judgement of Light and Judgement of Wisdom by 10 sec."
-  },
-  "Lava Burst": {
-   "kind": "spell",
-   "id": 408490,
-   "level": 30,
-   "icon": 237582,
-   "rank": "Rank 1 of 4",
-   "cast": "2.5 sec cast",
-   "range": "30 yd range",
-   "school": "Fire",
-   "cost": "135 Mana",
-   "cooldown": "10 sec cooldown",
-   "desc": "You hurl molten lava at the target, dealing 114 to 145 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage."
   },
   "Lay on Hands": {
    "kind": "spell",
@@ -7264,6 +7299,30 @@
    "level": null,
    "icon": 133905
   },
+  "Poised": {
+   "kind": "talent",
+   "id": 1328825,
+   "level": null,
+   "icon": 132296,
+   "by_class": {
+    "druid": {
+     "id": 1328829,
+     "level": null,
+     "icon": 366937,
+     "cast": "Instant",
+     "desc": "While at maximum Energy, and out of combat, reduce the Energy cost of your next ability by 10."
+    },
+    "rogue": {
+     "id": 1328825,
+     "level": null,
+     "icon": 132296,
+     "cast": "Instant",
+     "desc": "While at maximum Energy, and out of combat, reduce the Energy cost of your next ability by 10."
+    }
+   },
+   "cast": "Instant",
+   "desc": "While at maximum Energy, and out of combat, reduce the Energy cost of your next ability by 10."
+  },
   "Poison": {
    "kind": "talent",
    "id": 744,
@@ -7447,15 +7506,6 @@
    "cooldown": "120 sec cooldown",
    "desc": "Adds 2 Combo Points to your target. You must add to or use those combo points within 20 sec or the combo points are lost."
   },
-  "Preparation": {
-   "kind": "talent",
-   "id": 14185,
-   "level": null,
-   "icon": 136121,
-   "cast": "Instant",
-   "cooldown": "600 sec cooldown",
-   "desc": "When activated, this ability immediately finishes the cooldown on your other Rogue abilities."
-  },
   "Presence of Mind": {
    "kind": "spell",
    "id": 12043,
@@ -7594,14 +7644,6 @@
    "school": "Fire",
    "cost": "125 Mana",
    "desc": "Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec."
-  },
-  "Quietus": {
-   "kind": "talent",
-   "id": 1310728,
-   "level": null,
-   "icon": 132297,
-   "cast": "Instant",
-   "desc": "Your Sinister Strike, Ghostly Strike, and Hemorrhage abilities cause 10% more damage against targets below 35% health."
   },
   "Rage of the Farseer": {
    "kind": "talent",
@@ -8472,6 +8514,15 @@
    "icon": 136027,
    "cast": "Instant",
    "desc": "Reduces the mana cost of your Shock and Lightning Shield spells by 45%."
+  },
+  "Shank": {
+   "kind": "talent",
+   "id": 15248,
+   "level": null,
+   "icon": 132090,
+   "cast": "Instant",
+   "range": "Melee",
+   "desc": "Inflicts normal damage plus 10 to an enemy when attacking from behind."
   },
   "Sharpened Claws": {
    "kind": "talent",
@@ -9544,6 +9595,14 @@
    "cast": "Instant",
    "desc": "Spirit increased by 10%."
   },
+  "The Quick and the Dead": {
+   "kind": "talent",
+   "id": 1225500,
+   "level": null,
+   "icon": 136143,
+   "cast": "Instant",
+   "desc": "Increases movement speed while dead by 10% and your helpful spells and abilities cost no resources for 2 min after being resurrected or until you enter combat."
+  },
   "Thick Hide": {
    "kind": "talent",
    "id": 16929,
@@ -9580,14 +9639,6 @@
    "school": "Nature",
    "cost": "35 Mana",
    "desc": "Thorns sprout from the friendly target causing 3 Nature damage to attackers when hit. Lasts 600 sec."
-  },
-  "Thousand Cuts": {
-   "kind": "talent",
-   "id": 1310721,
-   "level": null,
-   "icon": 132302,
-   "cast": "Instant",
-   "desc": "When your Rupture ability deals periodic damage, the Energy cost of your next Hemorrhage or Backstab ability within 10 sec is reduced by 3, stacking up to 5 times."
   },
   "Thunder Clap": {
    "kind": "spell",
@@ -9673,19 +9724,6 @@
    "icon": 136069,
    "cast": "Instant",
    "desc": "The radius of your totems that affect friendly targets is increased to 30 yd."
-  },
-  "Totemic Projection": {
-   "kind": "spell",
-   "id": 437009,
-   "level": 22,
-   "icon": 538574,
-   "cast": "Instant",
-   "range": "30 yd range",
-   "duration": "1 sec",
-   "school": "Nature",
-   "cost": "25% of base Mana",
-   "cooldown": "60 sec cooldown",
-   "desc": "Relocates your active totems to the specified location."
   },
   "Totemic Recall": {
    "kind": "spell",

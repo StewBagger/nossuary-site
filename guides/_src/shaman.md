@@ -1,6 +1,6 @@
-updated: October 31, 2026
+updated: November 3, 2026
 build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Mage and Shaman|https://worldofwarcraft.blizzard.com/en-us/news/24302097 ;; Blizzard — Development Notes, updated October 26|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Elemental Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/elemental/level-20-dps-overview ;; Wowhead — Level 20 Enhancement Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-20-dps-overview ;; Wowhead — Level 20 Restoration Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-20-healer-overview ;; Icy Veins — Shaman Class Overview|https://www.icy-veins.com/wow-forever/shaman-class-overview ;; ClassicWoW.gg — Shaman|https://classicwow.gg/forever/guides/shaman ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap
+sources: Blizzard — Class Deep Dives: Mage and Shaman|https://worldofwarcraft.blizzard.com/en-us/news/24302097 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Elemental Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/elemental/level-20-dps-overview ;; Wowhead — Level 20 Enhancement Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/enhancement/level-20-dps-overview ;; Wowhead — Level 20 Restoration Shaman Guide|https://www.wowhead.com/forever/guide/classes/shaman/restoration/level-20-healer-overview ;; Icy Veins — Shaman Class Overview|https://www.icy-veins.com/wow-forever/shaman-class-overview ;; ClassicWoW.gg — Shaman|https://classicwow.gg/forever/guides/shaman ;; Blizzard — WoW: Forever What's Next Panel Recap|https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap
 
 Forever's Shaman changes are mostly upkeep: weapon imbues last an hour instead of five minutes, buff totems last five minutes and all totems drop on a 1.0-second global cooldown, and a totem bar drops four at once.
 :::scope
@@ -10,7 +10,7 @@ Written for levelling, 1 to 60. The beta closed on October 23 at level 30, so no
 | Spec | Role | Its strongest point | In one line |
 | --- | --- | --- | --- |
 | **[Elemental](/guides/wow-forever/shaman/elemental/)** | Ranged DPS | `Elemental Focus` at 20 gives every Fire, Frost or Nature spell a 10% Clearcasting chance | [[Lightning Bolt]] and [[Chain Lightning]], which arrives at level 32 |
-| **[Enhancement](/guides/wow-forever/shaman/enhancement/)** | Melee DPS | Weapon imbues last 60 minutes instead of 5, so one [[Rockbiter Weapon]] covers a session | One two-hander and no dual wield, on the one build two sources publish identically |
+| **[Enhancement](/guides/wow-forever/shaman/enhancement/)** | Melee DPS | Weapon imbues last 60 minutes instead of 5, so one [[Rockbiter Weapon]] covers a session | One two-hander and no dual wield, with [[Stormstrike]] on a 6-second cooldown from 25 |
 | **[Restoration](/guides/wow-forever/shaman/restoration/)** | Healer | [[Water Shield]] at 20 returns 2% of your maximum mana each time you are hit or land any spell crit | [[Chain Heal]] and `Nature's Swiftness` |
 **Shamans cannot dual wield in Forever** — no published source grants it, and Blizzard's deep dive never mentions it. If you have played a later expansion, unlearn that.
 A widely-published level-30 Elemental build is also not legal on the launch client: it spends 5 points on `Elemental Fury`. Blizzard moved that talent to row 6 and put it behind `Lightning Overload`, out of reach at 21 points. That build predates the change.
@@ -42,10 +42,10 @@ Blizzard's own summary sets the trade. Shaman *"can be effective melee or spell 
 | 8 | [[Stoneclaw Totem]], your emergency taunt, [[Lightning Shield]] |
 | 10 | **Fire Totem class quest** → [[Searing Totem]], [[Flame Shock]], [[Flametongue Weapon]] (60 min) |
 | 12 | **[[Fire Nova]]**: an instant burst around your active fire totem |
-| 20 | **Water Totem class quest.** [[Ghost Wolf]] gives 40% run speed, faster than Aspect of the Cheetah, and with the talent it becomes instant and usable indoors. Also [[Frost Shock]], [[Healing Stream Totem]], [[Call of the Elements]] and [[Totemic Recall]], which clears every totem at once |
-| 22 | **[[Totemic Projection]]**, new, relocates every live totem |
+| 20 | **Water Totem class quest.** [[Ghost Wolf]] gives 40% run speed, faster than Aspect of the Cheetah, and from 25 the talent makes it instant and usable indoors. Also [[Frost Shock]], [[Healing Stream Totem]], [[Call of the Elements]] and [[Totemic Recall]], which clears every totem at once |
+| 22 | **`Totemic Call`**, new, brings every live totem to where you stand, on a 30-second cooldown |
 | 30 | **Air Totem class quest**, [[Windfury Weapon]] (60 min), [[Reincarnation]], [[Astral Recall]], Call of the Spirits for a second four-totem set |
-| 32 | [[Chain Lightning]], half a second faster than vanilla |
+| 32 | [[Chain Lightning]], a 2.5-second cast whose first target takes about 145% of a comparable [[Lightning Bolt]] |
 | 40 | [[Chain Heal]], mount, Call of the Ancestors for a third totem set, and **Dual Specialization** |
 | 42 | [[Grace of Air Totem]] — **the last new Shaman ability in the game.** 43 to 60 is ranks only |
 **Tranquil Air Totem is gone.** Blizzard's deep dive says so flatly: *"Tranquil Air Totem: Removed."* There is no such spell in the game. [[Windfury Totem]] and Flametongue Totem are raid-wide buffs now, not weapon enchants, and they affect players only. They exclude each other; [[Grace of Air Totem]] stacks with either. A Shaman already carrying the matching weapon imbue gains nothing from that totem.
@@ -64,10 +64,10 @@ Read this section in proportion. Race is the smallest of the choices on this pag
 | --- | --- |
 | **Weapon imbues last 60 minutes, not 5** | One refresh an hour, and an imbue now runs **alongside** a sharpening stone, weight stone or oil, which Classic never allowed |
 | **Buff totems last 5 minutes and reach 30 yards** | "Per pull" is no longer the unit. Every buff totem reaches 30 yards with no talent spent, which is what `Totemic Mastery` used to grant. That talent is gone from the client's Restoration tree, though Blizzard lists no removal for it |
-| **The totem bar** | Three saveable four-totem loadouts, one button to drop a set, one to pick them all up for **25% of their Mana back**, and one to teleport them |
+| **The totem bar** | Three saveable four-totem loadouts, one button to drop a set, one to pick them all up for **25% of their Mana back**, and one to bring them to where you stand |
 | [[Disease Cleansing Totem]] now lasts its full 5 minutes | Like every other buff totem |
 | [[Fire Nova]] is no longer a totem | It bursts around your active fire totem instead |
 | [[Improved Ghost Wolf]] makes it instant and indoor-usable | Vanilla never allowed either |
 | Alliance Shaman exist | Dwarf only |
 ## At level 60
-No source publishes a Shaman build past 30. The client carries the rest: `Elemental Mastery`, `Rage of the Farseer` and [[Riptide]] are the 31-point capstones at 40, and rank ladders run to level 60. Shaman has no taunt, no defensive cooldown and no Defense support, so nothing above 30 changes the tanking picture. Raids open December 9.
+No source publishes a Shaman build past 30. The client carries the rest: `Lightning Mastery`, `Rage of the Farseer` and [[Riptide]] are the 31-point capstones at 40, and rank ladders run to level 60. Shaman has no taunt, no defensive cooldown and no Defense support, so nothing above 30 changes the tanking picture. Raids open December 9.
