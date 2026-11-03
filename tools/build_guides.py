@@ -549,7 +549,7 @@ def nav():
     # The primary nav is duplicated in index.html and roster/index.html. A new top-level page
     # must be added in every one of them, or the guides' nav and the rest of the site disagree.
     items = [("/#play", "Play"), ("/#mods", "Mods"), ("/forums/", "Forums"),
-             ("/guides/", "Guides"), ("/roster/", "Roster"),
+             ("/guides/", "Guides"), ("/sims/", "Sims"), ("/roster/", "Roster"),
              ("/#support", "Support"), ("/#work", "Workshop"), ("/#contact", "Contact")]
     return "\n        ".join(
         f'<li><a href="{h}"{" aria-current=\"page\"" if l == "Guides" else ""}>{l}</a></li>'

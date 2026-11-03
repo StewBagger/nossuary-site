@@ -1,0 +1,3606 @@
+{
+	"landing": {
+		"navigation": {
+			"home": "Home",
+			"simulations": "Simulations",
+			"about": "About",
+			"toggle": "Toggle navigation"
+		},
+		"home": {
+			"title": "Null Sims - Forever DPS & Gear Simulators",
+			"description": "Free, open-source World of Warcraft® Forever simulators. Sim your DPS, compare gear and optimize your character.",
+			"heading": "<expansion>Forever</expansion> Simulations",
+			"allSpecs": "All Specializations",
+			"welcomeDescription": "<brand>Null Sims</brand> is a fan-made fork of WoWSims (MIT) that sims <expansion>World of Warcraft®: Forever</expansion> below level 60 as well as at it: set a level and the sim loads that level's ranks, talents and best-in-slot gear. The simulator itself is the work of the WoWSims contributors, who started the project in 2021 and have carried it through every Classic release."
+		},
+		"header": {
+			"wowsims": "Null Sims",
+			"subtitle": "World of Warcraft Simulations",
+			"github": "GitHub",
+			"addon": "Download the WoWSims Exporter addon"
+		},
+		"actions": {
+			"github": "Null Sims on GitHub",
+			"addon": "Get the WoWSims Exporter addon"
+		},
+		"footer": {
+			"about": "A fork of <wowsims>WoWSims</wowsims>, the open-source simulator by the WoWSims contributors, used under the MIT License.",
+			"copyright": "Simulator © {{startYear}}-{{year}} WoWSims contributors",
+			"disclaimer": "A fan-made project, not affiliated with Blizzard Entertainment.",
+			"sims": "Null Sims",
+			"nossuary": "Null Ossuary",
+			"source": "Source on GitHub",
+			"issues": "Report an issue",
+			"credits": "Built on WoWSims",
+			"wowsims": "WoWSims",
+			"wowsims_source": "WoWSims Forever on GitHub",
+			"addon": "WoWSims Exporter addon"
+		}
+	},
+	"common": {
+		"new": "New",
+		"none": "None",
+		"custom": "Custom",
+		"name": "Name",
+		"search": "Search",
+		"filter": "Filter",
+		"elapsed_time": "Elapsed Time",
+		"ok": "OK",
+		"cancel": "Cancel",
+		"confirm": "Confirm",
+		"delete": "Delete",
+		"clear": "Clear",
+		"help": "Help",
+		"saved_data": {
+			"delete_title": "Delete saved {{label}}",
+			"delete_confirm": "Delete saved {{label}} '{{name}}'?",
+			"choose_name": "Choose a label for your saved {{label}}!",
+			"name_exists": "{{label}} with name {{name}} already exists.",
+			"save_title": "Save {{label}}"
+		},
+		"melee": "Melee",
+		"any": "Any",
+		"phases": {
+			"1": "Phase 1",
+			"2": "Phase 2",
+			"3": "Phase 3",
+			"4": "Phase 4",
+			"5": "Phase 5"
+		},
+		"phase_names": {
+			"1": "Phase 1",
+			"2": "Phase 2",
+			"3": "Phase 3",
+			"4": "Phase 4",
+			"5": "Phase 5"
+		},
+		"tanks": {
+			"main_tank": "Main Tank",
+			"tank_2": "Tank 2",
+			"tank_3": "Tank 3",
+			"tank_4": "Tank 4"
+		},
+		"status": {
+			"unlaunched": "Not Yet Supported",
+			"gear_planner": "Gear Planner",
+			"alpha": "Alpha",
+			"beta": "Beta",
+			"launched": "Launched"
+		},
+		"mob_types": {
+			"unknown": "None",
+			"beast": "Beast",
+			"demon": "Demon",
+			"dragonkin": "Dragonkin",
+			"elemental": "Elemental",
+			"giant": "Giant",
+			"humanoid": "Humanoid",
+			"mechanical": "Mechanical",
+			"undead": "Undead"
+		},
+		"creature_families": {
+			"unknown": "None",
+			"naga": "Naga",
+			"satyr": "Satyr",
+			"aquatic": "Aquatic",
+			"earth_elemental": "Earth Elemental",
+			"fire_elemental": "Fire Elemental",
+			"mountain_giant": "Mountain Giant"
+		},
+		"area_types": {
+			"unknown": "None",
+			"forest_grassland": "Forest and Grassland",
+			"mountainous": "Mountainous",
+			"snowy": "Snowy",
+			"desert": "Desert",
+			"swamp": "Marsh and Swamp",
+			"wasteland": "Wasteland",
+			"haunted": "Haunted",
+			"cavernous": "Cavernous or Underground",
+			"volcanic": "Volcanic",
+			"strongholds_cities": "Strongholds and Cities"
+		},
+		"sources": {
+			"unknown": "Unknown",
+			"crafting": "Crafting",
+			"quest": "Quest",
+			"sold_by": "Sold by",
+			"reputation": "Reputation",
+			"pvp": "PVP",
+			"dungeon": "Dungeon",
+			"raid": "Raid",
+			"world_drop": "World Drop"
+		},
+		"raids": {
+			"unknown": "Unknown",
+			"mc": "Molten Core",
+			"ony": "Onyxia's Lair",
+			"bwl": "Blackwing Lair",
+			"zg": "Zul'Gurub",
+			"aq20": "Ruins of Ahn'Qiraj",
+			"aq40": "Temple of Ahn'Qiraj",
+			"naxx": "Naxxramas"
+		},
+		"armor_types": {
+			"unknown": "Unknown",
+			"cloth": "Cloth",
+			"leather": "Leather",
+			"mail": "Mail",
+			"plate": "Plate"
+		},
+		"weapon_types": {
+			"unknown": "Unknown",
+			"axe": "Axe",
+			"dagger": "Dagger",
+			"fist": "Fist",
+			"mace": "Mace",
+			"off_hand": "Off Hand",
+			"polearm": "Polearm",
+			"shield": "Shield",
+			"staff": "Staff",
+			"sword": "Sword"
+		},
+		"ranged_weapon_types": {
+			"unknown": "Unknown",
+			"bow": "Bow",
+			"crossbow": "Crossbow",
+			"gun": "Gun",
+			"thrown": "Thrown",
+			"wand": "Wand"
+		},
+		"weapon_skills": {
+			"unknown": "Unknown",
+			"axes": "Axes",
+			"two_handed_axes": "Two-Handed Axes",
+			"maces": "Maces",
+			"two_handed_maces": "Two-Handed Maces",
+			"swords": "Swords",
+			"two_handed_swords": "Two-Handed Swords",
+			"polearms": "Polearms",
+			"staves": "Staves",
+			"daggers": "Daggers",
+			"fist_weapons": "Fist Weapons",
+			"bows": "Bows",
+			"crossbows": "Crossbows",
+			"guns": "Guns",
+			"thrown": "Thrown",
+			"wands": "Wands"
+		},
+		"spell_schools": {
+			"physical": "Physical",
+			"arcane": "Arcane",
+			"fire": "Fire",
+			"frost": "Frost",
+			"holy": "Holy",
+			"nature": "Nature",
+			"shadow": "Shadow",
+			"astral": "Astral",
+			"shadowflame": "Shadowflame",
+			"spellfire": "Spellfire",
+			"spellfrost": "Spellfrost",
+			"frostfire": "Frostfire",
+			"shadowfrost": "Shadowfrost",
+			"plague": "Plague",
+			"firestorm": "Firestorm",
+			"elemental": "Elemental"
+		},
+		"resource_types": {
+			"health": "Health",
+			"mana": "Mana",
+			"energy": "Energy",
+			"rage": "Rage",
+			"focus": "Focus",
+			"holy_power": "Holy Power",
+			"shadow_orbs": "Shadow Orbs",
+			"combo_points": "Combo Points",
+			"maelstrom": "Maelstrom",
+			"demonic_fury": "Demonic Fury",
+			"burning_embers": "Burning Embers",
+			"generic_resource": "Missing Resource!",
+			"generic_resource_name": "Generic Resource"
+		},
+		"stats": {
+			"strength": "Strength",
+			"agility": "Agility",
+			"stamina": "Stamina",
+			"intellect": "Intellect",
+			"spirit": "Spirit",
+			"hit": "Hit",
+			"crit": "Crit",
+			"haste": "Haste",
+			"expertise": "Expertise",
+			"dodge": "Dodge",
+			"parry": "Parry",
+			"attack_power": "Attack Power",
+			"ranged_attack_power": "Ranged Attack Power",
+			"spell_power": "Spell Power",
+			"armor": "Armor",
+			"bonus_armor": "Bonus Armor",
+			"armor_no_mods": "Armor (No Mods)",
+			"health": "Health",
+			"mana": "Mana",
+			"mp5": "MP5",
+			"main_hand_dps": "Main Hand DPS",
+			"off_hand_dps": "Off Hand DPS",
+			"ranged_dps": "Ranged DPS",
+			"block": "Block",
+			"reduced_crit_taken": "Reduced Crit Taken",
+			"melee_speed_multiplier": "Melee Speed Multiplier",
+			"ranged_speed_multiplier": "Ranged Speed Multiplier",
+			"cast_speed_multiplier": "Cast Speed Multiplier",
+			"spell_hit": "Spell Hit",
+			"arcane_hit": "Spell Hit Arcane",
+			"fire_hit": "Spell Hit Fire",
+			"frost_hit": "Spell Hit Frost",
+			"holy_hit": "Spell Hit Holy",
+			"nature_hit": "Spell Hit Nature",
+			"shadow_hit": "Spell Hit Shadow",
+			"spell_crit": "Spell Crit",
+			"spell_haste": "Spell Haste",
+			"melee_hit": "Melee Hit",
+			"melee_crit": "Melee Crit",
+			"melee_haste": "Melee Haste",
+			"ranged_hit": "Ranged Hit",
+			"ranged_crit": "Ranged Crit",
+			"ranged_haste": "Ranged Haste",
+			"off_hand_hit": "Off Hand Hit",
+			"off_hand_crit": "Off Hand Crit",
+			"main_hand_hit_rating": "Main Hand Hit Rating",
+			"main_hand_crit_rating": "Main Hand Crit Rating",
+			"off_hand_hit_rating": "Off Hand Hit Rating",
+			"off_hand_crit_rating": "Off Hand Crit Rating",
+			"ranged_hit_rating": "Ranged Hit Rating",
+			"ranged_crit_rating": "Ranged Crit Rating",
+			"ranged_crit_suppression": "Ranged Crit Suppression",
+			"healing_power": "Healing Power",
+			"spell_damage": "Spell Damage",
+			"arcane_damage": "Arcane Spell Damage",
+			"fire_damage": "Fire Spell Damage",
+			"frost_damage": "Frost Spell Damage",
+			"holy_damage": "Holy Spell Damage",
+			"nature_damage": "Nature Spell Damage",
+			"shadow_damage": "Shadow Spell Damage",
+			"spell_penetration": "Spell Piercing",
+			"feral_attack_power": "Feral Attack Power",
+			"expertise_rating": "Expertise Rating",
+			"armor_penetration": "Armor Penetration",
+			"hit_rating": "Hit Rating",
+			"crit_rating": "Crit Rating",
+			"haste_rating": "Haste Rating",
+			"defense_rating": "Defense Rating",
+			"block_rating": "Block Rating",
+			"block_value": "Block Value",
+			"arcane_resistance": "Arcane Resistance",
+			"frost_resistance": "Frost Resistance",
+			"fire_resistance": "Fire Resistance",
+			"nature_resistance": "Nature Resistance",
+			"shadow_resistance": "Shadow Resistance",
+			"physical_damage": "Bonus Weapon Damage"
+		},
+		"currency": {
+			"valorPoints": "Valor Points",
+			"justicePoints": "Justice Points",
+			"honorPoints": "Honor Points"
+		},
+		"copy_button": {
+			"default_text": "Copy to Clipboard",
+			"copied": "Copied",
+			"manual_copy": "The browser blocked the clipboard. Copy the text below by hand."
+		},
+		"code_text_area": {
+			"position_one": "Ln {{line}}, Col {{column}} · {{count}} line",
+			"position_other": "Ln {{line}}, Col {{column}} · {{count}} lines"
+		},
+		"list_picker": {
+			"new_item": "New {{itemLabel}}",
+			"delete_item": "Delete {{itemLabel}}",
+			"copy_to_new": "Copy to New {{itemLabel}}",
+			"copy_to_clipboard": "Copy {{itemLabel}} to Clipboard",
+			"move_drag_drop": "Move (Drag+Drop)",
+			"item_actions": "{{itemLabel}} menu",
+			"warnings": "Warnings",
+			"additional_information": "Additional Information:",
+			"action_has_warnings": "This action has warnings, and might not behave as expected.",
+			"action_has_errors": "This action has errors, and will not behave as expected.",
+			"toggle_item": "Show or hide {{itemLabel}}"
+		},
+		"precision": {
+			"label": "Precision",
+			"mode_iterations": "Iterations",
+			"mode_target": "Target ±",
+			"iterations": "Iterations",
+			"max_multiplier": "Max ×",
+			"max_multiplier_none": "None"
+		},
+		"preset": {
+			"ep_weights": "EP Weights",
+			"gear": "Gear",
+			"talents": "Talents",
+			"rotation": "Rotation",
+			"rotationType": "Rotation Type",
+			"encounter": "Encounter",
+			"settings": "Settings",
+			"description": "This preset affects the following settings:",
+			"stat_weights": "Stat Weights",
+			"class_spec_options": "Class/Spec Options",
+			"consumables": "Consumables",
+			"other_settings": "Other Settings",
+			"buffs": "Buffs",
+			"debuffs": "Debuffs",
+			"reforge_settings": "Enchants Optimizer Settings"
+		},
+		"dungeon_difficulties": {
+			"unknown": "Unknown",
+			"dungeon": "Dungeon",
+			"raid": "Raid"
+		},
+		"rep_levels": {
+			"unknown": "Unknown",
+			"hated": "Hated",
+			"hostile": "Hostile",
+			"unfriendly": "Unfriendly",
+			"neutral": "Neutral",
+			"friendly": "Friendly",
+			"honored": "Honored",
+			"revered": "Revered",
+			"exalted": "Exalted"
+		},
+		"stat_cap_types": {
+			"hard_cap": "Hard cap",
+			"soft_cap": "Soft cap",
+			"threshold": "Threshold"
+		},
+		"significance": {
+			"significant": "Difference is significantly different (Z = {{z}}).",
+			"not_significant": "Difference is not significantly different (Z = {{z}})."
+		},
+		"action_names": {
+			"mana_tick": "Mana Tick",
+			"energy_tick": "Energy Tick",
+			"focus_tick": "Focus Tick",
+			"mana_gain": "Mana Gain",
+			"rage_gain": "Rage Gain",
+			"attack": "Attack",
+			"shoot": "Shoot",
+			"refund": "Refund",
+			"moving": "Moving",
+			"moving_from_spell": "Moving (from a spell)",
+			"prepull": "Prepull",
+			"encounter_start": "Encounter Start",
+			"minor_run_speed": "Minor Run Speed (8%)",
+			"item_swap_main": "Item Swap: Main",
+			"item_swap_swapped": "Item Swap: Swapped"
+		},
+		"action_tags": {
+			"casting": "Casting",
+			"not_casting": "Not Casting",
+			"main_hand": "Main Hand",
+			"off_hand": "Off Hand",
+			"windfury": "Windfury",
+			"boss": "Boss",
+			"add": "Add",
+			"no_stacks": "No Stacks",
+			"one_stack": "1 Stack",
+			"crits": "Crits",
+			"blast_wave": "Blast Wave",
+			"dot": "DoT",
+			"mastery": "Mastery",
+			"shot": "Shot",
+			"shiv": "Shiv",
+			"cast": "Cast",
+			"overload": "Overload",
+			"echo": "Echo",
+			"echo_overload": "Echo Overload",
+			"haste": "Haste",
+			"crit": "Crit",
+			"agi": "Agi",
+			"damage": "Damage",
+			"attuned": "Attuned",
+			"charged": "Charged",
+			"wasted": "Wasted",
+			"raid": "raid",
+			"queue": "Queue",
+			"normalized": "Normalized",
+			"devastate": "Devastate",
+			"single_target": "ST",
+			"multi_target": "MT",
+			"heal": "Heal",
+			"no_orb": "No Orb",
+			"mana_restore": "Mana Restore",
+			"malefic": "Malefic",
+			"cooldown": "Cooldown",
+			"hit": "Hit",
+			"external": "External",
+			"self": "self",
+			"shield": "Shield",
+			"shieldsworn": "Shieldsworn",
+			"amplified": "Amplified",
+			"custom_boss": "Custom Boss",
+			"thrash": "Thrash",
+			"stacks": "{{stacks}} Stacks",
+			"ticks": "{{ticks}} Tick",
+			"combo_points": "{{points}} CP",
+			"maelstrom_weapon": "{{stacks}} MW",
+			"from_player": "from #{{number}}",
+			"rank": "Rank {{rank}}"
+		},
+		"close": "Close",
+		"release_info": {
+			"game_version": "Game {{version}}",
+			"built": "Built {{date}}",
+			"commit_link": "View commit {{commit}} on GitHub",
+			"sim_build": "Sim build",
+			"changed": "Changed {{date}}",
+			"details": "Release details",
+			"based_on": "Based on <upstream>WoWSims</upstream> (<license>MIT</license>)",
+			"presets": "{{spec}} presets",
+			"engine": "{{spec}} engine"
+		}
+	},
+	"sim": {
+		"title": "Null Sims · Forever {{spec}} {{class}} simulator",
+		"description": "{{spec}} {{class}} simulations for World of Warcraft® Forever.",
+		"title_class": "Null Sims · Forever {{class}} simulator",
+		"description_class": "{{class}} simulations for World of Warcraft® Forever.",
+		"basic_bis_disclaimer": "<p>Preset gear lists are intended as rough approximations of BIS, and will often not be the absolute highest-DPS setup for you. Your optimal gear setup will depend on many factors; that's why we have a sim!</p><p>Items may also be omitted from the presets if they are highly contested and clearly better utilized on other classes, to encourage equitable gearing for the raid as a whole.</p>",
+		"healing_sim_disclaimer": "*** WARNING - USE AT YOUR OWN RISK ***\n\nThe entire concept of a healing sim is EXPERIMENTAL. All results should be taken with an EXTREMELY large grain of salt.\n\nThis tool is currently more similar to a spreadsheet than a true sim. Options for specifying incoming damage profiles in order to have proper reactive rotations have not yet been added.",
+		"crash_modal": {
+			"title": "Extra Crash Information",
+			"header": "Please append the following complete link to the issue you just created. This will simplify debugging the issue."
+		},
+		"gear_planner": {
+			"title": "Gear planning only.",
+			"message": "Gear, enchants, talents and the enchants optimizer work for this spec. There's no simulation planned."
+		},
+		"unlaunched": {
+			"title": "This sim is currently not supported."
+		},
+		"notifications": {
+			"sim_cancelled": "Sim cancelled.",
+			"simulation_failed": "The Simulation failed. Generated an error report.",
+			"failed_to_file_report": "Failed to file report... try again another time:"
+		},
+		"crash_report": {
+			"confirm_title": "Simulation Failure:",
+			"confirm_message": "Press Ok to file crash report",
+			"report_title": "Crash Report"
+		},
+		"run_errors": {
+			"raid_empty": "Raid is empty! Try adding some players first.",
+			"no_targets": "Encounter has no targets! Try adding some targets first.",
+			"sim_failed": "Something went wrong running your sim. Reload the page and try again.",
+			"bulk_candidates_failed": "Failed to build bulk candidates",
+			"bulk_sim_failed": "Something went wrong running your bulk sim. Reload the page and try again.",
+			"stat_weights_failed": "Something went wrong calculating your stat weights. Reload the page and try again.",
+			"browser_unsupported": "This browser does not support DecompressionStream; the in-browser sim requires a current browser version."
+		}
+	},
+	"gear_tab": {
+		"title": "Gear",
+		"reforge_success": {
+			"title": "The following items were changed:",
+			"no_changes": "No gear changes were made!"
+		},
+		"gear_sets": {
+			"title": "Gear Sets",
+			"gear_set": "Gear Set",
+			"gear_set_name": "Gear Set Name",
+			"save_gear_set": "Save Gear Set"
+		},
+		"bis_gear": {
+			"label": "BIS gear for level {{level}}",
+			"tooltip": "Equips the best item in each slot a level {{level}} character can wear, with no raid gear, valued by the current EP weights. Procs, on-use effects, set bonuses and enchants are not valued, and the gear comes without enchants."
+		},
+		"gear_picker": {
+			"tabs": {
+				"items": "Item",
+				"random_suffix": "Random Suffix",
+				"enchants": "Enchants"
+			},
+			"remove_buttons": {
+				"remove_enchant": "Remove Enchant",
+				"remove_random_suffix": "Remove Random Suffix"
+			},
+			"filters": {
+				"title": "Filters",
+				"general": "General",
+				"required_level": "Required Level",
+				"min_ilvl": "Min Item Level",
+				"max_ilvl": "Max Item Level",
+				"faction_restrictions": "Faction Restrictions",
+				"source": "Source",
+				"raids": "Raids",
+				"faction_labels": {
+					"none": "Any",
+					"alliance_only": "Alliance only",
+					"horde_only": "Horde only"
+				}
+			},
+			"quick_popovers": {
+				"favorite_enchants": {
+					"title": "Favorite Enchants",
+					"empty_message": "Add favorite Enchants",
+					"open_enchants": "Open Enchants"
+				}
+			},
+			"missing_gear_message": {
+				"title": "If gear is missing, check the selected phase and your gear filters.",
+				"description": "If the problem persists, save any un-saved data, click the gear icon to open your sim options, then click the \"Restore Defaults\"."
+			},
+			"cooldowns": {
+				"title": "Cooldowns",
+				"tooltip": "Specify cooldown timings, in seconds. Cooldowns will be used as soon as possible after their specified timings. When not specified, cooldowns will be used when ready and it is sensible to do so.<br><br>Multiple timings can be provided by separating with commas. Any cooldown usages after the last provided timing will use the default logic."
+			},
+			"ep_tooltip": "EP (Equivalence Points) is way of comparing items by multiplying the raw stats of an item with your current stat weights. More EP does not necessarily mean more DPS, as EP doesn't take into account stat caps and non-linear stat calculations.",
+			"filters_button": "Filters",
+			"unequip_item": "Unequip Item",
+			"table_headers": {
+				"ilvl": "ILvl",
+				"item": "Item",
+				"source": "Source",
+				"ep": "EP"
+			},
+			"sorted_ascending": "sorted ascending",
+			"sorted_descending": "sorted descending",
+			"more_sources": "{{count}} more sources",
+			"more_sources_one": "{{count}} more source",
+			"more_sources_other": "{{count}} more sources",
+			"show_ep": "Show EP",
+			"armor_type": "Armor Type",
+			"weapon_type": "Weapon Type",
+			"weapon_speed": "Weapon Speed",
+			"min_mh_speed": "Min MH Speed",
+			"max_mh_speed": "Max MH Speed",
+			"min_oh_speed": "Min OH Speed",
+			"max_oh_speed": "Max OH Speed",
+			"ranged_weapon_type": "Ranged Weapon Type",
+			"ranged_weapon_speed": "Ranged Weapon Speed",
+			"min_ranged_speed": "Min Ranged Speed",
+			"max_ranged_speed": "Max Ranged Speed",
+			"row_actions": {
+				"favorite": "Favorite",
+				"compare": "Compare",
+				"add_favorite": "Add to favorites",
+				"remove_favorite": "Remove from favorites",
+				"add_to_batch": "Add to Batch Sim",
+				"remove_from_batch": "Remove from Batch Sim"
+			},
+			"edit_slot": "Edit {{slot}}"
+		},
+		"preset_configurations": {
+			"title": "Preset Configurations",
+			"tooltip": "Preset configurations can apply an optimal combination of gear, talents, rotation and encounter settings."
+		},
+		"upgrade_summary": {
+			"title": "Remaining Upgrade Costs",
+			"upgrade_all_items": "Upgrade all items",
+			"reset_upgrades": "Reset Upgrades"
+		},
+		"item_notices": {
+			"want_to_help": "Want to help out by providing additional information? Open an issue on GitHub!",
+			"missing_random_suffix": "Please select a random suffix",
+			"missing_effect": {
+				"item": "This item effect (on-use or proc) is not implemented!",
+				"enchant": "This enchant effect (on-use or proc) is not implemented!",
+				"item_listed": "The following item effect (on-use or proc) is not implemented!",
+				"enchant_listed": "The following enchant effect (on-use or proc) is not implemented!",
+				"working_on_it": "We are working hard on gathering all the old resources to allow for an initial implementation."
+			},
+			"tentative_implementation": "This item <span className=\"font-bold\">is</span> implemented, but detailed proc behavior will be confirmed on PTR.",
+			"will_not_be_implemented": "The equip/use effect on this item will not be implemented!",
+			"unvalidated_rate": {
+				"ppm_vanilla": "In-game validation needed. Currently using Vanilla PPM values",
+				"ppm_tbc": "In-game validation needed. Currently using TBC PPM values",
+				"ppm_unknown": "In-game validation needed. Currently using an estimated proc rate",
+				"chance_vanilla": "In-game validation needed. Currently using a Vanilla proc chance",
+				"chance_tbc": "In-game validation needed. Currently using a TBC proc chance",
+				"chance_unknown": "In-game validation needed. Currently using an estimated proc chance"
+			},
+			"not_yet_implemented": "Not yet implemented",
+			"not_fully_supported": "Not fully supported:",
+			"partial_set_bonus": {
+				"grovekeeper_eclipse_4": "only spell damage against Demons is raised, not the damage of melee attacks.",
+				"wildheart_raiment_5": "only the mana on a spell cast is modelled, not the energy on a melee attack or the rage when struck by one.",
+				"implements_of_unspoken_names_3": "the extra 5% damage on Firebolt and Lash of Pain is not modelled.",
+				"dreadnaughts_battlegear_4": "Taunt and Challenging Shout always hit in the sim, so the bonus changes nothing.",
+				"dreadnaughts_battlegear_8": "only heals a healer casts in the sim take the bonus, not the incoming healing the tank sim models.",
+				"battleplate_of_glory_3": "the sim does not cast Intervene, so the bonus changes nothing."
+			},
+			"set_bonus_warnings": "This item set has the following warnings:",
+			"set_bonus_piece": "{{pieces}}-piece:",
+			"area_stats": "Only while the encounter is in one of these areas:"
+		}
+	},
+	"settings_tab": {
+		"title": "Settings",
+		"raid_buffs": {
+			"title": "Raid Buffs",
+			"tooltip": "Buffs provided by <strong>other</strong> party/raid members.",
+			"description": "All raid buffs/debuffs selected are assumed to be provided by other raid members than the simulated player.",
+			"misc": {
+				"label": "Misc",
+				"tooltip": "Miscellaneous raid buffs"
+			},
+			"stats": "Stats",
+			"attack_power": "Attack Power",
+			"attack_power_tooltip": "Battle Shout: click to cycle Rank 6 (trainer), Rank 7 (Manual of Battle Shout VII), Rank 7 with three pieces of Battlegear of Wrath. Furious Howl shares its category; the stronger applies.",
+			"attack_speed": "Attack Speed",
+			"spell_power": "Spell Power",
+			"spell_haste": "Spell Haste",
+			"crit_percent": "Crit %",
+			"stamina": "Stamina",
+			"fire_resistance": "Fire Resistance",
+			"frost_resistance": "Frost Resistance",
+			"shadow_resistance": "Shadow Resistance",
+			"nature_resistance": "Nature Resistance",
+			"rank_select_tooltip": "Click to cycle {{ranks}}. The first needs no class book; the second does."
+		},
+		"party_buffs": {
+			"title": "Party Buffs",
+			"tooltip": "Buffs provided by <strong>other</strong> party members.",
+			"description": "All party buffs/debuffs selected are assumed to be provided by other raid members than the simulated player."
+		},
+		"external_damage_cooldowns": {
+			"title": "External Damage Cooldowns",
+			"tooltip": "Major damage cooldowns provided by <strong>other</strong> party/raid members.",
+			"skull_banner": "Skull Banner",
+			"stormlash_totem": "Stormlash Totem",
+			"tricks_of_the_trade": "Tricks of the Trade",
+			"unholy_frenzy": "Unholy Frenzy",
+			"shattering_throw": "Shattering Throw"
+		},
+		"external_defensive_cooldowns": {
+			"title": "External Defensive Cooldowns",
+			"tooltip": "Major defensive cooldowns provided by <strong>other</strong> party/raid members.",
+			"vigilance": "Vigilance",
+			"devotion_aura": "Devotion Aura",
+			"pain_suppression": "Pain Suppression",
+			"rallying_cry": "Rallying Cry"
+		},
+		"debuffs": {
+			"title": "Debuffs",
+			"tooltip": "Debuffs applied by <strong>other</strong> raid members.",
+			"misc": {
+				"label": "Misc",
+				"tooltip": "Miscellaneous debuffs"
+			},
+			"armor_reduction": "Armor Reduction",
+			"phys_dmg_reduction": "Phys Dmg Reduction",
+			"cast_speed": "Cast Speed",
+			"phys_dmg": "Phys Dmg",
+			"spell_dmg": "Spell Dmg",
+			"major_armor_reduction": "Major Armor Reduction",
+			"minor_armor_reduction": "Minor Armor Reduction",
+			"attack_power_reduction": "Attack Power Reduction",
+			"hit_chance_reduction": "Hit Chance Reduction",
+			"attack_speed_reduction": "Attack Speed Reduction"
+		},
+		"other": {
+			"title": "Other",
+			"input_delay": {
+				"label": "Input Delay",
+				"tooltip": "Player input delay, in milliseconds. Specifies the maximum delay on actions that cannot be spell queued, such as spell casts that are waiting on resource gains or waiting for a cooldown to expire. Also used with certain APL values (such as 'Aura Is Active With Reaction Time'). Roughly models the sum of reaction time + server latency."
+			},
+			"channel_clip_delay": {
+				"label": "Channel Clip Delay",
+				"tooltip": "Clip delay following channeled spells, in milliseconds. This delay occurs following any full or partial channel ending after the GCD becomes available, due to the player not being able to queue the next spell."
+			},
+			"in_front_of_target": {
+				"label": "In Front of Target",
+				"tooltip": "Stand in front of the target, causing Blocks and Parries to be included in the attack table."
+			},
+			"distance_from_target": {
+				"label": "Distance From Target",
+				"tooltip": "Distance from targets, in yards. Used to calculate travel time for certain spells."
+			},
+			"tank_assignment": {
+				"label": "Tank Assignment",
+				"tooltip": "Determines which mobs will be tanked. Most mobs default to targeting the Main Tank, but in preset multi-target encounters this is not always true."
+			},
+			"inspiration_uptime": {
+				"label": "Inspiration % Uptime",
+				"tooltip": "<p>% average of Encounter Duration, during which you have the Inspiration buff.</p><p>If set to 0, the buff isn't applied.</p>"
+			},
+			"incoming_hps": {
+				"label": "Incoming HPS",
+				"tooltip": "Average amount of healing received per second. Used for calculating chance of death. If set to 0, defaults to 25% of the primary target's base DPS."
+			},
+			"healing_cadence": {
+				"label": "Healing Cadence",
+				"tooltip": "How often the incoming heal 'ticks', in seconds. Generally, longer durations favor Effective Hit Points (EHP) for minimizing Chance of Death, while shorter durations favor avoidance. Example: if Incoming HPS is set to 1000 and this is set to 1s, then every 1s a heal will be received for 1000. If this is instead set to 2s, then every 2s a heal will be recieved for 2000. If set to 0, default values for Healing Cadence and Cadence +/- are inferred from boss damage parameters."
+			},
+			"healing_cadence_variation": {
+				"label": "Cadence +/-",
+				"tooltip": "Magnitude of random variation in healing intervals, in seconds. Example: if Healing Cadence is set to 1s with 0.5s variation, then the interval between successive heals will vary uniformly between 0.5 and 1.5s. If the variation is instead set to 2s, then 50% of healing intervals will fall between 0s and 1s, and the other 50% will fall between 1s and 3s. The amount of healing per 'tick' is automatically scaled up or down based on the randomized time since the last tick, so as to keep HPS constant."
+			},
+			"absorb_frac": {
+				"label": "Absorb %",
+				"tooltip": "% of each incoming heal 'tick' to model as an absorb shield rather than as a direct heal."
+			},
+			"burst_window": {
+				"label": "TMI Burst Window",
+				"tooltip": "Size in whole seconds of the burst window for calculating TMI. It is important to use a consistent setting when comparing this metric. Default is 6 seconds. If set to 0, TMI calculations are disabled."
+			},
+			"hp_percent_for_defensives": {
+				"label": "HP % for Defensive CDs",
+				"tooltip": "% of Maximum Health, below which defensive cooldowns are allowed to be used. If set to 0, this restriction is disabled."
+			},
+			"retribution_aura_spell_power": {
+				"label": "Retribution Aura Spell Power",
+				"tooltip": "The Holy spell power of the paladin providing Retribution Aura. Each hit you take deals the aura's base damage plus 6% of this."
+			},
+			"thorns_spell_power": {
+				"label": "Thorns Spell Power",
+				"tooltip": "The Nature spell power of the druid providing Thorns. Each hit you take deals Thorns' base damage plus 6% of this."
+			},
+			"pet_uptime": {
+				"label": "Pet Uptime (%)",
+				"tooltip": "Percent of the fight duration for which your pet will be alive."
+			},
+			"pet_type": {
+				"label": "Family",
+				"tooltip": "The family of the tamed creature: its own damage, armor and health, and the abilities it learns.",
+				"no_pet": "No Pet",
+				"bat": "Bat",
+				"bear": "Bear",
+				"bird_of_prey": "Bird of Prey",
+				"boar": "Boar",
+				"carrion_bird": "Carrion Bird",
+				"cat": "Cat",
+				"core_hound": "Core Hound",
+				"crab": "Crab",
+				"crocolisk": "Crocolisk",
+				"fox": "Fox",
+				"gorilla": "Gorilla",
+				"hyena": "Hyena",
+				"raptor": "Raptor",
+				"scorpid": "Scorpid",
+				"spider": "Spider",
+				"tallstrider": "Tallstrider",
+				"turtle": "Turtle",
+				"wind_serpent": "Wind Serpent",
+				"wolf": "Wolf"
+			},
+			"pet_attack_speed": {
+				"label": "Attack Speed",
+				"tooltip": "The Faster Attack or Slower Attack passive the tamed creature carries on top of the 2 s swing every pet has.",
+				"none": "No Faster or Slower Attack (2.0 s swing)",
+				"faster_attack": "Faster Attack {{rank}}: {{percent}} attack speed",
+				"slower_attack": "Slower Attack {{rank}}: {{percent}} attack speed"
+			},
+			"ammo": {
+				"label": "Ammo",
+				"tooltip": "Ammo type",
+				"no_ammo": "No Ammo"
+			},
+			"quiver": {
+				"label": "Quiver",
+				"tooltip": "Quiver type",
+				"no_quiver": "No Quiver"
+			},
+			"detonate_seed": {
+				"label": "Detonate Seed on Cast",
+				"tooltip": "Simulates raid doing damage to targets such that seed detonates immediately on cast."
+			},
+			"default_shout": {
+				"label": "Battle Shout",
+				"tooltip": "Whether the warrior keeps its own Battle Shout up (can be overridden in the APL)."
+			},
+			"default_stance": {
+				"label": "Default Stance",
+				"tooltip": "Which stance to use by default (can be overridden in the APL)."
+			},
+			"starting_rage": {
+				"label": "Starting Rage",
+				"tooltip": "Initial rage at the start of each iteration."
+			},
+			"stance_snapshot": {
+				"label": "Stance Snapshot",
+				"tooltip": "Ability that is cast at the same time as stance swap will benefit from the bonus of the stance before the swap."
+			},
+			"has_bs_tier_2": {
+				"label": "Battle Shout: Battlegear of Wrath",
+				"tooltip": "Three pieces of Battlegear of Wrath add 30 attack power to Battle Shout. Set this when the pieces arrive through an item swap rather than the worn set."
+			},
+			"has_battle_shout_rank_7": {
+				"label": "Battle Shout: Rank 7",
+				"tooltip": "Sets the character sheet's Battle Shout to Rank 7 (Manual of Battle Shout VII) instead of Rank 6. The rotation picks the rank that is cast: the simple rotation's Battle Shout VII toggle, or the rank chosen for the spell in the rotation editor."
+			},
+			"queue_delay": {
+				"label": "HS/Cleave Queue Delay (ms)",
+				"tooltip": "How long (in milliseconds) to delay re-queueing Heroic Strike/Cleave in order to simulate real reaction time and game delay."
+			},
+			"assume_bleed_active": {
+				"label": "Assume Bleed Always Active",
+				"tooltip": "Assume bleed always exists for 'Rend and Tear' calculations and the 'Bleed Is Active' APL condition. Otherwise will only calculate based on your own bleeds."
+			},
+			"prepull_clearcasting": {
+				"label": "Clearcasting at the Pull",
+				"tooltip": "Start the fight with Clearcasting from Omen of Clarity, fished for out of combat by casting spells before the pull."
+			},
+			"cannot_shred_target": {
+				"label": "Cannot Shred Target",
+				"tooltip": "Alternative to \"In Front of Target\" for modeling bosses that do not Parry or Block, but which you still cannot Shred."
+			},
+			"innervate_assignment": {
+				"label": "Innervate",
+				"tooltip": "Self keeps the mana. Someone else still casts Innervate on your rotation, and the mana stays off you.",
+				"self": "Self",
+				"other": "Someone else"
+			},
+			"show_1h_weapons": {
+				"label": "1H",
+				"tooltip": "Show one-handed weapons"
+			},
+			"show_2h_weapons": {
+				"label": "2H",
+				"tooltip": "Show two-handed weapons"
+			},
+			"show_all_enchants": {
+				"label": "Show All",
+				"tooltip": "Also show enchants whose stats are worth nothing to this spec's stat weights"
+			},
+			"show_ep_values": {
+				"label": "Show EP",
+				"tooltip": "Show EP (Effective Power) values"
+			},
+			"phase_selector": {
+				"label": "Phase",
+				"tooltip": "Select the game phase for item availability"
+			},
+			"enable_item_swap": {
+				"label": "Enable Item Swapping",
+				"tooltip": "Allows configuring an Item Swap Set which is used with the <b>Item Swap</b> APL action."
+			},
+			"item_swap": {
+				"label": "Item Swap",
+				"tooltip": "Swap with equipped items"
+			},
+			"blessings": {
+				"title": "Blessings",
+				"tooltip": "Specify Paladin Blessings for each role, in order of priority. Blessings in the 1st column will be used if there is at least 1 Paladin in the raid, 2nd column if at least 2, etc."
+			},
+			"shaman_shield_procrate": {
+				"label": "Shield Proc Rate",
+				"tooltip": "Number of proc per minute of the active effect of your Shaman Shield."
+			},
+			"warlock_assigned_curse": {
+				"title": "Assigned Curse",
+				"description": "The selected curse will prevent the selected external debuff from being cast."
+			},
+			"warlock_soul_shards": {
+				"label": "Soul Shards",
+				"tooltip": "Soul Shards carried into the fight. Soul Fire and Shadowburn each take one, and cannot be cast without one."
+			},
+			"warlock_pet": {
+				"label": "Pet",
+				"tooltip": "The demon out when the fight starts. Summons in the APL can change it."
+			},
+			"warlock_armor": {
+				"label": "Armor",
+				"tooltip": "The armor spell up for the fight."
+			},
+			"warlock_demonic_sacrifice": {
+				"label": "Demonic Sacrifice",
+				"tooltip": "The effect up when the fight starts, labelled with the demon sacrificed for it. Without Demonic Pact, a sacrifice leaves no demon out."
+			},
+			"pet_training": {
+				"cobra_reflexes": {
+					"label": "Cobra Reflexes",
+					"tooltip": "Beast Training: the pet attacks 30% faster but each attack does less damage.",
+					"untrained": "Cobra Reflexes untrained",
+					"trained": "Cobra Reflexes trained"
+				}
+			},
+			"pet_section": {
+				"title": "Pet"
+			}
+		},
+		"consumables": {
+			"title": "Consumables",
+			"filters": {
+				"title": "Consumables filter",
+				"trigger": "Filter consumables",
+				"min_lvl": "Minimum level",
+				"reset": "Reset to defaults",
+				"types": {
+					"potion": "Potions",
+					"conjured": "Conjured",
+					"flask": "Flasks",
+					"elixir": "Elixirs",
+					"scroll": "Scrolls",
+					"food": "Food",
+					"explosive": "Explosives",
+					"imbue": "Stones and Oils",
+					"weaponImbue": "Weapon Imbues",
+					"device": "Devices",
+					"other": "Other"
+				}
+			},
+			"potions": {
+				"title": "Potions",
+				"prepop": "Prepop Potion",
+				"offensive": "Offensive Potion",
+				"defensive": "Defensive Potion",
+				"resource": "Resource Potion"
+			},
+			"elixirs": {
+				"title": "Elixirs"
+			},
+			"food": {
+				"title": "Food"
+			},
+			"holiday": {
+				"title": "Holiday"
+			},
+			"engineering": {
+				"title": "Explosives",
+				"explosives": "Explosives"
+			},
+			"imbue": {
+				"title": "Stones and Oils",
+				"mhImbue": "Main Hand",
+				"ohImbue": "Off Hand",
+				"swapMhImbue": "Swap Main Hand",
+				"swapOhImbue": "Swap Off Hand"
+			},
+			"weaponImbue": {
+				"title": "Weapon Imbues",
+				"mhWeaponImbue": "Main Hand",
+				"ohWeaponImbue": "Off Hand",
+				"swapMhWeaponImbue": "Swap Main Hand",
+				"swapOhWeaponImbue": "Swap Off Hand"
+			},
+			"scrolls": {
+				"title": "Scrolls"
+			},
+			"miscellaneous": {
+				"title": "Miscellaneous",
+				"offensive": "Offensive",
+				"defensive": "Defensive"
+			}
+		},
+		"encounter": {
+			"title": "Encounter",
+			"target_inputs": {
+				"label": "Target Input",
+				"frenzy_time": {
+					"label": "Frenzy time",
+					"tooltip": "Simulation time (in seconds) at which to disable tank swaps and enable the boss Frenzy buff"
+				},
+				"spiritual_grasp_frequency": {
+					"label": "Spiritual Grasp frequency",
+					"tooltip": "Average time (in seconds) between Spiritual Grasp hits, following an exponential distribution"
+				},
+				"jalak_death_time": {
+					"label": "Jalak death time",
+					"tooltip": "Simulation time (in seconds) at which to disable War-God Jalak and trigger the Rampage buff on Horridon. If set longer than the simulated fight length, then Jalak will be tanked the entire time and Rampage will never be triggered."
+				},
+				"taunt_swap_for_triple_puncture": {
+					"label": "Taunt swap for Triple Puncture",
+					"tooltip": "If checked, taunt swap upon Jalak's death and on every other Triple Puncture application afterwards in order to limit stack accumulation on a single tank."
+				},
+				"movement_interval": {
+					"label": "Movement Interval",
+					"tooltip": "How often the player will move in seconds"
+				},
+				"reaction_time": {
+					"label": "Reaction Time",
+					"tooltip": "How long the player can wait for casts to finish before moving in seconds"
+				},
+				"yards": {
+					"label": "Yards",
+					"tooltip": "How many yards the player moves"
+				},
+				"adds_respawn_time": {
+					"label": "Add(s) respawn time",
+					"tooltip": "Time for add(s) to respawn after previous died (in seconds)"
+				},
+				"adds_lifetime": {
+					"label": "Add(s) lifetime",
+					"tooltip": "How long the add(s) stay alive (in seconds)"
+				},
+				"adds_spawn_delay": {
+					"label": "Add(s) spawn delay",
+					"tooltip": "Initial delay before the add(s) spawn (in seconds)"
+				},
+				"fear_duration": {
+					"label": "Fear Duration",
+					"tooltip": "Time (in seconds) that Fear keeps players from acting. Fear lasts 8s, but is usually broken after ~3s. Set to 0 to disable."
+				}
+			},
+			"duration": {
+				"label": "Duration",
+				"tooltip": "The fight length for each sim iteration, in seconds."
+			},
+			"duration_variation": {
+				"label": "Duration +/-",
+				"tooltip": "Adds a random amount of time, in seconds, between [value, -1 * value] to each sim iteration. For example, setting Duration to 180 and Duration +/- to 10 will result in random durations between 170s and 190s."
+			},
+			"execute_duration_20": {
+				"label": "Execute Duration 20 (%)",
+				"tooltip": "Percentage of the total encounter duration, for which the targets will be considered to be in execute range (< 20% HP) for the purpose of effects like Warrior Execute."
+			},
+			"execute_duration_35": {
+				"label": "Execute Duration 35 (%)",
+				"tooltip": "Percentage of the total encounter duration, for which the targets will be considered to be in execute range (< 35% HP)."
+			},
+			"encounter_preset": {
+				"label": "Encounter",
+				"tooltip": "Selects a preset encounter configuration."
+			},
+			"zone": {
+				"label": "Zone",
+				"tooltip": "Picks every kind of area the zone counts as; picking a preset boss fills it in from the boss's zone. Custom means the areas below were set by hand."
+			},
+			"area_types": {
+				"label": "Area",
+				"placeholder": "Select area type(s)",
+				"empty": "No kind of area matches",
+				"open": "Show all kinds of area",
+				"remove": "Remove area",
+				"tooltip": "Every kind of area the fight's zone counts as. Effects that only work in certain areas, such as Rune of the Guard Captain's extra attack power in Forest and Grassland areas, apply when their area is picked. A zone can count as several: Redridge Mountains is Forest and Mountainous, Deadwind Pass is Mountainous, Wasteland and Haunted."
+			},
+			"advanced": "Advanced",
+			"target": "Target",
+			"num_allies": {
+				"label": "Num Allies",
+				"tooltip": "Number of allied players in the raid."
+			},
+			"min_base_damage": {
+				"label": "Min Base Damage",
+				"tooltip": "Base damage for auto attacks, i.e. lowest roll with 0 AP against a 0-armor Player."
+			},
+			"npc": {
+				"label": "NPC",
+				"tooltip": "Selects a preset NPC configuration."
+			},
+			"ai": {
+				"label": "AI",
+				"tooltip": "Determines the target's ability rotation. Note that most rotations are not yet implemented."
+			},
+			"level": "Level",
+			"mob_type": "Mob Type",
+			"creature_family": {
+				"label": "Creature Family",
+				"tooltip": "The group of creatures the target belongs to, for the items that deal extra damage to Naga, Satyrs, Aquatic enemies, Earth Elementals, Fire Elementals or Mountain Giants."
+			},
+			"tanked_by": {
+				"label": "Tanked By",
+				"tooltip": "Determines which player in the raid this enemy will attack. If no player is assigned to the specified tank slot, this enemy will not attack."
+			},
+			"swing_speed": {
+				"label": "Swing Speed",
+				"tooltip": "Time in seconds between auto attacks. Set to 0 to disable auto attacks."
+			},
+			"dual_wield": {
+				"label": "Dual Wield",
+				"tooltip": "Uses 2 separate weapons to attack."
+			},
+			"dual_wield_penalty": {
+				"label": "Dual Wield Penalty",
+				"tooltip": "Enables the Dual Wield Miss Penalty (+19% chance to miss) if dual wielding. Bosses in Hyjal/BT/SWP usually have this disabled to stop tanks from avoidance stacking."
+			},
+			"parry_haste": {
+				"label": "Parry Haste",
+				"tooltip": "Whether this enemy will gain parry haste when parrying attacks."
+			},
+			"bleed_immune": {
+				"label": "Immune to Bleeds",
+				"tooltip": "Whether this enemy is immune to bleeds, as many elementals and mechanical units are. The sim does not set this from the enemy's type."
+			},
+			"can_crush": {
+				"label": "Can Crush",
+				"tooltip": "Whether this enemy can land Crushing Blows (150% damage) against players below its level. Enabled by default for level 63 targets."
+			},
+			"spell_school": {
+				"label": "Spell School",
+				"tooltip": "Type of damage caused by auto attacks. This is usually Physical, but some enemies have elemental attacks."
+			},
+			"damage_spread": {
+				"label": "Damage Spread",
+				"tooltip": "Fractional spread between the minimum and maximum auto-attack damage from this enemy at 0 Attack Power."
+			},
+			"suppress_dodge": "Suppress Dodge",
+			"second_tank_index": "Second Tank Index",
+			"disabled_at_start": "Disabled at Start"
+		},
+		"player": {
+			"title": "Player",
+			"race": "Race",
+			"profession_1": "Profession 1",
+			"profession_2": "Profession 2",
+			"level": {
+				"label": "Level",
+				"tooltip": "The character's level, 1 to 60. Spell ranks, base stats, talent points and the gear on offer follow it. A change loads the level's talents, best gear without raid gear, and stat priority, worked out by several stat weights sims; at 60 it loads the spec's defaults. A target at the boss level, or at or 3 above the old level, moves with it.",
+				"loading": "Working out talents, gear and stat priority for level {{level}}…",
+				"loaded": "Loaded talents, gear and stat priority for level {{level}}."
+			}
+		},
+		"saved_encounters": {
+			"title": "Saved Encounters",
+			"encounter": "Encounter",
+			"encounter_name": "Encounter Name",
+			"save_encounter": "Save Encounter"
+		},
+		"saved_settings": {
+			"title": "Saved Settings",
+			"settings": "Settings",
+			"settings_name": "Settings Name",
+			"save_settings": "Save Settings"
+		},
+		"external_label": "{{label}} (External)"
+	},
+	"talents_tab": {
+		"title": "Talents",
+		"copy_button": {
+			"label": "Copy",
+			"tooltip": "Copy talent string"
+		},
+		"reset_button": {
+			"tooltip": "Reset talent points"
+		},
+		"saved_talents": {
+			"title": "Saved Talents",
+			"label": "Talents",
+			"name_label": "Name",
+			"save_button": "Save Talents",
+			"delete": {
+				"confirm": "Delete saved talents '{{name}}'?",
+				"tooltip": "Delete saved talents"
+			},
+			"alerts": {
+				"choose_name": "Choose a label for your saved talents!",
+				"name_exists": "Talents with name {{name}} already exists."
+			}
+		},
+		"points_remaining": "Points Remaining"
+	},
+	"bulk_tab": {
+		"title": "Batch",
+		"tabs": {
+			"setup": "Setup",
+			"results": "Results"
+		},
+		"modes": {
+			"gear": {
+				"label": "Gear",
+				"description": "Best gear for your current talents and encounter"
+			},
+			"builds": {
+				"label": "Builds",
+				"description": "Best gear and talents across encounters"
+			}
+		},
+		"builds": {
+			"columns": {
+				"builds": {
+					"title": "Builds",
+					"hint": "Each bundle runs its gear set with its own talents, rotation and settings, and also tries each ticked enchant preset's enchants in their slots."
+				},
+				"encounters": {
+					"title": "Encounters",
+					"hint": "Every ticked bundle runs on each encounter, and each encounter gets its own ranking."
+				}
+			},
+			"bundles": {
+				"current": "Current bundle",
+				"new": "New bundle",
+				"dialog_new": "New bundle",
+				"dialog_edit": "Edit bundle",
+				"save": "Save",
+				"edit": "Edit {{bundle}}",
+				"delete": "Delete {{bundle}}",
+				"delete_confirm": "Delete {{bundle}}?",
+				"duplicate": "Same as {{bundle}}"
+			},
+			"parts": {
+				"encounter": "Encounter",
+				"gear_set": "Gear set",
+				"talents": "Talents",
+				"rotation": "Rotation",
+				"settings": "Settings"
+			}
+		},
+		"actions": {
+			"import_bags": "Import From Bags",
+			"import_favorites": "Import Favorites",
+			"clear_items": "Clear Items",
+			"simulate_batch": "Simulate Batch"
+		},
+		"search": {
+			"title": "Item Search",
+			"name_label": "Name",
+			"clear_search": "Clear search",
+			"min_ilvl": "Min ILvl",
+			"max_ilvl": "Max ILvl",
+			"no_results": "No results found.",
+			"showing_results": "Showing {{max}} of {{total}} total results.",
+			"item_added": "{{itemName}} was added to the batch.",
+			"item_removed": "{{itemName}} was removed from the batch.",
+			"item_unique": "{{itemName}} is unique and already added."
+		},
+		"settings": {
+			"combinations": "Combinations",
+			"gear_setups": "Gear setups",
+			"total_iterations": "Minimum iterations",
+			"total_iterations_tooltip": "The batch sims at least this many iterations. The error target adds more as it runs.",
+			"top_results": {
+				"label": "Top results",
+				"tooltip": "How many results each encounter ranks. The batch drops a result early once it cannot reach them. With All, every result gets its full iterations.",
+				"all": "All"
+			},
+			"groups": {
+				"enchants": "Enchants",
+				"frozen_slots": "Frozen slots"
+			},
+			"encounters": {
+				"current": "Current encounter",
+				"presets": "Presets",
+				"saved": "Saved",
+				"empty": "No preset or saved encounters yet. Save one in Encounter to run it too.",
+				"duplicate": "Same as {{encounter}}",
+				"health_summary": "Health",
+				"targets": "{{count}} targets",
+				"targets_one": "{{count}} target",
+				"targets_other": "{{count}} targets"
+			},
+			"talents": {
+				"no_points": "No talent points"
+			},
+			"enchant_picks": {
+				"heading": "Enchant presets",
+				"saved": "Saved",
+				"empty": "No enchant presets yet.",
+				"duplicate": "Same enchants as another preset, skipped",
+				"slots": "{{count}} slots.",
+				"slots_one": "{{count}} slot.",
+				"slots_other": "{{count}} slots."
+			},
+			"runs": {
+				"builds": "{{bundles}} × {{encounters}}",
+				"bundles": "{{count}} bundles",
+				"bundles_one": "{{count}} bundle",
+				"bundles_other": "{{count}} bundles",
+				"encounters": "{{count}} encounters",
+				"encounters_one": "{{count}} encounter",
+				"encounters_other": "{{count}} encounters",
+				"total": "{{runs}} runs",
+				"total_one": "{{runs}} run",
+				"total_other": "{{runs}} runs",
+				"tick": "Tick at least one row under {{column}} to run.",
+				"second_build": "Tick a second build to compare."
+			},
+			"iterations": "Iterations",
+			"freeze_ring": {
+				"label": "Freeze ring slot",
+				"tooltip": "Freeze one equipped ring to reduce combination counts"
+			},
+			"freeze_trinket": {
+				"label": "Freeze trinket slot",
+				"tooltip": "Freeze one equipped trinket to reduce combination counts"
+			},
+			"freeze_weapon": {
+				"label": "Freeze weapon slot",
+				"tooltip": "Freeze the equipped main-hand or off-hand weapon to reduce combination counts"
+			},
+			"freeze_weapon_types": {
+				"mainhand_label": "Freeze MH weapon type",
+				"offhand_label": "Freeze OH weapon type",
+				"tooltip": "Leave all unchecked to allow any weapon type for this slot."
+			},
+			"enchant_presets": {
+				"description": "Check one or more enchant presets to choose the enchants to try.",
+				"empty": "No enchant presets yet.",
+				"new": "New preset",
+				"edit": "Edit {{name}}",
+				"delete": "Delete {{name}}",
+				"delete_confirm": "Delete the enchant preset {{name}}?",
+				"new_title": "New enchant preset",
+				"edit_title": "Edit enchant preset",
+				"name": "Preset name",
+				"name_duplicate": "A preset with this name already exists.",
+				"name_placeholder": "e.g. Undead, Outdoor, Raid",
+				"show_all": "Show all enchants",
+				"show_all_tooltip": "Also list enchants whose stats are worth nothing to this spec's stat weights. Ticked enchants are always listed.",
+				"slot_weapons": "Weapons",
+				"slot_off_hand": "Off Hand (non-weapon)",
+				"save": "Save"
+			}
+		},
+		"progress": {
+			"total_combinations": "{{count}} total combinations.",
+			"building_candidate_gear_sets": "Building candidate gear sets",
+			"baseline_round": "Running baseline round",
+			"refining_rounds": "Running refining rounds",
+			"low_iteration_rounds": "Running low iteration rounds",
+			"medium_iteration_rounds": "Running medium iteration rounds",
+			"high_iteration_rounds": "Running high iteration rounds",
+			"iterations_complete": "{{completed}} / {{total}}<br />iterations complete",
+			"seconds_remaining": "{{seconds}} seconds remaining",
+			"finalist_iteration_rounds": "Running finalist tie-breaker rounds",
+			"title": "Bulk Sim",
+			"status": "Status",
+			"done": "Done",
+			"running": "Running",
+			"pending": "Pending",
+			"step_progress": "Run progress: {{encounter}}, {{talents}}",
+			"time_left": "About {{time}} left"
+		},
+		"notifications": {
+			"bulk_sim_cancelled": "Bulk sim cancelled.",
+			"failed_to_remove_item": "Failed to remove item, please report this issue.",
+			"no_baseline_results": "Bulk sim did not return baseline results.",
+			"bulk_sim_aborted": "Bulk Sim Aborted",
+			"combinations_failed": "Failed to calculate bulk combinations"
+		},
+		"warning": {
+			"iterations_limit": "Simming over {{limit}} iterations in the sim will take a long time or may not run at all.",
+			"lower_top_results": "Lower Top results to sim fewer iterations."
+		},
+		"picker": {
+			"no_items": "No items selected.",
+			"add_items": "Add items",
+			"add_items_to": "Add items to {{slot}}",
+			"remove_tooltip": "Remove this item from the batch.",
+			"frozen_tooltip": "This slot is frozen: the batch keeps this item.",
+			"failed_update": "Failed to update item, please report this issue.",
+			"failed_remove": "Failed to remove item, please report this issue."
+		},
+		"results": {
+			"run_simulation": "Run a simulation to view results",
+			"equip_button": "Equip",
+			"gear_equipped": "Batch gear equipped!",
+			"build_equipped": "Batch build equipped!",
+			"gear_unchanged": "No gear changes",
+			"current_gear": "Current gear",
+			"margin_of_error": "95% confidence interval of the mean DPS. Rankings closer than this can change between runs.",
+			"tied_group": "Statistically tied — the order within this group can change between runs",
+			"encounters": "Encounters",
+			"encounters_caption": "The best set's DPS and its gain over your current gear, per encounter. Pick one to see its ranking.",
+			"encounters_caption_best": "The best set's DPS per encounter. Pick one to see its ranking.",
+			"current": "Current",
+			"gear": "Gear:",
+			"grouped_gear_set": "{{name}} ({{group}})",
+			"current_talents": "Current talents",
+			"current_rotation": "Current rotation",
+			"current_settings": "Current settings",
+			"talents": "Talents:",
+			"rotation": "Rotation:",
+			"settings": "Settings:",
+			"export_csv": "Export CSV"
+		},
+		"compare": {
+			"button": "Compare encounters",
+			"title": "Compare encounters",
+			"short_set": "S{{number}}",
+			"readout_rank": "#{{rank}} · {{dps}} DPS",
+			"readout_current": "{{dps}} DPS",
+			"readout_spread": "±{{spread}} per fight",
+			"not_ranked": "Not ranked",
+			"enchants_differ": "{{count}} enchants differ",
+			"enchants_differ_one": "{{count}} enchant differs",
+			"enchants_differ_other": "{{count}} enchants differ",
+			"table_caption": "Each set's gain over your current gear in every encounter, its DPS underneath. A dashed cell is an encounter that did not rank the set; point at a cell for its rank and spread.",
+			"table_caption_best": "Each set's loss against the encounter's best set, its DPS underneath. A dashed cell is an encounter that did not rank the set; point at a cell for its rank and spread.",
+			"table_set": "Gear set",
+			"table_build": "Build",
+			"table_legend_loss": "Loss",
+			"table_legend_none": "No change",
+			"table_legend_gain": "Largest gain in the encounter",
+			"table_legend_best": "Best in the encounter",
+			"table_legend_gap": "Not ranked in that encounter"
+		},
+		"import_modal": {
+			"title": "Bag Item Import",
+			"description_line1": "Import bag items from a JSON file, which can be created by the WoWSimsExporter in-game AddOn.",
+			"description_line2": "To import, upload the file or paste the text below, then click, 'Import'."
+		}
+	},
+	"rotation_tab": {
+		"title": "Rotation",
+		"common": {
+			"rotation_type": {
+				"label": "Type",
+				"auto": "Auto",
+				"simple": "Simple",
+				"apl": "APL",
+				"single_target": "Single Target",
+				"aoe": "AoE",
+				"custom": "Custom"
+			}
+		},
+		"apl": {
+			"actionGroups": {
+				"attributes": {
+					"actions": "Actions",
+					"name": "Name"
+				},
+				"header": "Action Groups",
+				"name": "Action Group",
+				"newGroupName": "New Action Group",
+				"tooltips": {
+					"actions": "Actions in this group. These will be executed in order when the group is referenced.",
+					"name": "Name of this action group (e.g., 'careful_aim', 'cooldowns').",
+					"overview": "Groups of actions that can be referenced in the Action Priority List (APL). Useful for organizing your APL and reusing common action sequences. Actions are performed in order from top to bottom within a group."
+				}
+			},
+			"clipboard": {
+				"copied": "{{itemName}} copied to the clipboard.",
+				"empty": "The clipboard holds no copied {{itemName}}.",
+				"paste_dialog": {
+					"label": "Copied text",
+					"description": "This page cannot read the clipboard. Paste the copied text here with Ctrl+V."
+				},
+				"places": {
+					"action": "the Priority List or a group's actions"
+				},
+				"wrong_kind": "The clipboard holds a copied {{held}}. Paste it under {{places}}."
+			},
+			"floatingActionBar": {
+				"new": "New {{itemName}}",
+				"paste": "Paste {{itemName}}",
+				"reset": "Reset APL"
+			},
+			"nameModal": {
+				"create": "Create",
+				"nameConflict": "An item with this name already exists.",
+				"extract": "Extract",
+				"rename": "Rename {{itemName}}",
+				"renameConfirm": "Rename"
+			},
+			"prePullActions": {
+				"header": "Pre-Pull Action List",
+				"name": "Pre-Pull Action",
+				"tooltips": {
+					"overview": "Actions executed before the fight starts, such as pre-pull buffs or potions."
+				}
+			},
+			"priorityList": {
+				"header": "Action Priority List (APL)",
+				"name": "Action",
+				"tooltips": {
+					"overview": "A list of actions representing your character's actions during the fight. The sim will evaluate the list from top (highest priority) to bottom (lowest priority) and choose the first valid action to take at any given time."
+				}
+			},
+			"tabs": {
+				"actionGroups": "Action Groups",
+				"priorityList": "Priority List",
+				"variables": "Variables"
+			},
+			"variables": {
+				"attributes": {
+					"name": "Name",
+					"nameTooltip": "Name of the variable (e.g., 'my_dot_remains', 'boss_health_pct')",
+					"value": "Value",
+					"valueTooltip": "The value expression that this variable represents."
+				},
+				"enterVariableName": "Enter variable name:",
+				"extractToVariable": "Extract to APL Variable",
+				"header": "Variables",
+				"name": "Variable",
+				"newVariableName": "New Variable",
+				"tooltips": {
+					"name": "Name of the variable (e.g., 'my_dot_remains', 'boss_health_pct')",
+					"overview": "Variables can be used to store complex conditions that can be referenced in the Action Priority List (APL). This is useful for storing dynamic values that change during the fight, such as cooldown timers or resource levels.",
+					"value": "The value expression that this variable represents."
+				}
+			},
+			"variablePlaceholder": {
+				"name": "Placeholder",
+				"nameLabel": "Placeholder Name"
+			},
+			"prepull_actions": {
+				"title": "Prepull Actions",
+				"tooltip": "Actions to perform before the pull.",
+				"item_label": "Prepull Action",
+				"do_at": {
+					"label": "Do At",
+					"tooltip": "Time before pull to do the action. Should be negative, and formatted like, '-1s' or '-2500ms'."
+				},
+				"new_action": "New Action"
+			},
+			"priority_list": {
+				"title": "Priority List",
+				"tooltip": "At each decision point, the simulation will perform the first valid action from this list.",
+				"item_label": "Action",
+				"if_label": "If:",
+				"new_action": "New Action"
+			},
+			"actions": {
+				"cast": {
+					"label": "Cast",
+					"tooltip": "Casts the spell if possible, i.e. resource/cooldown/GCD/etc requirements are all met."
+				},
+				"cast_at_player": {
+					"label": "Cast at Player",
+					"tooltip": "Casts a friendly spell if possible, i.e. resource/cooldown/GCD/etc requirements are all met."
+				},
+				"multi_dot": {
+					"label": "Multi Dot",
+					"tooltip": "Keeps a DoT active on multiple targets by casting the specified spell.",
+					"max_dots": {
+						"label": "Max Dots",
+						"tooltip": "Maximum number of DoTs to simultaneously apply."
+					},
+					"overlap": {
+						"label": "Overlap",
+						"tooltip": "Maximum amount of time before a DoT expires when it may be refreshed."
+					}
+				},
+				"strict_multi_dot": {
+					"label": "Strict Multi Dot",
+					"tooltip": "Keeps a DoT active on multiple targets by casting the specified spell. Will not refresh DoTs that are not about to expire.",
+					"max_dots": {
+						"label": "Max Dots",
+						"tooltip": "Maximum number of DoTs to simultaneously apply."
+					},
+					"overlap": {
+						"label": "Overlap",
+						"tooltip": "Maximum amount of time before a DoT expires when it may be refreshed."
+					}
+				},
+				"multi_shield": {
+					"label": "Multi Shield",
+					"tooltip": "Keeps a shield active on multiple targets by casting the specified spell.",
+					"max_shields": {
+						"label": "Max Shields",
+						"tooltip": "Maximum number of shields to simultaneously apply."
+					},
+					"overlap": {
+						"label": "Overlap",
+						"tooltip": "Maximum amount of time before a shield expires when it may be refreshed."
+					}
+				},
+				"channel": {
+					"label": "Channel",
+					"tooltip": "Channels the spell if possible.",
+					"full_description": "<p>The difference between channeling a spell vs casting the spell is that channels can be interrupted. If the <b>Interrupt If</b> parameter is empty, this action is equivalent to <b>Cast</b>.</p><p>The channel will be interrupted only if all of the following are true:</p><ul><li>Immediately following a tick of the channel</li><li>The <b>Interrupt If</b> condition evaluates to <b>True</b></li><li>Another action in the APL list is available</li></ul><p>Note that if you simply want to allow other actions to interrupt the channel, set <b>Interrupt If</b> to <b>True</b>.</p>",
+					"interrupt_if": {
+						"label": "Interrupt If",
+						"tooltip": "Interrupt the channel if the condition is true."
+					},
+					"recast": {
+						"label": "Recast",
+						"tooltip": "If checked, interrupts of this channel will recast the spell."
+					}
+				},
+				"cast_all_stat_buff_cooldowns": {
+					"label": "Cast All Stat Buff Cooldowns",
+					"tooltip": "Casts all available stat buff cooldowns.",
+					"full_description": "<ul><li>Does not cast cooldowns which are already controlled by other actions in the priority list.</li><li>By default, this action will cast such cooldowns greedily as they become available. However, when embedded in a sequence, the action will only fire when ALL cooldowns matching the specified buff type(s) are ready.</li></ul>"
+				},
+				"autocast_other_cooldowns": {
+					"label": "Autocast Other Cooldowns",
+					"tooltip": "Automatically casts other cooldowns when available.",
+					"full_description": "<ul><li>Does not auto-cast cooldowns which are already controlled by other actions in the priority list.</li><li>Cooldowns are usually cast immediately upon becoming ready, but there are some basic smart checks in place, e.g. don't use Mana CDs when near full mana.</li></ul>"
+				},
+				"wait": {
+					"label": "Wait",
+					"tooltip": "Waits for the specified amount of time."
+				},
+				"wait_until": {
+					"label": "Wait Until",
+					"tooltip": "Waits until the specified condition is true."
+				},
+				"scheduled_action": {
+					"label": "Scheduled Action",
+					"tooltip": "Performs an action at a scheduled time.",
+					"do_at": {
+						"label": "Do At",
+						"tooltip": "Comma-separated list of timings. The inner action will be performed once at each timing."
+					}
+				},
+				"do_at": {
+					"label": "Do At",
+					"tooltip": "Performs an action at a specific time."
+				},
+				"sequence": {
+					"label": "Sequence",
+					"tooltip": "A list of sub-actions to execute in the specified order.",
+					"full_description": "<p>Once one of the sub-actions has been performed, the next sub-action will not necessarily be immediately executed next. The system will restart at the beginning of the whole actions list (not the sequence). If the sequence is executed again, it will perform the next sub-action.</p><p>When all actions have been performed, the sequence does NOT automatically reset; instead, it will be skipped from now on. Use the <b>Reset Sequence</b> action to reset it, if desired.</p>"
+				},
+				"reset_sequence": {
+					"label": "Reset Sequence",
+					"tooltip": "Restarts a sequence, so that the next time it executes it will perform its first sub-action.",
+					"full_description": "<p>Use the <b>name</b> field to refer to the sequence to be reset. The desired sequence must have the same (non-empty) value for its <b>name</b>.</p>"
+				},
+				"strict_sequence": {
+					"label": "Strict Sequence",
+					"tooltip": "Like a regular Sequence, except all sub-actions are executed immediately after each other and the sequence resets automatically upon completion.",
+					"full_description": "<p>Strict Sequences do not begin unless ALL sub-actions are ready.</p>"
+				},
+				"change_target": {
+					"label": "Change Target",
+					"tooltip": "Sets the current target, which is the target of auto attacks and most casts by default. Not ready while that unit is already the current target, except as a step of a sequence."
+				},
+				"activate_aura": {
+					"label": "Activate Aura",
+					"tooltip": "Activates an aura"
+				},
+				"activate_aura_with_stacks": {
+					"label": "Activate Aura With Stacks",
+					"tooltip": "Activates the specified aura with the given number of stacks.",
+					"stacks": "stacks",
+					"stacks_tooltip": "Desired number of initial aura stacks."
+				},
+				"activate_all_stat_buff_proc_auras": {
+					"label": "Activate All Stat Buff Proc Auras",
+					"tooltip": "Activates all item/enchant proc auras that buff the specified stat type(s) using the specified item set."
+				},
+				"cancel_aura": {
+					"label": "Cancel Aura",
+					"tooltip": "Deactivates an aura, equivalent to /cancelaura."
+				},
+				"trigger_icd": {
+					"label": "Trigger ICD",
+					"tooltip": "Triggers the specified internal cooldown."
+				},
+				"item_swap": {
+					"label": "Item Swap",
+					"tooltip": "Swaps items, using the swap set specified in Settings."
+				},
+				"move": {
+					"label": "Move",
+					"tooltip": "Starts a move to the desired range from target.",
+					"to_range": "to Range",
+					"to_range_tooltip": "Desired range from target.",
+					"recheck": "Re-check while moving",
+					"recheck_tooltip": "Looks again every reaction time while walking: stops where you are once the condition is false, and turns to the new range when it changes. The rest of the rotation keeps going meanwhile.",
+					"move_duration": "Move duration",
+					"duration": "Duration",
+					"duration_tooltip": "Amount of time the character should move.",
+					"move_duration_tooltip": "The characters moves for the given duration."
+				},
+				"pet_attack": {
+					"label": "Pet Attack",
+					"tooltip": "Works like /petattack in-game. Tells the pet to move/attack."
+				},
+				"start_attack": {
+					"label": "Start Attack",
+					"tooltip": "Works like /startattack in game. Turns the melee attack on, from any range: the off hand's first swing comes half a swing later, so starting it on the way in has the off hand nearer ready on arrival. Starting Auto Shot turns it off again."
+				},
+				"custom_rotation": {
+					"label": "Custom Rotation",
+					"tooltip": "INTERNAL ONLY"
+				},
+				"warlock_cast_assigned_curse": {
+					"label": "Cast Assigned Curse",
+					"tooltip": "Casts the Curse that warlock is assigned",
+					"short_description": "Casts the Warlock's Assigned Curse"
+				},
+				"group_reference": {
+					"label": "Group Reference",
+					"tooltip": "References an action group defined in the Groups section.",
+					"full_description": "<p>Executes all actions in the referenced group in order. Groups allow you to create reusable action sequences.</p> <p>Example: If you have a group named \"careful_aim\" with actions [serpent_sting, chimera_shot, steady_shot], referencing this group will execute those three actions in sequence.</p>",
+					"group_name_tooltip": "Name of the group to reference (must match a group defined in the Groups section)",
+					"variables": "Group Variables",
+					"variables_tooltip": "Variables to pass to the group. These will override the group's internal variables."
+				}
+			},
+			"values": {
+				"item_label": "Value",
+				"no_condition": "No Condition",
+				"none": "<None>",
+				"const": {
+					"label": "Constant",
+					"tooltip": "A constant value",
+					"full_description": "<p>Examples:<ul><li><b>Number:</b> '123', '0.5', '-10'</li><li><b>Time:</b> '100ms', '5s', '3m'</li><li><b>Percentage:</b> '30%'</li></ul></p>"
+				},
+				"compare": {
+					"label": "Compare",
+					"tooltip": "Compare two values using the specified operator"
+				},
+				"math": {
+					"label": "Math",
+					"tooltip": "Perform mathematical operations on two values"
+				},
+				"max": {
+					"label": "Max",
+					"tooltip": "Get the maximum value from a list of values"
+				},
+				"min": {
+					"label": "Min",
+					"tooltip": "Get the minimum value from a list of values"
+				},
+				"all_of": {
+					"label": "All Of",
+					"tooltip": "True if ALL of the values are true"
+				},
+				"any_of": {
+					"label": "Any Of",
+					"tooltip": "True if ANY of the values are true"
+				},
+				"not": {
+					"label": "Not",
+					"tooltip": "True if the value is false"
+				},
+				"current_time": {
+					"label": "Current Time",
+					"tooltip": "Current time in seconds"
+				},
+				"current_time_percent": {
+					"label": "Current Time %",
+					"tooltip": "Current time as a percentage of the encounter duration"
+				},
+				"remaining_time": {
+					"label": "Remaining Time",
+					"tooltip": "Remaining time in seconds"
+				},
+				"remaining_time_percent": {
+					"label": "Remaining Time %",
+					"tooltip": "Remaining time as a percentage of the encounter duration"
+				},
+				"is_execute_phase": {
+					"label": "Is Execute Phase",
+					"tooltip": "True if we are in the execute phase (target health below threshold)"
+				},
+				"num_targets": {
+					"label": "Number of Targets",
+					"tooltip": "Number of targets in the encounter"
+				},
+				"spell_is_casting": {
+					"label": "Spell Is Casting",
+					"tooltip": "True while the spell is hardcast, through the rotation's pick at its end. not(Spell Is Casting X) on a line decides it after X lands, for a line that reads what X's landing may change."
+				},
+				"spell_time_to_ready": {
+					"label": "Spell Time to Ready",
+					"tooltip": "Time until the spell will be ready"
+				},
+				"in_front_of_target": {
+					"label": "In Front of Target",
+					"tooltip": "True if we are in front of the target"
+				},
+				"boss_cast": {
+					"label": "Boss Cast",
+					"tooltip": "True if the boss is casting the specified spell"
+				},
+				"boss_cast_time_to_ready": {
+					"label": "Boss Cast Time to Ready",
+					"tooltip": "Time until the boss spell will be ready"
+				},
+				"boss_current_target": {
+					"label": "Is Tanking",
+					"tooltip": "True if the player is currently tanking"
+				},
+				"target_is_mob_type": {
+					"label": "Target Is Mob Type",
+					"tooltip": "True if the target is the chosen creature type"
+				},
+				"target_is_bleed_immune": {
+					"label": "Target Is Bleed Immune",
+					"tooltip": "True if Immune to Bleeds is on for the target in the encounter settings"
+				},
+				"encounter_in_area": {
+					"label": "In Area",
+					"tooltip": "True if the encounter's areas include the chosen area type"
+				},
+				"unit_is_moving": {
+					"label": "Unit Is Moving",
+					"tooltip": "True if the unit is moving"
+				},
+				"distance_to_unit": {
+					"label": "Distance to Unit",
+					"tooltip": "Distance to the unit"
+				},
+				"unit_movement_speed": {
+					"label": "Movement Speed",
+					"tooltip": "Run speed of the unit in yards per second, with its speed effects (7 for a player with none)"
+				},
+				"current_health": {
+					"label": "Current Health",
+					"tooltip": "Current health of the unit"
+				},
+				"current_health_percent": {
+					"label": "Current Health %",
+					"tooltip": "Current health as a percentage of max health"
+				},
+				"max_health": {
+					"label": "Max Health",
+					"tooltip": "Maximum health of the unit"
+				},
+				"current_mana": {
+					"label": "Current Mana",
+					"tooltip": "Amount of currently available Mana of the unit."
+				},
+				"current_mana_percent": {
+					"label": "Current Mana (%)",
+					"tooltip": "Amount of currently available Mana of the unit, as a percentage."
+				},
+				"max_mana": {
+					"label": "Max Mana",
+					"tooltip": "Maximum mana of the unit"
+				},
+				"current_mana_regen": {
+					"label": "Current Mana Regen",
+					"tooltip": "Current mana regen per second while casting"
+				},
+				"current_rage": {
+					"label": "Current Rage",
+					"tooltip": "Amount of currently available Rage."
+				},
+				"max_rage": {
+					"label": "Max Rage",
+					"tooltip": "Amount of maximum available Rage."
+				},
+				"current_focus": {
+					"label": "Current Focus",
+					"tooltip": "Amount of currently available Focus."
+				},
+				"max_focus": {
+					"label": "Max Focus",
+					"tooltip": "Amount of maximum available Focus."
+				},
+				"focus_regen_per_second": {
+					"label": "Focus Regen Per Second",
+					"tooltip": "Focus regen per second."
+				},
+				"estimated_time_to_target_focus": {
+					"label": "Estimated Time To Target Focus",
+					"tooltip": "Estimated time until target Focus is reached, will return 0 if at or above target."
+				},
+				"current_energy": {
+					"label": "Current Energy",
+					"tooltip": "Amount of currently available Energy."
+				},
+				"max_energy": {
+					"label": "Max Energy",
+					"tooltip": "Amount of maximum available Energy."
+				},
+				"time_to_next_energy_tick": {
+					"label": "Time To Next Energy Tick",
+					"tooltip": "Time remaining until the next Energy tick."
+				},
+				"estimated_time_to_target_energy": {
+					"label": "Estimated Time To Target Energy",
+					"tooltip": "Estimated time until target Energy is reached, will return 0 if at or above target."
+				},
+				"current_combo_points": {
+					"label": "Current Combo Points",
+					"tooltip": "Amount of currently available Combo Points."
+				},
+				"max_combo_points": {
+					"label": "Max Combo Points",
+					"tooltip": "Amount of maximum available Combo Points."
+				},
+				"generic_resource": {
+					"label": "{GENERIC_RESOURCE}",
+					"tooltip": "Amount of currently available {GENERIC_RESOURCE}."
+				},
+				"gcd_is_ready": {
+					"label": "GCD Is Ready",
+					"tooltip": "<b>True</b> if the GCD is not on cooldown, otherwise <b>False</b>."
+				},
+				"gcd_time_to_ready": {
+					"label": "GCD Time To Ready",
+					"tooltip": "Amount of time remaining before the GCD comes off cooldown, or <b>0</b> if it is not on cooldown."
+				},
+				"auto_swing_time": {
+					"label": "Auto Swing Time",
+					"tooltip": "Total swing duration including all haste buffs. <b>Wand</b> returns the wand speed with cast speed applied, which a Shoot channel fixes when it starts."
+				},
+				"time_to_next_auto": {
+					"label": "Time To Next Auto",
+					"tooltip": "Amount of time remaining before the next Main-hand, Off-hand, Ranged or Wand attack, or <b>0</b> if autoattacks are not engaged. <b>Any</b> includes the wand's next shot while Shoot is channeling. <b>Wand</b> reads <b>0</b> while Shoot is not channeling."
+				},
+				"time_since_last_auto": {
+					"label": "Time Since Last Auto",
+					"tooltip": "Amount of time since the last Main-hand, Off-hand, Ranged or Wand attack, or <b>0</b> if autoattacks are not engaged. <b>Any</b> includes the last wand shot. <b>Wand</b> reads the time since the last shot, or the time since the pull before the first shot."
+				},
+				"wand": "Wand",
+				"spell_known": {
+					"label": "Spell Known",
+					"tooltip": "<b>True</b> if the spell is currently known, otherwise <b>False</b>."
+				},
+				"talent_known": {
+					"label": "Talent Known",
+					"tooltip": "<b>True</b> if the talent has at least the chosen rank, otherwise <b>False</b>."
+				},
+				"talent_rank": {
+					"label": "Talent Rank",
+					"tooltip": "The rank the player holds in the talent, <b>0</b> without points."
+				},
+				"current_cost": {
+					"label": "Current Cost",
+					"tooltip": "Returns current resource cost of spell"
+				},
+				"can_cast": {
+					"label": "Can Cast",
+					"tooltip": "<b>True</b> if all requirements for casting the spell are currently met, otherwise <b>False</b>.",
+					"full_description": "<p>The <b>Cast Spell</b> action does not need to be conditioned on this, because it applies this check automatically.</p>"
+				},
+				"in_range": {
+					"label": "In Range",
+					"tooltip": "<b>True</b> if you stand within the spell's range, otherwise <b>False</b>.",
+					"full_description": "<p>Checks the distance only: no closer than the spell's minimum range and no farther than its maximum, range talents included. A bow, gun or crossbow shot's minimum range is the dead zone, so Arcane Shot being in range means your Auto Shot can fire from here.</p>"
+				},
+				"is_hit_capped": {
+					"label": "Is Hit Capped",
+					"tooltip": "<b>True</b> if the spell cannot miss the current target, otherwise <b>False</b>.",
+					"full_description": "<p>Melee and ranged attacks use the special-attack (soft) hit cap, without the dual-wield penalty of auto attacks. Wand shots count physical and ranged hit. Other spells count spell hit and school hit, and a binary spell also counts the target's resistance.</p><p>The check reads only the spell's defense type. It does not know that shouts and seals always hit, or that Judgement rolls its miss through another spell.</p>"
+				},
+				"is_expertise_capped": {
+					"label": "Is Expertise Capped",
+					"tooltip": "<b>True</b> if the current target can neither dodge nor parry the spell, otherwise <b>False</b>.",
+					"full_description": "<p>Parry counts only when you are in front of the target. Spells and ranged attacks cannot be dodged or parried and always return <b>True</b>.</p><p>Specials that cannot be dodged, parried or blocked, such as Ambush, Garrote, Overpower and the seal judgements, also return <b>True</b>.</p>"
+				},
+				"is_ready": {
+					"label": "Is Ready",
+					"tooltip": "<b>True</b> if the spell is not on cooldown, otherwise <b>False</b>."
+				},
+				"time_to_ready": {
+					"label": "Time To Ready",
+					"tooltip": "Amount of time remaining before the spell comes off cooldown, or <b>0</b> if it is not on cooldown."
+				},
+				"cast_time": {
+					"label": "Cast Time",
+					"tooltip": "Amount of time to cast the spell including any haste and spell cast time adjustments."
+				},
+				"travel_time": {
+					"label": "Travel Time",
+					"tooltip": "Amount of time for the spell to travel to the target."
+				},
+				"cpm": {
+					"label": "CPM",
+					"tooltip": "Casts Per Minute for the spell so far in the current iteration."
+				},
+				"is_casting": {
+					"label": "Is Casting",
+					"tooltip": "<b>True</b> if this spell is currently being cast, otherwise <b>False</b>. The rotation picks its next spell at the cast end, before this one lands, so this guards lines that read what the spell will do. A channel is <b>Is Channeling</b>."
+				},
+				"is_channeling": {
+					"label": "Is Channeling",
+					"tooltip": "<b>True</b> if this spell is currently being channeled, otherwise <b>False</b>."
+				},
+				"channeled_ticks": {
+					"label": "Channeled Ticks",
+					"tooltip": "The number of completed ticks in the current channel of this spell, or <b>0</b> if the spell is not being channeled."
+				},
+				"number_of_charges": {
+					"label": "Number of Charges",
+					"tooltip": "The number of charges that are currently available for the spell."
+				},
+				"time_to_next_charge": {
+					"label": "Time to next Charge",
+					"tooltip": "The time until the next charge is available. 0 if spell has all charges avaialable."
+				},
+				"gcd_hasted_duration": {
+					"label": "GCD Hasted Duration",
+					"tooltip": "The duration of the GCD induced by a cast with the current haste"
+				},
+				"full_cooldown": {
+					"label": "Full Cooldown",
+					"tooltip": "The full cooldown duration of the spell"
+				},
+				"channel_clip_delay": {
+					"label": "Channel Clip Delay",
+					"tooltip": "The amount of time specified by the <b>Channel Clip Delay</b> setting."
+				},
+				"input_delay": {
+					"label": "Input Delay",
+					"tooltip": "The amount of time specified by the <b>Input Dleay</b> setting."
+				},
+				"spell_in_flight": {
+					"label": "Spell in Flight",
+					"tooltip": "<b>True</b> if this spell is currently in flight, otherwise <b>False</b>."
+				},
+				"spell_expected_dpet": {
+					"label": "Spell Expected DPET",
+					"tooltip": "The expected damage of a spell if you cast it now, assuming it lands. Includes cast time, GCD time, and averaged crit. Only damage that lands before the fight ends counts."
+				},
+				"aura_known": {
+					"label": "Aura Known",
+					"tooltip": "<b>True</b> if the aura is currently known, otherwise <b>False</b>."
+				},
+				"aura_active": {
+					"label": "Aura Active",
+					"tooltip": "<b>True</b> if the aura is currently active AND it has been active for at least as long as the player reaction time (configured in Settings), otherwise <b>False</b>."
+				},
+				"aura_active_with_reaction_time": {
+					"label": "[DEPRECATED] Aura Active (with Reaction Time)",
+					"tooltip": "All Aura checks now contain Reaction Time logic, so this is no longer needed. Use <b Aura Active</b> instead."
+				},
+				"aura_active_on_all_targets": {
+					"label": "Aura Active On All Targets",
+					"tooltip": "<b>True</b> if the aura is active on every target that is up, each for at least as long as the player reaction time (configured in Settings) when <b>Include Reaction Time</b> is checked, otherwise <b>False</b>."
+				},
+				"aura_active_on_any_target": {
+					"label": "Aura Active On Any Target",
+					"tooltip": "<b>True</b> if the aura is active on at least one target that is up, for at least as long as the player reaction time (configured in Settings) when <b>Include Reaction Time</b> is checked, otherwise <b>False</b>."
+				},
+				"aura_inactive": {
+					"label": "Aura Inactive",
+					"tooltip": "<b>True</b> if the aura is not currently active AND it has been inactive for at least as long as the player reaction time (configured in Settings), otherwise <b>False</b>."
+				},
+				"aura_inactive_with_reaction_time": {
+					"label": "[DEPRECATED] Aura Inactive (with Reaction Time)",
+					"tooltip": "All Aura checks now contain Reaction Time logic, so this is no longer needed. Use <b Aura Inactive</b> instead."
+				},
+				"aura_remaining_time": {
+					"label": "Aura Remaining Time",
+					"tooltip": "Time remaining before this aura will expire, or 0 if the aura is not currently active."
+				},
+				"aura_num_stacks": {
+					"label": "Aura Num Stacks",
+					"tooltip": "Number of stacks of the aura."
+				},
+				"aura_should_refresh": {
+					"label": "Aura Should Refresh",
+					"tooltip": "Whether this aura should be refreshed, e.g. for the purpose of maintaining a debuff.",
+					"full_description": "<p>This condition checks not only the specified aura but also any other auras on the same unit, including auras applied by other raid members, which apply the same debuff category.</p><p>For example, 'Should Refresh Debuff(Sunder Armor)' will return <b>False</b> if the unit has an active Expose Armor aura.</p>"
+				},
+				"aura_duration": {
+					"label": "Aura Duration",
+					"tooltip": "The full cooldown duration of the aura",
+					"full_description": "<p>Returns the full duration the aura is set to when it is (re)applied, not the time remaining on the current application.</p>"
+				},
+				"all_item_stat_procs_active": {
+					"label": "All Item Proc Buffs Active",
+					"tooltip": "<b>True</b> if all item/enchant procs that buff the specified stat type(s) are currently active, otherwise <b>False</b>.",
+					"full_description": "<p>For stacking proc buffs, this condition also checks that the buff has been stacked to its maximum possible strength.</p>"
+				},
+				"any_item_stat_procs_active": {
+					"label": "Any Item Proc Buff Active",
+					"tooltip": "<b>True</b> if any item/enchant procs that buff the specified stat type(s) are currently active, otherwise <b>False</b>.",
+					"full_description": "<p>For stacking proc buffs, this condition also checks that the buff has been stacked to its maximum possible strength.</p>"
+				},
+				"any_item_stat_procs_available": {
+					"label": "Any Item Proc Buff Available",
+					"tooltip": "<b>True</b> if any item/enchant procs that buff the specified stat type(s) are currently not on ICD and aren't active, otherwise <b>False</b>."
+				},
+				"item_procs_min_remaining_time": {
+					"label": "Item Procs Min Remaining Time",
+					"tooltip": "Shortest remaining duration on any active item/enchant procs that buff the specified stat type(s), or infinity if none are currently active."
+				},
+				"item_procs_max_remaining_icd": {
+					"label": "Item Procs Max Remaining ICD",
+					"tooltip": "Longest remaining ICD on any inactive item/enchant procs that buff the specified stat type(s), or 0 if all are currently active."
+				},
+				"num_equipped_stat_proc_items": {
+					"label": "Num Equipped Stat Proc Effects",
+					"tooltip": "Number of equipped passive item/enchant effects that buff the specified stat type(s) when they proc."
+				},
+				"num_stat_buff_cooldowns": {
+					"label": "Num Stat Buff Cooldowns",
+					"tooltip": "Number of registered Major Cooldowns that buff the specified stat type(s) when they are cast.",
+					"full_description": "<p>Both manually casted cooldowns as well as cooldowns controlled by \"Cast All Stat Buff Cooldowns\" and \"Autocast Other Cooldowns\" actions are included in the total count returned by this value.</p>"
+				},
+				"any_stat_buff_cooldowns_active": {
+					"label": "Any Stat Buff Cooldowns Active",
+					"tooltip": "<b>True</b> if any registered Major Cooldowns that buff the specified stat type(s) are currently active, otherwise <b>False</b>.",
+					"full_description": "<p>For stacking buffs, this condition also checks that the buff has been stacked to its maximum possible strength after the cooldown is activated.</p><p>Both manually casted cooldowns as well as cooldowns controlled by \"Cast All Stat Buff Cooldowns\" and \"Autocast Other Cooldowns\" actions are checked.</p>"
+				},
+				"any_stat_buff_cooldowns_min_duration": {
+					"label": "Any Stat Buff Cooldowns Min Remaining Time",
+					"tooltip": "Shortest remaining duration on any registered Major Cooldown that buff the specified stat type(s), or infinity if none are currently active.",
+					"full_description": "<p>Both manually casted cooldowns as well as cooldowns controlled by \"Cast All Stat Buff Cooldowns\" and \"Autocast Other Cooldowns\" actions are checked.</p>"
+				},
+				"dot_is_active": {
+					"label": "Dot Is Active",
+					"tooltip": "<b>True</b> if the specified dot is currently ticking, otherwise <b>False</b>."
+				},
+				"druid_bleed_is_active": {
+					"label": "Bleed Is Active",
+					"tooltip": "<b>True</b> if one of your bleeds is on the target, or if <b>Assume Bleed Always Active</b> is enabled, otherwise <b>False</b>."
+				},
+				"druid_excess_energy": {
+					"label": "Excess Energy",
+					"tooltip": "Your current Energy minus what you need to keep for your upcoming Rip and Rake refreshes, after counting the Energy you will regenerate before each one. Spend on a builder only while it covers the builder's cost."
+				},
+				"dot_is_active_on_all_targets": {
+					"label": "Dot Is Active On All Targets",
+					"tooltip": "<b>True</b> if the specified dot is currently ticking on all targets, otherwise <b>False</b>."
+				},
+				"dot_is_active_on_any_target": {
+					"label": "Dot Is Active On Any Target",
+					"tooltip": "<b>True</b> if the specified dot is currently ticking on at least one target that is up, otherwise <b>False</b>."
+				},
+				"dot_remaining_time": {
+					"label": "Dot Remaining Time",
+					"tooltip": "Time remaining before the last tick of this DoT will occur, or 0 if the DoT is not currently ticking."
+				},
+				"dot_lowest_remaining_time": {
+					"label": "Dot Lowest Remaining Time",
+					"tooltip": "Time remaining before the last tick of this DoT on any target will occur, or 0 if the DoT is not currently ticking."
+				},
+				"dot_tick_frequency": {
+					"label": "Dot Tick Frequency",
+					"tooltip": "The time between each tick."
+				},
+				"dot_time_to_next_tick": {
+					"label": "Dot Time To Next Tick",
+					"tooltip": "The time remaining until the next tick of this DoT will occur."
+				},
+				"dot_percent_increase": {
+					"label": "Dot Damage Increase %",
+					"tooltip": "How much stronger a new DoT would be compared to the old."
+				},
+				"sequence_is_complete": {
+					"label": "Sequence Is Complete",
+					"tooltip": "<b>True</b> if there are no more subactions left to execute in the sequence, otherwise <b>False</b>."
+				},
+				"sequence_is_ready": {
+					"label": "Sequence Is Ready",
+					"tooltip": "<b>True</b> if the next subaction in the sequence is ready to be executed, otherwise <b>False</b>."
+				},
+				"sequence_time_to_ready": {
+					"label": "Sequence Time To Ready",
+					"tooltip": "Returns the amount of time remaining until the next subaction in the sequence will be ready."
+				},
+				"totem_remaining_time": {
+					"label": "Totem Remaining Time",
+					"tooltip": "Returns the amount of time remaining until the totem will expire."
+				},
+				"warlock_assigned_curse_is_active": {
+					"label": "Assigned Curse Is Active",
+					"tooltip": "Returns true is assigned curse is active on target"
+				},
+				"warlock_assigned_curse_is_active_on_all_targets": {
+					"label": "Assigned Curse Is Active On All Targets",
+					"tooltip": "<b>True</b> while your assigned curse is on every target, otherwise <b>False</b>. With no curse assigned it is <b>False</b>."
+				},
+				"warlock_bane_is_active_on_all_targets": {
+					"label": "Bane Is Active On All Targets",
+					"tooltip": "<b>True</b> while one of your Banes (Agony, Doom or Havoc) is on every target, otherwise <b>False</b>. A target holds one Bane at a time."
+				},
+				"warlock_is_assigned_curse": {
+					"label": "Is Assigned Curse",
+					"tooltip": "True if the warlock is assigned the specified curse"
+				},
+				"warlock_active_pet": {
+					"label": "Active Pet Is",
+					"tooltip": "True while the specified demon is out. No Pet is true while no demon is."
+				},
+				"protection_paladin_damage_taken_last_global": {
+					"label": "Damage Taken Last Global",
+					"tooltip": "Amount of damage taken in the last 1.5s."
+				},
+				"aura_remaining_icd": {
+					"label": "Aura Remaining ICD",
+					"tooltip": "Time remaining before this aura's internal cooldown will be ready, or 0 if the ICD is ready now."
+				},
+				"aura_icd_is_ready": {
+					"label": "Aura ICD Is Ready",
+					"tooltip": "<b>True</b> if the aura's ICD is currently ready OR it was put on CD recently, within the player's reaction time (configured in Settings), otherwise <b>False</b>."
+				},
+				"aura_icd_is_ready_with_reaction_time": {
+					"label": "[DEPRECATED] Aura ICD Is Ready (with Reaction Time)",
+					"tooltip": "All Aura checks now contain Reaction Time logic, so this is no longer needed. Use <b>Aura ICD Is Ready</b> instead."
+				},
+				"overlap": {
+					"label": "Overlap",
+					"tooltip": "Maximum amount of time before the aura expires when it may be refreshed."
+				},
+				"multiple_cd_usages": {
+					"label": "Multiple CD Usages",
+					"tooltip": "Will try to fit the selected <b>Target spell</b> within the cooldown of the selected <b>Base spell</b>.<br/> If you lose a 2nd cast of Death Wish whilst waiting for a delayed Bloodlust (using the offset) it will cast Death Wish earlier.",
+					"base_spell": "Base Spell",
+					"base_spell_tooltip": "The spell (ie. Bloodlust) you are casting that can have multiple other spells within it's cooldown",
+					"target_spell": "Target Spell",
+					"target_spell_tooltip": "The spell (ie. Death Wish) you want to fit within the cooldown of the Base Spell.",
+					"align_cd_end": "Align target spell to encounter end",
+					"align_cd_end_tooltip": "When checked, aligns the target spell to the end of the encounter, which is useful for cooldowns or specs that benefit from execute. Without a base spell it casts early while a later use would still get at least half its buff before the encounter ends, and otherwise holds it until its buff runs to the end of the encounter. The offset only applies with a base spell."
+				},
+				"selected_potion": {
+					"label": "Selected Potion",
+					"tooltip": "Returns <b>True</b> if the potion is picked in the chosen potion slot, or with <b>Any</b> in any of them: offensive, defensive or resource."
+				},
+				"selected_conjured": {
+					"label": "Selected Conjured",
+					"tooltip": "Returns <b>True</b> if the selected conjured item is the character's default conjured item."
+				},
+				"offset": {
+					"label": "Offset",
+					"tooltip": "The time offset from which when the cooldown will be triggered"
+				},
+				"dot_base_duration": {
+					"label": "Dot Base Duration",
+					"tooltip": "The base duration of the DoT."
+				},
+				"dot_tick_rate_percent_increase": {
+					"label": "Dot Tick Rate Increase %",
+					"tooltip": "How much faster a new DoT would tick compared to the old."
+				},
+				"variable_ref": {
+					"label": "Variable Reference",
+					"tooltip": "Reference a named condition variable"
+				},
+				"variable_placeholder": {
+					"label": "Variable Placeholder",
+					"tooltip": "Placeholder value that gets replaced when group is referenced",
+					"full_description": "<p>Defines a placeholder value that must be set when this group is referenced. This allows groups to be parameterized.</p> <p>Example: If you add a Variable Placeholder named \"replace\", then when referencing this group, you must provide a value for \"replace\".</p>",
+					"name_tooltip": "Name of the variable placeholder to expose. This name will be used when referencing the group."
+				},
+				"action_group_used": {
+					"label": "Action Group is used",
+					"tooltip": "Returns <b>True</b> if the specified action group is used in the rotation. This allows you to conditionally execute actions based on whether an action group is included in the rotation."
+				},
+				"active_item_swap_set": {
+					"label": "Item Swap",
+					"tooltip": "Returns <b>True</b> if the specified item swap set is currently active."
+				}
+			},
+			"operators": {
+				"equals": "==",
+				"not_equals": "!=",
+				"greater_than_or_equal": ">=",
+				"greater_than": ">",
+				"less_than_or_equal": "<=",
+				"less_than": "<",
+				"add": "+",
+				"subtract": "-",
+				"multiply": "*",
+				"divide": "/"
+			},
+			"execute_phases": {
+				"e20": "20%",
+				"e35": "35%"
+			},
+			"totem_types": {
+				"earth": "Earth",
+				"air": "Air",
+				"fire": "Fire",
+				"water": "Water"
+			},
+			"curse_types": {
+				"elements": "Curse of Elements",
+				"recklessness": "Curse of Recklessness",
+				"weakness": "Curse of Weakness",
+				"no_curse": "No Curse"
+			},
+			"summon_types": {
+				"imp": "Imp",
+				"voidwalker": "Voidwalker",
+				"succubus": "Succubus",
+				"felhunter": "Felhunter",
+				"no_summon": "No Pet"
+			},
+			"submenus": {
+				"logic": "Logic",
+				"encounter": "Encounter",
+				"boss": "Boss",
+				"unit": "Unit",
+				"resources": "Resources",
+				"gcd": "GCD",
+				"auto": "Auto",
+				"spell": "Spell",
+				"aura": "Aura",
+				"aura_sets": "Aura Sets",
+				"dot": "DoT",
+				"sequence": "Sequence",
+				"casting": "Casting",
+				"timing": "Timing",
+				"sequences": "Sequences",
+				"misc": "Misc",
+				"feral_druid": "Feral Druid",
+				"shaman": "Shaman",
+				"warlock": "Warlock",
+				"mage": "Mage",
+				"tank": "Tank",
+				"health": "Health",
+				"mana": "Mana",
+				"rage": "Rage",
+				"focus": "Focus",
+				"energy": "Energy",
+				"combo_points": "Combo Points",
+				"cooldowns": "Cooldowns",
+				"potions": "Potions",
+				"conjured_items": "Conjured Items",
+				"placeholders": "Placeholders",
+				"consumables": "Consumables",
+				"items": "Items",
+				"talents": "Talents",
+				"racials": "Racials",
+				"professions": "Professions",
+				"external_buffs": "External Buffs",
+				"external_cooldowns": "External Cooldowns",
+				"external_debuffs": "External Debuffs",
+				"variables": "Variables",
+				"groups": "Groups",
+				"stances": "Stances"
+			},
+			"item_swap_sets": {
+				"main": "Main",
+				"swapped": "Swapped"
+			},
+			"helpers": {
+				"action_id_sets": {
+					"auras": "Aura",
+					"stackable_auras": "Aura",
+					"icd_auras": "Aura",
+					"exclusive_effect_auras": "Aura",
+					"spells": "Spell",
+					"castable_spells": "Spell",
+					"channel_spells": "Channeled Spell",
+					"dot_spells": "DoT Spell",
+					"castable_dot_spells": "DoT Spell",
+					"shield_spells": "Shield Spell",
+					"non_instant_spells": "Non-instant Spell",
+					"friendly_spells": "Friendly Spell",
+					"expected_dot_spells": "DoT Spell",
+					"expected_damage_spells": "Damage Spell",
+					"spells_with_travelTime": "Spell",
+					"talents": "Talent",
+					"talent_ranks": "Talent"
+				},
+				"field_configs": {
+					"type": "Type",
+					"buff_type": "Buff Type",
+					"min_icd": "Min ICD",
+					"min_icd_tooltip": "If non-zero, filter out any procs that either lack an ICD or for which the ICD is smaller than the specified value (in seconds). This can be useful for certain snapshotting checks, since procs with low ICDs are often too weak to snapshot.",
+					"include_reaction_time": "Include Reaction Time",
+					"include_reaction_time_tooltip": "If checked, will use the configured reaction time.",
+					"use_base_value": "Use base value",
+					"use_base_value_tooltip": "If checked, will compare the current DoT to the the base value (on encounter start) of the DoT.",
+					"variable_assignment_tooltip": "Value to assign to variable '{{variableName}}'"
+				},
+				"rotation_types": {
+					"single_target": "Single Target",
+					"aoe": "AOE"
+				},
+				"unit_labels": {
+					"self": "Self",
+					"current_target": "Current Target",
+					"previous_target": "Previous Target",
+					"next_target": "Next Target",
+					"player": "Player",
+					"target": "Target",
+					"pet": "Pet"
+				},
+				"placeholder_tooltip": "The potion of this class picked in the Consumables, before the pull or in combat.",
+				"select_variable": "Select Variable",
+				"select_group": "Select Group",
+				"no_variables_defined": "No variables defined",
+				"no_groups_defined": "No groups defined",
+				"buttons": {
+					"enable_action": "Enable Action",
+					"disable_action": "Disable Action",
+					"enable_disable": "Enable/Disable"
+				},
+				"unit_placeholder": "Unit"
+			}
+		},
+		"auto": {
+			"description": "Automatically using a Saved Rotation based on your current settings."
+		},
+		"simple": {
+			"title": "Rotation"
+		},
+		"cooldowns": {
+			"title": "Cooldowns",
+			"tooltip": "Specify cooldown timings, in seconds. Cooldowns will be used as soon as possible after their specified timings. When not specified, cooldowns will be used when ready and it is sensible to do so.<br><br>Multiple timings can be provided by separating with commas. Any cooldown usages after the last provided timing will use the default logic.",
+			"delete_tooltip": "Delete Cooldown",
+			"timings_placeholder": "20, 40, ..."
+		},
+		"saved_rotations": {
+			"title": "Saved Rotations",
+			"label": "Rotation",
+			"name_label": "Rotation Name",
+			"save_button": "Save Rotation",
+			"delete": {
+				"confirm": "Delete saved rotation '{{name}}'?",
+				"tooltip": "Delete saved rotation"
+			},
+			"alerts": {
+				"choose_name": "Choose a label for your saved rotation!",
+				"name_exists": "Rotation with name {{name}} already exists."
+			}
+		},
+		"siml": {
+			"title": "SIML",
+			"tooltip": "SIML is the sim's text format. Export the rotation to read or edit it as text, and import it back.",
+			"export_button": "Export SIML",
+			"import_button": "Import SIML"
+		},
+		"options": {
+			"rogue": {
+				"use_backstab": {
+					"label": "Use Backstab"
+				},
+				"use_expose_armor": {
+					"label": "Use Expose Armor"
+				},
+				"use_backstab_rank_9": {
+					"label": "Backstab IX (Handbook)",
+					"tooltip": "Casts Backstab IX, taught by the Handbook of Backstab IX, in place of Backstab VIII from the trainer."
+				},
+				"use_eviscerate_rank_9": {
+					"label": "Eviscerate IX (Manual)",
+					"tooltip": "Casts Eviscerate IX, taught by the Manual of Eviscerate IX, in place of Eviscerate VIII from the trainer."
+				},
+				"apply_poisons_manually": {
+					"label": "Configure poisons manually",
+					"tooltip": "Prevent automatic poison configuration that is based on equipped weapons."
+				},
+				"subtlety": {
+					"honor_of_thieves_crit_rate": {
+						"label": "Honor of Thieves Crit Rate",
+						"tooltip": "Number of crits other group members generate within 100 seconds"
+					}
+				}
+			},
+			"shaman": {},
+			"warlock": {
+				"affliction": {
+					"exhale_window": {
+						"label": "Soul Swap Exhale Window",
+						"tooltip": "How long, in milliseconds, before inhaled dots expire to exhale during multitarget encounters."
+					}
+				},
+				"rotation": {
+					"label": "Rotation",
+					"demo_fire_brand": "Demo (Fire Brand)",
+					"demo_shadow_brand": "Demo (Shadow Brand)",
+					"destro": "Destro",
+					"sm_ruin": "SM/Ruin",
+					"aff_wrack": "Aff (Wrack)"
+				},
+				"use_shadow_bolt_rank_10": {
+					"label": "Use Shadow Bolt Rank 10",
+					"tooltip": "Casts Shadow Bolt Rank 10, taught by the Grimoire of Shadow Bolt X, in place of Rank 9 from the trainer."
+				},
+				"use_immolate_rank_8": {
+					"label": "Use Immolate Rank 8",
+					"tooltip": "Casts Immolate Rank 8, taught by the Grimoire of Immolate VIII, in place of Rank 7 from the trainer."
+				},
+				"use_corruption_rank_7": {
+					"label": "Use Corruption Rank 7",
+					"tooltip": "Casts Corruption Rank 7, taught by the Grimoire of Corruption VII, in place of Rank 6 from the trainer."
+				}
+			},
+			"hunter": {
+				"playstyle": {
+					"label": "Playstyle",
+					"tooltip": "Where the hunter stands. Turret stays at range. Melee weave walks in for each main hand swing, Raptor Strike riding it, and back out to shoot. Melee stays in melee range.",
+					"values": {
+						"turret": "Turret",
+						"weave": "Melee weave",
+						"melee": "Melee"
+					}
+				},
+				"pull_range": {
+					"label": "Pull range (yd)",
+					"tooltip": "Where you stand when the pull starts. From there you walk to your spot (12 yd at range, 13.2 yd when weaving, melee range in melee), stopping for each Auto Shot you can fire on the way."
+				},
+				"time_to_weave": {
+					"label": "Time to weave (ms)",
+					"tooltip": "How long, in milliseconds, you stay in melee after the weave swing before walking back out. Never shorter than your input delay."
+				},
+				"use_aimed": {
+					"label": "Use Aimed Shot",
+					"tooltip": "Casts Aimed Shot on cooldown. It shares its cooldown with Multi-Shot."
+				},
+				"use_multi": {
+					"label": "Use Multi-Shot",
+					"tooltip": "Includes Multi-Shot as a filler in the rotation. It shares its cooldown with Aimed Shot."
+				},
+				"use_arcane": {
+					"label": "Use Arcane Shot",
+					"tooltip": "Include Arcane Shot as a filler in the rotation. It shares its cooldown with Summon Hawk."
+				},
+				"use_sniper": {
+					"label": "Use Sniper Shot",
+					"tooltip": "Opens the fight with Sniper Shot and casts it whenever no other shot is ready."
+				},
+				"use_hawk": {
+					"label": "Use Summon Hawk",
+					"tooltip": "Sends hawks between Arcane Shots, the two sharing a cooldown."
+				},
+				"use_serpent_sting_rank_9": {
+					"label": "Serpent Sting IX (Guide)",
+					"tooltip": "Casts Serpent Sting IX, taught by the Guide: Serpent Sting IX from Ruins of Ahn'Qiraj, in place of Serpent Sting VIII from the trainer."
+				},
+				"use_aspect_of_the_hawk_rank_7": {
+					"label": "Aspect of the Hawk VII (Guide)",
+					"tooltip": "Casts Aspect of the Hawk VII, taught by the Guide: Aspect of the Hawk VII from Ruins of Ahn'Qiraj, in place of Aspect of the Hawk VI from the trainer."
+				}
+			},
+			"paladin": {
+				"retribution": {
+					"aura": {
+						"label": "Aura",
+						"tooltip": "The aura you turn on before the pull."
+					},
+					"assigned_judge": {
+						"label": "Assigned judgement",
+						"tooltip": "The Judgement the raid assigned you. You cast it before the pull and judge it on your way in, then switch to your own seals. Leave it empty when no Judgement is assigned to you.",
+						"none": "No assigned judgement"
+					},
+					"seal": {
+						"label": "Seal",
+						"tooltip": "The seal being kept up during the fight."
+					},
+					"pull_range": {
+						"label": "Starting range (yd)",
+						"tooltip": "Where you stand when the pull starts. From there you walk into melee range, judging on the way. Never less than {{min}} yd, one yard outside Judgement's range."
+					},
+					"delay_major_cds": {
+						"label": "Delay major cooldowns (s)",
+						"tooltip": "How many seconds into the fight to wait before trinkets and other cooldowns are used automatically."
+					}
+				}
+			},
+			"warrior": {
+				"sunder_armor": {
+					"label": "Sunder Armor",
+					"none": "Never",
+					"help": "Help stack",
+					"maintain": "Maintain debuff"
+				},
+				"dps": {
+					"spec": {
+						"label": "Rotation",
+						"fury": "Fury",
+						"arms": "Arms"
+					},
+					"use_recklessness": {
+						"label": "Use Recklessness"
+					},
+					"use_stance_dance": {
+						"label": "Use Stance Dance"
+					},
+					"use_overpower": {
+						"label": "Use Overpower"
+					},
+					"use_rend": {
+						"label": "Rend weave"
+					},
+					"use_hamstring": {
+						"label": "Hamstring weave"
+					},
+					"use_heroic_strike_rank_9": {
+						"label": "Heroic Strike IX (Manual)",
+						"tooltip": "Casts Heroic Strike IX, taught by the Manual of Heroic Strike IX from Ruins of Ahn'Qiraj, in place of Heroic Strike VIII from the trainer."
+					},
+					"use_battle_shout_rank_7": {
+						"label": "Battle Shout VII (Manual)",
+						"tooltip": "Casts Battle Shout VII, taught by the Manual of Battle Shout VII from Ruins of Ahn'Qiraj, in place of Battle Shout VI from the trainer."
+					}
+				}
+			}
+		}
+	},
+	"results_tab": {
+		"title": "Results",
+		"details": {
+			"no_results": "Run a simulation to view results",
+			"view_in_separate_tab": "View in Separate Tab",
+			"sim_1_iteration": "Sim 1 Iteration",
+			"sim_1_death": "Simulate a Death",
+			"all_targets": "All Targets",
+			"target_number": "Target {{number}}",
+			"group_ranks": "Group ranks",
+			"show_apm_breakdown": "Show APM breakdown",
+			"pets": "Pets",
+			"damage": {
+				"dps_histogram": "DPS Histogram"
+			},
+			"timeline": {
+				"disclaimer": "Timeline data visualizes only 1 sim iteration.",
+				"note": "Note: You can move the timeline by holding Shift while scrolling, or by clicking and dragging.",
+				"chart_types": {
+					"rotation": "Rotation",
+					"dps": "DPS",
+					"threat": "Threat"
+				},
+				"show_gcd": "Show GCD",
+				"chart_options": {
+					"time_axis": "Time (s)",
+					"waiting_for_data": "Waiting for data...",
+					"reset": "Reset zoom",
+					"zoom_in": "Zoom in",
+					"zoom_out": "Zoom out",
+					"fit": "Fit to width",
+					"pan_left": "Pan left",
+					"pan_right": "Pan right",
+					"chart_label": "DPS, threat and resources over time"
+				},
+				"tooltips": {
+					"dps": "DPS",
+					"dtps": "DTPS",
+					"amount": "Amount",
+					"player_damage": "Player Damage / Raid Damage",
+					"player_damage_taken": "Player Damage Taken / Raid Damage Taken",
+					"before": "Before",
+					"after": "After",
+					"threat": "Threat",
+					"active_auras": "Active Auras"
+				},
+				"floatingActionBar": {
+					"allShown": "All rows shown",
+					"hidden": "{{count}} hidden",
+					"showAll": "Show all",
+					"toggle": "Toggle hidden rows"
+				},
+				"gcd": "GCD",
+				"hide_row": "Hide row",
+				"hide_row_named": "Hide {{row}}",
+				"sections": {
+					"player": "Player",
+					"target_casts": "{{target}} - Casts",
+					"target_debuffs": "{{target}} - Debuffs"
+				},
+				"cast_tooltip": {
+					"window": "{{spell}} from {{start}}s to {{end}}s",
+					"cancelled": "(Cancelled after {{time}}s)",
+					"cast_and_gcd_time": "({{castTime}}s, {{gcdTime}}s GCD Time)",
+					"gcd_time": "({{gcdTime}}s GCD Time)",
+					"travel_time": "+ {{time}}s travel time",
+					"stack_at": "{{casts}} casts at {{time}}s",
+					"stack_range": "{{casts}} casts from {{start}}s to {{end}}s",
+					"total": "Total: {{total}} ({{dpet}} DPET)",
+					"apl_entry": {
+						"prepull": "Prepull #{{position}}",
+						"priority": "Priority list #{{position}}",
+						"group": "Group {{group}} › #{{position}}",
+						"step": "Step {{position}}",
+						"open_hint": "Click to open this line in Rotation",
+						"changed_hint": "The rotation has changed since this run"
+					}
+				},
+				"delay_tooltip": "Auto delayed by {{delay}}, was ready at {{readyAt}}",
+				"gcd_tooltip": "{{spell}} — {{gcd}}s GCD ({{start}}s → {{end}}s)"
+			},
+			"logs": {
+				"top_button": "Top",
+				"export_button": "Export Log",
+				"time_column": "Time",
+				"event_column": "Event",
+				"show_debug": "Show Debug Statements",
+				"search_placeholder": "Search logs…",
+				"search_add_filter": "Add filter",
+				"search_add_value": "Add value",
+				"no_matches": "No log lines match the current search or filters.",
+				"floatingActionBar": {
+					"toggle": "Toggle filters",
+					"none": "No filters",
+					"active": "{{count}} active",
+					"clear": "Clear filters"
+				},
+				"search_join": {
+					"and": "AND",
+					"or": "OR"
+				},
+				"search_fields": {
+					"source": "Source",
+					"target": "Target",
+					"spell": "Spell",
+					"type": "Type",
+					"school": "School",
+					"outcome": "Outcome",
+					"time": "Time",
+					"amount": "Amount"
+				},
+				"search_types": {
+					"damage": "Damage",
+					"heal": "Heal",
+					"shield": "Shield",
+					"resource": "Resource",
+					"aura": "Aura",
+					"buff": "Buff",
+					"cast": "Cast",
+					"delay": "Delay",
+					"major_cooldown": "Major cooldown",
+					"stat_change": "Stat change",
+					"debug": "Debug"
+				},
+				"lines": {
+					"threat": "({{threat}} Threat)",
+					"resource_spent": "Spent <amount>{{amount}} {{resource}}</amount> from <action/>. ({{before}} → {{after}})",
+					"resource_gained": "Gained <amount>{{amount}} {{resource}}</amount> from <action/>. ({{before}} → {{after}})",
+					"health_lost": "Lost <amount>{{amount}} {{resource}}</amount> from <action/>. ({{before}} → {{after}})",
+					"health_recovered": "Recovered <amount>{{amount}} {{resource}}</amount> from <action/>. ({{before}} → {{after}})",
+					"aura_gained": "Aura gained: <action/>.",
+					"aura_faded": "Aura faded: <action/>.",
+					"aura_refreshed": "Aura refreshed: <action/>.",
+					"aura_stacks": "<action/> stacks: {{from}} → {{to}}.",
+					"major_cooldown": "Major cooldown used: <action/>.",
+					"cast_began": "Casting <action/> (Cast time: {{castTime}}s, Cost: {{cost}} Mana).",
+					"cast_cancelled": "Cancelled <action/> after {{time}}s.",
+					"cast_completed": "Completed cast {{spell}}.",
+					"auto_delay": "<action/> delayed by {{delay}}, was ready at {{readyAt}}.",
+					"spell_queued": "Queueing <action/> to cast at {{fireAt}}.",
+					"cast_failed": "Failed to cast <action/>: {{reason}}.",
+					"pushback_channeling": "<action/> lost {{pushback}} while channeling due to pushback.",
+					"pushback_casting": "<action/> pushed back {{pushback}} while casting.",
+					"stats_gained": "Gained {{stats}} from <action/>.",
+					"stats_lost": "Lost {{stats}} from fading <action/>.",
+					"cast": "Casting {{spell}} (Cast time = {{castTime}}s)."
+				}
+			},
+			"tabs": {
+				"damage": "Damage",
+				"healing": "Healing",
+				"threat": "Threat",
+				"damage_taken": "Damage Taken",
+				"buffs": "Buffs",
+				"debuffs": "Debuffs",
+				"casts": "Casts",
+				"resources": "Resources",
+				"timeline": "Timeline",
+				"log": "Log"
+			},
+			"columns": {
+				"damage_done": "Damage done",
+				"threat_done": "Threat done",
+				"healing_done": "Healing done",
+				"casts": "Casts",
+				"avg_cast": "Avg Cast",
+				"hits": "Hits",
+				"avg_hit": "Avg Hit",
+				"crit_percent": "Crit %",
+				"miss_percent": "Miss %",
+				"dpet": "DPET",
+				"dps": "DPS",
+				"tpet": "TPET",
+				"tps": "TPS",
+				"cpm": "CPM",
+				"cast_time": "Cast Time",
+				"hpm": "HPM",
+				"hpet": "HPET",
+				"amount": "Amount",
+				"dtps": "DTPS",
+				"avg_heal": "Avg Heal",
+				"hps": "HPS",
+				"damage_taken": "Damage Taken",
+				"overhealing": "Overhealing",
+				"name": "Name",
+				"duration": "Duration",
+				"uptime": "Uptime",
+				"procs": "Procs",
+				"ppm": "PPM",
+				"casts_per_minute": "Casts/min",
+				"mana_gain": "Mana Gain",
+				"mana_cost": "Mana Cost",
+				"rage_gain": "Rage Gain",
+				"rage_cost": "Rage Cost",
+				"energy_gain": "Energy Gain",
+				"energy_cost": "Energy Cost",
+				"focus_gain": "Focus Gain",
+				"focus_cost": "Focus Cost",
+				"holy_power_gain": "Holy Power Gain",
+				"holy_power_cost": "Holy Power Cost",
+				"shadow_orbs_gain": "Shadow Orbs Gain",
+				"shadow_orbs_cost": "Shadow Orbs Cost",
+				"combo_points_gain": "Combo Points Gain",
+				"combo_points_cost": "Combo Points Cost",
+				"maelstrom_gain": "Maelstrom Gain",
+				"maelstrom_cost": "Maelstrom Cost",
+				"demonic_fury_gain": "Demonic Fury Gain",
+				"demonic_fury_cost": "Demonic Fury Cost",
+				"burning_embers_gain": "Burning Embers Gain",
+				"burning_embers_cost": "Burning Embers Cost",
+				"gain": "Gain",
+				"gain_per_second": "Gain / s",
+				"avg_gain": "Avg Gain",
+				"wasted_gain": "Wasted Gain"
+			},
+			"tooltips": {
+				"damage_avg_cast": "Average damage per cast",
+				"damage_taken_per_encounter": "Damage Taken / Encounter Duration",
+				"healing_per_encounter": "Healing / Encounter Duration",
+				"threat_per_encounter": "Threat / Encounter Duration",
+				"damage_taken": "Damage Taken",
+				"damage_per_encounter": "Damage / Encounter Duration",
+				"damage_avg_cast_tooltip": "Damage / Casts and/or Damage / Ticks",
+				"healing_avg_cast_tooltip": "Healing / Casts",
+				"healing_avg_hit_tooltip": "Healing / Hits and/or Healing / (Ticks + Critical Ticks)",
+				"healing_hits_tooltip": "Healing / (Hits + Crits + Glances + Blocks) and/or Healing / Ticks + Critical Ticks",
+				"hit_miss_percent_tooltip": "Misses / (Hits + Crits + Glances + Blocks)"
+			},
+			"attack_types": {
+				"hit": "Hit",
+				"resisted_hit": "Resisted Hit",
+				"critical_hit": "Critical Hit",
+				"resisted_critical_hit": "Resisted Critical Hit",
+				"tick": "Tick",
+				"resisted_tick": "Resisted Tick",
+				"critical_tick": "Critical Tick",
+				"resisted_critical_tick": "Resisted Critical Tick",
+				"glancing_blow": "Glancing Blow",
+				"blocked_hit": "Blocked Hit",
+				"blocked_critical_hit": "Blocked Critical Hit",
+				"crushing_blow": "Crushing Blow",
+				"miss": "Miss",
+				"parry": "Parry",
+				"dodge": "Dodge",
+				"threat": "Threat",
+				"crit": "Crit",
+				"crush": "Crush",
+				"glance": "Glance",
+				"block": "Block",
+				"critical_block": "Critical Block",
+				"shield": "Shield"
+			},
+			"tooltip_table": {
+				"type": "Type",
+				"count": "Count",
+				"average": "Average",
+				"min": "Min",
+				"max": "Max",
+				"amount": "Amount",
+				"per_cast": "Per Cast",
+				"per_hit": "Per Hit",
+				"ticks": "Ticks"
+			},
+			"custom_metrics": {
+				"group": "Spec metrics",
+				"divine_aegis": "Divine Aegis shield"
+			},
+			"unit": "Unit",
+			"damage_result": {
+				"healed": "Healed",
+				"shielded": "Shielded",
+				"health_amount": "for <amount>{{amount}} health</amount><resist/>.",
+				"damage_amount": "for <amount>{{amount}} damage<school/></amount><resist/>.",
+				"resist": "({{percent}}% Resist)"
+			}
+		}
+	},
+	"import": {
+		"title": "Import",
+		"json": {
+			"title": "JSON Import",
+			"description": "Import settings from a JSON file, which can be created using the JSON Export feature.",
+			"instructions": "To import, upload the file or paste the text below, then click, 'Import'.",
+			"upload_button": "Upload File",
+			"import_button": "Import",
+			"error_invalid_json": "Please use a valid JSON object."
+		},
+		"wowhead": {
+			"title": "Wowhead Import",
+			"description": "Import settings from",
+			"gear_planner_link": "Wowhead Gear Planner",
+			"feature_description": "This feature imports gear, race, and (optionally) talents. It does NOT import buffs, debuffs, consumes, rotation, or custom stats.",
+			"instructions": "To import, paste the gear planner link below and click, 'Import'.",
+			"upload_button": "Upload File",
+			"import_button": "Import",
+			"error_invalid_url": "Invalid WCL URL {{url}}, must look like \"https://www.wowhead.com/forever/gear-planner/CLASS/RACE/XXXX\"",
+			"error_cannot_parse_class": "Could not parse Class: {{classId}}",
+			"error_cannot_parse_race": "Could not parse Race: {{raceId}}",
+			"error_invalid_link": "Invalid Wowhead Gear Planner URL {{url}}, must look like \"{{example}}\""
+		},
+		"addon": {
+			"title": "Addon Import",
+			"description": "Import settings from the",
+			"addon_link": "WoWSims Exporter In-Game Addon",
+			"feature_description": "This feature imports gear, race, professions and rotation. The class is required, and anything missing from the pasted text keeps its current value. It does NOT import buffs, debuffs, consumes, or custom stats.",
+			"instructions": "To import, paste the output from the addon below and click, 'Import'.",
+			"upload_button": "Upload File",
+			"import_button": "Import",
+			"error_invalid_export": "Please use a valid Addon export.",
+			"error_nothing_to_import": "The pasted text has no gear, race, professions or rotation to import.",
+			"error_invalid_rotation": "The rotation in the pasted text is not a valid rotation.",
+			"outdated": "Addon is not up to date. Addon version : '{{version}}', Latest version : '{{latest}}'"
+		},
+		"siml": {
+			"title": "SIML Import",
+			"description": "Import settings from SIML, the sim's text format, as the SIML Export writes it.",
+			"instructions": "To import, upload a .siml file or paste its text below, then click, 'Import'. Only what the text holds is loaded: a rotation alone leaves the gear and talents as they are.",
+			"error_problems": "The SIML does not read:",
+			"error_empty": "The SIML holds nothing to import: no section and no talents line.",
+			"error_unknown_type": "The rotation's type is unknown: write type apl, simple or auto, or leave the type line out.",
+			"error_nothing_here": "The SIML holds only the encounter, which this page does not import.",
+			"warning_spec": "This SIML is written for spec {{file}}, and this page is for spec {{page}}. It was imported anyway.",
+			"warnings": "The SIML was imported, with warnings:"
+		},
+		"siml_rotation": {
+			"title": "SIML Rotation Import",
+			"description": "Import a rotation written in SIML, as the Rotation tab's Export SIML writes it.",
+			"instructions": "To import, upload a .apl.siml file or paste its text below, then click, 'Import'. Only the rotation is replaced."
+		},
+		"error": "Import error:",
+		"success": "Import successful!",
+		"talents_not_imported": "The exported talents are for a different talent tree, so they were not imported. Set them on the Talents tab.",
+		"missing_ids": {
+			"title": "Import successful, but the following IDs were not found in the sim database:",
+			"items": "Items:",
+			"enchants": "Enchants:"
+		},
+		"errors": {
+			"cannot_parse_class": "Could not parse Class!",
+			"cannot_parse_race": "Could not parse Race!",
+			"cannot_parse_profession": "Could not parse profession '{{profession}}'",
+			"wrong_class": "Wrong Class! Expected {{expected}} but found {{found}}!"
+		},
+		"sixty_upgrades": {
+			"title": "Sixty Upgrades Import",
+			"description": "Import settings from",
+			"feature_description": "This feature imports gear, race, and (optionally) talents. It does NOT import buffs, debuffs, consumes, rotation, or custom stats.",
+			"instructions": "To import, paste the output from the site's export option below and click, 'Import'.",
+			"error_invalid_export": "Please use a valid Sixty Upgrades export.",
+			"removed_random_suffixes": "Sixty Upgrades currently exports the wrong Random Suffixes. We have removed the random suffix on the following item(s):",
+			"talents_not_imported": "Sixty Upgrades exports do not carry talent ranks, so talents were not imported. Set them on the Talents tab."
+		},
+		"menu": {
+			"addon": "Addon"
+		}
+	},
+	"export": {
+		"title": "Export",
+		"error": "Export error: {{message}}",
+		"link": {
+			"title": "Link Export",
+			"description": "Export settings as a shareable link.",
+			"instructions": "Copy the link below to share your settings with others.",
+			"copy_button": "Copy",
+			"copy_tooltip": "Copy to clipboard"
+		},
+		"json": {
+			"title": "JSON Export",
+			"description": "Export settings as a JSON file.",
+			"instructions": "Download the JSON file or copy the content below.",
+			"copy_button": "Copy",
+			"copy_tooltip": "Copy to clipboard",
+			"download_button": "Download"
+		},
+		"wowhead": {
+			"title": "WoWHead Export",
+			"description": "Export settings to WoWHead Gear Planner.",
+			"instructions": "Copy the link below to open your gear setup in WoWHead.",
+			"copy_button": "Copy",
+			"copy_tooltip": "Copy to clipboard"
+		},
+		"pawn_ep": {
+			"title": "Pawn EP Export",
+			"description": "Export EP weights for Pawn addon.",
+			"instructions": "Copy the Pawn string below and import it into your Pawn addon.",
+			"copy_button": "Copy",
+			"copy_tooltip": "Copy to clipboard"
+		},
+		"cli": {
+			"title": "CLI Export",
+			"description": "Export settings for command line simulation.",
+			"instructions": "Copy the command below to run simulations from the command line.",
+			"copy_button": "Copy",
+			"copy_tooltip": "Copy to clipboard"
+		},
+		"siml": {
+			"title": "SIML Export",
+			"error_unreadable": "The SIML printed here does not read back, so it is not given out: {{problems}}"
+		},
+		"siml_rotation": {
+			"title": "SIML Rotation Export"
+		},
+		"categories": {
+			"gear": {
+				"label": "Gear",
+				"tooltip": "Also includes bonus stats and weapon swaps."
+			},
+			"talents": {
+				"label": "Talents",
+				"tooltip": "Talents."
+			},
+			"rotation": {
+				"label": "Rotation",
+				"tooltip": "Includes everything found in the Rotation tab."
+			},
+			"consumes": {
+				"label": "Consumes",
+				"tooltip": "Flask, pots, food, etc."
+			},
+			"external": {
+				"label": "Buffs & Debuffs",
+				"tooltip": "All settings which are applied by other raid members."
+			},
+			"miscellaneous": {
+				"label": "Misc",
+				"tooltip": "Spec-specific settings, front/back of target, distance from target, etc."
+			},
+			"encounter": {
+				"label": "Encounter",
+				"tooltip": "Fight-related settings."
+			}
+		},
+		"sixty_upgrades_ep": {
+			"title": "Sixty Upgrades EP Export"
+		},
+		"menu": {
+			"link": "Link",
+			"sixty_upgrades_ep": "60U EP",
+			"pawn_ep": "Pawn EP"
+		}
+	},
+	"info": {
+		"known_issues": "Known Issues",
+		"bug_report": "Report a bug or Request a feature",
+		"sim_options": "Sim Options",
+		"github": "Null Sims on GitHub",
+		"status": {
+			"unlaunched": "This sim is a WORK IN PROGRESS. It is not fully developed and should not be used for general purposes.",
+			"gear_planner": "This sim is a GEAR PLANNER only. Gear, enchants, talents and the enchants optimizer work. There's no simulation planned for this spec.",
+			"alpha": "This sim is in ALPHA. Bugs are expected; please let us know if you find one!",
+			"beta": "This sim is in BETA. There may still be a few bugs; please let us know if you find one!"
+		},
+		"levelling_unverified": "Results below level 60 are not yet checked against real combat logs. Treat them as estimates.",
+		"spell_resistance": "Spell resistance uses a formula based on findings from the WoW Forever beta: partial resists in 10% steps around an average of R / (R + 5 × level + 80), and Spell Piercing beyond the target's resistance as bonus damage. It may change as more data comes in.",
+		"options": {
+			"title": "Options",
+			"fixed_rng_seed": {
+				"label": "Fixed RNG seed",
+				"tooltip": "Seed value for the random number generator used during sims, or 0 to use different randomness each run. Use this to share exact sim results or for debugging.",
+				"last_used": "Last used RNG seed:"
+			},
+			"language": {
+				"label": "Language",
+				"tooltip": "Controls the language for Wowhead tooltips."
+			},
+			"feature_toggles": {
+				"show_threat_metrics": "Show threat/tank options",
+				"show_experimental": "Show experimental",
+				"show_power_tools": "Show power tools",
+				"show_power_tools_tooltip": "Shows more tools for theorycrafting.",
+				"show_quick_swap": "Show quick swap interface",
+				"show_threat_metrics_tooltip": "Shows all options and metrics relevant to tanks, like TPS/DTPS.",
+				"show_experimental_tooltip": "Shows experimental options, if there are any active experiments.",
+				"show_quick_swap_tooltip": "Allows you to quickly swap enchants through your favorites. (Disabled on touch devices)"
+			},
+			"use_multiple_cpu_cores": {
+				"label": "Use multiple CPU cores",
+				"tooltip": "Use web workers to spread sim workload over multiple CPU cores.",
+				"off": "Off",
+				"firefox_note": "Too many workers can cause significant memory usage! If sim doesn't finish due to RAM running out use a lower number."
+			},
+			"restart_tour": "Restart Tour",
+			"restore_defaults": {
+				"button": "Restore Defaults",
+				"tooltip": "Restores all default settings (gear, consumes, buffs, talents, EP weights, etc). Saved settings are preserved.",
+				"success_message": "Restored to default settings."
+			}
+		}
+	},
+		"onboarding": {
+			"label": "Tour",
+			"progress": "{{position}} / {{total}}",
+			"start": "Show me around",
+			"next": "Next",
+			"previous": "Back",
+			"skip": "Skip tour",
+			"skip_step": "Skip this step",
+			"finish": "Done",
+			"steps": {
+				"welcome": {
+					"title": "Welcome to Null Sims",
+					"body": "A short look around the page, from your gear to a finished sim. Move through it with the left and right arrow keys, or skip it any time; Sim Options can start it again."
+				},
+				"gear_tab": {
+					"title": "Gear",
+					"body": "This tab is your character's equipment: what you wear and the presets to start from."
+				},
+				"import": {
+					"title": "Import",
+					"body": "Bring in your character with the <addon>WoWSims Exporter addon</addon>, or a build from a link someone shared."
+				},
+				"gear_list": {
+					"title": "Your equipment",
+					"body": "Every slot with the item in it, its enchant and gems."
+				},
+				"gear_picker": {
+					"title": "Change an item",
+					"body": "Click a slot to open the gear picker. Choose the item there, then its enchant and gems."
+				},
+				"gear_presets": {
+					"title": "Gear sets",
+					"body": "Load a preset to start from, including sets from the community, or save your own and load it again later."
+				},
+				"enchants": {
+					"title": "Optimize enchants",
+					"body": "Let the sim choose your enchants for the best result. The cog next to it sets what it aims for."
+				},
+				"settings_tab": {
+					"title": "Settings",
+					"body": "Everything around your character for the sim: the fight, your race and professions, consumables, buffs and debuffs."
+				},
+				"encounter": {
+					"title": "Encounter",
+					"body": "The fight: how long it lasts, the target, and how much it varies."
+				},
+				"player": {
+					"title": "Player",
+					"body": "Your race, professions and the other things about your character that change the numbers."
+				},
+				"other": {
+					"title": "Spec settings",
+					"body": "Fight settings only this spec has."
+				},
+				"consumables": {
+					"title": "Consumables",
+					"body": "Potions, flasks, food and the rest you bring to the fight."
+				},
+				"buffs": {
+					"title": "Raid buffs and debuffs",
+					"body": "What your raid or party gives you, and the debuffs on the target."
+				},
+				"settings_presets": {
+					"title": "Save your settings",
+					"body": "Load a preset encounter or settings, or save your own and load them again later."
+				},
+				"talents_tab": {
+					"title": "Talents",
+					"body": "Pick your talents here, load a preset, or save your own build."
+				},
+				"rotation_tab": {
+					"title": "Rotation",
+					"body": "How the sim plays your character in the fight."
+				},
+				"rotation_auto": {
+					"title": "Automatic rotation",
+					"body": "Auto picks the community's best rotation for your talents, so most players can leave it as it is."
+				},
+				"rotation_type": {
+					"title": "Build your own",
+					"body": "Choose APL here to write your own rotation, action by action."
+				},
+				"rotation_presets": {
+					"title": "Preset rotations",
+					"body": "Click a preset to load a ready-made rotation. With APL selected, it shows the preset's full list of actions to read or change, and you can save your own here too."
+				},
+				"simulate": {
+					"title": "Run the sim",
+					"body": "Press Simulate to run the fight with everything you have set. The tour moves on by itself when the run finishes."
+				},
+				"result": {
+					"title": "Your result",
+					"body": "Your DPS from that run, and how much it varies from fight to fight. It updates every time you run the sim."
+				},
+				"results_tab": {
+					"title": "Results",
+					"body": "The details of the last run. Each tab shows one part of it."
+				},
+				"results_damage": {
+					"title": "Damage",
+					"body": "Damage by ability: how much each one did, how often it hit and crit."
+				},
+				"results_threat": {
+					"title": "Threat",
+					"body": "Threat by ability, for keeping the target on you or off you."
+				},
+				"results_healing": {
+					"title": "Healing",
+					"body": "Healing by ability."
+				},
+				"results_damage_taken": {
+					"title": "Damage taken",
+					"body": "What hit you, and how much of it you avoided."
+				},
+				"results_buffs": {
+					"title": "Buffs",
+					"body": "How often each buff was up on you."
+				},
+				"results_debuffs": {
+					"title": "Debuffs",
+					"body": "How often each debuff was up on the target."
+				},
+				"results_casts": {
+					"title": "Casts",
+					"body": "How many times you cast each ability."
+				},
+				"results_resources": {
+					"title": "Resources",
+					"body": "What you spent and gained, such as mana, rage or energy."
+				},
+				"results_timeline": {
+					"title": "Timeline",
+					"body": "One fight laid out over time: casts, buffs and resources."
+				},
+				"results_log": {
+					"title": "Log",
+					"body": "Every event of one fight, line by line."
+				},
+				"bulk_tab": {
+					"title": "Batch sim",
+					"body": "Sim many gear combinations at once to find the best of the items you have."
+				},
+				"stat_weights": {
+					"title": "Stat weights",
+					"body": "Work out how much each stat is worth to you, and set the weights the gear picker and enchant optimizer use."
+				},
+				"finish": {
+					"title": "You're set",
+					"body": "There is more to find on the page as you go. If you have a question or something looks wrong, open an issue on <issues>GitHub</issues>."
+				}
+			}
+		},
+	"sidebar": {
+		"iterations": "Iterations",
+		"warnings": {
+			"label": "Warnings",
+			"profession_requirement": "{{itemName}} requires {{professionName}}, but it is not selected.",
+			"unspent_talent_points": "You have {{count}} unspent talent point(s).",
+			"broken_talents": "These talents are missing their tier or prerequisite points, so the build is not possible in game. The sim still applies them: {{talents}}.",
+			"windfury_over_flametongue": "Windfury Totem and Flametongue Totem do not stack: only Windfury Totem applies.",
+			"elemental_stormstrike": "Stormstrike is selected, which points to a hybrid Enhancement build. Use the Enhancement sim to sim it."
+		},
+		"buttons": {
+			"simulate": "Simulate",
+			"stat_weights": {
+				"title": "Stat Weights",
+				"modal": {
+					"title": "Calculate Stat Weights",
+					"ep": "EP",
+					"weights": "Weights",
+					"settings": "Settings",
+					"show_as": "Show as:",
+					"dps_tps_reference": "DPS/TPS reference:",
+					"healing_reference": "Healing reference:",
+					"mitigation_reference": "Mitigation reference:",
+					"reference_description": "The above stat selectors control which reference stat is used for EP normalisation for the different EP columns.",
+					"simulated_step_rating": "{{sign}}{{rating}} rating",
+					"simulated_step_rating_percent": "{{sign}}{{rating}} rating ({{sign}}{{percent}}%)",
+					"simulated_step": "Simulated step: {{step}}",
+					"simulated_step_description": "After a calculation, the help icon next to each stat name gives the simulated step, how far the sim moved that stat to measure it. ± ran it both lower and higher, + only higher.",
+					"current_ep_description": "The 'Current EP' column displays the values currently used by the item pickers to sort items.",
+					"copy_icon_description": "Use the copy icon above the EPs to use newly calculated EPs.",
+					"rating_conversion": "{{rating}} rating = 1%",
+					"rating_weights_description": "Hit, crit, haste, expertise, dodge, parry and block show their weights per point of rating, because gear gives them as rating, which the game converts to a percentage. The help icon next to the stat name gives the conversion.",
+					"stat": "Stat",
+					"update": "Update",
+					"ep_ratio": "EP Ratio",
+					"update_ep": "Update EP",
+					"calculate": "Calculate",
+					"compute_weighted_ep": "Compute Weighted EP",
+					"dps_weight": {
+						"label": "DPS Weight",
+						"tooltip": "Per-point increase in DPS (Damage Per Second) for each stat."
+					},
+					"dps_ep": {
+						"label": "DPS EP",
+						"tooltip": "EP (Equivalency Points) for DPS (Damage Per Second) for each stat."
+					},
+					"hps_weight": {
+						"label": "HPS Weight",
+						"tooltip": "Per-point increase in HPS (Healing Per Second) for each stat."
+					},
+					"hps_ep": {
+						"label": "HPS EP",
+						"tooltip": "EP (Equivalency Points) for HPS (Healing Per Second) for each stat."
+					},
+					"tps_weight": {
+						"label": "TPS Weight",
+						"tooltip": "Per-point increase in TPS (Threat Per Second) for each stat."
+					},
+					"tps_ep": {
+						"label": "TPS EP",
+						"tooltip": "EP (Equivalency Points) for TPS (Threat Per Second) for each stat."
+					},
+					"dtps_weight": {
+						"label": "DTPS Weight",
+						"tooltip": "Per-point increase in DTPS (Damage Taken Per Second) for each stat."
+					},
+					"dtps_ep": {
+						"label": "DTPS EP",
+						"tooltip": "EP (Equivalency Points) for DTPS (Damage Taken Per Second) for each stat."
+					},
+					"tmi_weight": {
+						"label": "TMI Weight",
+						"tooltip": "Per-point decrease in TMI (Theck-Meloree Index) for each stat."
+					},
+					"tmi_ep": {
+						"label": "TMI EP",
+						"tooltip": "EP (Equivalency Points) for TMI (Theck-Meloree Index) for each stat."
+					},
+					"death_weight": {
+						"label": "Death Weight",
+						"tooltip": "Per-point decrease in p(death) for each stat."
+					},
+					"death_ep": {
+						"label": "Death EP",
+						"tooltip": "EP (Equivalency Points) for p(death) for each stat."
+					},
+					"current_ep": {
+						"label": "Current EP",
+						"tooltip": "Current EP Weights. Used to sort the gear selector menus."
+					},
+					"not_applicable": "N/A",
+					"column_headers": {
+						"stat": "Stat",
+						"update": "Update",
+						"ep_ratio": "EP Ratio",
+						"update_ep_button": "Update EP"
+					},
+					"tooltips": {
+						"normalized_by": "Normalized by {{refStatName}}.",
+						"copy_to_current_ep": "Copy to Current EP",
+						"restore_default_ep": "Restore Default EP",
+						"compute_weighted_ep": "Compute Weighted EP"
+					},
+					"progress": {
+						"simulations_complete": "simulations complete",
+						"iterations_complete": "iterations complete"
+					},
+					"notifications": {
+						"cancelled": "Statweight sim cancelled.",
+						"failed": "Something went wrong calculating your stat weights. Reload the page and try again."
+					}
+				},
+				"saved_ep_weights": {
+					"title": "Saved EP weights"
+				},
+				"precision": {
+					"iterations_tooltip": "Iterations per simulation. Empty uses the sim's iteration setting.",
+					"target_ci": "Target ±",
+					"target_ci_tooltip": "Keeps simulating each stat until the 90% ± behind its EP is at most this value.",
+					"max_multiplier_tooltip": "The most iterations a stat may run, as a multiple of the automatic first pass. Empty sets no cap."
+				}
+			},
+			"stat_sweep": {
+				"title": "Stat sweep",
+				"settings": "Settings",
+				"stats": {
+					"label": "Stats",
+					"placeholder": "Select stat(s)",
+					"empty": "No stat matches",
+					"open": "Show all stats",
+					"remove": "Remove stat"
+				},
+				"range": "Range ±",
+				"step": "Step",
+				"run": "Run stat sweep",
+				"progress": "Step {{current}} / {{total}}",
+				"run_label": "{{stat}} ±{{range}}",
+				"batch_label": "{{stats}} ±{{range}}",
+				"capped_label": "{{label}} (capped at {{added}})",
+				"metric": "Plotted metric",
+				"show_spread": "Show spread",
+				"show_spread_tooltip": "Shades ± 1 standard deviation of a fight's value around each line.",
+				"current_value": "Current value",
+				"added_axis": "Stat added (% stats as rating)",
+				"tooltip_total": "{{stat}} {{total}} ({{added}})",
+				"tooltip_value": "{{value}} ± {{stdev}}",
+				"tooltip_value_capped": "{{value}} ± {{stdev}} (capped)",
+				"band_key": "Shaded: ± 1 standard deviation of a fight's {{metric}}",
+				"empty": "Run a stat sweep to plot {{metric}} across each stat's range.",
+				"export_csv": "Export CSV",
+				"stopped": "Stat sweep stopped by another run. Its finished steps are kept.",
+				"history": {
+					"title": "History",
+					"delete": "Delete {{label}}",
+					"delete_batch": "Delete every run of {{label}}",
+					"show": "Show {{label}}",
+					"hide": "Hide {{label}}",
+					"show_hidden": "Show {{label}}, some runs are hidden",
+					"more_stats": "{{stats}} +{{count}}",
+					"metric": "The metric plotted when this run started, which Target ± followed",
+					"empty": "No saved stat sweeps yet."
+				},
+				"precision": {
+					"iterations_tooltip": "Iterations per step. Empty uses the sim's iteration setting.",
+					"target_ci": "Target ± ({{metric}})",
+					"target_ci_tooltip": "Keeps simulating each step until the 90% ± of its {{metric}} is at most this value. A run follows the metric plotted when it starts.",
+					"max_multiplier_tooltip": "The most iterations a step may run, as a multiple of the automatic first pass. Empty sets no cap."
+				}
+			},
+			"suggest_reforges": {
+				"title": "Optimize Enchants",
+				"tooltip": "Change Enchants Optimizer settings",
+				"use_soft_cap_breakpoints": "Use soft cap breakpoints",
+				"any": "Any",
+				"freeze_item_slots_tooltip": "Flag one or more item slots to be \"frozen\", which will prevent the optimizer from changing that slot from its current settings. This can be useful for hybrid classes who use the same gear piece for multiple raid roles.",
+				"edit_stat_caps": "Edit stat caps",
+				"stat_caps_tooltip": "Stat caps are the most of a stat the optimizer will add. If a stat exceeds its cap, the optimizer will attempt to reduce it to the cap value.",
+				"reset_to_defaults": "Reset to stat cap defaults",
+				"stat": "Stat",
+				"select_preset": "Select preset",
+				"breakpoint_limit": "Breakpoint limit",
+				"breakpoint_limit_tooltip": "Allows you to set a custom breakpoint limit.",
+				"no_limit_set": "No limit set",
+				"breakpoints_implemented": "The following breakpoints have been implemented for this spec:",
+				"post_cap_ep": "Post cap EP",
+				"reforge_optimization_failed": "Enchant optimization failed. Please try again, or report the issue if it persists.",
+				"reforge_optimization_cancelled": "Enchant optimization cancelled.",
+				"use_custom": "Use custom EP Weights",
+				"enable_modification": "This will enable modification of the default EP weights and setting custom stat caps.",
+				"modify_in_editor": "Ep weights can be modified in the Stat Weights editor.",
+				"hard_cap_info": "If you want to hard cap a stat make sure to put the EP for that stat higher.",
+				"edit_weights": "Change weights",
+				"freeze_item_slots": "Freeze item slots",
+				"settings": "Settings",
+				"frozen_slots": "Frozen slots",
+				"enchants": "Enchants",
+				"skipped_slots_description": "The following slots need to be simmed because they contain dynamic item effects (such as procs):",
+				"skipped_slots_unlisted": "No checked enchant preset lists these slots:",
+				"go_to_batch_sim": "Go to batch sim",
+				"use_enchant_presets": "Use enchant presets",
+				"use_enchant_presets_tooltip": "Pick enchants only from the checked enchant presets, the same presets the Batch Sim uses. A slot no checked preset lists keeps its enchant.",
+				"no_enchant_preset": "Check at least one enchant preset to optimize enchants.",
+				"failure_reason": "Reason for failure:",
+				"max_column": "Max?",
+				"haste_cap_tooltip": "Final percentage value <strong>including</strong> all buffs/gear.",
+				"progress": {
+					"title": "Optimizing Enchants",
+					"lengthy": "Enchant optimization can be a lengthy process, especially as specific stat caps and breakpoints come into play for classes. This may take a while, but be assured that the calculation will eventually complete.",
+					"cancel_hint": "You may cancel this operation at any time using the button below."
+				},
+				"no_result": "Native Go gear optimizer did not return optimized gear."
+			}
+		},
+		"header": {
+			"title": "Null Sims · Forever",
+			"phase": "{{phase}} - {{status}}"
+		},
+		"results": {
+			"stop": "Stop",
+			"stopping": "Stopping...",
+			"last_run": "Last run",
+			"reference_run": "Reference run",
+			"freshness": {
+				"fresh": "Up to date",
+				"stale": "Outdated"
+			},
+			"progress": {
+				"running": "Simulating",
+				"starting": "starting",
+				"presim_running": "presimulations running",
+				"iterations": "{{completed}} / {{total}} iterations",
+				"time_remaining": "{{time}} remaining"
+			},
+			"reference": {
+				"save_as_reference": "Set as reference",
+				"use_as_reference": "Use as reference",
+				"swap": "Swap",
+				"swap_reference_with_current": "Swap reference with current",
+				"cancel": "Cancel",
+				"unset": "Unset",
+				"remove_reference": "Unset reference",
+				"vs_ref": "vs ref"
+			},
+			"metrics": {
+				"dps": {
+					"label": "DPS",
+					"tooltip": "Damage Per Second"
+				},
+				"hps": {
+					"label": "HPS",
+					"tooltip": "Healing+Shielding Per Second, including overhealing."
+				},
+				"tps": {
+					"label": "TPS",
+					"tooltip": "Threat Per Second"
+				},
+				"apm": {
+					"label": "APM",
+					"tooltip": "Actions Per Minute: the spells, abilities and items the rotation uses by hand per minute, plus the walks the rotation or the encounter starts. Abilities that queue for the next swing, such as Heroic Strike, count once when pressed. Procs, auto attacks, walks a spell such as Charge starts, and pets are not counted."
+				},
+				"dtps": {
+					"label": "DTPS",
+					"tooltip": "Damage Taken Per Second"
+				},
+				"tmi": {
+					"label": "TMI",
+					"tooltip": {
+						"title": "Theck-Meloree Index (TMI)",
+						"description": "A measure of incoming damage smoothness which combines the benefits of avoidance with effective health.",
+						"note": "Lower is better. This represents the % of your HP to expect in a 6-second burst window based on the encounter settings."
+					}
+				},
+				"cod": {
+					"label": "Chance of Death",
+					"tooltip": {
+						"title": "Chance of Death",
+						"description": "The percentage of iterations in which the player died, based on incoming damage from the enemies and incoming healing (see the Incoming HPS and Healing Cadence options).",
+						"note": "DTPS alone is not a good measure of tankiness because it is not affected by health and ignores damage spikes. Chance of Death attempts to capture overall tankiness."
+					}
+				},
+				"dur": {
+					"label": "DUR",
+					"tooltip": "Average Fight Duration"
+				},
+				"tto": {
+					"label": "TTO",
+					"tooltip": "Time To OOM"
+				},
+				"oom": {
+					"label": "OOM",
+					"tooltip": "Time spent Out of Mana"
+				}
+			}
+		},
+		"character_stats": {
+			"title": "Stats",
+			"groups": {
+				"attributes": "Attributes",
+				"physical": "Physical",
+				"spell": "Spell",
+				"defense": "Defense",
+				"resistance": "Resistances"
+			},
+			"hands": {
+				"main": "MH",
+				"off": "OH"
+			},
+			"melee_crit_cap": "Melee Crit Cap",
+			"weapon_skill": "Weapon Skill",
+			"tooltip": {
+				"base": "Base:",
+				"gear": "Gear:",
+				"talents": "Talents:",
+				"buffs": "Buffs:",
+				"consumes": "Consumes:",
+				"debuffs": "Debuffs:",
+				"bonus": "Bonus:",
+				"total": "Total:",
+				"glancing": "Glancing:",
+				"suppression": "Suppression:",
+				"to_hit_cap": "To Hit Cap:",
+				"to_exp_cap": "To Exp Cap:",
+				"spec_offsets": "Spec Offsets:",
+				"final_crit_cap": "Final Crit Cap:",
+				"can_raise_by": "Can Raise By:",
+				"eWS": "eWS:"
+			},
+			"attack_table": {
+				"glancing": "Glancing:",
+				"suppression": "Suppression:",
+				"to_hit_cap": "To Hit Cap:",
+				"to_exp_cap": "To Exp Cap:",
+				"block": "Block:",
+				"spec_offsets": "Spec Offsets:",
+				"final_crit_cap": "Final Crit Cap:",
+				"can_raise_by": "Can Raise By:"
+			},
+			"crit_cap": {
+				"exact": "Exact",
+				"over_by": "Over by",
+				"under_by": "Under by"
+			},
+			"tank_caps": {
+				"miss_label": "Miss",
+				"avoidance_label": "Total avoidance",
+				"crit_immunity_label": "Crit Immunity",
+				"miss": "Miss:",
+				"dodge": "Dodge:",
+				"parry": "Parry:",
+				"block": "Block:",
+				"defense": "Defense:",
+				"crush": "Crush (102.4%):",
+				"shear": "Shear (101.8%):",
+				"with_holy_shield": " (with HS)"
+			},
+			"bonus_prefix": "Bonus",
+			"rating_suffix": "Rating",
+			"points_suffix": "Points",
+			"percent_label": "Percent",
+			"percent_suffix": "%"
+		}
+	},
+	"stat_filters": {
+		"title": "Stats to show",
+		"triggers": {
+			"character_stats": "Filter character stats",
+			"ep": "Filter EP stats",
+			"buffs": "Filter buff stats",
+			"debuffs": "Filter debuff stats"
+		},
+		"spec_defaults": "Spec defaults",
+		"all": "All",
+		"groups": {
+			"primary": "Primary",
+			"ratings": "Ratings",
+			"other": "Other"
+		},
+		"group_count": "{{group}} ({{shown}}/{{total}})",
+		"kept_tooltip": "This item is showing because you have it selected. Use the filters to permanently show it.",
+		"rating_label": "{{stat}} Rating",
+		"percent_label": "{{stat}} %"
+	}
+}
