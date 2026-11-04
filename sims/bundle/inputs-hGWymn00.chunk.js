@@ -1,1 +1,0 @@
-import{si as e}from"./specs-D7uaaFEY.chunk.js";import{nt as t}from"./spec_config-Dbsp7Nzt.chunk.js";import{i as n}from"./input_helpers-qU2y4s62.chunk.js";var r=()=>n({fieldName:`armor`,label:`Inner Fire`,values:[{value:e.NoArmor,tooltip:`No Inner Fire`},{actionId:t.fromSpellId(10952),value:e.InnerFire}]});export{r as t};
