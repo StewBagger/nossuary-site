@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Link Battle.net, last step: Blizzard returns here (the redirect URL registered on the Blizzard
+       API client — https://nossuary.com/link/battlenet/, exactly). The address carries Blizzard's
+       one-time code and the Worker's state: never indexed, never sent on as a Referer, stripped on
+       load. The state must be the one this browser tab was handed, and the link token is this tab's
+       own, or nothing is sent (js/link.js, TAB BINDING). -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" content="#0b0d0c">
+  <title>Confirming your Battle.net account · Null Ossuary</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+  <link rel="stylesheet" href="../../css/style.css?v=20261109-1">
+  <!-- ?v= is this page's build stamp: bump it here (stylesheet and both scripts) whenever style.css, config.js
+       or link.js changes, so a browser holding a cached copy (GitHub Pages: ~10 minutes) fetches the new one.
+       link.js also carries built-in defaults in case config.js is stale anyway. -->
+  <script src="../../js/config.js?v=20261109-1" defer></script>
+  <script src="../../js/link.js?v=20261109-1" defer></script>
+</head>
+<body class="signin signin-pending" data-signin-step="battlenet">
+  <main class="card signin-panel" aria-live="polite">
+    <img class="signin-emblem" src="../../assets/emblem-256.webp" alt="" width="96" height="96">
+    <p class="eyebrow" id="signin-eyebrow">Link Battle.net</p>
+    <h1 id="signin-title">Confirming your Battle.net account…</h1>
+    <p class="status status-online signin-spinner"><span class="dot" aria-hidden="true"></span><span>Checking with Battle.net</span></p>
+    <p class="muted" id="signin-line">Hold on a moment; don't close this tab yet.</p>
+    <noscript>
+      <p class="signin-noscript">This page needs JavaScript to finish linking. Turn it on, then press
+        Link Battle.net in Discord again.</p>
+    </noscript>
+    <p class="signin-actions"><a class="btn btn-ghost btn-sm" id="signin-retry" href="../../link/?to=battlenet" hidden>Try again</a></p>
+    <p class="signin-foot"><a href="../../">Null Ossuary · nossuary.com</a></p>
+  </main>
+</body>
+</html>

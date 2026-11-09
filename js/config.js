@@ -126,14 +126,15 @@ window.OSSUARY = {
   // cached config.js predates this key).
   rosterUrl: "https://nossuary-status.stewbagger.workers.dev/v1/roster",
 
-  // Sign in with Steam (link/, link/discord/ and link/done/, js/link.js). The pages call this
-  // Worker's /link/discord/start and /exchange (Discord says who is signing in) and
-  // /link/steam/verify. No secret is involved on this side: link tokens are signed and checked by
-  // the Worker. null = sign-in pages say linking is
-  // unavailable. js/link.js holds a copy of this value and siteOrigin as defaults, for a browser
-  // with a stale cached config.js — change them there too.
+  // Sign in with Steam and Link Battle.net (link/, link/discord/, link/done/ and link/battlenet/,
+  // js/link.js). The pages call this Worker's /link/discord/start and /exchange (Discord says who
+  // is signing in), then /link/steam/verify or /link/battlenet/start and /exchange. No secret is
+  // involved on this side: link tokens are signed and checked by the Worker. null = sign-in pages
+  // say linking is unavailable. js/link.js holds a copy of this value and siteOrigin as defaults,
+  // for a browser with a stale cached config.js — change them there too.
   linkWorkerUrl: "https://nossuary-status.stewbagger.workers.dev",
-  // Steam is told to return to <siteOrigin>/link/done/ with realm <siteOrigin>/. MUST equal the
+  // Steam is told to return to <siteOrigin>/link/done/ with realm <siteOrigin>/ (Battle.net's return,
+  // <siteOrigin>/link/battlenet/, is built by the Worker from the same value). MUST equal the
   // Worker's SITE_ORIGIN (deploy/status-worker/wrangler.toml), or every sign-in is refused.
   siteOrigin: "https://nossuary.com",
 

@@ -196,3 +196,147 @@ test("end to end against the real Worker: one tab links; the same token in anoth
   assert.equal(mine.outcome, "signin-ok");
   assert.equal([...env._claims.keys()].filter((k) => k.startsWith("claim:")).length, 1);
 });
+
+// -- Link Battle.net (Discord-Automation DR-0024) ------------------------------------------
+
+const TARGET_KEY = "ossuary.link.target";
+const BNET_STATE_KEY = "ossuary.link.bnetState";
+
+test("link/ keeps ?to=battlenet in the tab and still ignores ?t=; anything else is Steam", async () => {
+  const respond = async () => Response.json({ ok: true, url: "https://discord.com/oauth2/authorize?client_id=1&state=s" });
+  const page = await runPage("start", `${SITE}/link/?to=battlenet&t=someone-elses.token`, { respond });
+  assert.equal(page.outcome, "navigated");
+  assert.equal(page.storage.getItem(TARGET_KEY), "battlenet");
+  assert.ok(page.fetches.every((f) => !f.url.includes("someone-elses")));
+  for (const href of [`${SITE}/link/`, `${SITE}/link/?to=steam`, `${SITE}/link/?to=evil`, `${SITE}/link/?to=BATTLENET`]) {
+    const other = await runPage("start", href, { respond });
+    assert.equal(other.storage.getItem(TARGET_KEY), "steam", href);
+  }
+});
+
+test("discord/ with a battlenet target asks the Worker for Blizzard's URL and goes only to oauth.battle.net", async () => {
+  const storage = tabStorage();
+  storage.setItem(STATE_KEY, "mine");
+  storage.setItem(TARGET_KEY, "battlenet");
+  const bnet = "https://oauth.battle.net/authorize?response_type=code&client_id=c&scope=openid%20wow.profile&state=bnet.state&redirect_uri=x";
+  const respond = async (url) => (url.includes("/link/discord/exchange")
+    ? Response.json({ ok: true, t: "fresh.token" })
+    : Response.json({ ok: true, url: bnet }));
+  const page = await runPage("discord", `${SITE}/link/discord/?code=abc&state=mine`, { storage, respond });
+  assert.equal(page.outcome, "navigated");
+  assert.equal(page.replaced, bnet);
+  assert.deepEqual(page.fetches.map((f) => new URL(f.url).pathname), ["/link/discord/exchange", "/link/battlenet/start"]);
+  assert.equal(new URL(page.fetches[1].url).searchParams.get("t"), "fresh.token");
+  assert.equal(storage.getItem(TOKEN_KEY), "fresh.token");
+  assert.equal(storage.getItem(BNET_STATE_KEY), "bnet.state");
+  assert.equal(storage.getItem(TARGET_KEY), null);                          // spent with the state
+
+  // Whatever the Worker answers, nowhere but Blizzard.
+  storage.setItem(STATE_KEY, "mine");
+  storage.setItem(TARGET_KEY, "battlenet");
+  const evil = async (url) => (url.includes("/exchange")
+    ? Response.json({ ok: true, t: "fresh.token" })
+    : Response.json({ ok: true, url: "https://evil.example/authorize?state=x" }));
+  const refused = await runPage("discord", `${SITE}/link/discord/?code=abc&state=mine`, { storage, respond: evil });
+  assert.equal(refused.outcome, "signin-error");
+  assert.equal(refused.replaced, null);
+});
+
+test("battlenet/ refuses a state this tab was not handed, or a tab with no token, and posts nothing", async () => {
+  const cases = [
+    [{ [BNET_STATE_KEY]: "mine", [TOKEN_KEY]: "this-tabs.token" }, "theirs"],
+    [{ [TOKEN_KEY]: "this-tabs.token" }, "mine"],
+    [{ [BNET_STATE_KEY]: "mine" }, "mine"],
+  ];
+  for (const [stored, state] of cases) {
+    const storage = tabStorage();
+    for (const [k, v] of Object.entries(stored)) storage.setItem(k, v);
+    const page = await runPage("battlenet", `${SITE}/link/battlenet/?code=abc&state=${state}`, { storage });
+    assert.equal(page.outcome, "signin-error", JSON.stringify(stored));
+    assert.equal(page.title, "This link didn't start in this browser tab");
+    assert.deepEqual(page.fetches, []);
+    assert.equal(storage.getItem(BNET_STATE_KEY), null);
+    assert.equal(storage.getItem(TOKEN_KEY), null);
+    assert.deepEqual(page.stripped, ["/link/battlenet/"]);
+  }
+  const cancelled = await runPage("battlenet", `${SITE}/link/battlenet/?error=access_denied&state=x`);
+  assert.equal(cancelled.title, "Battle.net sign-in was cancelled");
+  assert.deepEqual(cancelled.fetches, []);
+});
+
+test("battlenet/ posts {code, state, t} once for this tab's state and confirms in place, never via Steam", async () => {
+  const storage = tabStorage();
+  storage.setItem(BNET_STATE_KEY, "mine");
+  storage.setItem(TOKEN_KEY, "this-tabs.token");
+  const page = await runPage("battlenet", `${SITE}/link/battlenet/?code=abc&state=mine`, { storage, respond: async () => Response.json({ ok: true }) });
+  assert.equal(page.outcome, "signin-ok");
+  assert.equal(page.title, "∅ Battle.net account confirmed");
+  assert.equal(page.replaced, null);
+  assert.deepEqual(page.fetches.map((f) => new URL(f.url).pathname), ["/link/battlenet/exchange"]);
+  assert.deepEqual(JSON.parse(page.fetches[0].init.body), { code: "abc", state: "mine", t: "this-tabs.token" });
+  // Reloading finds nothing stored.
+  const again = await runPage("battlenet", `${SITE}/link/battlenet/?code=abc&state=mine`, { storage });
+  assert.deepEqual(again.fetches, []);
+  // A refusal reads the Worker's reason.
+  storage.setItem(BNET_STATE_KEY, "mine");
+  storage.setItem(TOKEN_KEY, "this-tabs.token");
+  const used = await runPage("battlenet", `${SITE}/link/battlenet/?code=abc&state=mine`, { storage, respond: async () => Response.json({ ok: false, reason: "used" }) });
+  assert.equal(used.title, "That link has already been used");
+});
+
+test("every link page carries one build stamp, and link/battlenet/ is the battlenet step", () => {
+  const pages = ["link/index.html", "link/discord/index.html", "link/done/index.html", "link/battlenet/index.html"];
+  const stamps = new Set();
+  for (const p of pages) {
+    const text = fs.readFileSync(path.join(HERE, "..", p), "utf8");
+    for (const m of text.matchAll(/\?v=(\d{8}-\d+)/g)) stamps.add(m[1]);
+  }
+  assert.equal(stamps.size, 1, [...stamps].join(", "));
+  const bnet = fs.readFileSync(path.join(HERE, "..", "link/battlenet/index.html"), "utf8");
+  assert.match(bnet, /data-signin-step="battlenet"/);
+  assert.match(bnet, /js\/link\.js\?v=/);
+});
+
+test("end to end against the real Worker: Battle.net links from the tab that started it, and nowhere else", async (t) => {
+  const index = path.join(WORKER_DIR, "src", "index.js");
+  if (!fs.existsSync(path.join(WORKER_DIR, "src", "battlenet.js"))) return t.skip("Null_Ossuary checkout with battlenet.js not found beside this repo");
+  const { default: worker } = await import(pathToFileURL(index).href);
+  const { makeEnv } = await import(pathToFileURL(path.join(WORKER_DIR, "test", "support", "fake-env.js")).href);
+
+  const KEY = "site-test-key-0123456789abcdef0123456789";
+  const env = makeEnv({
+    PUBLISH_TOKEN: "p", LINK_SIGNING_KEY: KEY, DISCORD_CLIENT_ID: "1548103089586839673", DISCORD_CLIENT_SECRET: "s",
+    BNET_CLIENT_ID: "bnet-client", BNET_CLIENT_SECRET: "bnet-secret",
+  });
+  const outbound = async (url) => {
+    if (url === "https://discord.com/api/oauth2/token") return Response.json({ access_token: "a", token_type: "Bearer" });
+    if (url.endsWith("/users/@me")) return Response.json({ id: "151000000000000009" });
+    if (url === "https://oauth.battle.net/token") return Response.json({ access_token: "b", token_type: "bearer" });
+    if (url === "https://oauth.battle.net/userinfo") return Response.json({ id: 42, battletag: "Zug#1234" });
+    if (url.startsWith("https://us.api.blizzard.com/")) return Response.json({ wow_accounts: [{ characters: [{ id: 7, name: "Zugzug", level: 12, playable_class: { id: 1 }, playable_race: { id: 2 }, faction: { type: "HORDE" } }] }] });
+    return Response.json({}, { status: 404 });
+  };
+  const respond = (url, init) => worker.fetch(new Request(url, { ...init, headers: { origin: SITE, ...(init.headers || {}) } }), env, {}, outbound);
+
+  const tab = tabStorage();
+  const start = await runPage("start", `${SITE}/link/?to=battlenet`, { storage: tab, respond });
+  const state = new URL(start.replaced).searchParams.get("state");
+  const toBlizzard = await runPage("discord", `${SITE}/link/discord/?code=abc&state=${encodeURIComponent(state)}`, { storage: tab, respond });
+  const authorize = new URL(toBlizzard.replaced);
+  assert.equal(authorize.origin, "https://oauth.battle.net");
+  assert.equal(authorize.searchParams.get("redirect_uri"), `${SITE}/link/battlenet/`);
+  const back = `${SITE}/link/battlenet/?code=bnetcode&state=${encodeURIComponent(authorize.searchParams.get("state"))}`;
+
+  // The same return opened in another browser (empty storage) sends nothing.
+  const victim = await runPage("battlenet", back, { storage: tabStorage(), respond });
+  assert.equal(victim.fetches.length, 0);
+
+  const mine = await runPage("battlenet", back, { storage: tab, respond });
+  assert.equal(mine.outcome, "signin-ok");
+  const res = await worker.fetch(new Request("https://w.example/v1/battlenet-claims", { headers: { authorization: "Bearer p" } }), env, {}, outbound);
+  const { claims } = await res.json();
+  assert.equal(claims.length, 1);
+  assert.equal(claims[0].battletag, "Zug#1234");
+  assert.equal(claims[0].region, "us");
+  assert.deepEqual(claims[0].characters, [{ id: 7, name: "Zugzug", level: 12, class_id: 1, race_id: 2, faction: "HORDE" }]);
+});

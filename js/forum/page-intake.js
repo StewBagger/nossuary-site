@@ -16,9 +16,9 @@
 // SIGN-IN IS NOT OFFERED HERE, deliberately. js/forum/auth.js::safeReturnPath only honours a
 // same-origin path under /forums/, so a sign-in started from /intake/ would land the member back on
 // the forums anyway. The gate says so and links there, as admin/ does.
-import { boot } from "./boot.js?v=20261008-1";
-import { describeError } from "./api.js?v=20261008-1";
-import { el, mount, showStatus, emptyState, timeEl, FORUMS } from "./render.js?v=20261008-1";
+import { boot } from "./boot.js?v=20261109-1";
+import { describeError } from "./api.js?v=20261109-1";
+import { el, mount, showStatus, emptyState, timeEl, FORUMS } from "./render.js?v=20261109-1";
 
 // --- Pure -----------------------------------------------------------------------------------
 

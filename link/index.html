@@ -3,22 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Sign in with Steam, where the #welcome button lands: sends the member to Discord
-       (link/discord/ comes next). Any query is ignored — a ?t= token in particular, which would
-       let a link made for one person sign in someone else (js/link.js, TAB BINDING) — and
-       stripped from the address bar on load. Never indexed, never sent on as a Referer. -->
+  <!-- Sign in with Steam, where the #welcome button lands, and Link Battle.net (?to=battlenet, the
+       WoW roster panel's button): sends the member to Discord (link/discord/ comes next). Only ?to=
+       is read; anything else is ignored — a ?t= token in particular, which would let a link made
+       for one person sign in someone else (js/link.js, TAB BINDING) — and the query is stripped
+       from the address bar on load. Never indexed, never sent on as a Referer. -->
   <meta name="robots" content="noindex, nofollow">
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https:; object-src 'none'; base-uri 'none'; form-action 'none'">
   <meta name="theme-color" content="#0b0d0c">
   <title>Signing you in · Null Ossuary</title>
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
-  <link rel="stylesheet" href="../css/style.css?v=20261008-1">
+  <link rel="stylesheet" href="../css/style.css?v=20261109-1">
   <!-- ?v= is this page's build stamp: bump it here (stylesheet and both scripts) whenever style.css, config.js
        or link.js changes, so a browser holding a cached copy (GitHub Pages: ~10 minutes) fetches the new one.
        link.js also carries built-in defaults in case config.js is stale anyway. -->
-  <script src="../js/config.js?v=20261008-1" defer></script>
-  <script src="../js/link.js?v=20261008-1" defer></script>
+  <script src="../js/config.js?v=20261109-1" defer></script>
+  <script src="../js/link.js?v=20261109-1" defer></script>
 </head>
 <body class="signin signin-pending" data-signin-step="start">
   <main class="card signin-panel" aria-live="polite">
