@@ -18,6 +18,14 @@ table as CSV. Forever ships under the product label `wowf` -- NOT one of the
 nightly run failed its racial check for ten nights against a client nobody would play. The guides'
 other client-sourced readings come through foreverchanges.pro, which reads the same place.
 
+SERVER HOTFIXES are not in those tables, and since 2026-11-13 they are laid over them. A
+hotfix is a table row the server hands the client at login; wago.tools exports the client's
+files and never sees one. hotfix_overlay.py reads the newest cache Raidbots publishes FOR
+THE SAME BUILD and table() below returns each table with those rows in, so everything
+downstream resolves what a player sees and not what the file says. The run always prints
+one `hotfix-overlay:` line saying whether that happened, and it is allowed to not happen:
+see THE OVERLAY IS OPTIONAL above main().
+
 THE RANK PROBLEM is the reason this is not a dictionary lookup. 336 of 433 chip names map
 to more than one spell id, because every rank is its own spell -- `Shadow Bolt` has 77.
 Rows whose BaseLevel is 0 are NPC/tooltip/internal variants, not something a player trains.
@@ -49,6 +57,8 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+import hotfix_overlay
+
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "guides" / "_src"
 DATA = ROOT / "guides" / "_data" / "spells.json"
@@ -66,6 +76,12 @@ TABLES = ("SpellName", "SpellMisc", "SpellLevels", "SkillLineAbility", "ItemSpar
           "TraitDefinition",
           # What each rank of a tree talent is worth. See TRAIT POINTS in load_details().
           "TraitDefinitionEffectPoints", "CurvePoint")
+
+# The tables the hotfix overlay is laid over: every one but the two item tables. Those are
+# read for a name and an icon only, each holds ~9,000 cached rows of a hundred columns, and
+# an item's tooltip is not built here at all, so a hotfixed item changes nothing a chip
+# shows. Leaving them out is a decision, not a limit of the decoder.
+OVERLAID = tuple(t for t in TABLES if t not in ("ItemSparse", "Item"))
 
 # Forever's level cap. A rank's figure grows with the caster's level up to the rank's own
 # MaxLevel, and the client writes 70 there on rows that came down from a later expansion:
@@ -132,7 +148,6 @@ VERIFY_DESC = {
     "Master of Defense": "a 100% chance",                # ranks 50/100, row holds 0
     "Reckoning": "once every 1.5 sec",                   # $proccooldown
     "Improved Reincarnation": "by 20 min",               # 1200000 ms, and figure() without %g
-    "Mental Dexterity": "100% of your Intellect",        # TRAIT_HOTFIX: the file says 150
     # MaxLevel 70 on a row in a game that stops at 60: see LEVEL_CAP.
     "Dire Bear Form": "Attack Power by 180",
 }
@@ -142,6 +157,28 @@ VERIFY_DESC = {
 VERIFY_RANK = {"Bloodthrill": "Rank 2 of 2", "Feral Instinct": "Rank 3 of 3",
                "Blackout": "Rank 1 of 5", "Holy Shield": "Rank 1 of 4"}
 
+# WHAT THE HOTFIX OVERLAY HAS TO BE SEEN DOING. Each line is a figure the game applies by
+# hotfix, with Blizzard's own post behind it, that the client file of the day did not hold:
+# (entry, field) -> text the field must contain once the overlay is applied.
+#
+# THREE STATES, AND ONLY ONE OF THEM FAILS. (1) The overlay was skipped: nothing here is
+# checked, because the index is then the base client and says so. (2) The base client reads
+# the figure by itself, because a later file shipped the hotfix: the line has done its job
+# and RETIRES, printing a note to delete it, and never fails. (3) The overlay is applied,
+# the base client does not hold the figure, and the entry does not show it: FAIL. That is
+# either the overlay no longer reading a record it used to, or Blizzard changing the same
+# spell again, and both want a person before the page moves.
+#
+# Stormstrike: "Stormstrike weapon damage reduced to 100% (was 150%)" and its cooldown to
+# 8 seconds, Enhancement changes of 2026-11-12, while build 70938's file says 150% and 6.
+# Mental Dexterity: "Intellect to Attack Power conversion ratio reduced to 33/66/100% (was
+# 50/100/150%)", same day, on the talent's rank curve (the chip shows the last rank).
+VERIFY_HOTFIX = {
+    ("Stormstrike", "desc"): "100% weapon damage",
+    ("Stormstrike", "cooldown"): "8 sec cooldown",
+    ("Mental Dexterity", "desc"): "100% of your Intellect",
+}
+
 # EVERY ROW BELOW WAS A DEFECT. Read by hand out of build 1.60.1.70707, one id per name, and
 # each is the row SkillLineAbility gives the class that trains it. Before the rule in
 # resolve() these rendered a creature, a trainer or another rank (the 2026-10-31 audit
@@ -150,8 +187,10 @@ VERIFY_RANK = {"Bloodthrill": "Rank 2 of 2", "Feral Instinct": "Rank 3 of 3",
 # either way the chip must not republish in silence. Checked after enrichment, because
 # the swap that caused all this runs there. A (name, class) key reads by_class.
 #
-# These pin the row and not its figures. Life Tap's row reads 30 Health where the game
-# says 60: an October hotfix changed its rider 18182, and chips stay on the base client.
+# These pin the row and not its figures. Life Tap's row read 30 Health where the game
+# said 60: an October hotfix changed its rider 18182, and until the hotfix overlay of
+# 2026-11-13 chips stayed on the base client. A figure a hotfix sets belongs in
+# VERIFY_HOTFIX, which knows the overlay can be absent; a row id belongs here.
 #
 # MUTILATE MOVED, AND THE PIN WAS WHAT WAS STALE. Through 70755 the client held a level-30
 # rank 1 (1310705/1310706/1310707) under the level-40 row 399956, then "Rank 2". Build
@@ -209,24 +248,18 @@ VERIFY_STAT = {("Heroic Strike", "cost"): "15 Rage", ("Backstab", "cost"): "60 E
 # the trait tables.
 DESC_WRONG: dict[str, str] = {}
 
-# A TALENT LADDER BLIZZARD HOTFIXED AFTER THE CLIENT FILE WAS CUT. Chips read the base
-# client (see VERIFY_ROW on Life Tap), and a hotfix that lives only in the server's cache
-# normally just means a tooltip that lags and a page that says so. This table is for the
-# one case where reading the client correctly makes the lag WORSE than reading it badly.
-# Mental Dexterity's ladder in build 70938 is 50/100/150% and Blizzard's November 12
-# hotfix made it 33/66/100% ("Intellect to Attack Power conversion ratio reduced to
-# 33/66/100% (was 50/100/150%)", Forever hotfix thread). The spell row's stale base
-# points happen to hold 100, so before the trait pass the chip agreed with the game by
-# accident, and after it the chip would say 150% beside six lines of prose saying 100%.
+# A TALENT LADDER PINNED BY HAND TO WHAT A HOTFIX MADE IT. EMPTY SINCE 2026-11-13, when the
+# hotfix overlay took the job over (see hotfix_overlay.py). It held one row for one day:
+# Mental Dexterity, whose ladder in build 70938's file is 50/100/150% and which Blizzard
+# hotfixed to 33/66/100% on November 12. That change is three CurvePoint rows in the
+# server's cache, the overlay reads them, and VERIFY_HOTFIX holds it to the figure.
 #
-# Keyed by TraitDefinition id and effect index: (the ladder the client must still hold,
-# the ladder the game applies). It is applied ONLY while the client reads the first, so a
-# build that ships the hotfix retires the entry by itself, and main() says which of the
-# three states each entry is in. Not a general overlay: that is the open design question
-# in the 2026-11-13 audit, and this is one row with a Blizzard post behind it.
-TRAIT_HOTFIX: dict[tuple[int, int], tuple[tuple[float, ...], tuple[float, ...]]] = {
-    (134216, 0): ((50, 100, 150), (33, 66, 100)),      # Mental Dexterity, Shaman
-}
+# Kept as a mechanism for the case the overlay cannot reach: a hotfix that is not a table
+# row at all. Keyed by TraitDefinition id and effect index: (the ladder the client must
+# still hold, the ladder the game applies). An entry is applied ONLY while the tables read
+# the first, so a build (or an overlay) that carries the change retires it, and main()
+# prints which of the three states each entry is in.
+TRAIT_HOTFIX: dict[tuple[int, int], tuple[tuple[float, ...], tuple[float, ...]]] = {}
 
 # SkillRaceClassInfo.ClassMask, the only table that says which CLASS a skill line
 # belongs to. Needed because the display names collide: skill lines 257 and 267 are
@@ -268,7 +301,8 @@ VERIFY_CLASS = {("Deflection", "hunter"): 19295, ("Deflection", "paladin"): 2006
 #
 # THESE ASSERT THE ROW, NOT THE FIGURE. The base client still reads 2% on Ruthless where
 # Blizzard's October 26 racial pass makes it 1%, and it still carries Savage and Earth Fury,
-# which that pass removed: hotfixes reach neither wago.tools nor this index. So the notes
+# which that pass removed: hotfixes do not reach wago.tools, and reached this index only
+# from 2026-11-13, and only on a night the overlay is applied. So the notes
 # below say only which racial a row is. A figure written here is one a future client
 # would falsify, and the id is what a regression would change. A name the guides stop
 # using is skipped, not failed: that is an edit to the prose, not a broken resolver.
@@ -434,9 +468,30 @@ def latest_build() -> str:
     return builds[PRODUCT][0]["version"]
 
 
+class Guard(Exception):
+    """A VERIFY table disagrees with what was resolved. The message is the verdict's."""
+
+
+# The hotfix cache being laid over the tables, or None for the base client alone. Module
+# level because table() is called from forty places that have no business knowing.
+OVERLAY: hotfix_overlay.Overlay | None = None
+_TABLES: dict[tuple[str, str], list[dict]] = {}
+
+
+def base_table(name: str, build: str) -> list[dict]:
+    """One client table as wago.tools exports it, fetched once a run. Rows are read-only."""
+    if (name, build) not in _TABLES:
+        raw = fetch(f"{API}/db2/{name}/csv?build={build}").decode("utf-8", "replace")
+        _TABLES[name, build] = list(csv.DictReader(io.StringIO(raw)))
+    return _TABLES[name, build]
+
+
 def table(name: str, build: str) -> list[dict]:
-    raw = fetch(f"{API}/db2/{name}/csv?build={build}").decode("utf-8", "replace")
-    return list(csv.DictReader(io.StringIO(raw)))
+    """A client table as the game applies it: the file, under any hotfix overlay in force."""
+    rows = base_table(name, build)
+    if OVERLAY is not None and name in OVERLAID:
+        return OVERLAY.apply(name, rows)
+    return rows
 
 
 def norm(s: str) -> str:
@@ -1735,14 +1790,14 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
     for name, want in VERIFY_RACIAL.items():
         got = entries.get(name, {}).get("id")
         if name in entries and got != want:
-            verdict(f"FAIL -- racial resolution broke: {name} resolved to {got}, "
-                    f"expected {want}")
+            raise Guard(f"racial resolution broke: {name} resolved to {got}, "
+                        f"expected {want}")
 
     for (name, cls), want in VERIFY_CLASS.items():
         got = entries.get(name, {}).get("by_class", {}).get(cls, {}).get("id")
         if name in entries and got != want:
-            verdict(f"FAIL -- class resolution broke: {name} for {cls} resolved to "
-                    f"{got}, expected {want}")
+            raise Guard(f"class resolution broke: {name} for {cls} resolved to "
+                        f"{got}, expected {want}")
 
     # Enrich every spell and talent with what a tooltip shows. Items are skipped: their
     # facts live on different tables and the chip for one is a link, not a stat block.
@@ -1848,20 +1903,6 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
                 sub.pop("school", None)
 
     report = {
-        "total": len(names),
-        "matched": len(entries),
-        "unmatched": unmatched,
-        "spells": sum(1 for e in entries.values() if e["kind"] == "spell"),
-        "items": sum(1 for e in entries.values() if e["kind"] == "item"),
-        "talents": sum(1 for e in entries.values() if e["kind"] == "talent"),
-        "levelled": sum(1 for e in entries.values() if e["level"]),
-        # Per-class entries point at DIFFERENT spells, so they have their own icons.
-        # Missing them left five chips naming a file that was never fetched -- caught by
-        # build_guides.py's lost_icon notice, which is why that notice exists.
-        "icons": ({e["icon"] for e in entries.values() if e.get("icon")}
-                  | {d["icon"] for e in entries.values()
-                     for d in (e.get("by_class") or {}).values() if d.get("icon")}),
-        "described": sum(1 for e in entries.values() if e.get("desc")),
         "racials": racials,
         "traits": traits,
         "trees": len(set(tree_class.values())),
@@ -1878,6 +1919,155 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         "known": set(spell_name_of),
     }
     return entries, report
+
+
+def tally(entries: dict) -> dict:
+    """The counts the closing lines print, over the entries that are actually written."""
+    return {
+        "matched": len(entries),
+        "spells": sum(1 for e in entries.values() if e["kind"] == "spell"),
+        "items": sum(1 for e in entries.values() if e["kind"] == "item"),
+        "talents": sum(1 for e in entries.values() if e["kind"] == "talent"),
+        "levelled": sum(1 for e in entries.values() if e["level"]),
+        # Per-class entries point at DIFFERENT spells, so they have their own icons.
+        # Missing them left five chips naming a file that was never fetched -- caught by
+        # build_guides.py's lost_icon notice, which is why that notice exists.
+        "icons": ({e["icon"] for e in entries.values() if e.get("icon")}
+                  | {d["icon"] for e in entries.values()
+                     for d in (e.get("by_class") or {}).values() if d.get("icon")}),
+        "described": sum(1 for e in entries.values() if e.get("desc")),
+    }
+
+
+def guards(entries: dict, rep: dict, build: str) -> str | None:
+    """Every VERIFY table against one set of entries: the first failure in words, or None."""
+    for name, want in VERIFY.items():
+        got = entries.get(name, {}).get("level")
+        if got != want:
+            return f"rank rule broke: {name} resolved to level {got}, guides say {want}"
+
+    for name, figure in VERIFY_DESC.items():
+        got = entries.get(name, {}).get("desc")
+        # Blank is a failure too. This read `if got and ...`, so the one regression a
+        # stricter resolver is most likely to cause, a template it stops reading, passed.
+        if name in entries and figure not in (got or ""):
+            return (f"description resolver broke: {name} rendered {got!r}, "
+                    f"which does not contain {figure!r} as the guides state")
+
+    for name, want in VERIFY_RANK.items():
+        got = entries.get(name, {}).get("rank")
+        if name in entries and got != want:
+            return f"rank label broke: {name} is labelled {got!r}, expected {want!r}"
+
+    for key, want in VERIFY_ROW.items():
+        name, cls = key if isinstance(key, tuple) else (key, None)
+        e = entries.get(name)
+        # A class with no row of its own is shown the default, so that is what is checked.
+        got = e and (e.get("by_class", {}).get(cls, e) if cls else e).get("id")
+        if e and got != want:
+            if want not in rep["known"]:
+                return (f"a pinned row left the client: {key} was pinned to {want}, "
+                        f"which build {build} no longer carries; it now resolves to {got}. "
+                        f"Read that row, then update VERIFY_ROW and the prose")
+            return f"row selection broke: {key} resolved to {got}, expected {want}"
+
+    if rep["trees"] != len(CLASS_BY_MASK):
+        return (f"talent trees unread: {rep['trees']} of {len(CLASS_BY_MASK)} classes "
+                f"have a trait tree in build {build}, so talent rows went unchecked")
+
+    for (name, field), want in VERIFY_STAT.items():
+        got = entries.get(name, {}).get(field)
+        if name in entries and got != want:
+            return f"tooltip stat broke: {name} {field} is {got!r}, expected {want!r}"
+    return None
+
+
+# One row of an entry: the default one an entry's own keys spell out, or one class's.
+NOT_ROW = ("by_class", "uses", "hotfix")
+
+
+def overlaid(base: dict, hot: dict) -> tuple[dict, list[str], list[str], list[str]]:
+    """Settle the entries resolved under the hotfix overlay against the base client's.
+
+    Returns (entries, names that differ from the base client, names kept on the base
+    client's text, one printable line per difference).
+
+    A ROW THAT LOSES ITS TEXT TO A HOTFIX KEEPS THE BASE CLIENT'S ROW, whole. A hotfixed
+    template can use a token nothing here can read: Maelstrom Weapon's gained a proc
+    chance written `${($mws*$s2/60)*100}%`, on the reader's weapon speed, and resolve_desc
+    rightly refuses it. Taken at its word the overlay would trade a true sentence for an
+    empty tooltip. The whole row goes back and not the text alone, because a hotfixed
+    cooldown over the base client's sentence would be a tooltip describing two versions
+    of the spell. Same for a name the overlay stops resolving at all: the base entry stays.
+    A row that had no text to begin with has nothing to lose and takes the hotfix.
+
+    Every row taken from the overlay carries `"hotfix": true`, on the entry for its
+    default row and inside `by_class` for a class's own.
+    """
+    def row(r: dict) -> dict:
+        return {k: v for k, v in r.items() if k not in NOT_ROW}
+
+    def settle(b: dict | None, h: dict) -> tuple[dict, str]:
+        if b is None:
+            return {**row(h), "hotfix": True}, "hotfix"
+        if row(b) == row(h):
+            return row(b), "same"
+        if b.get("desc") and not h.get("desc"):
+            return row(b), "base"
+        return {**row(h), "hotfix": True}, "hotfix"
+
+    def said(b: dict | None, r: dict) -> str:
+        if b is None:
+            return "new under the overlay"
+        moved = [f"{k} {b.get(k)!r} -> {r.get(k)!r}" for k in sorted(set(row(b)) | set(row(r)))
+                 if b.get(k) != r.get(k)]
+        return "; ".join(moved)
+
+    out: dict[str, dict] = {}
+    differ: list[str] = []
+    kept: list[str] = []
+    lines: list[str] = []
+    for name in sorted(set(base) | set(hot)):
+        b, h = base.get(name), hot.get(name)
+        if h is None:
+            out[name] = b
+            kept.append(name)
+            lines.append(f"{name}: does not resolve under the overlay; the base client's "
+                         f"entry is kept")
+            continue
+        e, state = settle(b, h)
+        states = {state}
+        if state == "hotfix":
+            lines.append(f"{name}: {said(b, e)}")
+        elif state == "base":
+            lines.append(f"{name}: the hotfixed text does not resolve; the base client's "
+                         f"row is kept")
+        e["uses"] = h.get("uses", (b or {}).get("uses"))
+        was = (b or {}).get("by_class") or {}
+        if state == "base" and not h.get("by_class"):
+            per = was
+        else:
+            per = {}
+            for cls, sub in (h.get("by_class") or {}).items():
+                per[cls], st = settle(was.get(cls) if b else None, sub)
+                states.add(st)
+                if st == "hotfix":
+                    lines.append(f"{name} ({cls}): {said(was.get(cls), per[cls])}")
+                elif st == "base":
+                    lines.append(f"{name} ({cls}): the hotfixed text does not resolve; "
+                                 f"the base client's row is kept")
+        if per:
+            e["by_class"] = dict(sorted(per.items()))
+        # Keys in the order resolve() wrote them, so an entry the overlay did not touch is
+        # byte-identical in spells.json and a diff of that file shows only what moved.
+        order = list(b if state == "base" else h)
+        out[name] = {**{k: e[k] for k in order if k in e},
+                     **{k: v for k, v in e.items() if k not in order}}
+        if "hotfix" in states:
+            differ.append(name)
+        if "base" in states:
+            kept.append(name)
+    return out, differ, kept, lines
 
 
 def raw_blp(blp: bytes, Image):
@@ -1934,7 +2124,8 @@ def input_stamp(build: str, names: dict[str, int]) -> str:
 
     The six DB2 tables are ~10 MB. A daily routine that pulls them only to discover nothing
     moved is the wrong shape, so the no-op path is decided from the client build and the
-    chip list alone -- the only two inputs. Same reasoning as the brain index's stamp.
+    chip list alone -- the only two inputs the CLIENT side has. The hotfix cache is the
+    third input and is compared separately, by its own digest: see overlay_state().
     """
     h = hashlib.sha256(build.encode())
     h.update("\0".join(sorted(names)).encode())
@@ -1947,11 +2138,84 @@ def stamp_of(build: str, entries: dict) -> str:
     return h.hexdigest()[:12]
 
 
+# THE OVERLAY IS OPTIONAL, AND THAT IS WHAT MAKES IT SAFE TO PUBLISH UNATTENDED. It is a
+# second upstream, it moves several times a day, and it is somebody else's server. So:
+#
+#   no usable cache      The listing is unreachable, has no file for THIS build (a new
+#                        client build always arrives before its first cache), or the file
+#                        does not parse. The index is built on the base client, exactly as
+#                        before the overlay existed, and the run prints
+#                        `hotfix-overlay: SKIPPED -- <reason>`. Never a FAIL.
+#   ... and nothing      If the client and the chip list have not moved either, there is
+#   else moved           nothing to rebuild and the index is LEFT ALONE, overlay and all.
+#                        A night Raidbots is down must not flip Stormstrike back to the
+#                        file's 150% and forward again the night after.
+#   a usable cache       resolve() runs twice, on the base tables and on the overlaid
+#                        ones, and overlaid() settles the two entry by entry. The run
+#                        prints `hotfix-overlay: APPLIED -- N entr(ies) differ ...`, each
+#                        entry taken from the overlay carries `"hotfix": true`, and the
+#                        file's `overlay` block records which cache it was.
+#   a guard fails        The VERIFY tables are checked on the base entries first (a FAIL
+#   under the overlay    there is the old FAIL) and again on the settled ones. Failing only
+#                        the second time is a FAIL too, worded as the overlay's: a hotfix
+#                        moved a figure the guides state, or a record was misread, and
+#                        either way the previous index stays up until a person has looked.
+#                        `--no-overlay` builds without it.
+#
+# WHAT COUNTS AS "THE CACHE MOVED". Raidbots uploads a new file every half hour, almost
+# always for items and quests. Rebuilding nightly for that would republish a new
+# `generated` stamp every night for nothing, so the test is a digest of the cached rows of
+# the tables this file reads (Overlay.digest), stored in spells.json. The file is only
+# downloaded when the listing's push or record count differs from the one recorded.
+def overlay_state(build: str, prior: dict, skip: bool) -> tuple[dict | None, object, str, bool]:
+    """(the cache listed for this build, its Overlay if it was loaded, why not, moved)."""
+    was = prior.get("overlay") or {}
+    if skip:
+        return None, None, "--no-overlay was given", False
+    try:
+        found = hotfix_overlay.locate(build)
+    except hotfix_overlay.Unavailable as e:
+        return None, None, str(e), False
+    if (was.get("digest") and prior.get("build") == build
+            and (was.get("pushes"), was.get("records")) == (found["pushes"], found["records"])):
+        return found, None, "", False
+    try:
+        overlay = hotfix_overlay.load(found, OVERLAID)
+    except hotfix_overlay.Unavailable as e:
+        return None, None, str(e), False
+    return found, overlay, "", overlay.digest != was.get("digest") or prior.get("build") != build
+
+
+def cache_words(meta: dict) -> str:
+    return (f"cache build {meta['cache_build']}, {meta['pushes']} pushes, "
+            f"{hotfix_overlay.when(meta['created'])}")
+
+
+def standing_overlay(prior: dict, found: dict | None, why: str) -> str:
+    """The `hotfix-overlay:` line for a run that leaves the index as it is."""
+    was = prior.get("overlay") or {}
+    held = (f"{len(was.get('entries', []))} entr(ies) differ from the base client "
+            f"({cache_words(was)})" if was.get("state") == "applied" else "")
+    if why:
+        return (f"SKIPPED -- {why}" + (f"; the index was not rebuilt and still carries "
+                                        f"the overlay it was built with: {held}" if held else ""))
+    if not held:
+        return (f"SKIPPED -- {was.get('reason', 'the index was built without one')}; "
+                f"the cache has not moved since, rebuild with --force to try it again")
+    newer = ("" if not found or found["created"] == was.get("created") else
+             f"; Raidbots' newest cache ({found['pushes']} pushes, "
+             f"{hotfix_overlay.when(found['created'])}) moves no row the index reads")
+    return f"APPLIED -- {held}; unchanged since the index was built{newer}"
+
+
 def main() -> None:
+    global OVERLAY
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--status", action="store_true", help="report, change nothing")
     ap.add_argument("--force", action="store_true", help="rebuild even if unchanged")
     ap.add_argument("--build", default="", help="pin a client build instead of the latest")
+    ap.add_argument("--no-overlay", action="store_true",
+                    help="build on the base client alone, without the server hotfix cache")
     args = ap.parse_args()
 
     if not SRC.is_dir():
@@ -1976,64 +2240,115 @@ def main() -> None:
           f"({len(names) - len(talents)} abilities, {len(talents)} talents)")
 
     fresh = input_stamp(build, names)
-    current = prior.get("inputs") == fresh
+    try:
+        found, overlay, why, moved = overlay_state(build, prior, args.no_overlay)
+    except Exception as e:  # noqa: BLE001 -- nothing about the overlay may stop the index
+        found, overlay, moved = None, None, False
+        why = f"reading the cache raised {e.__class__.__name__}: {e}"
+    current = prior.get("inputs") == fresh and not moved
 
     if args.status:
         if current:
+            print(f"hotfix-overlay: {standing_overlay(prior, found, why)}")
             verdict(f"OK -- already current at build {build}, {len(prior.get('entries', {}))} entries")
-        why = ("client moved to " + build if prior.get("build") != build
-               else "the chip list changed")
-        verdict(f"STALE -- {why}; index was built at {prior.get('build') or 'none'}")
+        reason = ("client moved to " + build if prior.get("build") != build
+                  else "the chip list changed" if prior.get("inputs") != fresh
+                  else "the server hotfix cache moved")
+        print(f"hotfix-overlay: " + (f"SKIPPED -- {why}" if why else
+              f"PENDING -- a rebuild would read cache build {found['build']}, "
+              f"{found['pushes']} pushes, {hotfix_overlay.when(found['created'])}"))
+        verdict(f"STALE -- {reason}; index was built at {prior.get('build') or 'none'}")
 
     if current and not args.force:
+        print(f"hotfix-overlay: {standing_overlay(prior, found, why)}")
         verdict(f"OK -- already current at build {build}, {len(prior.get('entries', {}))} entries")
 
+    # ---- the base client, as it always was ------------------------------------
     try:
         entries, rep = resolve(names, talents, build)
+    except Guard as e:
+        print(f"hotfix-overlay: SKIPPED -- the base client did not build, so nothing was overlaid")
+        verdict(f"FAIL -- {e}")
     except (urllib.error.URLError, ValueError, KeyError) as e:
+        print(f"hotfix-overlay: SKIPPED -- the base client did not build, so nothing was overlaid")
         verdict(f"FAIL -- rebuild failed, previous index still in place: {e}")
+    broke = guards(entries, rep, build)
+    if broke:
+        print(f"hotfix-overlay: SKIPPED -- the base client did not build, so nothing was overlaid")
+        verdict(f"FAIL -- {broke}")
 
-    for name, want in VERIFY.items():
-        got = entries.get(name, {}).get("level")
-        if got != want:
-            verdict(f"FAIL -- rank rule broke: {name} resolved to level {got}, guides say {want}")
+    # ---- the same again under the server's hotfixes ----------------------------
+    base, notes, differ, kept = entries, [], [], []
+    record: dict = {}
+    if found and not overlay and not why:
+        try:     # the listing matched what the index holds, so the file was not fetched yet
+            overlay = hotfix_overlay.load(found, OVERLAID)
+        except hotfix_overlay.Unavailable as e:
+            why = str(e)
+        except Exception as e:  # noqa: BLE001
+            why = f"reading the cache raised {e.__class__.__name__}: {e}"
+    if overlay:
+        words = (f"cache build {found['build']}, {found['pushes']} pushes, "
+                 f"{hotfix_overlay.when(found['created'])}")
+        failed = ""
+        try:
+            OVERLAY = overlay
+            hot, hot_rep = resolve(names, talents, build)
+            settled, differ, kept, notes = overlaid(base, hot)
+            failed = guards(settled, hot_rep, build) or ""
+        except Guard as e:
+            failed = str(e)
+        except Exception as e:  # noqa: BLE001 -- a decode nobody foresaw is still not a FAIL
+            why = f"applying the cache raised {e.__class__.__name__}: {e}"
+        finally:
+            OVERLAY = None
+        # The retiring guards. See VERIFY_HOTFIX for the three states.
+        retired = []
+        if not why and not failed:
+            for (name, field), want in VERIFY_HOTFIX.items():
+                if name not in settled:
+                    continue
+                if want in (base.get(name, {}).get(field) or ""):
+                    retired.append(f"{name} {field}: the base client now reads {want!r} "
+                                   f"without the overlay; remove it from VERIFY_HOTFIX")
+                elif want not in (settled[name].get(field) or ""):
+                    failed = (f"hotfix guard broke: {name} {field} is "
+                              f"{settled[name].get(field)!r} and should contain {want!r}, "
+                              f"which is what the game applies by hotfix")
+                    break
+        if failed:
+            print(f"hotfix-overlay: REFUSED -- {words}; see the verdict below")
+            verdict(f"FAIL -- under the server hotfix overlay ({words}): {failed}. The base "
+                    f"client alone passes every guard, so a hotfix moved this or the overlay "
+                    f"misread a record. Previous index still in place; --no-overlay builds "
+                    f"without it")
+        if not why:
+            entries, rep = settled, hot_rep
+            notes = notes + retired
+            done, refused = overlay.coverage()
+            record = {
+                "state": "applied", "cache_build": found["build"], "pushes": found["pushes"],
+                "records": found["records"], "created": found["created"],
+                "digest": overlay.digest, "entries": differ, "kept_base": kept,
+                "tables": done, "refused": refused,
+                "rows": {t: {k: v for k, v in i.items() if k != "unproven" and v}
+                         for t, i in sorted(overlay.tables.items())
+                         if any(i.get(k) for k in ("changed", "added", "removed", "ignored",
+                                                   "unreadable"))},
+            }
 
-    for name, figure in VERIFY_DESC.items():
-        got = entries.get(name, {}).get("desc")
-        # Blank is a failure too. This read `if got and ...`, so the one regression a
-        # stricter resolver is most likely to cause, a template it stops reading, passed.
-        if name in entries and figure not in (got or ""):
-            verdict(f"FAIL -- description resolver broke: {name} rendered {got!r}, "
-                    f"which does not contain {figure!r} as the guides state")
+    if not record:
+        # The digest is kept even here: a cache that could be read but not applied is not
+        # tried again every night until it moves (or someone passes --force).
+        record = {"state": "skipped", "reason": why}
+        if overlay:
+            record.update(digest=overlay.digest, pushes=found["pushes"],
+                          records=found["records"])
 
-    for name, want in VERIFY_RANK.items():
-        got = entries.get(name, {}).get("rank")
-        if name in entries and got != want:
-            verdict(f"FAIL -- rank label broke: {name} is labelled {got!r}, expected {want!r}")
-
-    for key, want in VERIFY_ROW.items():
-        name, cls = key if isinstance(key, tuple) else (key, None)
-        e = entries.get(name)
-        # A class with no row of its own is shown the default, so that is what is checked.
-        got = e and (e.get("by_class", {}).get(cls, e) if cls else e).get("id")
-        if e and got != want:
-            if want not in rep["known"]:
-                verdict(f"FAIL -- a pinned row left the client: {key} was pinned to {want}, "
-                        f"which build {build} no longer carries; it now resolves to {got}. "
-                        f"Read that row, then update VERIFY_ROW and the prose")
-            verdict(f"FAIL -- row selection broke: {key} resolved to {got}, expected {want}")
-
-    if rep["trees"] != len(CLASS_BY_MASK):
-        verdict(f"FAIL -- talent trees unread: {rep['trees']} of {len(CLASS_BY_MASK)} classes "
-                f"have a trait tree in build {build}, so talent rows went unchecked")
-
-    for (name, field), want in VERIFY_STAT.items():
-        got = entries.get(name, {}).get(field)
-        if name in entries and got != want:
-            verdict(f"FAIL -- tooltip stat broke: {name} {field} is {got!r}, expected {want!r}")
-
+    counts = tally(entries)
+    unmatched = sorted(set(names) - set(entries))
     stamp = stamp_of(build, entries)
-    written, failed = pull_icons(rep["icons"], build)
+    written, failed_icons = pull_icons(counts["icons"], build)
 
     DATA.parent.mkdir(parents=True, exist_ok=True)
     DATA.write_text(json.dumps({
@@ -2042,25 +2357,47 @@ def main() -> None:
         "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "stamp": stamp,
         "inputs": fresh,
+        # Which server hotfix cache was laid over the client tables, or why none was.
+        # An entry (or a by_class row) taken from it carries "hotfix": true.
+        "overlay": record,
         "entries": {k: {kk: vv for kk, vv in v.items() if kk != "uses"}
                     for k, v in sorted(entries.items())},
     }, indent=1) + "\n", encoding="utf-8")
 
-    pct = 100 * rep["matched"] / rep["total"]
-    print(f"matched: {rep['matched']}/{rep['total']} ({pct:.1f}%) -- "
-          f"{rep['spells']} spell, {rep['talents']} talent, {rep['items']} item, "
-          f"{rep['levelled']} with a level, {rep['described']} with a description, "
+    pct = 100 * counts["matched"] / len(names)
+    print(f"matched: {counts['matched']}/{len(names)} ({pct:.1f}%) -- "
+          f"{counts['spells']} spell, {counts['talents']} talent, {counts['items']} item, "
+          f"{counts['levelled']} with a level, {counts['described']} with a description, "
           f"{rep['racials']} resolved on a racial skill line, "
           f"{rep['traits']} moved to the row a talent tree names")
     for line in rep["renamed"]:
         print(f"renamed: {line}")
-    for line in rep["hotfixed"]:
+    for line in rep["hotfixed"] + notes:
         print(f"hotfix:  {line}")
-    if rep["unmatched"]:
-        print(f"unmatched ({len(rep['unmatched'])}): {', '.join(rep['unmatched'])}")
-    if failed:
-        print(f"icons that would not convert ({len(failed)}): {failed}")
-    verdict(f"REBUILT -- {rep['matched']} entr(ies), {len(rep['icons'])} icon(s) "
+    if unmatched:
+        print(f"unmatched ({len(unmatched)}): {', '.join(unmatched)}")
+    if failed_icons:
+        print(f"icons that would not convert ({len(failed_icons)}): {failed_icons}")
+    if record["state"] == "applied":
+        left = [t for t in TABLES if t not in OVERLAID]
+        print(f"overlay: {len(record['tables'])} table(s) read through the cache; not "
+              f"overlaid: {', '.join(left)} (by decision)"
+              + "".join(f"; {t} ({r})" for t, r in record["refused"].items())
+              + "".join(f"; {t}: {i[k]} cached row(s) {what}"
+                        for t, i in record["rows"].items()
+                        for k, what in (("ignored", "carry a value in a column no known "
+                                         "row proves, which was not applied"),
+                                        ("unreadable", "do not fit the table's layout"))
+                        if i.get(k)))
+        print(f"hotfix-overlay: APPLIED -- {len(differ)} entr(ies) differ from the base "
+              f"client ({cache_words(record)})"
+              + (f"; {len(kept)} kept on the base client's text because the hotfixed "
+                 f"text does not resolve ({', '.join(kept)})" if kept else "")
+              + (f"; {len(record['refused'])} table(s) left on the base client "
+                 f"({', '.join(record['refused'])})" if record["refused"] else ""))
+    else:
+        print(f"hotfix-overlay: SKIPPED -- {record['reason']}; built on the base client")
+    verdict(f"REBUILT -- {counts['matched']} entr(ies), {len(counts['icons'])} icon(s) "
             f"({written} new) from build {build}; stamp {stamp}")
 
 

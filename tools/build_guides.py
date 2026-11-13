@@ -90,8 +90,11 @@ SPELLS = {}
 # and the alternative is threading a parameter through every one of them.
 PAGE_CLASS = ""
 
-# What one spell row contributes to an entry; see for_page().
-ROW_FIELDS = ("rank", "cast", "range", "duration", "school", "cost", "cooldown", "desc")
+# What one spell row contributes to an entry; see for_page(). `hotfix` is the index's mark
+# that a row was read through the server hotfix cache (build_spell_index.py, overlaid()):
+# nothing here draws it yet, and it is listed so a class row never inherits the default's.
+ROW_FIELDS = ("rank", "cast", "range", "duration", "school", "cost", "cooldown", "desc",
+              "hotfix")
 CHIP_STATS = {"linked": 0, "plain": 0, "noicon": 0, "code_linked": 0, "code_plain": 0,
               "lost_icon": set(), "unknown": set()}
 

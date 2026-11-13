@@ -26,6 +26,15 @@ unreachable wago.tools to a broken rank rule to a mislinked chip, exits zero. A 
 that trusted the exit code would cheerfully publish a broken rebuild. Every tool below
 is judged by its verdict line and nothing else.
 
+THE HOTFIX OVERLAY HAS A LINE OF ITS OWN AND IT NEVER DECIDES ANYTHING HERE. Since
+2026-11-13 `build_spell_index.py` lays Raidbots' server hotfix cache over the client
+tables and prints `hotfix-overlay: APPLIED|SKIPPED|REFUSED -- ...` before its verdict.
+That line is carried into `result.json` (`overlay_verdict`), the commit message and this
+run's own closing line, so a night the cache was unreachable is visible, but the publish
+is judged by `spell-index:` alone: SKIPPED beside REBUILT publishes the base client's
+reading, and REFUSED only ever comes beside a `spell-index: FAIL`, which stops the run as
+any other FAIL does. A chip the overlay moves is a moved chip, counted like any other.
+
 WHAT IT REFUSES TO DO. It aborts before touching anything if the tree is not in a
 state it can reason about:
   - local `main` not level with `origin/main`  -> someone has unpushed work; pushing
@@ -79,12 +88,21 @@ def git(*args: str, check: bool = True) -> str:
     return p.stdout.strip()
 
 
-def tool(name: str, prefix: str) -> str:
-    """Run one build tool; return its verdict line (the last line starting `prefix:`)."""
+def tool(name: str, prefix: str, also: dict[str, str] | None = None) -> str:
+    """Run one build tool; return its verdict line (the last line starting `prefix:`).
+
+    `also` maps a second line prefix to the report key it is recorded under. Such a line
+    is information: it is written into result.json before anything here can stop the run,
+    and it never changes what the run does.
+    """
     print(f"-- {name}", flush=True)
     p = subprocess.run((PY, f"tools/{name}"), cwd=ROOT, capture_output=True, text=True)
     out = (p.stdout or "") + (p.stderr or "")
     print(out, end="" if out.endswith("\n") else "\n", flush=True)
+    for extra, key in (also or {}).items():
+        found = [ln.strip() for ln in out.splitlines() if ln.strip().startswith(f"{extra}:")]
+        report[key] = (found[-1][len(extra) + 1:].strip() if found
+                       else f"{name} printed no {extra}: line")
     lines = [ln.strip() for ln in out.splitlines() if ln.strip().startswith(f"{prefix}:")]
     line = lines[-1][len(prefix) + 1:].strip() if lines else ""
     report["steps"].append({"tool": name, "exit": p.returncode, "verdict": line})
@@ -129,14 +147,16 @@ def paths_of(out: str) -> list[str]:
     return found
 
 
-def entries_at(ref: str) -> dict:
+def index_at(ref: str) -> dict:
+    """The whole spells.json a commit holds, or {} if it has none that reads."""
     p = subprocess.run(("git", "show", f"{ref}:guides/_data/spells.json"),
                        cwd=ROOT, capture_output=True, text=True)
     if p.returncode != 0:
         return {}
     try:
-        return json.loads(p.stdout).get("entries", {}) or {}
-    except (ValueError, AttributeError):
+        doc = json.loads(p.stdout)
+        return doc if isinstance(doc, dict) else {}
+    except ValueError:
         return {}
 
 
@@ -163,17 +183,20 @@ def main() -> None:
                 f"{' ...' if len(dirty) > 5 else ''}. Nothing attempted.",
                 dirty=dirty)
 
-    before = entries_at("HEAD")
+    held = index_at("HEAD")
+    before = held.get("entries") or {}
     advisory("check_talent_builds.py", "check-talents")
 
     # ---- rebuild the index ---------------------------------------------------
-    v = tool("build_spell_index.py", "spell-index")
+    v = tool("build_spell_index.py", "spell-index", also={"hotfix-overlay": "overlay_verdict"})
     report["index_verdict"] = v
+    ov = f"hotfix-overlay: {report['overlay_verdict']}"
     if v.startswith("OK"):
-        verdict(f"CURRENT -- the client has not moved. {v}")
+        verdict(f"CURRENT -- nothing the index is built from has moved, so nothing was "
+                f"rebuilt. {v}. {ov}")
     if v.startswith("FAIL"):
         verdict(f"FAIL -- the index rebuild failed and the previous index is still in "
-                f"place, so the live site is unchanged. build_spell_index said: {v}")
+                f"place, so the live site is unchanged. build_spell_index said: {v}. {ov}")
     if not v.startswith("REBUILT"):
         verdict(f"FAIL -- unrecognised verdict from build_spell_index.py: {v!r}")
 
@@ -192,9 +215,18 @@ def main() -> None:
         verdict(f"CURRENT -- the index rebuilt but produced no change at all. {v}")
 
     try:
-        after = json.loads((ROOT / "guides/_data/spells.json").read_text()).get("entries", {})
-    except (OSError, ValueError) as e:
+        built = json.loads((ROOT / "guides/_data/spells.json").read_text())
+        after = built.get("entries", {})
+    except (OSError, ValueError, AttributeError) as e:
         verdict(f"FAIL -- rebuilt spells.json is unreadable: {e}")
+    # Which upstream this rebuild answered: a new client build, or the same build with
+    # the server's hotfixes moved under it. Only the commit subject depends on it.
+    now, was = built.get("overlay") or {}, held.get("overlay") or {}
+    what = ("the client" if built.get("build") != held.get("build")
+            else "the server's hotfixes" if now.get("state") == "applied" and now != was
+            else "the base client alone, the hotfix cache being unreadable"
+            if was.get("state") == "applied" and now.get("state") != "applied"
+            else "the guides' own chip list")
 
     added = sorted(set(after) - set(before))
     removed = sorted(set(before) - set(after))
@@ -223,17 +255,18 @@ def main() -> None:
         if pages:
             bits.append(f"{len(pages)} page(s) re-rendered")
         summary = "; ".join(bits) or f"{len(changed)} file(s)"
-        subject = "guides: the spell index catches up to the client, and the pages moved with it"
+        subject = f"guides: the spell index catches up to {what}, and the pages moved with it"
     else:
         summary = ("no entry, icon or page changed -- only the index's own metadata "
-                   "header (build, generated, stamp, inputs)")
-        subject = "guides: the spell index catches up to the client, and nothing else moved"
+                   "header (build, generated, stamp, inputs, overlay)")
+        subject = f"guides: the spell index catches up to {what}, and nothing else moved"
     report["summary"] = summary
 
     # ---- commit and push ----------------------------------------------------
     git("add", "--", *OWNED)
     body = (f"{subject}\n\n"
             f"Unattended `spell-index` routine. {v}\n"
+            f"{ov}\n"
             f"check_guides: {cv}\n\n"
             f"What changed: {summary}.\n\n"
             f"Published unattended by the owner's decision of 2026-10-15\n"
@@ -253,7 +286,7 @@ def main() -> None:
     report["pushed"] = True
 
     kind = "CONTENT" if content else "METADATA ONLY"
-    verdict(f"PUBLISHED ({kind}) -- {sha} pushed to origin/main. {summary}. {v}")
+    verdict(f"PUBLISHED ({kind}) -- {sha} pushed to origin/main. {summary}. {v}. {ov}")
 
 
 if __name__ == "__main__":

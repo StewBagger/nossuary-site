@@ -1,9 +1,82 @@
 {
  "build": "1.60.1.70938",
  "product": "wowf",
- "generated": "2026-11-13T11:42:24+00:00",
- "stamp": "f659aecc30bf",
- "inputs": "a3f34ed4e937",
+ "generated": "2026-11-13T12:23:22+00:00",
+ "stamp": "1da61c0505de",
+ "inputs": "a2f8a1939d01",
+ "overlay": {
+  "state": "applied",
+  "cache_build": 70938,
+  "pushes": 5934,
+  "records": 92323,
+  "created": "2026-11-13T11:27:05.389Z",
+  "digest": "2c12f0e880b819bd",
+  "entries": [
+   "Flametongue Weapon",
+   "Mental Dexterity",
+   "Stormstrike",
+   "Windfury Weapon"
+  ],
+  "kept_base": [
+   "Maelstrom Weapon"
+  ],
+  "tables": [
+   "CurvePoint",
+   "SkillLine",
+   "SkillLineAbility",
+   "SkillLineXTraitTree",
+   "SkillRaceClassInfo",
+   "Spell",
+   "SpellAuraOptions",
+   "SpellCastTimes",
+   "SpellCooldowns",
+   "SpellDescriptionVariables",
+   "SpellDuration",
+   "SpellEffect",
+   "SpellLevels",
+   "SpellMisc",
+   "SpellName",
+   "SpellPower",
+   "SpellRadius",
+   "SpellRange",
+   "SpellTargetRestrictions",
+   "SpellXDescriptionVariables",
+   "Talent",
+   "TraitDefinition",
+   "TraitDefinitionEffectPoints",
+   "TraitNode",
+   "TraitNodeEntry",
+   "TraitNodeXTraitNodeEntry"
+  ],
+  "refused": {},
+  "rows": {
+   "CurvePoint": {
+    "records": 1333,
+    "changed": 7,
+    "added": 5
+   },
+   "Spell": {
+    "records": 1338,
+    "changed": 12
+   },
+   "SpellAuraOptions": {
+    "records": 117,
+    "changed": 1
+   },
+   "SpellCooldowns": {
+    "records": 76,
+    "changed": 1
+   },
+   "SpellEffect": {
+    "records": 1038,
+    "changed": 4
+   },
+   "TraitDefinitionEffectPoints": {
+    "records": 35,
+    "added": 1
+   }
+  }
+ },
  "entries": {
   "Abolish Disease": {
    "kind": "spell",
@@ -3872,15 +3945,6 @@
    "cooldown": "6 sec cooldown",
    "desc": "Instantly sears the target with fire, causing 29 Fire damage immediately and 28 Fire damage over 12 sec."
   },
-  "Flame Throwing": {
-   "kind": "talent",
-   "id": 11100,
-   "level": null,
-   "icon": 135815,
-   "cast": "Instant",
-   "desc": "Increases the range of your Fire spells by 6 yards.",
-   "rank": "Rank 2 of 2"
-  },
   "Flamestrike": {
    "kind": "spell",
    "id": 2120,
@@ -3903,7 +3967,8 @@
    "cast": "Instant",
    "school": "Fire",
    "cost": "30 Mana",
-   "desc": "Imbue the Shaman's weapon with fire. Each hit causes 4.71 to 18 additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes."
+   "desc": "Imbue the Shaman's weapon with fire. Each hit causes 4.71 to 18 additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes.",
+   "hotfix": true
   },
   "Flank au Poivre": {
    "kind": "item",
@@ -6993,7 +7058,8 @@
    "icon": 136055,
    "cast": "Instant",
    "desc": "Increases your Attack Power by an amount equal to 100% of your Intellect.",
-   "rank": "Rank 3 of 3"
+   "rank": "Rank 3 of 3",
+   "hotfix": true
   },
   "Mental Quickness": {
    "kind": "talent",
@@ -9898,8 +9964,9 @@
    "duration": "12 sec",
    "school": "Physical",
    "cost": "8% of base Mana",
-   "cooldown": "6 sec cooldown",
-   "desc": "Instantly strike for 150% weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec."
+   "cooldown": "8 sec cooldown",
+   "desc": "Instantly strike for 100% weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec.",
+   "hotfix": true
   },
   "Stranglevine": {
    "kind": "item",
@@ -11188,7 +11255,8 @@
    "cast": "Instant",
    "school": "Nature",
    "cost": "90 Mana",
-   "desc": "Imbue the Shaman's weapon with wind. Each hit has a 20% chance of granting you 2 extra attacks with 104 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes."
+   "desc": "Imbue the Shaman's weapon with wind. Each hit has a 20% chance of granting you 2 extra attacks with 104 extra melee attack power. Lasts for 60 minutes.",
+   "hotfix": true
   },
   "Wing Clip": {
    "kind": "spell",
