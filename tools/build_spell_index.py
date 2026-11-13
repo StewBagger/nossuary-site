@@ -63,7 +63,16 @@ TABLES = ("SpellName", "SpellMisc", "SpellLevels", "SkillLineAbility", "ItemSpar
           "SpellXDescriptionVariables", "SkillLine", "SkillRaceClassInfo",
           # Forever's own talent trees. See the trait pass in resolve().
           "SkillLineXTraitTree", "TraitNode", "TraitNodeXTraitNodeEntry", "TraitNodeEntry",
-          "TraitDefinition")
+          "TraitDefinition",
+          # What each rank of a tree talent is worth. See TRAIT POINTS in load_details().
+          "TraitDefinitionEffectPoints", "CurvePoint")
+
+# Forever's level cap. A rank's figure grows with the caster's level up to the rank's own
+# MaxLevel, and the client writes 70 there on rows that came down from a later expansion:
+# Dire Bear Form's passive is base 600 Health plus 32 a level over 40 to "70", which printed
+# 1,560 Health and 210 Attack Power where a level-60 druid has 1,240 and 180. Nobody in
+# this game is ever level 61, so the span stops here.
+LEVEL_CAP = 60
 
 # Spot-checks against the guides' own prose. A rank rule that breaks these is wrong.
 # These are not decoration: the first rule tried here (lowest non-zero BaseLevel) put
@@ -111,7 +120,27 @@ VERIFY_DESC = {
     "Piercing Howl": "within 10 yds",              # $a2 on a row holding one effect
     "Power Word: Shield": "absorbing 48 damage",   # $?a14748[..][..], on rank 1 alone
     "Mana Shield": "Drains 2 mana per damage",     # $e
+    # A tree talent's figures come off TraitDefinitionEffectPoints at its last rank, not
+    # off the spell row (see TRAIT POINTS). Each of these read something else from the
+    # row -- 15%, 1%, "by 6", 3%, 2.5 sec, nothing, nothing -- and each figure below is one
+    # Blizzard's notes or Icy Veins' tree data state for the maxed talent. If the trait
+    # tables stop loading, these are what say so.
+    "Bloodthrill": "a 20% chance",                       # ranks 10/20, row holds 15
+    "Feral Instinct": "by 30%",                          # ranks 10/20/30, row holds 3
+    "Shredding Attacks": "Shred ability by 18",          # 6 a rank over 3 ranks
+    "Flash of Steel": "by 2.0 sec",                      # 0.4 sec a rank, row holds 2.5
+    "Master of Defense": "a 100% chance",                # ranks 50/100, row holds 0
+    "Reckoning": "once every 1.5 sec",                   # $proccooldown
+    "Improved Reincarnation": "by 20 min",               # 1200000 ms, and figure() without %g
+    "Mental Dexterity": "100% of your Intellect",        # TRAIT_HOTFIX: the file says 150
+    # MaxLevel 70 on a row in a game that stops at 60: see LEVEL_CAP.
+    "Dire Bear Form": "Attack Power by 180",
 }
+
+# The label that goes with those figures. A tree talent is shown at its last rank and has
+# to say so; a spell with a row per rank still links rank 1 (DR-0013).
+VERIFY_RANK = {"Bloodthrill": "Rank 2 of 2", "Feral Instinct": "Rank 3 of 3",
+               "Blackout": "Rank 1 of 5", "Holy Shield": "Rank 1 of 4"}
 
 # EVERY ROW BELOW WAS A DEFECT. Read by hand out of build 1.60.1.70707, one id per name, and
 # each is the row SkillLineAbility gives the class that trains it. Before the rule in
@@ -148,6 +177,8 @@ VERIFY_ROW: dict[object, int] = {
     # `Improved Whirlwind` a tier-set bonus, "Decrease the rage cost of Whirlwind by 3".
     ("Bloom", "druid"): 1328621, ("Improved Whirlwind", "warrior"): 1310315,
     ("Vindication", "paladin"): 9452, ("Shield Specialization", "paladin"): 20150,
+    # The pet's own ability, not the Beast Training lesson that teaches it: see taught().
+    ("Claw", "hunter"): 16827, ("Swipe", "hunter"): 1264494, ("Dash", "hunter"): 23099,
     "Holy Nova": 15237, "Power Word: Shield": 17, "Prayer of Healing": 596,
     "Psychic Scream": 8122, "Silence": 15487,
     "Chain Heal": 1064, "Chain Lightning": 421, "Flametongue Weapon": 8024,
@@ -166,25 +197,35 @@ VERIFY_STAT = {("Heroic Strike", "cost"): "15 Rage", ("Backstab", "cost"): "60 E
                ("Concussive Shot", "cast"): "Instant", ("Scorpid Sting", "cast"): "Instant",
                ("Viper Sting", "cast"): "Instant"}
 
-# Two spells whose template resolves to a figure the guides directly contradict. Both
-# read $sN/$mN off an effect whose aura is the engine's dummy (4) and whose base points
-# are a flag rather than a measurement -- Flurry's rank row carries 1 where the buff it
-# applies carries 30, and Forever's own Flurry row 15088 proves it by shipping a
-# hardcoded "by 30%" against the same base points of 1. A general rule for this does not
-# exist: Anger Management ("Generates 1 Rage every 3 sec", warrior-arms.md) and Magic
-# Absorption ("restore 1% of your total mana") read the same shape and are correct. So
-# these are named, with their evidence, rather than guessed at by a heuristic.
-DESC_WRONG = {
-    "Flurry": "warrior-fury.md: 25% total attack speed (30% before the nerf), not 1%",
-    "Shatter": "mage-frost.md: 50% crit at 3/3, so rank 1 is ~17%, not 1%",
-    # The other direction of the same defect: base points of 100 where the sentence makes
-    # 100 absurd on its own terms. Forever ships ONE spell row per talent and the ranks
-    # the guides list (mage-arcane.md walks Arcane Concentration 1 to 5) are nowhere in
-    # it, so the figure is a placeholder, not rank 5's reading. 100 is a real percentage
-    # elsewhere -- Moonkin Form "doubles your Omen of Clarity proc rate" (druid.md) is
-    # base points of 100 and correct -- which is why these are named, not filtered.
-    "Arcane Concentration": "a 100% chance of Clearcasting would make every mage spell free",
-    "Naturalist": "its own rank-1 cast-time cut of 0.1 sec against +100% to all damage",
+# A description that resolves to a figure the guides directly contradict is named here and
+# shown without text. EMPTY SINCE 2026-11-13, and the four names it held are the lesson.
+# Flurry, Shatter, Arcane Concentration and Naturalist all read $m1 off base points that
+# were "a flag rather than a measurement" (1, 1, 100, 100), and the note here said no
+# general rule existed. One did: those are tree talents, and a tree talent's figures are
+# on TraitDefinitionEffectPoints, not on its spell row (see TRAIT POINTS in
+# load_details). Read from there they are 30%, 50%, 10% and 0.5 sec / 10% at full rank,
+# which is what the guides and Icy Veins' tree data say. Kept as a mechanism because a
+# wrong number is still worse than none; a name added here should first be looked up in
+# the trait tables.
+DESC_WRONG: dict[str, str] = {}
+
+# A TALENT LADDER BLIZZARD HOTFIXED AFTER THE CLIENT FILE WAS CUT. Chips read the base
+# client (see VERIFY_ROW on Life Tap), and a hotfix that lives only in the server's cache
+# normally just means a tooltip that lags and a page that says so. This table is for the
+# one case where reading the client correctly makes the lag WORSE than reading it badly.
+# Mental Dexterity's ladder in build 70938 is 50/100/150% and Blizzard's November 12
+# hotfix made it 33/66/100% ("Intellect to Attack Power conversion ratio reduced to
+# 33/66/100% (was 50/100/150%)", Forever hotfix thread). The spell row's stale base
+# points happen to hold 100, so before the trait pass the chip agreed with the game by
+# accident, and after it the chip would say 150% beside six lines of prose saying 100%.
+#
+# Keyed by TraitDefinition id and effect index: (the ladder the client must still hold,
+# the ladder the game applies). It is applied ONLY while the client reads the first, so a
+# build that ships the hotfix retires the entry by itself, and main() says which of the
+# three states each entry is in. Not a general overlay: that is the open design question
+# in the 2026-11-13 audit, and this is one row with a Blizzard post behind it.
+TRAIT_HOTFIX: dict[tuple[int, int], tuple[tuple[float, ...], tuple[float, ...]]] = {
+    (134216, 0): ((50, 100, 150), (33, 66, 100)),      # Mental Dexterity, Shaman
 }
 
 # SkillRaceClassInfo.ClassMask, the only table that says which CLASS a skill line
@@ -317,7 +358,7 @@ SCHOOLS = {1: "Physical", 2: "Holy", 4: "Fire", 8: "Nature",
 #                  $xN chain targets  $qN misc value  $bN per combo point  $eN amplitude
 #                  $FN chain amplitude (Execute's damage per point of Rage)
 #   per spell      $d duration  $n proc charges  $h proc chance  $i max targets
-#                  $u max stacks  $r range
+#                  $u max stacks  $r range  $proccooldown internal cooldown
 #   directives     ${...} arithmetic   $/N;<ref> divide   $*N;<ref> multiply
 #                  $lone:many;   $gmale:female;   ${...}.N -- print to N decimal places
 #                  $?a1[yes][no] -- the reader's own state, see branches() in resolve_desc
@@ -331,6 +372,8 @@ SCHOOLS = {1: "Physical", 2: "Holy", 4: "Fire", 8: "Nature",
 EFFECT_TOKENS = "smMSoatxqbewF"   # $<letter>N -- indexed on one of the spell's effects
 SPELL_TOKENS = "dnhiur"           # $<letter>  -- a property of the whole spell, never indexed
 DUMMY_AURA = 4               # the engine's scripted-talent aura; its base points are a flag
+LEARN_SPELL = 36             # SpellEffect.Effect: the row teaches EffectTriggerSpell
+PASSIVE = 0x40               # SpellMisc.Attributes_0: nothing the player casts
 
 # Gear a build cannot see. Attack power is printed the way the client prints it, as
 # "(20 + 22.5% of attack power)", because that ratio IS the fact: Revenge at 22.5% and
@@ -353,6 +396,7 @@ TOKEN_RE = re.compile(r"""\$(?:
     | [lL][^:;$\s]*:[^;$]*;        # $lpoint:points; -- singular:plural
     | g[^:;$\s]*:[^;$]*;           # $ghis:her; -- male:female
     | <[^>]*>                      # $<mult> -- a named client variable
+    | proccooldown(?![a-zA-Z0-9])  # $proccooldown -- the spell's internal cooldown
     | (?:apm|AP|rap|RAP|%s)(?![a-zA-Z0-9])   # gear the build cannot see
     | \d*[a-zA-Z]\d*               # $s1  $m2  $12536s1  $d  $n
 )""" % GEAR_TOKENS, re.X)
@@ -417,6 +461,10 @@ def chips() -> tuple[dict[str, int], set[str]]:
     IS a spell in SpellName, so asking the client would call every talent a spell.
 
     A name used both ways is treated as an ability; the chip form is the stronger signal.
+
+    Since 2026-11-13 the backtick set is only what the PAGES call a talent. resolve() has
+    the client's talent trees and overrules the markup where the tables contradict it:
+    see marked_talent() there.
     """
     counts: dict[str, int] = defaultdict(int)
     chip_names: set[str] = set()
@@ -448,11 +496,14 @@ def load_details(build: str) -> dict:
     # Per effect, every field a $ token can read. Base points alone were enough while the
     # resolver only understood $sN; $oN needs the tick period, $aN the radius.
     effects: dict[int, dict[int, dict]] = defaultdict(dict)
+    teaches: dict[int, int] = {}
     for r in table("SpellEffect", build):
         try:
             sid, idx = int(r["SpellID"]), int(r["EffectIndex"])
         except (ValueError, TypeError, KeyError):
             continue
+        if int(number(r, "Effect")) == LEARN_SPELL and number(r, "EffectTriggerSpell"):
+            teaches.setdefault(sid, int(number(r, "EffectTriggerSpell")))
 
         effects[sid][idx] = {
             "base": number(r, "EffectBasePointsF"),
@@ -467,6 +518,7 @@ def load_details(build: str) -> dict:
             # Variance is the width of a rolled value as a share of its middle: Revenge's
             # 22 at 0.1538 is the client's "20 to 24", which is what $m1 and $M1 read.
             "half": abs(number(r, "EffectBasePointsF")) * number(r, "Variance") / 2,
+            "variance": number(r, "Variance"),
             "per": number(r, "EffectPointsPerResource"),
             "amp": number(r, "EffectAmplitude"),
             "chain_amp": number(r, "EffectChainAmplitude"),
@@ -484,14 +536,62 @@ def load_details(build: str) -> dict:
             low, high = int(number(r, "BaseLevel")), int(number(r, "MaxLevel"))
         except (ValueError, TypeError, KeyError):
             continue
+        high = min(high, LEVEL_CAP)
         if high > low:
             for e in effects.get(sid, {}).values():
                 e["base"] += e["grow"] * (high - low)
+
+    # TRAIT POINTS: WHAT A RANK OF A TREE TALENT IS WORTH IS NOT ON ITS SPELL ROW. Forever
+    # ships one spell per talent and puts the ladder in TraitDefinitionEffectPoints: per
+    # talent definition and effect, a curve whose x is the rank and whose y REPLACES the
+    # effect's base points (OperationType 0, the only one this build uses, on all 663
+    # rows). The base points left on the spell row are whatever the designer last typed
+    # there, and they are no rank's value: Bloodthrill's row holds 15 where the ranks are
+    # 10 and 20, Two-Handed Weapon Specialization's holds 1 against 2/4/6, Feral Instinct's
+    # 3 against 10/20/30, Flash of Steel's -2500 ms against 400 a rank, and Enrage, Master
+    # of Defense and Lingering Rage hold 0, which is why those three had no text at all.
+    # Until 2026-11-13 this file read the row, so 462 talent definitions were open to
+    # printing a figure no player ever sees; nine class audits found the first forty.
+    curve: dict[int, dict[int, float]] = defaultdict(dict)
+    for r in table("CurvePoint", build):
+        try:
+            at = number(r, "Pos_0")
+            if at == int(at):
+                curve[int(r["CurveID"])][int(at)] = number(r, "Pos_1")
+        except (ValueError, TypeError, KeyError):
+            continue
+    trait_points: dict[int, dict[int, dict[int, float]]] = defaultdict(dict)
+    for r in table("TraitDefinitionEffectPoints", build):
+        try:
+            if int(number(r, "OperationType")) != 0:
+                continue      # a multiply or anything newer is not a reading made here
+            points = curve.get(int(r["CurveID"]))
+            if points:
+                trait_points[int(r["TraitDefinitionID"])][int(r["EffectIndex"])] = points
+        except (ValueError, TypeError, KeyError):
+            continue
+    hotfixed: list[str] = []
+    for (definition, idx), (was, now) in TRAIT_HOTFIX.items():
+        held = trait_points.get(definition, {}).get(idx, {})
+        ladder = tuple(held.get(rank) for rank in range(1, len(was) + 1))
+        if ladder == tuple(float(v) for v in was):
+            trait_points[definition][idx] = {rank: float(v) for rank, v in enumerate(now, 1)}
+            hotfixed.append(f"talent definition {definition} effect {idx + 1} shown as "
+                            f"{'/'.join(f'{v:g}' for v in now)}, the client file still "
+                            f"holds {'/'.join(f'{v:g}' for v in was)}")
+        elif ladder == tuple(float(v) for v in now):
+            hotfixed.append(f"talent definition {definition} effect {idx + 1}: the client "
+                            f"file now holds the hotfixed ladder; remove it from TRAIT_HOTFIX")
+        else:
+            hotfixed.append(f"talent definition {definition} effect {idx + 1}: the client "
+                            f"file holds {ladder}, neither side of the pin; NOT applied, "
+                            f"read the row and update TRAIT_HOTFIX")
 
     # Charges and proc chance are per spell, not per effect, and live on their own table.
     charges: dict[int, int] = {}
     chance: dict[int, int] = {}
     stacks: dict[int, int] = {}
+    proc_cd: dict[int, float] = {}
     for r in table("SpellAuraOptions", build):
         try:
             sid = int(r["SpellID"])
@@ -501,6 +601,7 @@ def load_details(build: str) -> dict:
             charges[sid] = int(number(r, "ProcCharges"))
             chance[sid] = int(number(r, "ProcChance"))
             stacks[sid] = int(number(r, "CumulativeAura"))
+            proc_cd[sid] = number(r, "ProcCategoryRecovery")
 
     targets: dict[int, int] = {}
     for r in table("SpellTargetRestrictions", build):
@@ -604,7 +705,8 @@ def load_details(build: str) -> dict:
 
     return {"effects": effects, "desc": desc, "cost": cost, "cd": cd, "misc": misc,
             "charges": charges, "chance": chance, "targets": targets, "stacks": stacks,
-            "vars": variables}
+            "vars": variables, "trait_points": trait_points, "proc_cd": proc_cd,
+            "teaches": teaches, "hotfixed": hotfixed}
 
 
 def secs(ms: float) -> str:
@@ -614,7 +716,10 @@ def secs(ms: float) -> str:
 def figure(v: float) -> str:
     """One resolved number as a tooltip prints it, with -0.0 normalised away."""
     v = round(v, 4)
-    return f"{v if v else 0.0:g}"
+    # Never %g: it turns 1200000 into "1.2e+06", which arithmetic() cannot read back, and
+    # that silently blanked every talent whose template divides a cooldown held in
+    # milliseconds. Improved Reincarnation's 20 minutes is ${-1200000/-60000}.
+    return (f"{v if v else 0.0:.4f}".rstrip("0").rstrip(".")) or "0"
 
 
 def printed(v: float) -> str:
@@ -689,7 +794,14 @@ def arithmetic(expr: str) -> float | None:
     return None if v is None or at != len(toks) else v
 
 
-def resolve_desc(sid: int, d: dict) -> str | None:
+def points_at(d: dict, definition: int | None, rank: int) -> dict[int, float]:
+    """The base points a tree talent's own effects hold at one rank. See TRAIT POINTS."""
+    return {idx: ladder[rank]
+            for idx, ladder in d["trait_points"].get(definition or 0, {}).items()
+            if rank in ladder}
+
+
+def resolve_desc(sid: int, d: dict, points: dict[int, float] | None = None) -> str | None:
     """Render one spell's description, or None if any token is left unresolved.
 
     Blizzard's tooltip strings are templates: `$m2% weapon damage plus $s1 as Holy damage`.
@@ -706,6 +818,22 @@ def resolve_desc(sid: int, d: dict) -> str | None:
         return None
 
     working = 0  # >0 while computing a variable, see one()
+
+    def effect(spell: int, idx: int) -> dict | None:
+        """One effect row, with a tree talent's rank written over its base points.
+
+        `points` is this spell's own ladder at the rank being described and never another
+        spell's: a $<id>s1 that reaches into a different talent still reads that row.
+        """
+        e = d["effects"].get(spell, {}).get(idx)
+        if spell != sid or not points or idx not in points:
+            return e
+        e = dict(e or {"aura": 0, "period": 0.0, "radius": 0.0, "chain": 0, "misc": 0,
+                       "per": 0.0, "amp": 0.0, "chain_amp": 0.0, "grow": 0.0,
+                       "variance": 0.0})
+        e["base"] = points[idx]
+        e["half"] = abs(points[idx]) * e.get("variance", 0.0) / 2
+        return e
 
     def branches(body: str) -> str:
         """Settle every $?test[yes][no], which may chain and nest.
@@ -794,7 +922,7 @@ def resolve_desc(sid: int, d: dict) -> str | None:
         return float(round(e["base"] - e["half"])), float(round(e["base"] + e["half"]))
 
     def effect_value(spell: int, letter: str, n: int, signed: bool) -> float | None:
-        e = d["effects"].get(spell, {}).get(n - 1)
+        e = effect(spell, n - 1)
         if e is None and letter == "a":
             # Piercing Howl's template says $a2 and its row holds one effect: the template
             # outlived a second effect. A radius belongs to the spell's area, so any
@@ -936,6 +1064,14 @@ def resolve_desc(sid: int, d: dict) -> str | None:
         if PLURAL_RE.fullmatch(tok):
             return tok  # settled below, once the number in front of it is known
 
+        if tok == "$proccooldown":
+            # SpellAuraOptions.ProcCategoryRecovery, in ms. Two rows use it and both can be
+            # checked from outside: Reckoning's 1500 is the "once every 1.5 sec" and the
+            # Paladin's Shield Specialization's 3000 the "once every 3 sec" that Icy Veins'
+            # tree data prints for the same talents.
+            ms = d["proc_cd"].get(sid, 0.0)
+            return secs(ms) if ms > 0 else tok
+
         named = re.fullmatch(r"\$<(\w+)>", tok)
         if named:
             v = variable(named.group(1))
@@ -950,10 +1086,13 @@ def resolve_desc(sid: int, d: dict) -> str | None:
         if bare:
             # A bare value on a rolled effect prints its range. The midpoint is a number the
             # client never shows: Explosive Trap reads "105 to 135", not 120.
-            e = d["effects"].get(int(bare.group(1) or sid), {}).get(int(bare.group(2) or 1) - 1)
+            e = effect(int(bare.group(1) or sid), int(bare.group(2) or 1) - 1)
             if e and e["half"]:
                 low, high = rolled(e)
-                return f"{figure(abs(low))} to {figure(abs(high))}"
+                # A spread that rounds away is one number: a Bear's rank 1 Swipe is 4
+                # with a variance of a fifth of a point, and it read "4 to 4 damage".
+                if low != high:
+                    return f"{figure(abs(low))} to {figure(abs(high))}"
         return printed(v)
 
     def one_signed(m: re.Match) -> str:
@@ -1004,8 +1143,11 @@ def resolve_desc(sid: int, d: dict) -> str | None:
 DISPLAY = ("cast", "range", "duration", "school", "cost", "cooldown", "desc")
 
 
-def present(sid: int, d: dict) -> dict:
-    """The display strings a tooltip shows. Absent facts are simply absent."""
+def present(sid: int, d: dict, points: dict[int, float] | None = None) -> dict:
+    """The display strings a tooltip shows. Absent facts are simply absent.
+
+    `points` is a tree talent's own ladder at the rank shown: see TRAIT POINTS.
+    """
     m = d["misc"].get(sid, {})
     out: dict[str, str] = {}
     if m:
@@ -1046,7 +1188,7 @@ def present(sid: int, d: dict) -> dict:
         out["cost"] = d["cost"][sid]
     if sid in d["cd"]:
         out["cooldown"] = f"{secs(d['cd'][sid])} sec cooldown"
-    desc = resolve_desc(sid, d)
+    desc = resolve_desc(sid, d, points)
     if desc:
         out["desc"] = desc
     return out
@@ -1129,6 +1271,7 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         return out
 
     icon: dict[int, int] = {}
+    passive: set[int] = set()
     for r in table("SpellMisc", build):
         try:
             sid, fid = int(r["SpellID"]), int(r["SpellIconFileDataID"] or 0)
@@ -1136,6 +1279,8 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
             continue
         if fid:
             icon.setdefault(sid, fid)
+        if int(number(r, "Attributes_0")) & PASSIVE:
+            passive.add(sid)
 
     # Items carry their own icon, on Item rather than ItemSparse -- ItemSparse holds the
     # names, Item holds the art, and a chip needs both.
@@ -1205,6 +1350,90 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         ladder = [rank_of[i] for i in ids if i in rank_of and kin(i, sid)]
         top = max(ladder or [rank_of[i] for i in ids if i in rank_of] or [mine])
         return f"Rank {mine} of {top}" if top > mine else f"Rank {mine}"
+
+    # The class talent trees, read here because selection needs them: see the trait pass
+    # further down for what they are and why they outrank every other table on a talent.
+    tree_class: dict[int, str] = {}
+    for r in table("SkillLineXTraitTree", build):
+        try:
+            holders = classes_of_line.get(int(r["SkillLineID"]), set())
+            if len(holders) == 1:
+                tree_class[int(r["TraitTreeID"])] = next(iter(holders))
+        except (ValueError, TypeError, KeyError):
+            continue
+    node_class: dict[int, str] = {}
+    for r in table("TraitNode", build):
+        try:
+            if int(r["TraitTreeID"]) in tree_class:
+                node_class[int(r["ID"])] = tree_class[int(r["TraitTreeID"])]
+        except (ValueError, TypeError, KeyError):
+            continue
+    definition_of: dict[int, int] = {}
+    max_ranks: dict[int, int] = {}
+    for r in table("TraitNodeEntry", build):
+        try:
+            definition_of[int(r["ID"])] = int(r["TraitDefinitionID"])
+            max_ranks[int(r["ID"])] = int(number(r, "MaxRanks"))
+        except (ValueError, TypeError, KeyError):
+            continue
+    defined: dict[int, tuple[int, str]] = {}
+    for r in table("TraitDefinition", build):
+        try:
+            defined[int(r["ID"])] = (int(r["SpellID"] or 0), r.get("OverrideName_lang") or "")
+        except (ValueError, TypeError, KeyError):
+            continue
+    tree_rows: dict[str, dict[str, int]] = defaultdict(dict)
+    # spell id -> class -> (talent definition, how many ranks the node takes). The
+    # definition is the key to the talent's per-rank figures: see TRAIT POINTS. Keyed by
+    # class as well because one spell can sit behind two definitions, and only the one a
+    # class's own tree reaches is that class's talent.
+    trait_at: dict[int, dict[str, tuple[int, int]]] = defaultdict(dict)
+    for r in table("TraitNodeXTraitNodeEntry", build):
+        try:
+            cls = node_class.get(int(r["TraitNodeID"]))
+            entry = int(r["TraitNodeEntryID"])
+            sid, shown = defined[definition_of[entry]]
+        except (ValueError, TypeError, KeyError):
+            continue
+        if cls and sid in spell_name_of:
+            tree_rows[norm(shown or spell_name_of[sid])][cls] = sid
+            trait_at[sid][cls] = (definition_of[entry], max_ranks.get(entry, 0))
+
+    # WHAT THE MARKUP CALLS A TALENT IS NOT ALWAYS ONE. Backticks meant "talent" when the
+    # pages were written, and since the 2026-11-13 rework they also mean "a name the index
+    # had no row for": trained spells (`Hamstring`, `Seal of Light`, `Cleanse`) and, on the
+    # profession pages, dozens of crafted items (`Baked Salmon`, `Elixir of Agility`).
+    # Taken at its word the markup sent every one down the talent path: the trained spell
+    # lost its level and wore the label "Talent", and the item resolved to its RECIPE, a
+    # spell with no text that every class can learn, so it came out as nine blank rows.
+    # The client can now say which names are talents, because it has the trees. So a
+    # backticked name stays a talent unless no tree holds it AND the tables show what it
+    # is instead: a spell some class trains at a level, or an item no class has a spell
+    # for. Those are resolved exactly as a [[chip]] of the same name would be. A name the
+    # tables say nothing about (a removed talent, a perk) is still taken as marked.
+    # `talents` is narrowed in place, so every later "a talent has no level" follows it.
+    def class_owned(i: int) -> bool:
+        return 0 < len(classes_of(i)) < len(CLASS_BY_MASK)
+
+    def marked_talent(name: str) -> bool:
+        key = norm(name)
+        if name not in talents:
+            return False
+        if key in tree_rows or key in talent_rank1:
+            # Talent.db2 is Classic's table (see Landmines) and proves nothing about
+            # Forever's trees, but it does say a name WAS a talent: `Improved Taunt` and
+            # `Piercing Ice` linger on a class line at "level 1", and without this they
+            # would read as spells a Warrior and a Mage train at level 1.
+            return True
+        sids = spell_ids.get(key, [])
+        # ... a spell the class CASTS. A passive on a class line is what a talent that
+        # left the trees looks like (`Magic Attunement`), and contradicts nothing.
+        if any(i in level and i in learnable and class_owned(i) and i not in passive
+               for i in sids):
+            return False
+        return not (item_ids.get(key) and not any(class_owned(i) for i in sids))
+
+    talents = {name for name in talents if marked_talent(name)}
 
     entries: dict[str, dict] = {}
     unmatched: list[str] = []
@@ -1285,14 +1514,36 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
             return ranked[0][2]
         return min(ids, key=lambda i: (i not in worded, i)) if ids else None
 
+    # THE ROW THAT TEACHES A PET IS NOT THE PET'S ABILITY. A Hunter's own skill line
+    # (Beast Training, ClassMask 4) holds one spell per rank of every pet ability, and
+    # that spell is the lesson: no cost, no cooldown, a 100-yard range, and either no
+    # text at all (`Claw`, `Dash`, `Charge`) or a sentence borrowed from the real row
+    # (`Swipe`, which read "4 to 4 damage"). The ability the pet uses sits on a
+    # "Pet - <family>" line that belongs to no class, so on a Hunter page the lesson won:
+    # `Claw` showed "Rank 5 of 8" and nothing else beside prose about pet damage.
+    # The lesson names what it teaches -- its effect is LEARN_SPELL and the trigger is
+    # the pet's row -- so a class row that teaches a spell of its own name stands for it.
+    detail = load_details(build)
+
+    def taught(i: int) -> int:
+        to = detail["teaches"].get(i)
+        return to if to and norm(spell_name_of.get(to, "")) == norm(spell_name_of[i]) else i
+
     for name, e in entries.items():
         if e["kind"] == "item":
             continue
         cand = spell_ids.get(norm(name), [])
         by_cls: dict[str, list[int]] = defaultdict(list)
         for i in cand:
+            # A row every class can have says nothing about which class a page means.
+            # A profession recipe, a riding skill and a racial line all map to all nine,
+            # and counting them gave `Corruption` a blank row of its own on eight classes'
+            # pages (16985, in place of the Warlock's spell) and every crafted item nine.
+            if not class_owned(i):
+                continue
             for c in classes_of(i):
-                by_cls[c].append(i)
+                if taught(i) not in by_cls[c]:
+                    by_cls[c].append(taught(i))
         if len(by_cls) < 2:
             continue                      # one class or none -- the default entry is right
         per: dict[str, dict] = {}
@@ -1405,42 +1656,47 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
     # row (base points of 0, filled per rank at runtime) or behind the reader's level.
     # Like a racial-line row it is still the right row, and the no-text fallback below
     # must not trade it for a wrong row that happens to have a sentence.
-    tree_class: dict[int, str] = {}
-    for r in table("SkillLineXTraitTree", build):
-        try:
-            holders = classes_of_line.get(int(r["SkillLineID"]), set())
-            if len(holders) == 1:
-                tree_class[int(r["TraitTreeID"])] = next(iter(holders))
-        except (ValueError, TypeError, KeyError):
-            continue
-    node_class: dict[int, str] = {}
-    for r in table("TraitNode", build):
-        try:
-            if int(r["TraitTreeID"]) in tree_class:
-                node_class[int(r["ID"])] = tree_class[int(r["TraitTreeID"])]
-        except (ValueError, TypeError, KeyError):
-            continue
-    definition_of: dict[int, int] = {}
-    for r in table("TraitNodeEntry", build):
-        try:
-            definition_of[int(r["ID"])] = int(r["TraitDefinitionID"])
-        except (ValueError, TypeError, KeyError):
-            continue
-    defined: dict[int, tuple[int, str]] = {}
-    for r in table("TraitDefinition", build):
-        try:
-            defined[int(r["ID"])] = (int(r["SpellID"] or 0), r.get("OverrideName_lang") or "")
-        except (ValueError, TypeError, KeyError):
-            continue
-    tree_rows: dict[str, dict[str, int]] = defaultdict(dict)
-    for r in table("TraitNodeXTraitNodeEntry", build):
-        try:
-            cls = node_class.get(int(r["TraitNodeID"]))
-            sid, shown = defined[definition_of[int(r["TraitNodeEntryID"])]]
-        except (ValueError, TypeError, KeyError):
-            continue
-        if cls and sid in spell_name_of:
-            tree_rows[norm(shown or spell_name_of[sid])][cls] = sid
+    def trait_of(sid: int, cls: str | None) -> tuple[int, int] | None:
+        """The tree node behind a row, for the class a page belongs to or for no class.
+
+        With no class to ask for, the answer has to be the same whichever class holds the
+        node, or there is none.
+        """
+        held = trait_at.get(sid)
+        if not held:
+            return None
+        if cls in held:
+            return held[cls]
+        return next(iter(held.values())) if len(set(held.values())) == 1 else None
+
+    def as_talent(row: dict, name: str, sid: int, cls: str | None, relabel: bool) -> None:
+        """Enrich one row, reading a tree talent at the TOP of its own ladder.
+
+        THE TOP, AND SAID SO. A talent with one spell row has always been shown as the
+        row reads, and for most rows that is the maxed talent: the designer left the last
+        rank's figure in the base points, and the prose beside the chip talks about a
+        maxed talent ("`Bloodthrill` 2/2"). What was missing was any way to say which rank
+        that is, so those entries carried no label (DR-0013: "show no label rather than a
+        guessed one") and the rows whose base points are stale read as a plain
+        contradiction. The node's own MaxRanks settles both: the figure is the curve at
+        the last rank and the label is "Rank 5 of 5".
+
+        This does not touch DR-0013's rule for a spell with a row per rank. Those still
+        link rank 1 and say "Rank 1 of N": a node that points into such a ladder
+        (Blackout) is not found here, because the entry is the ladder's first row and the
+        node names its last.
+        """
+        node = trait_of(sid, cls)
+        row.update(present(sid, detail,
+                           points_at(detail, node[0], node[1]) if node else None))
+        if relabel:
+            row.pop("rank", None)
+            label = rank_label(name, sid)
+            if label:
+                row["rank"] = label
+        if node and node[1] > 1 and not (cls is None and name in racial_names) and (
+                "rank" not in row or points_at(detail, node[0], node[1])):
+            row["rank"] = f"Rank {node[1]} of {node[1]}"
 
     trait_names: set[str] = set()
     traits = 0
@@ -1490,7 +1746,6 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
 
     # Enrich every spell and talent with what a tooltip shows. Items are skipped: their
     # facts live on different tables and the chip for one is a link, not a stat block.
-    detail = load_details(build)
     for name, e in entries.items():
         if e["kind"] not in ("spell", "talent"):
             continue
@@ -1499,10 +1754,6 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
             e["id"] = FORCE_ID[name]
             e["icon"] = icon.get(e["id"], e.get("icon"))
             e["level"] = level.get(e["id"])
-            e.pop("rank", None)
-            label = rank_label(name, e["id"])
-            if label:
-                e["rank"] = label
         for key, sid in FORCE_ID.items():
             # A forced class entry may be the FIRST by_class entry this name has: a name
             # that collides with a creature ability rather than another class carries no
@@ -1510,7 +1761,7 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
             if isinstance(key, tuple) and key[0] == name:
                 e.setdefault("by_class", {})[key[1]] = {
                     "id": sid, "level": level.get(sid), "icon": icon.get(sid)}
-        e.update(present(e["id"], detail))
+        as_talent(e, name, e["id"], None, relabel=name in FORCE_ID)
 
         # A CANDIDATE WITH NO TEXT IS THE WRONG CANDIDATE. Selection goes by rank and
         # trainable level, neither of which knows whether the row carries a usable
@@ -1558,6 +1809,19 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
                     break
         if name in DESC_WRONG:
             e.pop("desc", None)  # see DESC_WRONG: the client figure contradicts the guides
+        # A RECIPE WITH NOTHING TO SAY IS THE ITEM. A recipe is learnable at a level, by
+        # everyone, so it passes for a trained spell, and it is the row that MAKES the
+        # thing the page names. Where the search above found the thing's own effect (the
+        # EZ-Thro bombs) that text is worth more than an item link and is kept; where it
+        # found nothing (`Emergency Field Cloak`) the chip was a spell link with an empty
+        # tooltip, and the item of the same name is what the reader meant.
+        own = item_ids.get(norm(name))
+        if (own and not e.get("desc") and e["kind"] == "spell" and not class_owned(e["id"])
+                and name not in racial_names and name not in FORCE_ID):
+            for field in DISPLAY + ("rank", "by_class"):
+                e.pop(field, None)
+            e.update(kind="item", id=min(own), level=None, icon=item_icon.get(min(own)))
+            continue
         if e["kind"] == "talent":
             # A talent is not trained at a level and its school is the engine's default
             # rather than a fact about the talent. Both read as noise in a tooltip, and
@@ -1572,16 +1836,13 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         # "two-handed melee weapons by 1%" inside the tooltip, beside prose correctly
         # saying 2% -- one build after the LINK was made class-aware (2026-10-07), the
         # description was still global. A reader sees a page contradicting itself.
-        for sub in (e.get("by_class") or {}).values():
+        for cls, sub in (e.get("by_class") or {}).items():
             sid = sub.get("id")
             if not sid:
                 continue
-            sub.update(present(sid, detail))
+            as_talent(sub, name, sid, cls, relabel=True)
             if name in DESC_WRONG:
                 sub.pop("desc", None)
-            label = rank_label(name, sid)
-            if label:
-                sub["rank"] = label
             if e["kind"] == "talent":
                 sub["level"] = None
                 sub.pop("school", None)
@@ -1604,6 +1865,7 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         "racials": racials,
         "traits": traits,
         "trees": len(set(tree_class.values())),
+        "hotfixed": detail["hotfixed"],
         # A pin made when a row had one name, read after the client gave it another.
         "renamed": sorted(
             f"{k[0] if isinstance(k, tuple) else k} is pinned to {v}, which the client "
@@ -1616,6 +1878,24 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         "known": set(spell_name_of),
     }
     return entries, report
+
+
+def raw_blp(blp: bytes, Image):
+    """Decode a BLP2 texture stored as uncompressed BGRA, which Pillow does not.
+
+    Header: "BLP2", a type word, then one byte each for encoding, alpha depth, alpha
+    encoding and mip flag, the width and height, and sixteen mip offsets. Encoding 3 is
+    four bytes a pixel, blue first, starting at the first offset.
+    """
+    import struct
+    if blp[:4] != b"BLP2" or blp[8] != 3:
+        raise ValueError("not an uncompressed BLP2 texture")
+    width, height = struct.unpack_from("<II", blp, 12)
+    start = struct.unpack_from("<I", blp, 20)[0]
+    pixels = blp[start:start + width * height * 4]
+    if not width or not height or len(pixels) != width * height * 4:
+        raise ValueError("truncated BLP2 texture")
+    return Image.frombytes("RGBA", (width, height), pixels, "raw", "BGRA")
 
 
 def pull_icons(fids: set[int], build: str) -> tuple[int, list[int]]:
@@ -1633,10 +1913,18 @@ def pull_icons(fids: set[int], build: str) -> tuple[int, list[int]]:
             continue
         try:
             blp = fetch(f"{API}/api/casc/{fid}?version={build}", timeout=60)
-            img = Image.open(io.BytesIO(blp)).convert("RGBA")
+            try:
+                img = Image.open(io.BytesIO(blp)).convert("RGBA")
+            except NotImplementedError:
+                # Pillow reads BLP2's palette and DXT encodings and refuses the third,
+                # plain BGRA ("Unknown BLP encoding 3"), with an exception that is none
+                # of the three caught below. The first crafted item whose icon is stored
+                # that way took the whole rebuild down with a traceback and no verdict
+                # line (2026-11-13, when the profession pages began naming items).
+                img = raw_blp(blp, Image)
             img.save(out, "WEBP", quality=88, method=6)
             written += 1
-        except (urllib.error.URLError, OSError, ValueError):
+        except (urllib.error.URLError, OSError, ValueError, NotImplementedError):
             failed.append(fid)
     return written, failed
 
@@ -1718,6 +2006,11 @@ def main() -> None:
             verdict(f"FAIL -- description resolver broke: {name} rendered {got!r}, "
                     f"which does not contain {figure!r} as the guides state")
 
+    for name, want in VERIFY_RANK.items():
+        got = entries.get(name, {}).get("rank")
+        if name in entries and got != want:
+            verdict(f"FAIL -- rank label broke: {name} is labelled {got!r}, expected {want!r}")
+
     for key, want in VERIFY_ROW.items():
         name, cls = key if isinstance(key, tuple) else (key, None)
         e = entries.get(name)
@@ -1761,6 +2054,8 @@ def main() -> None:
           f"{rep['traits']} moved to the row a talent tree names")
     for line in rep["renamed"]:
         print(f"renamed: {line}")
+    for line in rep["hotfixed"]:
+        print(f"hotfix:  {line}")
     if rep["unmatched"]:
         print(f"unmatched ({len(rep['unmatched'])}): {', '.join(rep['unmatched'])}")
     if failed:
