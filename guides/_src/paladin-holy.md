@@ -30,7 +30,7 @@ Two published orders reach the same kind of 51-point build. Pick by whether you 
 10. `Holy Power`, 5 points. Levels 47 to 51
 11. `Light's Vigil`, 1 point at level 52
 12. `Divine Intellect`, 5 points, then `Consecrated Ground`, 1 point, then `Improved Seals`, 2 points
-Wowhead's levelling and dungeon build, updated November 6, ends in the same 34/5/12 split. It spends 2 points on `Divine Precision` where Icy Veins spends them on `Improved Seals`.
+Wowhead's dungeon build, updated November 4, is the same 34/5/12 split. It spends 2 points on `Divine Precision` where Icy Veins spends them on `Improved Seals`. Its levelling build, updated November 6, is an interactive calculator on [its levelling page](https://www.wowhead.com/forever/guide/classes/paladin/holy/healer-leveling-tips); the text says only that `Reverence` first or `Pursuit of Justice` first *"end up at the same place"*.
 **Level 60, healing from the start: 31/8/12.** Icy Veins' `Light's Vigil` build order, published November 4, 2026 on its [Holy talents page](https://www.icy-veins.com/wow-forever/holy-paladin-healer-pve-spec-builds-talents). It reaches [[Holy Shock]] at 31 and the capstone at 40.
 1. `Spiritual Focus`, 5 points, then `Healing Light`, 3 points, then `Reverence`, 2 points. Levels 10 to 19
 2. `Illumination`, 5 points, then `Divine Favor`, 1 point. Levels 20 to 25

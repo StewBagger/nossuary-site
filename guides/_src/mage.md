@@ -32,7 +32,7 @@ Blizzard's own summary gives both halves. Mages *"remain one of the most powerfu
 **Is the rotation simple?** The level 20 rotations on the spec pages run five or six steps: a nuke, a freeze, a retreat, a wand finish.
 **Is it forgiving?** No *(ours)*. You have cloth armour, no self-heal, and mana that does not regenerate while you cast.
 **What carries you while levelling?** Conjured drink from level 4 and food from level 6, so you buy neither. [[Polymorph]] from 8 takes one enemy out of a fight.
-**Does it need a group?** No. Every spec levels solo. Icy Veins and Wowhead each publish a point-by-point order from 10 to 60 for all three specs, and the spec pages carry them.
+**Does it need a group?** No. Every spec levels solo. Icy Veins publishes a point-by-point order from 10 to 60 for all three specs and Wowhead a levelling build for each, and the spec pages cover them.
 :::
 ## Levelling milestones
 | Level | What you get |

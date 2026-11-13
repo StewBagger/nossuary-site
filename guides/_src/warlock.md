@@ -4,7 +4,7 @@ sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraf
 
 Warlock levels behind a demon. Forever split damage curses into Banes, so **you hold one Bane and one Curse on a target at the same time**, and [[Life Tap]] now grows with your Spirit.
 :::scope
-A guide to the live game, 1 to 60, on client 1.60.1.70938 with Blizzard's hotfixes through November 12. Mechanics come from Blizzard's posts and the client. Training levels are foreverchanges.pro's reading of the client. Talent orders are Wowhead's and Icy Veins' published levelling builds, named where used. What is still thin: no raid opens until December 9, so no raid log exists, and every level-60 rotation here is a guide's or a sim's. Blizzard tunes classes on Tuesdays. Hover tooltips read the base client and can lag a hotfix: where one differs from the text here, the text is right.
+A guide to the live game, 1 to 60, on client 1.60.1.70938 with Blizzard's hotfixes through November 12. Mechanics come from Blizzard's posts and the client. Training levels are foreverchanges.pro's reading of the client. Talent builds are Wowhead's and Icy Veins' published levelling builds, named where used. What is still thin: no raid opens until December 9, so no raid log exists, and every level-60 rotation here is a guide's or a sim's. Blizzard tunes classes on Tuesdays. Hover tooltips read the base client and can lag a hotfix: where one differs from the text here, the text is right.
 :::
 ## Which spec?
 | Spec | Role | Its strongest point | In one line |

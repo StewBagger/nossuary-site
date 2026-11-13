@@ -30,7 +30,7 @@ Both sites level through Retribution first for `Pursuit of Justice`, then come b
 11. `Anticipation`, 1 point, then `Shieldsworn`, 1 point at level 52
 12. `Anticipation`, 3 points, then `Sanctified Judgement`, 3 points
 13. `Sacred Arbiter`, 1 point, then `Toughness`, 1 point
-Wowhead's levelling build, updated November 6, is 0/32/19 by the same route: `Pursuit of Justice` at 21, then Protection. It drops `Anticipation` for `Vindication` and `Guardian's Favor`, on the grounds that Defense is worth less below raid bosses. Wowhead adds that a respec at 30 to pick up `Holy Shield` early slows you down but is a fair trade if you tank a lot of dungeons.
+Wowhead's levelling build, updated November 6, is an interactive calculator on [its levelling page](https://www.wowhead.com/forever/guide/classes/paladin/protection/tank-leveling-tips), and its text gives no split. It takes the same route: `Pursuit of Justice` 2/2 at level 21, with `Benediction` preferred over `Deflection` on the way, then Protection. It says `Sanctified Judgement` gives more mana on a single target and `Shield Specialization` more value against several, most of all once you have `Holy Shield`. Wowhead adds that a respec at 30 to pick up `Holy Shield` early slows you down but is a fair trade if you tank a lot of dungeons.
 **Level 60, tanking from the start: 0/35/16.** Icy Veins' Deep Protection order, published November 4, 2026 on its [Protection talents page](https://www.icy-veins.com/wow-forever/protection-paladin-tank-pve-spec-builds-talents). It reaches `Holy Shield` at 34 and `Shieldsworn` at 43.
 1. `Redoubt`, 5 points. Levels 10 to 14
 2. `Precision`, 3 points, then `Sacred Duty`, 2 points. Levels 15 to 19

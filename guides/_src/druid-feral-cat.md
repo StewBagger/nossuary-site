@@ -33,9 +33,9 @@ A guide to the live game, 1 to 60. Numbers are the client's at build 1.60.1.7093
 19. `Genesis` 5, levels 52 to 56
 20. `Nature's Reach` 2, levels 57 and 58
 21. `Nature's Majesty` 2, levels 59 and 60
-**Wowhead's levelling build** (November 6) ends on the same 9/32/10 with one difference: `Furor` 3 where Icy Veins has `Feral Instinct` 3. Neither levelling build takes `Shredding Attacks`, which decides your filler; see Claw or Shred below.
+**Wowhead's levelling build** (November 6) is an interactive calculator on [its levelling page](https://www.wowhead.com/forever/guide/classes/druid/feral/dps-leveling-tips), and the page has no text describing it. Icy Veins' levelling build does not take `Shredding Attacks`, which decides your filler; see Claw or Shred below.
 **Build for Cat only at 60, Icy Veins, 8/33/10:** `Ferocity` 5 · `Furor` 3 · `Feral Swiftness` 2 · `Shredding Attacks` 3 · `Savage Fury` 2 · [[Feral Charge]] 1 · `Sharpened Claws` 2 · `Predatory Strikes` 3 · `Predatory Discipline` 1 · `Blood Frenzy` 2 · [[Leader of the Pack]] 1 · `Natural Instinct` 2 · `Rend and Tear` 5 · `Shifting Power` 1 · `Genesis` 5 · `Nature's Majesty` 2 · `Nature's Reach` 1 · `Heart of the Wild` 5 · `Naturalist` 5. Icy Veins: it drops `Primal Bite` and `Thick Hide`, so use it *"only … if you are strictly playing as a DPS in Cat Form."*
-**Build for Cat only at 60, Wowhead and WoWSims, 9/32/10:** `Ferocity` 5 · `Furor` 3 · `Feral Swiftness` 2 · `Shredding Attacks` 3 · `Savage Fury` 2 · [[Feral Charge]] 1 · `Sharpened Claws` 2 · `Predatory Strikes` 3 · `Predatory Discipline` 1 · `Blood Frenzy` 2 · [[Leader of the Pack]] 1 · `Natural Instinct` 2 · `Rend and Tear` 4 · `Shifting Power` 1 · `Genesis` 5 · `Nature's Majesty` 2 · `Nature's Reach` 2 · `Heart of the Wild` 5 · `Naturalist` 5. Wowhead's dungeon and raid build (November 4) and WoWSims' Cat preset are the same list.
+**Build for Cat only at 60, WoWSims' Cat preset, 9/32/10:** `Ferocity` 5 · `Furor` 3 · `Feral Swiftness` 2 · `Shredding Attacks` 3 · `Savage Fury` 2 · [[Feral Charge]] 1 · `Sharpened Claws` 2 · `Predatory Strikes` 3 · `Predatory Discipline` 1 · `Blood Frenzy` 2 · [[Leader of the Pack]] 1 · `Natural Instinct` 2 · `Rend and Tear` 4 · `Shifting Power` 1 · `Genesis` 5 · `Nature's Majesty` 2 · `Nature's Reach` 2 · `Heart of the Wild` 5 · `Naturalist` 5 *(a sim preset)*. Wowhead's dungeon and raid build (November 4) is an interactive calculator on [its talent page](https://www.wowhead.com/forever/guide/classes/druid/feral/talent-builds-pve-dps). Its text: the *"best build for pure throughput"*, *"purely meant to do damage in"* Cat Form.
 **Why the points outside Feral.** `Heart of the Wild` 5/5 is +10% Strength in Cat Form and +10% Intellect. `Naturalist` 5/5 is +10% to all damage. `Genesis` 5/5 is +10% periodic damage. `Nature's Reach` 2/2 is +4% hit; Icy Veins says to move those points once gear covers the 8% cap.
 Where the published level 60 lists split Cat from Bear:
 | Talent | Cat lists | Bear lists |
@@ -86,7 +86,7 @@ Dual Specialization is sold by your class trainer at 40 for 50 gold, per Wowhead
 | Talents | [[Claw]] costs | [[Shred]] costs | Builder |
 | --- | --- | --- | --- |
 | None | 45 | 60 | [[Claw]] |
-| `Ferocity` 5, no `Shredding Attacks` (both levelling builds) | 40 | 60 | [[Claw]] |
+| `Ferocity` 5, no `Shredding Attacks` (Icy Veins' levelling build) | 40 | 60 | [[Claw]] |
 | `Ferocity` 5, `Shredding Attacks` 3 (the Cat-only level 60 builds) | 40 | 42 | [[Shred]] from behind |
 **Both percentages apply to the flat bonus as well** *(WoWSims' formula)*: rank 5 [[Shred]] is 200% of your auto-attack plus 80, not 200% of the auto-attack with 80 on top, and rank 5 [[Claw]] is 140% of your auto-attack plus 115.
 **At 60 with a 150 auto-attack** *(ours, worked from the game's numbers and not tested in play)*: [[Claw]] deals 371 for 40 Energy, 9.3 per Energy. [[Shred]] deals 460. At 42 Energy that is 11.0 per Energy, about 18% ahead. At 60 Energy it is 7.7, about 17% behind. The same holds at every rank: at 60 Energy [[Shred]] never catches [[Claw]] per Energy, and at 42 it leads at any normal auto-attack size.
