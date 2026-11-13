@@ -120,9 +120,17 @@ VERIFY_DESC = {
 #
 # These pin the row and not its figures. Life Tap's row reads 30 Health where the game
 # says 60: an October hotfix changed its rider 18182, and chips stay on the base client.
+#
+# MUTILATE MOVED, AND THE PIN WAS WHAT WAS STALE. Through 70755 the client held a level-30
+# rank 1 (1310705/1310706/1310707) under the level-40 row 399956, then "Rank 2". Build
+# 70790 deleted all three ids outright -- Blizzard's November 2 notes moved the talent to
+# 31 points, so level 40 -- and renumbered 399956/1241582/1241584 to ranks 1 to 3. The
+# selector followed the client correctly and this table failed it for nine nights against
+# an id no build carries any more. Hence the two wordings of the failure in main(): a pin
+# whose row has left the client is an edit to this table, not a broken rule.
 VERIFY_ROW: dict[object, int] = {
     "Ambush": 8676, "Backstab": 53, "Cheap Shot": 1833, "Eviscerate": 2098, "Garrote": 703,
-    "Gouge": 1776, "Mutilate": 1310707, "Rupture": 1943, "Sinister Strike": 1752,
+    "Gouge": 1776, "Mutilate": 399956, "Rupture": 1943, "Sinister Strike": 1752,
     "Slice and Dice": 5171,
     "Arcane Blast": 400574, "Arcane Explosion": 1449, "Blizzard": 10, "Cone of Cold": 120,
     "Frost Nova": 122, "Frostbolt": 116, "Ice Barrier": 11426, "Mana Shield": 1463,
@@ -1138,7 +1146,8 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
     # `worded` is read here because two rows can tie on everything else. Explosive Trap
     # holds a level-34 rank 1 twice on the same skill line and mask: 13812 is the blast
     # the trap fires, with no text and no price, and 13813 is the spell you cast. Mutilate
-    # does the same with 1310705 and 1310707. Lowest id picked the wrong half of each.
+    # did the same with 1310705 and 1310707 until 70790 removed that rank (see VERIFY_ROW);
+    # its rank 1 is now 399956 beside the wordless halves 399960 and 399961.
     rank_of: dict[int, int] = {}
     worded: set[int] = set()
     for r in table("Spell", build):
@@ -1472,6 +1481,9 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
                      for d in (e.get("by_class") or {}).values() if d.get("icon")}),
         "described": sum(1 for e in entries.values() if e.get("desc")),
         "racials": racials,
+        # Every spell id this build carries, so a failed pin can say whether its row is
+        # still there to be selected. See VERIFY_ROW.
+        "known": set(spell_name_of),
     }
     return entries, report
 
@@ -1581,6 +1593,10 @@ def main() -> None:
         e = entries.get(name)
         got = e and (e.get("by_class", {}).get(cls, {}) if cls else e).get("id")
         if e and got != want:
+            if want not in rep["known"]:
+                verdict(f"FAIL -- a pinned row left the client: {key} was pinned to {want}, "
+                        f"which build {build} no longer carries; it now resolves to {got}. "
+                        f"Read that row, then update VERIFY_ROW and the prose")
             verdict(f"FAIL -- row selection broke: {key} resolved to {got}, expected {want}")
 
     for (name, field), want in VERIFY_STAT.items():

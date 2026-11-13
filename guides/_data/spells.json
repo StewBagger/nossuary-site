@@ -1,9 +1,9 @@
 {
- "build": "1.60.1.70755",
+ "build": "1.60.1.70938",
  "product": "wowf",
- "generated": "2026-11-04T08:25:13+00:00",
- "stamp": "fc8bb402ba91",
- "inputs": "b75e777dd149",
+ "generated": "2026-11-13T10:10:50+00:00",
+ "stamp": "9f0f66f74496",
+ "inputs": "771dc5f6725f",
  "entries": {
   "Abolish Disease": {
    "kind": "talent",
@@ -49,7 +49,7 @@
    "level": null,
    "icon": 132275,
    "cast": "Instant",
-   "desc": "Increases the damage of your Sinister Strike, Backstab, and Eviscerate abilities by 2%."
+   "desc": "Increases the damage of your Sinister Strike and Eviscerate abilities by 2%."
   },
   "Agonizing Flames": {
    "kind": "talent",
@@ -70,7 +70,7 @@
    "school": "Physical",
    "cost": "75 Mana",
    "cooldown": "6 sec cooldown",
-   "desc": "An aimed shot that increases ranged damage by 20. Aimed Shot shares its cooldown with Multi-Shot."
+   "desc": "An aimed shot that increases ranged damage by 40. Aimed Shot shares its cooldown with Multi-Shot."
   },
   "Alchemists' Stone": {
    "kind": "spell",
@@ -337,9 +337,9 @@
    "cast": "Instant",
    "range": "35 yd range",
    "school": "Arcane",
-   "cost": "25 Mana",
+   "cost": "11% of base Mana",
    "cooldown": "6 sec cooldown",
-   "desc": "An instant shot that causes 20 Arcane damage."
+   "desc": "An instant shot that causes 25 Arcane damage."
   },
   "Arcane Subtlety": {
    "kind": "talent",
@@ -482,7 +482,7 @@
    "duration": "Until cancelled",
    "school": "Nature",
    "cost": "20 Mana",
-   "desc": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 15. Only one Aspect can be active at a time."
+   "desc": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 20. Only one Aspect can be active at a time."
   },
   "Aspect of the Monkey": {
    "kind": "spell",
@@ -1011,6 +1011,14 @@
    "cooldown": "120 sec cooldown",
    "desc": "Increases Attack Power and Spell Power by 10% for 15 sec."
   },
+  "Blood Splatter": {
+   "kind": "talent",
+   "id": 1329256,
+   "level": null,
+   "icon": 132302,
+   "cast": "Instant",
+   "desc": "Increases the duration of your Rupture ability by 4 sec and your Garrote ability by 6 sec."
+  },
   "Bloodlust": {
    "kind": "spell",
    "id": 6742,
@@ -1070,7 +1078,7 @@
    "level": null,
    "icon": 136075,
    "cast": "Instant",
-   "desc": "Increases the area of effect of your Shouts by 50% and reduces their Rage cost by 25%."
+   "desc": "Increases the area of effect of your Shouts by 50% and reduces the Rage cost by of your Shouts and Howls by 25%."
   },
   "Boosted Rest": {
    "kind": "spell",
@@ -1080,6 +1088,14 @@
    "cast": "Instant",
    "duration": "3600 sec",
    "school": "Physical"
+  },
+  "Boot Knife": {
+   "kind": "talent",
+   "id": 1329286,
+   "level": null,
+   "icon": 135342,
+   "cast": "Instant",
+   "desc": "Grants your Shank ability a 100% chance to add 2 Combo Points to the target."
   },
   "Bottomless Bag": {
    "kind": "item",
@@ -1136,7 +1152,7 @@
    "level": null,
    "icon": 135817,
    "cast": "Instant",
-   "desc": "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec."
+   "desc": "Increases the damage done by your Fire Totems and by your Flame Shock and Fire Nova spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec."
   },
   "Call of Thunder": {
    "kind": "talent",
@@ -1144,7 +1160,7 @@
    "level": null,
    "icon": 136014,
    "cast": "Instant",
-   "desc": "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%."
+   "desc": "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 5%."
   },
   "Call of the Elements": {
    "kind": "spell",
@@ -1218,12 +1234,12 @@
    "level": 32,
    "icon": 136015,
    "rank": "Rank 1 of 4",
-   "cast": "2 sec cast",
+   "cast": "2.5 sec cast",
    "range": "30 yd range",
    "school": "Nature",
-   "cost": "145 Mana",
+   "cost": "245 Mana",
    "cooldown": "6 sec cooldown",
-   "desc": "Hurls a lightning bolt at the enemy, dealing 85 to 97 Nature damage and then jumping to additional nearby enemies. Each jump reduces the damage by 30%. Affects 3 total targets."
+   "desc": "Hurls a lightning bolt at the enemy, dealing 208 to 236 Nature damage and then jumping to additional nearby enemies. Each jump reduces the damage by 30%. Affects 3 total targets."
   },
   "Challenging Roar": {
    "kind": "spell",
@@ -1319,7 +1335,7 @@
      "range": "Melee",
      "school": "Physical",
      "cost": "45 Energy",
-     "desc": "Claw the enemy for 110% normal damage plus 27. Awards 1 combo point.",
+     "desc": "Claw the enemy for 140% normal damage plus 27. Awards 1 combo point.",
      "rank": "Rank 1 of 5"
     },
     "hunter": {
@@ -1336,7 +1352,7 @@
    "range": "Melee",
    "school": "Physical",
    "cost": "45 Energy",
-   "desc": "Claw the enemy for 110% normal damage plus 27. Awards 1 combo point."
+   "desc": "Claw the enemy for 140% normal damage plus 27. Awards 1 combo point."
   },
   "Cleanse": {
    "kind": "talent",
@@ -1540,6 +1556,13 @@
    "cooldown": "1800 sec cooldown",
    "desc": "Place a Compact Critter Carrier for 180 sec that allows Hunters in your group to access their stabled pets."
   },
+  "Composure": {
+   "kind": "talent",
+   "id": 1329265,
+   "level": null,
+   "icon": 132296,
+   "cast": "Instant"
+  },
   "Comprehend Scroll": {
    "kind": "spell",
    "id": 1296017,
@@ -1691,7 +1714,7 @@
    "level": null,
    "icon": 136116,
    "cast": "Instant",
-   "desc": "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 2%."
+   "desc": "Reduces the mana cost of your Shock, Lightning Bolt, and Chain Lightning spells by 2%."
   },
   "Conviction": {
    "kind": "talent",
@@ -1818,12 +1841,11 @@
   },
   "Coup de Grace": {
    "kind": "talent",
-   "id": 1310709,
+   "id": 14162,
    "level": null,
-   "icon": 132290,
+   "icon": 132292,
    "cast": "Instant",
-   "range": "100 yd range",
-   "desc": "Increases the damage of your Eviscerate ability against targets afflicted with your Deadly Poison by 2% per application."
+   "desc": "Increases the damage done by your Eviscerate ability by 20%, and the damage and storage rate of your Death Mark ability by 20%."
   },
   "Cower": {
    "kind": "spell",
@@ -2146,16 +2168,15 @@
   },
   "Death Mark": {
    "kind": "talent",
-   "id": 1325756,
+   "id": 1316709,
    "level": null,
    "icon": 132094,
    "rank": "Rank 1 of 4",
    "cast": "Instant",
-   "range": "25 yd range",
+   "range": "20 yd range",
    "duration": "6 sec",
    "cost": "25 Energy",
-   "cooldown": "10 sec cooldown",
-   "desc": "Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. After 6 sec, the stored damage is dealt, up to a maximum increased by Attack Power: 1 point : 12% of damage stored, 0.04% Attack Power max. 2 points: 24% of damage stored, 0.08% of Attack Power max. 3 points: 36% of damage stored, 0.12% of Attack Power max. 4 points: 48% of damage stored, 0.16% of Attack Power max. 5 points: 60% of damage stored, 0.2% of Attack Power max."
+   "cooldown": "10 sec cooldown"
   },
   "Death Wish": {
    "kind": "talent",
@@ -2197,7 +2218,7 @@
    "duration": "Until cancelled",
    "school": "Physical",
    "cooldown": "1 sec cooldown",
-   "desc": "A defensive combat stance. Decreases damage taken by 10% and damage caused by 10%. Increases all threat generated by 30%."
+   "desc": "A defensive combat stance. Decreases damage taken by 10% and damage caused by 10%. Increases all threat generated by 80%."
   },
   "Defiance": {
    "kind": "talent",
@@ -2965,7 +2986,7 @@
    "school": "Nature",
    "cost": "30 Mana",
    "cooldown": "6 sec cooldown",
-   "desc": "Instantly shocks the target with concussive force, causing 19 to 22 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat."
+   "desc": "Instantly shocks the target with concussive force, causing 21 to 24 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat."
   },
   "Earth's Grasp": {
    "kind": "talent",
@@ -2998,6 +3019,14 @@
    "cast": "Instant",
    "desc": "Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%."
   },
+  "Efficient Strikes": {
+   "kind": "talent",
+   "id": 13732,
+   "level": null,
+   "icon": 136189,
+   "cast": "Instant",
+   "desc": "Reduces the Energy cost of your Sinister Strike and Hemorrhage abilities by 5."
+  },
   "Egg Nog": {
    "kind": "item",
    "id": 17198,
@@ -3010,7 +3039,7 @@
    "level": null,
    "icon": 135990,
    "cast": "Instant",
-   "desc": "Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.20 sec."
+   "desc": "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.20 sec."
   },
   "Elemental Focus": {
    "kind": "talent",
@@ -3035,16 +3064,6 @@
    "icon": 4630367,
    "cast": "Instant",
    "desc": "Damage dealt versus Elementals increased by 5%."
-  },
-  "Elemental Mastery": {
-   "kind": "talent",
-   "id": 16166,
-   "level": null,
-   "icon": 136115,
-   "cast": "Instant",
-   "duration": "15 sec",
-   "cooldown": "180 sec cooldown",
-   "desc": "Gain mastery over Fire and Lightning, reducing the cast time of Lightning Bolt and Lava Burst by 0.5 sec, and removing the cooldown from Chain Lightning. Lasts 15 sec."
   },
   "Elemental Weapons": {
    "kind": "talent",
@@ -3432,7 +3451,7 @@
    "level": null,
    "icon": 136032,
    "cast": "Instant",
-   "desc": "Gives your Lightning Bolt, Chain Lightning, and Lava Burst spells a 70% chance to not lose casting time when you take damage."
+   "desc": "Gives your Lightning Bolt and Chain Lightning spells a 70% chance to not lose casting time when you take damage."
   },
   "Faction Banner": {
    "kind": "item",
@@ -3616,7 +3635,7 @@
    "range": "Melee",
    "school": "Physical",
    "cost": "35 Energy",
-   "desc": "Finishing move that causes damage per combo point and converts each extra point of energy into 0.6 additional damage. Damage is increased by your Attack Power. 1 point : 33-43 damage 2 points: 57-67 damage 3 points: 81-91 damage 4 points: 105-115 damage 5 points: 129-139 damage"
+   "desc": "Finishing move that causes damage per combo point and converts each extra point of energy into 0.7 additional damage. Damage is increased by your Attack Power. 1 point : 40-54 damage 2 points: 70-84 damage 3 points: 100-114 damage 4 points: 130-144 damage 5 points: 160-174 damage"
   },
   "Ferocity": {
    "kind": "talent",
@@ -3883,7 +3902,7 @@
    "school": "Fire",
    "cost": "55 Mana",
    "cooldown": "6 sec cooldown",
-   "desc": "Instantly sears the target with fire, causing 24 Fire damage immediately and 28 Fire damage over 12 sec."
+   "desc": "Instantly sears the target with fire, causing 29 Fire damage immediately and 28 Fire damage over 12 sec."
   },
   "Flamestrike": {
    "kind": "spell",
@@ -3933,6 +3952,14 @@
    "cost": "35 Mana",
    "desc": "Heals a friendly target for 48 to 54."
   },
+  "Flash of Steel": {
+   "kind": "talent",
+   "id": 1329284,
+   "level": null,
+   "icon": 458731,
+   "cast": "Instant",
+   "desc": "Increases the Energy generated by your Shank ability by 15 and reduces its cooldown by 2.5 sec."
+  },
   "Flask of Natural Accuracy": {
    "kind": "item",
    "id": 274273,
@@ -3963,7 +3990,7 @@
    "level": null,
    "icon": 135345,
    "cast": "Instant",
-   "desc": "Reduces the Energy cost of your Eviscerate ability by 10."
+   "desc": "Reduces the Energy cost of your Eviscerate ability by 15."
   },
   "Flurry": {
    "kind": "talent",
@@ -4086,7 +4113,7 @@
    "school": "Frost",
    "cost": "115 Mana",
    "cooldown": "6 sec cooldown",
-   "desc": "Instantly shocks the target with frost, causing 68 to 73 Frost damage and slowing movement speed by 50%. Lasts 8 sec."
+   "desc": "Instantly shocks the target with frost, causing 99 to 106 Frost damage and slowing movement speed by 50%. Lasts 8 sec."
   },
   "Frost Trap": {
    "kind": "spell",
@@ -4222,7 +4249,7 @@
    "duration": "7 sec",
    "cost": "40 Energy",
    "cooldown": "20 sec cooldown",
-   "desc": "A strike that deals 125% (180% if a Dagger is equipped in your Main Hand) weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point."
+   "desc": "A strike that deals 125% (180% if a Dagger is equipped in your Main Hand) weapon damage, increases your chance to dodge by 15% for 7 sec, and causes your next Ambush or Garrote cast within 7 sec to not require Stealth. Awards 1 combo point."
   },
   "Gift of Nature": {
    "kind": "talent",
@@ -4269,7 +4296,7 @@
    "level": null,
    "icon": 135727,
    "cast": "Instant",
-   "desc": "Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 1.0% of your maximum Health."
+   "desc": "Your Enrage, Berserker Rage, Bloodrage, Death Wish, Reckless Swings, and Bloodthirst abilities cause your next 3 melee attacks to restore 1.0% of your maximum Health."
   },
   "Gouge": {
    "kind": "spell",
@@ -4598,7 +4625,7 @@
    "duration": "15 sec",
    "school": "Physical",
    "cost": "35 Energy",
-   "desc": "An instant strike that deals 100% weapon damage (145% if a Dagger is equipped) and causes the target to take 15% increased Rupture damage from the Rogue. Lasts 15 sec. Awards 1 Combo Point."
+   "desc": "An instant strike that deals 100% weapon damage (145% if a Dagger is equipped) and causes the target to take 15% increased Rupture and Garrote damage from the Rogue. Lasts 15 sec. Awards 1 Combo Point."
   },
   "Herb Baked Egg": {
    "kind": "item",
@@ -5165,14 +5192,6 @@
    "cast": "Instant",
    "desc": "Increases the damage done by your Entangling Roots spell by 75%, and its victims can take up to 75% more damage without interrupting the effect."
   },
-  "Improved Eviscerate": {
-   "kind": "talent",
-   "id": 14162,
-   "level": null,
-   "icon": 132292,
-   "cast": "Instant",
-   "desc": "Increases the damage done by your Eviscerate ability by 20%."
-  },
   "Improved Expose Armor": {
    "kind": "talent",
    "id": 14168,
@@ -5255,7 +5274,7 @@
    "level": null,
    "icon": 135846,
    "cast": "Instant",
-   "desc": "Reduces the casting time of your Frostbolt and Frost Blast spells by 0.1 sec."
+   "desc": "Reduces the casting time of your Frostbolt spell by 0.1 sec."
   },
   "Improved Ghost Wolf": {
    "kind": "spell",
@@ -5656,21 +5675,13 @@
    "cast": "Instant",
    "desc": "Reduces the cooldown of your Shield Wall ability by 11.0 min."
   },
-  "Improved Sinister Strike": {
-   "kind": "talent",
-   "id": 13732,
-   "level": null,
-   "icon": 136189,
-   "cast": "Instant",
-   "desc": "Reduces the Energy cost of your Sinister Strike ability by 5."
-  },
   "Improved Slam": {
    "kind": "talent",
    "id": 12862,
    "level": null,
    "icon": 132340,
    "cast": "Instant",
-   "desc": "Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3.0 sec."
+   "desc": "Reduces the cooldown of your Slam ability by 5.0 sec, the cast time and global cooldown by 0.50 sec, and Slam no longer interrupts or delays your melee swing."
   },
   "Improved Slice and Dice": {
    "kind": "talent",
@@ -6252,7 +6263,7 @@
    "range": "30 yd range",
    "school": "Nature",
    "cost": "15 Mana",
-   "desc": "Casts a bolt of lightning at the target for 14 to 17 Nature damage."
+   "desc": "Casts a bolt of lightning at the target for 15 to 18 Nature damage."
   },
   "Lightning Breath": {
    "kind": "talent",
@@ -6267,12 +6278,13 @@
   },
   "Lightning Mastery": {
    "kind": "talent",
-   "id": 16579,
+   "id": 16166,
    "level": null,
-   "icon": 135990,
-   "rank": "Rank 2 of 5",
+   "icon": 136111,
    "cast": "Instant",
-   "desc": "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.4 sec."
+   "duration": "15 sec",
+   "cooldown": "180 sec cooldown",
+   "desc": "Gain mastery over Lightning, reducing the cast time of your Lightning Bolt spell by 0.5 sec, and removing the cooldown from your Chain Lightning spell. Lasts 15 sec."
   },
   "Lightning Overload": {
    "kind": "talent",
@@ -6715,7 +6727,7 @@
    "level": null,
    "icon": 236221,
    "cast": "Instant",
-   "desc": "Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, Frost Blast, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec."
+   "desc": "Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec."
   },
   "Mithril Blacksmith Hammer": {
    "kind": "item",
@@ -6927,15 +6939,15 @@
   },
   "Mutilate": {
    "kind": "spell",
-   "id": 1310707,
-   "level": 30,
+   "id": 399956,
+   "level": 40,
    "icon": 236270,
-   "rank": "Rank 1 of 4",
+   "rank": "Rank 1 of 3",
    "cast": "Instant",
    "range": "Melee",
    "school": "Physical",
    "cost": "60 Energy",
-   "desc": "Instantly attacks with both weapons for 75% weapon damage plus an additional 17 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points."
+   "desc": "Instantly attacks with both weapons for 90% weapon damage plus an additional 40 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points."
   },
   "Natural Grace": {
    "kind": "talent",
@@ -7449,7 +7461,7 @@
    "duration": "2 sec",
    "school": "Physical",
    "cost": "50 Energy",
-   "desc": "Pounce, stunning the target for 2 sec and causing 90 damage over 18 sec. Must be prowling and behind the target. Awards 1 combo point."
+   "desc": "Pounce, stunning the target for 2 sec and causing 114 damage over 18 sec. Must be prowling and behind the target. Awards 1 combo point."
   },
   "Power Word: Fortitude": {
    "kind": "spell",
@@ -7724,6 +7736,14 @@
    "cost": "125 Mana",
    "desc": "Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec."
   },
+  "Quick Getaway": {
+   "kind": "talent",
+   "id": 1310728,
+   "level": null,
+   "icon": 458797,
+   "cast": "Instant",
+   "desc": "Increases the maximum number of targets you may have Sapped by 1, and increases your movement speed by 35% for 3 sec after Sapping a target."
+  },
   "Rage of the Farseer": {
    "kind": "talent",
    "id": 425336,
@@ -7733,14 +7753,6 @@
    "duration": "25 sec",
    "cooldown": "180 sec cooldown",
    "desc": "Increases your attack speed by 30% for 25 sec."
-  },
-  "Raging Blows": {
-   "kind": "talent",
-   "id": 1310315,
-   "level": null,
-   "icon": 132369,
-   "cast": "Instant",
-   "desc": "Reduces the Rage cost of your Cleave and Whirlwind abilities by 3."
   },
   "Rain of Fire": {
    "kind": "spell",
@@ -7766,7 +7778,7 @@
    "duration": "9 sec",
    "school": "Physical",
    "cost": "40 Energy",
-   "desc": "Rake the target for 23 damage and an additional 48 damage over 9 sec. Awards 1 combo point."
+   "desc": "Rake the target for 27 damage and an additional 60 damage over 9 sec. Awards 1 combo point."
   },
   "Rapid Fire": {
    "kind": "spell",
@@ -7819,7 +7831,7 @@
    "range": "Melee",
    "school": "Physical",
    "cost": "60 Energy",
-   "desc": "Ravage the target, causing 350% damage plus 147 to the target. Must be prowling and behind the target. Awards 1 combo point."
+   "desc": "Ravage the target, causing 435% damage plus 42 to the target. Must be prowling and behind the target. Awards 1 combo point."
   },
   "Read Leyline": {
    "kind": "talent",
@@ -7848,6 +7860,16 @@
    "cost": "85% of base Mana",
    "cooldown": "1800 sec cooldown",
    "desc": "Returns the spirit to the body, restoring a dead target to life with 400 health and 700 mana."
+  },
+  "Reckless Swings": {
+   "kind": "talent",
+   "id": 1329555,
+   "level": null,
+   "icon": 132334,
+   "cast": "Instant",
+   "duration": "8 sec",
+   "cooldown": "15 sec cooldown",
+   "desc": "Your next 4 melee attacks generate 5 additional Rage. Lasts 8 sec."
   },
   "Recklessness": {
    "kind": "spell",
@@ -8116,7 +8138,7 @@
    "duration": "12 sec",
    "school": "Physical",
    "cost": "30 Energy",
-   "desc": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power: 1 point : 44 damage over 12 sec. 2 points: 71 damage over 12 sec. 3 points: 97 damage over 12 sec. 4 points: 124 damage over 12 sec. 5 points: 150 damage over 12 sec."
+   "desc": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power: 1 point : 57 damage over 12 sec. 2 points: 90 damage over 12 sec. 3 points: 123 damage over 12 sec. 4 points: 156 damage over 12 sec. 5 points: 189 damage over 12 sec."
   },
   "Riposte": {
    "kind": "talent",
@@ -8139,9 +8161,9 @@
    "range": "40 yd range",
    "duration": "15 sec",
    "school": "Nature",
-   "cost": "245 Mana",
-   "cooldown": "6 sec cooldown",
-   "desc": "Heals a friendly target for 486 to 534, an additional 445 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%."
+   "cost": "150 Mana",
+   "cooldown": "12 sec cooldown",
+   "desc": "Heals a friendly target for 445 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%."
   },
   "Ritual of Summoning": {
    "kind": "spell",
@@ -8446,7 +8468,7 @@
    "duration": "15 sec",
    "school": "Nature",
    "cost": "15 Mana",
-   "desc": "Stings the target, causing 10 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target."
+   "desc": "Stings the target, causing 15 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target."
   },
   "Serrated Blades": {
    "kind": "talent",
@@ -8607,12 +8629,15 @@
   },
   "Shank": {
    "kind": "talent",
-   "id": 15248,
+   "id": 1329283,
    "level": null,
-   "icon": 132090,
+   "icon": 132323,
+   "rank": "Rank 1 of 2",
    "cast": "Instant",
    "range": "Melee",
-   "desc": "Inflicts normal damage plus 10 to an enemy when attacking from behind."
+   "cost": "5 Energy",
+   "cooldown": "10 sec cooldown",
+   "desc": "Instantly strike with your off-hand weapon, dealing 50% weapon damage and generating 15 Energy. Shank cannot Miss."
   },
   "Sharpened Claws": {
    "kind": "talent",
@@ -8770,7 +8795,7 @@
    "range": "Melee",
    "school": "Physical",
    "cost": "60 Energy",
-   "desc": "Shred the target, causing 155% damage plus 22 to the target. Must be behind the target. Awards 1 combo point."
+   "desc": "Shred the target, causing 200% damage plus 22 to the target. Must be behind the target. Awards 1 combo point."
   },
   "Shredding Attacks": {
    "kind": "talent",
@@ -8851,7 +8876,7 @@
    "range": "Melee",
    "school": "Physical",
    "cost": "15 Rage",
-   "cooldown": "18 sec cooldown",
+   "cooldown": "15 sec cooldown",
    "desc": "Slams the opponent, causing weapon damage plus 16."
   },
   "Sleight of Hand": {
@@ -8916,7 +8941,7 @@
    "school": "Physical",
    "cost": "365 Mana",
    "cooldown": "15 sec cooldown",
-   "desc": "A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec."
+   "desc": "A long-range shot that deals ranged damage plus 320 and increases the range of your next 3 Shots by 10 yards for 10 sec."
   },
   "Sonic Blast": {
    "kind": "talent",
@@ -8969,7 +8994,7 @@
    "level": null,
    "icon": 136169,
    "cast": "Instant",
-   "desc": "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 12% per each of your other Affliction effects active on the target, up to a maximum increase of 36%."
+   "desc": "Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 12% per each of your Corruption, Siphon Life, and Bane of Agony effects active on the target, up to a maximum increase of 36%."
   },
   "Soul Warding": {
    "kind": "talent",
@@ -8988,7 +9013,7 @@
    "range": "Melee",
    "cost": "15 Rage",
    "cooldown": "20 sec cooldown",
-   "desc": "A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted."
+   "desc": "A brutal attack that deals 75% weapon damage. Deals an additional 75% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted."
   },
   "Spellblasting Potion": {
    "kind": "item",
@@ -9066,7 +9091,7 @@
    "range": "30 yd range",
    "school": "Arcane",
    "cost": "95 Mana",
-   "desc": "Causes 79 to 96 Arcane damage to the target."
+   "desc": "Causes 111 to 133 Arcane damage to the target."
   },
   "Starshards": {
    "kind": "talent",
@@ -9158,8 +9183,8 @@
    "duration": "12 sec",
    "school": "Physical",
    "cost": "8% of base Mana",
-   "cooldown": "8 sec cooldown",
-   "desc": "Instantly strike for normal weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec."
+   "cooldown": "6 sec cooldown",
+   "desc": "Instantly strike for 150% weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec."
   },
   "Strength of Earth Totem": {
    "kind": "spell",
@@ -9417,7 +9442,7 @@
    "rank": "Rank 1 of 4",
    "cast": "Instant",
    "range": "35 yd range",
-   "cost": "80 Mana",
+   "cost": "11% of base Mana",
    "cooldown": "6 sec cooldown",
    "desc": "Command a hawk to dive-bomb your targeted enemy, dealing (32 + 5% of ranged attack power) Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot."
   },
@@ -9549,7 +9574,7 @@
    "range": "40 yd range",
    "cost": "20% of base Mana",
    "cooldown": "15 sec cooldown",
-   "desc": "Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of the consumed spell."
+   "desc": "Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect."
   },
   "Swim Speed Potion": {
    "kind": "item",
@@ -9798,6 +9823,18 @@
    "cost": "20 Mana",
    "cooldown": "5 sec cooldown",
    "desc": "Taunts the creature, increasing the chance that it will attack the Voidwalker."
+  },
+  "Totemic Call": {
+   "kind": "talent",
+   "id": 437009,
+   "level": null,
+   "icon": 538574,
+   "cast": "Instant",
+   "range": "30 yd range",
+   "duration": "1 sec",
+   "cost": "25% of base Mana",
+   "cooldown": "30 sec cooldown",
+   "desc": "Relocates your active totems to your location."
   },
   "Totemic Focus": {
    "kind": "talent",
@@ -10079,7 +10116,7 @@
    "cast": "Instant",
    "duration": "1800 sec",
    "cost": "180 Mana",
-   "desc": "Increases the Ranged Attack Power of party or raid members within 45 yds by 15."
+   "desc": "Increases the Ranged Attack Power of party or raid members within 45 yds by 20."
   },
   "Turn Evil": {
    "kind": "talent",
@@ -10143,7 +10180,7 @@
      "level": null,
      "icon": 133041,
      "cast": "Instant",
-     "desc": "Increases the physical damage you deal by 2%, and reduces all threat you generate by 20% while a two-handed melee weapon is equipped."
+     "desc": "Increases the Physical and Holy damage you deal by 2%, and reduces all threat you generate by 20% while a two-handed melee weapon is equipped."
     },
     "warrior": {
      "id": 12163,
@@ -10253,7 +10290,7 @@
      "level": null,
      "icon": 132275,
      "cast": "Instant",
-     "desc": "Increases your Physical and Holy damage dealt by 5% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times."
+     "desc": "Increases your Physical and Holy damage dealt by 5% for 30 sec after landing a non-periodic critical strike. Stacks up to 5 times."
     },
     "warlock": {
      "id": 426195,
@@ -10270,14 +10307,11 @@
   },
   "Venom": {
    "kind": "talent",
-   "id": 1310703,
+   "id": 1329328,
    "level": null,
    "icon": 135341,
    "cast": "Instant",
-   "range": "100 yd range",
-   "duration": "6 sec",
-   "cost": "25 Energy",
-   "desc": "Finishing move that increases the damage of your Poisons by 30% and your chance to apply Poisons by 10%. Lasts longer per combo point: 1 point : 9 sec 2 points: 12 sec 3 points: 15 sec 4 points: 18 sec 5 points: 21 sec"
+   "desc": "Causes your Shank ability to increase your Poison damage by 30% and your chance to apply Poisons by 20% for 6 sec."
   },
   "Victory Rush": {
    "kind": "spell",
@@ -10678,7 +10712,7 @@
    "range": "30 yd range",
    "duration": "6 sec",
    "cost": "200 Mana",
-   "desc": "Tears the target apart from within, inflicting 36 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over time effects by 10% for 6 sec."
+   "desc": "Tears the target apart from within for 6 sec, inflicting 60 Shadow damage every 1 sec. While channeling, your Siphon Life, Corruption, and Bane of Agony effects on the target deal their periodic damage 100% faster."
   },
   "Wrath": {
    "kind": "spell",
