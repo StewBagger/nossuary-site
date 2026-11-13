@@ -1,8 +1,8 @@
 {
  "build": "1.60.1.70938",
  "product": "wowf",
- "generated": "2026-11-13T10:10:50+00:00",
- "stamp": "9f0f66f74496",
+ "generated": "2026-11-13T10:25:22+00:00",
+ "stamp": "ddb620d31752",
  "inputs": "771dc5f6725f",
  "entries": {
   "Abolish Disease": {
@@ -1065,12 +1065,11 @@
   },
   "Bloom": {
    "kind": "talent",
-   "id": 1288559,
+   "id": 1328621,
    "level": null,
-   "icon": 136067,
+   "icon": 134206,
    "cast": "Instant",
-   "duration": "10 sec",
-   "desc": "Afflicts the target with a poison that takes root after 10 sec. When Bloom expires it roots the target in place, dealing intense Nature damage over 10 sec."
+   "desc": "When your Rejuvenation or Regrowth spell expires due to its duration, the target is instantly healed for an amount equal to 100% of your Spirit. If either spell expires due to being dispelled, the target is healed for 50% of your Spirit instead."
   },
   "Booming Voice": {
    "kind": "talent",
@@ -2564,12 +2563,10 @@
   },
   "Divine Aegis": {
    "kind": "talent",
-   "id": 431624,
+   "id": 431622,
    "level": null,
    "icon": 237539,
-   "cast": "Instant",
-   "duration": "12 sec",
-   "desc": "Critical heals have a chance to create a protective shield on the target, absorbing a percentage of the amount healed. Lasts 12 sec."
+   "cast": "Instant"
   },
   "Divine Favor": {
    "kind": "talent",
@@ -4743,7 +4740,7 @@
    "icon": 135972,
    "rank": "Rank 1 of 4",
    "cast": "Instant",
-   "range": "40 yd range",
+   "range": "20 yd range, 40 yd on allies",
    "school": "Holy",
    "cost": "160 Mana",
    "cooldown": "10 sec cooldown",
@@ -5826,11 +5823,11 @@
   },
   "Improved Whirlwind": {
    "kind": "talent",
-   "id": 24431,
+   "id": 1310315,
    "level": null,
-   "icon": 136235,
+   "icon": 132369,
    "cast": "Instant",
-   "desc": "Decrease the rage cost of Whirlwind by 3."
+   "desc": "Reduces the cooldown of your Whirlwind ability by 2 sec and increases the damage it deals to the closest enemy by 30%."
   },
   "Improved Wing Clip": {
    "kind": "talent",
@@ -6098,16 +6095,16 @@
    "rank": "Rank 1 of 4",
    "by_class": {
     "druid": {
-     "id": 414644,
-     "level": 42,
+     "id": 1328617,
+     "level": 25,
      "icon": 132131,
      "cast": "Instant",
      "range": "Melee",
      "duration": "15 sec",
      "school": "Physical",
      "cost": "15 Rage",
-     "desc": "Lacerates the enemy target, making them bleed for 50 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to 5 times on the same target.",
-     "rank": "Rank 3 of 5"
+     "desc": "Lacerates the enemy target, making them bleed for 20 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to 5 times on the same target.",
+     "rank": "Rank 1 of 5"
     },
     "hunter": {
      "id": 24118,
@@ -6345,12 +6342,10 @@
   },
   "Lingering Rage": {
    "kind": "talent",
-   "id": 1323965,
+   "id": 1323964,
    "level": null,
-   "icon": 136243,
-   "cast": "Instant",
-   "duration": "10 sec",
-   "desc": "Increases the time before your Rage begins to decay after leaving combat by 10 sec."
+   "icon": 132356,
+   "cast": "Instant"
   },
   "Litany of Light": {
    "kind": "talent",
@@ -7283,7 +7278,7 @@
    "icon": 237545,
    "rank": "Rank 1 of 4",
    "cast": "Instant",
-   "range": "40 yd range",
+   "range": "36 yd range, 40 yd on allies",
    "school": "Holy",
    "cost": "150 Mana",
    "cooldown": "12 sec cooldown",
@@ -8728,13 +8723,10 @@
    "rank": "Rank 1 of 5",
    "by_class": {
     "paladin": {
-     "id": 20149,
+     "id": 20150,
      "level": null,
      "icon": 134952,
-     "cast": "Instant",
-     "duration": "Until cancelled",
-     "desc": "Increases the amount of damage absorbed by your shield by 20%.",
-     "rank": "Rank 2"
+     "cast": "Instant"
     },
     "shaman": {
      "id": 16301,
@@ -10342,13 +10334,10 @@
   },
   "Vindication": {
    "kind": "talent",
-   "id": 67,
+   "id": 9452,
    "level": null,
    "icon": 135985,
-   "rank": "Rank 1",
-   "cast": "Instant",
-   "range": "100 yd range",
-   "duration": "10 sec"
+   "cast": "Instant"
   },
   "Viper Sting": {
    "kind": "spell",

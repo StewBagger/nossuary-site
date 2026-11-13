@@ -50,6 +50,10 @@ BUILD_RE = re.compile(r"^\*\*Build\b")
 # number in an arrow list ("-> [[Stormstrike]] ->") is a one-point milestone.
 PICK_RE = re.compile(r"(?:`([^`]+)`|\[\[([^\]]+)\]\])\*{0,2}"
                      r"(?:(?:,| x|:)? ?(\d+)(?!/)(?: points?)?\b|(?= (?:→|->))|(?=\.?$))")
+# "`Malice` to 5/5" is not a restatement: it tops a talent up, and the points it adds are
+# the difference from what the build already holds. Read as nothing, it left the level 20
+# Assassination line two points short and `Lethality` flagged for nine nights in a row.
+TOPUP_RE = re.compile(r"(?:`([^`]+)`|\[\[([^\]]+)\]\])\*{0,2} to (\d+)/\d+")
 # Prose after these words describes another build, not this one.
 ASIDE_RE = re.compile(r"\b(?:alternative|alternatively|second reading|or swap|instead of|swaps?)\b",
                       re.IGNORECASE)
@@ -102,9 +106,20 @@ def builds_in(text: str):
                 level = None
         if level is None or not (head or variant or ITEM_RE.match(line)):
             continue
-        for a, b, pts in PICK_RE.findall(ASIDE_RE.split(line)[0]):
-            if pts or "→" in line or "->" in line:
-                picks.append((a or b, int(pts or 1)))
+        body = ASIDE_RE.split(line)[0]
+        topped = {a or b: int(to) for a, b, to in TOPUP_RE.findall(body)}
+        for a, b, pts in PICK_RE.findall(body):
+            name = a or b
+            if name in topped:
+                more = topped.pop(name) - sum(n for who, n in picks if who == name)
+                if more > 0:
+                    picks.append((name, more))
+            elif pts or "→" in line or "->" in line:
+                picks.append((name, int(pts or 1)))
+        for name, to in topped.items():   # a top-up PICK_RE had no number to read
+            more = to - sum(n for who, n in picks if who == name)
+            if more > 0:
+                picks.append((name, more))
     if picks:
         yield line_no, level, picks
 

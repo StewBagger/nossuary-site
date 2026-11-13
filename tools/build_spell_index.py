@@ -60,7 +60,10 @@ TABLES = ("SpellName", "SpellMisc", "SpellLevels", "SkillLineAbility", "ItemSpar
           "Item", "Talent", "Spell", "SpellEffect", "SpellCastTimes", "SpellPower",
           "SpellRange", "SpellCooldowns", "SpellDuration", "SpellRadius",
           "SpellAuraOptions", "SpellTargetRestrictions", "SpellDescriptionVariables",
-          "SpellXDescriptionVariables")
+          "SpellXDescriptionVariables", "SkillLine", "SkillRaceClassInfo",
+          # Forever's own talent trees. See the trait pass in resolve().
+          "SkillLineXTraitTree", "TraitNode", "TraitNodeXTraitNodeEntry", "TraitNodeEntry",
+          "TraitDefinition")
 
 # Spot-checks against the guides' own prose. A rank rule that breaks these is wrong.
 # These are not decoration: the first rule tried here (lowest non-zero BaseLevel) put
@@ -139,7 +142,12 @@ VERIFY_ROW: dict[object, int] = {
     "Master of Defense": 1310316,
     "Entangling Roots": 339, "Pounce": 9005, "Rake": 1822, "Ravage": 6785, "Rip": 1079,
     "Shred": 5221, "Thorns": 467, ("Claw", "druid"): 1082, ("Cure Poison", "druid"): 8946,
-    ("Lacerate", "druid"): 414644, ("Tranquility", "druid"): 740,
+    ("Lacerate", "druid"): 1328617, ("Tranquility", "druid"): 740,
+    # Held by the trait pass and by nothing else: no skill line claims either row, and
+    # before that pass `Bloom` was a creature's rooting poison on the Restoration page and
+    # `Improved Whirlwind` a tier-set bonus, "Decrease the rage cost of Whirlwind by 3".
+    ("Bloom", "druid"): 1328621, ("Improved Whirlwind", "warrior"): 1310315,
+    ("Vindication", "paladin"): 9452, ("Shield Specialization", "paladin"): 20150,
     "Holy Nova": 15237, "Power Word: Shield": 17, "Prayer of Healing": 596,
     "Psychic Scream": 8122, "Silence": 15487,
     "Chain Heal": 1064, "Chain Lightning": 421, "Flametongue Weapon": 8024,
@@ -250,10 +258,14 @@ FORCE_ID: dict[object, int] = {
     "Dark Sacrifice": 1277324,
     "Contingency Plan": 1277462,
     "Hack and Slash": 13960,          # merged row; 13706 is the ex-Dagger slot
-    "Quietus": 1310728,               # 1231651 is a collision, not placeholder junk
+    # `Quietus` was pinned here to 1310728 until 2026-11-13. The client has since given
+    # that id to `Quick Getaway` and no guide names Quietus, so the pin was pointing a dead
+    # name at another talent's row. main() now prints any pin whose row changed its name.
     "Cutthroat": 462708,              # 424980 carries no usable text
     ("Berserk", "druid"): 417141,     # 23397 is a creature's 30-second Shadow aura
-    ("Lacerate", "druid"): 414644,    # 414647 is empty and stamped level 1
+    # ("Lacerate", "druid") was pinned to 414644 here, which the launch client numbers
+    # Rank 3 of 5: the Druid pages showed a 50-damage bleed for a spell that opens at 20.
+    # The druid's tree names 1328617, Rank 1, and the trait pass reads it from there.
     # Talent names no table above can reach. Talent.db2 still points Weaponmaster at 12284,
     # the old mace half, and the merged row 1290261 is on no skill line, but it is the
     # only row naming all three weapons. Master of Defense's 23602 is the Rage it pays out
@@ -516,8 +528,11 @@ def load_details(build: str) -> dict:
     for r in table("SpellRange", build):
         if r.get("ID", "").isdigit():
             try:
-                rng[int(r["ID"])] = max(float(r.get("RangeMax_0") or 0),
-                                        float(r.get("RangeMax_1") or 0))
+                # Slot 0 is the reach on an enemy and slot 1 on an ally. They differ on
+                # the spells cast at both: range row 578 is "Short Hostile / Long
+                # Friendly", 20 and 40, and it is Holy Shock's.
+                rng[int(r["ID"])] = (float(r.get("RangeMax_0") or 0),
+                                     float(r.get("RangeMax_1") or 0))
             except (ValueError, TypeError):
                 continue
 
@@ -582,7 +597,8 @@ def load_details(build: str) -> dict:
         misc.setdefault(sid, {
             "cast": cast_ms.get(int(r.get("CastingTimeIndex") or 0), 0.0),
             "dur": dur_ms.get(int(r.get("DurationIndex") or 0), 0.0),
-            "rng": rng.get(int(r.get("RangeIndex") or 0), 0.0),
+            "rng": max(rng.get(int(r.get("RangeIndex") or 0), (0.0, 0.0))),
+            "rng_pair": rng.get(int(r.get("RangeIndex") or 0), (0.0, 0.0)),
             "school": int(r.get("SchoolMask") or 0),
         })
 
@@ -1007,7 +1023,15 @@ def present(sid: int, d: dict) -> dict:
             if r >= 50000:
                 pass
             else:
-                out["range"] = "Melee" if r <= 5 else f"{r:g} yd range"
+                # The larger figure alone put "40 yd range" on Holy Shock, whose damage half
+                # reaches 20, and on Penance, 36.
+                foe, ally = m.get("rng_pair", (r, r))
+                if r <= 5:
+                    out["range"] = "Melee"
+                elif 0 < foe < ally:
+                    out["range"] = f"{foe:g} yd range, {ally:g} yd on allies"
+                else:
+                    out["range"] = f"{r:g} yd range"
         dur = m.get("dur", 0.0)
         if dur < 0:
             # The client stores -1 for "lasts until you cancel it" -- every aura, form
@@ -1356,6 +1380,102 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         racial_names.add(name)
         racials += 1
 
+    # A TALENT IS WHATEVER THE CLASS'S OWN TREE SAYS IT IS. Everything above reaches a
+    # talent by its name, and a name is shared: with a creature's ability, a tier-set
+    # bonus, the aura a talent applies, a Classic rank ladder Forever stopped using.
+    # Talent.db2 cannot arbitrate (see Landmines: it is Classic's table), and most of
+    # Forever's talent rows sit on no skill line at all, so `learnable` cannot either.
+    # That is why FORCE_ID grew a row per talent that went wrong.
+    #
+    # The client does say, in the trait tables: SkillLineXTraitTree ties one tree to each
+    # class through a skill line only that class holds, and TraitNode ->
+    # TraitNodeXTraitNodeEntry -> TraitNodeEntry -> TraitDefinition.SpellID names the spell
+    # behind every node. Read at 1.60.1.70938 that is 468 nodes over nine classes, equal
+    # node for node to the tree Raidbots publishes, and it agreed with this file's
+    # selection on 428 of the 436 names the guides use -- including every talent FORCE_ID
+    # had pinned by hand. The eight it did not agree with were the defects: `Bloom` was a
+    # creature's rooting poison, `Improved Whirlwind` a set bonus, `Divine Aegis` and
+    # `Lingering Rage` the aura instead of the talent, and Lacerate a stale pin on rank 3.
+    #
+    # THE RANK STAYS THE RANK BLOCK'S DECISION. One node points into a Classic ladder
+    # above its first rung (Blackout, at "Rank 5"); there the tree picks the family and the
+    # entry stays that family's rank 1, labelled, as every other ladder here is.
+    #
+    # A tree row may carry no readable text: Forever keeps many talents' figures off the
+    # row (base points of 0, filled per rank at runtime) or behind the reader's level.
+    # Like a racial-line row it is still the right row, and the no-text fallback below
+    # must not trade it for a wrong row that happens to have a sentence.
+    tree_class: dict[int, str] = {}
+    for r in table("SkillLineXTraitTree", build):
+        try:
+            holders = classes_of_line.get(int(r["SkillLineID"]), set())
+            if len(holders) == 1:
+                tree_class[int(r["TraitTreeID"])] = next(iter(holders))
+        except (ValueError, TypeError, KeyError):
+            continue
+    node_class: dict[int, str] = {}
+    for r in table("TraitNode", build):
+        try:
+            if int(r["TraitTreeID"]) in tree_class:
+                node_class[int(r["ID"])] = tree_class[int(r["TraitTreeID"])]
+        except (ValueError, TypeError, KeyError):
+            continue
+    definition_of: dict[int, int] = {}
+    for r in table("TraitNodeEntry", build):
+        try:
+            definition_of[int(r["ID"])] = int(r["TraitDefinitionID"])
+        except (ValueError, TypeError, KeyError):
+            continue
+    defined: dict[int, tuple[int, str]] = {}
+    for r in table("TraitDefinition", build):
+        try:
+            defined[int(r["ID"])] = (int(r["SpellID"] or 0), r.get("OverrideName_lang") or "")
+        except (ValueError, TypeError, KeyError):
+            continue
+    tree_rows: dict[str, dict[str, int]] = defaultdict(dict)
+    for r in table("TraitNodeXTraitNodeEntry", build):
+        try:
+            cls = node_class.get(int(r["TraitNodeID"]))
+            sid, shown = defined[definition_of[int(r["TraitNodeEntryID"])]]
+        except (ValueError, TypeError, KeyError):
+            continue
+        if cls and sid in spell_name_of:
+            tree_rows[norm(shown or spell_name_of[sid])][cls] = sid
+
+    trait_names: set[str] = set()
+    traits = 0
+    for name, e in entries.items():
+        if e["kind"] == "item":
+            continue
+        held = tree_rows.get(norm(name))
+        if not held:
+            continue
+        for cls, sid in sorted(held.items()):
+            if rank_of.get(sid, 1) > 1:
+                first = [i for i in spell_ids.get(norm(name), [])
+                         if rank_of.get(i) == 1 and kin(i, sid)]
+                sid = min(first) if first else sid
+            row = {"id": sid, "level": level.get(sid), "icon": icon.get(sid)}
+            per = e.get("by_class") or {}
+            # The default entry is what a page of no class shows, and what a class with no
+            # row of its own shows. It follows the tree only when one class holds the
+            # name and the default is not some other class's spell or a racial.
+            if (len(held) == 1 and name not in racial_names
+                    and not classes_of(e["id"]) - {cls}):
+                if e["id"] != sid:
+                    e.update(row)
+                    e.pop("rank", None)
+                    label = rank_label(name, sid)
+                    if label:
+                        e["rank"] = label
+                    traits += 1
+                trait_names.add(name)
+                if cls in per and per[cls]["id"] != sid:
+                    per[cls] = row
+            elif per.get(cls, e)["id"] != sid:
+                e.setdefault("by_class", {})[cls] = row
+                traits += 1
+
     for name, want in VERIFY_RACIAL.items():
         got = entries.get(name, {}).get("id")
         if name in entries and got != want:
@@ -1417,7 +1537,8 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
         # Mutilate's is -- and failing that it stays blank. Wrong text is the worse
         # failure, as it was for `War Stomp`. A row no class owns (a pet, a recipe whose
         # effect is the item's) has nothing to protect, and keeps the old search.
-        if not e.get("desc") and name not in racial_names and name not in FORCE_ID:
+        if (not e.get("desc") and name not in racial_names and name not in trait_names
+                and name not in FORCE_ID):
             mine = e["id"]
             class_row = 0 < len(classes_of(mine)) < len(CLASS_BY_MASK)
             for alt in sorted(spell_ids.get(norm(name), []),
@@ -1481,6 +1602,15 @@ def resolve(names: dict[str, int], talents: set[str], build: str) -> tuple[dict,
                      for d in (e.get("by_class") or {}).values() if d.get("icon")}),
         "described": sum(1 for e in entries.values() if e.get("desc")),
         "racials": racials,
+        "traits": traits,
+        "trees": len(set(tree_class.values())),
+        # A pin made when a row had one name, read after the client gave it another.
+        "renamed": sorted(
+            f"{k[0] if isinstance(k, tuple) else k} is pinned to {v}, which the client "
+            f"calls {spell_name_of.get(v, 'nothing: the row is gone')}"
+            for k, v in FORCE_ID.items()
+            if (k[0] if isinstance(k, tuple) else k) in entries
+            and norm(spell_name_of.get(v, "")) != norm(k[0] if isinstance(k, tuple) else k)),
         # Every spell id this build carries, so a failed pin can say whether its row is
         # still there to be selected. See VERIFY_ROW.
         "known": set(spell_name_of),
@@ -1591,13 +1721,18 @@ def main() -> None:
     for key, want in VERIFY_ROW.items():
         name, cls = key if isinstance(key, tuple) else (key, None)
         e = entries.get(name)
-        got = e and (e.get("by_class", {}).get(cls, {}) if cls else e).get("id")
+        # A class with no row of its own is shown the default, so that is what is checked.
+        got = e and (e.get("by_class", {}).get(cls, e) if cls else e).get("id")
         if e and got != want:
             if want not in rep["known"]:
                 verdict(f"FAIL -- a pinned row left the client: {key} was pinned to {want}, "
                         f"which build {build} no longer carries; it now resolves to {got}. "
                         f"Read that row, then update VERIFY_ROW and the prose")
             verdict(f"FAIL -- row selection broke: {key} resolved to {got}, expected {want}")
+
+    if rep["trees"] != len(CLASS_BY_MASK):
+        verdict(f"FAIL -- talent trees unread: {rep['trees']} of {len(CLASS_BY_MASK)} classes "
+                f"have a trait tree in build {build}, so talent rows went unchecked")
 
     for (name, field), want in VERIFY_STAT.items():
         got = entries.get(name, {}).get(field)
@@ -1622,7 +1757,10 @@ def main() -> None:
     print(f"matched: {rep['matched']}/{rep['total']} ({pct:.1f}%) -- "
           f"{rep['spells']} spell, {rep['talents']} talent, {rep['items']} item, "
           f"{rep['levelled']} with a level, {rep['described']} with a description, "
-          f"{rep['racials']} resolved on a racial skill line")
+          f"{rep['racials']} resolved on a racial skill line, "
+          f"{rep['traits']} moved to the row a talent tree names")
+    for line in rep["renamed"]:
+        print(f"renamed: {line}")
     if rep["unmatched"]:
         print(f"unmatched ({len(rep['unmatched'])}): {', '.join(rep['unmatched'])}")
     if failed:
