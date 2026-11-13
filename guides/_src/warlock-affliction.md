@@ -1,66 +1,107 @@
-updated: November 3, 2026
-build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraft.blizzard.com/en-us/news/24310968 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Affliction Warlock|https://www.wowhead.com/forever/guide/classes/warlock/affliction/level-20-dps-overview ;; Icy Veins — Affliction Warlock|https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-guide ;; ClassicWoW.gg — Aff Warlock|https://classicwow.gg/forever/guides/warlock/affliction ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes ;; WoWSims Forever — Warlock|https://www.wowsims.com/forever/warlock/dps/ ;; MyBigBlaze — Affliction Warlock Leveling Guide – Everything You Need to Know (WoW Forever)|https://www.youtube.com/watch?v=NxYry1_2ZqA
+updated: November 13, 2026
+build: 1.60.1.70938
+sources: Blizzard — Class Deep Dives: Rogue and Warlock|https://worldofwarcraft.blizzard.com/en-us/news/24310968 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — WoW: Forever Hotfixes, November 5 to 12|https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-11-2026/2403040 ;; foreverchanges.pro — Warlock spells by level, build 1.60.1.70938|https://foreverchanges.pro/spellbook/warlock/levels ;; Raidbots — Forever talent data|https://www.raidbots.com/static/data/forever/talents.json ;; WoWSims Forever — source and Warlock presets|https://github.com/wowsims/forever ;; Wowhead — Affliction Warlock Leveling, November 11|https://www.wowhead.com/forever/guide/classes/warlock/affliction/dps-leveling-tips ;; Wowhead — Affliction Warlock Talent Builds, November 11|https://www.wowhead.com/forever/guide/classes/warlock/affliction/talent-builds-pve-dps ;; Wowhead — Affliction Warlock Rotation, November 11|https://www.wowhead.com/forever/guide/classes/warlock/affliction/rotation-cooldowns-pve-dps ;; Wowhead — Affliction Warlock Stat Priority, November 11|https://www.wowhead.com/forever/guide/classes/warlock/affliction/stat-priority-pve-dps ;; Icy Veins — Affliction Warlock Leveling, November 4|https://www.icy-veins.com/wow-forever/affliction-warlock-leveling ;; Icy Veins — Affliction Warlock Guide, November 9|https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-guide ;; Icy Veins — Affliction Warlock Talents, November 4|https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-spec-builds-talents ;; Icy Veins — Affliction Warlock Stat Priority, November 4|https://www.icy-veins.com/wow-forever/affliction-warlock-ranged-dps-pve-stat-priority
 
-Stacked shadow damage-over-time spells plus channelled drains, *"for players who enjoy watching their enemies slowly rot away."*
+Shadow damage over time on several enemies at once, with drains that pay your health and mana back.
 :::scope
-Levelling guide, 1 to 60. The beta closed on October 23 at level 30, so nothing above 30 was tested by players; talents and spells past 30 come from the launch client and Blizzard's posts. Talent tiers unlock at levels 10, 15, 20, 25, 30, 35 and 40 before Legacy `Talented`. No guide site had posted a level 30 build when this page was written, so the first level 30 line below extends the published level 20 build using the full talent tree's point costs — not a build any guide has recommended. These pages follow Blizzard's development notes of November 2, which confirm the October 30 hotfix's `Improved Drains` change. Hover tooltips read the base client and can lag a hotfix: where one differs from the text here, the text is right.
+A guide to the live game, 1 to 60, on client 1.60.1.70938 with hotfixes through November 12. Blizzard reworked `Wrack` and `Soul Siphon` on November 10, and this page follows that version. Wowhead's Affliction pages were updated on November 11, after the rework. Icy Veins' talent and levelling pages date from November 4, before it, and are named where they still describe the old `Wrack`. Talent orders are those two sites' published builds. Levels assume no Legacy `Talented`. No raid opens until December 9, so the level-60 section rests on guides and on WoWSims' model, not on logs.
 :::
 ## What Affliction is for
-**Timed damage that keeps paying out while you do something else.** `Improved Corruption` 5/5 makes [[Corruption]] instant from level 14, and in Forever those ticks can critically strike. `Pandemic` from 22 doubles the critical damage of [[Corruption]], both Banes, [[Siphon Life]] and both Drains. Your damage keeps landing while you move, wand or [[Life Tap]].
-*"Affliction Warlocks have always been excellent levelers, and that strength shows up early in WoW Forever… Learning how to balance those tools lets you move through enemies with very little downtime."* **Icy Veins rates its levelling 5 out of 5**, joint best in the class.
-**Its weakness is short fights**, and two sources say so: *"Affliction performs best when enemies live long enough for your DoTs to ramp up. Fast dungeon pulls can end before that setup has time to pay off."* Another source puts it bluntly: *"On a target that dies in ten seconds, you paid full mana and cast time for half a spell's worth of damage."*
-Icy Veins' dungeon score for it is 4.0, against 5.0 for levelling.
-Learn to stop casting when your existing damage-over-time effects will finish the job.
+**Timed damage that keeps paying out while you do something else.** `Improved Corruption` 5/5 makes [[Corruption]] instant, and in Forever damage-over-time ticks can critically strike. Your damage keeps landing while you move, wand, [[Fear]] a second enemy or [[Life Tap]].
+**From 30 it sustains itself.** [[Drain Life]] rank 3 heals back what [[Life Tap]] costs. Wowhead: Affliction *"rarely needs to stop to eat or drink"*, and the fastest way to play it is to pull two enemies, load one with effects and fear it, and kill the other.
+**Its weak point is a short fight.** Both guide sites say an enemy that dies in a few seconds wastes the effects you put on it. Icy Veins rates the spec 5 out of 5 for levelling and 3.5 for dungeons (November 9). A levelling score measures solo kill speed and nothing else.
+Wowhead names the costs: damage leans on Spell Power from gear, juggling two enemies takes keybinds and practice, and a feared enemy can run into another pack.
 ## Your talent points
-**Level 20: 11/0/0.** The two sources that publish a build disagree on its shape.
-**Icy Veins:** `Improved Corruption` 5/5 → `Improved Life Tap` 2/2 → `Suppression` 3/5 → `Soul Harvest` 1/2 (Blizzard's new name for Classic's `Improved Drain Soul`; its Mana regeneration bonus grants 50/100%). Its own note, written before that bonus worked: *"The final point in Soul Harvesting is optional, so feel free to move it elsewhere."* That second point buys 50% more Mana regeneration — our own reading, against a source note written before the fix.
-**Wowhead** takes `Suppression` further, to 4/5, on different reasoning: *"4 points is enough to reach Hit cap against a same-level target, and it helps if you push slightly higher-level content."* Its only other fixed pick is `Improved Corruption` 5/5. The rest, including `Improved Life Tap` and `Soul Harvest`, is playstyle-dependent, alongside off-tree options like `Unholy Power` and `Destructive Reach`. That list predates `Destructive Reach` covering Destruction spells only, so [[Corruption]], your Banes and your Drains get no range from it.
-**ClassicWoW.gg does not publish a suggested build at all** for any spec, by design; its talent tree is browsable, not prescriptive.
-Legacy `Talented` starts your points earlier, which can add to these 11. Wowhead's picks for two extra points: `Pandemic` first, for the critical-damage payoff, then `Improved Bane of Agony`, now 5/10% for 2 points instead of Classic's 2/4/6% for 3. Blizzard publishes no figure; the numbers are the client's. Take `Amplify Curse` if you want the single-point cooldown: Blizzard's notes confirm it works on [[Bane of Agony]] and `Curse of Exhaustion`. Skip `Fel Concentration`, now 3 points rather than 5, since you are not draining enough yet for it to matter. The Legacy window opens once a first character reaches 25, so your first character reaches 20 on the 11 points above; read these as picks for Legacy points after that.
-**Level 30: 21/0/0 — our own extension, not a published build.** No guide site had posted one when this page was written. Extending the level 20 build on the tree's own point costs, two readings share a 16-point core and split on five points, with the running total after each pick: `Suppression` 5 (5) → `Improved Corruption` 5 (10) → `Improved Drains` 3 (13) → `Amplify Curse` 1 (14) → `Pandemic` 3 (17) → `Nightfall` 2 (19) → `Soul Harvest` 1 (20) → [[Siphon Life]] 1 (21). The second reading, from the same 13 points: `Improved Life Tap` 2 (15), `Malevolence` 3 (18), `Nightfall` 2 (20), [[Siphon Life]] 1 (21). Neither spends the 16-point milestone, `Curse of Exhaustion`, which slows by 30%, fits from level 25 and needs `Amplify Curse`; the first reading can swap `Soul Harvest` for it.
-**MyBigBlaze plays a 26-point drain-tank build at 30**, which needs all five ranks of Legacy `Talented`, with the running total after each tier: `Improved Corruption` 5, `Suppression` 5, `Improved Life Tap` 2 (12) → `Improved Drains` 3, `Grim Reach` 2 (17) → `Fel Concentration` 3, `Improved Bane of Agony` 2 (22) → `Soul Siphon` 3, [[Siphon Life]] 1 (26). The tree's tier gates allow it. He lets mobs hit him while he drains, which is why he takes `Fel Concentration` where Wowhead skips it at 20: the talent gives your Drains a chance not to lose casting time to damage. Keeping `Improved Life Tap` is his judgement, from his own testing with and without it.
+Both guide sites publish a full 1 to 60 order. They agree on the core and differ on what comes first.
+**Level 60, Wowhead's no-respec order (November 11): 41/7/3.** `Improved Corruption` 5 (levels 10 to 14) → `Suppression` 3 (15 to 17) → `Unholy Power` 5 (18 to 22) → `Demonic Energies` 2 (23, 24) → `Improved Drains` 3 (25 to 27) → `Amplify Curse` 1 (28) → `Improved Bane of Agony` 2 (29, 30) → `Suppression` to 5/5 (31, 32) → `Pandemic` 3 (33 to 35) → `Improved Life Tap` 1 (36) → [[Siphon Life]] 1 (37) → `Soul Siphon` 3 (38 to 40) → `Improved Life Tap` to 2/2 (41) → `Shadow Mastery` 5 (42 to 46) → `Wrack` 1 (47) → `Malevolence` 5 (48 to 52) → `Fel Concentration` 3 (53 to 55) → `Nightfall` 2 (56, 57) → `Improved Shadow Bolt` 3 (58 to 60).
+That order is read from the talent embed on [Wowhead's levelling page](https://www.wowhead.com/forever/guide/classes/warlock/affliction/dps-leveling-tips). The page's own text confirms `Shadow Mastery` at 42 to 46, `Wrack` at 47 and `Malevolence` at 48 to 52. Wowhead's reasons: instant [[Corruption]] first for mobility, `Unholy Power` in time for the Succubus at 20, the [[Drain Life]] talents ready for rank 3 at 30. If you wand until 30, it says to take the talents after `Improved Drains` first.
+**Wowhead's second build respecs at 40 for `Wrack` seven levels sooner.** At 40 all 31 points go into Affliction: the build above without `Unholy Power` and `Demonic Energies`, with `Improved Life Tap` 2/2, `Shadow Mastery` 5/5 and `Wrack`. You then retake `Unholy Power` at 41 to 45 and `Demonic Energies` at 46 and 47, and both builds end the same.
+**Level 60, Icy Veins' order (November 4): 40/11/0.** `Suppression` 4 (levels 10 to 13) → `Improved Corruption` 5 (14 to 18) → `Grim Reach` 1 (19) → `Improved Bane of Agony` 2 (20, 21) → `Pandemic` 3 (22 to 24) → `Nightfall` 2 (25, 26) → `Malevolence` 3 (27 to 29) → [[Siphon Life]] 1 (30) → `Demonic Embrace` 5 (31 to 35) → `Demonic Aegis` 2 (36, 37) → `Fel Vitality` 3 (38 to 40) → [[Demonic Sacrifice]] 1 (41) → `Malevolence` to 5/5 (42, 43) → `Grim Reach` to 2/2 (44) → `Improved Life Tap` 1 (45) → `Shadow Mastery` 5 (46 to 50) → `Wrack` 1 (51) → `Improved Life Tap` to 2/2 (52) → `Soul Siphon` 3 (53 to 55) → `Improved Drains` 3 (56 to 58) → `Fel Concentration` 2 (59, 60).
+**Where they differ.** Wowhead makes [[Corruption]] instant at 14 and Icy Veins at 18, after four points of hit. Wowhead keeps a demon and feeds it; Icy Veins takes [[Demonic Sacrifice]] at 41 and gives the demon up for its bonus. Wowhead reaches `Wrack` at 47, or 40 with the respec, and Icy Veins at 51. Icy Veins' order was published before the November 10 rework and its talent page still describes `Wrack` as adding 10% to your other effects.
+**`Shadow Mastery` needs 25 points above it and `Wrack` needs 30 in the tree**, plus [[Siphon Life]]. Move a point out of the upper rows and you can lose both.
 ## Rotation
-Icy Veins and Wowhead order the opening DoTs differently, and both give a reason.
-**Icy Veins' order** (Immolate, then Corruption, then Bane of Agony) leads with the DoT that pays off fastest.
-**Wowhead reverses it**, Bane of Agony first, Corruption, Immolate last, arguing threat: *"Bane of Agony first: it deals the least upfront damage, so it's the least threat and requires time to build up to full damage. Immolate last; its initial Hit generates direct threat, so it's the worst opener."*
-1. **Send the demon in first**
-2. **[[Curse of the Elements]]** or [[Curse of Recklessness]]
-3. **[[Immolate]]**: or last, on Wowhead's threat-ordered build, see above
-4. **[[Corruption]]**: instant from level 14, see below
-5. **[[Bane of Agony]]** *"if the enemy will survive long enough"*: or first, on Wowhead's build
-6. **[[Drain Life]]** when you need health
-7. **Wand as filler.** The published note is explicit: *"At Level 20 with Greater Magic Wand, [[Shadow Bolt]] currently deals less damage for the time spent casting while also costing Mana and generating additional threat"*. Wowhead agrees for levelling generally: *"you'll use your wand more for damage because it deals more DPS than Shadow Bolt, and it's also mana-free"*. Both notes are from level 20, before wands needed a 0.5-second stand-still to fire
-8. **[[Drain Soul]]** to finish, for the shard
-9. **Stop spending mana when your existing effects will finish the enemy**
-Once you have `Nightfall`, [[Shadow Bolt]] becomes worth casting on its procs — but not while [[Drain Soul]] is still channelling. Starting another cast interrupts the channel, so take the instant bolt before you start Drain Soul, not during it. Use [[Life Tap]] *"ideally while moving."*
-**Why this order.** Mana figures here are the client's base numbers at the rank you hold around level 28, before gear and talents.
-- **Your effects are your best Mana.** Over a full duration, [[Bane of Agony]] returns 1.87 damage per point of Mana, [[Corruption]] 1.32 and [[Immolate]] 1.02, against 0.82 for [[Drain Life]] and 0.49 for [[Shadow Bolt]].
-- **[[Bane of Agony]] only pays if the enemy lasts.** The tooltip says it builds up. WoWSims runs its 12 ticks as four at half, four at full and four at one and a half, so half the duration delivers a third of the base damage *(WoWSims' model)*. That is the case for holding it on anything about to die.
-- **Let an effect run out before you recast it.** WoWSims' Affliction list recasts each one only after it has fallen, and its model discards the ticks still to come on an early recast *(WoWSims' model, at 60)*.
-- **WoWSims' list opens the way Wowhead does, without the threat argument.** It goes Bane of Agony, Corruption, [[Siphon Life]], curse, Immolate *(WoWSims' model, at 60)*. It has no threat condition, so it does not settle the levelling disagreement above.
-- **Drains go last once you have `Soul Siphon`.** On tier 5, so level 30 at the earliest, it gives [[Drain Life]], [[Drain Soul]] and `Wrack` 4, 8 or 12% per other Affliction effect on the target, counting three at most: up to 36% at 3/3, and nothing on a bare target.
-- **A `Nightfall` proc removes the cast time, not the cost.** The instant [[Shadow Bolt]] is still 160 Mana at rank 5, so skip it when Mana is what you are short of *(ours, not a source's)*.
-**Multi-target:** *"For maximum damage on AoE and only if the pack lives long enough, spread your DoTs first and then use [[Rain of Fire]]."* If the pack dies fast, skip the effects and go straight to Rain of Fire.
+**Levelling, one enemy** (Wowhead, November 11). Use the Voidwalker until 20, then the Succubus or Incubus.
+1. **Send the demon in**
+2. **[[Curse of the Elements]] first, from 40.** Before rank 3 Wowhead does not spend the cast on normal enemies
+3. **[[Corruption]]** on every enemy
+4. **[[Bane of Agony]]** if the enemy will live long enough for it to ramp up
+5. **[[Immolate]]** on enemies with a lot of health
+6. **[[Siphon Life]]** once you have the talent
+7. **Fill.** Before 30, your wand or [[Drain Life]]. From 30, [[Drain Life]]. With `Wrack`, see below
+8. **Finish with the wand.** Do not start a channel or an effect for the last few ticks
+9. **[[Life Tap]]** in place of the drain when you are low on mana and high on health
+**Wand or [[Drain Life]] before 30:** Wowhead says a strong wand with little Spell Power wins, and more Spell Power moves it toward the drain. From rank 3 at 30 the drain *"wins with any wand"*.
+**`Wrack` while levelling:** it kills faster and does not heal you. Wowhead uses it on about one pull in three, the ones you start near full health and mana, and [[Drain Life]] on the rest.
+**Two enemies at once** (Wowhead calls it the fastest way to level):
+1. **First enemy:** apply your effects, then [[Fear]] it
+2. **Second enemy:** send the demon, apply your effects, and fill on it
+3. **Fear the first again** whenever [[Fear]] ends
+4. **When the second dies**, send the demon at the first and finish it
+Ticks rarely break [[Fear]]. The first hit of [[Immolate]] sometimes does and a [[Shadow Bolt]] often does. [[Fear]] has a 20-yard range. If the enemy runs the wrong way, [[Curse of Recklessness]] makes it ignore the fear and come back.
+**Dungeon packs** (Wowhead): [[Corruption]] on every enemy as they come in, then channel [[Hellfire]] once the tank has them. It burns you too, so tell the healer. Icy Veins lists [[Rain of Fire]] as the option from range.
+**Why this order.** Mana figures are the client's base numbers, before gear and talents.
+- **Your effects are your best Mana.** At the ranks you hold around level 30, a full [[Bane of Agony]] deals 168 for 90 Mana, a full [[Corruption]] 132 for 100, and [[Immolate]] 158 for 155.
+- **[[Bane of Agony]] only pays if the enemy lasts.** The tooltip says it builds up. WoWSims runs it in thirds, weak, normal, strong, so the first half of its 24 seconds delivers about a third of the damage *(WoWSims' model)*.
+- **Let an effect run out before you recast it.** Wowhead: recasting early wastes the ticks it had left.
+- **`Soul Siphon` wants three effects up first.** It adds 4, 8 or 12% to [[Drain Life]], [[Drain Soul]] and `Wrack` for each of your [[Corruption]], [[Siphon Life]] and [[Bane of Agony]] on the target, 36% at most. Since November 10 nothing else counts: not a Curse, not [[Bane of Doom]], not [[Immolate]].
+- **A `Nightfall` proc removes the cast time, not the cost.** Take the instant [[Shadow Bolt]] before you start a channel. Starting any cast breaks [[Drain Soul]].
+## Wrack after November 10
+`Wrack` is the 31-point talent: a 6-second channel at 30 yards for 200 Mana that ticks every second.
+- **It deals about 60 Shadow damage a second at level 60** before spell power, 25 at level 40, and each tick adds 20% of your spell power. Blizzard cut it by 30% on November 10.
+- **While you channel, your [[Corruption]], [[Siphon Life]] and [[Bane of Agony]] on that target tick twice as often.** They do not last longer or end sooner. The old effect, 10% more damage from your other Shadow effects, is gone.
+- **The time it skips is kept.** Blizzard's example: channel for 1 second during a 3-second [[Corruption]] tick and the next tick lands a second sooner, even if you stop.
+- **It does not speed up [[Bane of Doom]].** Wowhead's `Wrack` build uses [[Bane of Agony]] on every fight for that reason, and because Doom does not count for `Soul Siphon`.
+- **It cannot be channelled while moving**, and it speeds up only the target you channel it on.
+- **`Improved Drains` does not cover it. `Fel Concentration`, `Nightfall`, `Pandemic` and `Soul Siphon` do.** A November 6 hotfix stopped `Soul Siphon` making `Wrack` boost itself.
 ## Stat priority
-Spell Power, then Hit, Intellect, Spirit, critical strike, Stamina, Haste.
-**Two of those placements are Forever-specific.** Spirit is high because *"[[Life Tap]] has changed and now scales off of your Spirit."* Critical strike matters *"much more than it was in original Classic"* because damage-over-time effects can now crit. Haste is last: it *"did not make DoTs or Drain channels tick faster."*
+The two guide sites order the damage stats differently.
+**Wowhead (November 11, from level-60 sim stat weights):** Spell Power or Shadow damage, then critical strike, Hit to the cap, Haste, Spell Pierce, Intellect, Spirit.
+**Icy Veins (November 4):** Hit to the cap, then Spell Power, critical strike, Haste, Intellect.
+- **Hit cap:** 17% against raid bosses and 4% against an enemy of your own level. `Suppression` 5/5 gives 5%, so a raider needs 12% from gear and buffs. Past the cap Hit does nothing.
+- **Critical strike** counts for more than in Classic because ticks can crit. `Pandemic` 3/3 makes crits from [[Corruption]], both Banes, [[Siphon Life]], `Wrack` and both Drains deal double damage. [[Immolate]] is not on its list.
+- **Haste:** Wowhead says it shortens casts and the global cooldown and does not speed up ticks, [[Drain Life]] or `Wrack`. Icy Veins' table says it shortens drain channels. The two disagree, and no Blizzard post settles it.
+- **Spirit** adds 1 Mana per point to every [[Life Tap]]. Both sites still put it last or leave it off.
+- **Spell Pierce** is new. Wowhead: it counts in full on `Wrack` and far less on damage-over-time effects.
 ## Your demon
-All four come from class quests: [[Imp]] at 2, [[Voidwalker]] at 10, [[Succubus]] at 20, [[Felhunter]] at 30.
-**[[Voidwalker]] is the levelling pet**: *"your tanky option and the best option to use once you unlock it."* It *"can literally face tank multiple enemies, while you DoT them all up."* Its threat comes from `Torment`, which Wowhead notes is noticeably weaker until rank 2 trains at 20. [[Succubus]] *"deals insanely high damage compared to the other available demons."*
+[[Summon Imp]] in your starting zone, [[Voidwalker]] at 10, [[Summon Succubus]] or [[Summon Incubus]] at 20, [[Summon Felhunter]] at 30, all from class quests.
+**Voidwalker until 20, then the Succubus or Incubus** is Wowhead's advice. `Unholy Power` raises all your demon's damage by 10% at 5/5 and `Demonic Energies` 2/2 heals it for 15% of the spell damage you deal.
+Demons have less Health than in the beta. Blizzard buffed them on November 6 and 10; the [class page](/guides/wow-forever/warlock/) has the figures.
+At 60, Wowhead's `Wrack` build sacrifices the Imp for +15% Shadow damage and plays with no demon. Summoning any demon cancels the bonus.
 ## What defines Affliction
-| Talent | Earliest level before Legacy | What it does |
+| Talent | Points and row | What it does |
 | --- | --- | --- |
-| **`Improved Corruption` 5/5** | 14 | **Makes [[Corruption]] instant cast and adds 10% damage.** Corruption's base cast is 2 seconds and 5/5 removes exactly 2 seconds, at 2% damage per point. Both published builds fix it at 5/5 |
-| **`Suppression` 5/5** | 14 | **Rewritten in Forever**: now +5% hit to *all* spells and −20% threat, where Classic gave Affliction-only resistance reduction |
-| **`Pandemic` 3/3** | 22 | New. **+100% critical damage** on Corruption, both Banes, [[Siphon Life]], `Wrack` and both Drains, the talent that cashes in DoT crits. [[Immolate]] is not on the list |
-| **`Wrack`** | 40 | The 31-point capstone: 86 Shadow damage every second at level 60 before spell power, which adds 0.286 of your spell damage each second, on Blizzard's figures, and your other Shadow damage-over-time effects hit 10% harder for 6 seconds. Blizzard means it as your filler *"when not re-casting damage-over-time spells or instant Shadow Bolts from Nightfall."* It is your 31st point, so level 40, **above anything the beta reached** |
+| **`Improved Corruption`** | 5, row 1 | Takes 2 seconds off [[Corruption]], making it instant at 5/5, and adds 10% damage. Wowhead: the first point already brings the cast close to a global cooldown |
+| **`Suppression`** | 5, row 1 | +5% hit to all spells and −20% threat. Classic's version only lowered resists on Affliction spells |
+| **`Improved Drains`** | 3, row 2 | +20% to [[Drain Life]], [[Drain Soul]] and [[Drain Mana]]. Not `Wrack` |
+| **`Pandemic`** | 3, row 3 | +100% critical strike damage on the spells listed under Stat priority |
+| **`Amplify Curse`** | 1, row 3 | Your next [[Bane of Agony]] deals 50% more. 3-minute cooldown. It also works on [[Curse of Weakness]] and `Curse of Exhaustion` |
+| **`Malevolence`** | 5, row 4 | +5% critical strike chance with Shadow spells |
+| **`Nightfall`** | 2, row 4 | [[Corruption]], [[Drain Life]], [[Drain Soul]] and `Wrack` have a 4% chance to make your next [[Shadow Bolt]] instant |
+| **[[Siphon Life]]** | 1, row 5 | A 30-second effect that heals you. Level 30 at the earliest. `Wrack` requires it |
+| **`Soul Siphon`** | 3, row 5 | See Rotation |
+| **`Shadow Mastery`** | 5, row 6 | +10% Shadow damage and life drained |
+| **`Wrack`** | 1, row 7 | See the section above. Level 40 at the earliest |
 ## What Forever changed for Affliction
-- **Damage-over-time effects can critically strike.** One source calls it *"one of the largest overall Warlock mechanical changes"*. Both `Malevolence` and `Pandemic` are new talents built on it.
-- **[[Bane of Agony]] and [[Bane of Doom]] are no longer Curses**: *"no longer competes with your Curse, which means you can keep your big damage rolling while still bringing the debuff your group needs."* A Bane and a Curse now coexist on one target, but only one Bane can, so [[Bane of Agony]] and [[Bane of Doom]] never run together.
-- **Five new talents**: `Improved Drains`, `Pandemic`, `Malevolence`, `Soul Siphon`, `Wrack`, and `Improved Drain Soul` was renamed `Soul Harvest`. `Grim Reach` moved from tier 4 to tier 2 and adds 10/20% range to your Affliction spells. `Improved Drains` covers [[Drain Life]], [[Drain Soul]] and Drain Mana, up to 20%, and not `Wrack`. Five removed: `Improved Curse of Weakness`, `Improved Drain Life`, `Improved Drain Mana`, `Improved Curse of Exhaustion`, `Dark Pact`.
-- **[[Life Tap]] converts 60 health to 60 mana at rank 1 and 848 to 848 at rank 6**, and Spirit increases the amount (Classic: 30 and 424). `Improved Life Tap` moved to tier 1.
-- `Nightfall` now procs off [[Corruption]], [[Drain Soul]], [[Drain Life]] and `Wrack`. `Soul Siphon` is new: up to 12% more damage or health drained per *other* Affliction spell on the target, capped at 36%, and it covers `Wrack` as well as both Drains. **[[Drain Soul]] can grant a shard on damage alone**, not only on a kill, but Blizzard made that chance much smaller. A kill still always grants one, so finish with it when you need shards.
-- [[Drain Soul]] **now breaks the moment you begin casting another spell**. It previously kept channelling through a new cast.
+- **Damage-over-time effects can critically strike.** `Malevolence` and `Pandemic` are new talents built on it.
+- **[[Bane of Agony]] and [[Bane of Doom]] are Banes, not Curses.** A Bane and a Curse coexist on one target. Only one Bane can, so Agony and Doom never run together. [[Bane of Agony]] updates its damage while it runs.
+- **New talents:** `Improved Drains`, `Pandemic`, `Malevolence`, `Soul Siphon`, `Wrack`. `Improved Drain Soul` became `Soul Harvest`: a kill under [[Drain Soul]] raises your Mana regeneration by 100% for 10 seconds at 2/2 and lets it continue while casting. `Grim Reach` adds 10/20% range to Affliction spells.
+- **Removed:** `Improved Curse of Weakness`, `Improved Drain Life`, `Improved Drain Mana`, `Improved Curse of Exhaustion`, `Dark Pact`.
+- **`Improved Life Tap` moved to row 1**, and [[Life Tap]] adds 1 Mana per point of Spirit to its Classic base.
+- **`Improved Bane of Agony` is 5/10% for 2 points**, where Classic gave 2/4/6% for 3. `Fel Concentration` is 3 points and covers `Wrack`.
+- **[[Drain Soul]] breaks the moment you begin another cast.** It can grant a shard on damage alone, rarely. A kill always grants one.
 ## At level 60
-A 51-point tree reaches `Soul Siphon`, `Shadow Mastery` and `Wrack`, and [[Bane of Doom]] trains at 60. Blizzard's development notes put `Shadow Mastery` at 2% Shadow damage a rank, 10% at 5/5. No tested endgame rotation exists yet, and one guide says why: *"Critical striking DoTs, Pandemic, Wrack, Improved Drains, and the new Drain Soul execute bonuses all scale together in ways that cannot easily be evaluated from a Level 38 build."*
+**Wowhead publishes two raid builds (November 11).**
+- **[`Wrack`, 35/11/5](https://www.wowhead.com/forever/guide/classes/warlock/affliction/talent-builds-pve-dps).** Wowhead calls it the stronger of the two. It takes `Soul Siphon` 3/3 and `Wrack`, 11 Demonology points for [[Demonic Sacrifice]], and `Improved Shadow Bolt` 5/5. Sacrifice the Imp and play without a demon. WoWSims' Affliction preset is the same build.
+- **SM/Ruin, 30/0/21.** No `Wrack` and no `Soul Siphon`. [[Shadow Bolt]] is the filler behind `Bane`, `Ruin` and `Agonizing Flames`, with the Succubus out. Wowhead: for players who prefer hard-casting or want a demon. Its dungeon build is this one with a point moved into [[Shadowburn]], because `Wrack` cannot be channelled on the move.
+**Icy Veins publishes one, a 33/0/18 `Wrack` build with a Succubus (November 4).** It predates the rework. Its overview says Affliction's raid performance *"still needs proper testing at Level 60"*.
+**The `Wrack` rotation** (Wowhead; WoWSims' list runs the same priority *(a model)*):
+1. **[[Shadow Bolt]] before the pull**, so an `Improved Shadow Bolt` crit is up from the start
+2. **`Amplify Curse` and [[Bane of Agony]]**
+3. **Your assigned Curse**
+4. **[[Corruption]]**
+5. **[[Siphon Life]]**
+6. **Instant [[Shadow Bolt]]** on a `Nightfall` proc
+7. **`Wrack`**, stopped only when something above is due
+8. **[[Life Tap]] right after a full `Wrack`**, when you need the mana
+Your effects tick at normal speed whenever you are not channelling, so Wowhead's rule is to spend as little time out of `Wrack` as you can. On two targets keep `Wrack` on the main one. On three or more that will die within about 20 seconds, go straight to [[Hellfire]].
+**SM/Ruin** swaps the Bane rule: [[Bane of Doom]] with a minute or more left in the fight, `Amplify Curse` and [[Bane of Agony]] with less. It adds [[Immolate]] and fills with [[Shadow Bolt]].

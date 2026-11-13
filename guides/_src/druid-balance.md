@@ -1,55 +1,96 @@
-updated: November 3, 2026
-build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Wowhead — Level 20 Balance Druid Guide|https://www.wowhead.com/forever/guide/classes/druid/balance/level-20-dps-overview ;; Icy Veins — Balance Druid|https://www.icy-veins.com/wow-forever/balance-druid-ranged-dps-pve-guide ;; ClassicWoW.gg — Balance Druid|https://classicwow.gg/forever/guides/druid/balance ;; foreverchanges.pro — Patch notes|https://foreverchanges.pro/patch-notes ;; WoWSims Forever — Balance|https://www.wowsims.com/forever/druid/balance/ ;; WillE — ULTIMATE WoW Forever Class Overview (WOW FOREVER)|https://www.youtube.com/watch?v=7QRS0UYz3yQ ;; Bulwark — DRUID in WoW Forever: Everything You Need to Know Before Launch|https://www.youtube.com/watch?v=34AJ8BW6m9U
+updated: November 13, 2026
+build: 1.60.1.70938
+sources: Blizzard — Class Deep Dives: Hunter and Druid|https://worldofwarcraft.blizzard.com/en-us/news/24301515 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Icy Veins — Balance Druid Leveling|https://www.icy-veins.com/wow-forever/balance-druid-leveling ;; Icy Veins — Balance Druid Builds and Talents|https://www.icy-veins.com/wow-forever/balance-druid-ranged-dps-pve-spec-builds-talents ;; Icy Veins — Balance Druid Rotation|https://www.icy-veins.com/wow-forever/balance-druid-ranged-dps-pve-rotation-cooldowns-abilities ;; Icy Veins — Balance Druid Stat Priority|https://www.icy-veins.com/wow-forever/balance-druid-ranged-dps-pve-stat-priority ;; Wowhead — Balance Druid Leveling|https://www.wowhead.com/forever/guide/classes/druid/balance/dps-leveling-tips ;; Wowhead — Balance Druid Talent Builds|https://www.wowhead.com/forever/guide/classes/druid/balance/talent-builds-pve-dps ;; Wowhead — Balance Druid Rotation|https://www.wowhead.com/forever/guide/classes/druid/balance/rotation-cooldowns-pve-dps ;; Wowhead — Balance Druid Stat Priority|https://www.wowhead.com/forever/guide/classes/druid/balance/stat-priority-pve-dps ;; foreverchanges.pro — Druid talents|https://foreverchanges.pro/talents/druid ;; WoWSims Forever — Balance|https://www.wowsims.com/forever/druid/balance/ ;; WoWSims Forever — source and combat-log measurements|https://github.com/wowsims/forever ;; Bulwark — I Leveled Balance Druid to 44 in WoW Forever: Slow Kills, Infinite Mana, Awful PvP|https://www.youtube.com/watch?v=KJ0n-v1qMeA
 
-Arcane and Nature caster with the new `Eclipse` mechanic — [[Wrath]] shortens your next [[Starfire]], so you alternate rather than spam one spell.
+Arcane and Nature caster. You level on [[Wrath]] and two damage-over-time spells, and the `Eclipse` weave of [[Wrath]] into [[Starfire]] arrives late.
 :::scope
-Levelling guide, 1 to 60. The beta closed on October 23 at level 30, so nothing above 30 was tested by players; talents and spells past 30 come from the launch client and Blizzard's posts. [[Moonkin Form]] is the 31-point capstone, which means level 40, so no beta player was ever in it. No source had posted a level 30 build when this page was written. The level 30 line below extends the published level 20 build using the full talent tree's point costs, not a build any guide has recommended. These pages follow the talent trees and values Blizzard confirmed in its November 2 development notes. If a tooltip on this page differs from the text, go by the text.
+A guide to the live game, 1 to 60. Numbers are the client's at build 1.60.1.70938 with Blizzard's hotfixes through November 12. Talent orders are Icy Veins' and Wowhead's published builds, named and dated where they appear. The level 60 rotation comes from those two sites and from WoWSims, which is a model, plus one level 41 to 45 combat log WoWSims has fitted. No raid is open until December 9, so nothing here rests on a raid log, and both sites say their stat pages are provisional until then. If a tooltip differs from the text, go by the text.
 :::
 ## What Balance is for
-**Damage from outside melee, on a rotation that alternates instead of spamming one spell.** `Nature's Reach` 2/2 extends the range of all your damaging spells and raises your hit chance. `Eclipse` makes [[Wrath]] cut the cast time of your next 2 [[Starfire]]s, with no crit required. [[Entangling Roots]] holds up to 3 targets with `Overgrowth`, and is no longer outdoors-only.
-**The published verdict, which measures solo kill speed:** *"Balance Druid is an ok levelling choice. It does have a bit more downtime than Feral Druid would, but the larger range on your abilities can make tagging mobs much easier… Expect to start out very slowly though."*
-**That verdict predates a significant buff.** On September 24, in Blizzard’s own words, *"Wrath base damage increased ~50%"*, with ranks 1 to 5 trimmed slightly on October 8. On top of that, `Improved Wrath` 5/5 now also cuts Wrath’s mana cost, and `Moonglow` 3/3 cuts the mana cost of all damaging spells, where Classic’s cut a named list with heals included. Both directions are Blizzard’s, but the figures the guide sites quote (50%, 25%, against Classic’s 9%) are client readings, not published. Restoration loses a mana talent in the trade. Balance's levelling case is stronger than the published guides read *(ours, not a source's)*, and no guide site has revisited its verdict since. WillE and Bulwark both call Balance much improved and still level Feral.
+**Damage from outside melee, with heals and crowd control still on the bar.** `Nature's Reach` 2/2 adds 20% range to your Balance spells and 4% hit. [[Entangling Roots]] works indoors and holds up to 3 targets with `Overgrowth`. You can heal a dungeon in a Balance build while levelling: both sites say so, and you keep every healing spell outside [[Moonkin Form]].
+**What the sites say about levelling it.** Wowhead (November 4): *"Balance leveling in Forever is more viable than it ever was in Classic. It will reward players who plan their pulls rather than pushing from quest to quest. Expect to spend time drinking…"* Icy Veins (November 4): the start is slow, and *"once you are Level 25 or so, it becomes a very fun spec to level."* Both list the same weaknesses: slow early levels, Mana, and no real area damage until 40.
+**One live report** *(reported, one player)*: Bulwark levelled Balance to 44 on a PvP realm and [describes](https://www.youtube.com/watch?v=KJ0n-v1qMeA&t=134) slow single-target kills, almost no drinking once `Improved Wrath` and `Reflection` were in, and healing every dungeon up to Razorfen Downs on a Balance build.
 ## Your talent points
-**Level 20: 11/0/0.** Every published build opens `Improved Wrath` 5/5. They differ after that.
-**Build A**, with the order published: `Improved Wrath` 5/5 → `Nature's Reach` 2/2 → `Moonglow` 3/3 → `Improved Moonfire` 1/2. `Improved Wrath` is taken over `Nature's Focus` because *"you generally end up with a better effective cast time anyway and the mana savings are very significant"*. `Nature's Reach` is taken because it *"will reduce the chances your spells miss by a significant amount"*, and it extends [[Moonfire]]'s range for tagging.
-**Build B:** `Improved Wrath` 5 / `Moonglow` 3 / `Nature's Majesty` 2 / `Nature's Reach` 1 — *"You'll never run out of mana with these talents."*
-**Build C**, a dungeon list: `Improved Wrath` 5 / `Moonglow` 3 / `Nature's Majesty` 1 / `Nature's Reach` 2.
-**Level 30: 21/0/0 — our own extension, not a published build.** No source had posted one. On the tree's point costs: `Improved Wrath` 5 · `Moonglow` 3 · `Nature's Majesty` 2 · `Nature's Reach` 2 · `Improved Moonfire` 2 · `Nature's Splendor` 1 · [[Insect Swarm]] 1 · `Improved Starfire` 5. That spends everything below tier 5, so `Eclipse` waits for level 31.
-**Build with `Eclipse` at 30:** `Improved Wrath` 5 · `Moonglow` 3 · `Nature's Majesty` 2 · `Nature's Reach` 2 · `Improved Moonfire` 2 · `Nature's Splendor` 1 · [[Insect Swarm]] 1 · `Improved Starfire` 4 · `Eclipse` 1. Also ours. One point leaves `Improved Starfire` so that tier 5 opens on the last point.
-**Build for periodic damage:** `Improved Wrath` 5 · `Genesis` 5 · `Moonglow` 3 · `Nature's Majesty` 2 · `Nature's Reach` 2 · `Improved Moonfire` 1 · `Nature's Splendor` 1 · [[Insect Swarm]] 1 · `Nature's Grace` 1. Also ours. It takes `Genesis` where the others take `Improved Starfire`, and gives up one point of `Improved Moonfire` to stay inside 21.
+**Level 60: 38/0/13, Icy Veins' levelling order** (page dated November 4, built on the November 3 trees). Spend the points in this order:
+1. `Improved Wrath` 5, levels 10 to 14
+2. `Nature's Focus` 5, levels 15 to 19
+3. `Reflection` 3, levels 20 to 22
+4. `Nature's Reach` 2, levels 23 and 24
+5. `Nature's Majesty` 2, levels 25 and 26
+6. `Moonglow` 1, level 27
+7. `Nature's Splendor` 1, level 28
+8. `Moonglow` to 3/3, levels 29 and 30
+9. `Improved Moonfire` 2, levels 31 and 32
+10. [[Insect Swarm]] 1, level 33
+11. `Genesis` 4, levels 34 to 37
+12. `Nature's Grace` 1, level 38
+13. `Genesis` to 5/5, level 39
+14. `Naturalist` 5, levels 40 to 44
+15. `Eclipse` 3, levels 45 to 47
+16. `Moonfury` 5, levels 48 to 52
+17. [[Moonkin Form]] 1, level 53
+18. `Improved Starfire` 5, levels 54 to 58
+19. `Vengeance` 2, levels 59 and 60
+**Why it leaves the tree at 15.** `Nature's Focus` 5/5 is a 70% chance not to lose cast time when hit, and `Reflection` 3/3 keeps 50% of your Mana regeneration running while you cast. Icy Veins: Reflection's points *"can reduce your downtime by quite a lot."* `Naturalist` 5/5 at 40 to 44 is +10% to all damage.
+**Why `Eclipse` waits until 45.** Icy Veins: Eclipse *"comes online very late in your levelling journey"*, and before it you *"mostly pretend [Starfire] doesn't exist."* `Vengeance` is left for last because *"we have so little crit chance while leveling."*
+**Wowhead's levelling builds** (November 4) end on the same 38/0/13 with `Genesis` 2 and `Vengeance` 5. Its order stays in Balance longer: `Improved Wrath`, then `Moonglow` and `Nature's Reach`, with [[Insect Swarm]] and `Nature's Splendor` in by 30, and its rotation text has you in [[Moonkin Form]] from 40. It also leaves `Eclipse`, `Improved Starfire` and `Vengeance` to the end: *"leaving those till the end of your journey will be optimal."* So the two sites agree that the Eclipse weave is a late pickup and differ on whether [[Moonkin Form]] comes at 40 or 53.
+**Build for level 60, Wowhead and WoWSims, 38/0/13:** `Improved Wrath` 5 · `Genesis` 2 · `Moonglow` 3 · `Improved Moonfire` 2 · `Nature's Majesty` 2 · `Nature's Reach` 2 · `Nature's Splendor` 1 · [[Insect Swarm]] 1 · `Vengeance` 5 · `Improved Starfire` 5 · `Nature's Grace` 1 · `Eclipse` 3 · `Moonfury` 5 · [[Moonkin Form]] 1 · `Nature's Focus` 5 · `Naturalist` 5 · `Reflection` 3. Wowhead: move the `Reflection` points to `Genesis` if you are not running out of Mana.
+**Build for level 60, Icy Veins, 41/0/10:** `Improved Wrath` 5 · `Genesis` 5 · `Moonglow` 3 · `Improved Moonfire` 2 · `Nature's Majesty` 2 · `Nature's Reach` 2 · `Nature's Splendor` 1 · [[Insect Swarm]] 1 · `Vengeance` 5 · `Improved Starfire` 5 · `Nature's Grace` 1 · `Eclipse` 3 · `Moonfury` 5 · [[Moonkin Form]] 1 · `Nature's Focus` 5 · `Naturalist` 5. Its swaps: `Genesis` for `Subtlety` if threat is a problem, or for `Reflection` if Mana is.
+Dual Specialization is sold by your class trainer at 40 for 50 gold, per Wowhead, so a healing or Feral second build is a purchase, not a respec.
 ## Rotation
-At these levels the rotation is short.
-1. **Apply and maintain [[Moonfire]]**
-2. **Maintain [[Insect Swarm]]** if you have it. It is a tier-4 Balance talent, so level 25 at the earliest
-3. **Spam [[Wrath]]**
-That is all of it below 30. From level 40 the intent is [[Moonkin Form]] → both damage-over-time effects → one [[Wrath]] for two `Eclipse` charges → two [[Starfire]]s to spend them, but the beta stopped before anyone could play it.
-**Multi-target: there isn't one until [[Hurricane]] trains at 40.** Before that you multi-dot [[Moonfire]] and split packs with [[Entangling Roots]], which `Overgrowth` raises to 3 targets at once.
+**Before `Eclipse`, on one target:**
+1. Open with **[[Moonfire]]** if someone else might tag the mob, **[[Wrath]]** otherwise
+2. **[[Insect Swarm]]** once you have it, on a target that will live through it
+3. **[[Wrath]]** until it dies
+4. **[[Rejuvenation]]** before the pull and **[[Regrowth]]** in the fight when you need them
+Wowhead roots first: pull with [[Wrath]] at range, [[Entangling Roots]], then [[Wrath]] on repeat, re-rooting when it breaks, because *"you have no pushback protection while leveling."* Icy Veins takes `Nature's Focus` at 15 for the same problem.
+**With `Eclipse` 3/3, on one target**, the order both sites publish:
+1. Open with **[[Wrath]]**
+2. **[[Insect Swarm]]**, then **[[Moonfire]]**. Refresh each as it falls off, not before
+3. **[[Wrath]]** once, for two `Eclipse` charges
+4. **[[Starfire]]** twice, to spend them
+5. Repeat from 3
+Icy Veins: *"Aim to avoid ever casting Starfire without an Eclipse charge. Similarly, avoid casting Wrath while you are full on Eclipse charges."* Wowhead adds that a missed or resisted [[Wrath]] gives no charges, so hit matters more here than for most casters.
+**Several targets.** Put [[Insect Swarm]] and then [[Moonfire]] on each one and keep [[Thorns]] on whoever is being hit. Then:
+1. **Before 40**, Wowhead's method: shift to Bear Form, [[Demoralizing Roar]], and [[Swipe]] while your damage-over-time spells and [[Thorns]] work and your Mana comes back
+2. **From 40**: channel **[[Hurricane]]** on a big enough pack, with [[Barkskin]] from 44 so hits do not push the channel back
+3. On a smaller pack, cast your single-target rotation into the target that will live longest
+**How big a pack for [[Hurricane]]?** The sources differ. Icy Veins says 3 or more while levelling and 5 or more at 60. Wowhead says 5 or more, and that it is *"likely to only be mana efficient on 4 to 5 enemies."* WoWSims' model starts at 4 *(WoWSims' model)*.
+**When Mana runs short**, both sites give the same answer: cast more [[Wrath]] and fewer [[Starfire]]s, and drop [[Moonfire]] first. [[Omen of Clarity]] is trained at 20, procs off spells, and is not used up by [[Wrath]], so a proc carries to the next [[Starfire]].
 **What changes the answer**, on tooltip numbers before spell power:
-- **[[Wrath]] or [[Starfire]].** Speed against Mana. At 30 with `Improved Wrath` 5/5, [[Wrath]] deals 49 for 35 Mana, or 1.4 per Mana, and [[Starfire]] deals about 167 for 135, or 1.2. Per second of casting [[Starfire]] leads, about 48 against 33, and `Improved Starfire` 5/5 lifts it to about 56. So [[Starfire]] finishes a mob faster, and [[Wrath]] is the spell for when Mana is short.
+- **[[Wrath]] or [[Starfire]] without `Eclipse`.** Speed against Mana. At 30 with `Improved Wrath` 5/5, [[Wrath]] deals 49 for 35 Mana, or 1.4 per Mana, and [[Starfire]] deals about 167 for 135, or 1.2. Per second of casting [[Starfire]] leads, about 48 against 33. So [[Starfire]] finishes a mob faster and [[Wrath]] is the spell for when Mana is short. Both sites still level on [[Wrath]], for the Mana.
 - **Recasting [[Moonfire]].** Do not, while it runs. At 30 a second cast adds a 55 hit for 150 Mana, where [[Wrath]] deals 49 for 35. WoWSims' model also recasts it only once it has gone *(WoWSims' model)*. Its instant hit is still your best button on the move.
 - **[[Insect Swarm]] on a dying target.** It deals nothing up front. At 30, rank 2 needs 4 of its 6 ticks, 8 seconds, to out-damage one [[Wrath]]. At 25 to 29, rank 1 needs all 6, so on anything that will die sooner, cast [[Wrath]].
-- **[[Starfire]] with `Eclipse`.** Cast it as soon as a charge is up. One [[Wrath]] gives 2 charges, which is two [[Starfire]]s, and stacking to the cap of 4 only spends more time on [[Wrath]]. WoWSims' model does this at 60 *(WoWSims' model)*. There, with `Improved Starfire` 5/5 and `Eclipse` 3/3, one [[Wrath]] and two [[Starfire]]s deal about 179 a second against about 178 for [[Starfire]] alone, so on tooltip numbers the two are level, and any gain comes from spell power.
-- **[[Hurricane]] or single-target.** At 40, rank 1 deals 69 a second to each enemy in it, and [[Wrath]] rank 6 with `Improved Wrath` 5/5 deals 40. On two targets [[Hurricane]] already leads on speed and about matches that [[Wrath]] per Mana, but one channel costs 880. At 60 WoWSims' model waits for four targets *(WoWSims' model)*. The client shows why spell power pushes that way: each tick takes 0.03 of it, where [[Wrath]] takes 0.57.
+- **[[Starfire]] with `Eclipse`.** Cast it as soon as a charge is up. One [[Wrath]] gives 2 charges, and stacking to the cap of 4 only spends more time on [[Wrath]]. At 60 with `Improved Starfire` 5/5 and `Eclipse` 3/3, one [[Wrath]] and two [[Starfire]]s deal about 179 a second against about 178 for [[Starfire]] alone, so on tooltip numbers the two are level. The gain is Mana, spell power on [[Starfire]]'s full coefficient, and `Nature's Grace`.
+- **[[Hurricane]] or single-target.** At 40, rank 1 deals 69 a second to each enemy in it for 880 Mana a channel, and [[Wrath]] rank 6 with `Improved Wrath` 5/5 deals about 40 a second. Spell power pushes toward single-target: each [[Hurricane]] tick takes 0.03 of it, where [[Wrath]] takes 0.57.
+- **What [[Hurricane]] does not do.** In a level 41 to 45 log fitted by WoWSims, its ticks never procced [[Omen of Clarity]] and their crits never gave `Nature's Grace`. The cast itself can proc Omen, once per target in the area.
 ## Stat priority
-Item level, then Spell Power, Intellect, Haste, critical strike, Spirit.
-*"Focus on equipping your highest level pieces"* while levelling. More specifically: Arcane damage for [[Moonfire]] and [[Starfire]], with plain Spell Power worth the same, and Nature damage good for [[Wrath]] alone. Then Intellect. **Between two otherwise equal pieces the leather one wins**, for the armour. Stamina sits near the bottom.
+**While levelling:** your highest item level pieces, then Spell Power, then Intellect. Wowhead: *"Upgrade your weapon early. Caster weapons carry spell damage from level 10."* Between two otherwise equal pieces the leather one wins, for the armour *(ours, not a source's)*.
+**At 60, hit comes first.** Spells need 17% hit against a raid boss, and `Nature's Reach` 2/2 supplies 4%, so 13% comes from gear.
+1. **Icy Veins (November 4):** hit to 17%, critical strike, Spell Power, Intellect
+2. **Wowhead (October 30, labelled speculative):** hit to 17%, spell damage, spell penetration, critical strike, haste, Intellect, Spirit
+3. **WoWSims' weights** *(WoWSims' model)*: hit 1.48, spell damage 1, haste 0.99, critical strike 0.76, Intellect 0.28, Spirit 0
+Arcane damage serves [[Moonfire]] and [[Starfire]], Nature damage serves [[Wrath]], [[Insect Swarm]] and [[Hurricane]], and plain Spell Power serves both. Critical strikes deal double with `Vengeance` 5/5. Haste does not speed up damage-over-time ticks. Icy Veins: *"Do not take this stat priority too seriously until we have Level 60 data."*
 ## What defines Balance
-| Talent | Earliest level | What it does |
+| Talent | First point at | What it does |
 | --- | --- | --- |
-| **`Eclipse`** | **30** | New. [[Wrath]] cuts the cast time of your next 2 [[Starfire]]s: 0.17 s per point, so 0.17 s at 30 and 0.50 s at 3/3 by 32. 4 charges, 15 seconds. **No crit required**, so Classic's Starfire spam becomes genuine alternation |
-| **`Nature's Grace`** | ~30 | Rewritten: now +10% casting speed *and* −10% global cooldown for 3 seconds on a **non-periodic** crit. Damage-over-time crits do not trigger it |
-| **[[Moonkin Form]]** | **40** | The 31-point capstone. Also raises armour from items by 360% while shapeshifted |
+| **`Improved Wrath` 5/5** | 10 | [[Wrath]] casts in 1.5 seconds instead of 2 and costs half the Mana |
+| **`Nature's Splendor`** | 20 | Requires `Nature's Majesty` 2/2. Extends [[Moonfire]] and [[Rejuvenation]] by 3 seconds, [[Regrowth]] by 6 and [[Insect Swarm]] by 2 |
+| **`Nature's Grace`** | 30 | +10% casting speed and −10% global cooldown for 3 seconds on a **non-periodic** spell crit |
+| **`Eclipse`** | **30** | [[Wrath]] cuts the cast time of your next 2 [[Starfire]]s by 0.17 seconds a point, 0.50 at 3/3. Up to 4 charges, 15 seconds. **No crit required.** Published levelling orders take it at 45 or later |
+| **[[Moonkin Form]]** | **40** | The 31-point talent. +360% armour from items, doubles [[Omen of Clarity]]'s proc chance, and gives the party or raid +3% to every kind of critical strike within 45 yards. You cannot cast healing spells in it |
 ## What Forever changed for Balance
-- **[[Wrath]] was redesigned to a much cheaper Mana cost with lower base damage to match**, in Blizzard's own framing. The September 24 buff above was layered on top of that redesign, not instead of it.
-- **`Eclipse` is new**, and it is the spec's identity.
-- **[[Moonkin Form]]'s aura is now all critical strike**: +3% to every kind of critical strike for the party or raid within 45 yards, where Classic's was spell crit within 30. Blizzard's November 2 notes make it exclusive with `Leader of the Pack`, and it doubles [[Omen of Clarity]]'s proc chance. You cannot cast healing spells in it; Classic allowed only Balance spells, which is a different restriction.
-- **[[Omen of Clarity]] and [[Nature's Grasp]] are no longer talents**: they are trained, at 20 and 10. Nature's Grasp also gained reach: it is now castable while shapeshifted, and no longer outdoors-only. Blizzard states no change to its proc.
-- **[[Entangling Roots]] is no longer outdoors-only** either.
-- **[[Insect Swarm]] moved from Restoration into Balance**, and `Natural Shapeshifter` moved the other way, into Restoration. `Improved Thorns` is now a baseline ability, like [[Omen of Clarity]] and [[Nature's Grasp]]. `Natural Weapons` was folded into Restoration's `Naturalist` talent rather than deleted.
-- **Three talents moved up a row.** `Moonglow` went row 5 → row 2, and now cuts only damaging-spell Mana cost, no longer touching heals. `Nature's Reach` went row 3 → row 2, and now also raises hit chance and covers all your damaging spells, not just [[Moonfire]]'s range. `Improved Entangling Roots` moved the other way, row 2 → row 3, and was redesigned: instead of preventing interruption it increases the root's damage and lowers the chance other damage breaks it early.
-- **`Improved Moonfire` now costs 2 talent points instead of 5** for the same effect.
-- **Three new talents:** `Genesis` (+10% periodic damage *and healing* at 5/5, row 1), `Nature's Majesty` (+4% crit with spells and melee, row 2), and `Nature's Splendor`, the new 11-point gold medal talent. `Nature's Splendor` requires `Nature's Majesty` and extends [[Moonfire]] and [[Rejuvenation]] by 3 seconds, [[Regrowth]] by 6 and [[Insect Swarm]] by 2, per the client.
-- `Moonfury` and `Vengeance` were broadened from a named-spell list to all Arcane and Nature spells. **[[Thorns]] scales with spell power** at a 6% ratio, on Vanilla base damage. [[Moonfire]] rank 10 deals less than Classic's. [[Starfire]] has about 40% more base damage than the launch client's first values, which puts rank 7 at about 490 to 577, close to Classic's 496 to 584. [[Hurricane]] lost its 1-minute cooldown.
+- **[[Starfire]] gained about 40% base damage at launch**, November 4. Rank 7 is 490 to 576, close to Classic's 496 to 584.
+- **[[Wrath]] was redesigned to a much cheaper Mana cost with lower base damage to match**, in Blizzard's framing, then raised about 50% on September 24. `Improved Wrath` now also halves its Mana cost.
+- **`Eclipse` is new.** Classic's [[Starfire]] spam becomes one [[Wrath]] into two [[Starfire]]s.
+- **[[Moonkin Form]]'s aura is all critical strike**: +3% to every kind for the party or raid within 45 yards, where Classic's was spell crit within 30. Blizzard's November 2 notes make it exclusive with [[Leader of the Pack]], which gives the same thing.
+- **[[Omen of Clarity]] and [[Nature's Grasp]] are trained**, at 20 and 10, not talents. [[Nature's Grasp]] is castable while shapeshifted and indoors. In logs fitted by WoWSims, helpful casts such as [[Thorns]] proc Omen only in [[Moonkin Form]].
+- **[[Entangling Roots]] is no longer outdoors-only.** `Improved Entangling Roots` 3/3 adds 75% to its damage and to the damage it can take before breaking.
+- **[[Insect Swarm]] moved from Restoration into Balance**, row 4, and `Natural Shapeshifter` moved the other way. Improved Thorns is baseline. Natural Weapons was folded into Restoration's `Naturalist`.
+- **Three talents moved up.** `Moonglow` went row 5 to row 2 and now cuts the Mana cost of damaging spells only, 25% at 3/3. `Nature's Reach` went row 3 to row 2 and gained the hit chance. `Improved Moonfire` costs 2 points instead of 5, for +10% damage and crit.
+- **Three new talents:** `Genesis` (+10% periodic damage and healing at 5/5, doubled in the November 2 notes), `Nature's Majesty` (+4% crit with spells and melee at 2/2) and `Nature's Splendor`.
+- `Moonfury` and `Vengeance` cover all Arcane and Nature spells. **[[Thorns]] scales with spell power**, which both sites call a real share of levelling damage. [[Hurricane]] lost its 1-minute cooldown.
 ## At level 60
-Unknown. The beta stopped short of [[Moonkin Form]], and how much of Classic's hybrid tax survives is unresolved in every source.
+**What is published:** the two builds above, both sites' rotation pages and WoWSims' Balance model. They agree on the rotation: both damage-over-time spells kept up, one [[Wrath]] into two [[Starfire]]s, [[Hurricane]] on large packs.
+**What you bring a group.** [[Moonkin Form]]'s +3% crit for the party or raid, [[Faerie Fire]] if no other Druid has it, Innervate for a healer, [[Rebirth]] in combat, and [[Insect Swarm]]'s 2% hit reduction on the target.
+**What is not known:** how Balance damage compares with other casters on a raid boss, and whether its Mana lasts a raid fight. Raids open December 9. The tier lists on both sites were written before launch.

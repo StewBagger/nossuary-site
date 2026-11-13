@@ -1,71 +1,72 @@
-updated: November 3, 2026
-build: 1.60.1.70707
-sources: Blizzard — Class Deep Dives: Priest and Warrior|https://worldofwarcraft.blizzard.com/en-us/news/24301514 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Warrior Updates, October 2|https://us.forums.blizzard.com/en/wow/t/warrior-updates-in-todays-beta-build/2369360 ;; Wowhead — Level 20 Fury Warrior|https://www.wowhead.com/forever/guide/classes/warrior/fury/level-20-dps-overview ;; Icy Veins — Fury Warrior|https://www.icy-veins.com/wow-forever/fury-warrior-melee-dps-pve-guide ;; ClassicWoW.gg — Fury Warrior|https://classicwow.gg/forever/guides/warrior/fury ;; WoWSims Forever — Fury|https://www.wowsims.com/forever/warrior/dps/
+updated: November 13, 2026
+build: 1.60.1.70938
+sources: Blizzard — Class Deep Dives: Priest and Warrior|https://worldofwarcraft.blizzard.com/en-us/news/24301514 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Warrior Updates, October 2|https://us.forums.blizzard.com/en/wow/t/warrior-updates-in-todays-beta-build/2369360 ;; Blizzard — WoW: Forever Hotfixes|https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-11-2026/2403040 ;; Raidbots — Forever talent data|https://www.raidbots.com/static/data/forever/talents.json ;; foreverchanges.pro — Warrior talents and spells, build 1.60.1.70938|https://foreverchanges.pro/talents/warrior ;; WoWSims Forever — Fury|https://www.wowsims.com/forever/warrior/dps/ ;; WoWSims Forever — source and combat-log measurements|https://github.com/wowsims/forever ;; Icy Veins — Fury Warrior Leveling|https://www.icy-veins.com/wow-forever/fury-warrior-leveling ;; Icy Veins — Fury Warrior Talents|https://www.icy-veins.com/wow-forever/fury-warrior-melee-dps-pve-spec-builds-talents ;; Icy Veins — Fury Warrior Stat Priority|https://www.icy-veins.com/wow-forever/fury-warrior-melee-dps-pve-stat-priority ;; Wowhead — Fury Warrior Leveling|https://www.wowhead.com/forever/guide/classes/warrior/fury/dps-leveling-tips ;; Wowhead — Fury Warrior Talent Builds|https://www.wowhead.com/forever/guide/classes/warrior/fury/talent-builds-pve-dps ;; Wowhead — Fury Warrior Stat Priority|https://www.wowhead.com/forever/guide/classes/warrior/fury/stat-priority-pve-dps
 
-Dual-wield rage dump, except that **the spec's own gimmick is unavailable the whole time you level towards it**: you cannot dual-wield until 20.
+Dual-wield damage that spends Rage as fast as two weapons make it. The spec arrives in steps: dual wield at 20, `Death Wish` at 30, [[Whirlwind]] at 36, [[Bloodthirst]] at 40.
 :::scope
-Levelling guide, 1 to 60. The beta closed on October 23 at level 30, so nothing above 30 was tested by players; talents and spells past 30 come from the launch client and Blizzard's posts. Talent tiers unlock at 10, 15, 20, 25, 30, 35, and the capstone at 40. No source had posted a level 30 build when this page was written. The level 30 line below therefore extends the published level 20 build using the full talent tree's point costs; it is not a build any guide has recommended.
-**The launch tree carries Blizzard's October 2 Fury pass and its November 2 rework.** `Furious Precision`, `Lingering Rage`, `Gore Drinker`, `Reckless Swings` and `Improved Whirlwind` are all in the tree, `Boundless Rage` and `Improved Cleave` are gone, and `Flurry` has 3 ranks (foreverchanges' reading of the November 3 client data).
-Two kinds of caveat run through these pages and they do not mean the same thing. Something marked as ours is our own reasoning rather than a source's. Something called a client or a guide-site reading is a number Blizzard has not published.
-Hover tooltips can lag the live game or show the wrong rank, so where one differs from the prose, believe the prose.
+Guide to the live game, levels 1 to 60. The talent order is Icy Veins' published Fury levelling build (page dated November 4), checked against the live tree. Level-60 builds are Icy Veins' and Wowhead's, named where they differ. Numbers are the client's unless a source is named.
+Two kinds of caveat run through these pages and they do not mean the same thing. Something marked as ours is our own reasoning rather than a source's. Something marked *(WoWSims' model)* is what a simulator's rotation list does at 60, not a measured result; its combat-log measurements are named as measurements.
+No raid is open until December 9, so nothing here is raid-tested. Hover tooltips can show the wrong rank, so where one differs from the prose, believe the prose.
 :::
 ## What Fury is for
-**Dual-wielding out-generates a two-hander on Rage simply by swinging more often** *(ours, not a source's)*, and it hands you somewhere to dump the surplus: [[Whirlwind]] now always strikes with both weapons, no talent required, for every Warrior who dual-wields.
-The catch is timing. **You cannot dual-wield until level 20**, and [[Whirlwind]] is level 36. For the first twenty levels you are a two-handed Warrior with Fury talents, and the spec proper arrives well after that.
-**No source rates Fury the best Warrior leveller.** Icy Veins ties it with Arms at 2.0/5 for Levelling and scores Protection higher at 2.5/5; neither Wowhead nor ClassicWoW.gg publishes a score. What Fury has going for it is that its tier 1 and 2 talents are what *every* Warrior takes, which is why the published Arms and Fury level-20 builds are identical.
+**Sustained damage from two weapons, on one target or a small pack.** Two weapons swing more often, `Unbridled Wrath` and `Dual Wield Specialization` turn those swings into Rage, and [[Whirlwind]] strikes with both weapons for every dual-wielder, no talent required.
+The catch is timing. **You cannot dual-wield until level 20**, [[Whirlwind]] is level 36 and [[Bloodthirst]] is 40. Icy Veins says so plainly: until those arrive Fury "can be a bit slower than leveling as Protection", and you may prefer to respec into Fury later with good weapons in hand. Wowhead's Fury page credits the new talents, `Gore Drinker` above all, with giving the spec sustain it never had, and lists two-target damage as a strength.
 ## Your talent points
-**Level 20: 0/11/0.**
-1. `Cruelty`, 5 points
-2. `Unbridled Wrath`, 5 points
-3. **`Piercing Howl`**, 1 point — the default. A 50% area slow for 6 seconds within 10 yards, unchanged from Classic: it stops runners and buys distance.
-**Level 30: 0/21/0 — our own extension, not a published build**, reaching `Death Wish`: `Cruelty` 5, `Unbridled Wrath` 5, `Piercing Howl` 1, `Furious Precision` 3, `Blood Craze` 1, `Dual Wield Specialization` 5, `Death Wish` 1. It keeps every level 20 point, so there is no respec. `Furious Precision` (+4/7/10% off-hand Hit) is the only talent that hands a dual-wielder off-hand Hit (see Stat priority).
-It is still our extension rather than a published build — no source had posted a level 30 Fury build when this page was written — so it is a defensible target, not a recommendation anyone else has vetted.
-**`Raging Blows` and `Reckless Swings` are not in this build.** Raging Blows discounts Rage: 3 off both [[Cleave]] and [[Whirlwind]]. Reckless Swings, the other row 4 newcomer, costs 25% of your base health for 5 extra Rage on each of your next 4 melee attacks within 8 seconds, on a 15-second cooldown (Blizzard). Either is worth a point if you have one spare past 21, but not worth restructuring the build for *(ours, not a source's)*.
+The lines below are **Icy Veins' Fury levelling build**, in its order, as published on November 4. Every point is legal on the live tree. Each line is the whole build at that level.
+**Level 20, 0/11/0:** `Cruelty` 5, `Unbridled Wrath` 5, `Furious Precision` 1.
+**Level 30, 0/21/0:** `Cruelty` 5, `Unbridled Wrath` 5, `Furious Precision` 3, `Enrage` 2, `Dual Wield Specialization` 5, `Death Wish` 1.
+**Level 40, 0/31/0:** `Cruelty` 5, `Unbridled Wrath` 5, `Furious Precision` 3, `Enrage` 3, `Dual Wield Specialization` 5, `Death Wish` 1, `Reckless Swings` 1, `Improved Berserker Rage` 2, `Improved Whirlwind` 2, `Flurry` 3, `Bloodthirst` 1.
+**Level 60, 16/33/2:** `Cruelty` 5, `Unbridled Wrath` 5, `Furious Precision` 3, `Enrage` 5, `Dual Wield Specialization` 5, `Death Wish` 1, `Reckless Swings` 1, `Improved Berserker Rage` 2, `Improved Whirlwind` 2, `Flurry` 3, `Bloodthirst` 1, `Improved Rend` 3, `Deflection` 2, `Improved Charge` 2, `Improved Overpower` 2, `Improved Tactical Mastery` 3, `Anger Management` 1, `Deep Wounds` 3, `Improved Bloodrage` 2.
+**The order inside those lines:** `Cruelty` at 10 to 14, `Unbridled Wrath` at 15 to 19. `Furious Precision` at 20 to 22, as soon as you can hold two weapons. Two points of `Enrage` at 23 and 24, `Dual Wield Specialization` at 25 to 29, `Death Wish` at 30. `Reckless Swings` at 31, `Improved Berserker Rage` at 32 and 33, `Improved Whirlwind` at 35 and 36 to meet [[Whirlwind]], `Flurry` at 37 to 39, `Bloodthirst` at 40. Then Arms from 41, with `Improved Bloodrage` at 54 and 55.
+**Wowhead's levelling build goes another way and ends at 11/40/0.** Its text aims for `Gore Drinker` and `Bloodthirst` as early as possible, which means `Blood Craze` 3/3 first, then `Flurry`, then `Deflection` in Arms for the Parry. Icy Veins' build takes neither `Blood Craze` nor `Gore Drinker`. The split is sustain against Rage: Wowhead buys healing, Icy Veins buys off-hand Hit and Rage sooner. The 11/40/0 split is our decode of Wowhead's embedded calculator, and its page text names `Improved Rend` where the calculator shows `Improved Tactical Mastery`.
+**Level-60 builds for dungeons.** Icy Veins publishes 18/33/0 and Wowhead 17/34/0; WoWSims' preset is 17/33/1. All three take `Cruelty` 5, `Unbridled Wrath` 5, `Furious Precision` 3, `Dual Wield Specialization` 5, `Reckless Swings`, `Death Wish`, `Improved Whirlwind` 2, `Flurry` 3 and `Bloodthirst`, and in Arms `Improved Tactical Mastery` 3, `Improved Overpower` 2, `Deep Wounds` 3 and `Impale` 2. `Enrage` is the open question. Icy Veins takes 5 and says to drop to 3 for `Improved Execute` 2 if it rarely triggers. Wowhead takes 4 in its raid build and 5 in its dungeon build, where you are hit more. WoWSims takes none, because its target hits nobody.
 ## Rotation
-**Identical to Arms at low level, minus [[Slam]].** The two specs play the same until 30.
-1. **[[Battle Shout]]** and [[Bloodrage]]
+**Before 30 you play in [[Battle Stance]]**, and the list is the same as Arms without [[Slam]]: [[Battle Shout]], [[Charge]], [[Victory Rush]], [[Demoralizing Shout]], [[Rend]] if it will live, [[Overpower]] on a dodge, [[Sunder Armor]] on tough targets.
+**Levelling, one target, from 36** (Icy Veins' order):
+1. **[[Battle Shout]]** up; [[Bloodrage]] between pulls. `Reckless Swings` from 31 when you need Rage and can spare the health
 2. **[[Charge]]** to open
-3. **[[Demoralizing Shout]]** on non-casters
-4. **[[Victory Rush]]** on proc
-5. **[[Overpower]]** on a dodge
-6. **[[Rend]]** early, if it lives — it taps the enemy onto your threat table the instant it lands
-7. **[[Sunder Armor]]** once or twice, stopping below 50%
-8. **[[Execute]]** from level 24, once the target is at 20% health or less
-**Multi-target: avoid it.** [[Cleave]] once or twice; the shouts are mitigation, not damage.
+3. **[[Victory Rush]]** before its 20 seconds run out
+4. **`Death Wish`** on anything you will hit for most of its 30 seconds. It adds 5% damage taken
+5. **[[Whirlwind]]** on cooldown from 36
+6. **[[Bloodthirst]]** from 40 while Whirlwind cools down
+7. **[[Overpower]]** after a dodge, if the stance change will not waste Rage
+8. **[[Sunder Armor]]** and **[[Rend]]** only on elites and bosses
+9. **[[Execute]]** on bosses and runners; otherwise keep the Rage for the next pull
+10. **[[Heroic Strike]]** only with Rage to burn
+**Wowhead orders the top differently**: [[Bloodthirst]] on cooldown first, [[Whirlwind]] lower, and it adds one step. If `Gore Drinker`'s healing is not running, press [[Bloodrage]] or `Berserker Rage` to start it.
+**Two or more targets:** [[Whirlwind]] first, then [[Cleave]]. Wowhead queues Cleave above 60 Rage while levelling.
 **The reasons behind the order:**
-- **[[Overpower]] comes first whenever it lights up.** 5 Rage buys weapon damage plus 5 on top of your normal swings, and the window stays open 5 seconds.
-- **[[Rend]] beats [[Heroic Strike]] on anything that lives 15 seconds.** At level 24 Rend deals 45 for 10 Rage, 4.5 per Rage. Heroic Strike adds 44 to a swing for 15 Rage, 2.9 per Rage, and that swing earns no Rage (Icy Veins says so of [[Cleave]]; WoWSims treats both the same way).
-- **Press [[Execute]] the moment you have 15 Rage.** Rank 1 deals 125 for 15, and each extra point adds only 3, so two at 15 Rage deal 250 where one at 30 deals 170. At 60 the list puts it above [[Whirlwind]] and [[Bloodthirst]] *(WoWSims' model)*.
-- **From 30, count the Rage before you leave `Berserker Stance`.** [[Overpower]] needs [[Battle Stance]], [[Rend]] needs Battle or Defensive, and changing stance keeps only 10 Rage, or up to 25 with `Improved Tactical Mastery`. Swapping at 40 Rage on this page's build throws away 30, so swap when you are low. At 60 the list, keeping 25, swaps for Overpower only at 73 Rage or less *(WoWSims' model)*.
-- **At 60 the list goes [[Whirlwind]], then [[Bloodthirst]], then [[Heroic Strike]] only at 40 Rage or more** *(WoWSims' model)*. Whirlwind costs 25 and Bloodthirst 30, so a Heroic Strike at 15 Rage can leave you short of both.
+- **[[Whirlwind]] goes ahead of [[Bloodthirst]] once you have `Improved Whirlwind`.** The talent cuts its cooldown to 8 seconds and adds 30% to the closest enemy (Icy Veins gives this as its reason). At 60 the list agrees: Whirlwind, then Bloodthirst, then [[Heroic Strike]] at 40 Rage or more *(WoWSims' model)*. Whirlwind costs 25 and Bloodthirst 30, so an early Heroic Strike can leave you short of both.
+- **Count the Rage before you leave [[Berserker Stance]].** [[Overpower]] needs [[Battle Stance]], [[Rend]] needs Battle or Defensive, and a stance change keeps only 10 Rage, or 25 with `Improved Tactical Mastery` 3/3. At 60 the list, keeping 25, swaps for Overpower only at 73 Rage or less *(WoWSims' model)*.
+- **[[Execute]] outranks everything on a boss below 20%.** At 60 the list puts it above [[Whirlwind]] and [[Bloodthirst]] *(WoWSims' model)*. An Execute that is dodged, parried or misses costs only its base Rage and keeps the rest (WoWSims' measurement).
+- **`Reckless Swings` is a pull button.** At 60 the list casts it 1.5 seconds before the pull *(WoWSims' model)*. It also starts `Gore Drinker` (Blizzard, November 6).
+- **[[Cleave]] early on packs.** At 60 the list queues it at 25 Rage on two or more targets, above [[Bloodthirst]] *(WoWSims' model)*.
 ## Stat priority
-Weapon damage, then **Hit**, then critical strike, Strength, Agility, Stamina. Hit matters *especially* while dual-wielding, because a missed swing is rage you never earn. Crit pulls double duty: a critical strike generates 100% increased Rage on top of the crit's extra damage.
-`Dual Wield Specialization` gives **+25% off-hand damage** and **+50% off-hand Rage** at 5/5, +5% and +10% per rank (client; Blizzard has published neither figure). Any 50% off-hand damage you see quoted belongs to the Rogue talent of the same name. Off-hand Hit comes from the row 3 talent `Furious Precision` (+4/7/10%), a separate 3 points rather than riding along with DWS's 5.
-`Dual Wield Specialization` carries no Hit at all. Off-hand Hit is `Furious Precision`. A bug that granted the old Hit bonus to both weapons gave Blizzard's own testers bad data, which they say is why this whole pass on Fury happened.
-Separately, queueing [[Heroic Strike]] no longer raises your off-hand hit chance.
+**Both weapons matter, the main hand most.** On WoWSims' pre-raid Fury set a point of main-hand DPS is worth about 11.5 Attack Power and a point of off-hand DPS about 3.3 *(WoWSims' model)*.
+**At 60 the sites differ.** Icy Veins: weapon DPS, Hit, Expertise, critical strike, Strength. Its Hit figures: 8% caps special attacks against a level 63 boss, and dual-wield white hits would need 27% before talents. Wowhead's list is older, dated October 29 and labelled speculative: weapon skill to 305, Hit to 9%, critical strike, Strength, Agility, Stamina. It does not mention Expertise, which is a new stat that reduces enemy dodges and parries.
+**Hit feeds Rage.** A missed white hit earns nothing, and Icy Veins calls repeated misses Fury's main weakness early on. Crit pays twice: a critical white hit generates 100% increased Rage and starts `Flurry`.
+`Dual Wield Specialization` gives **+25% off-hand damage** and **+50% off-hand Rage** at 5/5, 5% and 10% per rank. It carries no Hit. Off-hand Hit is `Furious Precision`, 4/7/10%. Queueing [[Heroic Strike]] no longer raises your off-hand hit chance (Blizzard).
 ## What defines Fury
 | Talent | Earliest level | What it does |
 | --- | --- | --- |
-| **`Unbridled Wrath`** | maxed by 19 | ~60% chance of +1 Rage on melee damage. Mandatory purely because of the rage rework |
-| **`Dual Wield Specialization`** | 25 | +25% off-hand damage and +50% off-hand Rage at 5/5 (client). It carries no Hit (see Stat priority) |
-| **`Death Wish`** | 30 | +20% physical damage and Fear immunity for 30 sec, 10 Rage, 3-min cooldown. **The prerequisite for [[Bloodthirst]]**, which follows at 40 (Blizzard) |
+| **`Unbridled Wrath`** | 15, 5/5 by 19 | 12% per point, 60% at 5/5, to gain 1 Rage when you deal melee damage with a weapon |
+| **`Dual Wield Specialization`** | 25 | +25% off-hand damage and +50% off-hand Rage at 5/5 |
+| **`Death Wish`** | 30 | +20% physical damage and Fear immunity for 30 seconds, +5% damage taken, 10 Rage, 3-minute cooldown. Required for [[Bloodthirst]] |
+| **`Flurry`** | 35 | 10/20/30% attack speed for your next 3 swings after a melee crit. A [[Whirlwind]] off-hand crit starts it and uses no charge (WoWSims' measurement) |
+| **`Bloodthirst`** | 40 | 45% of Attack Power plus 30 at rank 1, 30 Rage, 6-second cooldown, +10% movement speed for 10 seconds. It does not heal |
 ## What Forever changed for Fury
-The list below is what the talent tree shows you.
-Blizzard's own framing for its October 1–2 pass: **more early utility, and points freed up later**. The November 2 rework carries that further: `Flurry` now needs no prerequisite at all, and several rows were reshuffled:
-- **`Boundless Rage` and `Improved Cleave` are gone, deleted outright**; `Raging Blows` carries the [[Cleave]] discount.
-- **Two new early talents.** `Lingering Rage` (row 2): delays Rage decay out of combat by 2/4/6/8/10 seconds — a QoL pick, not a levelling one. `Furious Precision` (row 3, replacing `Boundless Rage`): +4/7/10% off-hand Hit chance.
-- **`Booming Voice` does something again:** Shout area of effect is 10/20/30/40/50% wider, and Shout Rage cost is cut by 5/10/15/20/25%. The same 5/10/15/20/25% comes off `Piercing Howl`'s Rage cost.
-- **`Iron Will` is not a Fury talent**: it is Protection row 1, covered in that guide.
-- `Unbridled Wrath` **no longer grants double Rage for a two-handed weapon**: 1 Rage at 12/24/36/48/60%. The change also softens the case for an Arms Warrior parking points in this row (see the Arms guide).
-- **`Enrage` sits in row 3**, beside `Blood Craze`, `Piercing Howl` and `Furious Precision`. Any damaging attack on you has a 30% chance to trigger it, for +2% physical damage per point over 12 seconds, so 10% at 5/5 (client).
-- **New talent `Gore Drinker`, row 5, requires `Blood Craze`.** Your `Enrage`, `Berserker Rage`, `Bloodrage`, `Death Wish` and [[Bloodthirst]] make your next 3 melee attacks restore 0.5/1% of max Health, and that healing generates no threat (Blizzard). The level 30 build's single `Blood Craze` point does not reach it: in our reading a prerequisite needs its full 3 ranks, as Classic's did *(ours, not a source's)*.
-- **New talent `Reckless Swings`, row 4**, 1 point: 25% of base health for 5 extra Rage on each of your next 4 melee attacks, 15-second cooldown. Covered under Your talent points.
-- **`Flurry` has no prerequisite; [[Bloodthirst]] requires `Death Wish`** (Blizzard). You can take `Flurry` without `Enrage` or `Death Wish`.
-- **New talent `Improved Whirlwind`, row 6**, 2 points: 1/2 seconds off [[Whirlwind]]'s cooldown and 15/30% more damage to the closest enemy (Blizzard).
-- `Improved Berserker Rage` moved from row 6 to row 5, and `Berserker Rage` itself now trains at **level 30**. Berserker Rage also makes you generate extra Rage from damage taken for its 10 seconds, and the talent adds 5 Rage on use plus a 50% chance at rank 1 to remove every movement-impairing effect on you (client).
-- `Blood Craze` triggers on being crit or on taking a hit worth more than 20% of your max health, and **not off [[Bloodthirst]] casts**. It does not trigger while you sit, and its healing generates no threat (Blizzard).
-- **[[Bloodthirst]]'s Attack Power ratio is 45%.** It does not heal you by itself, costs 30 Rage on a 6-second cooldown, and carries +10% movement speed for 10 sec.
-- `Flurry` has **3 ranks**: 10/20/30% attack speed for 3 swings after a critical strike, the same 30% at full rank as Classic's 5 (Blizzard). `Improved Battle Shout` and `Improved Demoralizing Shout` are gone, as the September 30 Class Deep Dive recorded — both effects are baseline now.
-- **`Death Wish` was rebuilt.** Classic's version cut armour and all resistances by 20% as its downside; Forever's instead adds +5% damage taken, on top of the same +20% physical damage and new Fear immunity (ClassicWoW.gg's exact tooltip text).
+- **`Boundless Rage`, `Improved Cleave` and `Raging Blows` are gone.** Nothing in Fury discounts [[Cleave]] or [[Whirlwind]] any more.
+- **`Improved Whirlwind`, row 6**, 2 points: 1/2 seconds off [[Whirlwind]]'s 10-second cooldown and 15/30% more damage to the closest enemy (Blizzard).
+- **`Reckless Swings`, row 4**, 1 point: costs 25% of base health; your next 4 melee attacks within 8 seconds generate 5 extra Rage each; 15-second cooldown (Blizzard). Wowhead puts the cost at 657 health at level 60.
+- **`Gore Drinker`, row 5, requires `Blood Craze` 3/3.** Your `Enrage`, `Berserker Rage`, [[Bloodrage]], `Death Wish`, `Reckless Swings` and [[Bloodthirst]] make your next 3 melee attacks restore 0.5/1% of max Health each. The healing generates no threat (Blizzard). Each landed strike of a [[Whirlwind]] or [[Cleave]] spends a charge and heals (WoWSims' measurement).
+- **Two early talents.** `Lingering Rage` (row 2) delays Rage decay out of combat by 2/4/6/8/10 seconds. `Furious Precision` (row 3) gives +4/7/10% off-hand Hit.
+- **`Booming Voice`**: Shout area 10/20/30/40/50% wider, and 5/10/15/20/25% off the Rage cost of Shouts and of `Piercing Howl`.
+- `Unbridled Wrath` **no longer grants double Rage for a two-handed weapon**.
+- **`Enrage` sits in row 3.** Any damaging attack on you has a 30% chance to trigger it, for +2% physical damage per point over 12 seconds, 10% at 5/5.
+- **`Flurry` has 3 ranks and no prerequisite; [[Bloodthirst]] requires `Death Wish`** (Blizzard).
+- `Improved Berserker Rage` is row 5, and `Berserker Rage` trains at **level 30**. Berserker Rage gives extra Rage from damage taken for its 10 seconds. The talent adds 5/10 Rage on use and a 50/100% chance to remove movement-impairing effects.
+- `Blood Craze` restores 1/2/3% of health over 6 seconds after you are crit or take a hit worth more than 20% of your health. It does not trigger off [[Bloodthirst]] or while you sit (Blizzard).
+- `Piercing Howl` is a 50% slow for 6 seconds within 10 yards, 10 Rage. `Improved Execute` takes 3/5 Rage off [[Execute]]. `Improved Battle Shout` and `Improved Demoralizing Shout` are gone because both effects are baseline.
+- **`Death Wish` was rebuilt.** Classic's version cut armour and resistances by 20%; Forever's adds 5% damage taken instead and grants Fear immunity.
 ## At level 60
-Unknown, and Icy Veins is unusually frank about it: *"we are unsure currently if there will be additional ways to generate Rage at Level 60, as these changes alone greatly reduce Fury Warrior's Rage generation."* That was written against the launch beta, before Blizzard's September 30 post and the October 1–2 builds. Three changes since then land squarely on Fury: the restored crit-Rage bonus (now 100%, see Stat priority), Armor no longer cutting into Rage from damage taken, and Bloodthirst's AP ratio returning to 45%. Blizzard's November 2 notes then add a Rage talent of Fury's own, `Reckless Swings`, and say damage was raised across every class, with higher-level creatures given more health to match. Some of that shortfall should already be smaller than when Icy Veins wrote it — no source confirms that, it is only the direction the changes point.
+Dungeons are the level-60 game until raids open on December 9. Both sites publish a dual-wield [[Bloodthirst]] build, above. No raid log exists. Wowhead's tier list predates launch tuning and calls itself a prediction, and Blizzard has said it expects a large tuning pass once it has data from players past 30. Wowhead also describes a Fury and Protection hybrid for tanking; the Protection guide covers it.

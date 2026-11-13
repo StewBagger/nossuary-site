@@ -674,7 +674,9 @@ def page(slug, title, desc, standfirst, body, crest, canonical, crumb=None,
     bits += [
             f'<span>Updated {html.escape(stamped)}</span>']
     if build:
-        bits.append(f'<span>Beta build {html.escape(build)}</span>')
+        # "Client build", not "Beta build": the game launched 2026-11-04 and the stamp
+        # went on calling the live client a beta on every page for nine days.
+        bits.append(f'<span>Client build {html.escape(build)}</span>')
     bits.append('<span>Null Ossuary</span>')
     metaline = '<p class="guide-meta">' + " · ".join(bits) + "</p>"
 
@@ -798,7 +800,7 @@ def main():
             (sd / "index.html").write_text(page(
                 f"{slug}-{sslug}",
                 f"{sname} {name} \u00b7 WoW: Forever \u00b7 Null Ossuary",
-                f"{sname} {name} levelling guide for WoW: Forever \u2014 {role}.",
+                f"{sname} {name} guide for WoW: Forever, levels 1 to 60 \u2014 {role}.",
                 sstand, sbody, slug,
                 f"https://nossuary.com/guides/wow-forever/{slug}/{sslug}/",
                 sname, accent, smeta or meta, parent=(slug, name),
@@ -895,7 +897,7 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "index.html").write_text(page(
         "index", "WoW: Forever class guides · Null Ossuary",
-        "Levelling guides for all nine classes in World of Warcraft: Forever.",
+        "Guides to all nine classes in World of Warcraft: Forever, levels 1 to 60.",
         standfirst, body, "index",
         "https://nossuary.com/guides/wow-forever/", None, None, meta))
     print("  wrote guides/wow-forever/index.html")
@@ -904,7 +906,7 @@ def main():
     SECTIONS = [
         ("/guides/wow-forever/", "Class guides",
          f"All nine classes, {sum(len(v) for v in SPECS.values())} specialisation pages",
-         "Talent order at 20 and 30, a rotation, stat priority, and what each tree does "
+         "Talent builds from 10 to 60, a rotation, stat priority, and what each tree does "
          "differently in Forever."),
         ("/guides/wow-forever/professions/", "Profession guides",
          f"{len(PROFESSIONS)} pages, every profession",

@@ -1,66 +1,103 @@
-updated: November 3, 2026
-build: 1.60.1.70245
+updated: November 13, 2026
+build: 1.60.1.70938
+sources: Blizzard — WoW: Forever Hotfixes, through November 12|https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-11-2026/2403040 ;; Blizzard — Gather Around the Campfire, October 21|https://worldofwarcraft.blizzard.com/en-us/news/24301516/gather-around-the-campfire-in-world-of-warcraft-forever ;; Blizzard — Raid Overview, October 20|https://worldofwarcraft.blizzard.com/en-us/news/24303009/world-of-warcraft-forever-raid-overview-locations-raid-sizes-and-attunement ;; Wowhead — Alchemy Overview, November 7|https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes ;; Wowhead — Alchemy Leveling 1-300, November 7|https://www.wowhead.com/forever/guide/professions/alchemy/leveling-1-300 ;; Wowhead — Camping Overview, November 13|https://www.wowhead.com/forever/guide/camping-overview-unlock-rewards ;; Wowhead — Azeroth Commerce Authority, November 11|https://www.wowhead.com/forever/guide/azeroth-commerce-authority-reputation-professions ;; Icy Veins — Alchemy Guide, November 3|https://www.icy-veins.com/wow-forever/alchemy ;; Icy Veins — Alchemy Leveling Guide, November 4|https://www.icy-veins.com/wow-forever/alchemy-leveling-guide ;; Icy Veins — Herbalism Guide, November 3|https://www.icy-veins.com/wow-forever/herbalism ;; Icy Veins — Fishing Guide, November 3|https://www.icy-veins.com/wow-forever/fishing ;; foreverchanges.pro — client data, build 70938|https://foreverchanges.pro/professions
 
-Potions, elixirs, flasks and transmutes. **70 of its 179 recipes are new**, including three whole consumable ladders and four new raid flasks.
+Potions, elixirs, flasks and transmutes. Forever added three consumable ladders that run the whole level range, and four raid flasks. **It also took the standard healing potions away**: those are First Aid recipes now.
 :::scope
-Recipes, skill levels and reagents come from foreverchanges.pro's reading of the beta client and are solid. **The beta stopped professions at skill 225**, so nothing above that was crafted before launch. The levelling route below is computed from recipe skill-colours rather than tested, and the source publishing it says so. Where the new herbs come from is unpublished.
+Effect values, yields and cooldowns are the launch client's (build 70938). Recipe counts are from foreverchanges.pro, a third-party site that reads the same client. Trainers, rank requirements and recipe sources are Wowhead's (November 7) and Icy Veins' (November 3 and 4). The levelling route is Wowhead's. Camp buff values are Blizzard's own (October 21). **The four new flasks are the thin part**: no site has a source for their recipes, two of their three herbs have no published node, and the raids they are written for open December 9.
 :::
 ## Is Alchemy worth taking?
-It is a money profession *and* a raid-utility profession. It earns **Legacy Points** at skill 150, 225 and 300, and grants a title. Of the crafting professions it has the strongest case *(ours, not a source's)*.
-It suits **every class**: the new consumable ladders cover spell healing, spell damage and attack power at every tier. Healers and casters gain the most, since the Mender's, Cleric's and Mageblood lines are all new *(ours, not a source's)*.
+Wowhead (November 7) calls it "an excellent gold-making profession", through transmutes and through consumables sold on the auction house. It adds that the new low-level recipes make Alchemy worth having while you level, not only at 60.
+Icy Veins (November 3) is narrower. It fits you if you go through mana potions on raid night or carry utility potions into battlegrounds. If you only drink the occasional potion, buy them and keep the slot.
+**It does not make your healing potions.** The six standard healing potions moved to [First Aid](/guides/wow-forever/professions/first-aid/), a secondary skill anyone can take. Alchemy keeps only the Discolored line, described below.
+It earns one **Legacy Point** each at skill 150, 225 and 300. No race has an Alchemy bonus, and it suits any class.
 ## What it pairs with
-Alchemy eats herbs, and **Herbalism is the only profession that gathers them.** That is unchanged, and Alchemy has no other feed.
-Our own reading, which no source publishes: the Herbalism half is more optional than it was. [Merchant's Favor](/guides/wow-forever/professions/merchants-favor/) buys recipes, and the crates that earn it are tradeable, so you can buy them at the auction house.
+**Herbalism.** Nearly every recipe uses herbs, and gathering them is the cheap way to level. Without it you buy herbs from other players (Icy Veins, November 3).
+**Fishing feeds three oils**: Oily Blackmouth for [[Blackmouth Oil]], Firefin Snapper for [[Fire Oil]], Stonescale Eel for [[Stonescale Oil]].
 ## What Forever added
-**Three new consumable ladders**, spanning the whole level range:
-| Ladder | What it gives | Skill range |
+foreverchanges.pro counts 178 Alchemy recipes in the launch client, 69 of them new. Wowhead says "over 50 new".
+**Three potion ladders**, six tiers each, Minor to Major. The effect lasts 30 seconds and uses the 2-minute potion cooldown:
+| Ladder | What it gives | Recipe skill |
 | --- | --- | --- |
-| [[Mender's Potion]] | Spell healing, +13 up to +88 | 30 → 280 |
-| [[Spellblasting Potion]] | Spell damage, +7 up to +47 | 35 → 285 |
-| [[Frenzy Potion]] | Attack power, +12 up to +80 | 40 → 290 |
-Plus new Mageblood (mana per 5 seconds) and Cleric's (healing done) elixir ladders, and new Spirit and Intellect tiers.
-**Four new raid flasks.** Each sits at skill 300, lasts 2 hours and gives +60 Stamina. All four carry a clause vanilla never had:
+| [[Mender's Potion]] | Spell healing: +13, 20, 31, 44, 62, 88 | 30 → 280 |
+| [[Spellblasting Potion]] | Spell damage: +7, 11, 16, 23, 33, 47 | 35 → 285 |
+| [[Frenzy Potion]] | Attack power: +12, 18, 28, 40, 56, 80 | 40 → 290 |
+Where those recipes come from, on Wowhead's list (November 7):
+- **Minor and Lesser** tiers drop from low-level creatures.
+- **The plain tier** costs 45 [Merchant's Favor](/guides/wow-forever/professions/merchants-favor/).
+- **Greater**: `Greater Mender's Potion` is trained. Greater Spellblasting and Greater Frenzy come from the quest *A New Need for Shadow Protection*, or from a vendor for Carved Centaur Totems.
+- **Superior**: source unknown.
+- **Major** needs Honored with your trade faction and 180 Favor. Major Frenzy costs 240.
+**New elixir lines.** Mageblood gives mana every 5 seconds: 3 at Minor (skill 25), 6 at Lesser (75), 20 at Greater (175). Cleric's gives healing done: +10, 20, 30, 40 at skill 45, 95, 145 and 195. There are also new Spirit tiers at 15, 65, 115 and 165, and Intellect tiers at 95 and 135.
+**Level-60 elixirs from the Favor vendors**, all at Honored: Elixir of the Phalanx (250), Cunning, Ferocity, Sages and the Whale (275), the Owl (280), Nature Power and Wicked Regeneration (285), the Grizzly (300).
+**Three dyes**, all trained: `Cerulean Dye` at 40, `Magenta Dye` at 120, `Viridian Dye` at 220. They use the scarce materials herbalists find, Frilled Lichen, Rosecap and Stranglevine. Icy Veins says Tailoring, Enchanting and Engineering recipes use the dyes.
+**`Transmute: Legionite`** at 275 turns a Heavy Thorium Bar and a Fel Crystal into a Legionite Bar. It has the same 47-hour cooldown as `Transmute: Arcanite`. The elemental transmutes are 23 hours. Wowhead lists its source as unknown.
+## The four raid flasks
+Each needs skill 300, lasts 2 hours and gives **30 Stamina**. Each also carries a second effect that works in three places only:
 | Flask | Extra effect, **in Mount Hyjal, Hyjal Summit and the Barrow Deeps only** |
 | --- | --- |
-| [[Flask of Natural Accuracy]] | 5% hit chance |
-| [[Flask of Natural Aggression]] | 4% critical strike |
-| [[Flask of Natural Precision]] | 5% reduced chance to be dodged or parried |
-| [[Flask of Natural Swiftness]] | 5% haste |
-**These are zone-scoped**, and vanilla has no design pattern like it. Their reagents are the new herbs: Death Lotus, Demonsage and Marefoil. No gathering node is published for any of the three, and only Demonsage and Marefoil have a gathering spell in the client.
-The five vanilla flasks are all present and unchanged.
+| [[Flask of Natural Accuracy]] | 2% hit chance |
+| [[Flask of Natural Aggression]] | 2% critical strike chance |
+| [[Flask of Natural Precision]] | 2% reduced chance to be dodged or parried |
+| [[Flask of Natural Swiftness]] | 2% haste |
+**These numbers came down.** A pre-launch build had 60 Stamina and 4 to 5% on the second effect. The launch client has 30 and 2%.
+**Two of the three December 9 raids are covered.** Blizzard's raid overview places the Barrow Deeps inside Mount Hyjal and Hyjal Summit at its peak. Onyxia's Lair is in Dustwallow Marsh and is not named on the flask, so there it is 30 Stamina and nothing else.
+**Reagents** (Icy Veins, November 3): Death Lotus in all four, Demonsage in Accuracy and Aggression, Marefoil in Precision and Swiftness. See [Herbalism](/guides/wow-forever/professions/herbalism/) for what is known about gathering them, which is little.
+Wowhead lists the source of all four recipes as unknown. The five Classic flasks are still in the client's recipe list.
 ## Changes that will catch out a veteran
-- **Six oils now yield 2 per craft instead of 1**: Fire Oil, Shadow Oil, Frost Oil, Goblin Rocket Fuel, Ghost Dye and Stonescale Oil. If you are budgeting Stonescale for flasks off vanilla memory, you are buying twice what you need.
-- **Reagents changed on several low-level recipes.** [[Minor Mana Potion]] now wants Peacebloom where it wanted Silverleaf; [[Elixir of Minor Defense]] wants one Silverleaf and one Peacebloom rather than two Silverleaf.
-- **A new drawback mechanic.** The Discolored Healing Potion line became five tiers, and they read: *"Restores X health instantly, however you also suffer 75% of that amount over time."*
-- **[[Alchemy Laboratory]] at skill 300 is a workstation requirement**: *"needed for the most advanced Alchemy recipes."* Nothing like it exists in vanilla.
-- **There is no specialisation system.** Elixir, Potion and Transmute Mastery are Burning Crusade. Do not go looking for them.
-- **The [[Alchemists' Stone]] is unchanged** from vanilla, and still substitutes for a Philosopher's Stone.
-- **No passive Alchemy bonus has been shown**, and the claim that Forever makes elixirs and flasks last longer is false. The Legacy perk people cite, `Permanence`, covers class abilities and camp rest, not consumables.
+- **Healing potions are First Aid's.** Minor through Major Healing Potion are no longer Alchemy recipes.
+- **The Discolored Healing Potion line is what Alchemy kept.** Six tiers, Minor to Major. Each heals at once and then deals 75% of that back over time, as a poison or a disease. The Major tier restores 2,800.
+- **Discolored potions have their own trainers, behind a quest.** Alliance: the Odd Child in the barn above the Deadmines in Westfall, after *My First Alchemy Set* and *My First Real Potion*. Horde: Apothecary Renferrel at the Sepulcher, after Rane Yorick's chain in Silverpine ending in *Wild Eyes*.
+- **Six oils now yield 2 per craft**: [[Fire Oil]], Shadow Oil, Frost Oil, Goblin Rocket Fuel, Ghost Dye and [[Stonescale Oil]]. [[Blackmouth Oil]] still yields 1.
+- **Reagents changed on low-level recipes.** [[Minor Mana Potion]] is Mageroyal and Peacebloom. [[Elixir of Minor Defense]] is one Silverleaf and one Peacebloom.
+- **Some recipes need a camp workstation.** The [[Fermenter]] and the [[Alchemy Laboratory]] are each required by certain recipes (Wowhead). No site lists which.
+- **Transmutes still need a Philosopher's Stone.** The recipe is sold by Alchemist Pestlezugg in Gadgetzan and needs skill 225.
+- **There is no specialisation.** Elixir, Potion and Transmute Mastery are Burning Crusade.
+- **No Legacy perk makes elixirs or flasks last longer.** The one people cite, `Permanence`, covers class buffs and camp rest. Wowhead lists only two perks that touch Alchemy, and both are about skill-ups.
+Blizzard's November 10 hotfixes touched two recipes:
+- **Minor Arcane Elixir sells to a vendor for 5 copper**, down from 25. Icy Veins' levelling route starts on it.
+- **"Recipe: Elixir of Greater Firepower" was mislabelled.** Blizzard corrected it to "Recipe: Elixir of Holy Power" and renamed the aura to "Holy Power". In the client the elixir gives up to 40 Holy spell damage for 30 minutes, and the recipe needs skill 250.
 ## Camp objects
 | Skill | Object | What it does |
 | --- | --- | --- |
-| 20 | [[Mana Well]] | **29 mana every 5 seconds** nearby at 54 and above, 15 at level 30. Mutually exclusive with [[Blessing of Wisdom]] |
-| 140 | [[Fermenter]] | Blueprint, drops in Wailing Caverns and Ruins of Lordaeron. Makes four new reagents |
-| 300 | [[Alchemy Laboratory]] | Blueprint. **Required for the top recipes** |
+| 20 | [[Mana Well]] | Mana every 5 seconds to everyone sitting nearby, by the sitter's level: **10 below level 24, 15 from 24, 20 from 34, 24 from 44, 29 from 54**. Exclusive with [[Blessing of Wisdom]]. Trained. Costs a Peacebloom and an Empty Vial |
+| 140 | [[Fermenter]] | Lets alchemists make certain reagents at camp, and gives the Mana Well buff. Blueprint drops from Rath'mael in Ruins of Lordaeron. Costs a Leaded Vial, Kingsblood and Swiftthistle |
+| 300 | [[Alchemy Laboratory]] | A workstation for the recipes that require one, and gives the Mana Well buff. Blueprint source unknown. Costs a Lich's Index Finger, a Crystal Vial and 2 Dreamfoil |
+Blizzard prints the Mana Well as "10-29 Mana every 5 seconds (level dependent)". The steps between are the client's. The higher objects replace the well and keep its buff.
+Blizzard says camp items at skill 140 and above drop in dungeons and raids. No site has found the Laboratory Blueprint or Lich's Index Finger.
+## Trainers and ranks
+| Rank | Skill cap | Needs | Trainers |
+| --- | --- | --- | --- |
+| Apprentice | 75 | Nothing | Every capital, most starting towns, Valanaar and Shen'dar Village on Zephras Isle |
+| Journeyman | 150 | Skill 50, level 10 | Stormwind, Ironforge, Darnassus, Orgrimmar, Undercity, Thunder Bluff, Booty Bay |
+| Expert | 225 | Skill 125, level 20 | Ainethil in Darnassus, Linzy Blackbolt in Dalaran, Doctor Herbert Halsey in Undercity |
+| Artisan | 300 | Skill 200, level 35 | Kylanna Windwhisper at Feathermoon Stronghold, Rogvar in Stonard, Master Mycologist Shurome at the Emerald Sanctuary in Felwood (both factions) |
+Requirements are Icy Veins' (November 4). Trainers are from both sites' lists.
 ## Levelling it
-The published route, computed from recipe costs rather than tested:
-1. **1 → 64**: [[Elixir of Minor Defense]], ~65 crafts
-2. **64 → 80**: [[Minor Mana Potion]], ~21
-3. **80 → 96**: [[Blackmouth Oil]], ~31. Keep them
-4. **96 → 100**: [[Elixir of Wisdom]], ~4
-5. **100 → 130**: [[Swim Speed Potion]], ~30
-6. **130 → 166**: [[Fire Oil]], ~51. Keep them
-7. **166 → 175**: [[Elixir of Fire Power]], ~11
-8. **175 → 190**: [[Greater Discolored Healing Potion]], ~19
-9. **190 → 209**: [[Great Rage Potion]], ~22. Vendor recipe
-10. **209 → 237**: [[Nature Protection Potion]], ~46. Vendor recipe
-11. **237 → 250**: [[Draught of Detect Undead]], ~14
-12. **250 → 260**: [[Stonescale Oil]], ~30. Keep them
-13. **260 → 265**: [[Draught of Detect Demon]], ~5
-14. **265 → 295**: [[Elixir of Greater Defense]], ~34. Vendor recipe, and the expensive block
-15. **295 → 300**: [[Major Mana Potion]], ~5
-**Your skill stops at 225, mid-step 10, until you train Artisan**, which needs character level 35. The longest single step is 209 to 237, and it needs a vendor recipe, so buy that before you get there.
+Wowhead's route (November 7). Craft counts are its estimates:
+1. **1 → 12**: `Elixir of Minor Force`, 13 crafts. Silverleaf
+2. **12 → 55**: [[Elixir of Minor Defense]], 43. Silverleaf and Peacebloom
+3. **55 → 65**: [[Minor Mana Potion]], 10. Mageroyal and Peacebloom
+4. **65 → 90**: `Elixir of Minor Fortitude`, 28. Two Earthroot and a Peacebloom each
+5. **90 → 120**: [[Elixir of Wisdom]], 30. Mageroyal and two Briarthorn
+6. **120 → 160**: `Lesser Mana Potion`, 50. Mageroyal and Stranglekelp
+7. **160 → 195**: `Mana Potion`, 40. Stranglekelp and Kingsblood, Leaded Vial
+8. **195 → 205**: `Elixir of Agility`, 10. Stranglekelp and Goldthorn. `Elixir of Defense` is the alternative
+9. **205 → 240**: `Greater Mana Potion`, 43. Khadgar's Whisker and Goldthorn
+10. **240 → 260**: [[Draught of Detect Undead]], 25. Arthas' Tears, Crystal Vial
+11. **260 → 270**: `Superior Mana Potion`, 10. Two Sungrass and two Blindweed
+12. **270 → 300**: `Major Discolored Healing Potion`, 32. Plaguebloom, Murloc Eye, Crystal Vial
+Notes on the route:
+- **Train ahead of each cap.** Your skill stops at 75, 150 and 225 until you hold the next rank, and Artisan needs level 35.
+- **At 225, make one Philosopher's Stone.** It gives a guaranteed point until 240 and you need it for transmutes.
+- **Step 12 needs the Discolored trainer**, so do that quest chain first. If Plaguebloom is expensive, Wowhead suggests staying on Superior Mana Potions to about 280 or 285.
+- **Icy Veins differs below 225** (November 4). It starts on Minor Arcane Elixir to 10, moves to Mana Potion at 160 and Elixir of Agility at 185, and finishes on Greater Mana Potion from 205. It declines to give a 225 to 300 route yet.
 ## Certification and title
-New in Forever: an **Alchemy Certification** at skill 300 unlocks the title "the Alchemist". The title is account-wide, but only a character with 300 Alchemy can display it.
+At skill 300 the Favor vendor sells an **Alchemy Certification** for 1,000 Merchant's Favor (Wowhead, November 11). It unlocks the title "the Alchemist" for all your characters, but a character shows it only if it has 300 Alchemy itself (foreverchanges.pro).
 ## What is not known
-Where Death Lotus, Demonsage and Marefoil are gathered. They are reagents in the new flasks and have no published node. Where Lich's Index Finger, the Alchemy Laboratory's reagent, comes from. Whether the Laboratory is needed to *learn* the top recipes or only to *craft* them. Whether transmute cooldowns changed. And whether the new flasks' Hyjal clause covers the raid tier opening December 9.
+- Where the four flask recipes come from.
+- Where Demonsage and Marefoil grow.
+- Where the Alchemy Laboratory Blueprint and Lich's Index Finger drop.
+- Which recipes need the Fermenter or the Laboratory.
+- Where the Superior tier of the three potion ladders, and `Transmute: Legionite`, are learned.
+- How the flasks perform in a raid. No raid is open until December 9.

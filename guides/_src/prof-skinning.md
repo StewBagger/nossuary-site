@@ -1,42 +1,81 @@
-updated: November 3, 2026
-build: 1.60.1.70245
-sources: Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; foreverchanges.pro — beta client data|https://foreverchanges.pro
+updated: November 13, 2026
+build: 1.60.1.70938
+sources: Blizzard — WoW: Forever Hotfixes, through November 12|https://us.forums.blizzard.com/en/wow/t/wow-forever-hotfixes-november-11-2026/2403040 ;; Blizzard — Development Notes, updated November 2|https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-updated-october-1/2360696 ;; Blizzard — Gather Around the Campfire, October 21|https://worldofwarcraft.blizzard.com/en-us/news/24301516/gather-around-the-campfire-in-world-of-warcraft-forever ;; Wowhead — Skinning Overview, November 7|https://www.wowhead.com/forever/guide/professions/skinning/overview-leveling ;; Wowhead — Scarlet Monastery Library Overview, November 10|https://www.wowhead.com/forever/guide/scarlet-monastery-library-dungeon-overview-location-rewards ;; Icy Veins — Skinning Guide, November 3|https://www.icy-veins.com/wow-forever/skinning ;; Icy Veins — Skinning Leveling Guide, November 4|https://www.icy-veins.com/wow-forever/skinning-leveling-guide ;; foreverchanges.pro — Skinning, client 1.60.1.70938|https://foreverchanges.pro/professions/skinning ;; foreverchanges.pro — Tanning Rack guide, October 16|https://foreverchanges.pro/tanning-rack
 
-Leather off things you already killed, and **the cheapest profession in the game to carry** *(ours, not a source's)*. It keys off the beast's level rather than a node table. On the client reading, its camp object gives your whole group 2% critical strike.
+Leather, hides and scales off beasts you already killed, and **the cheapest profession in the game to carry** *(ours, not a source's)*. The skill a beast asks for comes from its level. Its camp object gives everyone at the fire 2% critical strike.
 :::scope
-The skill formula and camp objects come from foreverchanges.pro's reading of the beta client and are solid. The beta stopped professions at skill 225, so nothing above it was crafted before launch. Whether a Skinning Knife is still required is not published. Skinnable creature lists, leather tables and trainer requirements are explicitly unconfirmed.
+The [[Camp Chair]] and the one-skin rule are Blizzard's. The skill formula, trainers, ranks and tools are published by both Wowhead (November 7) and Icy Veins (November 3 and 4), and they agree. The 1 to 300 route is Icy Veins'. Thin: where Fel Leather is skinned, and the drop rules for the three Pristine materials. Wowhead says those are not known, and the one account of Pristine Leather predates launch.
 :::
 ## Is Skinning worth taking?
-It is the weakest of the three as a pure money profession, because leather demand is narrower than ore or herbs *(ours, not a source's)*.
+The published verdict is about gold. Wowhead (November 7) calls it *"one of the easiest professions to make gold with, particularly when leveling, where you will already be killing skinnable mobs."* Icy Veins says it suits anyone who kills a lot of beasts while questing, and warns that a character who mostly fights humanoids or undead has to hunt beasts separately.
+Our own read is narrower: leather has one main buyer, Leatherworking, where ore has two *(ours, not a source's)*.
 **It earns no Legacy Points.** Only the six crafting professions do.
-The argument for it is [[Camp Chair]] at skill 20: **2% critical strike with spells and attacks** for everyone sitting nearby. That is a raid-wide crit buff off a gathering profession. It does not stack with the Druid auras that cover the same ground, [[Moonkin Form]] and [[Leader of the Pack]] — Blizzard does say those two are mutually exclusive with each other. It matters most to a group with neither. The whole claim is foreverchanges.pro's reading of the client; Blizzard has published nothing about a Camp Chair, about camp objects or about their values.
-Our own advice, which no source publishes: take it on a class that kills beasts anyway, like a Hunter, Druid or Rogue, where it costs almost nothing. As a standalone grind it is painful; unlike Mining and Herbalism it has no craft to fall back on.
+The other argument is the [[Camp Chair]] at skill 20: **2% critical strike with all spells and attacks** for everyone who sits at the camp. It is the same at every character level. Blizzard says it is exclusive with Moonkin Aura, and the Druid's aura is 3% in the current client, so the chair matters to a group with no such Druid.
+Take it on a class that kills beasts anyway. Wowhead names Druid, Hunter, Rogue and Shaman as the usual takers, since they wear what Leatherworking makes.
 ## What it pairs with
-Leatherworking eats leather, and **Skinning is the only profession that gathers it.** Unchanged. Leatherworking also gained 271 new recipes, the largest count of any profession, so leather demand is up.
+**Leatherworking.** Skinning is the only profession that gathers leather, and Leatherworking has 270 new recipes on foreverchanges.pro's count. Wowhead also suggests pairing it with Mining or Herbalism, because you pass skinnable beasts while you gather.
+## How to skin
+1. **Learn it** from a trainer, or pick `Pelt Collecting for Beginners` as the reward from an early starting-zone quest
+2. **Carry a Skinning Knife.** It stays in your bags. Trade supplies and Leatherworking supplies vendors sell it
+3. **Loot the corpse fully, then skin it.** You can skin another player's kill once they have looted it
+4. **One skin per corpse.** Blizzard's October 1 build: *"Creatures can once again only be skinned a single time before disappearing."* That holds even when several group members have Skinning
 ## How the skill requirement works
-This part is published explicitly:
-- **Skill 1** covers everything up to level 10
+Wowhead and Icy Veins print the same rule:
+- **Skill 1** covers every beast up to level 10, so the starting zones count
 - **Ten points per level** from 11 to 20, so a level-16 beast asks for 60
 - **Five times the level** from there, so a level-40 beast asks for 200
-## Levelling it
-| Your skill | Beast levels | Where |
+Wowhead adds that some beasts may ask for more than 300. Three things raise your skill past your trained value:
+| Boost | Skill | From |
 | --- | --- | --- |
-| 1 | 1–10 | Mulgore, Durotar, Dun Morogh, Elwynn, Tirisfal, Teldrassil |
-| 10–100 | 11–20 | Barrens, Darkshore, Silverpine, Loch Modan |
-| 105–150 | 21–30 | Wetlands, Ashenvale, Hillsbrad, Thousand Needles |
-| 155–200 | 31–40 | Dustwallow, Desolace, Stranglethorn, Badlands |
-| 205–250 | 41–50 | Tanaris, Feralas, Hinterlands, Felwood |
-| 255–300 | 51–60 | Winterspring, Azshara, Silithus, Eastern Plaguelands |
-## What Forever changed
-- **A creature can be skinned once and once only.** Blizzard's October 1 build: *"Creatures can once again only be skinned a single time before disappearing."* The multi-skin behaviour of the earlier beta builds is gone, so a corpse is one skinner's.
-- No leather, hide or scale type is **flagged as new** in the skinning tables.
-- **Three camp objects**, all new, and two of them do things no gathering profession has ever done:
-  | Skill | Object | What it does |
-  | --- | --- | --- |
-  | 20 | [[Camp Chair]] | **2% critical strike** nearby, on the client reading. Mutually exclusive with [[Moonkin Form]] and [[Leader of the Pack]] |
-  | 140 | [[Field Guide]] | Blueprint. Grants [[Track Beasts]] to whoever reads it, so a non-Hunter can have it |
-  | 300 | [[Trapper's Workbench]] | Blueprint. Holds one trap |
-- **Leather buys recipes** through Waylaid Crates, the same as ore and herbs.
-- There is no Skinning specialisation.
+| `Keen Skinning Knife` | +3 while equipped | Horde quest Unwelcome Guests. Needs level 14 and daggers |
+| `Enchant Gloves - Skinning` | +5 | Enchanting 200 |
+| `Enchant Gloves - Advanced Skinning` | +10 | Enchanting 250 |
+The knife and a glove enchant stack.
+## Trainers and ranks
+| Rank | Skill cap | Needs skill |
+| --- | --- | --- |
+| Apprentice | 75 | None |
+| Journeyman | 150 | 50 |
+| Expert | 225 | 125 |
+| Artisan | 300 | 200 |
+**The trainers in the level 1 to 5 starting camps teach Apprentice only.** Every other Skinning trainer teaches all four ranks. That includes the city trainers, Goldshire, Bloodhoof Village, Camp Taurajo, Redridge, Silverwind Refuge, Shadowprey Village, Camp Mojache and both Zephras Isle villages. You stop gaining skill at each cap until you train the next rank.
+## Levelling it
+Skin as you quest and your skill keeps pace. If it falls behind, these are Icy Veins' catch-up grounds (November 4):
+| Your skill | Horde | Alliance |
+| --- | --- | --- |
+| 1–75 | Durotar, Mulgore, Tirisfal, Zephras Isle | Elwynn, Dun Morogh, Teldrassil, Zephras Isle |
+| 75–125 | The Barrens, west of Northwatch Hold | Loch Modan, eastern shore |
+| 125–150 | Hillsbrad, between the Fields and Tarren Mill | Wetlands, Whelgar's Excavation Site |
+| 150–185 | Thousand Needles, the Shimmering Flats | Arathi Highlands, around Refuge Pointe |
+| 185–225 | Dustwallow Marsh, Badlands or Stranglethorn | Stranglethorn, Badlands or Dustwallow Marsh |
+| 225–250 | Tanaris hyenas or Feralas yetis | Feralas yetis or Tanaris hyenas |
+| 250–275 | Un'Goro ravasaurs, or Felwood bears and wolves | Un'Goro ravasaurs, or Felwood bears and wolves |
+| 275–300 | Western Plaguelands wolves and bears | Winterspring, Frostsaber Rock |
+You can reach 300 on beasts below level 60. Wowhead's zone list (November 7) broadly agrees to 225 and stops there.
+## What you skin
+| Leather and hide | Where |
+| --- | --- |
+| Light | Westfall, The Barrens, Darkshore, Loch Modan |
+| Medium | Wetlands, Hillsbrad, Ashenvale, Thousand Needles |
+| Heavy | Stranglethorn, Badlands, Swamp of Sorrows, Dustwallow Marsh |
+| Thick | Tanaris, Feralas, The Hinterlands, Blasted Lands |
+| Rugged | Winterspring, Western Plaguelands, Felwood, Un'Goro Crater |
+The leather depends on the beast, not on your skill. Hides are rarer than leather. Special materials come from particular beasts: Turtle Scale from tortoises and snapjaws in Dustwallow, the Hinterlands and Tanaris, Heavy Scorpid Scale in Silithus and Burning Steppes, Devilsaur Leather in Un'Goro, Frostsaber and Chimera Leather in Winterspring. That table is Icy Veins' (November 3).
+**New in Forever:**
+- **Pristine Leather, Pristine Hide and Pristine Scale** are Scarce materials. A skinned beast sometimes gives one on top of its normal leather. Leatherworking, Tailoring and Blacksmithing recipes use them
+- **Fel Leather and Fel Hide** are new endgame leathers. Wowhead and Icy Veins both say where to skin them is not yet known
+- **`Bountiful Harvest`**, a Legacy perk, raises the chance of a Scarce material by 20% a rank over five ranks
+**Who gets Pristine Leather is contested.** foreverchanges.pro's Tanning Rack guide (October 16, before launch) says only a skinner of level 25 or lower gets it, from a non-grey beast of level 10 to 25 outside the starting zones. Wowhead (November 7) says the probabilities and level requirements are not yet known. If the first account is right, a level-60 leatherworker buys Pristine Leather or skins for it on an alt.
+## Camp objects
+| Skill to place | Object | What it does | Blueprint |
+| --- | --- | --- | --- |
+| 20 | [[Camp Chair]] | **2% critical strike** to everyone sitting nearby, at every level. Exclusive with Moonkin Aura. Costs 3 Light Leather and 2 Simple Wood | Trainer |
+| 140 | `Field Guide` | Anyone who reads it gains [[Track Beasts]]. Keeps the chair's buff | Lady Anacondra, Wailing Caverns |
+| 300 | [[Trapper's Workbench]] | Holds one trap with a skinnable beast, on Icy Veins' wording. Keeps the chair's buff | Listed in Wowhead's Scarlet Monastery Library loot |
+The chair's line is Blizzard's own, from its October 21 camping article. A player has to sit or craft at the camp for a minute to take its buffs, and they last an hour. See [Camping](/guides/wow-forever/professions/camping/).
+## What else Forever changed
+- **Leather fills Waylaid Crates.** A textiles crate takes 20 Light, Medium, Heavy, Thick or Rugged Leather. Since November 9 crates drop inside dungeons too
+- **Starting-zone beasts give skill to 75**, on Icy Veins' account, so you no longer have to leave to get started
+- There is no Skinning specialisation
 ## What is not known
-**Whether a Skinning Knife is still required**: not published either way. The trap mechanic behind [[Trapper's Workbench]] is entirely undocumented, and no source explains what traps are, where they come from or what they do. Skinnable creature lists and trainer requirements are unconfirmed.
+Where Fel Leather and Fel Hide are skinned. The drop rate and level rule for the Pristine materials after launch. Which boss drops the [[Trapper's Workbench]] Blueprint, and what its trap does beyond holding a beast. Which beasts ask for more than 300.
