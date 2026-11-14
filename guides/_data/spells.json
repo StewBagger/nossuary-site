@@ -1,16 +1,16 @@
 {
  "build": "1.60.1.70938",
  "product": "wowf",
- "generated": "2026-11-13T12:23:22+00:00",
+ "generated": "2026-11-14T08:25:43+00:00",
  "stamp": "1da61c0505de",
  "inputs": "a2f8a1939d01",
  "overlay": {
   "state": "applied",
   "cache_build": 70938,
-  "pushes": 5934,
-  "records": 92323,
-  "created": "2026-11-13T11:27:05.389Z",
-  "digest": "2c12f0e880b819bd",
+  "pushes": 6015,
+  "records": 98863,
+  "created": "2026-11-14T04:58:25.420Z",
+  "digest": "a1e870c451786ed7",
   "entries": [
    "Flametongue Weapon",
    "Mental Dexterity",
@@ -25,7 +25,6 @@
    "SkillLine",
    "SkillLineAbility",
    "SkillLineXTraitTree",
-   "SkillRaceClassInfo",
    "Spell",
    "SpellAuraOptions",
    "SpellCastTimes",
@@ -48,7 +47,9 @@
    "TraitNodeEntry",
    "TraitNodeXTraitNodeEntry"
   ],
-  "refused": {},
+  "refused": {
+   "SkillRaceClassInfo": "its record layout could not be established from 1 cached row(s) the base client also holds"
+  },
   "rows": {
    "CurvePoint": {
     "records": 1333,
@@ -56,20 +57,34 @@
     "added": 5
    },
    "Spell": {
-    "records": 1338,
-    "changed": 12
+    "records": 1381,
+    "changed": 21,
+    "added": 1
    },
    "SpellAuraOptions": {
-    "records": 117,
-    "changed": 1
+    "records": 142,
+    "changed": 2,
+    "removed": 23
    },
    "SpellCooldowns": {
-    "records": 76,
-    "changed": 1
+    "records": 83,
+    "changed": 4,
+    "added": 3
    },
    "SpellEffect": {
-    "records": 1038,
-    "changed": 4
+    "records": 1061,
+    "changed": 13,
+    "added": 8,
+    "removed": 3
+   },
+   "SpellMisc": {
+    "records": 1949,
+    "changed": 85,
+    "added": 1
+   },
+   "SpellName": {
+    "records": 1381,
+    "added": 1
    },
    "TraitDefinitionEffectPoints": {
     "records": 35,
