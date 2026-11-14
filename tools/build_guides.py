@@ -53,7 +53,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "guides" / "_src"
 OUT = ROOT / "guides" / "wow-forever"
 DATA = ROOT / "guides" / "_data"
-STAMP = "20261007-4"
+STAMP = "20261114-1"
 
 # ---- ability chips: where a chip points, and where its icon comes from ----------
 # The exact Wowhead Forever URL shape is UNCONFIRMED. These two templates are the only
@@ -682,6 +682,14 @@ def page(slug, title, desc, standfirst, body, crest, canonical, crumb=None,
         bits.append(f'<span>Client build {html.escape(build)}</span>')
     bits.append('<span>Null Ossuary</span>')
     metaline = '<p class="guide-meta">' + " · ".join(bits) + "</p>"
+    # The jump list sits beside the article, not in it, so it can stay pinned while the
+    # page scrolls. Lifted out here rather than at the six call sites that splice it in.
+    toc = ""
+    m = re.search(r'<nav class="guide-toc".*?</nav>', body, re.S)
+    if m:
+        toc, body = m.group(0), body[:m.start()] + body[m.end():]
+        toc = toc.replace("</ul></nav>",
+                          '</ul><a class="toc-top" href="#top">Back to top</a></nav>')
 
     return f"""<!doctype html>
 <html lang="en">
@@ -735,8 +743,11 @@ def page(slug, title, desc, standfirst, body, crest, canonical, crumb=None,
       {crumbs}
       {sn}
       {metaline}
-      <div class="section-head guide-body">
-        {body}
+      <div class="guide-layout{' has-toc' if toc else ''}">
+        {toc}
+        <div class="section-head guide-body">
+          {body}
+        </div>
       </div>
     </div>
   </main>
