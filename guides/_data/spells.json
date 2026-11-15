@@ -1,16 +1,16 @@
 {
  "build": "1.60.1.70938",
  "product": "wowf",
- "generated": "2026-11-14T08:25:43+00:00",
+ "generated": "2026-11-15T08:25:21+00:00",
  "stamp": "1da61c0505de",
  "inputs": "a2f8a1939d01",
  "overlay": {
   "state": "applied",
   "cache_build": 70938,
-  "pushes": 6015,
-  "records": 98863,
-  "created": "2026-11-14T04:58:25.420Z",
-  "digest": "a1e870c451786ed7",
+  "pushes": 6045,
+  "records": 108158,
+  "created": "2026-11-15T06:10:25.394Z",
+  "digest": "a951af00fe05cda3",
   "entries": [
    "Flametongue Weapon",
    "Mental Dexterity",
@@ -72,14 +72,14 @@
     "added": 3
    },
    "SpellEffect": {
-    "records": 1061,
+    "records": 1062,
     "changed": 13,
     "added": 8,
     "removed": 3
    },
    "SpellMisc": {
-    "records": 1949,
-    "changed": 85,
+    "records": 1981,
+    "changed": 111,
     "added": 1
    },
    "SpellName": {
