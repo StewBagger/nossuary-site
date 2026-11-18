@@ -1,30 +1,26 @@
 {
- "build": "1.60.1.70938",
+ "build": "1.60.1.70959",
  "product": "wowf",
- "generated": "2026-11-17T08:26:43+00:00",
- "stamp": "1da61c0505de",
- "inputs": "a2f8a1939d01",
+ "generated": "2026-11-18T08:25:44+00:00",
+ "stamp": "fee4bf8ca234",
+ "inputs": "40a2f5fc1a7c",
  "overlay": {
   "state": "applied",
-  "cache_build": 70938,
-  "pushes": 6143,
-  "records": 123348,
-  "created": "2026-11-17T05:29:12.880Z",
-  "digest": "78018dab3985945e",
+  "cache_build": 70959,
+  "pushes": 6178,
+  "records": 94979,
+  "created": "2026-11-18T01:22:05.910Z",
+  "digest": "f81fe0ffe49096c3",
   "entries": [
-   "Flametongue Weapon",
-   "Mental Dexterity",
-   "Stormstrike",
-   "Windfury Weapon"
+   "Vampiric Embrace"
   ],
-  "kept_base": [
-   "Maelstrom Weapon"
-  ],
+  "kept_base": [],
   "tables": [
    "CurvePoint",
    "SkillLine",
    "SkillLineAbility",
    "SkillLineXTraitTree",
+   "SkillRaceClassInfo",
    "Spell",
    "SpellAuraOptions",
    "SpellCastTimes",
@@ -47,55 +43,52 @@
    "TraitNodeEntry",
    "TraitNodeXTraitNodeEntry"
   ],
-  "refused": {
-   "SkillRaceClassInfo": "its record layout could not be established from 1 cached row(s) the base client also holds"
-  },
+  "refused": {},
   "rows": {
    "CurvePoint": {
-    "records": 1333,
-    "changed": 7,
-    "added": 5
+    "records": 1837,
+    "added": 504
    },
    "Spell": {
-    "records": 1401,
-    "changed": 27,
-    "added": 1
+    "records": 1418,
+    "changed": 8,
+    "added": 9
    },
    "SpellAuraOptions": {
-    "records": 159,
-    "changed": 8,
-    "removed": 32
+    "records": 162,
+    "changed": 6,
+    "added": 3,
+    "removed": 9
    },
    "SpellCooldowns": {
-    "records": 91,
-    "changed": 4,
+    "records": 92,
     "added": 4,
     "removed": 7
    },
    "SpellEffect": {
-    "records": 1076,
-    "changed": 19,
-    "added": 9,
-    "removed": 3
+    "records": 1096,
+    "changed": 11,
+    "added": 12,
+    "removed": 2
+   },
+   "SpellLevels": {
+    "records": 97,
+    "added": 4
    },
    "SpellMisc": {
-    "records": 2012,
-    "changed": 140,
-    "added": 1
+    "records": 2032,
+    "changed": 65,
+    "added": 9
    },
    "SpellName": {
-    "records": 1401,
+    "records": 1418,
     "changed": 1,
-    "added": 1
+    "added": 9
    },
    "SpellTargetRestrictions": {
-    "records": 169,
+    "records": 174,
     "changed": 1,
-    "added": 1
-   },
-   "TraitDefinitionEffectPoints": {
-    "records": 35,
-    "added": 1
+    "added": 3
    }
   }
  },
@@ -3989,8 +3982,7 @@
    "cast": "Instant",
    "school": "Fire",
    "cost": "30 Mana",
-   "desc": "Imbue the Shaman's weapon with fire. Each hit causes 4.71 to 18 additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes.",
-   "hotfix": true
+   "desc": "Imbue the Shaman's weapon with fire. Each hit causes 4.71 to 18 additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 60 minutes."
   },
   "Flank au Poivre": {
    "kind": "item",
@@ -6804,7 +6796,6 @@
    "level": null,
    "icon": 237584,
    "cast": "Instant",
-   "desc": "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec.",
    "rank": "Rank 5 of 5"
   },
   "Mage Armor": {
@@ -7080,8 +7071,7 @@
    "icon": 136055,
    "cast": "Instant",
    "desc": "Increases your Attack Power by an amount equal to 100% of your Intellect.",
-   "rank": "Rank 3 of 3",
-   "hotfix": true
+   "rank": "Rank 3 of 3"
   },
   "Mental Quickness": {
    "kind": "talent",
@@ -9987,8 +9977,7 @@
    "school": "Physical",
    "cost": "8% of base Mana",
    "cooldown": "8 sec cooldown",
-   "desc": "Instantly strike for 100% weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec.",
-   "hotfix": true
+   "desc": "Instantly strike for 100% weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec."
   },
   "Stranglevine": {
    "kind": "item",
@@ -10913,7 +10902,8 @@
    "school": "Shadow",
    "cost": "40 Mana",
    "cooldown": "30 sec cooldown",
-   "desc": "Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 30 sec."
+   "desc": "Afflicts your target with Shadow energy that causes all party members to be healed for 10% of any Shadow spell damage you deal for 30 sec. You receive 100% increased healing on yourself from this effect.",
+   "hotfix": true
   },
   "Vanguard": {
    "kind": "talent",
@@ -11277,8 +11267,7 @@
    "cast": "Instant",
    "school": "Nature",
    "cost": "90 Mana",
-   "desc": "Imbue the Shaman's weapon with wind. Each hit has a 20% chance of granting you 2 extra attacks with 104 extra melee attack power. Lasts for 60 minutes.",
-   "hotfix": true
+   "desc": "Imbue the Shaman's weapon with wind. Each hit has a 20% chance of granting you 2 extra attacks with 104 extra melee attack power. Lasts for 60 minutes."
   },
   "Wing Clip": {
    "kind": "spell",
