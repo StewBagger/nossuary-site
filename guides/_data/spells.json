@@ -1,16 +1,16 @@
 {
  "build": "1.60.1.70959",
  "product": "wowf",
- "generated": "2026-11-19T08:25:44+00:00",
+ "generated": "2026-11-20T08:25:13+00:00",
  "stamp": "fee4bf8ca234",
  "inputs": "40a2f5fc1a7c",
  "overlay": {
   "state": "applied",
   "cache_build": 70959,
-  "pushes": 6191,
-  "records": 107532,
-  "created": "2026-11-19T04:34:41.474Z",
-  "digest": "ffa28d9bf0c2a91b",
+  "pushes": 6218,
+  "records": 115556,
+  "created": "2026-11-20T01:52:58.288Z",
+  "digest": "a4d33f1d88881f39",
   "entries": [
    "Vampiric Embrace"
   ],
@@ -50,45 +50,49 @@
     "added": 504
    },
    "Spell": {
-    "records": 1423,
-    "changed": 9,
-    "added": 11
+    "records": 1440,
+    "changed": 14,
+    "added": 19
    },
    "SpellAuraOptions": {
-    "records": 164,
+    "records": 165,
     "changed": 6,
-    "added": 5,
+    "added": 6,
     "removed": 9
    },
    "SpellCooldowns": {
-    "records": 92,
-    "added": 4,
+    "records": 93,
+    "added": 5,
     "removed": 7
    },
    "SpellEffect": {
-    "records": 1114,
-    "changed": 24,
-    "added": 16,
-    "removed": 2
+    "records": 1171,
+    "changed": 63,
+    "added": 31,
+    "removed": 7
    },
    "SpellLevels": {
-    "records": 97,
-    "added": 4
+    "records": 100,
+    "added": 7
    },
    "SpellMisc": {
-    "records": 2043,
-    "changed": 72,
-    "added": 11
+    "records": 2069,
+    "changed": 91,
+    "added": 18
    },
    "SpellName": {
-    "records": 1423,
-    "changed": 1,
-    "added": 11
+    "records": 1440,
+    "changed": 2,
+    "added": 19
+   },
+   "SpellPower": {
+    "records": 108,
+    "added": 1
    },
    "SpellTargetRestrictions": {
-    "records": 174,
-    "changed": 1,
-    "added": 3
+    "records": 183,
+    "changed": 4,
+    "added": 4
    }
   }
  },
