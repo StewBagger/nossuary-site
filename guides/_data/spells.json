@@ -1,19 +1,17 @@
 {
- "build": "1.60.1.70959",
+ "build": "1.60.1.71037",
  "product": "wowf",
- "generated": "2026-11-20T08:25:13+00:00",
- "stamp": "fee4bf8ca234",
- "inputs": "40a2f5fc1a7c",
+ "generated": "2026-11-21T08:25:44+00:00",
+ "stamp": "45736642462d",
+ "inputs": "070b14ef7f1b",
  "overlay": {
   "state": "applied",
-  "cache_build": 70959,
-  "pushes": 6218,
-  "records": 115556,
-  "created": "2026-11-20T01:52:58.288Z",
-  "digest": "a4d33f1d88881f39",
-  "entries": [
-   "Vampiric Embrace"
-  ],
+  "cache_build": 71037,
+  "pushes": 6240,
+  "records": 96760,
+  "created": "2026-11-21T03:00:03.120Z",
+  "digest": "09a967ddd0bb96b0",
+  "entries": [],
   "kept_base": [],
   "tables": [
    "CurvePoint",
@@ -45,54 +43,54 @@
   ],
   "refused": {},
   "rows": {
-   "CurvePoint": {
-    "records": 1837,
-    "added": 504
+   "SkillLineAbility": {
+    "records": 90,
+    "changed": 6,
+    "added": 1
    },
    "Spell": {
-    "records": 1440,
-    "changed": 14,
-    "added": 19
+    "records": 1466,
+    "changed": 6,
+    "added": 8
    },
    "SpellAuraOptions": {
-    "records": 165,
-    "changed": 6,
-    "added": 6,
-    "removed": 9
+    "records": 172,
+    "changed": 1,
+    "added": 1,
+    "removed": 6
    },
    "SpellCooldowns": {
     "records": 93,
-    "added": 5,
-    "removed": 7
+    "added": 1
    },
    "SpellEffect": {
-    "records": 1171,
-    "changed": 63,
-    "added": 31,
-    "removed": 7
+    "records": 1185,
+    "changed": 42,
+    "added": 15,
+    "removed": 5
    },
    "SpellLevels": {
     "records": 100,
-    "added": 7
+    "added": 3
    },
    "SpellMisc": {
-    "records": 2069,
-    "changed": 91,
-    "added": 18
+    "records": 2074,
+    "changed": 36,
+    "added": 7
    },
    "SpellName": {
-    "records": 1440,
-    "changed": 2,
-    "added": 19
+    "records": 1466,
+    "changed": 1,
+    "added": 8
    },
    "SpellPower": {
     "records": 108,
     "added": 1
    },
    "SpellTargetRestrictions": {
-    "records": 183,
-    "changed": 4,
-    "added": 4
+    "records": 196,
+    "changed": 3,
+    "added": 1
    }
   }
  },
@@ -10906,8 +10904,7 @@
    "school": "Shadow",
    "cost": "40 Mana",
    "cooldown": "30 sec cooldown",
-   "desc": "Afflicts your target with Shadow energy that causes all party members to be healed for 10% of any Shadow spell damage you deal for 30 sec. You receive 100% increased healing on yourself from this effect.",
-   "hotfix": true
+   "desc": "Afflicts your target with Shadow energy that causes all party members to be healed for 10% of any Shadow spell damage you deal for 30 sec. You receive 100% increased healing on yourself from this effect."
   },
   "Vanguard": {
    "kind": "talent",
