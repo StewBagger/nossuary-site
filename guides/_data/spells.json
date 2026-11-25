@@ -1,17 +1,20 @@
 {
- "build": "1.60.1.71037",
+ "build": "1.60.1.71091",
  "product": "wowf",
- "generated": "2026-11-24T08:25:43+00:00",
- "stamp": "45736642462d",
- "inputs": "070b14ef7f1b",
+ "generated": "2026-11-25T08:25:43+00:00",
+ "stamp": "8abdb37bc96f",
+ "inputs": "c6b6dfa29925",
  "overlay": {
   "state": "applied",
-  "cache_build": 71037,
-  "pushes": 6254,
-  "records": 123776,
-  "created": "2026-11-24T04:31:29.435Z",
-  "digest": "44f1c065a5b25447",
-  "entries": [],
+  "cache_build": 71091,
+  "pushes": 6276,
+  "records": 96035,
+  "created": "2026-11-25T06:48:49.704Z",
+  "digest": "0473cacb4c527917",
+  "entries": [
+   "Hurricane",
+   "Oath of Light"
+  ],
   "kept_base": [],
   "tables": [
    "CurvePoint",
@@ -44,7 +47,7 @@
   "refused": {},
   "rows": {
    "CurvePoint": {
-    "records": 1842,
+    "records": 1863,
     "changed": 5
    },
    "SkillLineAbility": {
@@ -53,48 +56,30 @@
     "added": 1
    },
    "Spell": {
-    "records": 1479,
-    "changed": 6,
-    "added": 8
+    "records": 1496,
+    "changed": 4
    },
    "SpellAuraOptions": {
-    "records": 172,
-    "changed": 1,
-    "added": 1,
-    "removed": 6
+    "records": 176,
+    "changed": 2,
+    "removed": 7
    },
-   "SpellCooldowns": {
-    "records": 93,
+   "SpellDuration": {
+    "records": 2,
     "added": 1
    },
    "SpellEffect": {
-    "records": 1202,
-    "changed": 61,
-    "added": 15,
-    "removed": 5
-   },
-   "SpellLevels": {
-    "records": 100,
+    "records": 1220,
+    "changed": 26,
     "added": 3
    },
    "SpellMisc": {
-    "records": 2100,
-    "changed": 67,
-    "added": 7
+    "records": 2111,
+    "changed": 41
    },
    "SpellName": {
-    "records": 1479,
-    "changed": 1,
-    "added": 8
-   },
-   "SpellPower": {
-    "records": 108,
-    "added": 1
-   },
-   "SpellTargetRestrictions": {
-    "records": 196,
-    "changed": 3,
-    "added": 1
+    "records": 1496,
+    "changed": 3
    }
   }
  },
@@ -5084,7 +5069,8 @@
    "duration": "10 sec",
    "school": "Nature",
    "cost": "880 Mana",
-   "desc": "Creates a violent storm in the target area causing 69 Nature damage to enemies every 1 sec, and increasing the time between attacks of enemies by 20%. Lasts 10 sec. Druid must channel to maintain the spell."
+   "desc": "Creates a violent storm in the target area causing 69 Nature damage to enemies every 1 sec, and increasing the time between attacks of enemies by 20%. Lasts 10. Druid must channel to maintain the spell.",
+   "hotfix": true
   },
   "Hyper Deluxe Sniper Rifle Mk XVII": {
    "kind": "item",
@@ -7535,8 +7521,9 @@
    "icon": 135909,
    "cast": "Instant",
    "range": "40 yd range",
-   "duration": "300 sec",
-   "cost": "8% of base Mana"
+   "duration": "3600 sec",
+   "cost": "8% of base Mana",
+   "hotfix": true
   },
   "Omen of Clarity": {
    "kind": "spell",
