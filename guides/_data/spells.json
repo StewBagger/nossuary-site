@@ -1,18 +1,23 @@
 {
- "build": "1.60.1.71091",
+ "build": "1.60.1.71139",
  "product": "wowf",
- "generated": "2026-11-25T08:25:43+00:00",
- "stamp": "8abdb37bc96f",
- "inputs": "c6b6dfa29925",
+ "generated": "2026-11-26T08:26:43+00:00",
+ "stamp": "379b095dc288",
+ "inputs": "b8c3891bc336",
  "overlay": {
   "state": "applied",
-  "cache_build": 71091,
-  "pushes": 6276,
-  "records": 96035,
-  "created": "2026-11-25T06:48:49.704Z",
-  "digest": "0473cacb4c527917",
+  "cache_build": 71139,
+  "pushes": 6317,
+  "records": 94676,
+  "created": "2026-11-26T04:28:10.572Z",
+  "digest": "e0fd4990b6bb6e6e",
   "entries": [
-   "Hurricane",
+   "Eclipse",
+   "Improved Moonfire",
+   "Improved Starfire",
+   "Improved Wrath",
+   "Moonfury",
+   "Moonkin Form",
    "Oath of Light"
   ],
   "kept_base": [],
@@ -48,38 +53,60 @@
   "rows": {
    "CurvePoint": {
     "records": 1863,
-    "changed": 5
-   },
-   "SkillLineAbility": {
-    "records": 90,
-    "changed": 6,
-    "added": 1
+    "changed": 7,
+    "added": 11,
+    "removed": 3
    },
    "Spell": {
-    "records": 1496,
-    "changed": 4
+    "records": 1514,
+    "changed": 7,
+    "added": 12
    },
    "SpellAuraOptions": {
-    "records": 176,
+    "records": 182,
     "changed": 2,
-    "removed": 7
+    "added": 2,
+    "removed": 5
    },
    "SpellDuration": {
-    "records": 2,
+    "records": 3,
     "added": 1
    },
    "SpellEffect": {
-    "records": 1220,
-    "changed": 26,
+    "records": 1265,
+    "changed": 16,
+    "added": 23
+   },
+   "SpellLevels": {
+    "records": 104,
+    "changed": 1,
     "added": 3
    },
    "SpellMisc": {
-    "records": 2111,
-    "changed": 41
+    "records": 2130,
+    "changed": 40,
+    "added": 12
    },
    "SpellName": {
-    "records": 1496,
-    "changed": 3
+    "records": 1514,
+    "changed": 2,
+    "added": 12
+   },
+   "SpellTargetRestrictions": {
+    "records": 203,
+    "removed": 2
+   },
+   "TraitDefinition": {
+    "records": 31,
+    "changed": 1
+   },
+   "TraitDefinitionEffectPoints": {
+    "records": 39,
+    "added": 4
+   },
+   "TraitNodeEntry": {
+    "records": 34,
+    "changed": 1
    }
   }
  },
@@ -3022,8 +3049,9 @@
    "level": null,
    "icon": 236151,
    "cast": "Instant",
-   "desc": "Your Wrath spell reduces the cast time of your next 2 Starfire spells by 0.50 sec. Stores up to 4 charges. Lasts 15 sec.",
-   "rank": "Rank 3 of 3"
+   "desc": "Increases the critical strike chance of your Wrath spell by 20%, and your Wrath spell reduces the cast time of your next 2 Starfire spells by 0.50 sec. Stores up to 4 charges. Lasts 15 sec.",
+   "rank": "Rank 3 of 3",
+   "hotfix": true
   },
   "Efficiency": {
    "kind": "talent",
@@ -5069,8 +5097,7 @@
    "duration": "10 sec",
    "school": "Nature",
    "cost": "880 Mana",
-   "desc": "Creates a violent storm in the target area causing 69 Nature damage to enemies every 1 sec, and increasing the time between attacks of enemies by 20%. Lasts 10. Druid must channel to maintain the spell.",
-   "hotfix": true
+   "desc": "Creates a violent storm in the target area causing 69 Nature damage to enemies every 1 sec, and increasing the time between attacks of enemies by 20%. Lasts 10. Druid must channel to maintain the spell."
   },
   "Hyper Deluxe Sniper Rifle Mk XVII": {
    "kind": "item",
@@ -5703,12 +5730,12 @@
   },
   "Improved Moonfire": {
    "kind": "talent",
-   "id": 16821,
+   "id": 28854,
    "level": null,
    "icon": 136096,
    "cast": "Instant",
-   "desc": "Increases the damage and critical strike chance of your Moonfire spell by 10%.",
-   "rank": "Rank 2 of 2"
+   "desc": "Increases the damage of your Moonfire spell by up to 33.",
+   "hotfix": true
   },
   "Improved Overpower": {
    "kind": "talent",
@@ -5983,8 +6010,9 @@
    "level": null,
    "icon": 135753,
    "cast": "Instant",
-   "desc": "Reduces the cast time of Starfire by 0.5 sec and Starfire has a 15% chance to stun its target for 3 sec.",
-   "rank": "Rank 5 of 5"
+   "desc": "Your Starfire spell has a 15% chance to stun its target for 3 sec.",
+   "rank": "Rank 2 of 2",
+   "hotfix": true
   },
   "Improved Stings": {
    "kind": "talent",
@@ -6113,12 +6141,12 @@
   },
   "Improved Wrath": {
    "kind": "talent",
-   "id": 16814,
+   "id": 436287,
    "level": null,
-   "icon": 136006,
+   "icon": 136096,
    "cast": "Instant",
-   "desc": "Reduces the cast time of your Wrath spell by 0.5 sec and its Mana cost by 50%.",
-   "rank": "Rank 5 of 5"
+   "desc": "Increases the damage of your Wrath spell by up to 2%.",
+   "hotfix": true
   },
   "Incense Candle": {
    "kind": "item",
@@ -7271,8 +7299,8 @@
    "level": null,
    "icon": 136057,
    "cast": "Instant",
-   "desc": "Increases the damage done by your Arcane and Nature spells by 10%.",
-   "rank": "Rank 5 of 5"
+   "desc": "Increases the damage done by your Arcane and Nature spells by 2%.",
+   "hotfix": true
   },
   "Moonglow": {
    "kind": "talent",
@@ -7292,7 +7320,8 @@
    "duration": "Until cancelled",
    "school": "Physical",
    "cost": "35% of base Mana",
-   "desc": "Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
+   "desc": "Shapeshift into Moonkin Form, increasing Arcane and Nature damage done by 10%, Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+   "hotfix": true
   },
   "Mortal Shots": {
    "kind": "talent",
