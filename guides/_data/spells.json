@@ -1,16 +1,16 @@
 {
  "build": "1.60.1.71139",
  "product": "wowf",
- "generated": "2026-11-26T08:26:43+00:00",
+ "generated": "2026-11-28T08:26:43+00:00",
  "stamp": "379b095dc288",
  "inputs": "b8c3891bc336",
  "overlay": {
   "state": "applied",
   "cache_build": 71139,
-  "pushes": 6317,
-  "records": 94676,
-  "created": "2026-11-26T04:28:10.572Z",
-  "digest": "e0fd4990b6bb6e6e",
+  "pushes": 6323,
+  "records": 191106,
+  "created": "2026-11-27T11:25:56.791Z",
+  "digest": "36d82e74768f9a67",
   "entries": [
    "Eclipse",
    "Improved Moonfire",
@@ -58,7 +58,7 @@
     "removed": 3
    },
    "Spell": {
-    "records": 1514,
+    "records": 1518,
     "changed": 7,
     "added": 12
    },
@@ -73,7 +73,7 @@
     "added": 1
    },
    "SpellEffect": {
-    "records": 1265,
+    "records": 1266,
     "changed": 16,
     "added": 23
    },
@@ -83,17 +83,17 @@
     "added": 3
    },
    "SpellMisc": {
-    "records": 2130,
-    "changed": 40,
+    "records": 2141,
+    "changed": 17,
     "added": 12
    },
    "SpellName": {
-    "records": 1514,
+    "records": 1518,
     "changed": 2,
     "added": 12
    },
    "SpellTargetRestrictions": {
-    "records": 203,
+    "records": 207,
     "removed": 2
    },
    "TraitDefinition": {
